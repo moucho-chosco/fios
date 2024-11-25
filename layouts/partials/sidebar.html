@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <div class="logo">
+        <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+    </div>
+    <nav>
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li class="{{ if eq .URL $.RelPermalink }}active{{ end }}">
+                <a href="{{ .URL }}" class="menu-link">
+                    {{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>

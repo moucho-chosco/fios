@@ -1,0 +1,91 @@
+/* Tipografía base */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fondo gris claro */
+    color: #333; /* Texto en gris escuro */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contedor principal */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.logo a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Contido principal */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content h1, .content h2, .content h3 {
+    color: #222;
+}
+
+/* Estilos adicionais para un look moderno */
+a {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botóns ou elementos interactivos */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e88e5;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1565c0;
+}

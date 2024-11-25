@@ -1,0 +1,38 @@
+{{ define "main" }}
+    <!-- CSS de FullCalendar -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+    <!-- JS de FullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- Inclúe o ficheiro de localización galega -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/gl.js"></script>
+
+    <div class="calendario-container">
+        <!-- Contenedor para el calendario -->
+        <div id="calendar"></div>
+    </div>
+
+    <script>
+        {{- /* Obtén todas las páginas de la sección "calendario" */ -}}
+        {{- $eventsPages := where site.RegularPages "Section" "calendario" }}
+        console.log("Número de páginas de eventos encontradas: {{ len $eventsPages }}");
+
+        {{- /* Lista de eventos */ -}}
+        {{- $events := slice }}
+
+        {{- /* Itera sobre las páginas para crear eventos */ -}}
+        {{- range $eventsPages }}
+            {{- $event := dict
+                "title" ( .Title | default "Evento sin título" | jsonify )
+                "start" ( .Params.eventDate | default .Date | jsonify )
+                "description" ( (default "" .Params.description) | jsonify )
+                "url" ( .Permalink | jsonify )
+            }}
+            {{- $events = $events | append $event }}
+        {{- end }}
+
+        // Transfiere eventos al script de JavaScript
+        window.calendarEvents = {{ $events | jsonify | safeJS }};
+    </script>
+
+    <script src="/scripts/calendario.js"></script>
+{{ end }}
