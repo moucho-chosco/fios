@@ -1,0 +1,54 @@
+baseURL = 'https://fios.netlify.app'
+languageCode = 'gl'
+title = 'fios'
+buildFuture = true
+logo = "favicon.ico"
+
+
+[menu]
+  [[menu.main]]
+  name = "Principal"
+  url = "/"
+  weight = 1
+  
+  [[menu.main]]
+  name = "Biblioteca"
+  url = "/biblioteca/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Organizacións"
+  url = "/organizacions/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Espazos"
+  url = "/espazos/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Calendario"
+  url = "/calendario/"
+  weight = 5
+
+  [[menu.main]]
+  name = "Convocatorias"
+  url = "/convocatorias/"
+  weight = 6
+
+  [[menu.main]]
+  name = "Podcast"
+  url = "/podcast/"
+  weight = 7
+
+  [[menu.main]]
+  name = "Redes"
+  url = "/redes/"
+  weight = 8
+
+  [[menu.main]]
+  name = "Recursos"
+  url = "/recursos/"
+  weight = 9
+
+buildFuture = true
