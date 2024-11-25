@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://fios.netlify.app'
 languageCode = 'gl'
 title = 'fios'
 buildFuture = true
