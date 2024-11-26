@@ -484,3 +484,79 @@ fc-daygrid-day {
     font-size: 1.2em !important; /* Tamaño opcional */
     font-weight: bold !important; /* Texto en negrita */
 }
+
+
+
+/* ================================================================= 
+   ESPAZOS
+   ================================================================= */
+
+/* Axusta o tamaño do mapa */
+#map {
+    height: 1000%; /* Cambia a altura segundo o deseño */
+    width: 70%; /* Ocupa toda a largura dispoñible */
+    border: 0px solid #000000; /* Opcional: engade un borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+  }
+  
+/* Fai que o mapa sexa responsivo */
+@media (max-width: 768px) {
+    #map {
+      height: 300px;
+    }
+}
+
+/* Modificar directamente os botóns de zoom */
+.leaflet-control-zoom a {
+    background-color: #000 !important; /* Fondo negro dos botóns */
+    color: #fff            !important; /* Texto branco nos botóns */
+    font-weight: bold        !important; /* Grosor do símbolo */
+    font-size: 18px          !important; /* Tamaño do texto */
+    text-align: center       !important; /* Centrar o símbolo */
+    line-height: 36px        !important; /* Centra verticalmente o símbolo no botón */
+    width: 36px              !important; /* Largura do botón */
+    height: 36px             !important; /* Altura do botón */
+    border: none             !important; /* Elimina bordes */
+    margin-top: 2px         !important;
+    border-radius: 5px       !important; /* Esquinas redondeadas */
+    box-shadow: none         !important; /* Elimina a sombra por defecto */
+    transition: background-color 0.3s ease !important; /* Efecto ao pasar o rato */
+  }
+  
+  /* Modificar os botóns ao pasar o rato */
+  .leaflet-control-zoom a:hover {
+    background-color: #333 !important; /* Fondo gris escuro ao pasar o rato */
+    color: #fff            !important; /* Mantén o texto branco */
+  }
+  
+  /* Eliminar o fondo negro detrás dos botóns */
+  .leaflet-control-zoom {
+    background: none  !important; /* Elimina o fondo detrás dos botóns */
+    border: none      !important; /* Elimina calquera borde adicional */
+    box-shadow: none  !important; /* Elimina sombra do contedor */
+  }
+
+  /* Aplica o efecto "darken" usando mix-blend-mode */
+.leaflet-tile-container img {
+    mix-blend-mode: darken; /* ou darken, dependendo do efecto desexado */
+  }
+  
+  /* Opcional: forza a transparencia na capa superposta */
+  .leaflet-tile-container {
+    opacity: 0.9; /* Axusta a opacidade segundo o resultado desexado */
+  }
+  
+  #filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #filter-bar select, #filter-bar button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  

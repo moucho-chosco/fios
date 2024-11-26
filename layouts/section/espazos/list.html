@@ -1,0 +1,72 @@
+{{ define "main" }}
+<h1>Espazos e Centros Sociais</h1>
+
+<!-- Barra de Filtros -->
+<select id="localidade-filter" style="margin-right: 10px;">
+    <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
+    {{ range where .Site.RegularPages ".Params.localidade" true }}
+      <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">{{ .Title }}</option>
+    {{ end }}
+</select>
+
+<!-- Div para o Mapa -->
+<div id="map" style="height: 600px;"></div>
+
+<!-- Estilos e Scripts Necesarios -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+
+<script>
+  const key = 'dc5wAmsD5MUwi9LdDQ1I';
+
+  // Inicializar o mapa con MapTiler
+  const map = L.map('map').setView([42.7751, -8.0339], 8.4); // Coordenadas iniciais
+  const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" // Estilo opcional
+  }).addTo(map);
+
+  // Cargar os datos das localidades desde o contido
+  const localidades = {
+    "galiza": { lat: 42.7751, lon: -8.0339, zoom: 8.4 },
+    {{ range where .Site.RegularPages ".Params.localidade" true }}
+    "{{ .File.BaseFileName }}": {
+      title: "{{ .Title }}",
+      lat: {{ .Params.location.lat }},
+      lon: {{ .Params.location.lon }},
+      zoom: {{ .Params.zoom }}
+    },
+    {{ end }}
+  };
+
+  // Cambiar o mapa ao seleccionar unha localidade
+  const localidadeFilter = document.getElementById('localidade-filter');
+  localidadeFilter.addEventListener('change', () => {
+    const value = localidadeFilter.value.split(',');
+    const [key, lat, lon, zoom] = value;
+    if (localidades[key]) {
+      map.setView([parseFloat(lat), parseFloat(lon)], parseFloat(zoom));
+    }
+  });
+
+  // Cargar os marcadores para os espazos
+  const espazos = [
+    {{ range .Site.RegularPages }}
+      {
+        title: "{{ .Title }}",
+        description: "{{ .Params.description }}",
+        location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
+      },
+    {{ end }}
+  ];
+
+  espazos.forEach(espazo => {
+    const marker = L.marker([espazo.location.lat, espazo.location.lon]).addTo(map);
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.description}`);
+  });
+</script>
+
+{{ end }}

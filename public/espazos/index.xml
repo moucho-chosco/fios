@@ -6,7 +6,49 @@
     <description>Recent content in Espazos on fios</description>
     <generator>Hugo</generator>
     <language>gl</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/espazos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Revolteira</title>
+      <link>http://localhost:1313/espazos/a_revolteira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/a_revolteira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSOA Escárnio e Maldizer</title>
+      <link>http://localhost:1313/espazos/escarnio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/escarnio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Galiza</title>
+      <link>http://localhost:1313/espazos/localidades/galiza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/localidades/galiza/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lugo</title>
+      <link>http://localhost:1313/espazos/localidades/lugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/localidades/lugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>O Pichel</title>
+      <link>http://localhost:1313/espazos/gentalha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/gentalha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Santiago de Compostela</title>
+      <link>http://localhost:1313/espazos/localidades/compostela/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/localidades/compostela/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

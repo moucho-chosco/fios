@@ -8,7 +8,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="container">
@@ -84,9 +85,208 @@
         
         <main class="content">
             
-  <h1>Espazos</h1>
+<h1>Espazos e Centros Sociais</h1>
+
+
+<select id="localidade-filter" style="margin-right: 10px;">
+    <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
+    
+      <option value="galiza,42.88169616573114,-8.54240060014547,8">Galiza</option>
+    
+      <option value="lugo,43.016666,-7.55,14">Lugo</option>
+    
+      <option value="compostela,42.876169616573115,-8.54240060014547,14">Santiago de Compostela</option>
+    
+</select>
+
+
+<div id="map" style="height: 600px;"></div>
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+
+<script>
+  const key = 'dc5wAmsD5MUwi9LdDQ1I';
+
   
+  const map = L.map('map').setView([42.7751, -8.0339], 8.4); 
+  const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" 
+  }).addTo(map);
+
   
+  const localidades = {
+    "galiza": { lat: 42.7751, lon: -8.0339, zoom: 8.4 },
+    
+    "galiza": {
+      title: "Galiza",
+      lat:  42.88169616573114 ,
+      lon:  -8.54240060014547 ,
+      zoom:  8 
+    },
+    
+    "lugo": {
+      title: "Lugo",
+      lat:  43.016666 ,
+      lon:  -7.55 ,
+      zoom:  14 
+    },
+    
+    "compostela": {
+      title: "Santiago de Compostela",
+      lat:  42.876169616573115 ,
+      lon:  -8.54240060014547 ,
+      zoom:  14 
+    },
+    
+  };
+
+  
+  const localidadeFilter = document.getElementById('localidade-filter');
+  localidadeFilter.addEventListener('change', () => {
+    const value = localidadeFilter.value.split(',');
+    const [key, lat, lon, zoom] = value;
+    if (localidades[key]) {
+      map.setView([parseFloat(lat), parseFloat(lon)], parseFloat(zoom));
+    }
+  });
+
+  
+  const espazos = [
+    
+      {
+        title: "A3",
+        description: "Asemblea para definir as prioridades do trimestre.",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "Asemblea Xeral 4",
+        description: "Asemblea para definir as prioridades do trimestre.",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "A2",
+        description: "Asemblea para definir as prioridades do trimestre.",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "Calendario",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "Organizacións",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "Que facer?",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "",
+        description: "",
+        location: { lat:  null , lon:  null  }
+      },
+    
+      {
+        title: "A Revolteira",
+        description: "Espazo Autoxestionado na Coruña.",
+        location: { lat:  43.358728281851086 , lon:  -8.40653158003866  }
+      },
+    
+      {
+        title: "CSOA Escárnio e Maldizer",
+        description: "Centro Social Ocupado Autoxestionado",
+        location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
+      },
+    
+      {
+        title: "Galiza",
+        description: "",
+        location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
+      },
+    
+      {
+        title: "Lugo",
+        description: "",
+        location: { lat:  43.016666 , lon:  -7.55  }
+      },
+    
+      {
+        title: "O Pichel",
+        description: "Espaço autogerido em Compostela.",
+        location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
+      },
+    
+      {
+        title: "Santiago de Compostela",
+        description: "",
+        location: { lat:  42.876169616573115 , lon:  -8.54240060014547  }
+      },
+    
+  ];
+
+  espazos.forEach(espazo => {
+    const marker = L.marker([espazo.location.lat, espazo.location.lon]).addTo(map);
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.description}`);
+  });
+</script>
+
 
         </main>
     </div>
