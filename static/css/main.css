@@ -493,11 +493,10 @@ fc-daygrid-day {
 
 /* Axusta o tamaño do mapa */
 #map {
-    height: 1000%; /* Cambia a altura segundo o deseño */
-    width: 70%; /* Ocupa toda a largura dispoñible */
-    border: 0px solid #000000; /* Opcional: engade un borde */
-    border-radius: 10px; /* Esquinas redondeadas */
-  }
+    height: 85vh;
+    width: 70%; /* Ou 100% para ocupar todo o espazo */
+    border-radius: 10px; /* Opcional */
+}
   
 /* Fai que o mapa sexa responsivo */
 @media (max-width: 768px) {
@@ -538,12 +537,12 @@ fc-daygrid-day {
 
   /* Aplica o efecto "darken" usando mix-blend-mode */
 .leaflet-tile-container img {
-    mix-blend-mode: darken; /* ou darken, dependendo do efecto desexado */
+    mix-blend-mode: normal !important; /* ou darken, dependendo do efecto desexado */
   }
   
   /* Opcional: forza a transparencia na capa superposta */
   .leaflet-tile-container {
-    opacity: 0.9; /* Axusta a opacidade segundo o resultado desexado */
+    opacity: 1; /* Axusta a opacidade segundo o resultado desexado */
   }
   
   #filter-bar {

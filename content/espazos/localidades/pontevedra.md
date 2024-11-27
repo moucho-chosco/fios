@@ -1,9 +1,9 @@
 ---
-title: "Lugo"
+title: "Pontevedra"
 localidade: true
 location:
-  lat: 43.007666
-  lon: -7.553000
+  lat: 42.4325
+  lon: -8.645
 zoom: 15
 localidade: true
 ---

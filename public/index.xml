@@ -107,24 +107,38 @@
       <description></description>
     </item>
     <item>
-      <title>A Revolteira</title>
-      <link>http://localhost:1313/espazos/a_revolteira/</link>
+      <title>A Coruña</title>
+      <link>http://localhost:1313/espazos/localidades/a_corunha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/espazos/a_revolteira/</guid>
+      <guid>http://localhost:1313/espazos/localidades/a_corunha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Fenda</title>
+      <link>http://localhost:1313/espazos/centros/a_fenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/centros/a_fenda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Revolteira</title>
+      <link>http://localhost:1313/espazos/centros/a_revolteira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/centros/a_revolteira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS A Pedreira</title>
+      <link>http://localhost:1313/espazos/centros/a_pedreira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/centros/a_pedreira/</guid>
       <description></description>
     </item>
     <item>
       <title>CSOA Escárnio e Maldizer</title>
-      <link>http://localhost:1313/espazos/escarnio/</link>
+      <link>http://localhost:1313/espazos/centros/escarnio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/espazos/escarnio/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Galiza</title>
-      <link>http://localhost:1313/espazos/localidades/galiza/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/espazos/localidades/galiza/</guid>
+      <guid>http://localhost:1313/espazos/centros/escarnio/</guid>
       <description></description>
     </item>
     <item>
@@ -136,9 +150,16 @@
     </item>
     <item>
       <title>O Pichel</title>
-      <link>http://localhost:1313/espazos/gentalha/</link>
+      <link>http://localhost:1313/espazos/centros/gentalha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/espazos/gentalha/</guid>
+      <guid>http://localhost:1313/espazos/centros/gentalha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pontevedra</title>
+      <link>http://localhost:1313/espazos/localidades/pontevedra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/localidades/pontevedra/</guid>
       <description></description>
     </item>
     <item>
@@ -146,6 +167,20 @@
       <link>http://localhost:1313/espazos/localidades/compostela/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/espazos/localidades/compostela/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vigo</title>
+      <link>http://localhost:1313/espazos/localidades/vigo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/localidades/vigo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xebra!</title>
+      <link>http://localhost:1313/espazos/centros/xebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos/centros/xebra/</guid>
       <description></description>
     </item>
   </channel>

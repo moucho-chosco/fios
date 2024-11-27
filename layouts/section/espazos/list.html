@@ -2,15 +2,16 @@
 <h1>Espazos e Centros Sociais</h1>
 
 <!-- Barra de Filtros -->
-<select id="localidade-filter" style="margin-right: 10px;">
-    <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
-    {{ range where .Site.RegularPages ".Params.localidade" true }}
-      <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">{{ .Title }}</option>
-    {{ end }}
+<select id="localidade-filter">
+  <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
+  {{ range where .Site.RegularPages ".Params.localidade" true }}
+    <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">{{ .Title }}</option>
+  {{ end }}
 </select>
 
+
 <!-- Div para o Mapa -->
-<div id="map" style="height: 600px;"></div>
+<div id="map" style="height: 80vh;"></div>
 
 <!-- Estilos e Scripts Necesarios -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -18,12 +19,18 @@
 <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
 <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
 <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
 
   // Inicializar o mapa con MapTiler
-  const map = L.map('map').setView([42.7751, -8.0339], 8.4); // Coordenadas iniciais
+  const map = L.map('map', {
+  maxZoom: 18,
+  minZoom: 8 // Ou outro valor máximo permitido pola túa capa de tiles
+  }).setView([42.7751, -8.0339], 8);
   const mtLayer = L.maptilerLayer({
     apiKey: key,
     style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" // Estilo opcional
@@ -31,7 +38,6 @@
 
   // Cargar os datos das localidades desde o contido
   const localidades = {
-    "galiza": { lat: 42.7751, lon: -8.0339, zoom: 8.4 },
     {{ range where .Site.RegularPages ".Params.localidade" true }}
     "{{ .File.BaseFileName }}": {
       title: "{{ .Title }}",
@@ -48,25 +54,90 @@
     const value = localidadeFilter.value.split(',');
     const [key, lat, lon, zoom] = value;
     if (localidades[key]) {
-      map.setView([parseFloat(lat), parseFloat(lon)], parseFloat(zoom));
-    }
-  });
+    const { lat, lon, zoom } = localidades[key];
+    map.setView([lat, lon], zoom);
+  } else if (key === "galiza") {
+    // Caso especial para Galiza
+    map.setView([42.7751, -8.0339], 8.4);
+  }
+});
 
-  // Cargar os marcadores para os espazos
-  const espazos = [
-    {{ range .Site.RegularPages }}
-      {
-        title: "{{ .Title }}",
-        description: "{{ .Params.description }}",
-        location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
-      },
-    {{ end }}
-  ];
+const espazos = [
+  {{ range where .Site.RegularPages ".Params.centro" true }}
+    {
+      title: "{{ .Title }}",
+      description: "{{ .Params.description }}",
+      location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
+    },
+  {{ end }}
+];
+// Crear iconos para os diferentes niveis de zoom
+const iconWithNumber = L.divIcon({
+  html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+  className: 'custom-marker',
+  iconSize: [30, 30]
+});
 
-  espazos.forEach(espazo => {
-    const marker = L.marker([espazo.location.lat, espazo.location.lon]).addTo(map);
+const simpleIcon = L.divIcon({
+  html: `<div style="background: black; width: 12px; height: 12px; border-radius: 50%;"></div>`,
+  className: 'simple-marker',
+  iconSize: [30, 30]
+});
+
+// Crear un grupo de clusters
+const markers = L.markerClusterGroup({
+  iconCreateFunction: (cluster) => {
+    const count = cluster.getChildCount();
+    return L.divIcon({
+      html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">${count}</div>`,
+      className: 'cluster-icon',
+      iconSize: [30, 30]
+    });
+  },
+  maxClusterRadius: 40, // Agrupamento máis compacto
+  disableClusteringAtZoom: 16 // Mostra iconos individuais a partir deste zoom
+});
+
+// Engadir marcadores ao grupo de clusters
+const leafletMarkers = [];
+espazos.forEach(espazo => {
+  if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
+    // Crear un marcador individual cun círculo negro e "1"
+    const marker = L.marker([espazo.location.lat, espazo.location.lon], {
+      icon: L.divIcon({
+        html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+        className: 'custom-marker',
+        iconSize: [30, 30]
+      })
+    });
+
+    // Engadir un popup co título e descrición
     marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.description}`);
+    leafletMarkers.push(marker);
+
+    // Engadir evento para ampliar ao facer clic
+    marker.on('click', () => {
+      map.setView([espazo.location.lat, espazo.location.lon], 16); // Amplía o zoom ao clicar
+    });
+    
+
+    // Engadir o marcador ao grupo de clusters
+    markers.addLayer(marker);
+  }
+});
+
+// Engadir o grupo de clusters ao mapa
+map.addLayer(markers);
+
+// Evento para cambiar os iconos segundo o zoom
+map.on('zoomend', () => {
+  const zoomLevel = map.getZoom();
+  const iconToUse = zoomLevel >= 13 ? simpleIcon : iconWithNumber;
+
+  leafletMarkers.forEach(marker => {
+    marker.setIcon(iconToUse); // Actualizar o icono segundo o nivel de zoom
   });
+});
 </script>
 
 {{ end }}

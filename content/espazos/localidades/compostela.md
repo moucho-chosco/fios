@@ -1,8 +1,9 @@
 ---
 title: "Santiago de Compostela"
+localidade: true
 location:
-  lat: 42.876169616573114
-  lon: -8.54240060014547
-zoom: 14
+  lat: 42.879
+  lon: -8.544
+zoom: 15
 localidade: true
 ---
