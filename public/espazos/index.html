@@ -10,74 +10,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
 </head>
-<body>
+<body style="visibility: hidden;">
     <div class="container">
         
         <aside class="sidebar-container">
-            <div class="sidebar">
-    <div class="logo">
-        <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+            <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+        </div>
+
+        <nav>
+            <ul>
+                
+                
+                <li class="">
+                    <a href="/" class="menu-link">
+                        <span class="menu-icon">🧵</span>
+                        <span class="menu-text"> Principal</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/biblioteca/" class="menu-link">
+                        <span class="menu-icon">📚</span>
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/organizacions/" class="menu-link">
+                        <span class="menu-icon">✊</span>
+                        <span class="menu-text"> Organizacións</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/espazos/" class="menu-link">
+                        <span class="menu-icon">🏠</span>
+                        <span class="menu-text"> Espazos</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/calendario/" class="menu-link">
+                        <span class="menu-icon">🗓️</span>
+                        <span class="menu-text"> Calendario</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/convocatorias/" class="menu-link">
+                        <span class="menu-icon">📣</span>
+                        <span class="menu-text"> Convocatorias</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/podcast/" class="menu-link">
+                        <span class="menu-icon">🎙️</span>
+                        <span class="menu-text"> Podcast</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/redes/" class="menu-link">
+                        <span class="menu-icon">#️⃣</span>
+                        <span class="menu-text"> Redes</span>
+                    </a>                    
+                </li>
+                
+                
+                <li class="">
+                    <a href="/recursos/" class="menu-link">
+                        <span class="menu-icon">➕</span>
+                        <span class="menu-text"> Recursos</span>
+                    </a>                    
+                </li>
+                
+            </ul>
+            
+            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            
-            <li class="">
-                <a href="/" class="menu-link">
-                    Principal
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/biblioteca/" class="menu-link">
-                    Biblioteca
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/organizacions/" class="menu-link">
-                    Organizacións
-                </a>
-            </li>
-            
-            <li class="active">
-                <a href="/espazos/" class="menu-link">
-                    Espazos
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/calendario/" class="menu-link">
-                    Calendario
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/convocatorias/" class="menu-link">
-                    Convocatorias
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/podcast/" class="menu-link">
-                    Podcast
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/redes/" class="menu-link">
-                    Redes
-                </a>
-            </li>
-            
-            <li class="">
-                <a href="/recursos/" class="menu-link">
-                    Recursos
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
 </div>
 
         </aside>
@@ -85,31 +109,39 @@
         
         <main class="content">
             
-<h1>Espazos e Centros Sociais</h1>
 
 
 <select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
+  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
   
-    <option value="a_corunha,43.3627,-8.4065,14">A Coruña</option>
+    <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
   
-    <option value="lugo,43.007666,-7.553,15">Lugo</option>
+    <option value="lugo,43.007666,-7.553,15">📍 Lugo</option>
   
-    <option value="pontevedra,42.4325,-8.645,15">Pontevedra</option>
+    <option value="pontevedra,42.4325,-8.645,15">📍 Pontevedra</option>
   
-    <option value="compostela,42.879,-8.544,15">Santiago de Compostela</option>
+    <option value="compostela,42.879,-8.544,15">📍 Santiago de Compostela</option>
   
-    <option value="vigo,42.237878,-8.718482,13">Vigo</option>
+    <option value="vigo,42.237878,-8.718482,13">📍 Vigo</option>
   
 </select>
 
 
 
-<div id="map" style="height: 80vh;"></div>
+<div class="contido-espazos" style="display: flex; height: 80vh;">
+  
+  <div id="map" style="flex: 1; height: 100%;"></div>
+  
+  
+  <div class="caixa-mapa">
+    <div id="info-espazo">
+      <h2>Selecciona un Centro Social</h2>
+      <p>A información sobre o centro seleccionado aparecerá aquí.</p>
+    </div>
+  </div>
+</div>
 
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
 <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
 <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
@@ -135,7 +167,7 @@
     
     "a_corunha": {
       title: "A Coruña",
-      lat:  43.3627 ,
+      lat:  43.368 ,
       lon:  -8.4065 ,
       zoom:  14 
     },
@@ -176,8 +208,8 @@
     const value = localidadeFilter.value.split(',');
     const [key, lat, lon, zoom] = value;
     if (localidades[key]) {
-    const { lat, lon, zoom } = localidades[key];
-    map.setView([lat, lon], zoom);
+    const location = localidades[key];
+    map.setView([location.lat, location.lon], location.zoom);      
   } else if (key === "galiza") {
     
     map.setView([42.7751, -8.0339], 8.4);
@@ -188,37 +220,244 @@ const espazos = [
   
     {
       title: "A Fenda",
-      description: "Centro Socialista",
+      subtitle: "Centro Socialista",
+      description: "Espazo baixo a estratexia socialista",
+      logo: "\/espazos\/centros\/a_fenda\/logo.png",
+      imaxe: "\/espazos\/centros\/a_fenda\/foto_cabeceira.jpg",
       location: { lat:  43.364293 , lon:  -8.424243  }
     },
   
     {
+      title: "A Galleira",
+      subtitle: "",
+      description: "Espazo Aberto Nacionalista de Ourense",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.333213602322225 , lon:  -7.862102901884126  }
+    },
+  
+    {
+      title: "A Galleira",
+      subtitle: "",
+      description: "Espazo Aberto Nacionalista de Ourense",
+      logo: "",
+      imaxe: "",
+      location: { lat:  41.90249514926316 , lon:  -8.879510774959156  }
+    },
+  
+    {
       title: "A Revolteira",
+      subtitle: "",
       description: "Espazo Autoxestionado na Coruña.",
+      logo: "\/espazos\/centros\/a_revolteira\/logo.png",
+      imaxe: "\/espazos\/centros\/a_revolteira\/foto_cabeceira.jpg",
       location: { lat:  43.358728281851086 , lon:  -8.40653158003866  }
     },
   
     {
+      title: "AC A Tiradoura",
+      subtitle: "",
+      description: "Asociaçom Cultural",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.26723724298566 , lon:  -8.778881811237376  }
+    },
+  
+    {
+      title: "Acéfala",
+      subtitle: "",
+      description: "Espazo autónomo no barrio de Monte Alto",
+      logo: "\/espazos\/centros\/acefala\/logo.png",
+      imaxe: "\/espazos\/centros\/acefala\/foto_cabeceira.jpg",
+      location: { lat:  43.378008188858196 , lon:  -8.403404699165293  }
+    },
+  
+    {
+      title: "Ateneo Libertario Xosé Tarrío",
+      subtitle: "",
+      description: "Anarquismo de barrio",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.35719194302331 , lon:  -8.409405917527252  }
+    },
+  
+    {
+      title: "Colectivo Terra",
+      subtitle: "",
+      description: "Espazo Social en Pontedeume",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.4048354267391 , lon:  -8.16636505040621  }
+    },
+  
+    {
+      title: "CS A Alvariça",
+      subtitle: "",
+      description: "Centro Social",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.187726410307874 , lon:  -7.8036597061583475  }
+    },
+  
+    {
+      title: "CS A Casa Colorida",
+      subtitle: "",
+      description: "Laboratorio do Común para o desenvolvemento Integral da Cultura Libre en GZ",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.13955443594872 , lon:  -8.807018804609987  }
+    },
+  
+    {
+      title: "CS A Chave das Noces",
+      subtitle: "",
+      description: "Asociación Cultural en Castroverde",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.08622778251519 , lon:  -7.323702482175119  }
+    },
+  
+    {
       title: "CS A Pedreira",
+      subtitle: "",
       description: "Espazo Autoxestionado en Pontevedra.",
+      logo: "",
+      imaxe: "",
       location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
     },
   
     {
+      title: "CS A Revolta do Berbês",
+      subtitle: "",
+      description: "Centro Social em Vigo",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.23936235256048 , lon:  -8.727134803820913  }
+    },
+  
+    {
+      title: "CS Buril",
+      subtitle: "",
+      description: "",
+      logo: "",
+      imaxe: "",
+      location: { lat:  41.90249514926316 , lon:  -8.879510774959156  }
+    },
+  
+    {
+      title: "CS Fuscalho",
+      subtitle: "",
+      description: "Espaço Autogerido na Guarda.",
+      logo: "",
+      imaxe: "",
+      location: { lat:  41.90249514926316 , lon:  -8.879510774959156  }
+    },
+  
+    {
+      title: "CS Gomes Gaioso",
+      subtitle: "",
+      description: "Centro Social na Corunha",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.37577832404885 , lon:  -8.397585406790311  }
+    },
+  
+    {
+      title: "CS Mádia Leva",
+      subtitle: "",
+      description: "Centro Social",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.01571763855524 , lon:  -7.558072579821252  }
+    },
+  
+    {
+      title: "CSA A Hedreira",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.00711635740101 , lon:  -7.550975806308776  }
+    },
+  
+    {
+      title: "CSA O Fervedoiro",
+      subtitle: "",
+      description: "Espazo Social en Ribeira",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.55422712359551 , lon:  -8.991515536690548  }
+    },
+  
+    {
+      title: "CSA Vagalume",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.01089483898635 , lon:  -7.553977578134321  }
+    },
+  
+    {
       title: "CSOA Escárnio e Maldizer",
+      subtitle: "",
       description: "Centro Social Ocupado Autoxestionado",
+      logo: "\/espazos\/centros\/escarnio\/logo.png",
+      imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
       location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
     },
   
     {
+      title: "CSOA Escárnio e Maldizer",
+      subtitle: "",
+      description: "Centro Social Ocupado Autoxestionado",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
+    },
+  
+    {
+      title: "Fundaçom Artábria",
+      subtitle: "",
+      description: "Fundaçom em Ferrol",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.481027057191824 , lon:  -8.223167026927518  }
+    },
+  
+    {
+      title: "LS Faísca",
+      subtitle: "",
+      description: "Local Social em Vigo.",
+      logo: "\/espazos\/centros\/faisca\/logo.png",
+      imaxe: "\/espazos\/centros\/faisca\/foto_cabeceira.jpg",
+      location: { lat:  42.232712 , lon:  -8.699988  }
+    },
+  
+    {
+      title: "O Matadoiro",
+      subtitle: "",
+      description: "",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.09627942798971 , lon:  -8.55746347975958  }
+    },
+  
+    {
       title: "O Pichel",
+      subtitle: "",
       description: "Espaço autogerido em Compostela.",
+      logo: "\/espazos\/centros\/o_pichel\/logo.png",
+      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
       location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
     },
   
     {
       title: "Xebra!",
+      subtitle: "",
       description: "Associaçom cultural",
+      logo: "\/espazos\/centros\/xebra\/logo.png",
+      imaxe: "\/espazos\/centros\/xebra\/foto_cabeceira.png",
       location: { lat:  43.662024 , lon:  -7.358252  }
     },
   
@@ -252,9 +491,9 @@ const markers = L.markerClusterGroup({
 
 
 const leafletMarkers = [];
+
 espazos.forEach(espazo => {
   if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
-    
     const marker = L.marker([espazo.location.lat, espazo.location.lon], {
       icon: L.divIcon({
         html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
@@ -264,19 +503,45 @@ espazos.forEach(espazo => {
     });
 
     
-    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.description}`);
-    leafletMarkers.push(marker);
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    marker.on('click', (e) => {
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
+      \x3C!-- Imaxe de fondo fixa do centro social -->
+      <div class="imaxe-fondo">
+        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+      </div>
 
-    
-    marker.on('click', () => {
-      map.setView([espazo.location.lat, espazo.location.lon], 16); 
+
+      
+      \x3C!-- Contedor do logo e título -->
+      <div class="header-espazo">
+        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+        <h2 class="titulo-espazo">${espazo.title}</h2>
+      </div>
+      
+      <p class="descricion-espazo">${espazo.description}</p>
+`;
+      const selectedEspazo = e.target;
+
+      
+      if (selectedEspazo._icon) {
+        const zoomLevel = map.getZoom();
+        if (zoomLevel < 16) {
+          
+        }
+      }
     });
-    
+
+    leafletMarkers.push(marker);
 
     
     markers.addLayer(marker);
   }
 });
+
+
+map.addLayer(markers);
 
 
 map.addLayer(markers);

@@ -25,11 +25,24 @@ const mtLayer = new L.MaptilerLayer({
   style: "streets-v2"
 }).addTo(map);
 
-// Cambiar o mapa ao seleccionar unha localidade
+/*
 localidadeFilter.addEventListener('change', () => {
-  const selected = localidadeFilter.value;
-  const localidade = localidades[selected] || defaultLocation;
+  const value = localidadeFilter.value.split(',');
+  const [key, lat, lon, zoom] = value;
 
-  // Adaptar coordenadas e zoom
-  map.setView([localidade.lat, localidade.lon], localidade.zoom);
-});
+  // Forzar actualización do mapa
+  if (localidadeFilter.getAttribute("data-current") !== localidadeFilter.value) {
+    if (key === "galiza") {
+      map.setView([42.7751, -8.0339], 8.4);  // Volver á vista de Galiza
+    } else if (localidades[key]) {
+      const location = localidades[key];
+      map.setView([location.lat, location.lon], location.zoom); // Actualizar coordenadas e zoom
+    }
+
+    // Actualizar o valor da localidade actual
+    localidadeFilter.setAttribute("data-current", localidadeFilter.value);
+  }
+});*/
+
+
+

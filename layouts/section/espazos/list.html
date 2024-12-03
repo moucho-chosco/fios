@@ -1,21 +1,29 @@
 {{ define "main" }}
-<h1>Espazos e Centros Sociais</h1>
 
 <!-- Barra de Filtros -->
 <select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">Galiza</option>
+  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
   {{ range where .Site.RegularPages ".Params.localidade" true }}
-    <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">{{ .Title }}</option>
+    <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
   {{ end }}
 </select>
 
 
 <!-- Div para o Mapa -->
-<div id="map" style="height: 80vh;"></div>
+<div class="contido-espazos" style="display: flex; height: 80vh;">
+  <!-- Mapa á esquerda -->
+  <div id="map" style="flex: 1; height: 100%;"></div>
+  
+  <!-- Caixa de Información á dereita -->
+  <div class="caixa-mapa">
+    <div id="info-espazo">
+      <h2>Selecciona un Centro Social</h2>
+      <p>A información sobre o centro seleccionado aparecerá aquí.</p>
+    </div>
+  </div>
+</div>
 
 <!-- Estilos e Scripts Necesarios -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
 <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
 <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
@@ -54,8 +62,8 @@
     const value = localidadeFilter.value.split(',');
     const [key, lat, lon, zoom] = value;
     if (localidades[key]) {
-    const { lat, lon, zoom } = localidades[key];
-    map.setView([lat, lon], zoom);
+    const location = localidades[key];
+    map.setView([location.lat, location.lon], location.zoom);      
   } else if (key === "galiza") {
     // Caso especial para Galiza
     map.setView([42.7751, -8.0339], 8.4);
@@ -66,7 +74,10 @@ const espazos = [
   {{ range where .Site.RegularPages ".Params.centro" true }}
     {
       title: "{{ .Title }}",
+      subtitle: "{{ .Params.subtitle }}",
       description: "{{ .Params.description }}",
+      logo: "{{ .Params.logo }}",
+      imaxe: "{{ .Params.imaxe }}",
       location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
     },
   {{ end }}
@@ -100,9 +111,9 @@ const markers = L.markerClusterGroup({
 
 // Engadir marcadores ao grupo de clusters
 const leafletMarkers = [];
+
 espazos.forEach(espazo => {
   if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
-    // Crear un marcador individual cun círculo negro e "1"
     const marker = L.marker([espazo.location.lat, espazo.location.lon], {
       icon: L.divIcon({
         html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
@@ -111,20 +122,46 @@ espazos.forEach(espazo => {
       })
     });
 
-    // Engadir un popup co título e descrición
-    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.description}`);
-    leafletMarkers.push(marker);
+    // Mostrar información cando se fai clic no marcador
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    marker.on('click', (e) => {
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
+      <!-- Imaxe de fondo fixa do centro social -->
+      <div class="imaxe-fondo">
+        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+      </div>
 
-    // Engadir evento para ampliar ao facer clic
-    marker.on('click', () => {
-      map.setView([espazo.location.lat, espazo.location.lon], 16); // Amplía o zoom ao clicar
+
+      
+      <!-- Contedor do logo e título -->
+      <div class="header-espazo">
+        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+        <h2 class="titulo-espazo">${espazo.title}</h2>
+      </div>
+      
+      <p class="descricion-espazo">${espazo.description}</p>
+`;
+      const selectedEspazo = e.target;
+
+      // Se está no cluster, cambia a vista
+      if (selectedEspazo._icon) {
+        const zoomLevel = map.getZoom();
+        if (zoomLevel < 16) {
+          //map.setView([espazo.location.lat, espazo.location.lon], 16); // Amplía o zoom ao clicar nun cluster
+        }
+      }
     });
-    
+
+    leafletMarkers.push(marker);
 
     // Engadir o marcador ao grupo de clusters
     markers.addLayer(marker);
   }
 });
+
+// Engadir o grupo de clusters ao mapa
+map.addLayer(markers);
 
 // Engadir o grupo de clusters ao mapa
 map.addLayer(markers);

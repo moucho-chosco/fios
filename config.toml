@@ -7,48 +7,70 @@ logo = "favicon.ico"
 
 [menu]
   [[menu.main]]
-  name = "Principal"
+  name = " Principal"
   url = "/"
   weight = 1
-  
+  [menu.main.params]
+  reducido = "🧵"
+
   [[menu.main]]
-  name = "Biblioteca"
+  name = " Biblioteca"
   url = "/biblioteca/"
   weight = 2
+  [menu.main.params]
+  reducido = "📚"
 
   [[menu.main]]
-  name = "Organizacións"
+  name = " Organizacións"
   url = "/organizacions/"
   weight = 3
+  [menu.main.params]
+  reducido = "✊"
 
   [[menu.main]]
-  name = "Espazos"
+  name = " Espazos"
   url = "/espazos/"
   weight = 4
+  [menu.main.params]
+  reducido = "🏠"
 
   [[menu.main]]
-  name = "Calendario"
+  name = " Calendario"
   url = "/calendario/"
   weight = 5
+  [menu.main.params]
+  reducido = "🗓️"
 
   [[menu.main]]
-  name = "Convocatorias"
+  name = " Convocatorias"
   url = "/convocatorias/"
   weight = 6
+  [menu.main.params]
+  reducido = "📣"
 
   [[menu.main]]
-  name = "Podcast"
+  name = " Podcast"
   url = "/podcast/"
   weight = 7
+  [menu.main.params]
+  reducido = "🎙️"
 
   [[menu.main]]
-  name = "Redes"
+  name = " Redes"
   url = "/redes/"
   weight = 8
+  [menu.main.params]
+  reducido = "#️⃣"
 
   [[menu.main]]
-  name = "Recursos"
+  name = " Recursos"
   url = "/recursos/"
   weight = 9
+  [menu.main.params]
+  reducido = "➕"
+
+
+[params]
+  sidebarmode = "reduced"
 
 buildFuture = true

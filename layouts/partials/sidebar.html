@@ -1,16 +1,23 @@
-<div class="sidebar">
-    <div class="logo">
-        <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+<div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+        </div>
+
+        <nav>
+            <ul>
+                {{ range .Site.Menus.main }}
+                <!-- Na barra lateral, mostra só o emoji no modo reducido -->
+                <li class="{{ if eq .URL $.RelPermalink }}active{{ end }}">
+                    <a href="{{.URL}}" class="menu-link">
+                        <span class="menu-icon">{{ .Params.reducido }}</span>
+                        <span class="menu-text">{{ .Name }}</span>
+                    </a>                    
+                </li>
+                {{ end }}
+            </ul>
+            <!-- Botón para alternar entre modos -->
+            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            {{ range .Site.Menus.main }}
-            <li class="{{ if eq .URL $.RelPermalink }}active{{ end }}">
-                <a href="{{ .URL }}" class="menu-link">
-                    {{ .Name }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
 </div>
