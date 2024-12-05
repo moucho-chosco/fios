@@ -1,11 +1,11 @@
 ---
-title: "CSOA Escárnio e Maldizer"
-description: "Centro Social Ocupado Autoxestionado"
-dirixido_por: "Asemblea do Escárnio"
-participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
+title: "CS Mádia Leva"
+description: "Centro Social"
+dirixido_por: "Asociaçom Cultural Mádia Leva"
+participan:
 centro: true
 location:
-  lat: 42.88169616573114
-  lon: -8.54240060014547
+  lat: 43.01571763855524
+  lon: -7.558072579821252
 type: "centro_social"
 ---

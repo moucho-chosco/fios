@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fios | Biblioteca</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body style="visibility: hidden;">
+    <div class="container">
+        
+        <aside class="sidebar-container">
+            <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+        </div>
+
+        <nav>
+            <ul>
+                
+                
+                <li class="">
+                    <a href="/agal/" class="menu-link">
+                        <span class="menu-icon">🧵</span>
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/agal/biblioteca/" class="menu-link">
+                        <span class="menu-icon">📚</span>
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/organiza%C3%A7ons/" class="menu-link">
+                        <span class="menu-icon">✊</span>
+                        <span class="menu-text"> Organizaçons</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/espa%C3%A7os/" class="menu-link">
+                        <span class="menu-icon">🏠</span>
+                        <span class="menu-text"> Espaços</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/calendario/" class="menu-link">
+                        <span class="menu-icon">🗓️</span>
+                        <span class="menu-text"> Calendário</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/convocatorias/" class="menu-link">
+                        <span class="menu-icon">📣</span>
+                        <span class="menu-text"> Convocatórias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/podcast/" class="menu-link">
+                        <span class="menu-icon">🎙️</span>
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/redes/" class="menu-link">
+                        <span class="menu-icon">#️⃣</span>
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/recursos/" class="menu-link">
+                        <span class="menu-icon">➕</span>
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                
+                    
+                    
+                        <a href="/rag/biblioteca/">Normativa AGAL ⇄</a>
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+        </nav>
+    </div>
+</div>
+
+        </aside>
+        
+        
+        <main class="content">
+            
+<script src="/scripts/biblioteca.js"></script>
+<div class="biblioteca-container">
+    <p></p>
+    
+    <div class="obra-list">
+        
+        
+        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Silvia Federici&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 1.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;feminismo&#34;,&#34;marxismo&#34;,&#34;USA&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;a&#34;,&#34;numero&#34;:null,&#34;portada&#34;:&#34;/images/federici_bruxa.jpg&#34;,&#34;serie&#34;:null,&#34;titulo&#34;:&#34;Calibám e a bruja&#34;})">
+            <div class="obra-portada">
+                
+                <img src="/images/federici_bruxa.jpg" alt="Portada de ">
+                
+            </div>
+            <div class="obra-texto">
+                <h2>Calibám e a bruja</h2>
+                <p>: #</p>
+                <p>Silvia Federici</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="obra-modal" class="modal" onclick="pecharModal(event)">
+    <div class="modal-content">
+        <span class="close-button" onclick="pecharModal(event)">&times;</span>
+        <div class="modal-body">
+            
+            <div class="modal-text">
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-autore"></p>
+                <p id="modal-serie"></p>
+                <p id="modal-descricion"></p>
+                <a id="modal-link" href="#" target="_blank" class="button">PDF (castelán)</a>
+            </div>
+            
+            <aside class="modal-image">
+                <img id="modal-portada" src="" alt="Portada ampliada" />
+            </aside>
+        </div>
+    </div>
+</div>
+
+
+        </main>
+    </div>
+</body>
+</html>

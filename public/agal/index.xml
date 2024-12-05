@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fíos | Principal on fios</title>
+    <link>http://localhost:1313/agal/</link>
+    <description>Recent content in fíos | Principal on fios</description>
+    <generator>Hugo</generator>
+    <language>agal</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/agal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/federici_caliban-e-a-bruxa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/federici_caliban-e-a-bruxa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Corunha</title>
+      <link>http://localhost:1313/agal/espazos/localidades/a_corunha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/localidades/a_corunha/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Revolteira</title>
+      <link>http://localhost:1313/agal/espazos/centros/a_revolteira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/a_revolteira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CS A Pedreira</title>
+      <link>http://localhost:1313/agal/espazos/centros/a_pedreira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/a_pedreira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CSOA Escárnio e Maldizer</title>
+      <link>http://localhost:1313/agal/espazos/centros/escarnio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/escarnio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Santiago de Compostela</title>
+      <link>http://localhost:1313/agal/espazos/localidades/compostela/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/localidades/compostela/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

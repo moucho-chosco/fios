@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fios | Espaços</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body style="visibility: hidden;">
+    <div class="container">
+        
+        <aside class="sidebar-container">
+            <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+        </div>
+
+        <nav>
+            <ul>
+                
+                
+                <li class="">
+                    <a href="/agal/" class="menu-link">
+                        <span class="menu-icon">🧵</span>
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/biblioteca/" class="menu-link">
+                        <span class="menu-icon">📚</span>
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/organiza%C3%A7ons/" class="menu-link">
+                        <span class="menu-icon">✊</span>
+                        <span class="menu-text"> Organizaçons</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/agal/espa%C3%A7os/" class="menu-link">
+                        <span class="menu-icon">🏠</span>
+                        <span class="menu-text"> Espaços</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/calendario/" class="menu-link">
+                        <span class="menu-icon">🗓️</span>
+                        <span class="menu-text"> Calendário</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/convocatorias/" class="menu-link">
+                        <span class="menu-icon">📣</span>
+                        <span class="menu-text"> Convocatórias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/podcast/" class="menu-link">
+                        <span class="menu-icon">🎙️</span>
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/redes/" class="menu-link">
+                        <span class="menu-icon">#️⃣</span>
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/recursos/" class="menu-link">
+                        <span class="menu-icon">➕</span>
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                
+                    
+                    
+                        <a href="/rag/espazos/">Normativa AGAL ⇄</a>
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+        </nav>
+    </div>
+</div>
+
+        </aside>
+        
+        
+        <main class="content">
+            
+
+
+<select id="localidade-filter">
+  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
+  
+    <option value="a_corunha.agal,43.368,-8.4065,14">📍 A Corunha</option>
+  
+    <option value="compostela.agal,42.879,-8.544,15">📍 Santiago de Compostela</option>
+  
+</select>
+
+
+
+<div class="contido-espazos" style="display: flex; height: 80vh;">
+  
+  <div id="map" style="flex: 1; height: 100%;"></div>
+  
+  
+  <div class="caixa-mapa">
+    <div id="info-espazo">
+      <h2>Seleciona um Centro Social</h2>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script>
+  const key = 'dc5wAmsD5MUwi9LdDQ1I';
+
+  
+  const map = L.map('map', {
+  maxZoom: 18,
+  minZoom: 8 
+  }).setView([42.7751, -8.0339], 8);
+  const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" 
+  }).addTo(map);
+
+  
+  const localidades = {
+    
+    "a_corunha.agal": {
+      title: "A Corunha",
+      lat:  43.368 ,
+      lon:  -8.4065 ,
+      zoom:  14 
+    },
+    
+    "compostela.agal": {
+      title: "Santiago de Compostela",
+      lat:  42.879 ,
+      lon:  -8.544 ,
+      zoom:  15 
+    },
+    
+  };
+
+  
+  const localidadeFilter = document.getElementById('localidade-filter');
+  localidadeFilter.addEventListener('change', () => {
+    const value = localidadeFilter.value.split(',');
+    const [key, lat, lon, zoom] = value;
+    if (localidades[key]) {
+    const location = localidades[key];
+    map.setView([location.lat, location.lon], location.zoom);      
+  } else if (key === "galiza") {
+    
+    map.setView([42.7751, -8.0339], 8.4);
+  }
+});
+
+const espazos = [
+  
+    {
+      title: "A Revolteira",
+      subtitle: "",
+      description: "Espaço Autogerido na Corunha.",
+      logo: "\/espazos\/centros\/a_revolteira\/logo.png",
+      imaxe: "\/espazos\/centros\/a_revolteira\/foto_cabeceira.jpg",
+      location: { lat:  43.358728281851086 , lon:  -8.40653158003866  }
+    },
+  
+    {
+      title: "CS A Pedreira",
+      subtitle: "",
+      description: "Espazo Autoxestionado en Pontevedra.",
+      logo: "",
+      imaxe: "",
+      location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
+    },
+  
+    {
+      title: "CSOA Escárnio e Maldizer",
+      subtitle: "",
+      description: "Centro Social Ocupado Autoxestionado",
+      logo: "\/espazos\/centros\/escarnio\/logo.png",
+      imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
+      location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
+    },
+  
+];
+
+const iconWithNumber = L.divIcon({
+  html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+  className: 'custom-marker',
+  iconSize: [30, 30]
+});
+
+const simpleIcon = L.divIcon({
+  html: `<div style="background: black; width: 12px; height: 12px; border-radius: 50%;"></div>`,
+  className: 'simple-marker',
+  iconSize: [30, 30]
+});
+
+
+const markers = L.markerClusterGroup({
+  iconCreateFunction: (cluster) => {
+    const count = cluster.getChildCount();
+    return L.divIcon({
+      html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">${count}</div>`,
+      className: 'cluster-icon',
+      iconSize: [30, 30]
+    });
+  },
+  maxClusterRadius: 40, 
+  disableClusteringAtZoom: 16 
+});
+
+
+const leafletMarkers = [];
+
+espazos.forEach(espazo => {
+  if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
+    const marker = L.marker([espazo.location.lat, espazo.location.lon], {
+      icon: L.divIcon({
+        html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+        className: 'custom-marker',
+        iconSize: [30, 30]
+      })
+    });
+
+    
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    marker.on('click', (e) => {
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
+      \x3C!-- Imaxe de fondo fixa do centro social -->
+      <div class="imaxe-fondo">
+        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+      </div>
+
+
+      
+      \x3C!-- Contedor do logo e título -->
+      <div class="header-espazo">
+        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+        <h2 class="titulo-espazo">${espazo.title}</h2>
+      </div>
+      
+      <p class="descricion-espazo">${espazo.description}</p>
+`;
+      const selectedEspazo = e.target;
+    });
+
+    leafletMarkers.push(marker);
+
+    
+    markers.addLayer(marker);
+  }
+});
+
+
+map.addLayer(markers);
+
+
+map.addLayer(markers);
+
+
+map.on('zoomend', () => {
+  const zoomLevel = map.getZoom();
+  const iconToUse = zoomLevel >= 13 ? simpleIcon : iconWithNumber;
+
+  leafletMarkers.forEach(marker => {
+    marker.setIcon(iconToUse); 
+  });
+});
+</script>
+
+
+        </main>
+    </div>
+</body>
+</html>

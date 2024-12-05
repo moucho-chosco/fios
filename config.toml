@@ -1,76 +1,168 @@
 baseURL = 'https://fios.netlify.app'
-languageCode = 'gl'
 title = 'fios'
 buildFuture = true
 logo = "favicon.ico"
 
+defaultContentLanguage = "rag"
+defaultContentLanguageInSubdir = true
 
-[menu]
-  [[menu.main]]
-  name = " Principal"
-  url = "/"
+[languages]
+[languages.rag]
+  languageName = "RAG"
   weight = 1
-  [menu.main.params]
+[languages.rag.menu]
+  [[languages.rag.menu.main]]
+  name = " Principal"
+  url = "/rag/"
+  weight = 1
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/"
   reducido = "🧵"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Biblioteca"
-  url = "/biblioteca/"
+  url = "/rag/biblioteca/"
   weight = 2
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/biblioteca/"
   reducido = "📚"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Organizacións"
-  url = "/organizacions/"
+  url = "/rag/organizacions/"
   weight = 3
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/organizaçons/"
   reducido = "✊"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Espazos"
-  url = "/espazos/"
+  url = "/rag/espazos/"
   weight = 4
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/espaços/"
   reducido = "🏠"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Calendario"
-  url = "/calendario/"
+  url = "/rag/calendario/"
   weight = 5
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/calendario/"
   reducido = "🗓️"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Convocatorias"
-  url = "/convocatorias/"
+  url = "/rag/convocatorias/"
   weight = 6
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/convocatorias/"
   reducido = "📣"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Podcast"
-  url = "/podcast/"
+  url = "/rag/podcast/"
   weight = 7
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/podcast/"
   reducido = "🎙️"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Redes"
-  url = "/redes/"
+  url = "/rag/redes/"
   weight = 8
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/redes/"
   reducido = "#️⃣"
 
-  [[menu.main]]
+  [[languages.rag.menu.main]]
   name = " Recursos"
-  url = "/recursos/"
+  url = "/rag/recursos/"
   weight = 9
-  [menu.main.params]
+  [languages.rag.menu.main.params]
+  translatedURL = "/agal/recursos/"
   reducido = "➕"
+
+
+
+
+[languages.agal]
+  languageName = "AGAL"
+  weight = 2
+[languages.agal.menu]
+  [[languages.agal.menu.main]]
+  name = " Principal"
+  url = "/agal/"
+  weight = 1
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/"
+  reducido = "🧵"
+
+  [[languages.agal.menu.main]]
+  name = " Biblioteca"
+  url = "/agal/biblioteca/"
+  weight = 2
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/biblioteca/"
+  reducido = "📚"
+
+  [[languages.agal.menu.main]]
+  name = " Organizaçons"
+  url = "/agal/organizaçons/"
+  weight = 3
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/organizacions/"
+  reducido = "✊"
+
+  [[languages.agal.menu.main]]
+  name = " Espaços"
+  url = "/agal/espaços/"
+  weight = 4
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/espazos/"
+  reducido = "🏠"
+
+  [[languages.agal.menu.main]]
+  name = " Calendário"
+  url = "/agal/calendario/"
+  weight = 5
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/calendario/"
+  reducido = "🗓️"
+
+  [[languages.agal.menu.main]]
+  name = " Convocatórias"
+  url = "/agal/convocatorias/"
+  weight = 6
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/convocatorias/"
+  reducido = "📣"
+
+  [[languages.agal.menu.main]]
+  name = " Podcast"
+  url = "/agal/podcast/"
+  weight = 7
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/podcast/"
+  reducido = "🎙️"
+
+  [[languages.agal.menu.main]]
+  name = " Redes"
+  url = "/agal/redes/"
+  weight = 8
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/redes/"
+  reducido = "#️⃣"
+
+  [[languages.agal.menu.main]]
+  name = " Recursos"
+  url = "/agal/recursos/"
+  weight = 9
+  [languages.agal.menu.main.params]
+  translatedURL = "/rag/recursos/"
+  reducido = "➕"
+
 
 
 [params]
   sidebarmode = "reduced"
-
-buildFuture = true

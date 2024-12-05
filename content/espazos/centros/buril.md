@@ -1,10 +1,10 @@
 ---
-title: "CS Buril"
-description: ""
+title: "ACDE Buril"
+description: "Asociación Cultural, Deportiva e Ecolóxica"
 dirixido_por: ""
 centro: true
 location:
-  lat: 41.90249514926316
-  lon: -8.879510774959156
+  lat: 42.78196711219094
+  lon: -7.416791429296332
 type: "centro_social"
 ---

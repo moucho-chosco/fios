@@ -18,7 +18,6 @@
   <div class="caixa-mapa">
     <div id="info-espazo">
       <h2>Selecciona un Centro Social</h2>
-      <p>A información sobre o centro seleccionado aparecerá aquí.</p>
     </div>
   </div>
 </div>
@@ -143,14 +142,6 @@ espazos.forEach(espazo => {
       <p class="descricion-espazo">${espazo.description}</p>
 `;
       const selectedEspazo = e.target;
-
-      // Se está no cluster, cambia a vista
-      if (selectedEspazo._icon) {
-        const zoomLevel = map.getZoom();
-        if (zoomLevel < 16) {
-          //map.setView([espazo.location.lat, espazo.location.lon], 16); // Amplía o zoom ao clicar nun cluster
-        }
-      }
     });
 
     leafletMarkers.push(marker);

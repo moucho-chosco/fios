@@ -1,0 +1,171 @@
+{{ define "main" }}
+
+<!-- Barra de Filtros -->
+<select id="localidade-filter">
+  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
+  {{ range where .Site.RegularPages ".Params.localidade" true }}
+    <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+  {{ end }}
+</select>
+
+
+<!-- Div para o Mapa -->
+<div class="contido-espazos" style="display: flex; height: 80vh;">
+  <!-- Mapa á esquerda -->
+  <div id="map" style="flex: 1; height: 100%;"></div>
+  
+  <!-- Caixa de Información á dereita -->
+  <div class="caixa-mapa">
+    <div id="info-espazo">
+      <h2>Seleciona um Centro Social</h2>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos e Scripts Necesarios -->
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script>
+  const key = 'dc5wAmsD5MUwi9LdDQ1I';
+
+  // Inicializar o mapa con MapTiler
+  const map = L.map('map', {
+  maxZoom: 18,
+  minZoom: 8 // Ou outro valor máximo permitido pola túa capa de tiles
+  }).setView([42.7751, -8.0339], 8);
+  const mtLayer = L.maptilerLayer({
+    apiKey: key,
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" // Estilo opcional
+  }).addTo(map);
+
+  // Cargar os datos das localidades desde o contido
+  const localidades = {
+    {{ range where .Site.RegularPages ".Params.localidade" true }}
+    "{{ .File.BaseFileName }}": {
+      title: "{{ .Title }}",
+      lat: {{ .Params.location.lat }},
+      lon: {{ .Params.location.lon }},
+      zoom: {{ .Params.zoom }}
+    },
+    {{ end }}
+  };
+
+  // Cambiar o mapa ao seleccionar unha localidade
+  const localidadeFilter = document.getElementById('localidade-filter');
+  localidadeFilter.addEventListener('change', () => {
+    const value = localidadeFilter.value.split(',');
+    const [key, lat, lon, zoom] = value;
+    if (localidades[key]) {
+    const location = localidades[key];
+    map.setView([location.lat, location.lon], location.zoom);      
+  } else if (key === "galiza") {
+    // Caso especial para Galiza
+    map.setView([42.7751, -8.0339], 8.4);
+  }
+});
+
+const espazos = [
+  {{ range where .Site.RegularPages ".Params.centro" true }}
+    {
+      title: "{{ .Title }}",
+      subtitle: "{{ .Params.subtitle }}",
+      description: "{{ .Params.description }}",
+      logo: "{{ .Params.logo }}",
+      imaxe: "{{ .Params.imaxe }}",
+      location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
+    },
+  {{ end }}
+];
+// Crear iconos para os diferentes niveis de zoom
+const iconWithNumber = L.divIcon({
+  html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+  className: 'custom-marker',
+  iconSize: [30, 30]
+});
+
+const simpleIcon = L.divIcon({
+  html: `<div style="background: black; width: 12px; height: 12px; border-radius: 50%;"></div>`,
+  className: 'simple-marker',
+  iconSize: [30, 30]
+});
+
+// Crear un grupo de clusters
+const markers = L.markerClusterGroup({
+  iconCreateFunction: (cluster) => {
+    const count = cluster.getChildCount();
+    return L.divIcon({
+      html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">${count}</div>`,
+      className: 'cluster-icon',
+      iconSize: [30, 30]
+    });
+  },
+  maxClusterRadius: 40, // Agrupamento máis compacto
+  disableClusteringAtZoom: 16 // Mostra iconos individuais a partir deste zoom
+});
+
+// Engadir marcadores ao grupo de clusters
+const leafletMarkers = [];
+
+espazos.forEach(espazo => {
+  if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
+    const marker = L.marker([espazo.location.lat, espazo.location.lon], {
+      icon: L.divIcon({
+        html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+        className: 'custom-marker',
+        iconSize: [30, 30]
+      })
+    });
+
+    // Mostrar información cando se fai clic no marcador
+    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    marker.on('click', (e) => {
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
+      <!-- Imaxe de fondo fixa do centro social -->
+      <div class="imaxe-fondo">
+        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+      </div>
+
+
+      
+      <!-- Contedor do logo e título -->
+      <div class="header-espazo">
+        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+        <h2 class="titulo-espazo">${espazo.title}</h2>
+      </div>
+      
+      <p class="descricion-espazo">${espazo.description}</p>
+`;
+      const selectedEspazo = e.target;
+    });
+
+    leafletMarkers.push(marker);
+
+    // Engadir o marcador ao grupo de clusters
+    markers.addLayer(marker);
+  }
+});
+
+// Engadir o grupo de clusters ao mapa
+map.addLayer(markers);
+
+// Engadir o grupo de clusters ao mapa
+map.addLayer(markers);
+
+// Evento para cambiar os iconos segundo o zoom
+map.on('zoomend', () => {
+  const zoomLevel = map.getZoom();
+  const iconToUse = zoomLevel >= 13 ? simpleIcon : iconWithNumber;
+
+  leafletMarkers.forEach(marker => {
+    marker.setIcon(iconToUse); // Actualizar o icono segundo o nivel de zoom
+  });
+});
+</script>
+
+{{ end }}

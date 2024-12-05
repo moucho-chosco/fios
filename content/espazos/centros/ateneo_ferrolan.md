@@ -1,13 +1,9 @@
 ---
-title: "A Galleira"
-description: "Espazo Aberto Nacionalista de Ourense"
-dirixido_por: ""
+title: "Ateneo Ferrolán"
+description: "Un lugar de encontro para a cultura"
 centro: true
 location:
-  lat: 42.333213602322225
-  lon: -7.862102901884126
+  lat: 43.482150289377444
+  lon: -8.23709266178814
 type: "centro_social"
-email: asoc.cultural.agalleira@gmail.com
-web:   agalleira.wordpress.com
-ig:    "@a_galleira"
 ---
