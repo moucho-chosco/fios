@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fios | Espaços</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,10 +15,11 @@
     <script src="/scripts/normativa.js"></script>
 </head>
 <body style="visibility: hidden;">
-    <div class="container">
-        
-        <aside class="sidebar-container">
-            <div class="sidebar-container">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
             <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
@@ -142,11 +144,11 @@
     </div>
 </div>
 
-        </aside>
-        
-        
-        <main class="content">
+            </aside>
             
+            
+            <main class="content">
+                
 
 
 <select id="localidade-filter">
@@ -160,16 +162,20 @@
 
 
 
-<div class="contido-espazos" style="display: flex; height: 80vh;">
+<div class="window-container">
+
   
-  <div id="map" style="flex: 1; height: 100%;"></div>
+  <div class="window">
+    <div id="map" style="flex: 1; height: 100%;"></div>
+  </div>
   
   
-  <div class="caixa-mapa">
+  <div class="window">
     <div id="info-espazo">
       <h2>Seleciona um Centro Social</h2>
     </div>
   </div>
+  
 </div>
 
 
@@ -227,6 +233,15 @@
 });
 
 const espazos = [
+  
+    {
+      title: "A Gentalha do Pichel",
+      subtitle: "",
+      description: "Centro Social em Compostela.",
+      logo: "\/espazos\/centros\/o_pichel\/logo.png",
+      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
+      location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
+    },
   
     {
       title: "A Revolteira",
@@ -344,7 +359,32 @@ map.on('zoomend', () => {
 </script>
 
 
-        </main>
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
 </body>
 </html>

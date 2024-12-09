@@ -21,6 +21,27 @@ a:hover {
     color: #000;
 }
 
+.window-container {
+    display: flex; height: 80vh;
+    margin-top: 3vh;
+    gap: 2.5%; /* Espazo entre as ventás */
+}
+
+.window {
+    flex: 1;
+    background-size: cover;  /* A foto ocupará todo o espazo do contedor */
+    background-position: center;  /* Centra a imaxe de fondo */
+    height: 80vh !important;  /* Altura do viewport, cubre toda a pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block; 
+    width: 27%;            /* Ancho de la caja */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Opcional */
+    overflow-y: auto;
+  }
+
 /* -------------------------
    ORTOGRAFIA
 ------------------------- */
@@ -38,9 +59,15 @@ a:hover {
 /* -------------------------
    LAYOUT CONTAINER
 ------------------------- */
-.container {
+.container-fila {
     display: flex;
     min-height: 100vh;
+}
+
+.container-columna {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* -------------------------
@@ -265,7 +292,7 @@ nav a:hover {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1e88e5;
+    background-color: #696969;
     color: #fff;
     border-radius: 4px;
     text-decoration: none;
@@ -273,39 +300,8 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: #1565c0;
+    background-color: #585858;
 }
-
-/* -------------------------
-   RESPONSIVE DESIGN
-------------------------- */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        box-shadow: none;
-        flex-direction: row;
-        overflow-x: auto;
-        border-radius: 0;
-    }
-
-    .sidebar nav ul {
-        display: flex;
-    }
-
-    .sidebar nav li {
-        margin: 0 15px 0 0;
-    }
-
-    .content {
-        padding: 20px;
-        border-radius: 0;
-    }
-}
-
 
 /* -------------------------
    BIBLIOTECA
@@ -450,7 +446,7 @@ nav a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #1565c0;
+    background-color: #818181;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -464,177 +460,27 @@ nav a:hover {
 
 
 
-/* -------------------------
-   CALENDARIO
-------------------------- */
-
-
-#calendar {
-    max-width: 100%;
-    max-height: 88vh !important;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fdfdfd;
-    border: 1px solid #e4e4e4;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Personaliza os eventos */
-.fc-event {
-    background-color: #d1d1d1 !important; /* Fondo azul */
-    color: #ffffff !important; /* Texto branco */
-    border: none !important; /* Sen bordes */
-    font-size: 14px;
-}
-
-/* Evento ao pasar o rato */
-.fc-event:hover {
-    background-color: #a1a1a1 !important; /* Cor máis escura */
-}
-
-/* Día actual */
-.fc-day-today {
-    background-color: #f0f8ff !important; /* Fondo lixeiramente azul */
-}
-.fc-button,
-.fc-today-button,
-.fc-prev-button,
-.fc-next-button {
-    background-color: #000000 !important;
-    color: #fff !important;
-    border-radius: 5px !important;
-    margin: 2px !important;
-    padding: 5px 10px !important;
-    font-weight: bold !important;
-}
-
-
-/* Botón "prev" (anterior) */
-.fc-toolbar-chunk .fc-prev-button {
-    background-color: #0f0f0f !important; /* Laranxa */
-    color: #ffffff !important;
-    border: none !important;
-}
-
-/* Botón "next" (seguinte) */
-.fc-toolbar-chunk .fc-next-button {
-    background-color: #0f0f0f !important; /* Verde */
-    color: #ffffff !important;
-    border: none !important;
-}
-
-.fc-button:hover,
-.fc-today-button:hover,
-.fc-prev-button:hover,
-.fc-next-button:hover {
-    background-color: #505050 !important;
-}
-
-.fc-toolbar-title {
-    color: #000000 !important; /* Cor branca */
-    font-size: 20px; /* Tamaño do texto */
-    font-weight: bold; /* Texto en negrita */
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 1000; /* Light */
-    text-align: center; /* Centrar o texto */
-}
-fc-daygrid-day {
-    min-height: auto; /* Deixa que a altura dos días se adapte */
-}
-
-.fc-daygrid-day-frame {
-    height: 100%; /* O contido de cada día ocupa toda a altura dispoñible */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Os eventos e números de día quedan arriba */
-    align-items: center;
-}
-
-/* Cambiar a cor do botón activo */
-.fc-button.fc-button-active {
-    background-color: #4b4b4b!important;
-    color: #fff!important;
-    border-color: #4b4b4b!important;
-}
-
-/* Cambiar a cor de fondo do día de hoxe */
-.fc-day-today {
-    background-color: #ffffff !important; /* Azul claro */
-    border: 2px solid #000000 !important; /* Azul escuro */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
-}
-
-/* Cambiar a cor de fondo do día de hoxe */
-.fc-timegrid-col.fc-day-today {
-    background-color: #f5f5f5 !important; /* Azul claro */
-    border: 0px solid #ffffff !important; /* Azul escuro */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
-}
-
-.fc-day-today .fc-daygrid-day-number {
-    color: #000000 !important; /* Cambiar a cor do número */
-    font-weight: bold !important; /* Texto en negrita */
-}
-/* Cambiar a cor dos números dos días */
-.fc-daygrid-day-number {
-    color: #6e6e6e; /* Cor dos números */
-    font-weight: normal; /* Negrita opcional */
-}
-
-/* Cambiar a cor dos nomes dos días na cabecera */
-.fc-col-header-cell {
-    color: #4caf50 !important; /* Cor dos nomes dos días */
-    font-size: 1.2em !important; /* Tamaño opcional */
-    font-weight: bold !important; /* Texto en negrita */
-}
-
-
-
 /* ================================================================= 
    ESPAZOS
    ================================================================= */
 
 /* Axusta o tamaño do mapa */
 #map {
-    display: inline-block; 
-    height: 80vh;
-    width: 70%; /* Ou 100% para ocupar todo o espazo */
-    border-radius: 10px; /* Opcional */
+    height: 100%;
+    width: 100%; /* Ou 100% para ocupar todo o espazo */
 }
 
-.contido-espazos {
-    margin-top: 3vh;
-}
-
-
-  /* Espazo principal: Foto de fondo e contido centrado */
-    .caixa-mapa {
-    flex: 1;
-    background-size: cover;  /* A foto ocupará todo o espazo do contedor */
-    background-position: center;  /* Centra a imaxe de fondo */
-    height: 80vh !important;  /* Altura do viewport, cubre toda a pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: inline-block; 
-    margin-left: 2%;
-    width: 27%;            /* Ancho de la caja */
-    height: 80vh;           /* Alto de la caja */
-    background-color: white; /* Fondo blanco */
-    border-radius: 10px; /* Opcional */
-    overflow-y: auto;
-  }
   
   /* Caixa branca que contén o nome e a descrición */
   #info-espazo {
+    position: relative; 
     padding: 0px;
     margin: 0px;
     max-width: 100%;
     text-align: left;
   }
 
-.imaxe-fondo {
+   .imaxe-fondo {
     width: 100%;                /* A imaxe ocupa todo o ancho da pantalla */
     top: 0;                     /* Está na parte superior da pantalla */
     left: 0;                    /* Está á esquerda da pantalla */
@@ -645,10 +491,13 @@ fc-daygrid-day {
   
   /* Imaxe que ocupa todo o espazo do contedor */
   .fondo-espazo {
+    position: sticky;
+    top: 0;
     width: 100%;                /* A imaxe ocupa todo o ancho */
     height: 100%;               /* A imaxe ocupa toda a altura do contedor */
     object-fit: cover;          /* Asegúrate de que a imaxe cubra o espazo sen deformarse */
     object-position: center;    /* Centra a imaxe dentro do contedor */
+    z-index: 0; /* Facer que a imaxe quede detrás do contido */
   }
   
   /* Contedor que agrupa o logo e o título */
@@ -675,8 +524,8 @@ fc-daygrid-day {
   /* Estilos do nome (título) */
   #info-espazo h2 {
     font-size: calc(1.5rem + 0.5vh);         /* Tamaño do texto */
-    position: absolute;
-    margin-left: 4vh; 
+    position:static;
+    margin-left: -8vh; 
     margin-top: 60px;
     font-weight: bold;       /* Negrita */
     color: #000000;             /* Cor do texto */
@@ -697,32 +546,6 @@ fc-daygrid-day {
   }
 
   
-  /* Respoñibilidade para dispositivos móbiles */
-  @media (max-width: 768px) {
-    .espazo-container {
-      height: auto;  /* Permite que o contedor se axuste ao contido en pantallas pequenas */
-    }
-  
-    .info-box {
-      max-width: 90%;
-      padding: 15px;
-    }
-  
-    .info-box h1 {
-      font-size: 2rem;
-    }
-  
-    .espazo-logo {
-      width: 120px;
-    }
-  }
-  
-/* Fai que o mapa sexa responsivo */
-@media (max-width: 768px) {
-    #map {
-      height: 300px;
-    }
-}
 
 /* Modificar directamente os botóns de zoom */
 .leaflet-control-zoom a {
@@ -795,3 +618,129 @@ fc-daygrid-day {
 
   
   
+
+/* -------------------------
+   CALENDARIO
+------------------------- */
+
+
+#calendar {
+    max-width: 100%;
+    max-height: 88vh !important;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+}
+
+/* Personaliza os eventos */
+.fc-event {
+    background-color: #d1d1d1 !important; /* Fondo azul */
+    color: #ffffff !important; /* Texto branco */
+    border: none !important; /* Sen bordes */
+    font-size: 14px;
+}
+
+/* Evento ao pasar o rato */
+.fc-event:hover {
+    background-color: #a1a1a1 !important; /* Cor máis escura */
+}
+
+/* Día actual */
+.fc-day-today {
+    background-color: #f0f8ff !important; /* Fondo lixeiramente azul */
+}
+.fc-button,
+.fc-today-button,
+.fc-prev-button,
+.fc-next-button {
+    background-color: #000000 !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    padding: 5px 10px !important;
+    font-weight: bold !important;
+}
+
+
+/* Botón "prev" (anterior) */
+.fc-toolbar-chunk .fc-prev-button {
+    background-color: #0f0f0f !important; /* Laranxa */
+    color: #ffffff !important;
+    border: none !important;
+}
+
+/* Botón "next" (seguinte) */
+.fc-toolbar-chunk .fc-next-button {
+    background-color: #0f0f0f !important; /* Verde */
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.fc-button:hover,
+.fc-today-button:hover,
+.fc-prev-button:hover,
+.fc-next-button:hover {
+    background-color: #505050 !important;
+}
+
+.fc-toolbar-title {
+    color: #000000 !important; /* Cor branca */
+    font-size: 20px; /* Tamaño do texto */
+    font-weight: bold; /* Texto en negrita */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000; /* Light */
+    text-align: center; /* Centrar o texto */
+}
+
+fc-daygrid-day {
+    min-height: auto; /* Deixa que a altura dos días se adapte */
+}
+
+.fc-daygrid-day-frame {
+    height: 100%; /* O contido de cada día ocupa toda a altura dispoñible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Os eventos e números de día quedan arriba */
+    align-items: center;
+}
+
+/* Cambiar a cor do botón activo */
+.fc-button.fc-button-active {
+    background-color: #4b4b4b!important;
+    color: #fff!important;
+    border-color: #4b4b4b!important;
+}
+
+/* Cambiar a cor de fondo do día de hoxe */
+.fc-day-today {
+    background-color: #ffffff !important; /* Azul claro */
+    border: 2px solid #000000 !important; /* Azul escuro */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
+}
+
+/* Cambiar a cor de fondo do día de hoxe */
+.fc-timegrid-col.fc-day-today {
+    background-color: #f5f5f5 !important; /* Azul claro */
+    border: 0px solid #ffffff !important; /* Azul escuro */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
+}
+
+.fc-day-today .fc-daygrid-day-number {
+    color: #000000 !important; /* Cambiar a cor do número */
+    font-weight: bold !important; /* Texto en negrita */
+}
+/* Cambiar a cor dos números dos días */
+.fc-daygrid-day-number {
+    color: #6e6e6e; /* Cor dos números */
+    font-weight: normal; /* Negrita opcional */
+}
+
+/* Cambiar a cor dos nomes dos días na cabecera */
+.fc-col-header-cell {
+    color: #4caf50 !important; /* Cor dos nomes dos días */
+    font-size: 1.2em !important; /* Tamaño opcional */
+    font-weight: bold !important; /* Texto en negrita */
+}
+

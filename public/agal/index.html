@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fíos | Principal</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,10 +16,11 @@
     <script src="/scripts/normativa.js"></script>
 </head>
 <body style="visibility: hidden;">
-    <div class="container">
-        
-        <aside class="sidebar-container">
-            <div class="sidebar-container">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
             <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
@@ -143,16 +145,41 @@
     </div>
 </div>
 
-        </aside>
-        
-        
-        <main class="content">
+            </aside>
             
+            
+            <main class="content">
+                
   <p>Bem-vide! Aqui tes uma introduçom ao sítio. Navega polas secçons do menú lateral para explorar mais.</p>
 
   
 
-        </main>
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
 </body>
 </html>

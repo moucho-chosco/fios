@@ -2,7 +2,7 @@
 
 <!-- Barra de Filtros -->
 <select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
+  <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
   {{ range where .Site.RegularPages ".Params.localidade" true }}
     <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
   {{ end }}
@@ -10,12 +10,14 @@
 
 
 <!-- Div para o Mapa -->
-<div class="contido-espazos" style="display: flex; height: 80vh;">
+<div id="map-window-container" class="window-container">
   <!-- Mapa á esquerda -->
-  <div id="map" style="flex: 1; height: 100%;"></div>
+  <div id="map-window" class="window">
+    <div id="map" style="flex: 1;"></div>
+  </div>
   
   <!-- Caixa de Información á dereita -->
-  <div class="caixa-mapa">
+  <div class="window">
     <div id="info-espazo">
       <h2>Selecciona un Centro Social</h2>
     </div>
@@ -36,7 +38,7 @@
   // Inicializar o mapa con MapTiler
   const map = L.map('map', {
   maxZoom: 18,
-  minZoom: 8 // Ou outro valor máximo permitido pola túa capa de tiles
+  minZoom: 7 // Ou outro valor máximo permitido pola túa capa de tiles
   }).setView([42.7751, -8.0339], 8);
   const mtLayer = L.maptilerLayer({
     apiKey: key,
@@ -121,6 +123,8 @@ espazos.forEach(espazo => {
       })
     });
 
+
+    
     // Mostrar información cando se fai clic no marcador
     marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
     marker.on('click', (e) => {

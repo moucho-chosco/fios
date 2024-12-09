@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fíos | Espazos</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,10 +15,11 @@
     <script src="/scripts/normativa.js"></script>
 </head>
 <body style="visibility: hidden;">
-    <div class="container">
-        
-        <aside class="sidebar-container">
-            <div class="sidebar-container">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
             <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
@@ -142,15 +144,15 @@
     </div>
 </div>
 
-        </aside>
-        
-        
-        <main class="content">
+            </aside>
             
+            
+            <main class="content">
+                
 
 
 <select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
+  <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
   
     <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
   
@@ -166,12 +168,14 @@
 
 
 
-<div class="contido-espazos" style="display: flex; height: 80vh;">
+<div id="map-window-container" class="window-container">
   
-  <div id="map" style="flex: 1; height: 100%;"></div>
+  <div id="map-window" class="window">
+    <div id="map" style="flex: 1;"></div>
+  </div>
   
   
-  <div class="caixa-mapa">
+  <div class="window">
     <div id="info-espazo">
       <h2>Selecciona un Centro Social</h2>
     </div>
@@ -192,7 +196,7 @@
   
   const map = L.map('map', {
   maxZoom: 18,
-  minZoom: 8 
+  minZoom: 7 
   }).setView([42.7751, -8.0339], 8);
   const mtLayer = L.maptilerLayer({
     apiKey: key,
@@ -271,6 +275,15 @@ const espazos = [
       logo: "",
       imaxe: "",
       location: { lat:  42.333213602322225 , lon:  -7.862102901884126  }
+    },
+  
+    {
+      title: "A Gentalha do Pichel",
+      subtitle: "",
+      description: "Centro Social em Compostela.",
+      logo: "\/espazos\/centros\/o_pichel\/logo.png",
+      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
+      location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
     },
   
     {
@@ -418,6 +431,15 @@ const espazos = [
     },
   
     {
+      title: "CSA A Hedreira",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      logo: "",
+      imaxe: "",
+      location: { lat:  43.00718469311447 , lon:  -7.550971717750473  }
+    },
+  
+    {
       title: "CSA O Fervedoiro",
       subtitle: "",
       description: "Espazo Social en Ribeira",
@@ -472,15 +494,6 @@ const espazos = [
     },
   
     {
-      title: "O Pichel",
-      subtitle: "",
-      description: "Espaço autogerido em Compostela.",
-      logo: "\/espazos\/centros\/o_pichel\/logo.png",
-      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
-      location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
-    },
-  
-    {
       title: "Xebra!",
       subtitle: "",
       description: "Associaçom cultural",
@@ -530,6 +543,8 @@ espazos.forEach(espazo => {
       })
     });
 
+
+    
     
     marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
     marker.on('click', (e) => {
@@ -578,7 +593,72 @@ map.on('zoomend', () => {
 </script>
 
 
-        </main>
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/rag/organizacions/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/organizacions.jpg" alt=" Organizacions" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/biblioteca.jpg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/logo_icona.png" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="active">
+                    <a href="/rag/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/espazos.jpg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/calendario.jpg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
 </body>
 </html>

@@ -15,6 +15,19 @@
                 href="http://localhost:1313/agal/espa%C3%A7os/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/calendario/</loc>
+    <lastmod>2024-11-18T18:17:37+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/calendario/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/calendario/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/organiza%C3%A7ons/</loc>
     <lastmod>2024-11-18T18:17:24+01:00</lastmod>
     <xhtml:link
@@ -76,6 +89,18 @@
                 rel="alternate"
                 hreflang="agal"
                 href="http://localhost:1313/agal/espazos/localidades/a_corunha/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/o_pichel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/o_pichel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/o_pichel/"
                 />
   </url><url>
     <loc>http://localhost:1313/agal/espazos/centros/a_revolteira/</loc>

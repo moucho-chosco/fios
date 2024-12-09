@@ -1,6 +1,6 @@
 ---
-title: "O Pichel"
-description: "Espaço autogerido em Compostela."
+title: "A Gentalha do Pichel"
+description: "Centro Social em Compostela."
 dirixido_por: "Gentalha do Pichel"
 centro: true
 logo:  "/espazos/centros/o_pichel/logo.png"  # Ruta á imaxe do logo
@@ -10,5 +10,3 @@ location:
   lon: -8.540730891640834
 type: "centro_social"
 ---
-
-A Gentalha do Pichel

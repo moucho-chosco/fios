@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fíos | Biblioteca</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,10 +15,11 @@
     <script src="/scripts/normativa.js"></script>
 </head>
 <body style="visibility: hidden;">
-    <div class="container">
-        
-        <aside class="sidebar-container">
-            <div class="sidebar-container">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
             <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
@@ -142,11 +144,11 @@
     </div>
 </div>
 
-        </aside>
-        
-        
-        <main class="content">
+            </aside>
             
+            
+            <main class="content">
+                
 <script src="/scripts/biblioteca.js"></script>
 <div class="biblioteca-container">
     <p></p>
@@ -206,10 +208,10 @@
             </div>
         </div>
         
-        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Marta Harnecker e Gabriela Uribe&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 2.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;h&#34;,&#34;numero&#34;:2,&#34;portada&#34;:&#34;/images/obra1.jpg&#34;,&#34;serie&#34;:&#34;Cadernos de Educación Popular&#34;,&#34;titulo&#34;:&#34;Explotación capitalista&#34;})">
+        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Marta Harnecker e Gabriela Uribe&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 2.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;h&#34;,&#34;numero&#34;:2,&#34;portada&#34;:&#34;/images/harnecker_explotacion_capitalista.png&#34;,&#34;serie&#34;:&#34;Cadernos de Educación Popular&#34;,&#34;titulo&#34;:&#34;Explotación capitalista&#34;})">
             <div class="obra-portada">
                 
-                <img src="/images/obra1.jpg" alt="Portada de ">
+                <img src="/images/harnecker_explotacion_capitalista.png" alt="Portada de ">
                 
             </div>
             <div class="obra-texto">
@@ -219,10 +221,10 @@
             </div>
         </div>
         
-        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Marta Harnecker e Gabriela Uribe&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 3.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;h&#34;,&#34;numero&#34;:3,&#34;portada&#34;:&#34;/images/obra1.jpg&#34;,&#34;serie&#34;:&#34;Cadernos de Educación Popular&#34;,&#34;titulo&#34;:&#34;Monopolios e miseria&#34;})">
+        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Marta Harnecker e Gabriela Uribe&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 3.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;h&#34;,&#34;numero&#34;:3,&#34;portada&#34;:&#34;/images/harnecker_monopolios_e_miseria.png&#34;,&#34;serie&#34;:&#34;Cadernos de Educación Popular&#34;,&#34;titulo&#34;:&#34;Monopolios e miseria&#34;})">
             <div class="obra-portada">
                 
-                <img src="/images/obra1.jpg" alt="Portada de ">
+                <img src="/images/harnecker_monopolios_e_miseria.png" alt="Portada de ">
                 
             </div>
             <div class="obra-texto">
@@ -245,10 +247,23 @@
             </div>
         </div>
         
-        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Karl Marx e Friedrich Engels&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 1.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;a&#34;,&#34;numero&#34;:null,&#34;portada&#34;:&#34;/images/obra1.jpg&#34;,&#34;serie&#34;:&#34;O Capital&#34;,&#34;titulo&#34;:&#34;O Capital, tomo 1&#34;})">
+        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Vladimir Ilitch Lenin&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 1.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;bolchevismo&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;a&#34;,&#34;numero&#34;:null,&#34;portada&#34;:&#34;/images/lenin_o_estado_e_a_revolucion.jpg&#34;,&#34;serie&#34;:null,&#34;titulo&#34;:&#34;O Estado e a Revolución&#34;})">
             <div class="obra-portada">
                 
-                <img src="/images/obra1.jpg" alt="Portada de ">
+                <img src="/images/lenin_o_estado_e_a_revolucion.jpg" alt="Portada de ">
+                
+            </div>
+            <div class="obra-texto">
+                <h2>O Estado e a Revolución</h2>
+                <p>: #</p>
+                <p>Vladimir Ilitch Lenin</p>
+            </div>
+        </div>
+        
+        <div class="obra-card" onclick="abrirModal({&#34;ano&#34;:1971,&#34;autore&#34;:&#34;Karl Marx e Friedrich Engels&#34;,&#34;descricion&#34;:&#34;Esta é unha breve descrición da obra 1.&#34;,&#34;draft&#34;:false,&#34;etiquetas&#34;:[&#34;socialismo&#34;,&#34;Chile&#34;],&#34;iscjklanguage&#34;:false,&#34;link_externo&#34;:&#34;a&#34;,&#34;numero&#34;:null,&#34;portada&#34;:&#34;/images/marx_o_capital.jpeg&#34;,&#34;serie&#34;:&#34;O Capital&#34;,&#34;titulo&#34;:&#34;O Capital, tomo 1&#34;})">
+            <div class="obra-portada">
+                
+                <img src="/images/marx_o_capital.jpeg" alt="Portada de ">
                 
             </div>
             <div class="obra-texto">
@@ -283,7 +298,72 @@
 </div>
 
 
-        </main>
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/rag/organizacions/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/organizacions.jpg" alt=" Organizacions" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="active">
+                    <a href="/rag/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/biblioteca.jpg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/logo_icona.png" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/espazos.jpg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/calendario.jpg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
     </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
 </body>
 </html>

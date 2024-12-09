@@ -5,7 +5,7 @@ serie: "Cadernos de Educación Popular"
 Numero: 2
 ano: 1971
 descricion: "Esta é unha breve descrición da obra 2."
-portada: "/images/obra1.jpg" # Opcional, imaxe da portada
+portada: "/images/harnecker_explotacion_capitalista.png" # Opcional, imaxe da portada
 etiquetas: ["socialismo", "Chile"]
 link_externo: "h"
 ---

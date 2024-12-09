@@ -1,5 +1,5 @@
 ---
-titulo: "Calibám e a bruja"
+titulo: "Calibám e a bruxa"
 autore: "Silvia Federici"
 serie:
 Numero:

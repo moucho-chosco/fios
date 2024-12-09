@@ -1,0 +1,15 @@
+<div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            {{ range .Site.Menus.mobil }}
+                <li class="{{ if eq .URL $.RelPermalink }}active{{ end }}">
+                    <a href="{{ .URL }}" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="{{ .Params.imaxe }}" alt="{{ .Name }}" />
+                        </span>
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>

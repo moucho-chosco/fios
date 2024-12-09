@@ -7,82 +7,121 @@ defaultContentLanguage = "rag"
 defaultContentLanguageInSubdir = true
 
 [languages]
-[languages.rag]
-  languageName = "RAG"
-  weight = 1
-[languages.rag.menu]
-  [[languages.rag.menu.main]]
-  name = " Principal"
-  url = "/rag/"
-  weight = 1
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/"
-  reducido = "🧵"
+  [languages.rag]
+    languageName = "RAG"
+    weight = 1  
+    [languages.rag.menu]
+      [[languages.rag.menu.main]]
+      name = " Principal"
+      url = "/rag/"
+      weight = 1
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/"
+      reducido = "🧵"
 
-  [[languages.rag.menu.main]]
-  name = " Biblioteca"
-  url = "/rag/biblioteca/"
-  weight = 2
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/biblioteca/"
-  reducido = "📚"
+      [[languages.rag.menu.main]]
+      name = " Biblioteca"
+      url = "/rag/biblioteca/"
+      weight = 2
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/biblioteca/"
+      reducido = "📚"
 
-  [[languages.rag.menu.main]]
-  name = " Organizacións"
-  url = "/rag/organizacions/"
-  weight = 3
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/organizaçons/"
-  reducido = "✊"
+      [[languages.rag.menu.main]]
+      name = " Organizacións"
+      url = "/rag/organizacions/"
+      weight = 3
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/organizaçons/"
+      reducido = "✊"
 
-  [[languages.rag.menu.main]]
-  name = " Espazos"
-  url = "/rag/espazos/"
-  weight = 4
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/espaços/"
-  reducido = "🏠"
+      [[languages.rag.menu.main]]
+      name = " Espazos"
+      url = "/rag/espazos/"
+      weight = 4
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/espaços/"
+      reducido = "🏠"
 
-  [[languages.rag.menu.main]]
-  name = " Calendario"
-  url = "/rag/calendario/"
-  weight = 5
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/calendario/"
-  reducido = "🗓️"
+      [[languages.rag.menu.main]]
+      name = " Calendario"
+      url = "/rag/calendario/"
+      weight = 5
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/calendario/"
+      reducido = "🗓️"
 
-  [[languages.rag.menu.main]]
-  name = " Convocatorias"
-  url = "/rag/convocatorias/"
-  weight = 6
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/convocatorias/"
-  reducido = "📣"
+      [[languages.rag.menu.main]]
+      name = " Convocatorias"
+      url = "/rag/convocatorias/"
+      weight = 6
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/convocatorias/"
+      reducido = "📣"
 
-  [[languages.rag.menu.main]]
-  name = " Podcast"
-  url = "/rag/podcast/"
-  weight = 7
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/podcast/"
-  reducido = "🎙️"
+      [[languages.rag.menu.main]]
+      name = " Podcast"
+      url = "/rag/podcast/"
+      weight = 7
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/podcast/"
+      reducido = "🎙️"
 
-  [[languages.rag.menu.main]]
-  name = " Redes"
-  url = "/rag/redes/"
-  weight = 8
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/redes/"
-  reducido = "#️⃣"
+      [[languages.rag.menu.main]]
+      name = " Redes"
+      url = "/rag/redes/"
+      weight = 8
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/redes/"
+      reducido = "#️⃣"
 
-  [[languages.rag.menu.main]]
-  name = " Recursos"
-  url = "/rag/recursos/"
-  weight = 9
-  [languages.rag.menu.main.params]
-  translatedURL = "/agal/recursos/"
-  reducido = "➕"
+      [[languages.rag.menu.main]]
+      name = " Recursos"
+      url = "/rag/recursos/"
+      weight = 9
+      [languages.rag.menu.main.params]
+      translatedURL = "/agal/recursos/"
+      reducido = "➕"
 
+      [[languages.rag.menu.mobil]]
+      name = " Biblioteca"
+      url = "/rag/biblioteca/"
+      weight = 3
+      [languages.rag.menu.mobil.params]
+      translatedURL = "/agal/biblioteca/"
+      imaxe = "/images/elementos/biblioteca.jpg"
+
+      [[languages.rag.menu.mobil]]
+      name = " Organizacions"
+      url = "/rag/organizacions/"
+      weight = 2
+      [languages.rag.menu.mobil.params]
+      translatedURL = "/agal/organizaçons/"
+      imaxe = "/images/elementos/organizacions.jpg"
+
+      [[languages.rag.menu.mobil]]
+      name = " Principal"
+      url = "/rag/"
+      weight = 4
+      [languages.rag.menu.mobil.params]
+      translatedURL = "/agal/"
+      imaxe = "/images/elementos/logo_icona.png"
+
+      [[languages.rag.menu.mobil]]
+      name = "Espazos"
+      url = "/rag/espazos/"
+      weight = 5
+      [languages.rag.menu.mobil.params]
+      translatedURL = "/agal/espaços/"
+      imaxe = "/images/elementos/espazos.jpg"
+
+      [[languages.rag.menu.mobil]]
+      name = "Calendario"
+      url = "/rag/calendario/"
+      weight = 6
+      [languages.rag.menu.mobil.params]
+      translatedURL = "/agal/calendario/"
+      imaxe = "/images/elementos/calendario.jpg"
 
 
 
@@ -161,6 +200,14 @@ defaultContentLanguageInSubdir = true
   [languages.agal.menu.main.params]
   translatedURL = "/rag/recursos/"
   reducido = "➕"
+
+  [[languages.agal.menu.main.mobil]]
+  name = " Biblioteca"
+  url = "/agal/biblioteca/"
+  weight = 2
+  [languages.agal.menu.main.mobil.params]
+  translatedURL = "/agal/biblioteca/"
+  reducido = "📚"
 
 
 
