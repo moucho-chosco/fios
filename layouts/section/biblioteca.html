@@ -1,18 +1,21 @@
 {{ define "main" }}
 <script src="/scripts/biblioteca.js"></script>
 <div class="biblioteca-container">
-    <p>{{ .Content }}</p>
-    
-    <div class="obra-list">
-        <!-- Xerar tarxetas para cada obra na sección -->
-        {{ range .Pages.ByWeight }}
-        <div class="obra-card" onclick="abrirModal({{ .Params | jsonify | safeJS }})">
-            <div class="obra-portada">
+    <div class="banner-biblioteca">
+        <img class="fondo-banner" src="{{ "/images/banners/fondos/lenin_estado.png" | absURL }}" alt="Fondo do banner">
+        <img class="titulo-banner" src="{{ "/images/banners/titulos/lenin_estado.png" | absURL }}" alt="Fondo do banner">
+        <p  class="descricion-banner">descrición</p>
+    </div>
+    <div class="lista-libros">
+        {{ range sort .Pages ".Params.autore" }}
+        <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}"
+             onclick="seleccionarLibro(this)">
+            <div class="libro-portada">
                 {{ with .Params.portada }}
                 <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
                 {{ end }}
             </div>
-            <div class="obra-texto">
+            <div class="libro-titulo">
                 <h2>{{ .Params.titulo }}</h2>
                 <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
                 <p>{{ .Params.autore }}</p>
@@ -20,27 +23,7 @@
         </div>
         {{ end }}
     </div>
-</div>
-
-<!-- Modal para mostrar máis información -->
-<div id="obra-modal" class="modal" onclick="pecharModal(event)">
-    <div class="modal-content">
-        <span class="close-button" onclick="pecharModal(event)">&times;</span>
-        <div class="modal-body">
-            <!-- Texto principal á esquerda -->
-            <div class="modal-text">
-                <h2 id="modal-titulo"></h2>
-                <p id="modal-autore"></p>
-                <p id="modal-serie"></p>
-                <p id="modal-descricion"></p>
-                <a id="modal-link" href="#" target="_blank" class="button">PDF (castelán)</a>
-            </div>
-            <!-- Imaxe á dereita -->
-            <aside class="modal-image">
-                <img id="modal-portada" src="" alt="Portada ampliada" />
-            </aside>
-        </div>
-    </div>
+    
 </div>
 
 {{ end }}

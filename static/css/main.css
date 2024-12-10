@@ -309,59 +309,95 @@ nav a:hover {
 .biblioteca-container {
     margin: 20px;
     margin-top: -10px;
+    overflow: hidden;
 }
 
-.obra-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+.banner-biblioteca {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    height: 50vh;
+    background-color: #e6e6e6;
+    z-index: 9999;
 }
 
-.obra-card {
-    background: #fff;
-    width: calc(13% - 10px);
-    min-width: 160px;
-    max-width: 230px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: 0px solid #d6d6d6;
-    border-radius: 8px;
-    padding: 13px;
-    margin: 16px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.fondo-banner {
+    position: fixed;
+    height: 50vh;
+    top: 0;
+    right: 0;
+    
 }
 
-.obra-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.titulo-banner {
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
-.obra-texto {
-    margin-left: 16px; /* Espazo entre texto e portada */
+.lista-libros {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-auto-rows: 1fr; /* Asegúrate de que as filas teñan a mesma altura */
+    justify-items: center; /* Centra os elementos dentro de cada celda */
+    margin-top: 50vh;
+    }
+
+.libro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    aspect-ratio: 2 / 3;
+    border: 6px solid white; /* Sen rebordo por defecto */
+    transition: border-color 0.3s ease;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+}
+  
+  .libro.seleccionado {
+    border: 6px solid rgb(0, 0, 0); /* Rebordo branco cando está seleccionado */
+    transform: translateY(-6px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.libro:hover {
+    transform: translateY(-6px);
+    transition: transform 0.1s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.libro-titulo {
     max-width: 100%; /* O texto ocupa un 70% do ancho */
 }
 
-.obra-portada {
-    margin-top: 14px; /* Espazo entre texto e portada */
+.libro-portada {
     max-width: 100%; /* A portada ocupa un 25% do ancho */
-    margin-left: 16px; /* Espazo entre texto e portada */
-    margin-right: 12px; /* Espazo entre texto e portada */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.obra-portada img {
-    width: 100%; /* A imaxe ocupa o 100% do contedor */
+.libro-portada img {
+    display: block;
+    width: 100%;
     height: auto;
-    border: 0px solid #000000;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.3);
+    transition: transform 0.3s ease;
 }
 
-.obra-card h2 {
-    font-size: 18px;
+.libro h2 {
+    font-size: 12px;
     margin: 8px 0;
+    font-weight: 700;
 }
 
-.obra-card p {
-    font-size: 14px;
+.libro p {
+    font-size: 11px;
     color: #555;
     margin: 4px 0;
 }
