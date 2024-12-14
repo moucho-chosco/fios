@@ -67,16 +67,16 @@
                 href="http://localhost:1313/agal/"
                 />
   </url><url>
-    <loc>http://localhost:1313/agal/biblioteca/federici_caliban-e-a-bruxa/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/biblioteca/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/biblioteca/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
   </url><url>
     <loc>http://localhost:1313/agal/espazos/localidades/a_corunha/</loc>

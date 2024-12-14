@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 717.27 717.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f15c5b;
+      }
+
+      .cls-2 {
+        fill: #171717;
+      }
+
+      .cls-3 {
+        fill: #a266aa;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: #64a5d5;
+      }
+
+      .cls-7 {
+        fill: #7fbe42;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-5" width="717.27" height="717.27"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g class="cls-4">
+      <g>
+        <rect class="cls-6" x="278.67" y="-199.08" width="170.35" height="1128.42" transform="translate(-151.62 364.22) rotate(-45)"/>
+        <rect class="cls-2" x="-19.2" y="98.79" width="170.35" height="1128.42" transform="translate(-449.49 240.84) rotate(-45)"/>
+        <rect class="cls-3" x="130.35" y="-50.77" width="170.35" height="1128.42" transform="translate(-299.93 302.78) rotate(-45)"/>
+        <rect class="cls-7" x="428.23" y="-348.64" width="170.35" height="1128.42" transform="translate(-2.06 426.17) rotate(-45)"/>
+        <rect class="cls-1" x="577.79" y="-498.2" width="170.35" height="1128.42" transform="translate(147.5 488.12) rotate(-45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -31,9 +31,9 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/harnecker_c1/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/harnecker_c1/</link>
       <pubDate>Fri, 15 Nov 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/harnecker_c1/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/harnecker_c1/</guid>
       <description></description>
     </item>
     <item>
@@ -59,58 +59,79 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/federici_caliban-e-a-bruxa/</link>
+      <link>http://localhost:1313/rag/biblioteca/itinerarios/i1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/federici_caliban-e-a-bruxa/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/itinerarios/i1/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/fisher_realismo-capitalista/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/fisher_realismo-capitalista/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/gil-pensar/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/fisher_realismo-capitalista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/gil-pensar/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/fisher_realismo-capitalista/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/harnecker_c2/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/gil-pensar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/harnecker_c2/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/gil-pensar/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/harnecker_c3/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/harnecker_c2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/harnecker_c3/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/harnecker_c2/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/kropotkin_pan/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/harnecker_c3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/kropotkin_pan/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/harnecker_c3/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/lenin_o_estado_e_a_revolucion/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/kropotkin_apoio_mutuo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/lenin_o_estado_e_a_revolucion/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/kropotkin_apoio_mutuo/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/rag/biblioteca/marx_capital/</link>
+      <link>http://localhost:1313/rag/biblioteca/obras/kropotkin_pan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/marx_capital/</guid>
+      <guid>http://localhost:1313/rag/biblioteca/obras/kropotkin_pan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/rag/biblioteca/obras/lenin_o_estado_e_a_revolucion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/biblioteca/obras/lenin_o_estado_e_a_revolucion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/rag/biblioteca/obras/marx_capital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/biblioteca/obras/marx_capital/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/rag/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
       <description></description>
     </item>
     <item>

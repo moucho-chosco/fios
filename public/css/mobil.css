@@ -6,7 +6,7 @@
 .menu-mobil {
     list-style: none; /* Eliminar puntos da lista */
     position:static;
-    margin-top: 10px;        /* Eliminar marxe por defecto */
+    margin-top: 15px;        /* Eliminar marxe por defecto */
     padding: 0;       /* Eliminar recheo por defecto */
     display: flex;    /* Utilizar Flexbox para disposición horizontal */
     justify-content:space-around; /* Os elementos estarán ao principio (pódese cambiar se queres outros espazos) */
@@ -49,9 +49,7 @@
     .content {
         flex: 1;
         padding: 0px;
-        margin-left: 0;
-        padding-bottom: 8vh !important; /* Evitar que o contido quede cuberto pola barra lateral móbil */
-    }
+        margin-left: 0;}
 
     .window-container {
         flex-direction: column;
@@ -82,10 +80,9 @@
     }
 
     .menu-icon img {
-        width: 45px;
-        height: auto;
+        width: auto;
+        height: 30px;
         display: block; /* Evitar desprazamentos inesperados */
-        object-fit: contain; /* Asegura que o contido se axuste sen recortes */
     }
 
     

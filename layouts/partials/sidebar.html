@@ -1,16 +1,21 @@
 <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
-            <a href="/"><img src="/images/logo.svg" alt="Logo do sitio"></a>
+            <img src="/images/logo.svg" alt="Logo do sitio">
         </div>
 
         <nav>
             <ul>
                 {{ range .Site.Menus.main }}
-                <!-- Na barra lateral, mostra só o emoji no modo reducido -->
+                <!-- Na barra lateral, mostra a imaxe positiva ou negativa segundo a ligazón activa e o modo -->
                 <li class="{{ if eq .URL $.RelPermalink }}active{{ end }}">
                     <a href="{{.URL}}" class="menu-link">
-                        <span class="menu-icon">{{ .Params.reducido }}</span>
+                        {{ if and (eq .URL $.RelPermalink) }}
+                            <img class="menu-icon negativo" src="{{ .Params.imaxe_negativo }}" alt="{{ .Name }}" />
+                        {{ else }}
+                            <img class="menu-icon positivo" src="{{ .Params.imaxe }}" alt="{{ .Name }}" />
+                        {{ end }}
+                        <img class="menu-icon reduced-icon" src="{{ .Params.imaxe }}" alt="{{ .Name }}" />
                         <span class="menu-text">{{ .Name }}</span>
                     </a>
                 </li>

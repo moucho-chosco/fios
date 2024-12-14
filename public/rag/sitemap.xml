@@ -75,7 +75,7 @@
     <loc>http://localhost:1313/rag/calendario/evento2/</loc>
     <lastmod>2024-11-17T18:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/harnecker_c1/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/harnecker_c1/</loc>
     <lastmod>2024-11-15T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rag/tags/blue/</loc>
@@ -131,31 +131,37 @@
                 href="http://localhost:1313/rag/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/federici_caliban-e-a-bruxa/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/itinerarios/i1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/biblioteca/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/biblioteca/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/fisher_realismo-capitalista/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/fisher_realismo-capitalista/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/gil-pensar/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/gil-pensar/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/harnecker_c2/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/harnecker_c2/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/harnecker_c3/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/harnecker_c3/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/kropotkin_pan/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/kropotkin_apoio_mutuo/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/lenin_o_estado_e_a_revolucion/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/kropotkin_pan/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/marx_capital/</loc>
+    <loc>http://localhost:1313/rag/biblioteca/obras/lenin_o_estado_e_a_revolucion/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/biblioteca/obras/marx_capital/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/biblioteca/obras/ramnath_decolonizing_anarchism/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/a_corunha/</loc>
     <xhtml:link

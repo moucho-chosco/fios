@@ -2,14 +2,14 @@
 <script src="/scripts/biblioteca.js"></script>
 <div class="biblioteca-container">
     <div class="banner-biblioteca">
-        <img class="fondo-banner" src="{{ "/images/banners/fondos/lenin_estado.png" | absURL }}" alt="Fondo do banner">
-        <img class="titulo-banner" src="{{ "/images/banners/titulos/lenin_estado.png" | absURL }}" alt="Fondo do banner">
+        <img class="fondo-banner" src="{{ "/images/banners/fondos/lenin_estado.png" | relURL }}" alt="Fondo do banner">
+        <img class="titulo-banner" src="{{ "/images/banners/titulos/lenin_estado.png" | relURL }}" alt="Fondo do banner">
         <p  class="descricion-banner">descrición</p>
     </div>
+
     <div class="lista-libros">
-        {{ range sort .Pages ".Params.autore" }}
-        <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}"
-             onclick="seleccionarLibro(this)">
+        {{ range sort (where .Site.RegularPages "Section" "biblioteca") ".Params.autore" }}
+        <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}" onclick="seleccionarLibro(this)">
             <div class="libro-portada">
                 {{ with .Params.portada }}
                 <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">

@@ -114,16 +114,30 @@ a:hover {
     border-radius: 8px 0 0 8px;
 }
 
-/* Modificar a clase reduced-mode para ocultar os textos */
-.sidebar.reduced-mode .menu-text {
-    display: none; /* Ocultar os textos cando se reduza */
+.menu-icon {
+    width: auto ;
+    height: 13px!important;
+    display: block; /* Evitar desprazamentos inesperados */
+    object-fit: contain; /* Asegura que o contido se axuste sen recortes */
 }
 
-.sidebar.reduced-mode .menu-icon {
-    display: inline-block; /* Mostrar os íconos */
-    font-size: 20px;
-    padding: 0px;
-    border-radius: 50%;
+.sidebar-container.full-mode .sidebar .reduced-icon {
+    display: none !important;
+}
+
+.sidebar-container.reduced-mode .sidebar .positivo,
+.sidebar-container.reduced-mode .sidebar .negativo
+{
+    display: none !important;
+}
+
+.sidebar-container.reduced-mode .sidebar .reduced-icon {
+    width: auto ;
+    height: 23px!important;
+    display: block; /* Evitar desprazamentos inesperados */
+    object-fit: contain; /* Asegura que o contido se axuste sen recortes */
+    align-self: center;
+    display: inline;
 }
 
 /* Logo */
@@ -171,33 +185,46 @@ a:hover {
     border-radius: 4px;
 }
 
+.sidebar ul li {
+    opacity: 0.16;
+}
+
 /* Modo completo: Mostra o nome completo */
 .sidebar.full-mode .menu-text {
     display: inline-block;
 }
 
 /* Menu activo */
-.sidebar ul li.active {
+.sidebar-container.full-mode .sidebar ul li.active {
     font-weight: bold;
-    background-color: #000;
     color: #ffffff;
+    background-color: #222121;
     border-radius: 4px;
+    opacity: 1;
+}
+
+.sidebar-container.reduced-mode .sidebar ul li.active {
+    color: #000000;
+    background-color: #ffffff;
+    opacity: 1;
 }
 
 .sidebar ul li.active a {
     color: #ffffff;
 }
 
-.sidebar ul li.active:hover,
-.sidebar ul li.active a:hover {
-    background-color: #000;
+.sidebar-container.full-mode .sidebar ul li.active:hover,
+.sidebar-container.full-mode .sidebar ul li.active a:hover {
+    background-color: #222121;
     color: #ffffff;
     cursor: default;
 }
 
+
+
 /* Elementos non activos */
 .sidebar ul li:hover {
-    background-color: #f1f1f1;
+    background-color: #b9b9b9;
     border-radius: 4px;
 }
 
@@ -211,14 +238,14 @@ a:hover {
     margin-left: 5%;
     text-align: center;
     cursor: pointer;
-    opacity: 0.5;  /* Facelo máis disimulada */
+    opacity: 0.2;  /* Facelo máis disimulada */
     transition: opacity 0.3s ease;  /* Transición para o cambio de opacidade */
     transform: rotate(180deg);
 }
 
 /* Ao pasar o rato sobre o botón, facelo máis visible */
 .toggle-button:hover {
-    opacity: 1;
+    opacity: 0.4;
 }
 
 /* Alternar entre os modos */
