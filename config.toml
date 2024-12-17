@@ -249,3 +249,8 @@ defaultContentLanguageInSubdir = true
 
 [params]
   sidebar_mode = "full"
+
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

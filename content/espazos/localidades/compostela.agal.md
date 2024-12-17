@@ -1,5 +1,5 @@
 ---
-title: "Santiago de Compostela"
+title: "Compostela"
 localidade: true
 location:
   lat: 42.879

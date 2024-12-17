@@ -1,46 +1,55 @@
 {{ define "main" }}
 
-<!-- Barra de Filtros -->
-<select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
-  {{ range where .Site.RegularPages ".Params.localidade" true }}
-    <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
-  {{ end }}
-</select>
+<div id="espazos-container" class="standard-section-container">
+  <!-- Barra de Filtros -->
+  <select id="localidade-filter">
+    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+    {{ range where .Site.RegularPages ".Params.localidade" true }}
+      <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+    {{ end }}
+  </select>
 
 
-<!-- Div para o Mapa -->
-<div class="window-container">
-
-  <!-- Mapa á esquerda -->
-  <div class="window">
-    <div id="map" style="flex: 1; height: 100%;"></div>
-  </div>
-  
-  <!-- Caixa de Información á dereita -->
-  <div class="window">
-    <div id="info-espazo">
-      <h2>Seleciona um Centro Social</h2>
+  <!-- Div para o Mapa -->
+  <div id="map-window-container" class="window-container">
+    <!-- Mapa á esquerda -->
+    <div id="map-window" class="window">
+      <div id="map" style="flex: 1;"></div>
+    </div>
+    
+    <!-- Caixa de Información á dereita -->
+    <div class="window">
+      <div id="imaxe-cabeceira-container">
+      </div>
+      <div id="info-espazo">
+        <h2>Selecciona un Centro Social</h2>
+        <div id="contido-dinamico">
+          <!-- O contido dinámico do espazo seleccionado irá aquí -->
+        </div>
+      </div>
+      {{ .Content }}
     </div>
   </div>
-  
+
+  <!-- Estilos e Scripts Necesarios -->
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+  <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 </div>
 
-<!-- Estilos e Scripts Necesarios -->
-<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
-<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
-<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
 
   // Inicializar o mapa con MapTiler
   const map = L.map('map', {
+  zoomAnimation: true,
+  zoomAnimationThreshold: 3,
   maxZoom: 18,
-  minZoom: 8 // Ou outro valor máximo permitido pola túa capa de tiles
+  minZoom: 7 // Ou outro valor máximo permitido pola túa capa de tiles
   }).setView([42.7751, -8.0339], 8);
   const mtLayer = L.maptilerLayer({
     apiKey: key,
@@ -66,7 +75,8 @@
     const [key, lat, lon, zoom] = value;
     if (localidades[key]) {
     const location = localidades[key];
-    map.setView([location.lat, location.lon], location.zoom);      
+    map.setView([location.lat, location.lon], location.zoom); 
+    updateMarkers();     
   } else if (key === "galiza") {
     // Caso especial para Galiza
     map.setView([42.7751, -8.0339], 8.4);
@@ -79,8 +89,12 @@ const espazos = [
       title: "{{ .Title }}",
       subtitle: "{{ .Params.subtitle }}",
       description: "{{ .Params.description }}",
+      direcion: "{{ .Params.direcion }}",
       logo: "{{ .Params.logo }}",
       imaxe: "{{ .Params.imaxe }}",
+      cor: "{{ .Params.cor }}",
+      seleccionado: false,
+      content: {{ .Content }},
       location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
     },
   {{ end }}
@@ -93,7 +107,7 @@ const iconWithNumber = L.divIcon({
 });
 
 const simpleIcon = L.divIcon({
-  html: `<div style="background: black; width: 12px; height: 12px; border-radius: 50%;"></div>`,
+  html: `<div  class="simple-marker" style="background: black; width: 10px; height: 10px; border-radius: 0%;  "></div>`,
   className: 'simple-marker',
   iconSize: [30, 30]
 });
@@ -124,27 +138,48 @@ espazos.forEach(espazo => {
         iconSize: [30, 30]
       })
     });
+    marker.espazo = espazo;
 
     // Mostrar información cando se fai clic no marcador
-    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    //marker.bindPopup(`<strong>${espazo.title}</strong><br>📍${espazo.direcion}`);
     marker.on('click', (e) => {
-      const infoEspazo = document.getElementById('info-espazo');
-      infoEspazo.innerHTML = `
+      const zoomLevel = map.getZoom();
+      const selectedMarker = e.target;
+
+      if (zoomLevel < 13) {
+        map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+      }
+
+      deselectMarkers();
+      // Agora, cambiar a cor do marcador clicado
+      const selectedMarkerDiv = selectedMarker._icon.querySelector('.simple-marker');
+      if (selectedMarkerDiv) {
+        selectedMarkerDiv.style.background = espazo.cor; // Cor cando está seleccionado
+        selectedMarkerDiv.style.outline = "3px solid white";
+      }
+
+      selectedMarker._icon.classList.add('selected');  // Engadir a clase 'selected'
+
+      const cabeceiraContainer = document.getElementById('imaxe-cabeceira-container');
+      cabeceiraContainer.innerHTML = `
       <!-- Imaxe de fondo fixa do centro social -->
       <div class="imaxe-fondo">
         <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
       </div>
-
-
-      
+      `;
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
       <!-- Contedor do logo e título -->
       <div class="header-espazo">
         <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
         <h2 class="titulo-espazo">${espazo.title}</h2>
+        <p class="descricion-espazo">${espazo.description}</p>
       </div>
-      
-      <p class="descricion-espazo">${espazo.description}</p>
-`;
+
+      <div id="contido-dinamico">
+        ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
+      </div>
+      `;
       const selectedEspazo = e.target;
     });
 
@@ -152,24 +187,60 @@ espazos.forEach(espazo => {
 
     // Engadir o marcador ao grupo de clusters
     markers.addLayer(marker);
+
+    
   }
 });
 
 // Engadir o grupo de clusters ao mapa
 map.addLayer(markers);
 
-// Engadir o grupo de clusters ao mapa
-map.addLayer(markers);
-
 // Evento para cambiar os iconos segundo o zoom
 map.on('zoomend', () => {
-  const zoomLevel = map.getZoom();
-  const iconToUse = zoomLevel >= 13 ? simpleIcon : iconWithNumber;
-
-  leafletMarkers.forEach(marker => {
-    marker.setIcon(iconToUse); // Actualizar o icono segundo o nivel de zoom
-  });
+  updateMarkers();
 });
+
+function updateMarkers() {
+  const zoomLevel = map.getZoom();
+  leafletMarkers.forEach(marker => {
+    if (marker._icon) { // Asegúrate de que o marcador ten un _icon
+      if (zoomLevel < 13) {
+        if (marker._icon.classList.contains('selected')){
+          marker.setIcon(iconWithNumber);
+          marker._icon.classList.add('selected');
+        }else{
+          marker.setIcon(iconWithNumber);
+        }
+      } else if (marker._icon.classList.contains('selected')) {
+        marker.setIcon(simpleIcon);
+        const markerDiv = marker._icon.querySelector('.simple-marker');
+        if (markerDiv) {
+          markerDiv.style.background = marker.espazo.cor;
+          markerDiv.style.outline = "3px solid white";
+        }
+        marker._icon.classList.add('selected');
+      } else {
+        marker.setIcon(simpleIcon);
+      }
+    }
+  });
+}
+
+function deselectMarkers() {
+   // Primero, eliminar a clase 'selected' de todos os marcadores
+   leafletMarkers.forEach((marker) => {
+    // Verificar se o marcador ten un ícon
+    if (marker._icon) {
+      marker._icon.classList.remove('selected');  // Eliminar a clase 'selected'
+      const markerDiv = marker._icon.querySelector('.simple-marker');
+      if (markerDiv) {
+        markerDiv.style.background = "black"; // Restaurar cor orixinal
+        markerDiv.style.outline = "0px solid white";
+      }
+    }
+  });
+}
+
 </script>
 
 {{ end }}

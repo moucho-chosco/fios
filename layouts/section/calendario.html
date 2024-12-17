@@ -7,20 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/gl.js"></script>
     
     <!-- Div para o todo -->
-    <div id="window-container-calendario" class="window-container">
 
-         <!-- Calendario á esquerda -->
-        <div id="calendar-window" class="window">
-            <div id="calendar"></div>
-        </div>
-        
-        <!-- Caixa de Información á dereita -->
-        <div id="info-evento-window" class="window">
-            <div id="info-evento">
-                <h2>Selecciona un evento</h2>
-            </div>
-        </div>
+    <div id="calendario-container" class="standard-section-container">
+        <div id="window-container-calendario" class="window-container">
+
+            <!-- Calendario á esquerda -->
+           <div id="calendar-window" class="window">
+               <div id="calendar"></div>
+           </div>
+           
+           <!-- Caixa de Información á dereita -->
+           <div id="info-evento-window" class="window">
+               <div id="info-evento">
+                   <h2>Selecciona un evento</h2>
+               </div>
+           </div>
+       </div>
     </div>
+    
 
     <script>
         {{- /* Obtén todas las páginas de la sección "calendario" */ -}}

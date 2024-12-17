@@ -176,8 +176,18 @@
                 />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/a_fenda/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/a_fenda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/a_fenda/"
+                />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/galleira/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/a_galleira/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/o_pichel/</loc>
     <xhtml:link
@@ -207,7 +217,7 @@
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/buril/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/acefala/acefala/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/acefala/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/ateneo_ferrolan/</loc>
   </url><url>
@@ -261,6 +271,8 @@
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/vagalume/</loc>
   </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/xebra/</loc>
+  </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/escarnio/</loc>
     <xhtml:link
                 rel="alternate"
@@ -275,11 +287,13 @@
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/funda%C3%A7om_artabria/</loc>
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/faisca/faisca/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/faisca/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/lugo/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/o_matadoiro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/localidades/ourense/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/pontevedra/</loc>
   </url><url>
@@ -296,7 +310,5 @@
                 />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/vigo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/xebra/xebra/</loc>
   </url>
 </urlset>

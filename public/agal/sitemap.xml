@@ -91,6 +91,18 @@
                 href="http://localhost:1313/agal/espazos/localidades/a_corunha/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/a_fenda/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/a_fenda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/a_fenda/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/espazos/centros/o_pichel/</loc>
     <xhtml:link
                 rel="alternate"

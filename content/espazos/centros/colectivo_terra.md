@@ -1,7 +1,11 @@
 ---
 title: "Colectivo Terra"
-description: "Espazo Social en Pontedeume"
+description: "Centro Social de Pontedeume"
 dirixido_por: ""
+centro: true
+logo:  "/espazos/centros/colectivo_terra/logo.jpg"  # Ruta á imaxe do logo
+imaxe: "/espazos/centros/colectivo_terra/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
+cor: "#e72444"
 centro: true
 location:
   lat: 43.4048354267391

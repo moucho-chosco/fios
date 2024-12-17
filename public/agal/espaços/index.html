@@ -14,7 +14,7 @@
     <script src="/scripts/functions.js"></script>
     <script src="/scripts/normativa.js"></script>
 </head>
-<body style="visibility: hidden;">
+<body id="body" style="visibility: hidden;">
     <div class="container-columna">
         <div class="container-fila">
             
@@ -177,49 +177,58 @@
             <main class="content">
                 
 
-
-<select id="localidade-filter">
-  <option value="galiza,42.7751,-8.0339,8.4">📍 Galiza</option>
+<div id="espazos-container" class="standard-section-container">
   
-    <option value="a_corunha.agal,43.368,-8.4065,14">📍 A Corunha</option>
-  
-    <option value="compostela.agal,42.879,-8.544,15">📍 Santiago de Compostela</option>
-  
-</select>
+  <select id="localidade-filter">
+    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+    
+      <option value="a_corunha.agal,43.368,-8.4065,14">📍 A Corunha</option>
+    
+      <option value="compostela.agal,42.879,-8.544,15">📍 Santiago de Compostela</option>
+    
+  </select>
 
-
-
-<div class="window-container">
 
   
-  <div class="window">
-    <div id="map" style="flex: 1; height: 100%;"></div>
-  </div>
-  
-  
-  <div class="window">
-    <div id="info-espazo">
-      <h2>Seleciona um Centro Social</h2>
+  <div id="map-window-container" class="window-container">
+    
+    <div id="map-window" class="window">
+      <div id="map" style="flex: 1;"></div>
+    </div>
+    
+    
+    <div class="window">
+      <div id="imaxe-cabeceira-container">
+      </div>
+      <div id="info-espazo">
+        <h2>Selecciona un Centro Social</h2>
+        <div id="contido-dinamico">
+          
+        </div>
+      </div>
+      
     </div>
   </div>
+
   
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
+  <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 </div>
 
-
-<script src="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.umd.js"></script>
-<link href="https://cdn.maptiler.com/maptiler-sdk-js/v2.3.0/maptiler-sdk.css" rel="stylesheet" />
-<script src="https://cdn.maptiler.com/leaflet-maptilersdk/v2.0.0/leaflet-maptilersdk.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
-<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
 
   
   const map = L.map('map', {
+  zoomAnimation: true,
+  zoomAnimationThreshold: 3,
   maxZoom: 18,
-  minZoom: 8 
+  minZoom: 7 
   }).setView([42.7751, -8.0339], 8);
   const mtLayer = L.maptilerLayer({
     apiKey: key,
@@ -252,7 +261,8 @@
     const [key, lat, lon, zoom] = value;
     if (localidades[key]) {
     const location = localidades[key];
-    map.setView([location.lat, location.lon], location.zoom);      
+    map.setView([location.lat, location.lon], location.zoom); 
+    updateMarkers();     
   } else if (key === "galiza") {
     
     map.setView([42.7751, -8.0339], 8.4);
@@ -262,11 +272,28 @@
 const espazos = [
   
     {
+      title: "A Fenda",
+      subtitle: "Centro Socialista",
+      description: "Espazo baixo a estratexia socialista ",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_fenda\/logo.png",
+      imaxe: "\/espazos\/centros\/a_fenda\/foto_cabeceira.jpg",
+      cor: "",
+      seleccionado: false,
+      content: "\u003cp\u003e\u003cem\u003eA Fenda\u003c/em\u003e é um novo espaço desde onde responder às necessidades do proletariado da cidade.\nUm espaço para organizar-nos sobre a independência política de classe 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      location: { lat:  43.364293 , lon:  -8.424243  }
+    },
+  
+    {
       title: "A Gentalha do Pichel",
       subtitle: "",
       description: "Centro Social em Compostela.",
+      direcion: "",
       logo: "\/espazos\/centros\/o_pichel\/logo.png",
       imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
+      cor: "",
+      seleccionado: false,
+      content: "\u003cp\u003eBem-vido ao Centro Social \u003cstrong\u003eO Pichel\u003c/strong\u003e, um lugar onde promover a língua galega e a comnidade.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\r\n  A Gentalha do Pichel constituiu-se em 2004 no Museu do Povo Galego.\r\n\u003cp\u003eO ano seguinte, logo dumha profunda reforma do local em Santa Clara 21, abriu o Centro Social o Pichel, gerido pola associaçom. Achávamos importante contribuirmos à estratégia de criaçom de centros sociais na Galiza, entendidos como espaços onde podermos desenvolver iniciativas para normalizar a nossa língua, fazendo-o dum ponto de vista reintegracionista.\u003c/p\u003e\n\u003cp\u003eA língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…\u003c/p\u003e\n\u003cp\u003eOrgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…\u003c/p\u003e\n\u003cp\u003eMas o melhor ainda está por chegar.\u003c/p\u003e\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eComo funcionamos?\u003c/summary\u003e\r\n  \u003cp\u003eA Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eConsello xeral\u003c/li\u003e\r\n    \u003cli\u003eCultura\u003c/li\u003e\r\n    \u003cli\u003eCultura científica\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
     },
   
@@ -274,8 +301,12 @@ const espazos = [
       title: "A Revolteira",
       subtitle: "",
       description: "Espaço Autogerido na Corunha.",
+      direcion: "",
       logo: "\/espazos\/centros\/a_revolteira\/logo.png",
       imaxe: "\/espazos\/centros\/a_revolteira\/foto_cabeceira.jpg",
+      cor: "",
+      seleccionado: false,
+      content: "",
       location: { lat:  43.358728281851086 , lon:  -8.40653158003866  }
     },
   
@@ -283,17 +314,25 @@ const espazos = [
       title: "CS A Pedreira",
       subtitle: "",
       description: "Espazo Autoxestionado en Pontevedra.",
+      direcion: "",
       logo: "",
       imaxe: "",
+      cor: "",
+      seleccionado: false,
+      content: "",
       location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
     },
   
     {
       title: "CSOA Escárnio e Maldizer",
       subtitle: "",
-      description: "Centro Social Ocupado Autoxestionado",
+      description: "Centro Social Okupado Autoxestionado",
+      direcion: "Rua Algalia de Arriba, 11",
       logo: "\/espazos\/centros\/escarnio\/logo.png",
       imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
+      cor: "",
+      seleccionado: false,
+      content: "\u003cp\u003eO \u003cem\u003eCSOA Escárnio e Maldizer\u003c/em\u003e é a nossa casa, a casa das loitas, da liberdade, da felicidade, da resistência cultural e social, da okupaçom e de todo o mundo com vontade de organizar-se e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta com nos!!\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eCursos\u003c/summary\u003e\r\n  \u003cp\u003eComeçam os cursos do Escárnio:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e🌼 SEGUNDAS, 19.00h: Iniciaçom à pandeireta 🎶\u003c/li\u003e\r\n    \u003cli\u003e🌸 TERÇAS (a partir de janeiro), 21:00h: Círculo de inglés 👅\u003c/li\u003e\r\n    \u003cli\u003e🏵️ QUARTAS, 20:30h: Micros abertos 🎤\u003c/li\u003e\r\n    \u003cli\u003e💮 QUINTAS, 19:00h: Talher de movimento: o discurso corporal 💃\u003c/li\u003e\r\n    \u003cli\u003e🍀 SÁBADOS, 12:30 a 15:00: Clube de bordado 🪡\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n  \u003cp\u003eTodos os cursos som abertos e gratuitos.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
     },
   
@@ -306,7 +345,7 @@ const iconWithNumber = L.divIcon({
 });
 
 const simpleIcon = L.divIcon({
-  html: `<div style="background: black; width: 12px; height: 12px; border-radius: 50%;"></div>`,
+  html: `<div  class="simple-marker" style="background: black; width: 10px; height: 10px; border-radius: 0%;  "></div>`,
   className: 'simple-marker',
   iconSize: [30, 30]
 });
@@ -337,27 +376,48 @@ espazos.forEach(espazo => {
         iconSize: [30, 30]
       })
     });
+    marker.espazo = espazo;
 
     
-    marker.bindPopup(`<strong>${espazo.title}</strong><br>${espazo.subtitle}`);
+    
     marker.on('click', (e) => {
-      const infoEspazo = document.getElementById('info-espazo');
-      infoEspazo.innerHTML = `
+      const zoomLevel = map.getZoom();
+      const selectedMarker = e.target;
+
+      if (zoomLevel < 13) {
+        map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+      }
+
+      deselectMarkers();
+      
+      const selectedMarkerDiv = selectedMarker._icon.querySelector('.simple-marker');
+      if (selectedMarkerDiv) {
+        selectedMarkerDiv.style.background = espazo.cor; 
+        selectedMarkerDiv.style.outline = "3px solid white";
+      }
+
+      selectedMarker._icon.classList.add('selected');  
+
+      const cabeceiraContainer = document.getElementById('imaxe-cabeceira-container');
+      cabeceiraContainer.innerHTML = `
       \x3C!-- Imaxe de fondo fixa do centro social -->
       <div class="imaxe-fondo">
         <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
       </div>
-
-
-      
+      `;
+      const infoEspazo = document.getElementById('info-espazo');
+      infoEspazo.innerHTML = `
       \x3C!-- Contedor do logo e título -->
       <div class="header-espazo">
         <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
         <h2 class="titulo-espazo">${espazo.title}</h2>
+        <p class="descricion-espazo">${espazo.description}</p>
       </div>
-      
-      <p class="descricion-espazo">${espazo.description}</p>
-`;
+
+      <div id="contido-dinamico">
+        ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
+      </div>
+      `;
       const selectedEspazo = e.target;
     });
 
@@ -365,6 +425,8 @@ espazos.forEach(espazo => {
 
     
     markers.addLayer(marker);
+
+    
   }
 });
 
@@ -372,17 +434,51 @@ espazos.forEach(espazo => {
 map.addLayer(markers);
 
 
-map.addLayer(markers);
-
-
 map.on('zoomend', () => {
-  const zoomLevel = map.getZoom();
-  const iconToUse = zoomLevel >= 13 ? simpleIcon : iconWithNumber;
-
-  leafletMarkers.forEach(marker => {
-    marker.setIcon(iconToUse); 
-  });
+  updateMarkers();
 });
+
+function updateMarkers() {
+  const zoomLevel = map.getZoom();
+  leafletMarkers.forEach(marker => {
+    if (marker._icon) { 
+      if (zoomLevel < 13) {
+        if (marker._icon.classList.contains('selected')){
+          marker.setIcon(iconWithNumber);
+          marker._icon.classList.add('selected');
+        }else{
+          marker.setIcon(iconWithNumber);
+        }
+      } else if (marker._icon.classList.contains('selected')) {
+        marker.setIcon(simpleIcon);
+        const markerDiv = marker._icon.querySelector('.simple-marker');
+        if (markerDiv) {
+          markerDiv.style.background = marker.espazo.cor;
+          markerDiv.style.outline = "3px solid white";
+        }
+        marker._icon.classList.add('selected');
+      } else {
+        marker.setIcon(simpleIcon);
+      }
+    }
+  });
+}
+
+function deselectMarkers() {
+   
+   leafletMarkers.forEach((marker) => {
+    
+    if (marker._icon) {
+      marker._icon.classList.remove('selected');  
+      const markerDiv = marker._icon.querySelector('.simple-marker');
+      if (markerDiv) {
+        markerDiv.style.background = "black"; 
+        markerDiv.style.outline = "0px solid white";
+      }
+    }
+  });
+}
+
 </script>
 
 
