@@ -25,24 +25,23 @@ const mtLayer = new L.MaptilerLayer({
   style: "streets-v2"
 }).addTo(map);
 
-/*
-localidadeFilter.addEventListener('change', () => {
-  const value = localidadeFilter.value.split(',');
-  const [key, lat, lon, zoom] = value;
+document.addEventListener("DOMContentLoaded", () => {
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
 
-  // Forzar actualización do mapa
-  if (localidadeFilter.getAttribute("data-current") !== localidadeFilter.value) {
-    if (key === "galiza") {
-      map.setView([42.7751, -8.0339], 8.4);  // Volver á vista de Galiza
-    } else if (localidades[key]) {
-      const location = localidades[key];
-      map.setView([location.lat, location.lon], location.zoom); // Actualizar coordenadas e zoom
-    }
+  barraBusqueda.addEventListener("input", () => {
+    const termo = barraBusqueda.value.toLowerCase();
+    
+    tarxetas.forEach(tarxeta => {
+      const titulo = tarxeta.querySelector("h3").textContent.toLowerCase();
+      const descricion = tarxeta.querySelector("p").textContent.toLowerCase();
 
-    // Actualizar o valor da localidade actual
-    localidadeFilter.setAttribute("data-current", localidadeFilter.value);
-  }
-});*/
-
-
-
+      if (titulo.includes(termo) || descricion.includes(termo)) {
+        tarxeta.style.display = "block";
+      } else {
+        tarxeta.style.display = "none";
+      }
+    });
+  });
+});

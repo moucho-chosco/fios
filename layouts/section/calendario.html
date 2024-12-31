@@ -9,6 +9,27 @@
     <!-- Div para o todo -->
 
     <div id="calendario-container" class="standard-section-container">
+        <!-- Barra de Filtros -->
+  <div class="barra-superior">
+    <div id="filters">
+      <select id="localidade-filter" class="filter">
+        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+        {{ range where .Site.RegularPages ".Params.localidade" true }}
+          <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+        {{ end }}
+      </select>
+      <select class="filter">
+        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+        {{ range where .Site.RegularPages ".Params.etiqueta" true }}
+          <option value="">🏷️ {{ .Title }}</option>
+        {{ end }}
+      </select>
+    </div>
+    <div id="barra-busqueda" class="barra-busqueda">
+      <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
+    </div>
+  </div>
+
         <div id="window-container-calendario" class="window-container">
 
             <!-- Calendario á esquerda -->

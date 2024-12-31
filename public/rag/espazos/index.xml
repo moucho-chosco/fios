@@ -9,6 +9,20 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/rag/espazos/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>A Alvariça</title>
+      <link>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Casa Colorida</title>
+      <link>http://localhost:1313/rag/espazos/centros/casa_colorida/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/casa_colorida/</guid>
+      <description>&lt;p&gt;Laboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>A Coruña</title>
       <link>http://localhost:1313/rag/espazos/localidades/a_corunha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -17,51 +31,58 @@
     </item>
     <item>
       <title>A Fenda</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_fenda/</link>
+      <link>http://localhost:1313/rag/espazos/centros/fenda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_fenda/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/fenda/</guid>
       <description>&lt;p&gt;&lt;em&gt;A Fenda&lt;/em&gt; é un novo espazo desde onde responder ás necesidades do proletariado da cidade.&#xA;Un espazo para organizarnos sobre a independencia política de clase 🚩.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;O Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.&lt;/p&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Promover a educación popular.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Fomentar o activismo político e cultural.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Organizar eventos para fortalecer a comunidade.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social A Fenda organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Galleira</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_galleira/</link>
+      <link>http://localhost:1313/rag/espazos/centros/galleira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_galleira/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/galleira/</guid>
       <description></description>
     </item>
     <item>
-      <title>A Gentalha do Pichel</title>
-      <link>http://localhost:1313/rag/espazos/centros/o_pichel/</link>
+      <title>A Hedreira</title>
+      <link>http://localhost:1313/rag/espazos/centros/hedreira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/o_pichel/</guid>
-      <description>&lt;p&gt;Benvido ao Centro Social &lt;em&gt;O Pichel&lt;/em&gt;, un lugar onde promover a lingua galega e a comunidade.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.&#xD;&#xA;&lt;p&gt;O ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/rag/espazos/centros/hedreira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Pedreira</title>
+      <link>http://localhost:1313/rag/espazos/centros/pedreira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/pedreira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Revolta de Trasancos</title>
+      <link>http://localhost:1313/rag/espazos/centros/revolta_de_trasancos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/revolta_de_trasancos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Revolta do Berbês</title>
+      <link>http://localhost:1313/rag/espazos/centros/revolta_do_berbes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/revolta_do_berbes/</guid>
+      <description>&lt;p&gt;Fundado en 2003, 21 anos mantendo Vigo en pe!&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Revolteira</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_revolteira/</link>
+      <link>http://localhost:1313/rag/espazos/centros/revolteira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_revolteira/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/revolteira/</guid>
       <description>&lt;p&gt;&lt;em&gt;A Revolteira&lt;/em&gt; é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;    &lt;summary&gt;Somos&lt;/summary&gt;&#xD;&#xA;    &lt;p&gt;A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&lt;/p&gt;&#xA;&lt;p&gt;O seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>AC A Tiradoura</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_tiradoura/</link>
+      <title>A Tiradoura</title>
+      <link>http://localhost:1313/rag/espazos/centros/tiradoura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_tiradoura/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ACDE Buril</title>
-      <link>http://localhost:1313/rag/espazos/centros/buril/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/buril/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ACDE Treze Catorze</title>
-      <link>http://localhost:1313/rag/espazos/centros/o_matadoiro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/o_matadoiro/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/tiradoura/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +90,20 @@
       <link>http://localhost:1313/rag/espazos/centros/acefala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rag/espazos/centros/acefala/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aluandê</title>
+      <link>http://localhost:1313/rag/espazos/centros/aluande/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/aluande/</guid>
+      <description>&lt;p&gt;Un espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anarquismo</title>
+      <link>http://localhost:1313/rag/espazos/etiquetas/anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/etiquetas/anarquismo/</guid>
       <description></description>
     </item>
     <item>
@@ -86,6 +121,13 @@
       <description></description>
     </item>
     <item>
+      <title>Buril</title>
+      <link>http://localhost:1313/rag/espazos/centros/buril/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/buril/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Colectivo Terra</title>
       <link>http://localhost:1313/rag/espazos/centros/colectivo_terra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -100,102 +142,25 @@
       <description></description>
     </item>
     <item>
-      <title>CS A Alvariça</title>
-      <link>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS A Casa Colorida</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_casa_colorida/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_casa_colorida/</guid>
-      <description>&lt;p&gt;Laboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>CS A Chave das Noces</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_chave_das_noces/</link>
+      <link>http://localhost:1313/rag/espazos/centros/chave_das_noces/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_chave_das_noces/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/chave_das_noces/</guid>
       <description></description>
     </item>
     <item>
-      <title>CS A Pedreira</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_pedreira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_pedreira/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS A Revolta de Trasancos</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_revolta_de_trasancos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_revolta_de_trasancos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS A Revolta do Berbês</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_revolta_do_berbes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_revolta_do_berbes/</guid>
-      <description>&lt;p&gt;Fundado em 2003, 21 anos mantendo Vigo em pé!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CS Fuscalho</title>
-      <link>http://localhost:1313/rag/espazos/centros/fuscalho/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/fuscalho/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CS Gomes Gaioso</title>
-      <link>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</guid>
-      <description>&lt;p&gt;☆ ☭ 🟣&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CS Mádia Leva</title>
-      <link>http://localhost:1313/rag/espazos/centros/madia_leva/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/madia_leva/</guid>
-      <description>&lt;p&gt;Construíndo contrapoder no corazón de Lugo.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CSA A Hedreira</title>
-      <link>http://localhost:1313/rag/espazos/centros/a_hedreira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/a_hedreira/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSA O Fervedoiro</title>
-      <link>http://localhost:1313/rag/espazos/centros/o_fervedoiro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/o_fervedoiro/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSA Vagalume</title>
-      <link>http://localhost:1313/rag/espazos/centros/vagalume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/vagalume/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSC Xebra!</title>
-      <link>http://localhost:1313/rag/espazos/centros/xebra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/xebra/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CSOA Escárnio e Maldizer</title>
+      <title>Escárnio e Maldizer</title>
       <link>http://localhost:1313/rag/espazos/centros/escarnio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rag/espazos/centros/escarnio/</guid>
       <description>&lt;p&gt;O &lt;em&gt;CSOA Escárnio e Maldizer&lt;/em&gt; é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;    &lt;summary&gt;Cursos&lt;/summary&gt;&#xD;&#xA;    &lt;p&gt;Comezan os cursos do Escárnio:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🌼 &lt;strong&gt;Luns&lt;/strong&gt;, 19.00h: Iniciación pandereteira 🎶&lt;/li&gt;&#xA;&lt;li&gt;🌸 &lt;strong&gt;Martes&lt;/strong&gt; (a partir de xaneiro), 21:00h: Círculo de inglés 👅&lt;/li&gt;&#xA;&lt;li&gt;🏵️ &lt;strong&gt;Mércores&lt;/strong&gt;, 20:30h: Micros abertos 🎤&lt;/li&gt;&#xA;&lt;li&gt;💮 &lt;strong&gt;Xoves&lt;/strong&gt;, 19:00h: Taller de movemento: o discurso corporal 💃&lt;/li&gt;&#xA;&lt;li&gt;🍀 &lt;strong&gt;Sábado&lt;/strong&gt;, 12:30 a 15:00: Clube de bordado 🪡&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Todos os cursos son abertos e gratuitos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Faísca</title>
+      <link>http://localhost:1313/rag/espazos/centros/faisca/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/faisca/</guid>
+      <description></description>
     </item>
     <item>
       <title>Ferrol</title>
@@ -212,10 +177,24 @@
       <description></description>
     </item>
     <item>
-      <title>LS Faísca</title>
-      <link>http://localhost:1313/rag/espazos/centros/faisca/</link>
+      <title>Fuscalho</title>
+      <link>http://localhost:1313/rag/espazos/centros/fuscalho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/espazos/centros/faisca/</guid>
+      <guid>http://localhost:1313/rag/espazos/centros/fuscalho/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gomes Gaioso</title>
+      <link>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</guid>
+      <description>&lt;p&gt;☆ ☭ 🟣&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Independentismo</title>
+      <link>http://localhost:1313/rag/espazos/etiquetas/independentismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/etiquetas/independentismo/</guid>
       <description></description>
     </item>
     <item>
@@ -224,6 +203,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rag/espazos/localidades/lugo/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Mádia Leva</title>
+      <link>http://localhost:1313/rag/espazos/centros/madia_leva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/madia_leva/</guid>
+      <description>&lt;p&gt;Construíndo contrapoder no corazón de Lugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>O Fervedoiro</title>
+      <link>http://localhost:1313/rag/espazos/centros/fervedoiro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/fervedoiro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>O Pichel</title>
+      <link>http://localhost:1313/rag/espazos/centros/pichel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/pichel/</guid>
+      <description>&lt;p&gt;Benvide ao Centro Social &lt;em&gt;O Pichel&lt;/em&gt;, un lugar onde promover a lingua galega e a comunidade.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.&#xD;&#xA;&lt;p&gt;O ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ourense</title>
@@ -240,10 +240,38 @@
       <description></description>
     </item>
     <item>
+      <title>Socialismo</title>
+      <link>http://localhost:1313/rag/espazos/etiquetas/socialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/etiquetas/socialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Treze Catorze</title>
+      <link>http://localhost:1313/rag/espazos/centros/matadoiro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/matadoiro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vagalume</title>
+      <link>http://localhost:1313/rag/espazos/centros/vagalume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/vagalume/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Vigo</title>
       <link>http://localhost:1313/rag/espazos/localidades/vigo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rag/espazos/localidades/vigo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xebra!</title>
+      <link>http://localhost:1313/rag/espazos/centros/xebra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/rag/espazos/centros/xebra/</guid>
       <description></description>
     </item>
   </channel>

@@ -4,6 +4,16 @@
   <url>
     <loc>http://localhost:1313/rag/podcast/</loc>
     <lastmod>2024-11-18T18:18:12+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/podcast/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/podcast/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/calendario/evento3/</loc>
     <lastmod>2024-11-24T18:00:00+00:00</lastmod>
@@ -16,6 +26,16 @@
   </url><url>
     <loc>http://localhost:1313/rag/redes/</loc>
     <lastmod>2024-11-18T18:18:34+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/redes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/redes/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/</loc>
     <lastmod>2024-11-18T18:18:03+01:00</lastmod>
@@ -32,6 +52,16 @@
   </url><url>
     <loc>http://localhost:1313/rag/convocatorias/</loc>
     <lastmod>2024-11-18T18:17:52+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/convocatorias/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/convocatorias/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/calendario/</loc>
     <lastmod>2024-11-18T18:17:37+01:00</lastmod>
@@ -163,6 +193,30 @@
   </url><url>
     <loc>http://localhost:1313/rag/biblioteca/obras/ramnath_decolonizing_anarchism/</loc>
   </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/alvari%C3%A7a/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/casa_colorida/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/casa_colorida/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/casa_colorida/"
+                />
+  </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/a_corunha/</loc>
     <xhtml:link
                 rel="alternate"
@@ -175,53 +229,163 @@
                 href="http://localhost:1313/rag/espazos/localidades/a_corunha/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_fenda/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/fenda/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/a_fenda/"
+                href="http://localhost:1313/agal/espazos/centros/fenda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/a_fenda/"
+                href="http://localhost:1313/rag/espazos/centros/fenda/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_galleira/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/o_pichel/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/galleira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/o_pichel/"
+                href="http://localhost:1313/agal/espazos/centros/galleira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/o_pichel/"
+                href="http://localhost:1313/rag/espazos/centros/galleira/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_revolteira/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/hedreira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/a_revolteira/"
+                href="http://localhost:1313/agal/espazos/centros/hedreira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/a_revolteira/"
+                href="http://localhost:1313/rag/espazos/centros/hedreira/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_tiradoura/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/pedreira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/pedreira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/pedreira/"
+                />
   </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/buril/</loc>
+    <loc>http://localhost:1313/rag/espazos/centros/revolta_de_trasancos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/revolta_de_trasancos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/revolta_de_trasancos/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/revolta_do_berbes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/revolta_do_berbes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/revolta_do_berbes/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/revolteira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/revolteira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/revolteira/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/tiradoura/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/tiradoura/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/tiradoura/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/acefala/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/acefala/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/acefala/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/aluande/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/aluande/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/aluande/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/etiquetas/anarquismo/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/ateneo_ferrolan/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/ateneo_ferrolan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/ateneo_ferrolan/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/xose_tarrio/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/xose_tarrio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/xose_tarrio/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/buril/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/buril/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/buril/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/categories/</loc>
     <xhtml:link
@@ -236,66 +400,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/rag/espazos/centros/colectivo_terra/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/alvari%C3%A7a/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_casa_colorida/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_chave_das_noces/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_pedreira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/a_pedreira/"
+                href="http://localhost:1313/agal/espazos/centros/colectivo_terra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/a_pedreira/"
+                href="http://localhost:1313/rag/espazos/centros/colectivo_terra/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_revolta_de_trasancos/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_revolta_do_berbes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/fuscalho/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/madia_leva/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/a_hedreira/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/o_fervedoiro/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/vagalume/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/xebra/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/escarnio/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/escarnio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/escarnio/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/funda%C3%A7om_artabria/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/faisca/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/localidades/lugo/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/centros/o_matadoiro/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/localidades/ourense/</loc>
-  </url><url>
-    <loc>http://localhost:1313/rag/espazos/localidades/pontevedra/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/compostela/</loc>
     <xhtml:link
@@ -309,6 +423,212 @@
                 href="http://localhost:1313/rag/espazos/localidades/compostela/"
                 />
   </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/chave_das_noces/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/chave_das_noces/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/chave_das_noces/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/escarnio/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/escarnio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/escarnio/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/faisca/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/faisca/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/faisca/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/localidades/ferrol/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/localidades/ferrol/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/localidades/ferrol/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/funda%C3%A7om_artabria/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/funda%C3%A7om_artabria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/funda%C3%A7om_artabria/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/fuscalho/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/fuscalho/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/fuscalho/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/gomes_gaioso/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/gomes_gaioso/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/gomes_gaioso/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/etiquetas/independentismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/localidades/lugo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/localidades/lugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/localidades/lugo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/madia_leva/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/madia_leva/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/madia_leva/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/fervedoiro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/fervedoiro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/fervedoiro/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/pichel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/pichel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/pichel/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/localidades/ourense/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/localidades/ourense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/localidades/ourense/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/localidades/pontevedra/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/localidades/pontevedra/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/localidades/pontevedra/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/etiquetas/socialismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/matadoiro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/matadoiro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/matadoiro/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/vagalume/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/vagalume/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/vagalume/"
+                />
+  </url><url>
     <loc>http://localhost:1313/rag/espazos/localidades/vigo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/localidades/vigo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/localidades/vigo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/rag/espazos/centros/xebra/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/xebra/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/xebra/"
+                />
   </url>
 </urlset>

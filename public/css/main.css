@@ -544,6 +544,66 @@ nav a:hover {
         width: 100%; /* Ou 100% para ocupar todo o espazo */
     }
 
+    .tarxetas-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 16px;
+        margin: 30px;
+      }
+      
+      .tarxeta-centro {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .tarxeta-centro:hover {
+        transform: scale(1.023);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .franxa-cor {
+        height: 8px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .tarxeta-centro img {
+        border: 2px solid #eeeeee;
+        
+      }
+
+      .tarxeta-centro h3 {
+        font-size: 16px;
+        margin-bottom: -0px;
+      }
+      .tarxeta-centro p {
+        font-size: 11px;
+        margin-bottom: -5px;
+      }
+
+      .tarxeta-centro span {
+        font-size: 10px;
+      }
+      
+      .logo-tarxeta {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: -15px;
+      }
+      
+
   
   /* Caixa branca que contén o nome e a descrición */
   #info-espazo {
@@ -704,35 +764,58 @@ nav a:hover {
     opacity: 1; /* Axusta a opacidade segundo o resultado desexado */
   }
 
-  #localidade-filter {
-    font-size: 14px;               /* Tamaño da fonte do botón */
-    padding: 10px 20px;            /* Espazo interno do botón (arriba, abaixo, esquerda, dereita) */
-    background-color: #000000;     /* Cor de fondo do botón */
-    border-radius: 5px;            /* Bordos redondeados */
-    color: #ffffff;                   /* Cor do texto */
-    appearance: none;              /* Elimina a apariencia por defecto do navegador */
-    -webkit-appearance: none;      /* Elimina a apariencia por defecto en Safari */
-    -moz-appearance: none;         /* Elimina a apariencia por defecto en Firefox */
-    width: auto;                   /* O tamaño do botón axustase ao contido */
-    cursor: pointer;              /* Aparece o cursor en forma de man */
-    transition: all 0.3s ease;     /* Transición suave ao pasar o rato ou ao interactuar */
-     }
-
-  /* Estilizar as opcións do select */
-    #localidade-filter option {
-    font-size: 14px;               /* Tamaño da fonte das opcións */
-    padding: 10px;                 /* Espazo interno das opcións */
-    background-color: #3a3a3a;        /* Cor de fondo das opcións */
-    color: #ffffff;                   /* Cor do texto das opcións */
-    transition: background-color 0.3s ease; /* Transición suave no fondo ao pasar o rato */
-    }
-
-/* Cambiar o fondo cando pasas o rato sobre as opcións */
-#localidade-filter option:hover {
-    background-color: #f73232 !important;     /* Fondo azul ao pasar o rato */
-    color: rgb(0, 0, 0) !important;                  /* Texto branco cando pasa o rato */
+  .barra-superior {
+    display: flex;                  /* Dispoñer elementos en fila */
+    align-items: center;            /* Alineación vertical centrada */
+    justify-content: space-between; /* Espazo entre o select e a barra de busca */
+    gap: 10px;                      /* Espazo entre os elementos */
   }
-
+  
+  .filter {
+    font-size: 14px;                /* Mantén o tamaño do texto */
+    padding: 6px 10px;             /* Espazo interno */
+    background-color: #000000;      /* Cor de fondo */
+    border-radius: 5px;             /* Bordos redondeados */
+    color: #ffffff;                 /* Cor do texto */
+    appearance: none;               /* Elimina a apariencia por defecto */
+    -webkit-appearance: none;       /* Safari */
+    -moz-appearance: none;          /* Firefox */
+    cursor: pointer;                /* Cambiar cursor a man */
+    transition: all 0.3s ease;      /* Transición suave */
+  }
+  
+  .filter option {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter option:hover {
+    background-color: #f73232 !important;
+    color: #000000 !important;
+  }
+  
+  .barra-busqueda {
+    flex-shrink: 0;                 /* A barra non cambia de tamaño se o contedor redimensiona */
+    position: relative;
+  }
+  
+  .barra-busqueda input {
+    width: 200px;                   /* Ancho fixo */
+    padding: 5px 10px;              /* Espazo interno */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+  }
+  
+  .barra-busqueda input:focus {
+    outline: none;
+  }
+  
   
   
 

@@ -2,12 +2,25 @@
 
 <div id="espazos-container" class="standard-section-container">
   <!-- Barra de Filtros -->
-  <select id="localidade-filter">
-    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-    {{ range where .Site.RegularPages ".Params.localidade" true }}
-      <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
-    {{ end }}
-  </select>
+  <div class="barra-superior">
+    <div id="filters">
+      <select id="localidade-filter" class="filter">
+        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+        {{ range where .Site.RegularPages ".Params.localidade" true }}
+          <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+        {{ end }}
+      </select>
+      <select class="filter">
+        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+        {{ range where .Site.RegularPages ".Params.etiqueta" true }}
+          <option value="">🏷️ {{ .Title }}</option>
+        {{ end }}
+      </select>
+    </div>
+    <div id="barra-busqueda" class="barra-busqueda">
+      <input type="text" id="busqueda-centros" placeholder="Buscar centros..." />
+    </div>
+  </div>
 
 
   <!-- Div para o Mapa -->
@@ -19,15 +32,25 @@
     
     <!-- Caixa de Información á dereita -->
     <div class="window">
+      <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
+        {{ range shuffle (where .Site.RegularPages ".Params.centro" true) }}
+          <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+            <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
+            <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
+            <h3>{{ .Title }}</h3>
+            <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
+            <p>{{ .Params.description }}</p>
+          </div>
+        {{ end }}
+      </div>
       <div id="imaxe-cabeceira-container">
       </div>
       <div id="info-espazo">
-        <h2>Selecciona un Centro Social</h2>
         <div id="contido-dinamico">
           <!-- O contido dinámico do espazo seleccionado irá aquí -->
         </div>
       </div>
-      {{ .Content }}
+
     </div>
   </div>
 
@@ -39,7 +62,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 </div>
-
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
@@ -84,8 +106,9 @@
 });
 
 const espazos = [
-  {{ range where .Site.RegularPages ".Params.centro" true }}
+{{ range where .Site.RegularPages ".Params.centro" true }}
     {
+      key: "{{ .File.BaseFileName }}",
       title: "{{ .Title }}",
       subtitle: "{{ .Params.subtitle }}",
       description: "{{ .Params.description }}",
@@ -143,43 +166,7 @@ espazos.forEach(espazo => {
     // Mostrar información cando se fai clic no marcador
     //marker.bindPopup(`<strong>${espazo.title}</strong><br>📍${espazo.direcion}`);
     marker.on('click', (e) => {
-      const zoomLevel = map.getZoom();
-      const selectedMarker = e.target;
-
-      if (zoomLevel < 13) {
-        map.setView(selectedMarker.getLatLng(), 15, { animate: true });
-      }
-
-      deselectMarkers();
-      // Agora, cambiar a cor do marcador clicado
-      const selectedMarkerDiv = selectedMarker._icon.querySelector('.simple-marker');
-      if (selectedMarkerDiv) {
-        selectedMarkerDiv.style.background = espazo.cor; // Cor cando está seleccionado
-        selectedMarkerDiv.style.outline = "3px solid white";
-      }
-
-      selectedMarker._icon.classList.add('selected');  // Engadir a clase 'selected'
-
-      const cabeceiraContainer = document.getElementById('imaxe-cabeceira-container');
-      cabeceiraContainer.innerHTML = `
-      <!-- Imaxe de fondo fixa do centro social -->
-      <div class="imaxe-fondo">
-        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
-      </div>
-      `;
-      const infoEspazo = document.getElementById('info-espazo');
-      infoEspazo.innerHTML = `
-      <!-- Contedor do logo e título -->
-      <div class="header-espazo">
-        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
-        <h2 class="titulo-espazo">${espazo.title}</h2>
-        <p class="descricion-espazo">${espazo.description}</p>
-      </div>
-
-      <div id="contido-dinamico">
-        ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
-      </div>
-      `;
+      selectCentro(espazo);
       const selectedEspazo = e.target;
     });
 
@@ -199,6 +186,79 @@ map.addLayer(markers);
 map.on('zoomend', () => {
   updateMarkers();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const infoContainer = document.getElementById("info-espazo");
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+
+  // Mostrar tarxetas ao cargar a páxina
+  tarxetasContainer.style.display = "grid";
+
+  // Evento para seleccionar un centro ao facer clic nunha tarxeta
+  document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
+    tarxeta.addEventListener("click", () => {
+      console.log("tarxeta clicked");
+      const key = tarxeta.getAttribute("data-key");
+      const espazo = espazos.find(e => e.key === key);
+
+      if (espazo) {
+        selectCentro(espazo);
+      }
+    });
+  });
+});
+
+function selectCentro(espazo) {
+  if (!espazo) return;
+  const marker = leafletMarkers.find(m => m.espazo.key === espazo.key);
+
+  // 1. Cambiar o zoom e a posición do mapa
+  
+  const zoomLevel = map.getZoom();
+  const selectedMarker = marker;
+  if (zoomLevel < 13) {
+    map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+  }
+
+  // 2. Ocultar a reixa principal de tarxetas
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  tarxetasContainer.style.display = "none";
+
+  // 3. Mostrar a información do centro
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+  const infoContainer = document.getElementById("info-espazo");
+
+  cabeceiraContainer.innerHTML = `
+    <div class="imaxe-fondo">
+      <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+    </div>`;
+  
+  infoContainer.innerHTML = `
+    <div class="header-espazo">
+      <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+      <h2 class="titulo-espazo">${espazo.title}</h2>
+      <p class="descricion-espazo">${espazo.description}</p>
+    </div>
+    <div id="contido-dinamico">
+      ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
+    </div>`;
+
+  // 4. Colorear o marcador do centro seleccionado
+  deselectMarkers(); // Asegurarse de que todos os marcadores estean deseleccionados
+  if (marker && marker._icon) {
+    const markerDiv = marker._icon.querySelector('.simple-marker');
+    if (markerDiv) {
+      markerDiv.style.background = espazo.cor; // Cor do centro
+      markerDiv.style.outline = "3px solid white";
+    }
+    marker._icon.classList.add('selected');
+  }
+
+  
+}
+
 
 function updateMarkers() {
   const zoomLevel = map.getZoom();

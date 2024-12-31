@@ -1,5 +1,5 @@
 ---
-title: "CSOA Escárnio e Maldizer"
+title: "Escárnio e Maldizer"
 description: "Centro Social Okupado Autoxestionado"
 direcion: "Rúa Algalia de Arriba, 11"
 dirixido_por: "Asemblea do Escárnio"
@@ -7,8 +7,9 @@ lang: "rag"
 participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
 logo:  "/espazos/centros/escarnio/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/escarnio/foto_cabeceira.png"  # Ruta á imaxe de fondo
-cor: "#909090"
+cor: "#999999"
 centro: true
+localidade: "Compostela"
 location:
   lat: 42.88169616573114
   lon: -8.54240060014547

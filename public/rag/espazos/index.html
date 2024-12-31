@@ -179,24 +179,41 @@
 
 <div id="espazos-container" class="standard-section-container">
   
-  <select id="localidade-filter">
-    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-    
-      <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
-    
-      <option value="compostela,42.879,-8.544,15">📍 Compostela</option>
-    
-      <option value="ferrol,43.48321,-8.22489,14">📍 Ferrol</option>
-    
-      <option value="lugo,43.010666,-7.555,15">📍 Lugo</option>
-    
-      <option value="ourense,42.33669,-7.86407,15">📍 Ourense</option>
-    
-      <option value="pontevedra,42.4325,-8.645,15">📍 Pontevedra</option>
-    
-      <option value="vigo,42.237878,-8.718482,13">📍 Vigo</option>
-    
-  </select>
+  <div class="barra-superior">
+    <div id="filters">
+      <select id="localidade-filter" class="filter">
+        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+        
+          <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
+        
+          <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
+        
+          <option value="ferrol,43.48321,-8.22489,14">📍 Ferrol</option>
+        
+          <option value="lugo,43.010666,-7.555,15">📍 Lugo</option>
+        
+          <option value="ourense,42.33669,-7.86407,15">📍 Ourense</option>
+        
+          <option value="pontevedra,42.4325,-8.645,15">📍 Pontevedra</option>
+        
+          <option value="vigo,42.237878,-8.718482,13">📍 Vigo</option>
+        
+      </select>
+      <select class="filter">
+        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+        
+          <option value="">🏷️ Anarquismo</option>
+        
+          <option value="">🏷️ Independentismo</option>
+        
+          <option value="">🏷️ Socialismo</option>
+        
+      </select>
+    </div>
+    <div id="barra-busqueda" class="barra-busqueda">
+      <input type="text" id="busqueda-centros" placeholder="Buscar centros..." />
+    </div>
+  </div>
 
 
   
@@ -208,15 +225,241 @@
     
     
     <div class="window">
+      <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
+        
+          <div class="tarxeta-centro" data-key="buril">
+            <div class="franxa-cor" style="background: #E4B528;"></div>
+            <img src="/espazos/centros/buril/logo.jpg" alt="Logo de Buril" class="logo-tarxeta">
+            <h3>Buril</h3>
+            <span class="localidade">📍Sarria</span>
+            <p>Asociación Cultural, Deportiva e Ecolóxica</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="matadoiro">
+            <div class="franxa-cor" style="background: #eb008b;"></div>
+            <img src="/espazos/centros/o_matadoiro/logo.jpg" alt="Logo de Treze Catorze" class="logo-tarxeta">
+            <h3>Treze Catorze</h3>
+            <span class="localidade">📍Salceda de Caselas</span>
+            <p>Asociación Cultural en Salceda de Caselas</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="pichel.rag">
+            <div class="franxa-cor" style="background: #bbbc00;"></div>
+            <img src="/espazos/centros/o_pichel/logo.png" alt="Logo de O Pichel" class="logo-tarxeta">
+            <h3>O Pichel</h3>
+            <span class="localidade">📍Compostela</span>
+            <p>Centro Social en Compostela</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="xebra.rag">
+            <div class="franxa-cor" style="background: #89C4FF;"></div>
+            <img src="/espazos/centros/xebra/logo.png" alt="Logo de Xebra!" class="logo-tarxeta">
+            <h3>Xebra!</h3>
+            <span class="localidade">📍Burela</span>
+            <p>Asociacioón cultural</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="hedreira">
+            <div class="franxa-cor" style="background: #179429;"></div>
+            <img src="/espazos/centros/a_hedreira/logo.jpg" alt="Logo de A Hedreira" class="logo-tarxeta">
+            <h3>A Hedreira</h3>
+            <span class="localidade">📍Lugo</span>
+            <p>Centro Social Autoxestionado</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="tiradoura">
+            <div class="franxa-cor" style="background: #BC0707;"></div>
+            <img src="/espazos/centros/a_tiradoura/logo.jpg" alt="Logo de A Tiradoura" class="logo-tarxeta">
+            <h3>A Tiradoura</h3>
+            <span class="localidade">📍Cangas do Morrazo</span>
+            <p>Asociación Cultural</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="escarnio.rag">
+            <div class="franxa-cor" style="background: #999999;"></div>
+            <img src="/espazos/centros/escarnio/logo.png" alt="Logo de Escárnio e Maldizer" class="logo-tarxeta">
+            <h3>Escárnio e Maldizer</h3>
+            <span class="localidade">📍Compostela</span>
+            <p>Centro Social Okupado Autoxestionado</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="chave_das_noces">
+            <div class="franxa-cor" style="background: #eb008b;"></div>
+            <img src="/espazos/centros/a_chave_das_noces/logo.jpg" alt="Logo de CS A Chave das Noces" class="logo-tarxeta">
+            <h3>CS A Chave das Noces</h3>
+            <span class="localidade">📍Castroverde</span>
+            <p>Centro Social en Castroverde</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="fenda.rag">
+            <div class="franxa-cor" style="background: #f15e80;"></div>
+            <img src="/espazos/centros/a_fenda/logo.png" alt="Logo de A Fenda" class="logo-tarxeta">
+            <h3>A Fenda</h3>
+            <span class="localidade">📍A Coruña</span>
+            <p>Espazo baixo a estratexia socialista </p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="acefala.rag">
+            <div class="franxa-cor" style="background: #FDE22D;"></div>
+            <img src="/espazos/centros/acefala/logo.png" alt="Logo de Acéfala" class="logo-tarxeta">
+            <h3>Acéfala</h3>
+            <span class="localidade">📍A Coruña</span>
+            <p>Espazo autónomo no barrio de Monte Alto</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="alvariça.rag">
+            <div class="franxa-cor" style="background: #D4AA00;"></div>
+            <img src="/espazos/centros/a_alvari%c3%a7a/logo.jpg" alt="Logo de A Alvariça" class="logo-tarxeta">
+            <h3>A Alvariça</h3>
+            <span class="localidade">📍Allariz</span>
+            <p>Centro Social</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="xose_tarrio.rag">
+            <div class="franxa-cor" style="background: #A637CA;"></div>
+            <img src="/espazos/centros/xose_tarrio/logo.png" alt="Logo de Ateneo Libertario Xosé Tarrío" class="logo-tarxeta">
+            <h3>Ateneo Libertario Xosé Tarrío</h3>
+            <span class="localidade">📍A Coruña</span>
+            <p>Anarquismo de barrio</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="gomes_gaioso">
+            <div class="franxa-cor" style="background: #FF5858;"></div>
+            <img src="/espazos/centros/gomes_gaioso/logo.png" alt="Logo de Gomes Gaioso" class="logo-tarxeta">
+            <h3>Gomes Gaioso</h3>
+            <span class="localidade">📍A Corunha</span>
+            <p>Centro social independentista, socialista e antipatriarcal</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="revolteira.rag">
+            <div class="franxa-cor" style="background: #55B47B;"></div>
+            <img src="/espazos/centros/a_revolteira/logo.png" alt="Logo de A Revolteira" class="logo-tarxeta">
+            <h3>A Revolteira</h3>
+            <span class="localidade">📍A Coruña</span>
+            <p>Espazo Autoxestionado na Coruña</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="vagalume">
+            <div class="franxa-cor" style="background: #f3c61c;"></div>
+            <img src="/espazos/centros/vagalume/logo.jpg" alt="Logo de Vagalume" class="logo-tarxeta">
+            <h3>Vagalume</h3>
+            <span class="localidade">📍Lugo</span>
+            <p>Centro Social Autoxestionado</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="madia_leva">
+            <div class="franxa-cor" style="background: #FF5A30;"></div>
+            <img src="/espazos/centros/madia_leva/logo.png" alt="Logo de Mádia Leva" class="logo-tarxeta">
+            <h3>Mádia Leva</h3>
+            <span class="localidade">📍Lugo</span>
+            <p>Centro Social e Cultural</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="aluande.rag">
+            <div class="franxa-cor" style="background: #f7a861;"></div>
+            <img src="/espazos/centros/aluande/logo.jpg" alt="Logo de Aluandê" class="logo-tarxeta">
+            <h3>Aluandê</h3>
+            <span class="localidade">📍Compostela</span>
+            <p>Espazo afrocentrado, antirracista e transinclusivo</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="fervedoiro">
+            <div class="franxa-cor" style="background: #3A7CC7;"></div>
+            <img src="/espazos/centros/o_fervedoiro/logo.jpeg" alt="Logo de O Fervedoiro" class="logo-tarxeta">
+            <h3>O Fervedoiro</h3>
+            <span class="localidade">📍Ribeira</span>
+            <p>Espazo Social en Ribeira</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="colectivo_terra">
+            <div class="franxa-cor" style="background: #e72444;"></div>
+            <img src="/espazos/centros/colectivo_terra/logo.jpg" alt="Logo de Colectivo Terra" class="logo-tarxeta">
+            <h3>Colectivo Terra</h3>
+            <span class="localidade">📍Pontedeume</span>
+            <p>Centro Social de Pontedeume</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="pedreira">
+            <div class="franxa-cor" style="background: #E64C3B;"></div>
+            <img src="/espazos/centros/a_pedreira/logo.jpg" alt="Logo de A Pedreira" class="logo-tarxeta">
+            <h3>A Pedreira</h3>
+            <span class="localidade">📍Pontevedra</span>
+            <p>Espazo Autoxestionado en Pontevedra</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="galleira">
+            <div class="franxa-cor" style="background: #B5D0DB;"></div>
+            <img src="/espazos/centros/a_galleira/logo.png" alt="Logo de A Galleira" class="logo-tarxeta">
+            <h3>A Galleira</h3>
+            <span class="localidade">📍Ourense</span>
+            <p>Espazo Aberto Nacionalista de Ourense</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="fuscalho">
+            <div class="franxa-cor" style="background: #2740D2;"></div>
+            <img src="/espazos/centros/fuscalho/logo.jpg" alt="Logo de Fuscalho" class="logo-tarxeta">
+            <h3>Fuscalho</h3>
+            <span class="localidade">📍A Guarda</span>
+            <p>Espazo Autoxestionado na Guarda</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="revolta_do_berbes">
+            <div class="franxa-cor" style="background: #1F7DBD;"></div>
+            <img src="/espazos/centros/a_revolta_do_berbes/logo.png" alt="Logo de A Revolta do Berbês" class="logo-tarxeta">
+            <h3>A Revolta do Berbês</h3>
+            <span class="localidade">📍Vigo</span>
+            <p>Centro Social Independentista</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="fundaçom_artabria">
+            <div class="franxa-cor" style="background: #d4112c;"></div>
+            <img src="/espazos/centros/artabria/logo.jpg" alt="Logo de Fundaçom Artábria" class="logo-tarxeta">
+            <h3>Fundaçom Artábria</h3>
+            <span class="localidade">📍Ferrol</span>
+            <p>Associación Cultural</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="revolta_de_trasancos">
+            <div class="franxa-cor" style="background: #f2d054;"></div>
+            <img src="/espazos/centros/a_revolta_de_trasancos/logo.jpg" alt="Logo de A Revolta de Trasancos" class="logo-tarxeta">
+            <h3>A Revolta de Trasancos</h3>
+            <span class="localidade">📍Trasancos</span>
+            <p>Colectivo Sociocultural</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="faisca.rag">
+            <div class="franxa-cor" style="background: #DB0C14;"></div>
+            <img src="/espazos/centros/faisca2/logo.png" alt="Logo de Faísca" class="logo-tarxeta">
+            <h3>Faísca</h3>
+            <span class="localidade">📍Vigo</span>
+            <p>Local Social en Vigo</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="ateneo_ferrolan">
+            <div class="franxa-cor" style="background: #1f7dbd;"></div>
+            <img src="/espazos/centros/ateneo_ferrolan/logo.png" alt="Logo de Ateneo Ferrolán" class="logo-tarxeta">
+            <h3>Ateneo Ferrolán</h3>
+            <span class="localidade">📍Ferrol</span>
+            <p>Un lugar de encontro para a cultura</p>
+          </div>
+        
+          <div class="tarxeta-centro" data-key="casa_colorida">
+            <div class="franxa-cor" style="background: #eb008b;"></div>
+            <img src="/espazos/centros/a_casa_colorida/logo.jpg" alt="Logo de A Casa Colorida" class="logo-tarxeta">
+            <h3>A Casa Colorida</h3>
+            <span class="localidade">📍Nigrán</span>
+            <p>Laboratorio do Común na Galiza</p>
+          </div>
+        
+      </div>
       <div id="imaxe-cabeceira-container">
       </div>
       <div id="info-espazo">
-        <h2>Selecciona un Centro Social</h2>
         <div id="contido-dinamico">
           
         </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -228,7 +471,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 </div>
-
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
@@ -259,7 +501,7 @@
       title: "Compostela",
       lat:  42.879 ,
       lon:  -8.544 ,
-      zoom:  15 
+      zoom:  14 
     },
     
     "ferrol": {
@@ -315,8 +557,37 @@
 });
 
 const espazos = [
+
+    {
+      key: "alvariça.rag",
+      title: "A Alvariça",
+      subtitle: "",
+      description: "Centro Social",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_alvariça\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_alvariça\/foto_cabeceira.png",
+      cor: "#D4AA00",
+      seleccionado: false,
+      content: "",
+      location: { lat:  42.187726410307874 , lon:  -7.8036597061583475  }
+    },
   
     {
+      key: "casa_colorida",
+      title: "A Casa Colorida",
+      subtitle: "",
+      description: "Laboratorio do Común na Galiza",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_casa_colorida\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_casa_colorida\/foto_cabeceira.jpg",
+      cor: "#eb008b",
+      seleccionado: false,
+      content: "\u003cp\u003eLaboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.\u003c/p\u003e\n",
+      location: { lat:  42.13955443594872 , lon:  -8.807018804609987  }
+    },
+  
+    {
+      key: "fenda.rag",
       title: "A Fenda",
       subtitle: "Centro Socialista",
       description: "Espazo baixo a estratexia socialista ",
@@ -330,6 +601,7 @@ const espazos = [
     },
   
     {
+      key: "galleira",
       title: "A Galleira",
       subtitle: "",
       description: "Espazo Aberto Nacionalista de Ourense",
@@ -343,19 +615,63 @@ const espazos = [
     },
   
     {
-      title: "A Gentalha do Pichel",
+      key: "hedreira",
+      title: "A Hedreira",
       subtitle: "",
-      description: "Centro Social em Compostela",
-      direcion: "Rúa de Santa Clara, 21",
-      logo: "\/espazos\/centros\/o_pichel\/logo.png",
-      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
-      cor: "#bbbc00",
+      description: "Centro Social Autoxestionado",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_hedreira\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_hedreira\/foto_cabeceira.png",
+      cor: "#179429",
       seleccionado: false,
-      content: "\u003cp\u003eBenvido ao Centro Social \u003cem\u003eO Pichel\u003c/em\u003e, un lugar onde promover a lingua galega e a comunidade.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\r\n  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.\r\n\u003cp\u003eO ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.\u003c/p\u003e\n\u003cp\u003eA língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…\u003c/p\u003e\n\u003cp\u003eOrgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…\u003c/p\u003e\n\u003cp\u003eMas o melhor ainda está por chegar.\u003c/p\u003e\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eComo funcionamos?\u003c/summary\u003e\r\n  \u003cp\u003eA Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eConsello xeral\u003c/li\u003e\r\n    \u003cli\u003eCultura\u003c/li\u003e\r\n    \u003cli\u003eCultura científica\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
-      location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
+      content: "",
+      location: { lat:  43.00718469311447 , lon:  -7.550971717750473  }
     },
   
     {
+      key: "pedreira",
+      title: "A Pedreira",
+      subtitle: "",
+      description: "Espazo Autoxestionado en Pontevedra",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_pedreira\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_pedreira\/foto_cabeceira.jpg",
+      cor: "#E64C3B",
+      seleccionado: false,
+      content: "",
+      location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
+    },
+  
+    {
+      key: "revolta_de_trasancos",
+      title: "A Revolta de Trasancos",
+      subtitle: "",
+      description: "Colectivo Sociocultural",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_revolta_de_trasancos\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_revolta_de_trasancos\/foto_cabeceira.jpg",
+      cor: "#f2d054",
+      seleccionado: false,
+      content: "",
+      location: { lat:  43.48018435093307 , lon:  -8.20404842156572  }
+    },
+  
+    {
+      key: "revolta_do_berbes",
+      title: "A Revolta do Berbês",
+      subtitle: "",
+      description: "Centro Social Independentista",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_revolta_do_berbes\/logo.png",
+      imaxe: "\/espazos\/centros\/a_revolta_do_berbes\/foto_cabeceira.png",
+      cor: "#1F7DBD",
+      seleccionado: false,
+      content: "\u003cp\u003eFundado en 2003, 21 anos mantendo Vigo en pe!\u003c/p\u003e\n",
+      location: { lat:  42.23936235256048 , lon:  -8.727134803820913  }
+    },
+  
+    {
+      key: "revolteira.rag",
       title: "A Revolteira",
       subtitle: "",
       description: "Espazo Autoxestionado na Coruña",
@@ -369,9 +685,10 @@ const espazos = [
     },
   
     {
-      title: "AC A Tiradoura",
+      key: "tiradoura",
+      title: "A Tiradoura",
       subtitle: "",
-      description: "Asociaçom Cultural",
+      description: "Asociación Cultural",
       direcion: "",
       logo: "\/espazos\/centros\/a_tiradoura\/logo.jpg",
       imaxe: "\/espazos\/centros\/a_tiradoura\/foto_cabeceira.jpg",
@@ -382,32 +699,7 @@ const espazos = [
     },
   
     {
-      title: "ACDE Buril",
-      subtitle: "",
-      description: "Asociación Cultural, Deportiva e Ecolóxica",
-      direcion: "",
-      logo: "\/espazos\/centros\/buril\/logo.jpg",
-      imaxe: "\/espazos\/centros\/buril\/foto_cabeceira.jpg",
-      cor: "#E4B528",
-      seleccionado: false,
-      content: "",
-      location: { lat:  42.78196711219094 , lon:  -7.416791429296332  }
-    },
-  
-    {
-      title: "ACDE Treze Catorze",
-      subtitle: "",
-      description: "Asociación Cultural en Salceda de Caselas",
-      direcion: "",
-      logo: "\/espazos\/centros\/o_matadoiro\/logo.jpg",
-      imaxe: "\/espazos\/centros\/o_matadoiro\/foto_cabeceira.png",
-      cor: "#eb008b",
-      seleccionado: false,
-      content: "",
-      location: { lat:  42.09627942798971 , lon:  -8.55746347975958  }
-    },
-  
-    {
+      key: "acefala.rag",
       title: "Acéfala",
       subtitle: "",
       description: "Espazo autónomo no barrio de Monte Alto",
@@ -421,6 +713,21 @@ const espazos = [
     },
   
     {
+      key: "aluande.rag",
+      title: "Aluandê",
+      subtitle: "",
+      description: "Espazo afrocentrado, antirracista e transinclusivo",
+      direcion: "",
+      logo: "\/espazos\/centros\/aluande\/logo.jpg",
+      imaxe: "\/espazos\/centros\/aluande\/foto_cabeceira.jpg",
+      cor: "#f7a861",
+      seleccionado: false,
+      content: "\u003cp\u003eUn espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.\u003c/p\u003e\n",
+      location: { lat:  42.890695056496504 , lon:  -8.528207746840145  }
+    },
+  
+    {
+      key: "ateneo_ferrolan",
       title: "Ateneo Ferrolán",
       subtitle: "",
       description: "Un lugar de encontro para a cultura",
@@ -434,6 +741,7 @@ const espazos = [
     },
   
     {
+      key: "xose_tarrio.rag",
       title: "Ateneo Libertario Xosé Tarrío",
       subtitle: "",
       description: "Anarquismo de barrio",
@@ -447,6 +755,21 @@ const espazos = [
     },
   
     {
+      key: "buril",
+      title: "Buril",
+      subtitle: "",
+      description: "Asociación Cultural, Deportiva e Ecolóxica",
+      direcion: "",
+      logo: "\/espazos\/centros\/buril\/logo.jpg",
+      imaxe: "\/espazos\/centros\/buril\/foto_cabeceira.jpg",
+      cor: "#E4B528",
+      seleccionado: false,
+      content: "",
+      location: { lat:  42.78196711219094 , lon:  -7.416791429296332  }
+    },
+  
+    {
+      key: "colectivo_terra",
       title: "Colectivo Terra",
       subtitle: "",
       description: "Centro Social de Pontedeume",
@@ -460,32 +783,7 @@ const espazos = [
     },
   
     {
-      title: "CS A Alvariça",
-      subtitle: "",
-      description: "Centro Social",
-      direcion: "",
-      logo: "\/espazos\/centros\/a_alvariça\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_alvariça\/foto_cabeceira.png",
-      cor: "#D4AA00",
-      seleccionado: false,
-      content: "",
-      location: { lat:  42.187726410307874 , lon:  -7.8036597061583475  }
-    },
-  
-    {
-      title: "CS A Casa Colorida",
-      subtitle: "",
-      description: "Laboratorio do Común na Galiza",
-      direcion: "",
-      logo: "\/espazos\/centros\/a_casa_colorida\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_casa_colorida\/foto_cabeceira.jpg",
-      cor: "#eb008b",
-      seleccionado: false,
-      content: "\u003cp\u003eLaboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.\u003c/p\u003e\n",
-      location: { lat:  42.13955443594872 , lon:  -8.807018804609987  }
-    },
-  
-    {
+      key: "chave_das_noces",
       title: "CS A Chave das Noces",
       subtitle: "",
       description: "Centro Social en Castroverde",
@@ -499,48 +797,52 @@ const espazos = [
     },
   
     {
-      title: "CS A Pedreira",
+      key: "escarnio.rag",
+      title: "Escárnio e Maldizer",
       subtitle: "",
-      description: "Espazo Autoxestionado en Pontevedra",
+      description: "Centro Social Okupado Autoxestionado",
+      direcion: "Rúa Algalia de Arriba, 11",
+      logo: "\/espazos\/centros\/escarnio\/logo.png",
+      imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
+      cor: "#999999",
+      seleccionado: false,
+      content: "\u003cp\u003eO \u003cem\u003eCSOA Escárnio e Maldizer\u003c/em\u003e é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!\u003c/p\u003e\n\u003cdetails\u003e\r\n    \u003csummary\u003eCursos\u003c/summary\u003e\r\n    \u003cp\u003eComezan os cursos do Escárnio:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e🌼 \u003cstrong\u003eLuns\u003c/strong\u003e, 19.00h: Iniciación pandereteira 🎶\u003c/li\u003e\n\u003cli\u003e🌸 \u003cstrong\u003eMartes\u003c/strong\u003e (a partir de xaneiro), 21:00h: Círculo de inglés 👅\u003c/li\u003e\n\u003cli\u003e🏵️ \u003cstrong\u003eMércores\u003c/strong\u003e, 20:30h: Micros abertos 🎤\u003c/li\u003e\n\u003cli\u003e💮 \u003cstrong\u003eXoves\u003c/strong\u003e, 19:00h: Taller de movemento: o discurso corporal 💃\u003c/li\u003e\n\u003cli\u003e🍀 \u003cstrong\u003eSábado\u003c/strong\u003e, 12:30 a 15:00: Clube de bordado 🪡\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTodos os cursos son abertos e gratuitos.\u003c/p\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n    \u003csummary\u003eRedes\u003c/summary\u003e\r\n    \u003cul\u003e\n\u003cli\u003e📸 Instagram: \u003ca href=\"https://instagram.com/csoa.escarnioemaldizer\"\u003e@csoa.escarnioemaldizer\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🐦 \u003ca href=\"https://twitter.com/centrosocialafenda\"\u003eTwitter\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e📱 \u003ca href=\"https://facebook.com/centrosocialafenda\"\u003eFacebook\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🎥 \u003ca href=\"https://youtube.com/centrosocialafenda\"\u003eYouTube\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e💬 \u003ca href=\"https://t.me/centrosocialafenda\"\u003eTelegram\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
+    },
+  
+    {
+      key: "faisca.rag",
+      title: "Faísca",
+      subtitle: "",
+      description: "Local Social en Vigo",
       direcion: "",
-      logo: "\/espazos\/centros\/a_pedreira\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_pedreira\/foto_cabeceira.jpg",
-      cor: "#E64C3B",
+      logo: "\/espazos\/centros\/faisca2\/logo.png",
+      imaxe: "\/espazos\/centros\/faisca2\/foto_cabeceira.jpg",
+      cor: "#DB0C14",
       seleccionado: false,
       content: "",
-      location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
+      location: { lat:  42.232712 , lon:  -8.699988  }
     },
   
     {
-      title: "CS A Revolta de Trasancos",
+      key: "fundaçom_artabria",
+      title: "Fundaçom Artábria",
       subtitle: "",
-      description: "Colectivo Sociocultural",
+      description: "Associación Cultural",
       direcion: "",
-      logo: "\/espazos\/centros\/a_revolta_de_trasancos\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_revolta_de_trasancos\/foto_cabeceira.jpg",
-      cor: "#f2d054",
+      logo: "\/espazos\/centros\/artabria\/logo.jpg",
+      imaxe: "\/espazos\/centros\/artabria\/foto_cabeceira.jpg",
+      cor: "#d4112c",
       seleccionado: false,
       content: "",
-      location: { lat:  43.48018435093307 , lon:  -8.20404842156572  }
+      location: { lat:  43.481027057191824 , lon:  -8.223167026927518  }
     },
   
     {
-      title: "CS A Revolta do Berbês",
+      key: "fuscalho",
+      title: "Fuscalho",
       subtitle: "",
-      description: "Centro Social Independentista",
-      direcion: "",
-      logo: "\/espazos\/centros\/a_revolta_do_berbes\/logo.png",
-      imaxe: "\/espazos\/centros\/a_revolta_do_berbes\/foto_cabeceira.png",
-      cor: "#1F7DBD",
-      seleccionado: false,
-      content: "\u003cp\u003eFundado em 2003, 21 anos mantendo Vigo em pé!\u003c/p\u003e\n",
-      location: { lat:  42.23936235256048 , lon:  -8.727134803820913  }
-    },
-  
-    {
-      title: "CS Fuscalho",
-      subtitle: "",
-      description: "Espaço Autogerido na Guarda",
+      description: "Espazo Autoxestionado na Guarda",
       direcion: "",
       logo: "\/espazos\/centros\/fuscalho\/logo.jpg",
       imaxe: "\/espazos\/centros\/fuscalho\/foto_cabeceira.jpg",
@@ -551,7 +853,8 @@ const espazos = [
     },
   
     {
-      title: "CS Gomes Gaioso",
+      key: "gomes_gaioso",
+      title: "Gomes Gaioso",
       subtitle: "",
       description: "Centro social independentista, socialista e antipatriarcal",
       direcion: "",
@@ -564,7 +867,8 @@ const espazos = [
     },
   
     {
-      title: "CS Mádia Leva",
+      key: "madia_leva",
+      title: "Mádia Leva",
       subtitle: "",
       description: "Centro Social e Cultural",
       direcion: "",
@@ -577,20 +881,8 @@ const espazos = [
     },
   
     {
-      title: "CSA A Hedreira",
-      subtitle: "",
-      description: "Centro Social Autoxestionado",
-      direcion: "",
-      logo: "\/espazos\/centros\/a_hedreira\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_hedreira\/foto_cabeceira.png",
-      cor: "#179429",
-      seleccionado: false,
-      content: "",
-      location: { lat:  43.00718469311447 , lon:  -7.550971717750473  }
-    },
-  
-    {
-      title: "CSA O Fervedoiro",
+      key: "fervedoiro",
+      title: "O Fervedoiro",
       subtitle: "",
       description: "Espazo Social en Ribeira",
       direcion: "",
@@ -603,7 +895,36 @@ const espazos = [
     },
   
     {
-      title: "CSA Vagalume",
+      key: "pichel.rag",
+      title: "O Pichel",
+      subtitle: "",
+      description: "Centro Social en Compostela",
+      direcion: "Rúa de Santa Clara, 21",
+      logo: "\/espazos\/centros\/o_pichel\/logo.png",
+      imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
+      cor: "#bbbc00",
+      seleccionado: false,
+      content: "\u003cp\u003eBenvide ao Centro Social \u003cem\u003eO Pichel\u003c/em\u003e, un lugar onde promover a lingua galega e a comunidade.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\r\n  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.\r\n\u003cp\u003eO ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.\u003c/p\u003e\n\u003cp\u003eA língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…\u003c/p\u003e\n\u003cp\u003eOrgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…\u003c/p\u003e\n\u003cp\u003eMas o melhor ainda está por chegar.\u003c/p\u003e\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eComo funcionamos?\u003c/summary\u003e\r\n  \u003cp\u003eA Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eConsello xeral\u003c/li\u003e\r\n    \u003cli\u003eCultura\u003c/li\u003e\r\n    \u003cli\u003eCultura científica\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
+    },
+  
+    {
+      key: "matadoiro",
+      title: "Treze Catorze",
+      subtitle: "",
+      description: "Asociación Cultural en Salceda de Caselas",
+      direcion: "",
+      logo: "\/espazos\/centros\/o_matadoiro\/logo.jpg",
+      imaxe: "\/espazos\/centros\/o_matadoiro\/foto_cabeceira.png",
+      cor: "#eb008b",
+      seleccionado: false,
+      content: "",
+      location: { lat:  42.09627942798971 , lon:  -8.55746347975958  }
+    },
+  
+    {
+      key: "vagalume",
+      title: "Vagalume",
       subtitle: "",
       description: "Centro Social Autoxestionado",
       direcion: "",
@@ -616,9 +937,10 @@ const espazos = [
     },
   
     {
-      title: "CSC Xebra!",
+      key: "xebra.rag",
+      title: "Xebra!",
       subtitle: "",
-      description: "Associaçom cultural",
+      description: "Asociacioón cultural",
       direcion: "Rúa Leandro Cucurny 19, Burela",
       logo: "\/espazos\/centros\/xebra\/logo.png",
       imaxe: "\/espazos\/centros\/xebra\/foto_cabeceira.png",
@@ -626,45 +948,6 @@ const espazos = [
       seleccionado: false,
       content: "",
       location: { lat:  43.662024 , lon:  -7.358252  }
-    },
-  
-    {
-      title: "CSOA Escárnio e Maldizer",
-      subtitle: "",
-      description: "Centro Social Okupado Autoxestionado",
-      direcion: "Rúa Algalia de Arriba, 11",
-      logo: "\/espazos\/centros\/escarnio\/logo.png",
-      imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
-      cor: "#909090",
-      seleccionado: false,
-      content: "\u003cp\u003eO \u003cem\u003eCSOA Escárnio e Maldizer\u003c/em\u003e é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!\u003c/p\u003e\n\u003cdetails\u003e\r\n    \u003csummary\u003eCursos\u003c/summary\u003e\r\n    \u003cp\u003eComezan os cursos do Escárnio:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e🌼 \u003cstrong\u003eLuns\u003c/strong\u003e, 19.00h: Iniciación pandereteira 🎶\u003c/li\u003e\n\u003cli\u003e🌸 \u003cstrong\u003eMartes\u003c/strong\u003e (a partir de xaneiro), 21:00h: Círculo de inglés 👅\u003c/li\u003e\n\u003cli\u003e🏵️ \u003cstrong\u003eMércores\u003c/strong\u003e, 20:30h: Micros abertos 🎤\u003c/li\u003e\n\u003cli\u003e💮 \u003cstrong\u003eXoves\u003c/strong\u003e, 19:00h: Taller de movemento: o discurso corporal 💃\u003c/li\u003e\n\u003cli\u003e🍀 \u003cstrong\u003eSábado\u003c/strong\u003e, 12:30 a 15:00: Clube de bordado 🪡\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTodos os cursos son abertos e gratuitos.\u003c/p\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n    \u003csummary\u003eRedes\u003c/summary\u003e\r\n    \u003cul\u003e\n\u003cli\u003e📸 Instagram: \u003ca href=\"https://instagram.com/csoa.escarnioemaldizer\"\u003e@csoa.escarnioemaldizer\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🐦 \u003ca href=\"https://twitter.com/centrosocialafenda\"\u003eTwitter\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e📱 \u003ca href=\"https://facebook.com/centrosocialafenda\"\u003eFacebook\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🎥 \u003ca href=\"https://youtube.com/centrosocialafenda\"\u003eYouTube\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e💬 \u003ca href=\"https://t.me/centrosocialafenda\"\u003eTelegram\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
-      location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
-    },
-  
-    {
-      title: "Fundaçom Artábria",
-      subtitle: "",
-      description: "Associaçom Cultural",
-      direcion: "",
-      logo: "\/espazos\/centros\/artabria\/logo.jpg",
-      imaxe: "\/espazos\/centros\/artabria\/foto_cabeceira.jpg",
-      cor: "#d4112c",
-      seleccionado: false,
-      content: "",
-      location: { lat:  43.481027057191824 , lon:  -8.223167026927518  }
-    },
-  
-    {
-      title: "LS Faísca",
-      subtitle: "",
-      description: "Local Social em Vigo",
-      direcion: "",
-      logo: "\/espazos\/centros\/faisca2\/logo.png",
-      imaxe: "\/espazos\/centros\/faisca2\/foto_cabeceira.jpg",
-      cor: "#DB0C14",
-      seleccionado: false,
-      content: "",
-      location: { lat:  42.232712 , lon:  -8.699988  }
     },
   
 ];
@@ -712,43 +995,7 @@ espazos.forEach(espazo => {
     
     
     marker.on('click', (e) => {
-      const zoomLevel = map.getZoom();
-      const selectedMarker = e.target;
-
-      if (zoomLevel < 13) {
-        map.setView(selectedMarker.getLatLng(), 15, { animate: true });
-      }
-
-      deselectMarkers();
-      
-      const selectedMarkerDiv = selectedMarker._icon.querySelector('.simple-marker');
-      if (selectedMarkerDiv) {
-        selectedMarkerDiv.style.background = espazo.cor; 
-        selectedMarkerDiv.style.outline = "3px solid white";
-      }
-
-      selectedMarker._icon.classList.add('selected');  
-
-      const cabeceiraContainer = document.getElementById('imaxe-cabeceira-container');
-      cabeceiraContainer.innerHTML = `
-      \x3C!-- Imaxe de fondo fixa do centro social -->
-      <div class="imaxe-fondo">
-        <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
-      </div>
-      `;
-      const infoEspazo = document.getElementById('info-espazo');
-      infoEspazo.innerHTML = `
-      \x3C!-- Contedor do logo e título -->
-      <div class="header-espazo">
-        <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
-        <h2 class="titulo-espazo">${espazo.title}</h2>
-        <p class="descricion-espazo">${espazo.description}</p>
-      </div>
-
-      <div id="contido-dinamico">
-        ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
-      </div>
-      `;
+      selectCentro(espazo);
       const selectedEspazo = e.target;
     });
 
@@ -768,6 +1015,79 @@ map.addLayer(markers);
 map.on('zoomend', () => {
   updateMarkers();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const infoContainer = document.getElementById("info-espazo");
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+
+  
+  tarxetasContainer.style.display = "grid";
+
+  
+  document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
+    tarxeta.addEventListener("click", () => {
+      console.log("tarxeta clicked");
+      const key = tarxeta.getAttribute("data-key");
+      const espazo = espazos.find(e => e.key === key);
+
+      if (espazo) {
+        selectCentro(espazo);
+      }
+    });
+  });
+});
+
+function selectCentro(espazo) {
+  if (!espazo) return;
+  const marker = leafletMarkers.find(m => m.espazo.key === espazo.key);
+
+  
+  
+  const zoomLevel = map.getZoom();
+  const selectedMarker = marker;
+  if (zoomLevel < 13) {
+    map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+  }
+
+  
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  tarxetasContainer.style.display = "none";
+
+  
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+  const infoContainer = document.getElementById("info-espazo");
+
+  cabeceiraContainer.innerHTML = `
+    <div class="imaxe-fondo">
+      <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
+    </div>`;
+  
+  infoContainer.innerHTML = `
+    <div class="header-espazo">
+      <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+      <h2 class="titulo-espazo">${espazo.title}</h2>
+      <p class="descricion-espazo">${espazo.description}</p>
+    </div>
+    <div id="contido-dinamico">
+      ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
+    </div>`;
+
+  
+  deselectMarkers(); 
+  if (marker && marker._icon) {
+    const markerDiv = marker._icon.querySelector('.simple-marker');
+    if (markerDiv) {
+      markerDiv.style.background = espazo.cor; 
+      markerDiv.style.outline = "3px solid white";
+    }
+    marker._icon.classList.add('selected');
+  }
+
+  
+}
+
 
 function updateMarkers() {
   const zoomLevel = map.getZoom();

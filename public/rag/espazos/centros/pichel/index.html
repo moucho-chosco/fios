@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Pichel</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body id="body" style="visibility: hidden;">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="/images/logo.svg" alt="Logo do sitio">
+        </div>
+
+        <nav>
+            <ul>
+                
+                
+                <li class="">
+                    <a href="/rag/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/biblioteca/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/organizacions/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organizacións" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organizacións" />
+                        <span class="menu-text"> Organizacións</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/espazos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        <span class="menu-text"> Espazos</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/convocatorias/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/podcast/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/redes/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/recursos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                        <a href="/">Normativa RAG ⇄</a>
+                    
+                
+                    
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+        </nav>
+    </div>
+</div>
+
+            </aside>
+            
+            
+            <main class="content">
+                
+  <h1>O Pichel</h1>
+
+  
+  
+  <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+
+  <p>Benvide ao Centro Social <em>O Pichel</em>, un lugar onde promover a lingua galega e a comunidade.</p>
+<details>
+  <summary>Historia do centro</summary>
+  <p>
+  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.
+<p>O ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.</p>
+<p>A língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…</p>
+<p>Orgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…</p>
+<p>Mas o melhor ainda está por chegar.</p></p>
+</details>
+<details>
+  <summary>Obxectivos</summary>
+  <ul>
+    <li>Promover a educación popular.</li>
+    <li>Fomentar o activismo político e cultural.</li>
+    <li>Organizar eventos para fortalecer a comunidade.</li>
+  </ul>
+</details>
+<details>
+  <summary>Actividades habituais</summary>
+  <p>No Centro Social A Fenda organizamos unha ampla variedade de actividades:</p>
+  <ul>
+    <li>Talleres de formación (economía, historia, feminismo).</li>
+    <li>Charlas e debates sobre temas de actualidade.</li>
+    <li>Proxeccións de documentais e películas sociais.</li>
+    <li>Xuntanzas para colectivos e grupos locais.</li>
+  </ul>
+</details>
+<details>
+  <summary>Horarios</summary>
+  <p>Os horarios habituais do centro son os seguintes:</p>
+  <ul>
+    <li><strong>Luns a venres:</strong> 16:00 - 21:00.</li>
+    <li><strong>Sábados:</strong> 10:00 - 14:00 e 16:00 - 20:00.</li>
+    <li><strong>Domingos:</strong> Pechado, excepto para eventos programados.</li>
+  </ul>
+</details>
+<details>
+  <summary>Como funcionamos?</summary>
+  <p>A Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:</p>
+  <ul>
+    <li>Consello xeral</li>
+    <li>Cultura</li>
+    <li>Cultura científica</li>
+  </ul>
+</details>
+<details>
+  <summary>Contacto</summary>
+  <p>Podes contactar connosco a través de:</p>
+  <ul>
+    <li>Email: contacto@afenda.org</li>
+    <li>Teléfono: 698 123 456</li>
+    <li>Enderezo: Rúa dos Activistas, 12, 15001 A Coruña</li>
+  </ul>
+</details>
+  
+
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/rag/organizacions/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/organizacions.svg" alt=" Organizacions" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/biblioteca.svg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/logo.svg" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/espazos.svg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/rag/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/calendario.svg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
+</body>
+</html>
