@@ -13,7 +13,7 @@ location:
   lon: -8.55746347975958
 type: "centro_social"
 gotoCoords:
-  lat: 42.099
+  lat: 42.100
   lon: -8.559
 gotoZoom: 16
 ---

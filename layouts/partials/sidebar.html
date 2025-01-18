@@ -34,7 +34,7 @@
                 {{ range .Site.Languages }}
                     {{ $lang := .Lang }}
                     {{ if eq $lang $currentLang }}
-                        <a href="{{ $translatedURL | relURL }}">Normativa {{ .LanguageName }} ⇄</a>
+                        <a href="{{ $translatedURL | relURL }}">Galego {{ .LanguageName }} ⇄</a>
                     {{ end }}
                 {{ end }}
             </nav>

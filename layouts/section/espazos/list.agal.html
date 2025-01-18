@@ -1,6 +1,9 @@
 {{ define "main" }}
 
 <div id="espazos-container" class="standard-section-container">
+
+  <script src="https://unpkg.com/leaflet-pip/leaflet-pip.min.js"></script>
+
   
   <!-- Div para o Mapa -->
   <div id="map-window-container" class="window-container">
@@ -63,7 +66,7 @@
                 <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
                 <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
                 <h3>{{ .Title }}</h3>
-                <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
+                <span class="localidade">📍{{ .Params.localidade | default "Sem Localidade" }}</span>
                 <p>{{ .Params.description }}</p>
               </div>
             {{ end }}
@@ -116,10 +119,21 @@
   maxZoom: 18,
   minZoom: 7 // Ou outro valor máximo permitido pola túa capa de tiles
   }).setView([42.7751, -8.0339], 8);
+
+  // Definir a capa normal (engadida por defecto)
   const mtLayer = L.maptilerLayer({
     apiKey: key,
-    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" // Estilo opcional
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb"
   }).addTo(map);
+
+  // Definir a capa de lousados
+  const mtLayerLousados = L.maptilerLayer({
+    apiKey: key,
+    style: "cdfdfa4a-2138-4c09-8217-4211db4c3cc9"
+  });
+
+  // Variable para seguir que capa está activa
+  let currentLayer = mtLayer;
 
   // Cargar os datos das localidades desde o contido
   const localidades = {
@@ -172,13 +186,15 @@ const espazos = [
 const iconWithNumber = L.divIcon({
   html: `<div style="background: black; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">1</div>`,
   className: 'custom-marker',
-  iconSize: [30, 30]
+  iconSize: [30, 30],
+  iconAnchor: [15, 15] // Centra a icona
 });
 
 const simpleIcon = L.divIcon({
   html: `<div  class="simple-marker" style="background: black; width: 10px; height: 10px; border-radius: 0%;  "></div>`,
   className: 'simple-marker',
-  iconSize: [30, 30]
+  iconSize: [30, 30],
+  iconAnchor: [5, 11] // Centra a icona
 });
 
 // Crear un grupo de clusters
@@ -188,7 +204,8 @@ const markers = L.markerClusterGroup({
     return L.divIcon({
       html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">${count}</div>`,
       className: 'cluster-icon',
-      iconSize: [30, 30]
+      iconSize: [30, 30],
+      iconAnchor: [15, 15] // Centra a icona
     });
   },
   maxClusterRadius: 40, // Agrupamento máis compacto
@@ -234,6 +251,7 @@ map.on('moveend', () => {
     mostrarTarxetas();
   }
   updateMarkers();
+  toggleLayerBasedOnZoomAndPosition();
 });
 
 // Cando o movemento/zoom remate, se foi manual, facemos update
@@ -247,6 +265,7 @@ map.on('zoomend', () => {
   if (userInteraction) {
     updateLastLocationAndZoom();
   }
+  toggleLayerBasedOnZoomAndPosition();
 });
 
 function updateLastLocationAndZoom() {
@@ -454,6 +473,57 @@ function deselectMarkers() {
     }
   });
 }
+
+const myPolygonGeoJSON = {
+  type: 'Feature',
+  geometry: {
+    type: 'Polygon',
+    coordinates: [[
+      [44.10844, -7.66077],
+      [43.700490829783625, -7.873711054611482],
+      [43.56574192482438, -8.01596699923224],
+      [43.507110879092835, -8.08664027916634],
+      [43.43481407694156, -8.081652379812772],
+      [43.33411789819063, -8.101441450010741],   //Vilamaior-Monfero
+      [42.99447030932412, -7.897971806167771],   //Toques-Friol
+      [42.82516296831704, -7.747239492957393],   //Monterroso-Portomarín
+      [42.54057535602478, -7.434839683326477],   //Monforte-Brollón
+      [42.369179661788976, -7.351148606499575],  //Castro Caldelas-San Xoán
+      [42.256465459827815, -7.409912134019289],  //Maceda-Chandrexa
+      [41.984464558383145, -7.157291011973237],  //Riós-Gudiña
+      [41.50297365427146, -6.524421428314148],
+      [42.45408110505009, -5.994123853514592],
+      [44.01166170241544, -6.583343381069655],
+      [44.10844, -7.66077]
+    ]]
+  }
+};
+
+const polygonLayer = L.geoJSON(myPolygonGeoJSON);
+
+function toggleLayerBasedOnZoomAndPosition() {
+  const zoomLevel = map.getZoom();
+  const center = map.getCenter(); // Obtemos o centro do mapa
+
+  // Comprobar se o centro está dentro do polígono
+  const isInside = leafletPip.pointInLayer([center.lat, center.lng], polygonLayer);
+
+  if (isInside.length > 0) {
+    if (zoomLevel > 12 && !map.hasLayer(mtLayerLousados)) {
+      map.addLayer(mtLayerLousados);
+      map.removeLayer(mtLayer);
+    }
+  } else {
+    if (zoomLevel > 12 && !map.hasLayer(mtLayer)) {
+      map.addLayer(mtLayer);
+      map.removeLayer(mtLayerLousados);
+    }
+  }
+}
+
+
+
+
 
 </script>
 

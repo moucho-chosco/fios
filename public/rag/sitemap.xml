@@ -15,14 +15,24 @@
                 href="http://localhost:1313/rag/podcast/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/calendario/evento3/</loc>
+    <loc>http://localhost:1313/rag/calendario/eventos/evento3/</loc>
     <lastmod>2025-01-24T18:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rag/calendario/evento4/</loc>
+    <loc>http://localhost:1313/rag/calendario/eventos/evento4/</loc>
     <lastmod>2024-11-20T18:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rag/recursos/</loc>
     <lastmod>2024-11-18T18:18:44+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/recursos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/recursos/"
+                />
   </url><url>
     <loc>http://localhost:1313/rag/redes/</loc>
     <lastmod>2024-11-18T18:18:34+01:00</lastmod>
@@ -102,7 +112,7 @@
                 href="http://localhost:1313/rag/biblioteca/"
                 />
   </url><url>
-    <loc>http://localhost:1313/rag/calendario/evento2/</loc>
+    <loc>http://localhost:1313/rag/calendario/eventos/evento2/</loc>
     <lastmod>2024-11-17T18:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/rag/biblioteca/obras/harnecker_c1/</loc>
@@ -160,8 +170,6 @@
                 hreflang="rag"
                 href="http://localhost:1313/rag/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/rag/biblioteca/itinerarios/i1/</loc>
   </url><url>
     <loc>http://localhost:1313/rag/biblioteca/obras/federici_caliban-e-a-bruxa/</loc>
     <xhtml:link

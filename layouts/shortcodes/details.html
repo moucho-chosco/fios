@@ -1,4 +1,8 @@
-<details>
-    <summary>{{ .Get "title" }}</summary>
-    {{ .Inner | markdownify }}
-  </details>
+<details class="details-principal">
+    <summary><span id="{{ .Get "title" }}" class="resaltado" style="background-color: {{ .Get "color" }}">
+      {{ .Get "title" }}
+    </span></summary>
+    <div style="margin: 0 15px;">
+      <p>{{ .Inner | markdownify }}</p>
+    </div>
+</details>

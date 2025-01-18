@@ -23,7 +23,7 @@ a:hover {
 
 .window-container {
     display: flex; height: 85vh;
-    margin-top: 2vh;
+    margin-top: 0.7vh;
     gap: 2.5%; /* Espazo entre as ventás */
 }
 
@@ -31,7 +31,7 @@ a:hover {
     flex: 1;
     background-size: cover;  /* A foto ocupará todo o espazo do contedor */
     background-position: center;  /* Centra a imaxe de fondo */
-    height: 86vh !important;  /* Altura do viewport, cubre toda a pantalla */
+    height: 89vh !important;  /* Altura do viewport, cubre toda a pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,18 +48,38 @@ a:hover {
     margin-right: 3%;
 }
 
+p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.resaltado {
+    color: white;
+    padding: 0 0.2em;
+    font-weight: 300; /* Light */
+
+}
+
+.details-principal {
+    margin-top: 12px; /* Espazo antes de cada sección */
+  }
+
 /* -------------------------
    ORTOGRAFIA
 ------------------------- */
 
 #langSwitcher {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 18px;
+    bottom: 17px;
+    left: 40px;
     cursor: grab;
     width: 150px;
-    text-align: right;
+    text-align: left;
+}
+
+#langSwitcher a {
+    color:  #cfcfcf;
+    font-size: 13px;
 }
 
 /* -------------------------
@@ -436,7 +456,7 @@ nav a:hover {
     display: grid;
     gap: 15px;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     grid-auto-rows: 1fr; /* Asegúrate de que as filas teñan a mesma altura */
     justify-items: center; /* Centra os elementos dentro de cada celda */
     margin-top: 3vh;
@@ -664,6 +684,7 @@ nav a:hover {
         left: 0;
       }
 
+
       .tarxeta-centro img {
         border: 2px solid #eeeeee;
         
@@ -676,6 +697,7 @@ nav a:hover {
       .tarxeta-centro p {
         font-size: 11px;
         margin-bottom: -5px;
+        text-align: center !important;
       }
 
       .tarxeta-centro span {

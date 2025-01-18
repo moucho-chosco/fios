@@ -4,3 +4,7 @@ url = "/agal/organizaçons/"
 lang = 'agal'
 date = 2024-11-18T18:17:24+01:00
 +++
+
+# Organizaçons
+
+Nesta secçom poderá-se ver um mapa de organizaçons militantes que operam na Galiza e aprender sobre elas.

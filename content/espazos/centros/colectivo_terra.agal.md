@@ -1,5 +1,5 @@
 ---
-title: "Colectivo Terra"
+title: "Coletivo Terra"
 description: "Centro Social de Pontedeume"
 dirixido_por: ""
 centro: true
@@ -14,4 +14,8 @@ location:
 type: "centro_social"
 web: colectivoterra.gal
 email: colectivoterra@gmail.com
+gotoCoords:
+  lat: 43.4048354267391
+  lon: -8.16636505040621
+gotoZoom: 16
 ---

@@ -12,4 +12,8 @@ location:
   lon: -7.8036597061583475
 type: "centro_social"
 email: csalvariza@gmail.com
+gotoCoords:
+  lat: 42.189
+  lon: -7.802
+gotoZoom: 16
 ---

@@ -14,5 +14,9 @@ gotoCoords:
   lat: 41.155750197765286
   lon: -8.600217265532125
 gotoZoom: 13
+gotoCoords:
+  lat: 41.1557
+  lon: -8.615
+gotoZoom: 13
 ---
-Autoxestión, autonomía, comunidade, feminismo, antiracismo, veganismo popular, apoio mutuo, anticapitalismo...
+Autogestão, autonomia, comunidade, feminismo, anti-racismo, veganismo popular, apoio mútuo, anti-capitalismo...

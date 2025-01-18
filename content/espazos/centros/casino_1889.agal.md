@@ -8,9 +8,13 @@ imaxe: "/espazos/centros/casino_1889/foto_cabeceira.jpeg"  # Ruta á imaxe de fo
 cor: "#AD1C4F"
 localidade: "Carballo"
 location:
-  lat: 43.21345851795736
-  lon: -8.690801045429424
+  lat: 43.21335439700375
+  lon: -8.690798386100031
 type: "centro_social"
+gotoCoords:
+  lat: 43.214
+  lon: -8.693
+gotoZoom: 15
 ---
 O Casino é um espaço do povo e para o povo. 
 

@@ -1,6 +1,6 @@
 ---
 title: "A Tiradoura"
-description: "Asociaçom Cultural"
+description: "Associaçom Cultural"
 dirixido_por: 
 participan:
 centro: true

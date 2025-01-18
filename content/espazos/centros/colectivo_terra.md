@@ -14,6 +14,10 @@ location:
 type: "centro_social"
 web: colectivoterra.gal
 email: colectivoterra@gmail.com
+gotoCoords:
+  lat: 43.4048354267391
+  lon: -8.16636505040621
+gotoZoom: 16
 ---
 O *Colectivo Terra* é un centro social en Pondedeume.
 

@@ -11,6 +11,10 @@ location:
   lat: 43.21335439700375
   lon: -8.690798386100031
 type: "centro_social"
+gotoCoords:
+  lat: 43.214
+  lon: -8.693
+gotoZoom: 15
 ---
 O casino é un espazo do pobo e para o pobo. 
 

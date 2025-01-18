@@ -15,6 +15,19 @@
                 href="http://localhost:1313/agal/podcast/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/recursos/</loc>
+    <lastmod>2024-11-18T18:18:44+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/recursos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/recursos/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/redes/</loc>
     <lastmod>2024-11-18T18:18:34+01:00</lastmod>
     <xhtml:link

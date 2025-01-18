@@ -10,23 +10,23 @@
     <atom:link href="http://localhost:1313/rag/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>proba</title>
-      <link>http://localhost:1313/rag/calendario/evento3/</link>
+      <link>http://localhost:1313/rag/calendario/eventos/evento3/</link>
       <pubDate>Fri, 24 Jan 2025 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/calendario/evento3/</guid>
+      <guid>http://localhost:1313/rag/calendario/eventos/evento3/</guid>
       <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: CSOA Escárnio e Maldizer.&#xA;Hora: 18:00.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Asemblea Xeral 4</title>
-      <link>http://localhost:1313/rag/calendario/evento4/</link>
+      <link>http://localhost:1313/rag/calendario/eventos/evento4/</link>
       <pubDate>Wed, 20 Nov 2024 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/calendario/evento4/</guid>
+      <guid>http://localhost:1313/rag/calendario/eventos/evento4/</guid>
       <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: Centro Social Atocha.&#xA;Hora: 18:00.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encontro formativo</title>
-      <link>http://localhost:1313/rag/calendario/evento2/</link>
+      <link>http://localhost:1313/rag/calendario/eventos/evento2/</link>
       <pubDate>Sun, 17 Nov 2024 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/calendario/evento2/</guid>
+      <guid>http://localhost:1313/rag/calendario/eventos/evento2/</guid>
       <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: Centro Social Atocha.&#xA;Hora: 18:00.&lt;/p&gt;</description>
     </item>
     <item>
@@ -56,13 +56,6 @@
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
       <guid>http://localhost:1313/rag/posts/post-1/</guid>
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/rag/biblioteca/itinerarios/i1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rag/biblioteca/itinerarios/i1/</guid>
-      <description></description>
     </item>
     <item>
       <title></title>
@@ -307,7 +300,7 @@
       <link>http://localhost:1313/rag/espazos/centros/escarnio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/rag/espazos/centros/escarnio/</guid>
-      <description>&lt;p&gt;O &lt;em&gt;CSOA Escárnio e Maldizer&lt;/em&gt; é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;    &lt;summary&gt;Cursos&lt;/summary&gt;&#xD;&#xA;    &lt;p&gt;Comezan os cursos do Escárnio:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🌼 &lt;strong&gt;Luns&lt;/strong&gt;, 19.00h: Iniciación pandereteira 🎶&lt;/li&gt;&#xA;&lt;li&gt;🌸 &lt;strong&gt;Martes&lt;/strong&gt; (a partir de xaneiro), 21:00h: Círculo de inglés 👅&lt;/li&gt;&#xA;&lt;li&gt;🏵️ &lt;strong&gt;Mércores&lt;/strong&gt;, 20:30h: Micros abertos 🎤&lt;/li&gt;&#xA;&lt;li&gt;💮 &lt;strong&gt;Xoves&lt;/strong&gt;, 19:00h: Taller de movemento: o discurso corporal 💃&lt;/li&gt;&#xA;&lt;li&gt;🍀 &lt;strong&gt;Sábado&lt;/strong&gt;, 12:30 a 15:00: Clube de bordado 🪡&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Todos os cursos son abertos e gratuitos.&lt;/p&gt;</description>
+      <description>&lt;p&gt;O &lt;em&gt;CSOA Escárnio e Maldizer&lt;/em&gt; é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!&lt;/p&gt;&#xA;&lt;details class=&#34;details-principal&#34;&gt;&#xD;&#xA;    &lt;summary&gt;&lt;span id=&#34;Cursos&#34; class=&#34;resaltado&#34; style=&#34;background-color: &#34;&gt;&#xD;&#xA;      Cursos&#xD;&#xA;    &lt;/span&gt;&lt;/summary&gt;&#xD;&#xA;    &lt;div style=&#34;margin: 0 15px;&#34;&gt;&#xD;&#xA;      &lt;p&gt;&lt;p&gt;Comezan os cursos do Escárnio:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🌼 &lt;strong&gt;Luns&lt;/strong&gt;, 19.00h: Iniciación pandereteira 🎶&lt;/li&gt;&#xA;&lt;li&gt;🌸 &lt;strong&gt;Martes&lt;/strong&gt; (a partir de xaneiro), 21:00h: Círculo de inglés 👅&lt;/li&gt;&#xA;&lt;li&gt;🏵️ &lt;strong&gt;Mércores&lt;/strong&gt;, 20:30h: Micros abertos 🎤&lt;/li&gt;&#xA;&lt;li&gt;💮 &lt;strong&gt;Xoves&lt;/strong&gt;, 19:00h: Taller de movemento: o discurso corporal 💃&lt;/li&gt;&#xA;&lt;li&gt;🍀 &lt;strong&gt;Sábado&lt;/strong&gt;, 12:30 a 15:00: Clube de bordado 🪡&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Todos os cursos son abertos e gratuitos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Faísca</title>
