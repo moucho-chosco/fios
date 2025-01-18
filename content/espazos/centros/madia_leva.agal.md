@@ -12,6 +12,10 @@ location:
   lat: 43.01571763855524
   lon: -7.558072579821252
 type: "centro_social"
+gotoCoords:
+  lat: 43.009
+  lon: -7.558
+gotoZoom: 15
 ---
 
 Construíndo contrapoder no corazón de Lugo.

@@ -1,6 +1,6 @@
 ---
 title: "ACDE Treze Catorze"
-description: "Associaçom Cultural em Salceda de Caselas"
+description: "Associaçom Cultural"
 dirixido_por: "ACDE Treze Catorze"
 participan:
 centro: true
@@ -12,4 +12,8 @@ location:
   lat: 42.09627942798971
   lon: -8.55746347975958
 type: "centro_social"
+gotoCoords:
+  lat: 42.099
+  lon: -8.559
+gotoZoom: 16
 ---

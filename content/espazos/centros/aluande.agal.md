@@ -11,5 +11,9 @@ location:
   lat: 42.890695056496504
   lon: -8.528207746840145
 type: "centro_social"
+gotoCoords:
+  lat: 42.879
+  lon: -8.544
+gotoZoom: 14
 ---
 Um espaço afrocentrado e antirracista, que reconhece e celebra as transexistências e a transcestralidade. Dedicamos-nos a valorizar e manter viva a cultura de matriz africana e a acolher e trançar saberes, vivências e resistências desde as margens.

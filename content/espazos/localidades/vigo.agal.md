@@ -2,8 +2,8 @@
 title: "Vigo"
 localidade: true
 location:
-  lat: 42.237878
-  lon: -8.718482
+  lat: 42.240
+  lon: -8.735
 zoom: 13
 localidade: true
 ---

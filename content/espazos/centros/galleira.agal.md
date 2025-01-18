@@ -14,4 +14,8 @@ type: "centro_social"
 email: asoc.cultural.agalleira@gmail.com
 web:   agalleira.wordpress.com
 ig:    "@a_galleira"
+gotoCoords:
+  lat: 42.33769
+  lon: -7.86707
+gotoZoom: 15
 ---

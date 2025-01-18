@@ -22,11 +22,11 @@
                 <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
-            <img src="/images/logo.svg" alt="Logo do sitio">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
         </div>
 
         <nav>
-            <ul>
+            <ul id="menu-pages-list">
                 
                 
                 <li class="">
@@ -73,17 +73,6 @@
                 </li>
                 
                 
-                <li class="active">
-                    <a href="/agal/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/calendario_negativo.svg" alt=" Calendário" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        <span class="menu-text"> Calendário</span>
-                    </a>
-                </li>
-                
-                
                 <li class="">
                     <a href="/agal/convocatorias/" class="menu-link">
                         
@@ -91,6 +80,17 @@
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
                         <span class="menu-text"> Convocatórias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/agal/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/calendario_negativo.svg" alt=" Calendário" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
+                        <span class="menu-text"> Calendário</span>
                     </a>
                 </li>
                 
@@ -142,9 +142,9 @@
                     
                 
                     
-                        
-                    
                 
+                    
+                        
                     
                 
                     
@@ -166,7 +166,9 @@
             </nav>
             
             
-            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
         </nav>
     </div>
 </div>
@@ -186,6 +188,7 @@
     
 
     <div id="calendario-container" class="standard-section-container">
+       
         <div id="window-container-calendario" class="window-container">
 
             
@@ -195,16 +198,57 @@
            
            
            <div id="info-evento-window" class="window">
-               <div id="info-evento">
-                   <h2>Selecciona un evento</h2>
-               </div>
+             
+              <div id= "filtros-calendario" class="barra-superior">
+                <div id="filters">
+                  <select id="localidade-filter" class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+                    
+                      <option value="a_corunha.agal,43.368,-8.408,14">📍 A Corunha</option>
+                    
+                      <option value="compostela.agal,42.879,-8.544,14">📍 Compostela</option>
+                    
+                      <option value="ferrol.agal,43.48201,-8.22489,14">📍 Ferrol</option>
+                    
+                      <option value="lugo.agal,43.010666,-7.555,15">📍 Lugo</option>
+                    
+                      <option value="ourense.agal,42.33769,-7.86707,15">📍 Ourense</option>
+                    
+                      <option value="pontevedra.agal,42.4325,-8.649,15">📍 Pontevedra</option>
+                    
+                      <option value="vigo.agal,42.24,-8.735,13">📍 Vigo</option>
+                    
+                  </select>
+                  <select class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+                    
+                  </select>
+                </div>
+                <div id="barra-busqueda-calendario" class="barra-busqueda">
+                  <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
+                </div>
+              </div>
+              <p id="mensaxe-sen-resultados">
+                Non se atoparon eventos coincidentes
+              </p>
+              <div id="tarxetas-centros" class="tarxetas-container" style="display:grid;">
+                
+              </div>
+              <button id="volver-galiza" class="boton-atras" style="display: block;">←</button>      
+              <div id="imaxe-cabeceira-container">
+              </div>
+              <div id="info-evento">
+                <div id="contido-dinamico">
+                  
+                </div>
+              </div>
            </div>
        </div>
     </div>
     
 
     <script>
-        console.log("Número de páginas de eventos encontradas: 0");
+        console.log("Número de páxinas de eventos encontradas: 0");
 
         
         window.calendarEvents = [];

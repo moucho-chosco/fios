@@ -11,5 +11,9 @@ location:
   lat: 42.13955443594872
   lon: -8.807018804609987
 type: "centro_social"
+gotoCoords:
+  lat: 42.135
+  lon: -8.812
+gotoZoom: 15
 ---
 Laboratório do Comúm para o desenvolvimento Integral da Cultura Livre em Galiza. Aldeanía em rede p2p. Universidade Livre. Residência Artística, Ativismo Cultural e MediaHackLab.

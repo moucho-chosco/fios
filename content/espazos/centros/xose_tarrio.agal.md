@@ -12,4 +12,8 @@ location:
   lon: -8.409405917527252
 type: "centro_social"
 email: ateneolibertariopastoraexose@gmail.com
+gotoCoords:
+  lat: 43.368
+  lon: -8.408
+gotoZoom: 14
 ---

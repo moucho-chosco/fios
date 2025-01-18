@@ -142,6 +142,18 @@
                 href="http://localhost:1313/agal/espazos/centros/casa_colorida/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/chave_das_noces/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/chave_das_noces/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/chave_das_noces/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/espazos/localidades/a_corunha/</loc>
     <xhtml:link
                 rel="alternate"
@@ -178,6 +190,18 @@
                 href="http://localhost:1313/agal/espazos/centros/galleira/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/gralha/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/gralha/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/gralha/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/espazos/centros/hedreira/</loc>
     <xhtml:link
                 rel="alternate"
@@ -188,6 +212,18 @@
                 rel="alternate"
                 hreflang="agal"
                 href="http://localhost:1313/agal/espazos/centros/hedreira/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/nubeira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/nubeira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/nubeira/"
                 />
   </url><url>
     <loc>http://localhost:1313/agal/espazos/centros/pedreira/</loc>
@@ -322,6 +358,30 @@
                 href="http://localhost:1313/agal/espazos/centros/buril/"
                 />
   </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/casa_obreira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/casa_obreira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/casa_obreira/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/agal/espazos/centros/casino_1889/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="rag"
+                href="http://localhost:1313/rag/espazos/centros/casino_1889/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/casino_1889/"
+                />
+  </url><url>
     <loc>http://localhost:1313/agal/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -356,18 +416,6 @@
                 rel="alternate"
                 hreflang="agal"
                 href="http://localhost:1313/agal/espazos/localidades/compostela/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/agal/espazos/centros/chave_das_noces/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="rag"
-                href="http://localhost:1313/rag/espazos/centros/chave_das_noces/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/chave_das_noces/"
                 />
   </url><url>
     <loc>http://localhost:1313/agal/espazos/centros/escarnio/</loc>

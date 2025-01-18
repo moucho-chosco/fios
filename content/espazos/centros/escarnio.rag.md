@@ -7,13 +7,17 @@ lang: "rag"
 participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
 logo:  "/espazos/centros/escarnio/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/escarnio/foto_cabeceira.png"  # Ruta á imaxe de fondo
-cor: "#999999"
+cor: "#746D6F"
 centro: true
 localidade: "Compostela"
 location:
   lat: 42.88169616573114
   lon: -8.54240060014547
 type: "centro_social"
+gotoCoords:
+  lat: 42.879
+  lon: -8.544
+gotoZoom: 14
 ---
  O *CSOA Escárnio e Maldizer* é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!
 

@@ -23,6 +23,13 @@
       <description>&lt;p&gt;Laboratório do Comúm para o desenvolvimento Integral da Cultura Livre em Galiza. Aldeanía em rede p2p. Universidade Livre. Residência Artística, Ativismo Cultural e MediaHackLab.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>A Chave das Noces</title>
+      <link>http://localhost:1313/agal/espazos/centros/chave_das_noces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/chave_das_noces/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>A Corunha</title>
       <link>http://localhost:1313/agal/espazos/localidades/a_corunha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,10 +51,24 @@
       <description></description>
     </item>
     <item>
+      <title>A Gralha</title>
+      <link>http://localhost:1313/agal/espazos/centros/gralha/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/gralha/</guid>
+      <description>&lt;p&gt;Autoxestión, autonomía, comunidade, feminismo, antiracismo, veganismo popular, apoio mutuo, anticapitalismo&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>A Hedreira</title>
       <link>http://localhost:1313/agal/espazos/centros/hedreira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/espazos/centros/hedreira/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Nubeira</title>
+      <link>http://localhost:1313/agal/espazos/centros/nubeira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/nubeira/</guid>
       <description></description>
     </item>
     <item>
@@ -128,6 +149,20 @@
       <description></description>
     </item>
     <item>
+      <title>Casa Obreira</title>
+      <link>http://localhost:1313/agal/espazos/centros/casa_obreira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/casa_obreira/</guid>
+      <description>&lt;p&gt;Espaço para debater-mos e construir-mos coletivamente o futuro que nos urge. «Sem teoria revolucionária nom pode haver movimento revolucionário».&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Casino 1889</title>
+      <link>http://localhost:1313/agal/espazos/centros/casino_1889/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/espazos/centros/casino_1889/</guid>
+      <description>&lt;p&gt;O Casino é um espaço do povo e para o povo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Objetivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Atividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos umha ampla variedade de atividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talheres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Projeçons&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Juntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horários&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horários habituais do centro som os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Segundas a sextas:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Conhece-nos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;História do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Colectivo Terra</title>
       <link>http://localhost:1313/agal/espazos/centros/colectivo_terra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -142,13 +177,6 @@
       <description></description>
     </item>
     <item>
-      <title>CS A Chave das Noces</title>
-      <link>http://localhost:1313/agal/espazos/centros/chave_das_noces/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/espazos/centros/chave_das_noces/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Escárnio e Maldizer</title>
       <link>http://localhost:1313/agal/espazos/centros/escarnio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -160,7 +188,7 @@
       <link>http://localhost:1313/agal/espazos/centros/faisca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/espazos/centros/faisca/</guid>
-      <description></description>
+      <description>&lt;p&gt;O ânimo do &lt;em&gt;LS Faísca&lt;/em&gt; Associaçom nom se cingue exclusivamente ao hámbito Cultural, se nom que partindo dum projecto Cultural e Socio-político queremos contribuir à criaçom dum Movimento Popular caminho da emancipaçom do nosso Povo e da nossa Clase.&#xA;O assemblearismo, a pluralidade, a autogestiom e a independência a respeito de qualquer estrutura ou organizaçom, som os principios organizativos polos que nos gerimos.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Objetivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Objetivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Atividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos umha ampla variedade de atividades:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ferrol</title>

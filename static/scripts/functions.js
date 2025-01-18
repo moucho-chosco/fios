@@ -15,11 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Aplica inmediatamente o modo correcto antes de que a páxina se renderice
     if (mode === 'reduced') {
         sidebarContainer.classList.add('reduced-mode');
-        toggleButton.innerHTML = '&#8592;';  // Frecha á dereita
+        toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra_reves.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á dereita
         updateSidebarLinksForMode('reduced');
     } else {
         sidebarContainer.classList.add('full-mode');
-        toggleButton.innerHTML = '&#8594;';  // Frecha á esquerda
+        toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á esquerda
         updateSidebarLinksForMode('full');
     }
 
@@ -43,11 +43,11 @@ function toggleSidebar() {
 
     // Se está no modo reducido, engadir o parámetro na URL
     if (sidebarContainer.classList.contains('reduced-mode')) {
-        toggleButton.innerHTML = '&#8592;';  // Frecha á dereita no modo reducido
+        toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra_reves.svg" alt="Frecha atrás" width="16" height="16">'  ;  // Frecha á dereita no modo reducido
         history.pushState(null, null, '?sidebar-mode=reduced');
         updateSidebarLinksForMode('reduced');
     } else {
-        toggleButton.innerHTML = '&#8594;';  // Frecha á esquerda no modo completo
+        toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á esquerda no modo completo
         history.pushState(null, null, '?sidebar-mode=full');
         updateSidebarLinksForMode('full');
     }

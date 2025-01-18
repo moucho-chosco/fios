@@ -1,5 +1,5 @@
 ---
-title: "CS A Chave das Noces"
+title: "A Chave das Noces"
 description: "Centro Social em Castroverde"
 dirixido_por: ""
 centro: true
@@ -8,7 +8,11 @@ imaxe: "/espazos/centros/a_chave_das_noces/foto_cabeceira.jpg"  # Ruta á imaxe 
 cor: "#eb008b"
 localidade: "Castroverde"
 location:
-  lat: 43.08622778251519
-  lon: -7.323702482175119
+  lat: 43.08492072813192
+  lon: -7.3261945204762515
 type: "centro_social"
+gotoCoords:
+  lat: 43.055
+  lon: -7.3261945204762515
+gotoZoom: 13
 ---

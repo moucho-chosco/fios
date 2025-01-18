@@ -1,6 +1,6 @@
 ---
 title: "O Pichel"
-description: "Centro Social en Compostela"
+description: "Centro Social da Gentalha do Pichel"
 direcion: "Rúa de Santa Clara, 21"
 dirixido_por: "Gentalha do Pichel"
 centro: true
@@ -12,41 +12,30 @@ location:
   lat: 42.88625047468636
   lon: -8.540730891640834
 type: "centro_social"
+gotoCoords:
+  lat: 42.879
+  lon: -8.544
+gotoZoom: 14
 ---
-
-Benvide ao Centro Social *O Pichel*, un lugar onde promover a lingua galega e a comunidade.
-
-<details>
-  <summary>Historia do centro</summary>
-  <p>
-  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.
-
-  O ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.
-
-  A língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…
-
-  Orgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…
-
-  Mas o melhor ainda está por chegar.</p>
-</details>
+Benvide ao Centro Social *O Pichel*, un lugar onde promover a lingua galega e a comunidade.A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
 
 <details>
   <summary>Obxectivos</summary>
   <ul>
-    <li>Promover a educación popular.</li>
-    <li>Fomentar o activismo político e cultural.</li>
-    <li>Organizar eventos para fortalecer a comunidade.</li>
+    <li>Obxectivo 1</li>
+    <li>Obxectivo 2</li>
+    <li>Obxectivo 3</li>
   </ul>
 </details>
 
 <details>
   <summary>Actividades habituais</summary>
-  <p>No Centro Social A Fenda organizamos unha ampla variedade de actividades:</p>
+  <p>No Centro Social organizamos unha ampla variedade de actividades:</p>
   <ul>
-    <li>Talleres de formación (economía, historia, feminismo).</li>
-    <li>Charlas e debates sobre temas de actualidade.</li>
-    <li>Proxeccións de documentais e películas sociais.</li>
-    <li>Xuntanzas para colectivos e grupos locais.</li>
+    <li>Talleres</li>
+    <li>Charlas</li>
+    <li>Proxeccións</li>
+    <li>Xuntanzas</li>
   </ul>
 </details>
 
@@ -61,21 +50,27 @@ Benvide ao Centro Social *O Pichel*, un lugar onde promover a lingua galega e a 
 </details>
 
 <details>
-  <summary>Como funcionamos?</summary>
-  <p>A Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:</p>
+  <summary>Redes</summary>
+  <p>Coñécenos a través de:</p>
   <ul>
-    <li>Consello xeral</li>
-    <li>Cultura</li>
-    <li>Cultura científica</li>
+    <li>Instragram</li>
+    <li>Twiter/X</li>
+    <li>Facebook</li>
+    <li>Bluesky</li>
   </ul>
+</details>
+
+<details>
+  <summary>Historia do centro</summary>
+  <p></p>
 </details>
 
 <details>
   <summary>Contacto</summary>
   <p>Podes contactar connosco a través de:</p>
   <ul>
-    <li>Email: contacto@afenda.org</li>
-    <li>Teléfono: 698 123 456</li>
-    <li>Enderezo: Rúa dos Activistas, 12, 15001 A Coruña</li>
+    <li>Email: contacto@email.com</li>
+    <li>Teléfono: 111 111 111</li>
+    <li>Enderezo: - </li>
   </ul>
 </details>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
     if (!calendarEl) {
-        console.error("Elemento #calendar no encontrado en el DOM");
+        console.error("Elemento #calendar non atopado no DOM");
         return;
     }
     if (typeof FullCalendar === 'undefined') {
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const meses = [
-        'Xaneiro', 'Febreiro', 'Marzo', 'Abril', 'Maio', 'Xuño',
-        'Xullo', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Decembro'
+        'Febreiro', 'Marzo', 'Abril', 'Maio', 'Xuño',
+        'Xullo', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Decembro', 'Xaneiro'
     ];
 
     const diasSemana = ['Domingo', 'Luns', 'Martes', 'Mércores', 'Xoves', 'Venres', 'Sábado'];
@@ -42,8 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 const ano = info.start.getFullYear();
                 titleEl.textContent = `${meses[mesIndex]} ${ano}`;
             }
-        }
+        },
+        eventClick: function(info) {
+            // Previr comportamento predeterminado da ligazón (se hai URL)
+            info.jsEvent.preventDefault();
+    
+            // Actualizar o contido da ventá dereita
+            const infoEventoWindow = document.getElementById('info-evento');
+            infoEventoWindow.innerHTML = `
+                <h2>${info.event.title}</h2>
+                <p>${info.event.extendedProps.description || 'Sen descrición dispoñible.'}</p>
+                ${info.event.url ? `<a href="${info.event.url}" target="_blank">Máis información</a>` : ''}
+            `;
+        },
     });
+
 
     calendar.render();
 });

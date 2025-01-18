@@ -1,28 +1,7 @@
 {{ define "main" }}
 
 <div id="espazos-container" class="standard-section-container">
-  <!-- Barra de Filtros -->
-  <div class="barra-superior">
-    <div id="filters">
-      <select id="localidade-filter" class="filter">
-        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-        {{ range where .Site.RegularPages ".Params.localidade" true }}
-          <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
-        {{ end }}
-      </select>
-      <select class="filter">
-        <option value="galiza,42.7751,-8.0339,7">🏷️ Qualquer etiqueta</option>
-        {{ range where .Site.RegularPages ".Params.etiqueta" true }}
-          <option value="">🏷️ {{ .Title }}</option>
-        {{ end }}
-      </select>
-    </div>
-    <div id="barra-busqueda" class="barra-busqueda">
-      <input type="text" id="busqueda-centros" placeholder="Buscar centros..." />
-    </div>
-  </div>
-
-
+  
   <!-- Div para o Mapa -->
   <div id="map-window-container" class="window-container">
     <!-- Mapa á esquerda -->
@@ -31,25 +10,76 @@
     </div>
     
     <!-- Caixa de Información á dereita -->
-    <div class="window">
-      <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
-        {{ range shuffle (where .Site.RegularPages ".Params.centro" true) }}
-          <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
-            <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
-            <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
-            <h3>{{ .Title }}</h3>
-            <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
-            <p>{{ .Params.description }}</p>
+    <div id="info-window" class="window">
+      <!-- Barra de Filtros -->
+      <div id="filtros-espazos-box">
+        <div id="filtros-espazos" class="barra-superior">
+          <div id="filters">
+            <select id="localidade-filter" class="filter">
+              <option value="galiza,42.7751,-8.0339,7">📍 Galiza </option>
+              {{ range where .Site.RegularPages ".Params.localidade" true }}
+                <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+              {{ end }}
+            </select>
+            <select class="filter">
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Qualquer etiqueta</option>
+              {{ range where .Site.RegularPages ".Params.etiqueta" true }}
+                <option value="">🏷️ {{ .Title }}</option>
+              {{ end }}
+            </select>
           </div>
-        {{ end }}
-      </div>
-      <div id="imaxe-cabeceira-container">
-      </div>
-      <div id="info-espazo">
-        <div id="contido-dinamico">
-          <!-- O contido dinámico do espazo seleccionado irá aquí -->
+          <!--
+          <div class="slider-container">
+            
+            <input
+                type="range"
+                id="year-slider"
+                min="1980"
+                max="2024"
+                value="2024"
+                step="1"
+            />
+            <div class="slider-label">
+              <span id="year-display">Ano 2024</span>
+          </div>
+          
+        </div> -->
+          
+  
+          <div id="barra-busqueda-calendario" class="barra-busqueda">
+            <input type="text" id="busqueda-centros" placeholder="Buscar espaços..." />
+          </div>
         </div>
       </div>
+      
+
+      <div id="contido-espazos-info">
+        <p id="mensaxe-sen-resultados" style="display: none;">
+          Nom se atoparom espaços coincidentes nesta área
+          </p>
+          <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
+            {{ range shuffle (where .Site.RegularPages ".Params.centro" true) }}
+              <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+                <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
+                <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
+                <h3>{{ .Title }}</h3>
+                <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
+                <p>{{ .Params.description }}</p>
+              </div>
+            {{ end }}
+          </div>
+          <button id="volver-galiza" class="boton-atras" style="display: block;">
+            <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
+          </button> 
+          <div id="imaxe-cabeceira-container">
+          </div>
+          <div id="info-espazo">
+            <div id="contido-dinamico">
+              <!-- O contido dinámico do espazo seleccionado irá aquí -->
+            </div>
+          </div>
+      </div>
+      
 
     </div>
   </div>
@@ -65,6 +95,19 @@
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
+  let lastLocation = [42.7751, -8.0339];
+  let lastZoom = 8;
+  let userInteraction = true;
+
+  /*
+  // Obter o slider e o span onde se mostrará o valor
+  const slider = document.getElementById('year-slider');
+  const yearDisplay = document.getElementById('year-display');
+
+  // Actualizar o valor do span cando o usuario mova o slider
+  slider.addEventListener('input', () => {
+      yearDisplay.textContent = slider.value;
+  });*/
 
   // Inicializar o mapa con MapTiler
   const map = L.map('map', {
@@ -117,6 +160,9 @@ const espazos = [
       imaxe: "{{ .Params.imaxe }}",
       cor: "{{ .Params.cor }}",
       seleccionado: false,
+      gotoZoom:   "{{ .Params.gotoZoom }}",
+      gotoLat: "{{ .Params.gotoCoords.lat }}",
+      gotoLon: "{{ .Params.gotoCoords.lon }}",
       content: {{ .Content }},
       location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
     },
@@ -124,7 +170,7 @@ const espazos = [
 ];
 // Crear iconos para os diferentes niveis de zoom
 const iconWithNumber = L.divIcon({
-  html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+  html: `<div style="background: black; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">1</div>`,
   className: 'custom-marker',
   iconSize: [30, 30]
 });
@@ -156,7 +202,7 @@ espazos.forEach(espazo => {
   if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
     const marker = L.marker([espazo.location.lat, espazo.location.lon], {
       icon: L.divIcon({
-        html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+        html: `<div style="background: black; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">1</div>`,
         className: 'custom-marker',
         iconSize: [30, 30]
       })
@@ -183,23 +229,38 @@ espazos.forEach(espazo => {
 map.addLayer(markers);
 
 // Evento para cambiar os iconos segundo o zoom
-map.on('zoomend', () => {
+map.on('moveend', () => {
+  if(document.getElementById("tarxetas-centros").style.display == "grid") {
+    mostrarTarxetas();
+  }
   updateMarkers();
 });
 
+// Cando o movemento/zoom remate, se foi manual, facemos update
+map.on('dragend', () => {
+  if (userInteraction) {
+    updateLastLocationAndZoom();
+  }
+});
+
+map.on('zoomend', () => {
+  if (userInteraction) {
+    updateLastLocationAndZoom();
+  }
+});
+
+function updateLastLocationAndZoom() {
+  lastLocation = [map.getCenter().lat, map.getCenter().lng];
+  lastZoom = map.getZoom();
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  const tarxetasContainer = document.getElementById("tarxetas-centros");
-  const infoContainer = document.getElementById("info-espazo");
-  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
-
-  // Mostrar tarxetas ao cargar a páxina
-  tarxetasContainer.style.display = "grid";
+  mostrarTarxetas()
 
   // Evento para seleccionar un centro ao facer clic nunha tarxeta
   document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
     tarxeta.addEventListener("click", () => {
-      console.log("tarxeta clicked");
       const key = tarxeta.getAttribute("data-key");
       const espazo = espazos.find(e => e.key === key);
 
@@ -210,16 +271,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const botonVolver = document.getElementById("volver-galiza");
+
+  // Configurar o evento do botón de "frecha atrás"
+  botonVolver.addEventListener("click", () => {
+    map.setView(lastLocation, lastZoom);
+    mostrarTarxetas();
+    deselectMarkers();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+
+  barraBusqueda.addEventListener("input", () => {
+    mostrarTarxetas();
+  });
+});
+
 function selectCentro(espazo) {
   if (!espazo) return;
   const marker = leafletMarkers.find(m => m.espazo.key === espazo.key);
+
+  userInteraction = false;
+  const gotoCoords = (espazo.gotoLat && espazo.gotoLon)
+  ? [parseFloat(espazo.gotoLat), parseFloat(espazo.gotoLon)] // Crear o array desde gotoLat e gotoLon
+  : marker.getLatLng(); // Usar marker.getLatLng() como alternativa
+  gotoZoom = espazo.gotoZoom || 15;
+
+  // Limpar o campo de busca
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  if (barraBusqueda) {
+    barraBusqueda.value = "";
+  }
 
   // 1. Cambiar o zoom e a posición do mapa
   
   const zoomLevel = map.getZoom();
   const selectedMarker = marker;
   if (zoomLevel < 13) {
-    map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+    map.setView(gotoCoords, gotoZoom, { animate: true });
   }
 
   // 2. Ocultar a reixa principal de tarxetas
@@ -242,11 +336,18 @@ function selectCentro(espazo) {
       <p class="descricion-espazo">${espazo.description}</p>
     </div>
     <div id="contido-dinamico">
-      ${espazo.content || '<p>Nom há contido adicional para este espaço.</p>'}
+      ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
     </div>`;
+
+  const botonVolver = document.getElementById("volver-galiza");
+  botonVolver.style.display = "block";
+
+  const filtros = document.getElementById("filtros-espazos-box");
+  filtros.style.display = "none";
 
   // 4. Colorear o marcador do centro seleccionado
   deselectMarkers(); // Asegurarse de que todos os marcadores estean deseleccionados
+  newMarker = leafletMarkers.find(m => m.espazo.key === espazo.key);
   if (marker && marker._icon) {
     const markerDiv = marker._icon.querySelector('.simple-marker');
     if (markerDiv) {
@@ -255,10 +356,63 @@ function selectCentro(espazo) {
     }
     marker._icon.classList.add('selected');
   }
-
+  setTimeout(() => {
+    if (marker && marker._icon) {
+      const markerDiv = marker._icon.querySelector('.simple-marker');
+      if (markerDiv) {
+        markerDiv.style.background = espazo.cor; // Cor do centro
+        markerDiv.style.outline = "3px solid white";
+      }
+      marker._icon.classList.add('selected');
+    }
+    userInteraction = true;
+  }, 300);
   
 }
 
+function mostrarTarxetas() {
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  const filtros = document.getElementById("filtros-espazos-box");
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const infoContainer = document.getElementById("info-espazo");
+  const bounds = map.getBounds(); // Obter os límites visibles do mapa
+  const botonVolver = document.getElementById("volver-galiza");
+
+  // Filtrar os espazos dentro dos límites do mapa
+  const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+  let visibleCount = 0;
+  tarxetas.forEach(tarxeta => {
+    const titulo = tarxeta.querySelector("h3").textContent.toLowerCase();
+    const descricion = tarxeta.querySelector("p").textContent.toLowerCase();
+    const localidade = tarxeta.querySelector("span").textContent.toLowerCase();
+    const key = tarxeta.getAttribute("data-key");
+    const espazo = espazos.find(e => e.key === key);
+    const termo = barraBusqueda.value.toLowerCase();
+
+    if (espazo && bounds.contains([espazo.location.lat, espazo.location.lon]) && (titulo.includes(termo) || descricion.includes(termo) || localidade.includes(termo))) {
+      tarxeta.style.display = "block"; // Mostrar se está dentro dos límites
+      visibleCount++;
+    } else {
+      tarxeta.style.display = "none"; // Ocultar se está fóra dos límites
+    }
+  });
+
+  const mensaxe = document.getElementById("mensaxe-sen-resultados");
+  if(visibleCount == 0) {
+    mensaxe.style.display = "block";
+  } else {
+    mensaxe.style.display = "none";
+  }
+
+  filtros.style.display = "block";
+  tarxetasContainer.style.display = "grid"; // Asegurar que o contedor se mostra
+  
+  // Ocultar a información do centro
+  cabeceiraContainer.innerHTML = "";
+  infoContainer.innerHTML = '<div id="contido-dinamico"></div>';
+  botonVolver.style.display = "none";
+}
 
 function updateMarkers() {
   const zoomLevel = map.getZoom();

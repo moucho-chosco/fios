@@ -22,8 +22,8 @@ a:hover {
 }
 
 .window-container {
-    display: flex; height: 80vh;
-    margin-top: 3vh;
+    display: flex; height: 85vh;
+    margin-top: 2vh;
     gap: 2.5%; /* Espazo entre as ventás */
 }
 
@@ -31,7 +31,7 @@ a:hover {
     flex: 1;
     background-size: cover;  /* A foto ocupará todo o espazo do contedor */
     background-position: center;  /* Centra a imaxe de fondo */
-    height: 80vh !important;  /* Altura do viewport, cubre toda a pantalla */
+    height: 86vh !important;  /* Altura do viewport, cubre toda a pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,12 @@ a:hover {
     border-radius: 10px; /* Opcional */
     overflow-y: auto;
   }
+
+.contido {
+    margin-top: 5vh;
+    margin-left: 3%;
+    margin-right: 3%;
+}
 
 /* -------------------------
    ORTOGRAFIA
@@ -88,6 +94,8 @@ a:hover {
     max-width: 210px;
 }
 
+
+
 /* Para o modo reducido */
 .sidebar-container.reduced-mode {
     position: sticky;
@@ -115,9 +123,9 @@ a:hover {
 }
 
 .menu-icon {
-    width: auto ;
-    height: 13px!important;
-    display: block; /* Evitar desprazamentos inesperados */
+    width: 28px !important ;
+    height: auto !important;
+    display: inline-block; /* Evitar desprazamentos inesperados */
     object-fit: contain; /* Asegura que o contido se axuste sen recortes */
 }
 
@@ -136,9 +144,9 @@ a:hover {
     height: 23px!important;
     display: block; /* Evitar desprazamentos inesperados */
     object-fit: contain; /* Asegura que o contido se axuste sen recortes */
-    align-self: center;
     display: inline;
 }
+
 
 /* Logo */
 .logo {
@@ -148,8 +156,8 @@ a:hover {
 
 .logo img {
     max-width: 75%;
+    margin-left: 40px;
     height: auto;
-    transition: none; /* Transición suave para o cambio de tamaño */
 }
 
 /* Modo reducido */
@@ -162,7 +170,14 @@ a:hover {
 
 /* Modo reducido */
 .sidebar-container.reduced-mode .logo img {
-    max-width: 100%;   /* Reduzir o tamaño do logo cando a barra está no modo reducido */
+    margin-left: -2px;
+    width: 100%;   /* Reduzir o tamaño do logo cando a barra está no modo reducido */
+}
+
+/* Modo reducido */
+.sidebar-container.full-mode .logo img {
+    margin-left: 7px;
+    width: 100%;   /* Reduzir o tamaño do logo cando a barra está no modo reducido */
 }
 
 
@@ -177,8 +192,13 @@ a:hover {
     color: #000000;
 }
 
+
 .menu-link {
-    display: block;
+    display: flex;
+    align-items: center;   /* Centrado vertical */
+    gap: 8px;             /* Espacio horizontal entre icono y texto */
+    
+    /* Resto de reglas */
     padding: 2px 3px;
     text-decoration: none;
     color: inherit;
@@ -187,6 +207,7 @@ a:hover {
 
 .sidebar ul li {
     opacity: 0.2;
+    transition: opacity 0.3s;
 }
 
 /* Modo completo: Mostra o nome completo */
@@ -220,27 +241,56 @@ a:hover {
     cursor: default;
 }
 
+.sidebar-container.reduced-mode .sidebar ul li.active:hover,
+.sidebar-container.reduced-mode .sidebar ul li.active a:hover {
+    opacity: 1;
+}
 
+.sidebar-container.reduced-mode .sidebar ul li:hover {
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.sidebar-container.full-mode .sidebar ul li {
+    ackground-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
 
 /* Elementos non activos */
-.sidebar ul li:hover {
+.sidebar-container.full-mode .sidebar ul li:hover {
     background-color: #b9b9b9;
-    border-radius: 4px;
+    transition: background-color 0.2s;
 }
 
 /* Botón para alternar entre os modos (frecha) */
 .toggle-button {
     background: none;
     border: none;
-    color: rgb(0, 0, 0);
-    font-size: 24px;
     position: relative;  /* Fixar a posición */
     margin-left: 5%;
+    margin-top: 10px;
     text-align: center;
     cursor: pointer;
     opacity: 0.2;  /* Facelo máis disimulada */
     transition: opacity 0.3s ease;  /* Transición para o cambio de opacidade */
-    transform: rotate(180deg);
+}
+
+.toggle-button img {
+    width: 16px !important;
+    height: auto;
+}
+
+.sidebar-container.full-mode .logo {
+    width: 130px !important;
+    height: auto;
+    transition: width 0.3s ease !important;
+}
+
+.sidebar-container.reduced-mode .logo {
+    width: 50px !important;
+    height: auto;
+    transition: width 0.3s ease !important;
 }
 
 /* Ao pasar o rato sobre o botón, facelo máis visible */
@@ -249,8 +299,8 @@ a:hover {
 }
 
 /* Alternar entre os modos */
-.sidebar.reduced-mode .toggle-button {
-    transform: rotate(0deg);
+.sidebar-container.reduced-mode .toggle-button {
+    margin-left: 7%;
 }
 
 .sidebar-container.reduced-mode {
@@ -273,11 +323,19 @@ nav a {
     color: #484848;
     font-weight: 600;
     font-size: 18px;
-    margin-left: 10%;
 }
 
 nav a:hover {
     color: #000;
+}
+
+/* Icono normal (positivo o negativo) en modo FULL */
+.sidebar-container.full-mode .sidebar .positivo,
+.sidebar-container.full-mode .sidebar .negativo {
+    width: 16px;
+    height: 16px !important;
+    object-fit: contain;
+    display: inline-block; /* o block, si tu contenedor es flex */
 }
 
 /* Modo completo: Mostra o nome completo */
@@ -295,7 +353,7 @@ nav a:hover {
 .sidebar-container.reduced-mode .sidebar .menu-icon {
     display: inline-block;
     font-size: 20px; /* Tamaño para o emoji */
-    color:rgb(0, 0, 0)
+    color:rgb(0, 0, 0);
 }
 
 
@@ -544,11 +602,40 @@ nav a:hover {
         width: 100%; /* Ou 100% para ocupar todo o espazo */
     }
 
+    #info-window {
+        overflow: hidden;
+    }
+
+    #filtros-espazos-box{
+        overflow-y:hidden;
+        margin: 30px;
+        margin-bottom: 20px;
+    }
+
+    #contido-espazos-info{
+        height: 86vh;
+        overflow: auto;
+    }
+    
+    #contido-espazos-info::-webkit-scrollbar {
+        width: 0px; /* Ancho da barra de scroll */
+    }
+
+    #menu-pages-list{
+        display:grid;
+        align-items: center !important;
+    }
+  
+
     .tarxetas-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
         gap: 16px;
-        margin: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 105px;
+        z-index: 99999;
       }
       
       .tarxeta-centro {
@@ -627,10 +714,6 @@ nav a:hover {
   }
   
 
-  .window::-webkit-scrollbar {
-    width: 0px; /* Ancho da barra de scroll */
-  }
-  
   /* Imaxe que ocupa todo o espazo do contedor */
   .imaxe-fondo img {
     position: absolute;
@@ -659,7 +742,7 @@ nav a:hover {
   
 
   /* Estilo do logo */
-.logo-espazo {
+  .logo-espazo {
     position: relative;         /* O logo se posiciona de forma absoluta dentro do contedor */
     margin-top: 0vh;                 /* Fai que o logo se asome por riba da imaxe */
     margin-left: -5px;                 /* Pódese axustar a posición horizontal do logo */
@@ -755,7 +838,7 @@ nav a:hover {
   }
 
   /* Aplica o efecto "darken" usando mix-blend-mode */
-.leaflet-tile-container img {
+  .leaflet-tile-container img {
     mix-blend-mode: normal !important; /* ou darken, dependendo do efecto desexado */
   }
   
@@ -804,18 +887,78 @@ nav a:hover {
   
   .barra-busqueda input {
     width: 200px;                   /* Ancho fixo */
-    padding: 5px 10px;              /* Espazo interno */
-    border: 1px solid #ddd;
+    padding: 6px 10px;              /* Espazo interno */
+    border: 0px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s;
   }
   
   .barra-busqueda input:focus {
     outline: none;
   }
+
+  #mensaxe-sen-resultados {
+    color: #979797;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 39vh;
+  }
+
   
+  .boton-atras {
+    position: absolute;
+    margin-top: 10px; 
+    margin-left: 10px; 
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .boton-atras:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slider-container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espazo entre o slider e o ano */
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Quitar o estilo predeterminado */
+    width: 100%; /* Largura do slider */
+    height: 10px; /* Altura do slider */
+    background: #d6d6d6; /* Cor de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    outline: none; /* Quitar o borde ao seleccionar */
+    cursor: pointer; /* Cambiar o cursor ao pasar o rato */
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quitar o estilo predeterminado */
+    width: 15px; /* Tamaño do botón */
+    height: 15px;
+    background: #949494; /* Cor do botón */
+    border-radius: 50%; /* Forma redonda */
+    cursor: pointer;
+    border: 0px solid #fff; /* Borde branco */
+}
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
   
   
 
@@ -823,6 +966,9 @@ nav a:hover {
    CALENDARIO
 ------------------------- */
 
+#calendar-window {
+    overflow: hidden;
+}
 
 #calendar {
     max-width: 100%;
@@ -830,8 +976,13 @@ nav a:hover {
     margin: 0 auto;
     padding: 20px;
     background-color: #fdfdfd;
-    border: 1px solid #e4e4e4;
+    border: 0px solid #e4e4e4;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+#filtros-calendario {
+    margin: 3vh;
 }
 
 /* Personaliza os eventos */
@@ -849,7 +1000,7 @@ nav a:hover {
 
 /* Día actual */
 .fc-day-today {
-    background-color: #f0f8ff !important; /* Fondo lixeiramente azul */
+    background-color: #000000 !important; /* Fondo lixeiramente azul */
 }
 .fc-button,
 .fc-today-button,
@@ -857,6 +1008,7 @@ nav a:hover {
 .fc-next-button {
     background-color: #000000 !important;
     color: #fff !important;
+    font-size: 14px !important;
     border-radius: 5px !important;
     margin: 2px !important;
     padding: 5px 10px !important;
@@ -885,17 +1037,24 @@ nav a:hover {
     background-color: #505050 !important;
 }
 
-.fc-toolbar-title {
+#fc-dom-1 {
     color: #000000 !important; /* Cor branca */
-    font-size: 20px; /* Tamaño do texto */
-    font-weight: bold; /* Texto en negrita */
-    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Tamaño do texto */
     font-weight: 1000; /* Light */
+    font-family: 'Open Sans', sans-serif;
     text-align: center; /* Centrar o texto */
 }
 
-fc-daygrid-day {
-    min-height: auto; /* Deixa que a altura dos días se adapte */
+.fc-scrollgrid {
+    height: 90% !important;
+}
+
+.fc-daygrid-day-frame {
+    min-height: auto !important; /* Deixa que a altura dos días se adapte */
+}
+.fc-daygrid-day-number {
+    color: #000000 !important; /* Cor do número */
+    font-weight: light !important; 
 }
 
 .fc-daygrid-day-frame {
@@ -916,7 +1075,7 @@ fc-daygrid-day {
 /* Cambiar a cor de fondo do día de hoxe */
 .fc-day-today {
     background-color: #ffffff !important; /* Azul claro */
-    border: 2px solid #000000 !important; /* Azul escuro */
+    border: 3px solid #64a5d5 !important; /* Azul escuro */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
 }
 
@@ -931,19 +1090,36 @@ fc-daygrid-day {
     color: #000000 !important; /* Cambiar a cor do número */
     font-weight: bold !important; /* Texto en negrita */
 }
-/* Cambiar a cor dos números dos días */
-.fc-daygrid-day-number {
-    color: #6e6e6e; /* Cor dos números */
-    font-weight: normal; /* Negrita opcional */
+ /* Usar o selector de atributo exacto */
+ .fc [class="fc-col-header-cell-cushion "] {
+    font-size: 12px !important; /* Tamaño da fonte */
+    color: #ffffff !important; /* Cor do texto */
+    font-weight: light !important; /* Texto en negrita */
+    text-align: center !important; /* Centrar o texto */
+    text-decoration: none !important; /* Eliminar subliñado */
 }
 
-/* Cambiar a cor dos nomes dos días na cabecera */
-.fc-col-header-cell {
-    color: #4caf50 !important; /* Cor dos nomes dos días */
-    font-size: 1.2em !important; /* Tamaño opcional */
-    font-weight: bold !important; /* Texto en negrita */
+/* Opcional: Cambiar o fondo do contedor */
+.fc .fc-col-header-cell {
+    background-color: #252525 !important; /* Fondo azul claro */
+    border-bottom: 4px solid #64a5d5 !important; /* Liña de separación inferior */
+    padding: 5px !important; /* Espazo arredor */
+    text-align: center !important;
 }
 
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+    font-size: 13px !important; /* Tamaño da fonte */
+    color: #080808 !important; /* Cor do texto */
+    font-weight: light !important; /* Texto en negrita */
+    text-align: left !important; /* Centrar o texto */
+    text-decoration: none !important; /* Eliminar subliñado */
+}
+
+#barra-busqueda-calendario {
+    border-radius: 5px !important; /* Bordes redondeados */
+    border: 1px solid #000000 !important; /* Azul escuro */
+}
 
 /* -------------------------
    OUTROS ELEMENTOS

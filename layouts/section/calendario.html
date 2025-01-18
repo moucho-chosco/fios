@@ -9,27 +9,7 @@
     <!-- Div para o todo -->
 
     <div id="calendario-container" class="standard-section-container">
-        <!-- Barra de Filtros -->
-  <div class="barra-superior">
-    <div id="filters">
-      <select id="localidade-filter" class="filter">
-        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-        {{ range where .Site.RegularPages ".Params.localidade" true }}
-          <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
-        {{ end }}
-      </select>
-      <select class="filter">
-        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
-        {{ range where .Site.RegularPages ".Params.etiqueta" true }}
-          <option value="">🏷️ {{ .Title }}</option>
-        {{ end }}
-      </select>
-    </div>
-    <div id="barra-busqueda" class="barra-busqueda">
-      <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
-    </div>
-  </div>
-
+       
         <div id="window-container-calendario" class="window-container">
 
             <!-- Calendario á esquerda -->
@@ -39,9 +19,47 @@
            
            <!-- Caixa de Información á dereita -->
            <div id="info-evento-window" class="window">
-               <div id="info-evento">
-                   <h2>Selecciona un evento</h2>
-               </div>
+             <!-- Barra de Filtros -->
+              <div id= "filtros-calendario" class="barra-superior">
+                <div id="filters">
+                  <select id="localidade-filter" class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+                    {{ range where .Site.RegularPages ".Params.localidade" true }}
+                      <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
+                    {{ end }}
+                  </select>
+                  <select class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+                    {{ range where .Site.RegularPages ".Params.etiqueta" true }}
+                      <option value="">🏷️ {{ .Title }}</option>
+                    {{ end }}
+                  </select>
+                </div>
+                <div id="barra-busqueda-calendario" class="barra-busqueda">
+                  <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
+                </div>
+              </div>
+              <p id="mensaxe-sen-resultados">
+                Non se atoparon eventos coincidentes
+              </p>
+              <div id="tarxetas-centros" class="tarxetas-container" style="display:grid;">
+                {{ range shuffle (where .Site.RegularPages ".Params.evento" true) }}
+                  <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+                    <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
+                    <h3>{{ .Title }}</h3>
+                    <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
+                    <p>{{ .Params.description }}</p>
+                  </div>
+                {{ end }}
+              </div>
+              <button id="volver-galiza" class="boton-atras" style="display: block;">←</button>      
+              <div id="imaxe-cabeceira-container">
+              </div>
+              <div id="info-evento">
+                <div id="contido-dinamico">
+                  <!-- O contido dinámico do espazo seleccionado irá aquí -->
+                </div>
+              </div>
            </div>
        </div>
     </div>
@@ -50,18 +68,19 @@
     <script>
         {{- /* Obtén todas las páginas de la sección "calendario" */ -}}
         {{- $eventsPages := where site.RegularPages "Section" "calendario" }}
-        console.log("Número de páginas de eventos encontradas: {{ len $eventsPages }}");
+        console.log("Número de páxinas de eventos encontradas: {{ len $eventsPages }}");
 
         {{- /* Lista de eventos */ -}}
         {{- $events := slice }}
+        
 
         {{- /* Itera sobre las páginas para crear eventos */ -}}
         {{- range $eventsPages }}
             {{- $event := dict
-                "title" ( .Title | default "Evento sin título" | jsonify )
-                "start" ( .Params.eventDate | default .Date | jsonify )
-                "description" ( (default "" .Params.description) | jsonify )
-                "url" ( .Permalink | jsonify )
+                "title" ( .Title | default "Evento sin título" )
+                "start" ( .Params.eventDate | default .Date | dateFormat "2006-01-02T15:04:05" )
+                "description" ( (default "" .Params.description))
+                "url" ( .Permalink)
             }}
             {{- $events = $events | append $event }}
         {{- end }}

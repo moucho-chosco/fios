@@ -1,5 +1,13 @@
 {{ define "main" }}
   <div id="general-container" class="standard-section-container">
-    {{ .Content }}
+    <div id="home-window-container" class="window-container">
+      <!-- Mapa á esquerda -->
+      <div id="main-home-window" class="window">
+        <div class="contido">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+    
   </div>
 {{ end }}

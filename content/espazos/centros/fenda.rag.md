@@ -13,33 +13,31 @@ location:
   lat: 43.364293
   lon: -8.424243
 type: "centro_social"
+gotoCoords:
+  lat: 43.368
+  lon: -8.408
+gotoZoom: 14
 ---
-
  *A Fenda* é un novo espazo desde onde responder ás necesidades do proletariado da cidade.
 Un espazo para organizarnos sobre a independencia política de clase 🚩.
 
 <details>
-  <summary>Historia do centro</summary>
-  <p>O Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.</p>
-</details>
-
-<details>
   <summary>Obxectivos</summary>
   <ul>
-    <li>Promover a educación popular.</li>
-    <li>Fomentar o activismo político e cultural.</li>
-    <li>Organizar eventos para fortalecer a comunidade.</li>
+    <li>Obxectivo 1</li>
+    <li>Obxectivo 2</li>
+    <li>Obxectivo 3</li>
   </ul>
 </details>
 
 <details>
   <summary>Actividades habituais</summary>
-  <p>No Centro Social A Fenda organizamos unha ampla variedade de actividades:</p>
+  <p>No Centro Social organizamos unha ampla variedade de actividades:</p>
   <ul>
-    <li>Talleres de formación (economía, historia, feminismo).</li>
-    <li>Charlas e debates sobre temas de actualidade.</li>
-    <li>Proxeccións de documentais e películas sociais.</li>
-    <li>Xuntanzas para colectivos e grupos locais.</li>
+    <li>Talleres</li>
+    <li>Charlas</li>
+    <li>Proxeccións</li>
+    <li>Xuntanzas</li>
   </ul>
 </details>
 
@@ -54,11 +52,27 @@ Un espazo para organizarnos sobre a independencia política de clase 🚩.
 </details>
 
 <details>
+  <summary>Redes</summary>
+  <p>Coñécenos a través de:</p>
+  <ul>
+    <li>Instragram</li>
+    <li>Twiter/X</li>
+    <li>Facebook</li>
+    <li>Bluesky</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Historia do centro</summary>
+  <p></p>
+</details>
+
+<details>
   <summary>Contacto</summary>
   <p>Podes contactar connosco a través de:</p>
   <ul>
-    <li>Email: contacto@afenda.org</li>
-    <li>Teléfono: 698 123 456</li>
-    <li>Enderezo: Rúa dos Activistas, 12, 15001 A Coruña</li>
+    <li>Email: contacto@email.com</li>
+    <li>Teléfono: 111 111 111</li>
+    <li>Enderezo: - </li>
   </ul>
 </details>

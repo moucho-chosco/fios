@@ -1,6 +1,6 @@
 ---
 title: "O Pichel"
-description: "Centro Social em Compostela."
+description: "Centro Social da Gentalha do Pichel"
 dirixido_por: "Gentalha do Pichel"
 centro: true
 logo:  "/espazos/centros/o_pichel/logo.png"  # Ruta á imaxe do logo

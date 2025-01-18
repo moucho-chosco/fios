@@ -22,11 +22,11 @@
                 <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
-            <img src="/images/logo.svg" alt="Logo do sitio">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
         </div>
 
         <nav>
-            <ul>
+            <ul id="menu-pages-list">
                 
                 
                 <li class="">
@@ -73,17 +73,6 @@
                 </li>
                 
                 
-                <li class="active">
-                    <a href="/rag/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/calendario_negativo.svg" alt=" Calendario" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
-                        <span class="menu-text"> Calendario</span>
-                    </a>
-                </li>
-                
-                
                 <li class="">
                     <a href="/rag/convocatorias/" class="menu-link">
                         
@@ -91,6 +80,17 @@
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
                         <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/rag/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/calendario_negativo.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
                     </a>
                 </li>
                 
@@ -142,9 +142,9 @@
                     
                 
                     
-                        
-                    
                 
+                    
+                        
                     
                 
                     
@@ -166,7 +166,9 @@
             </nav>
             
             
-            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
         </nav>
     </div>
 </div>
@@ -186,43 +188,7 @@
     
 
     <div id="calendario-container" class="standard-section-container">
-        
-  <div class="barra-superior">
-    <div id="filters">
-      <select id="localidade-filter" class="filter">
-        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-        
-          <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
-        
-          <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
-        
-          <option value="ferrol,43.48321,-8.22489,14">📍 Ferrol</option>
-        
-          <option value="lugo,43.010666,-7.555,15">📍 Lugo</option>
-        
-          <option value="ourense,42.33669,-7.86407,15">📍 Ourense</option>
-        
-          <option value="pontevedra,42.4325,-8.645,15">📍 Pontevedra</option>
-        
-          <option value="vigo,42.237878,-8.718482,13">📍 Vigo</option>
-        
-      </select>
-      <select class="filter">
-        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
-        
-          <option value="">🏷️ Anarquismo</option>
-        
-          <option value="">🏷️ Independentismo</option>
-        
-          <option value="">🏷️ Socialismo</option>
-        
-      </select>
-    </div>
-    <div id="barra-busqueda" class="barra-busqueda">
-      <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
-    </div>
-  </div>
-
+       
         <div id="window-container-calendario" class="window-container">
 
             
@@ -232,19 +198,87 @@
            
            
            <div id="info-evento-window" class="window">
-               <div id="info-evento">
-                   <h2>Selecciona un evento</h2>
-               </div>
+             
+              <div id= "filtros-calendario" class="barra-superior">
+                <div id="filters">
+                  <select id="localidade-filter" class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+                    
+                      <option value="a_corunha,43.368,-8.408,14">📍 A Coruña</option>
+                    
+                      <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
+                    
+                      <option value="ferrol,43.48201,-8.22489,14">📍 Ferrol</option>
+                    
+                      <option value="lugo,43.009,-7.558,15">📍 Lugo</option>
+                    
+                      <option value="ourense,42.33769,-7.86707,15">📍 Ourense</option>
+                    
+                      <option value="pontevedra,42.4325,-8.649,15">📍 Pontevedra</option>
+                    
+                      <option value="vigo,42.243,-8.737,13">📍 Vigo</option>
+                    
+                  </select>
+                  <select class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+                    
+                      <option value="">🏷️ Anarquismo</option>
+                    
+                      <option value="">🏷️ Independentismo</option>
+                    
+                      <option value="">🏷️ Socialismo</option>
+                    
+                  </select>
+                </div>
+                <div id="barra-busqueda-calendario" class="barra-busqueda">
+                  <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
+                </div>
+              </div>
+              <p id="mensaxe-sen-resultados">
+                Non se atoparon eventos coincidentes
+              </p>
+              <div id="tarxetas-centros" class="tarxetas-container" style="display:grid;">
+                
+                  <div class="tarxeta-centro" data-key="evento2">
+                    <div class="franxa-cor" style="background: ;"></div>
+                    <h3>Encontro formativo</h3>
+                    <span class="localidade">📍A Coruña</span>
+                    <p>Asemblea para definir as prioridades do trimestre.</p>
+                  </div>
+                
+                  <div class="tarxeta-centro" data-key="evento3">
+                    <div class="franxa-cor" style="background: ;"></div>
+                    <h3>proba</h3>
+                    <span class="localidade">📍Sen Localidade</span>
+                    <p>PROBAAA</p>
+                  </div>
+                
+                  <div class="tarxeta-centro" data-key="evento4">
+                    <div class="franxa-cor" style="background: ;"></div>
+                    <h3>Asemblea Xeral 4</h3>
+                    <span class="localidade">📍Sen Localidade</span>
+                    <p>Asemblea para definir as prioridades do trimestre.</p>
+                  </div>
+                
+              </div>
+              <button id="volver-galiza" class="boton-atras" style="display: block;">←</button>      
+              <div id="imaxe-cabeceira-container">
+              </div>
+              <div id="info-evento">
+                <div id="contido-dinamico">
+                  
+                </div>
+              </div>
            </div>
        </div>
     </div>
     
 
     <script>
-        console.log("Número de páginas de eventos encontradas: 3");
+        console.log("Número de páxinas de eventos encontradas: 3");
 
         
-        window.calendarEvents = [{"description":"\"Asemblea para definir as prioridades do trimestre.\"","start":"\"2024-11-24T18:00:00\"","title":"\"A3\"","url":"\"http://localhost:1313/rag/calendario/evento3/\""},{"description":"\"Asemblea para definir as prioridades do trimestre.\"","start":"\"2024-11-24T18:00:00\"","title":"\"Asemblea Xeral 4\"","url":"\"http://localhost:1313/rag/calendario/evento4/\""},{"description":"\"Asemblea para definir as prioridades do trimestre.\"","start":"\"2024-11-24T18:00:00\"","title":"\"A2\"","url":"\"http://localhost:1313/rag/calendario/evento2/\""}];
+        window.calendarEvents = [{"description":"PROBAAA","start":"2025-01-24T18:00:00","title":"proba","url":"http://localhost:1313/rag/calendario/evento3/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Asemblea Xeral 4","url":"http://localhost:1313/rag/calendario/evento4/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Encontro formativo","url":"http://localhost:1313/rag/calendario/evento2/"}];
     </script>
 
     <script src="/scripts/calendario.js"></script>

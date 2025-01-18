@@ -22,11 +22,11 @@
                 <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
-            <img src="/images/logo.svg" alt="Logo do sitio">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
         </div>
 
         <nav>
-            <ul>
+            <ul id="menu-pages-list">
                 
                 
                 <li class="">
@@ -74,23 +74,23 @@
                 
                 
                 <li class="">
-                    <a href="/rag/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
-                        <span class="menu-text"> Calendario</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
                     <a href="/rag/convocatorias/" class="menu-link">
                         
                             <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
                         <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/rag/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
                     </a>
                 </li>
                 
@@ -166,7 +166,9 @@
             </nav>
             
             
-            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
         </nav>
     </div>
 </div>
@@ -178,44 +180,10 @@
                 
 
 <div id="espazos-container" class="standard-section-container">
+
+  <script src="https://unpkg.com/leaflet-pip/leaflet-pip.min.js"></script>
+
   
-  <div class="barra-superior">
-    <div id="filters">
-      <select id="localidade-filter" class="filter">
-        <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
-        
-          <option value="a_corunha,43.368,-8.4065,14">📍 A Coruña</option>
-        
-          <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
-        
-          <option value="ferrol,43.48321,-8.22489,14">📍 Ferrol</option>
-        
-          <option value="lugo,43.010666,-7.555,15">📍 Lugo</option>
-        
-          <option value="ourense,42.33669,-7.86407,15">📍 Ourense</option>
-        
-          <option value="pontevedra,42.4325,-8.645,15">📍 Pontevedra</option>
-        
-          <option value="vigo,42.237878,-8.718482,13">📍 Vigo</option>
-        
-      </select>
-      <select class="filter">
-        <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
-        
-          <option value="">🏷️ Anarquismo</option>
-        
-          <option value="">🏷️ Independentismo</option>
-        
-          <option value="">🏷️ Socialismo</option>
-        
-      </select>
-    </div>
-    <div id="barra-busqueda" class="barra-busqueda">
-      <input type="text" id="busqueda-centros" placeholder="Buscar centros..." />
-    </div>
-  </div>
-
-
   
   <div id="map-window-container" class="window-container">
     
@@ -224,241 +192,325 @@
     </div>
     
     
-    <div class="window">
-      <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
-        
-          <div class="tarxeta-centro" data-key="buril">
-            <div class="franxa-cor" style="background: #E4B528;"></div>
-            <img src="/espazos/centros/buril/logo.jpg" alt="Logo de Buril" class="logo-tarxeta">
-            <h3>Buril</h3>
-            <span class="localidade">📍Sarria</span>
-            <p>Asociación Cultural, Deportiva e Ecolóxica</p>
+    <div id="info-window" class="window">
+      
+      <div id="filtros-espazos-box">
+        <div id="filtros-espazos" class="barra-superior">
+          <div id="filters">
+            <select id="localidade-filter" class="filter">
+              <option value="galiza,42.7751,-8.0339,7">📍 Galiza </option>
+              
+                <option value="a_corunha,43.368,-8.408,14">📍 A Coruña</option>
+              
+                <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
+              
+                <option value="ferrol,43.48201,-8.22489,14">📍 Ferrol</option>
+              
+                <option value="lugo,43.009,-7.558,15">📍 Lugo</option>
+              
+                <option value="ourense,42.33769,-7.86707,15">📍 Ourense</option>
+              
+                <option value="pontevedra,42.4325,-8.649,15">📍 Pontevedra</option>
+              
+                <option value="vigo,42.243,-8.737,13">📍 Vigo</option>
+              
+            </select>
+            <select class="filter">
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+              
+                <option value="">🏷️ Anarquismo</option>
+              
+                <option value="">🏷️ Independentismo</option>
+              
+                <option value="">🏷️ Socialismo</option>
+              
+            </select>
           </div>
-        
-          <div class="tarxeta-centro" data-key="matadoiro">
-            <div class="franxa-cor" style="background: #eb008b;"></div>
-            <img src="/espazos/centros/o_matadoiro/logo.jpg" alt="Logo de Treze Catorze" class="logo-tarxeta">
-            <h3>Treze Catorze</h3>
-            <span class="localidade">📍Salceda de Caselas</span>
-            <p>Asociación Cultural en Salceda de Caselas</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="pichel.rag">
-            <div class="franxa-cor" style="background: #bbbc00;"></div>
-            <img src="/espazos/centros/o_pichel/logo.png" alt="Logo de O Pichel" class="logo-tarxeta">
-            <h3>O Pichel</h3>
-            <span class="localidade">📍Compostela</span>
-            <p>Centro Social en Compostela</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="xebra.rag">
-            <div class="franxa-cor" style="background: #89C4FF;"></div>
-            <img src="/espazos/centros/xebra/logo.png" alt="Logo de Xebra!" class="logo-tarxeta">
-            <h3>Xebra!</h3>
-            <span class="localidade">📍Burela</span>
-            <p>Asociacioón cultural</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="hedreira">
-            <div class="franxa-cor" style="background: #179429;"></div>
-            <img src="/espazos/centros/a_hedreira/logo.jpg" alt="Logo de A Hedreira" class="logo-tarxeta">
-            <h3>A Hedreira</h3>
-            <span class="localidade">📍Lugo</span>
-            <p>Centro Social Autoxestionado</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="tiradoura">
-            <div class="franxa-cor" style="background: #BC0707;"></div>
-            <img src="/espazos/centros/a_tiradoura/logo.jpg" alt="Logo de A Tiradoura" class="logo-tarxeta">
-            <h3>A Tiradoura</h3>
-            <span class="localidade">📍Cangas do Morrazo</span>
-            <p>Asociación Cultural</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="escarnio.rag">
-            <div class="franxa-cor" style="background: #999999;"></div>
-            <img src="/espazos/centros/escarnio/logo.png" alt="Logo de Escárnio e Maldizer" class="logo-tarxeta">
-            <h3>Escárnio e Maldizer</h3>
-            <span class="localidade">📍Compostela</span>
-            <p>Centro Social Okupado Autoxestionado</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="chave_das_noces">
-            <div class="franxa-cor" style="background: #eb008b;"></div>
-            <img src="/espazos/centros/a_chave_das_noces/logo.jpg" alt="Logo de CS A Chave das Noces" class="logo-tarxeta">
-            <h3>CS A Chave das Noces</h3>
-            <span class="localidade">📍Castroverde</span>
-            <p>Centro Social en Castroverde</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="fenda.rag">
-            <div class="franxa-cor" style="background: #f15e80;"></div>
-            <img src="/espazos/centros/a_fenda/logo.png" alt="Logo de A Fenda" class="logo-tarxeta">
-            <h3>A Fenda</h3>
-            <span class="localidade">📍A Coruña</span>
-            <p>Espazo baixo a estratexia socialista </p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="acefala.rag">
-            <div class="franxa-cor" style="background: #FDE22D;"></div>
-            <img src="/espazos/centros/acefala/logo.png" alt="Logo de Acéfala" class="logo-tarxeta">
-            <h3>Acéfala</h3>
-            <span class="localidade">📍A Coruña</span>
-            <p>Espazo autónomo no barrio de Monte Alto</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="alvariça.rag">
-            <div class="franxa-cor" style="background: #D4AA00;"></div>
-            <img src="/espazos/centros/a_alvari%c3%a7a/logo.jpg" alt="Logo de A Alvariça" class="logo-tarxeta">
-            <h3>A Alvariça</h3>
-            <span class="localidade">📍Allariz</span>
-            <p>Centro Social</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="xose_tarrio.rag">
-            <div class="franxa-cor" style="background: #A637CA;"></div>
-            <img src="/espazos/centros/xose_tarrio/logo.png" alt="Logo de Ateneo Libertario Xosé Tarrío" class="logo-tarxeta">
-            <h3>Ateneo Libertario Xosé Tarrío</h3>
-            <span class="localidade">📍A Coruña</span>
-            <p>Anarquismo de barrio</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="gomes_gaioso">
-            <div class="franxa-cor" style="background: #FF5858;"></div>
-            <img src="/espazos/centros/gomes_gaioso/logo.png" alt="Logo de Gomes Gaioso" class="logo-tarxeta">
-            <h3>Gomes Gaioso</h3>
-            <span class="localidade">📍A Corunha</span>
-            <p>Centro social independentista, socialista e antipatriarcal</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="revolteira.rag">
-            <div class="franxa-cor" style="background: #55B47B;"></div>
-            <img src="/espazos/centros/a_revolteira/logo.png" alt="Logo de A Revolteira" class="logo-tarxeta">
-            <h3>A Revolteira</h3>
-            <span class="localidade">📍A Coruña</span>
-            <p>Espazo Autoxestionado na Coruña</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="vagalume">
-            <div class="franxa-cor" style="background: #f3c61c;"></div>
-            <img src="/espazos/centros/vagalume/logo.jpg" alt="Logo de Vagalume" class="logo-tarxeta">
-            <h3>Vagalume</h3>
-            <span class="localidade">📍Lugo</span>
-            <p>Centro Social Autoxestionado</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="madia_leva">
-            <div class="franxa-cor" style="background: #FF5A30;"></div>
-            <img src="/espazos/centros/madia_leva/logo.png" alt="Logo de Mádia Leva" class="logo-tarxeta">
-            <h3>Mádia Leva</h3>
-            <span class="localidade">📍Lugo</span>
-            <p>Centro Social e Cultural</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="aluande.rag">
-            <div class="franxa-cor" style="background: #f7a861;"></div>
-            <img src="/espazos/centros/aluande/logo.jpg" alt="Logo de Aluandê" class="logo-tarxeta">
-            <h3>Aluandê</h3>
-            <span class="localidade">📍Compostela</span>
-            <p>Espazo afrocentrado, antirracista e transinclusivo</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="fervedoiro">
-            <div class="franxa-cor" style="background: #3A7CC7;"></div>
-            <img src="/espazos/centros/o_fervedoiro/logo.jpeg" alt="Logo de O Fervedoiro" class="logo-tarxeta">
-            <h3>O Fervedoiro</h3>
-            <span class="localidade">📍Ribeira</span>
-            <p>Espazo Social en Ribeira</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="colectivo_terra">
-            <div class="franxa-cor" style="background: #e72444;"></div>
-            <img src="/espazos/centros/colectivo_terra/logo.jpg" alt="Logo de Colectivo Terra" class="logo-tarxeta">
-            <h3>Colectivo Terra</h3>
-            <span class="localidade">📍Pontedeume</span>
-            <p>Centro Social de Pontedeume</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="pedreira">
-            <div class="franxa-cor" style="background: #E64C3B;"></div>
-            <img src="/espazos/centros/a_pedreira/logo.jpg" alt="Logo de A Pedreira" class="logo-tarxeta">
-            <h3>A Pedreira</h3>
-            <span class="localidade">📍Pontevedra</span>
-            <p>Espazo Autoxestionado en Pontevedra</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="galleira">
-            <div class="franxa-cor" style="background: #B5D0DB;"></div>
-            <img src="/espazos/centros/a_galleira/logo.png" alt="Logo de A Galleira" class="logo-tarxeta">
-            <h3>A Galleira</h3>
-            <span class="localidade">📍Ourense</span>
-            <p>Espazo Aberto Nacionalista de Ourense</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="fuscalho">
-            <div class="franxa-cor" style="background: #2740D2;"></div>
-            <img src="/espazos/centros/fuscalho/logo.jpg" alt="Logo de Fuscalho" class="logo-tarxeta">
-            <h3>Fuscalho</h3>
-            <span class="localidade">📍A Guarda</span>
-            <p>Espazo Autoxestionado na Guarda</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="revolta_do_berbes">
-            <div class="franxa-cor" style="background: #1F7DBD;"></div>
-            <img src="/espazos/centros/a_revolta_do_berbes/logo.png" alt="Logo de A Revolta do Berbês" class="logo-tarxeta">
-            <h3>A Revolta do Berbês</h3>
-            <span class="localidade">📍Vigo</span>
-            <p>Centro Social Independentista</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="fundaçom_artabria">
-            <div class="franxa-cor" style="background: #d4112c;"></div>
-            <img src="/espazos/centros/artabria/logo.jpg" alt="Logo de Fundaçom Artábria" class="logo-tarxeta">
-            <h3>Fundaçom Artábria</h3>
-            <span class="localidade">📍Ferrol</span>
-            <p>Associación Cultural</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="revolta_de_trasancos">
-            <div class="franxa-cor" style="background: #f2d054;"></div>
-            <img src="/espazos/centros/a_revolta_de_trasancos/logo.jpg" alt="Logo de A Revolta de Trasancos" class="logo-tarxeta">
-            <h3>A Revolta de Trasancos</h3>
-            <span class="localidade">📍Trasancos</span>
-            <p>Colectivo Sociocultural</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="faisca.rag">
-            <div class="franxa-cor" style="background: #DB0C14;"></div>
-            <img src="/espazos/centros/faisca2/logo.png" alt="Logo de Faísca" class="logo-tarxeta">
-            <h3>Faísca</h3>
-            <span class="localidade">📍Vigo</span>
-            <p>Local Social en Vigo</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="ateneo_ferrolan">
-            <div class="franxa-cor" style="background: #1f7dbd;"></div>
-            <img src="/espazos/centros/ateneo_ferrolan/logo.png" alt="Logo de Ateneo Ferrolán" class="logo-tarxeta">
-            <h3>Ateneo Ferrolán</h3>
-            <span class="localidade">📍Ferrol</span>
-            <p>Un lugar de encontro para a cultura</p>
-          </div>
-        
-          <div class="tarxeta-centro" data-key="casa_colorida">
-            <div class="franxa-cor" style="background: #eb008b;"></div>
-            <img src="/espazos/centros/a_casa_colorida/logo.jpg" alt="Logo de A Casa Colorida" class="logo-tarxeta">
-            <h3>A Casa Colorida</h3>
-            <span class="localidade">📍Nigrán</span>
-            <p>Laboratorio do Común na Galiza</p>
-          </div>
-        
-      </div>
-      <div id="imaxe-cabeceira-container">
-      </div>
-      <div id="info-espazo">
-        <div id="contido-dinamico">
           
+          
+  
+          <div id="barra-busqueda-calendario" class="barra-busqueda">
+            <input type="text" id="busqueda-centros" placeholder="Buscar espazos..." />
+          </div>
         </div>
       </div>
+      
+
+      <div id="contido-espazos-info">
+        <p id="mensaxe-sen-resultados" style="display: none;">
+          Non se atoparon espazos coincidentes nesta área
+          </p>
+          <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
+            
+              <div class="tarxeta-centro" data-key="galleira">
+                <div class="franxa-cor" style="background: #B5D0DB;"></div>
+                <img src="/espazos/centros/a_galleira/logo.png" alt="Logo de A Galleira" class="logo-tarxeta">
+                <h3>A Galleira</h3>
+                <span class="localidade">📍Ourense</span>
+                <p>Espazo Aberto Nacionalista de Ourense</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolteira.rag">
+                <div class="franxa-cor" style="background: #55B47B;"></div>
+                <img src="/espazos/centros/a_revolteira/logo.png" alt="Logo de A Revolteira" class="logo-tarxeta">
+                <h3>A Revolteira</h3>
+                <span class="localidade">📍A Coruña</span>
+                <p>Espazo Autoxestionado na Coruña</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fuscalho">
+                <div class="franxa-cor" style="background: #0c6ec6;"></div>
+                <img src="/espazos/centros/fuscalho/logo.png" alt="Logo de Fuscalho" class="logo-tarxeta">
+                <h3>Fuscalho</h3>
+                <span class="localidade">📍A Guarda</span>
+                <p>Espazo Autoxestionado na Guarda</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="xebra.rag">
+                <div class="franxa-cor" style="background: #89C4FF;"></div>
+                <img src="/espazos/centros/xebra/logo.png" alt="Logo de Xebra!" class="logo-tarxeta">
+                <h3>Xebra!</h3>
+                <span class="localidade">📍Burela</span>
+                <p>Asociación cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="matadoiro">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/o_matadoiro/logo.jpg" alt="Logo de O Matadoiro" class="logo-tarxeta">
+                <h3>O Matadoiro</h3>
+                <span class="localidade">📍Salceda de Caselas</span>
+                <p>Asociación Cultural Treze-Catorze</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="acefala.rag">
+                <div class="franxa-cor" style="background: #FDE22D;"></div>
+                <img src="/espazos/centros/acefala/logo.png" alt="Logo de Acéfala" class="logo-tarxeta">
+                <h3>Acéfala</h3>
+                <span class="localidade">📍A Coruña</span>
+                <p>Espazo autónomo</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="gralha">
+                <div class="franxa-cor" style="background: #555555;"></div>
+                <img src="/espazos/centros/gralha/logo.png" alt="Logo de A Gralha" class="logo-tarxeta">
+                <h3>A Gralha</h3>
+                <span class="localidade">📍Porto</span>
+                <p>Centro Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="escarnio.rag">
+                <div class="franxa-cor" style="background: #746D6F;"></div>
+                <img src="/espazos/centros/escarnio/logo.png" alt="Logo de Escárnio e Maldizer" class="logo-tarxeta">
+                <h3>Escárnio e Maldizer</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Centro Social Okupado Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolta_de_trasancos">
+                <div class="franxa-cor" style="background: #f2d054;"></div>
+                <img src="/espazos/centros/a_revolta_de_trasancos/logo.jpg" alt="Logo de A Revolta de Trasancos" class="logo-tarxeta">
+                <h3>A Revolta de Trasancos</h3>
+                <span class="localidade">📍Trasancos</span>
+                <p>Colectivo Sociocultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="pichel.rag">
+                <div class="franxa-cor" style="background: #bbbc00;"></div>
+                <img src="/espazos/centros/o_pichel/logo.png" alt="Logo de O Pichel" class="logo-tarxeta">
+                <h3>O Pichel</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Centro Social da Gentalha do Pichel</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="colectivo_terra">
+                <div class="franxa-cor" style="background: #e72444;"></div>
+                <img src="/espazos/centros/colectivo_terra/logo.jpg" alt="Logo de Colectivo Terra" class="logo-tarxeta">
+                <h3>Colectivo Terra</h3>
+                <span class="localidade">📍Pontedeume</span>
+                <p>Centro Social</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="pedreira">
+                <div class="franxa-cor" style="background: #E64C3B;"></div>
+                <img src="/espazos/centros/a_pedreira/logo.jpg" alt="Logo de A Pedreira" class="logo-tarxeta">
+                <h3>A Pedreira</h3>
+                <span class="localidade">📍Pontevedra</span>
+                <p>Espazo Autoxestionado en Pontevedra</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolta_do_berbes">
+                <div class="franxa-cor" style="background: #1F7DBD;"></div>
+                <img src="/espazos/centros/a_revolta_do_berbes/logo.png" alt="Logo de A Revolta do Berbês" class="logo-tarxeta">
+                <h3>A Revolta do Berbês</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Centro Social Independentista</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="buril">
+                <div class="franxa-cor" style="background: #E4B528;"></div>
+                <img src="/espazos/centros/buril/logo.jpg" alt="Logo de Buril" class="logo-tarxeta">
+                <h3>Buril</h3>
+                <span class="localidade">📍Sarria</span>
+                <p>Asociación Cultural, Deportiva e Ecolóxica</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="tiradoura">
+                <div class="franxa-cor" style="background: #BC0707;"></div>
+                <img src="/espazos/centros/a_tiradoura/logo.jpg" alt="Logo de A Tiradoura" class="logo-tarxeta">
+                <h3>A Tiradoura</h3>
+                <span class="localidade">📍Cangas do Morrazo</span>
+                <p>Asociación Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="nubeira">
+                <div class="franxa-cor" style="background: #b6c8e8;"></div>
+                <img src="/espazos/centros/nubeira/logo.png" alt="Logo de A Nubeira" class="logo-tarxeta">
+                <h3>A Nubeira</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Centro Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="madia_leva">
+                <div class="franxa-cor" style="background: #FF5A30;"></div>
+                <img src="/espazos/centros/madia_leva/logo.png" alt="Logo de Mádia Leva" class="logo-tarxeta">
+                <h3>Mádia Leva</h3>
+                <span class="localidade">📍Lugo</span>
+                <p>Centro Social e Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fervedoiro">
+                <div class="franxa-cor" style="background: #3A7CC7;"></div>
+                <img src="/espazos/centros/o_fervedoiro/logo.jpeg" alt="Logo de O Fervedoiro" class="logo-tarxeta">
+                <h3>O Fervedoiro</h3>
+                <span class="localidade">📍Ribeira</span>
+                <p>Espazo Social en Ribeira</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="vagalume">
+                <div class="franxa-cor" style="background: #f3c61c;"></div>
+                <img src="/espazos/centros/vagalume/logo.jpg" alt="Logo de Vagalume" class="logo-tarxeta">
+                <h3>Vagalume</h3>
+                <span class="localidade">📍Lugo</span>
+                <p>Centro Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fenda.rag">
+                <div class="franxa-cor" style="background: #f15e80;"></div>
+                <img src="/espazos/centros/a_fenda/logo.png" alt="Logo de A Fenda" class="logo-tarxeta">
+                <h3>A Fenda</h3>
+                <span class="localidade">📍A Coruña</span>
+                <p>Espazo baixo a estratexia socialista </p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="hedreira">
+                <div class="franxa-cor" style="background: #179429;"></div>
+                <img src="/espazos/centros/a_hedreira/logo.jpg" alt="Logo de A Hedreira" class="logo-tarxeta">
+                <h3>A Hedreira</h3>
+                <span class="localidade">📍Lugo</span>
+                <p>Centro Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="ateneo_ferrolan">
+                <div class="franxa-cor" style="background: #1f7dbd;"></div>
+                <img src="/espazos/centros/ateneo_ferrolan/logo.png" alt="Logo de Ateneo Ferrolán" class="logo-tarxeta">
+                <h3>Ateneo Ferrolán</h3>
+                <span class="localidade">📍Ferrol</span>
+                <p>Un lugar de encontro para a cultura</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="faisca.rag">
+                <div class="franxa-cor" style="background: #DB0C14;"></div>
+                <img src="/espazos/centros/faisca2/logo.png" alt="Logo de Faísca" class="logo-tarxeta">
+                <h3>Faísca</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Local Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casa_colorida">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/a_casa_colorida/logo.jpg" alt="Logo de A Casa Colorida" class="logo-tarxeta">
+                <h3>A Casa Colorida</h3>
+                <span class="localidade">📍Nigrán</span>
+                <p>Laboratorio do Común na Galiza</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="aluande.rag">
+                <div class="franxa-cor" style="background: #f7a861;"></div>
+                <img src="/espazos/centros/aluande/logo.jpg" alt="Logo de Aluandê" class="logo-tarxeta">
+                <h3>Aluandê</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Espazo afrocentrado, antirracista e transinclusivo</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casa_obreira">
+                <div class="franxa-cor" style="background: #E10610;"></div>
+                <img src="/espazos/centros/casa_obreira/logo.jpg" alt="Logo de Casa Obreira" class="logo-tarxeta">
+                <h3>Casa Obreira</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Centro Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casino_1889">
+                <div class="franxa-cor" style="background: #AD1C4F;"></div>
+                <img src="/espazos/centros/casino_1889/logo_3.png" alt="Logo de Casino 1889" class="logo-tarxeta">
+                <h3>Casino 1889</h3>
+                <span class="localidade">📍Carballo</span>
+                <p>Centro Social Autoxestionado</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="alvariça.rag">
+                <div class="franxa-cor" style="background: #D4AA00;"></div>
+                <img src="/espazos/centros/a_alvari%c3%a7a/logo.jpg" alt="Logo de A Alvariça" class="logo-tarxeta">
+                <h3>A Alvariça</h3>
+                <span class="localidade">📍Allariz</span>
+                <p>Centro Social</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="gomes_gaioso">
+                <div class="franxa-cor" style="background: #FF5858;"></div>
+                <img src="/espazos/centros/gomes_gaioso/logo.png" alt="Logo de Gomes Gaioso" class="logo-tarxeta">
+                <h3>Gomes Gaioso</h3>
+                <span class="localidade">📍A Coruña</span>
+                <p>Centro social independentista, socialista e antipatriarcal</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="chave_das_noces">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/a_chave_das_noces/logo.jpg" alt="Logo de A Chave das Noces" class="logo-tarxeta">
+                <h3>A Chave das Noces</h3>
+                <span class="localidade">📍Castroverde</span>
+                <p>Centro Social en Castroverde</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="xose_tarrio.rag">
+                <div class="franxa-cor" style="background: #A637CA;"></div>
+                <img src="/espazos/centros/xose_tarrio/logo.png" alt="Logo de Ateneo Libertario Xosé Tarrío" class="logo-tarxeta">
+                <h3>Ateneo Libertario Xosé Tarrío</h3>
+                <span class="localidade">📍A Coruña</span>
+                <p>Anarquismo de barrio</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fundaçom_artabria">
+                <div class="franxa-cor" style="background: #d4112c;"></div>
+                <img src="/espazos/centros/artabria/logo.jpg" alt="Logo de Fundaçom Artábria" class="logo-tarxeta">
+                <h3>Fundaçom Artábria</h3>
+                <span class="localidade">📍Ferrol</span>
+                <p>Asociación Cultural</p>
+              </div>
+            
+          </div>
+          <button id="volver-galiza" class="boton-atras" style="display: block;">
+            <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
+          </button> 
+          <div id="imaxe-cabeceira-container">
+          </div>
+          <div id="info-espazo">
+            <div id="contido-dinamico">
+              
+            </div>
+          </div>
+      </div>
+      
 
     </div>
   </div>
@@ -474,6 +526,12 @@
 
 <script>
   const key = 'dc5wAmsD5MUwi9LdDQ1I';
+  let lastLocation = [42.7751, -8.0339];
+  let lastZoom = 8;
+  let userInteraction = true;
+
+  
+
 
   
   const map = L.map('map', {
@@ -482,10 +540,21 @@
   maxZoom: 18,
   minZoom: 7 
   }).setView([42.7751, -8.0339], 8);
+
+  
   const mtLayer = L.maptilerLayer({
     apiKey: key,
-    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb" 
+    style: "17bb7529-f38c-48ce-b98f-4ca2cc7ef3cb"
   }).addTo(map);
+
+  
+  const mtLayerLousados = L.maptilerLayer({
+    apiKey: key,
+    style: "cdfdfa4a-2138-4c09-8217-4211db4c3cc9"
+  });
+
+  
+  let currentLayer = mtLayer;
 
   
   const localidades = {
@@ -493,7 +562,7 @@
     "a_corunha": {
       title: "A Coruña",
       lat:  43.368 ,
-      lon:  -8.4065 ,
+      lon:  -8.408 ,
       zoom:  14 
     },
     
@@ -506,36 +575,36 @@
     
     "ferrol": {
       title: "Ferrol",
-      lat:  43.48321 ,
+      lat:  43.48201 ,
       lon:  -8.22489 ,
       zoom:  14 
     },
     
     "lugo": {
       title: "Lugo",
-      lat:  43.010666 ,
-      lon:  -7.555 ,
+      lat:  43.009 ,
+      lon:  -7.558 ,
       zoom:  15 
     },
     
     "ourense": {
       title: "Ourense",
-      lat:  42.33669 ,
-      lon:  -7.86407 ,
+      lat:  42.33769 ,
+      lon:  -7.86707 ,
       zoom:  15 
     },
     
     "pontevedra": {
       title: "Pontevedra",
       lat:  42.4325 ,
-      lon:  -8.645 ,
+      lon:  -8.649 ,
       zoom:  15 
     },
     
     "vigo": {
       title: "Vigo",
-      lat:  42.237878 ,
-      lon:  -8.718482 ,
+      lat:  42.243 ,
+      lon:  -8.737 ,
       zoom:  13 
     },
     
@@ -568,7 +637,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_alvariça\/foto_cabeceira.png",
       cor: "#D4AA00",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "16",
+      gotoLat: "42.189",
+      gotoLon: "-7.802",
+      content: "\u003cp\u003eO CS \u003cem\u003eA Alvariça\u003c/em\u003e é un centro social galeguista en Allariz.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.187726410307874 , lon:  -7.8036597061583475  }
     },
   
@@ -582,8 +654,28 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_casa_colorida\/foto_cabeceira.jpg",
       cor: "#eb008b",
       seleccionado: false,
-      content: "\u003cp\u003eLaboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.\u003c/p\u003e\n",
+      gotoZoom:   "15",
+      gotoLat: "42.135",
+      gotoLon: "-8.812",
+      content: "\u003cp\u003eLaboratorio do Común para o desenvolvemento Integral da Cultura Libre en Galiza. Aldeanía en rede p2p. Universidade Libre. Residencia Artística, Activismo Cultural e MediaHackLab.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.13955443594872 , lon:  -8.807018804609987  }
+    },
+  
+    {
+      key: "chave_das_noces",
+      title: "A Chave das Noces",
+      subtitle: "",
+      description: "Centro Social en Castroverde",
+      direcion: "",
+      logo: "\/espazos\/centros\/a_chave_das_noces\/logo.jpg",
+      imaxe: "\/espazos\/centros\/a_chave_das_noces\/foto_cabeceira.jpg",
+      cor: "#eb008b",
+      seleccionado: false,
+      gotoZoom:   "13",
+      gotoLat: "43.055",
+      gotoLon: "-7.3261945204762515",
+      content: "\u003cp\u003eO CS \u003cem\u003eA Chave das Noces\u003c/em\u003e é un centro social galeguista en San Cibrao de Montecubeiro, Castroverde.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eOrganziacións participantes\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
+      location: { lat:  43.08492072813192 , lon:  -7.3261945204762515  }
     },
   
     {
@@ -596,7 +688,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_fenda\/foto_cabeceira.jpg",
       cor: "#f15e80",
       seleccionado: false,
-      content: "\u003cp\u003e\u003cem\u003eA Fenda\u003c/em\u003e é un novo espazo desde onde responder ás necesidades do proletariado da cidade.\nUn espazo para organizarnos sobre a independencia política de clase 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      gotoZoom:   "14",
+      gotoLat: "43.368",
+      gotoLon: "-8.408",
+      content: "\u003cp\u003e\u003cem\u003eA Fenda\u003c/em\u003e é un novo espazo desde onde responder ás necesidades do proletariado da cidade.\nUn espazo para organizarnos sobre a independencia política de clase 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.364293 , lon:  -8.424243  }
     },
   
@@ -610,8 +705,28 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_galleira\/foto_cabeceira.jpg",
       cor: "#B5D0DB",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "42.33769",
+      gotoLon: "-7.86707",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  42.333213602322225 , lon:  -7.862102901884126  }
+    },
+  
+    {
+      key: "gralha",
+      title: "A Gralha",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      direcion: "",
+      logo: "\/espazos\/centros\/gralha\/logo.png",
+      imaxe: "\/espazos\/centros\/gralha\/foto_cabeceira.jpg",
+      cor: "#555555",
+      seleccionado: false,
+      gotoZoom:   "13",
+      gotoLat: "41.1557",
+      gotoLon: "-8.615",
+      content: "\u003cp\u003eAutoxestión, autonomía, comunidade, feminismo, antiracismo, veganismo popular, apoio mutuo, anticapitalismo\u0026hellip;\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
+      location: { lat:  41.15468298531052 , lon:  -8.600443740842207  }
     },
   
     {
@@ -624,8 +739,28 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_hedreira\/foto_cabeceira.png",
       cor: "#179429",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "43.009",
+      gotoLon: "-7.558",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.00718469311447 , lon:  -7.550971717750473  }
+    },
+  
+    {
+      key: "nubeira",
+      title: "A Nubeira",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      direcion: "Sen direción coñecida",
+      logo: "\/espazos\/centros\/nubeira\/logo.png",
+      imaxe: "\/espazos\/centros\/nubeira\/foto_cabeceira.png",
+      cor: "#b6c8e8",
+      seleccionado: false,
+      gotoZoom:   "13",
+      gotoLat: "42.24",
+      gotoLon: "-8.735",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
+      location: { lat:  42.23282 , lon:  -8.72264  }
     },
   
     {
@@ -638,7 +773,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_pedreira\/foto_cabeceira.jpg",
       cor: "#E64C3B",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "42.4325",
+      gotoLon: "-8.649",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  42.43384550029501 , lon:  -8.642724439978007  }
     },
   
@@ -652,7 +790,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_revolta_de_trasancos\/foto_cabeceira.jpg",
       cor: "#f2d054",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "14",
+      gotoLat: "43.48201",
+      gotoLon: "-8.22489",
+      content: "\u003cp\u003eA Revolta naceu en 1997 como comparsa de Entroido e axiña ampliou a súa actividade para defender a cultura, a lingua e o medio ambiente. Desde aquela, promove festas participativas (como a Lumeirada na noite do 23 de xuño), organiza comidas populares e actividades que integran á infancia e ás familias, e reivindica espazos naturais como a Fraga de Menáncaro. Emprega o galego como lingua vehicular, aposta pola festa activa con valores de solidariedade e igualdade, e colabora con outras entidades na defensa das tradicións, a cultura, a xustiza social e os dereitos das mulleres, das diversidades afectivo-sexuais e da Terra.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.48018435093307 , lon:  -8.20404842156572  }
     },
   
@@ -666,7 +807,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_revolta_do_berbes\/foto_cabeceira.png",
       cor: "#1F7DBD",
       seleccionado: false,
-      content: "\u003cp\u003eFundado en 2003, 21 anos mantendo Vigo en pe!\u003c/p\u003e\n",
+      gotoZoom:   "13",
+      gotoLat: "42.24",
+      gotoLon: "-8.735",
+      content: "\u003cp\u003eFundado en 2003, 21 anos mantendo Vigo en pe!\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  42.23936235256048 , lon:  -8.727134803820913  }
     },
   
@@ -680,7 +824,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_revolteira\/foto_cabeceira.jpg",
       cor: "#55B47B",
       seleccionado: false,
-      content: "\u003cp\u003e\u003cem\u003eA Revolteira\u003c/em\u003e é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.\u003c/p\u003e\n\u003cdetails\u003e\r\n    \u003csummary\u003eSomos\u003c/summary\u003e\r\n    \u003cp\u003eA Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.\u003c/p\u003e\n\u003cp\u003eO seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.\u003c/p\u003e\n\u003cp\u003ePara iso, na Revolteira conformámonos como un colectivo de base asamblearia e arredor do noso local social, na rúa Falperra, 13. Alí queremos crear un espazo funcional coas loitas e os cambios cos que estamos comprometidas, pero tamén un lugar onde sentírmonos acompañadas e felices. E tamén para bailar e gozar cando se precise.\u003c/p\u003e\n\u003cp\u003eQueremos converternos en espazo seguro para pensar, traballar e construír, para así  ir artellando unha contorna habitable na que cuestionármornos e medrar de forma individual e colectiva. Queremos facelo, ademais, desde unha perspectiva interseccional que recolla as aprendizaxes e ferramentas dos feminismos, das loitas antirracistas, do movemento lgbtqi+, da loita de clases, dos ecoloxismos, dos movementos anticapacitistas, dos activismos trans, dos movementos autónomos de base e de toda unha xenealoxía de resistencias que determinan e nutren o noso xeito de facer.\u003c/p\u003e\n\u003cp\u003eAspiramos a ser un espazo onde poder imaxinar futuros posibles e alternativos ás narrativas reaccionarias que nos paralizan e desactivan, albiscalos e camiñar cara a eles.\u003c/p\u003e\n\r\n  \u003c/details\u003e\n",
+      gotoZoom:   "14",
+      gotoLat: "43.368",
+      gotoLon: "-8.408",
+      content: "\u003cp\u003e\u003cem\u003eA Revolteira\u003c/em\u003e é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eSomos\u003c/summary\u003e\r\n  \u003cp\u003e\r\n  A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.\r\n\u003cp\u003eO seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.\u003c/p\u003e\n\u003cp\u003ePara iso, na Revolteira conformámonos como un colectivo de base asamblearia e arredor do noso local social, na rúa Falperra, 13. Alí queremos crear un espazo funcional coas loitas e os cambios cos que estamos comprometidas, pero tamén un lugar onde sentírmonos acompañadas e felices. E tamén para bailar e gozar cando se precise.\u003c/p\u003e\n\u003cp\u003eQueremos converternos en espazo seguro para pensar, traballar e construír, para así  ir artellando unha contorna habitable na que cuestionármornos e medrar de forma individual e colectiva. Queremos facelo, ademais, desde unha perspectiva interseccional que recolla as aprendizaxes e ferramentas dos feminismos, das loitas antirracistas, do movemento lgbtqi+, da loita de clases, dos ecoloxismos, dos movementos anticapacitistas, dos activismos trans, dos movementos autónomos de base e de toda unha xenealoxía de resistencias que determinan e nutren o noso xeito de facer.\u003c/p\u003e\n\u003cp\u003eAspiramos a ser un espazo onde poder imaxinar futuros posibles e alternativos ás narrativas reaccionarias que nos paralizan e desactivan, albiscalos e camiñar cara a eles.\u003c/p\u003e\n  \u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.358728281851086 , lon:  -8.40653158003866  }
     },
   
@@ -694,7 +841,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/a_tiradoura\/foto_cabeceira.jpg",
       cor: "#BC0707",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "42.261",
+      gotoLon: "-8.78",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.26723724298566 , lon:  -8.778881811237376  }
     },
   
@@ -702,13 +852,16 @@ const espazos = [
       key: "acefala.rag",
       title: "Acéfala",
       subtitle: "",
-      description: "Espazo autónomo no barrio de Monte Alto",
+      description: "Espazo autónomo",
       direcion: "",
       logo: "\/espazos\/centros\/acefala\/logo.png",
       imaxe: "\/espazos\/centros\/acefala\/foto_cabeceira.jpg",
       cor: "#FDE22D",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "14",
+      gotoLat: "43.368",
+      gotoLon: "-8.408",
+      content: "\u003cp\u003e\u003cem\u003eAcéfala\u003c/em\u003e é un colectivo cultural cun espazo autónomo en Monte Alto (A Coruña).\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.378008188858196 , lon:  -8.403404699165293  }
     },
   
@@ -722,7 +875,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/aluande\/foto_cabeceira.jpg",
       cor: "#f7a861",
       seleccionado: false,
-      content: "\u003cp\u003eUn espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.\u003c/p\u003e\n",
+      gotoZoom:   "14",
+      gotoLat: "42.879",
+      gotoLon: "-8.544",
+      content: "\u003cp\u003eUn espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.890695056496504 , lon:  -8.528207746840145  }
     },
   
@@ -736,7 +892,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/ateneo_ferrolan\/foto_cabeceira.jpg",
       cor: "#1f7dbd",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "14",
+      gotoLat: "43.48201",
+      gotoLon: "-8.22489",
+      content: "\u003cp\u003eRefundado no ano 1976, o \u003cem\u003eAteneo Ferrolán\u003c/em\u003e, tense convertido nun punto de referencia e consulta imprescindible dentro do mundo cultural de Ferrol e en xeral de Galicia, non so polos centos de actividades culturais (debates, cine, conferencias, mesas redondas, exposicións, concertos, etc\u0026hellip;) que organiza senón pola súa capacidade crecente de convocatoria na realización das distintas e plurais actividades programadas, e tamén porque é unha entidade que ofrece o seu espazo a entidades e asociacións que queran dispoñer das súas instalacións.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.482150289377444 , lon:  -8.23709266178814  }
     },
   
@@ -750,7 +909,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/xose_tarrio\/foto_cabeceira.jpg",
       cor: "#A637CA",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "14",
+      gotoLat: "43.368",
+      gotoLon: "-8.408",
+      content: "\u003cp\u003eO \u003cem\u003eAteneo Libertario Xosé Tarrío\u003c/em\u003e xurde o 9 de maio de 2015 co fin de espallar a autoxestión.\nAbaixo os muros das prisions, contra todo tipo de poder.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.35719194302331 , lon:  -8.409405917527252  }
     },
   
@@ -764,36 +926,62 @@ const espazos = [
       imaxe: "\/espazos\/centros\/buril\/foto_cabeceira.jpg",
       cor: "#E4B528",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "42.778",
+      gotoLon: "-7.413",
+      content: "\u003cp\u003e\u003cem\u003eBuril A.C.D.E.\u003c/em\u003e é unha asociación cultural, deportiva e ecolóxica situada en Sarria, Lugo.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.78196711219094 , lon:  -7.416791429296332  }
+    },
+  
+    {
+      key: "casa_obreira",
+      title: "Casa Obreira",
+      subtitle: "",
+      description: "Centro Cultural",
+      direcion: "",
+      logo: "\/espazos\/centros\/casa_obreira\/logo.jpg",
+      imaxe: "\/espazos\/centros\/casa_obreira\/foto_cabeceira.jpg",
+      cor: "#E10610",
+      seleccionado: false,
+      gotoZoom:   "14",
+      gotoLat: "42.879",
+      gotoLon: "-8.544",
+      content: "\u003cp\u003eA \u003cem\u003eCasa Obreira\u003c/em\u003e é un espazo para debatermos e construírmos colectivamente o futuro que nos urxe. «Sen teoría revolucionaria non pode haber movemento revolucionario».\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      location: { lat:  42.87249538037711 , lon:  -8.538886221973733  }
+    },
+  
+    {
+      key: "casino_1889",
+      title: "Casino 1889",
+      subtitle: "",
+      description: "Centro Social Autoxestionado",
+      direcion: "",
+      logo: "\/espazos\/centros\/casino_1889\/logo_3.png",
+      imaxe: "\/espazos\/centros\/casino_1889\/foto_cabeceira.jpeg",
+      cor: "#AD1C4F",
+      seleccionado: false,
+      gotoZoom:   "",
+      gotoLat: "",
+      gotoLon: "",
+      content: "\u003cp\u003eO casino é un espazo do pobo e para o pobo.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
+      location: { lat:  43.21335439700375 , lon:  -8.690798386100031  }
     },
   
     {
       key: "colectivo_terra",
       title: "Colectivo Terra",
       subtitle: "",
-      description: "Centro Social de Pontedeume",
+      description: "Centro Social",
       direcion: "",
       logo: "\/espazos\/centros\/colectivo_terra\/logo.jpg",
       imaxe: "\/espazos\/centros\/colectivo_terra\/foto_cabeceira.jpeg",
       cor: "#e72444",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "",
+      gotoLat: "",
+      gotoLon: "",
+      content: "\u003cp\u003eO \u003cem\u003eColectivo Terra\u003c/em\u003e é un centro social en Pondedeume.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.4048354267391 , lon:  -8.16636505040621  }
-    },
-  
-    {
-      key: "chave_das_noces",
-      title: "CS A Chave das Noces",
-      subtitle: "",
-      description: "Centro Social en Castroverde",
-      direcion: "",
-      logo: "\/espazos\/centros\/a_chave_das_noces\/logo.jpg",
-      imaxe: "\/espazos\/centros\/a_chave_das_noces\/foto_cabeceira.jpg",
-      cor: "#eb008b",
-      seleccionado: false,
-      content: "",
-      location: { lat:  43.08622778251519 , lon:  -7.323702482175119  }
     },
   
     {
@@ -804,8 +992,11 @@ const espazos = [
       direcion: "Rúa Algalia de Arriba, 11",
       logo: "\/espazos\/centros\/escarnio\/logo.png",
       imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
-      cor: "#999999",
+      cor: "#746D6F",
       seleccionado: false,
+      gotoZoom:   "14",
+      gotoLat: "42.879",
+      gotoLon: "-8.544",
       content: "\u003cp\u003eO \u003cem\u003eCSOA Escárnio e Maldizer\u003c/em\u003e é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!\u003c/p\u003e\n\u003cdetails\u003e\r\n    \u003csummary\u003eCursos\u003c/summary\u003e\r\n    \u003cp\u003eComezan os cursos do Escárnio:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e🌼 \u003cstrong\u003eLuns\u003c/strong\u003e, 19.00h: Iniciación pandereteira 🎶\u003c/li\u003e\n\u003cli\u003e🌸 \u003cstrong\u003eMartes\u003c/strong\u003e (a partir de xaneiro), 21:00h: Círculo de inglés 👅\u003c/li\u003e\n\u003cli\u003e🏵️ \u003cstrong\u003eMércores\u003c/strong\u003e, 20:30h: Micros abertos 🎤\u003c/li\u003e\n\u003cli\u003e💮 \u003cstrong\u003eXoves\u003c/strong\u003e, 19:00h: Taller de movemento: o discurso corporal 💃\u003c/li\u003e\n\u003cli\u003e🍀 \u003cstrong\u003eSábado\u003c/strong\u003e, 12:30 a 15:00: Clube de bordado 🪡\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTodos os cursos son abertos e gratuitos.\u003c/p\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003eO Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n    \u003csummary\u003eRedes\u003c/summary\u003e\r\n    \u003cul\u003e\n\u003cli\u003e📸 Instagram: \u003ca href=\"https://instagram.com/csoa.escarnioemaldizer\"\u003e@csoa.escarnioemaldizer\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🐦 \u003ca href=\"https://twitter.com/centrosocialafenda\"\u003eTwitter\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e📱 \u003ca href=\"https://facebook.com/centrosocialafenda\"\u003eFacebook\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e🎥 \u003ca href=\"https://youtube.com/centrosocialafenda\"\u003eYouTube\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e💬 \u003ca href=\"https://t.me/centrosocialafenda\"\u003eTelegram\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\r\n  \u003c/details\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.88169616573114 , lon:  -8.54240060014547  }
     },
@@ -814,13 +1005,16 @@ const espazos = [
       key: "faisca.rag",
       title: "Faísca",
       subtitle: "",
-      description: "Local Social en Vigo",
-      direcion: "",
+      description: "Local Social Autoxestionado",
+      direcion: "Rúa Toledo Nº9 (Riomao d\u0027Arriba)",
       logo: "\/espazos\/centros\/faisca2\/logo.png",
       imaxe: "\/espazos\/centros\/faisca2\/foto_cabeceira.jpg",
       cor: "#DB0C14",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "13",
+      gotoLat: "42.24",
+      gotoLon: "-8.735",
+      content: "\u003cp\u003eO ánimo do \u003cem\u003eLS Faísca\u003c/em\u003e non se cingue exclusivamente ao ámbito cultural, se non que partindo dun proxecto cultural e socio-político queremos contribuír á creación dun Movemento Popular camiño da emancipación do noso pobo e da nosa clase.\u003c/p\u003e\n\u003cp\u003eO asemblearismo, a pluralidade, a autogestión e a independéncia a respeito de calquera estrutura ou organización, son os principios organizativos polos que nos xerimos.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  42.232712 , lon:  -8.699988  }
     },
   
@@ -828,13 +1022,16 @@ const espazos = [
       key: "fundaçom_artabria",
       title: "Fundaçom Artábria",
       subtitle: "",
-      description: "Associación Cultural",
+      description: "Asociación Cultural",
       direcion: "",
       logo: "\/espazos\/centros\/artabria\/logo.jpg",
       imaxe: "\/espazos\/centros\/artabria\/foto_cabeceira.jpg",
       cor: "#d4112c",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "14",
+      gotoLat: "43.48201",
+      gotoLon: "-8.22489",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.481027057191824 , lon:  -8.223167026927518  }
     },
   
@@ -844,11 +1041,14 @@ const espazos = [
       subtitle: "",
       description: "Espazo Autoxestionado na Guarda",
       direcion: "",
-      logo: "\/espazos\/centros\/fuscalho\/logo.jpg",
+      logo: "\/espazos\/centros\/fuscalho\/logo.png",
       imaxe: "\/espazos\/centros\/fuscalho\/foto_cabeceira.jpg",
-      cor: "#2740D2",
+      cor: "#0c6ec6",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "16",
+      gotoLat: "41.9",
+      gotoLon: "-8.8775",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  41.90249514926316 , lon:  -8.879510774959156  }
     },
   
@@ -862,7 +1062,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/gomes_gaioso\/foto_cabeceira.jpg",
       cor: "#FF5858",
       seleccionado: false,
-      content: "\u003cp\u003e☆ ☭ 🟣\u003c/p\u003e\n",
+      gotoZoom:   "14",
+      gotoLat: "43.368",
+      gotoLon: "-8.408",
+      content: "\u003cp\u003e☆ ☭ 🟣\nA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.37577832404885 , lon:  -8.397585406790311  }
     },
   
@@ -876,7 +1079,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/madia_leva\/foto_cabeceira.jpg",
       cor: "#FF5A30",
       seleccionado: false,
-      content: "\u003cp\u003eConstruíndo contrapoder no corazón de Lugo.\u003c/p\u003e\n",
+      gotoZoom:   "15",
+      gotoLat: "43.009",
+      gotoLon: "-7.558",
+      content: "\u003cp\u003eConstruíndo contrapoder no corazón de Lugo.\nA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  43.01571763855524 , lon:  -7.558072579821252  }
     },
   
@@ -890,36 +1096,45 @@ const espazos = [
       imaxe: "\/espazos\/centros\/o_fervedoiro\/foto_cabeceira.jpg",
       cor: "#3A7CC7",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "42.557",
+      gotoLon: "-8.989",
+      content: "\u003cp\u003eO Centro Social Autoxestionado \u003cem\u003eO Fervedoiro\u003c/em\u003e é un punto de encontro alternativo, independente e libre en Ribeira.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.55422712359551 , lon:  -8.991515536690548  }
+    },
+  
+    {
+      key: "matadoiro",
+      title: "O Matadoiro",
+      subtitle: "",
+      description: "Asociación Cultural Treze-Catorze",
+      direcion: "",
+      logo: "\/espazos\/centros\/o_matadoiro\/logo.jpg",
+      imaxe: "\/espazos\/centros\/o_matadoiro\/foto_cabeceira.png",
+      cor: "#eb008b",
+      seleccionado: false,
+      gotoZoom:   "16",
+      gotoLat: "42.1",
+      gotoLon: "-8.559",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
+      location: { lat:  42.09627942798971 , lon:  -8.55746347975958  }
     },
   
     {
       key: "pichel.rag",
       title: "O Pichel",
       subtitle: "",
-      description: "Centro Social en Compostela",
+      description: "Centro Social da Gentalha do Pichel",
       direcion: "Rúa de Santa Clara, 21",
       logo: "\/espazos\/centros\/o_pichel\/logo.png",
       imaxe: "\/espazos\/centros\/o_pichel\/foto_cabeceira.jpg",
       cor: "#bbbc00",
       seleccionado: false,
-      content: "\u003cp\u003eBenvide ao Centro Social \u003cem\u003eO Pichel\u003c/em\u003e, un lugar onde promover a lingua galega e a comunidade.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\r\n  A Gentalha do Pichel constituiuse em 2004 no Museo do Pobo Galego.\r\n\u003cp\u003eO ano seguinte, logo dunha profunda reforma do local en Santa Clara 21, abriu o Centro Social o Pichel, xerido pola asociación. Achávamos importante contribuirmos á estratexia de creación de centros sociais na Galiza, entendidos como espazos onde podermos desenvolver iniciativas para normalizar a nosa língua, facendoo dun punto de vista reintegracionista.\u003c/p\u003e\n\u003cp\u003eA língua, a cultura, a história e o meio natural eram as quatro coordenadas polas que começamos a movernos na nossa viagem. Neste tempo, infinidade de inciativas e atividades fôrom tomando forma. Exposiçons, palestras, presentaçons, projeçons, concertos, jantares, livros, documentários, camisolas com os nossos desenhos…\u003c/p\u003e\n\u003cp\u003eOrgulhamo-nos de termos pulado por recuperar a figura do Apalpador, de termos sido o germe da primeira Semente do século XXI, de nom faltarmos à cita com a nossa festa do dezassete e de tantas atividades e iniciativas…\u003c/p\u003e\n\u003cp\u003eMas o melhor ainda está por chegar.\u003c/p\u003e\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003ePromover a educación popular.\u003c/li\u003e\r\n    \u003cli\u003eFomentar o activismo político e cultural.\u003c/li\u003e\r\n    \u003cli\u003eOrganizar eventos para fortalecer a comunidade.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social A Fenda organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres de formación (economía, historia, feminismo).\u003c/li\u003e\r\n    \u003cli\u003eCharlas e debates sobre temas de actualidade.\u003c/li\u003e\r\n    \u003cli\u003eProxeccións de documentais e películas sociais.\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas para colectivos e grupos locais.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eComo funcionamos?\u003c/summary\u003e\r\n  \u003cp\u003eA Gentalha estrutura-se em comissons. Cada uma destas comissons som grupos de trabalho temáticos e na altura estam a funcionar as de língua, meio natural, história, cultura científica, conselho geral e local. A nossa associaçom gere um local social no que nom só acolhemos as nossa actividades senom que também serve como sede de outras entidades e é empregado por qualquer outra associaçom que o solicite, apenas com a condiçom de que a actividade a se desenvolver tenha como língua veicular o nosso idioma. Algunhas delas son:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eConsello xeral\u003c/li\u003e\r\n    \u003cli\u003eCultura\u003c/li\u003e\r\n    \u003cli\u003eCultura científica\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@afenda.org\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 698 123 456\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: Rúa dos Activistas, 12, 15001 A Coruña\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      gotoZoom:   "14",
+      gotoLat: "42.879",
+      gotoLon: "-8.544",
+      content: "\u003cp\u003eBenvide ao Centro Social \u003cem\u003eO Pichel\u003c/em\u003e, un lugar onde promover a lingua galega e a comunidade.A \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n",
       location: { lat:  42.88625047468636 , lon:  -8.540730891640834  }
-    },
-  
-    {
-      key: "matadoiro",
-      title: "Treze Catorze",
-      subtitle: "",
-      description: "Asociación Cultural en Salceda de Caselas",
-      direcion: "",
-      logo: "\/espazos\/centros\/o_matadoiro\/logo.jpg",
-      imaxe: "\/espazos\/centros\/o_matadoiro\/foto_cabeceira.png",
-      cor: "#eb008b",
-      seleccionado: false,
-      content: "",
-      location: { lat:  42.09627942798971 , lon:  -8.55746347975958  }
     },
   
     {
@@ -932,7 +1147,10 @@ const espazos = [
       imaxe: "\/espazos\/centros\/vagalume\/foto_cabeceira.jpg",
       cor: "#f3c61c",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "43.009",
+      gotoLon: "-7.558",
+      content: "\u003cp\u003eA \u003cem\u003eAssociaçom Reintegracionista Artábria\u003c/em\u003e, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.01089483898635 , lon:  -7.553977578134321  }
     },
   
@@ -940,28 +1158,33 @@ const espazos = [
       key: "xebra.rag",
       title: "Xebra!",
       subtitle: "",
-      description: "Asociacioón cultural",
+      description: "Asociación cultural",
       direcion: "Rúa Leandro Cucurny 19, Burela",
       logo: "\/espazos\/centros\/xebra\/logo.png",
       imaxe: "\/espazos\/centros\/xebra\/foto_cabeceira.png",
       cor: "#89C4FF",
       seleccionado: false,
-      content: "",
+      gotoZoom:   "15",
+      gotoLat: "43.6587",
+      gotoLon: "-7.357",
+      content: "\u003cp\u003eO \u003cem\u003eCS Xebra\u003c/em\u003e é un centro social fundado en Burela por un colectivo da Mariña para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecoloxismo, socialismo) que leva máis de dez anos consolidándose como un lugar de encontro e defensa activa da cultura local.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.662024 , lon:  -7.358252  }
     },
   
 ];
 
 const iconWithNumber = L.divIcon({
-  html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+  html: `<div style="background: black; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">1</div>`,
   className: 'custom-marker',
-  iconSize: [30, 30]
+  iconSize: [30, 30],
+  iconAnchor: [15, 15] 
 });
 
 const simpleIcon = L.divIcon({
   html: `<div  class="simple-marker" style="background: black; width: 10px; height: 10px; border-radius: 0%;  "></div>`,
   className: 'simple-marker',
-  iconSize: [30, 30]
+  iconSize: [30, 30],
+  iconAnchor: [5, 11] 
 });
 
 
@@ -971,7 +1194,8 @@ const markers = L.markerClusterGroup({
     return L.divIcon({
       html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">${count}</div>`,
       className: 'cluster-icon',
-      iconSize: [30, 30]
+      iconSize: [30, 30],
+      iconAnchor: [15, 15] 
     });
   },
   maxClusterRadius: 40, 
@@ -985,7 +1209,7 @@ espazos.forEach(espazo => {
   if (espazo.location && espazo.location.lat !== undefined && espazo.location.lon !== undefined) {
     const marker = L.marker([espazo.location.lat, espazo.location.lon], {
       icon: L.divIcon({
-        html: `<div style="background: black; color: white; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">1</div>`,
+        html: `<div style="background: black; color: white; border-radius: 50%; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">1</div>`,
         className: 'custom-marker',
         iconSize: [30, 30]
       })
@@ -1012,23 +1236,40 @@ espazos.forEach(espazo => {
 map.addLayer(markers);
 
 
-map.on('zoomend', () => {
+map.on('moveend', () => {
+  if(document.getElementById("tarxetas-centros").style.display == "grid") {
+    mostrarTarxetas();
+  }
   updateMarkers();
+  toggleLayerBasedOnZoomAndPosition();
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const tarxetasContainer = document.getElementById("tarxetas-centros");
-  const infoContainer = document.getElementById("info-espazo");
-  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+map.on('dragend', () => {
+  if (userInteraction) {
+    updateLastLocationAndZoom();
+  }
+});
 
-  
-  tarxetasContainer.style.display = "grid";
+map.on('zoomend', () => {
+  if (userInteraction) {
+    updateLastLocationAndZoom();
+  }
+  toggleLayerBasedOnZoomAndPosition();
+});
+
+function updateLastLocationAndZoom() {
+  lastLocation = [map.getCenter().lat, map.getCenter().lng];
+  lastZoom = map.getZoom();
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarTarxetas()
 
   
   document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
     tarxeta.addEventListener("click", () => {
-      console.log("tarxeta clicked");
       const key = tarxeta.getAttribute("data-key");
       const espazo = espazos.find(e => e.key === key);
 
@@ -1039,16 +1280,49 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const botonVolver = document.getElementById("volver-galiza");
+
+  
+  botonVolver.addEventListener("click", () => {
+    map.setView(lastLocation, lastZoom);
+    mostrarTarxetas();
+    deselectMarkers();
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+
+  barraBusqueda.addEventListener("input", () => {
+    mostrarTarxetas();
+  });
+});
+
 function selectCentro(espazo) {
   if (!espazo) return;
   const marker = leafletMarkers.find(m => m.espazo.key === espazo.key);
+
+  userInteraction = false;
+  const gotoCoords = (espazo.gotoLat && espazo.gotoLon)
+  ? [parseFloat(espazo.gotoLat), parseFloat(espazo.gotoLon)] 
+  : marker.getLatLng(); 
+  gotoZoom = espazo.gotoZoom || 15;
+
+  
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  if (barraBusqueda) {
+    barraBusqueda.value = "";
+  }
 
   
   
   const zoomLevel = map.getZoom();
   const selectedMarker = marker;
   if (zoomLevel < 13) {
-    map.setView(selectedMarker.getLatLng(), 15, { animate: true });
+    map.setView(gotoCoords, gotoZoom, { animate: true });
   }
 
   
@@ -1074,8 +1348,15 @@ function selectCentro(espazo) {
       ${espazo.content || '<p>Non hai contido adicional para este espazo.</p>'}
     </div>`;
 
+  const botonVolver = document.getElementById("volver-galiza");
+  botonVolver.style.display = "block";
+
+  const filtros = document.getElementById("filtros-espazos-box");
+  filtros.style.display = "none";
+
   
   deselectMarkers(); 
+  newMarker = leafletMarkers.find(m => m.espazo.key === espazo.key);
   if (marker && marker._icon) {
     const markerDiv = marker._icon.querySelector('.simple-marker');
     if (markerDiv) {
@@ -1084,10 +1365,63 @@ function selectCentro(espazo) {
     }
     marker._icon.classList.add('selected');
   }
-
+  setTimeout(() => {
+    if (marker && marker._icon) {
+      const markerDiv = marker._icon.querySelector('.simple-marker');
+      if (markerDiv) {
+        markerDiv.style.background = espazo.cor; 
+        markerDiv.style.outline = "3px solid white";
+      }
+      marker._icon.classList.add('selected');
+    }
+    userInteraction = true;
+  }, 300);
   
 }
 
+function mostrarTarxetas() {
+  const barraBusqueda = document.getElementById("busqueda-centros");
+  const filtros = document.getElementById("filtros-espazos-box");
+  const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+  const tarxetasContainer = document.getElementById("tarxetas-centros");
+  const infoContainer = document.getElementById("info-espazo");
+  const bounds = map.getBounds(); 
+  const botonVolver = document.getElementById("volver-galiza");
+
+  
+  const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+  let visibleCount = 0;
+  tarxetas.forEach(tarxeta => {
+    const titulo = tarxeta.querySelector("h3").textContent.toLowerCase();
+    const descricion = tarxeta.querySelector("p").textContent.toLowerCase();
+    const localidade = tarxeta.querySelector("span").textContent.toLowerCase();
+    const key = tarxeta.getAttribute("data-key");
+    const espazo = espazos.find(e => e.key === key);
+    const termo = barraBusqueda.value.toLowerCase();
+
+    if (espazo && bounds.contains([espazo.location.lat, espazo.location.lon]) && (titulo.includes(termo) || descricion.includes(termo) || localidade.includes(termo))) {
+      tarxeta.style.display = "block"; 
+      visibleCount++;
+    } else {
+      tarxeta.style.display = "none"; 
+    }
+  });
+
+  const mensaxe = document.getElementById("mensaxe-sen-resultados");
+  if(visibleCount == 0) {
+    mensaxe.style.display = "block";
+  } else {
+    mensaxe.style.display = "none";
+  }
+
+  filtros.style.display = "block";
+  tarxetasContainer.style.display = "grid"; 
+  
+  
+  cabeceiraContainer.innerHTML = "";
+  infoContainer.innerHTML = '<div id="contido-dinamico"></div>';
+  botonVolver.style.display = "none";
+}
 
 function updateMarkers() {
   const zoomLevel = map.getZoom();
@@ -1129,6 +1463,57 @@ function deselectMarkers() {
     }
   });
 }
+
+const myPolygonGeoJSON = {
+  type: 'Feature',
+  geometry: {
+    type: 'Polygon',
+    coordinates: [[
+      [44.10844, -7.66077],
+      [43.700490829783625, -7.873711054611482],
+      [43.56574192482438, -8.01596699923224],
+      [43.507110879092835, -8.08664027916634],
+      [43.43481407694156, -8.081652379812772],
+      [43.33411789819063, -8.101441450010741],   
+      [42.99447030932412, -7.897971806167771],   
+      [42.82516296831704, -7.747239492957393],   
+      [42.54057535602478, -7.434839683326477],   
+      [42.369179661788976, -7.351148606499575],  
+      [42.256465459827815, -7.409912134019289],  
+      [41.984464558383145, -7.157291011973237],  
+      [41.50297365427146, -6.524421428314148],
+      [42.45408110505009, -5.994123853514592],
+      [44.01166170241544, -6.583343381069655],
+      [44.10844, -7.66077]
+    ]]
+  }
+};
+
+const polygonLayer = L.geoJSON(myPolygonGeoJSON);
+
+function toggleLayerBasedOnZoomAndPosition() {
+  const zoomLevel = map.getZoom();
+  const center = map.getCenter(); 
+
+  
+  const isInside = leafletPip.pointInLayer([center.lat, center.lng], polygonLayer);
+
+  if (isInside.length > 0) {
+    if (zoomLevel > 12 && !map.hasLayer(mtLayerLousados)) {
+      map.addLayer(mtLayerLousados);
+      map.removeLayer(mtLayer);
+    }
+  } else {
+    if (zoomLevel > 12 && !map.hasLayer(mtLayer)) {
+      map.addLayer(mtLayer);
+      map.removeLayer(mtLayerLousados);
+    }
+  }
+}
+
+
+
+
 
 </script>
 

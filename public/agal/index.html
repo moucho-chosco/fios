@@ -23,11 +23,11 @@
                 <div class="sidebar-container">
     <div class="sidebar">
         <div class="logo">
-            <img src="/images/logo.svg" alt="Logo do sitio">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
         </div>
 
         <nav>
-            <ul>
+            <ul id="menu-pages-list">
                 
                 
                 <li class="active">
@@ -75,23 +75,23 @@
                 
                 
                 <li class="">
-                    <a href="/agal/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        <span class="menu-text"> Calendário</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
                     <a href="/agal/convocatorias/" class="menu-link">
                         
                             <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
                         <span class="menu-text"> Convocatórias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
+                        <span class="menu-text"> Calendário</span>
                     </a>
                 </li>
                 
@@ -167,7 +167,9 @@
             </nav>
             
             
-            <button class="toggle-button" onclick="toggleSidebar()">&#8594;</button>
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
         </nav>
     </div>
 </div>
@@ -178,9 +180,17 @@
             <main class="content">
                 
   <div id="general-container" class="standard-section-container">
-    <p>Bem-vide! Aqui aparecerá uma <strong>introduçom ao sítio</strong>. Haverá ventás onde se visualizarám as convocatórias mais inminentes, algúm espaço social, novidades na biblioteca, no podcast&hellip;</p>
+    <div id="home-window-container" class="window-container">
+      
+      <div id="main-home-window" class="window">
+        <div class="contido">
+          <p>Bem-vide! Aqui aparecerá uma <strong>introduçom ao sítio</strong>. Haverá ventás onde se visualizarám as convocatórias mais inminentes, algúm espaço social, novidades na biblioteca, no podcast&hellip;</p>
 <p>Podes navegar polas secçons do menú lateral para explorar mais.</p>
 
+        </div>
+      </div>
+    </div>
+    
   </div>
 
             </main>

@@ -12,6 +12,10 @@ location:
   lat: 43.358728281851086
   lon: -8.40653158003866
 type: "centro_social"
+gotoCoords:
+  lat: 43.368
+  lon: -8.408
+gotoZoom: 14
 ---
 
 *A Revolteira* é uma alternativa comunitária fronte o sistema que nos exclue. Um lugar onde sentirnos acompanhadas e felices.

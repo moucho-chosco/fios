@@ -12,6 +12,10 @@ location:
   lat: 43.364293
   lon: -8.424243
 type: "centro_social"
+gotoCoords:
+  lat: 43.368
+  lon: -8.408
+gotoZoom: 14
 ---
 
  *A Fenda* é um novo espaço desde onde responder às necessidades do proletariado da cidade.

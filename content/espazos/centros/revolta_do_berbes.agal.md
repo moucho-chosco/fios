@@ -12,6 +12,10 @@ location:
   lat: 42.23936235256048
   lon: -8.727134803820913
 type: "centro_social"
+gotoCoords:
+  lat: 42.240
+  lon: -8.735
+gotoZoom: 13
 ---
 
 Fundado em 2003, 21 anos mantendo Vigo em pé!

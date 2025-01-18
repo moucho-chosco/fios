@@ -54,7 +54,7 @@ defaultContentLanguageInSubdir = true
       [[languages.rag.menu.main]]
       name = " Calendario"
       url = "/rag/calendario/"
-      weight = 5
+      weight = 6
       [languages.rag.menu.main.params]
       translatedURL = "/agal/calendario/"
       reducido = "🗓️"
@@ -64,7 +64,7 @@ defaultContentLanguageInSubdir = true
       [[languages.rag.menu.main]]
       name = " Convocatorias"
       url = "/rag/convocatorias/"
-      weight = 6
+      weight = 5
       [languages.rag.menu.main.params]
       translatedURL = "/agal/convocatorias/"
       reducido = "📣"
@@ -188,7 +188,7 @@ defaultContentLanguageInSubdir = true
     [[languages.agal.menu.main]]
     name = " Calendário"
     url = "/agal/calendario/"
-    weight = 5
+    weight = 6
     [languages.agal.menu.main.params]
     translatedURL = "/rag/calendario/"
     reducido = "🗓️"
@@ -198,7 +198,7 @@ defaultContentLanguageInSubdir = true
     [[languages.agal.menu.main]]
     name = " Convocatórias"
     url = "/agal/convocatorias/"
-    weight = 6
+    weight = 5
     [languages.agal.menu.main.params]
     translatedURL = "/rag/convocatorias/"
     reducido = "📣"
