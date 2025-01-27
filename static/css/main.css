@@ -23,7 +23,6 @@ a:hover {
 
 .window-container {
     display: flex; height: 85vh;
-    margin-top: 0.7vh;
     gap: 2.5%; /* Espazo entre as ventás */
 }
 
@@ -226,7 +225,7 @@ p {
 }
 
 .sidebar ul li {
-    opacity: 0.2;
+    opacity: 0.25;
     transition: opacity 0.3s;
 }
 
@@ -267,7 +266,7 @@ p {
 }
 
 .sidebar-container.reduced-mode .sidebar ul li:hover {
-    opacity: 0.4;
+    opacity: 0.6;
     transition: opacity 0.3s;
 }
 
@@ -275,12 +274,13 @@ p {
     ackground-color: #ffffff;
     border-radius: 4px;
     transition: background-color 0.2s;
+    transition: opacity 0.3s;
 }
 
 /* Elementos non activos */
 .sidebar-container.full-mode .sidebar ul li:hover {
-    background-color: #b9b9b9;
-    transition: background-color 0.2s;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 }
 
 /* Botón para alternar entre os modos (frecha) */
@@ -289,7 +289,7 @@ p {
     border: none;
     position: relative;  /* Fixar a posición */
     margin-left: 5%;
-    margin-top: 10px;
+    margin-top: 18px;
     text-align: center;
     cursor: pointer;
     opacity: 0.2;  /* Facelo máis disimulada */
@@ -391,7 +391,7 @@ nav a:hover {
 }
 
 .standard-section-container {
-    margin: 5vh;
+    margin: 5.7vh;
     margin-left: 3%;
     margin-right: 3%;
     height: 100vh;
@@ -609,6 +609,36 @@ nav a:hover {
     background-color: #003c8f;
 }
 
+/* ================================================================= 
+   ORGANIZACIÓNS
+   ================================================================= */
+
+#contido-orgas-info{
+    height: 86vh;
+    overflow: auto;
+}
+
+#contido-orgas-info::-webkit-scrollbar {
+    width: 0px; /* Ancho da barra de scroll */
+}
+
+/* Caixa branca que contén o nome e a descrición */
+#info-orga {
+    position: relative; 
+    max-width: 100%;
+    text-align: left;
+    margin-top: -12vh;
+    padding: 6vh;
+    height: auto; /* Define unha altura clara, se é necesario */
+    overflow: hidden; /* Asegura que o contido non se expanda fóra dos límites */
+  }
+
+  #info-orga p {
+    color: #000000;             /* Cor do texto */
+    text-align: left;        /* Alineación á esquerda */
+    margin-left: 0vh;               /* Elimina marxe ao redor do título */
+  }
+  
 
 
 
@@ -621,8 +651,13 @@ nav a:hover {
         height: 100%;
         width: 100%; /* Ou 100% para ocupar todo o espazo */
     }
+    
 
     #info-window {
+        overflow: hidden;
+    }
+
+    #map-window {
         overflow: hidden;
     }
 
@@ -636,6 +671,7 @@ nav a:hover {
         height: 86vh;
         overflow: auto;
     }
+    
     
     #contido-espazos-info::-webkit-scrollbar {
         width: 0px; /* Ancho da barra de scroll */
@@ -772,7 +808,7 @@ nav a:hover {
     height: 12vh;               /* Mantén as mesmas dimensións para un logo redondo */
     border-radius: 50%;         /* Esto fai que o logo sexa redondo */
     background-color: #fff;     /* Fondo branco do logo (pódese cambiar) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);  /* Sombra para dar efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);  /* Sombra para dar efecto de elevación */
     z-index: 10;                 /* Garante que o logo estea por enriba da imaxe */
   }
   
@@ -794,18 +830,9 @@ nav a:hover {
   
   .descricion-espazo {
     margin-top: -15px;
-    max-width: 80%;
     text-align: left;
   }
 
-  .direcion-espazo {
-    margin-top: -7px;
-    margin-left: -5px !important;
-    max-width: 80%;
-    text-align: left;
-    font-size: 14px;
-    color: #000000 !important;
-  }
 
   /* O contido sobre cada centro social, que se toma dende os arquivos .md*/
 

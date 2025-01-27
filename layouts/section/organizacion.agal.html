@@ -1,0 +1,225 @@
+{{ define "main" }}
+<div id="organizacions-container" class="standard-section-container">
+  <div id="home-window-container" class="window-container">
+    <div id="main-home-window" class="window">
+      <div class="contido">
+        <!-- Div onde se pintará o gráfico -->
+        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+
+        <!-- 1) Cargamos a libraría G6 (UMD) dende o CDN -->
+        <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
+
+        <!-- 2) Script co código do TreeGraph con datos "partidos e organizacións" -->
+        <script>
+          // Exemplo de datos xerarquizados inventados
+          const data = {
+            id: 'Organizaçons',
+            color: '#E7E7E7',
+            children: [
+              {
+                id: 'Nacionalismo galego',
+                color: '#AAC2F3',
+                children: [
+                  { id: 'ANOVA' },
+                  { id: 'CIG' },
+                  { id: 'CUT' },
+                  { id: 'Erguer' },
+                  {
+                    id: 'BNG',
+                    children: [
+                      { id: 'FOG' },
+                      { id: 'Alicerce' },
+                      { id: 'Galiza Nova' },
+                      { id: 'UPG',
+                        children: [{id: 'UMG'}],
+                      },
+                      { id: 'Mv. Arredista',
+                        children: [{id: 'Isca!'}],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                id: 'Independentismo',
+                color: '#7294DE',
+                children: [
+                  { id: 'Assembleias A. \nIndependentistas' },
+                  { id: 'MPI' },
+                  { id: 'Ceivar' },
+                  { id: 'Estreleira' }
+                ],
+              },
+              {
+                id: 'Anarquismo',
+                color: '#C0C0C0',
+                children: [
+                  { id: 'SELG'},
+                  { id: 'Refuxios da Memoria'},
+                  { id: 'Solidariedade\nObreira'},
+                  { id: 'CGT'},
+                  { id: 'CNT'},
+                  { id: 'Ardora'},
+                ],
+              },
+              {
+                id: 'MS',
+                color: '#FC9494',
+                children: [
+                  {id: 'Creba Socialista'},
+                ],
+              },
+              {
+                id: 'PCTG',
+                color: '#FC9494',
+                children: [
+                  {id: 'CXC'}
+                ],
+              },
+              {
+                id: 'PCOE',
+                color: '#FC9494',
+              },
+              {
+                id: 'PCG',
+                color: '#FC9494',
+                children: [
+                  {id: 'XC'}
+                ],
+              },
+              {
+                id: '4ª Internacional',
+                color: '#FC9494',
+                children: [
+                  {id: 'Esquerda\nRevolucionaria'},
+                  {id: 'Corrente Vermella'},
+                  {id: 'Anticapitalistas'},
+                ],
+              },
+              {
+                id: 'Feminismo',
+                color: '#D3A8D9',
+                children: [
+                  {id: 'MMMM'},
+                  {id: 'PFG'},
+                ],
+              },
+              {
+                id: 'Ecologismo',
+                color: '#B2DC87',
+                children: [
+                  {id: 'Extintion Rebelion'},
+                  {id: 'Futuro vexetal'},
+                  {id: 'ADEGA'},
+                ],
+              },
+              {
+                id: 'Internacionalismo',
+                children: [
+                  {id: 'Asociación Jenin'},
+                  {id: 'BDS'},
+                  {id: 'AIC'},
+                  {id: 'Mar de Lumes'},
+                  {id: 'Galiza con Palestina'},
+                ],
+              },
+            ],
+          };
+
+          function assignBranchColors(node, inheritedColor = '#C6E5FF') {
+            // Asegúrate de que o nodo teña unha cor (propia ou herdada)
+            node.color = node.color || inheritedColor;
+          
+            // Se o nodo ten fillos, aplícales a cor recursivamente
+            if (node.children) {
+              node.children.forEach((child) => {
+                assignBranchColors(child, node.color); // O fillo herda a cor do pai
+              });
+            }
+          }
+          
+
+          // Asignamos cores a cada rama
+          assignBranchColors(data, '#C6E5FF');
+
+          console.log(data);
+
+          // Creamos a instancia de TreeGraph
+          const container = document.getElementById('container');
+          const width = container.scrollWidth;
+          const height = container.scrollHeight || 600;
+
+          const graph = new G6.TreeGraph({
+            container: 'container',
+            width,
+            height,
+            pixelRatio: 2,
+            linkCenter: true,
+            minZoom: 0.8, // Zoom mínimo
+            maxZoom: 2,   // Zoom máximo
+            // Modos: collapse-expand (para abrir/pechar subárbores),
+            // drag-canvas e zoom-canvas
+            modes: {
+              default: [
+                {
+                  type: 'collapse-expand',
+                  onChange: (item, collapsed) => {
+                    const dataModel = item.get('model').data;
+                    dataModel.collapsed = collapsed;
+                    return true;
+                  },
+                },
+                'drag-canvas',
+                'zoom-canvas',
+              ],
+            },
+            // Estilo de nó por defecto
+            defaultNode: {
+              size: 30,
+              style: {
+                fill: '#FFFFFF',
+                stroke: '#5B8FF9',
+              },
+            },
+            // Estilo de aresta por defecto
+            defaultEdge: {
+              style: {
+                stroke: '#A3B1BF',
+              },
+            },
+            // Layout "dendrogram" en modo radial
+            layout: {
+              type: 'dendrogram',
+              direction: 'LR',    // A dirección base (non é tan relevante se radial=true)
+              nodeSep: 30,
+              rankSep: 80,
+              radial: true,       // True => dispón os nodos en "anéis"
+            },
+          });
+
+          // Etiqueta de cada nó = o seu id
+          graph.node((node) => {
+            return {
+              label: node.id,
+              style: {
+                fill: node.color || '#FFFFFF', // Cor predeterminada no caso de erro
+                stroke: '#5B8FF9',
+              },
+            };
+          });
+          
+          // Cargamos os datos, renderizamos e axustamos a vista
+          graph.data(data);
+          graph.render();
+          graph.fitView();
+        </script>
+      </div>
+    </div>
+    <div id="info-window" class="window">
+      <div class="contido">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

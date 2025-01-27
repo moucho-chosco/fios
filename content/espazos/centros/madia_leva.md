@@ -18,8 +18,7 @@ gotoCoords:
 gotoZoom: 15
 ---
 
-Construíndo contrapoder no corazón de Lugo.
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural *Mádia leva!* é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.
 
 <details>
   <summary>Obxectivos</summary>

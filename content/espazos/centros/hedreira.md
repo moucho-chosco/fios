@@ -16,7 +16,7 @@ gotoCoords:
   lon: -7.558
 gotoZoom: 15
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+A Hedreira é un centro social autoxestionado na cidade de Lugo. Nace do desexo de construírmos un espazo de confluencia social e da necesidade de ter un lugar de encontro, xa que consideramos que é mais doado materializar as ideas cando compartimos o espazo.
 
 <details>
   <summary>Obxectivos</summary>

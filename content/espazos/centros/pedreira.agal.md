@@ -6,7 +6,7 @@ centro: true
 logo:  "/espazos/centros/a_pedreira/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_pedreira/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#E64C3B"
-localidade: "Pontevedra"
+localidade: "Ponte Vedra"
 location:
   lat: 42.43384550029501
   lon: -8.642724439978007
@@ -16,3 +16,5 @@ gotoCoords:
   lon: -8.649
 gotoZoom: 15
 ---
+
+A Pedreira é un Espaço autogerido de encontro e luita para todas as pessoas que crem noutra comarca possível: "Somos grupo de vizinhas da comarca de Ponte Vedra dispostas a transformar a vida social e cultural"

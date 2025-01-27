@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fíos | Calendario</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body id="body" style="visibility: hidden;">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
+        </div>
+
+        <nav>
+            <ul id="menu-pages-list">
+                
+                
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        <span class="menu-text"> Organización</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        <span class="menu-text"> Espazos</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/convocatorias/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/calendario_negativo.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/podcast/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/redes/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/recursos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                        <a href="/agal/calendario/">Galego ILG ⇄</a>
+                    
+                
+                    
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
+        </nav>
+    </div>
+</div>
+
+            </aside>
+            
+            
+            <main class="content">
+                
+    
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/gl.js"></script>
+    
+    
+
+    <div id="calendario-container" class="standard-section-container">
+       
+        <div id="window-container-calendario" class="window-container">
+
+            
+           <div id="calendar-window" class="window">
+               <div id="calendar"></div>
+           </div>
+           
+           
+           <div id="info-evento-window" class="window">
+             
+              <div id= "filtros-calendario" class="barra-superior">
+                <div id="filters">
+                  <select id="localidade-filter" class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">📍 Galiza</option>
+                    
+                      <option value="a_corunha,43.368,-8.408,14">📍 A Coruña</option>
+                    
+                      <option value="compostela,42.879,-8.544,14">📍 Compostela</option>
+                    
+                      <option value="ferrol,43.48201,-8.22489,14">📍 Ferrol</option>
+                    
+                      <option value="lugo,43.009,-7.558,15">📍 Lugo</option>
+                    
+                      <option value="ourense,42.33769,-7.86707,15">📍 Ourense</option>
+                    
+                      <option value="pontevedra,42.4325,-8.649,15">📍 Pontevedra</option>
+                    
+                      <option value="vigo,42.243,-8.737,13">📍 Vigo</option>
+                    
+                  </select>
+                  <select class="filter">
+                    <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+                    
+                      <option value="">🏷️ Anarquismo</option>
+                    
+                      <option value="">🏷️ Independentismo</option>
+                    
+                      <option value="">🏷️ Socialismo</option>
+                    
+                  </select>
+                </div>
+                <div id="barra-busqueda-calendario" class="barra-busqueda">
+                  <input type="text" id="busqueda-centros" placeholder="Buscar eventos..." />
+                </div>
+              </div>
+              <p id="mensaxe-sen-resultados">
+                Non se atoparon eventos coincidentes
+              </p>
+              <div id="tarxetas-centros" class="tarxetas-container" style="display:grid;">
+                
+                  <div class="tarxeta-centro" data-key="evento4">
+                    <div class="franxa-cor" style="background: ;"></div>
+                    <h3>Asemblea Xeral 4</h3>
+                    <span class="localidade">📍Sen Localidade</span>
+                    <p>Asemblea para definir as prioridades do trimestre.</p>
+                  </div>
+                
+                  <div class="tarxeta-centro" data-key="evento3">
+                    <div class="franxa-cor" style="background: ;"></div>
+                    <h3>proba</h3>
+                    <span class="localidade">📍Sen Localidade</span>
+                    <p>PROBAAA</p>
+                  </div>
+                
+              </div>
+              <button id="volver-galiza" class="boton-atras" style="display: block;">←</button>      
+              <div id="imaxe-cabeceira-container">
+              </div>
+              <div id="info-evento">
+                <div id="contido-dinamico">
+                  
+                </div>
+              </div>
+           </div>
+       </div>
+    </div>
+    
+
+    <script>
+        console.log("Número de páxinas de eventos encontradas: 3");
+
+        
+        window.calendarEvents = [{"description":"PROBAAA","start":"2025-01-24T18:00:00","title":"proba","url":"http://localhost:1313/ilg/calendario/eventos/evento3/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Asemblea Xeral 4","url":"http://localhost:1313/ilg/calendario/eventos/evento4/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Encontro formativo","url":"http://localhost:1313/ilg/calendario/eventos/evento2/"}];
+    </script>
+
+    <script src="/scripts/calendario.js"></script>
+
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/organizacions.svg" alt=" Organización" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/biblioteca.svg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/logo.svg" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/espazos.svg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="active">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/calendario.svg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
+</body>
+</html>

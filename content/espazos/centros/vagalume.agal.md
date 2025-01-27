@@ -1,6 +1,6 @@
 ---
 title: "Vagalume"
-description: "Centro Social Autogerido"
+description: "Centro Social Aberto"
 dirixido_por:
 participan:
 centro: true

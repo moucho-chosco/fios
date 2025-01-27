@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body id="body" style="visibility: hidden;">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
+        </div>
+
+        <nav>
+            <ul id="menu-pages-list">
+                
+                
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        <span class="menu-text"> Organización</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        <span class="menu-text"> Espazos</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/convocatorias/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/podcast/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/redes/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/recursos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                        <a href="/">Galego ILG ⇄</a>
+                    
+                
+                    
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
+        </nav>
+    </div>
+</div>
+
+            </aside>
+            
+            
+            <main class="content">
+                
+<div id="organizacions-container" class="standard-section-container">
+  <div id="home-window-container" class="window-container">
+    <div id="main-home-window" class="window">
+      <div class="contido">
+        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+
+        
+        <div id="coordenadas-info" style="margin-top: 20px; display: none;">
+          <h3>Coordenadas relativas</h3>
+          <pre id="coordenadas-texto">Selecciona un nodo para ver as súas coordenadas.</pre>
+        </div>
+
+        <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
+
+        <script>
+          
+          
+          
+          
+          
+          
+          
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+              
+              
+              
+                
+                
+                
+              
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+          
+          const nodes = [{"color":"#FC9494","id":"4ª Internacional","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"4ª Internacional","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/4_internacional/","x":0.82,"y":0.47},{"color":"#E3E3E3","id":"A Mesa","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"A Mesa","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/a_mesa/","x":0.3,"y":0.36},{"color":"#E3E3E3","id":"ADEGA","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"ADEGA","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/adega/","x":0.11,"y":0.28},{"color":"#E3E3E3","id":"Alicerce","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Alicerce","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/alicerce/","x":0.06,"y":0.35},{"color":"#FC9494","id":"Anticapitalistas","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Anticapitalistas","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/anticapitalistas/","x":0.75,"y":0.5},{"color":null,"id":"UPG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"UPG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/arredista-copy/","x":0.25,"y":0.46},{"color":null,"id":"M. Arredista","imaxe":"http://localhost:1313/organizacions/arredista/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/arredista/logo.jpg","nome":"M. Arredista","nome_extendido":"Movemento Arredista","size":26,"url":"/ilg/organizacion/outras/arredista/","x":0.17,"y":0.55},{"color":"#80A1E7","id":"Assembleias\nAbertas\nIndepen-\ndentistas","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Assembleias\nAbertas\nIndepen-\ndentistas","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/assembleias/","x":0.27,"y":0.86},{"color":"#FFE17D","id":"Avante LGBT+","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Avante LGBT+","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/avante_lgbt/","x":0.42,"y":0.3},{"color":"#FFD1A0","id":"BDS Galiza","imaxe":"http://localhost:1313/organizacions/bds/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/bds/logo.png","nome":"BDS Galiza","nome_extendido":"Boicote, Desinvestimentos e Sancións","size":26,"url":"/ilg/organizacion/outras/bds/","x":0.59,"y":0.36},{"color":"#E3E3E3","id":"BNG","imaxe":"http://localhost:1313/organizacions/bng/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/bng/logo.png","nome":"BNG","nome_extendido":"Bloque Nacionalista Galego","size":26,"url":"/ilg/organizacion/outras/bng/","x":0.16,"y":0.44},{"color":"#FFD1A0","id":"Coord.\nGalega de\nSolidariedade\ncon Palestina","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Coord.\nGalega de\nSolidariedade\ncon Palestina","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/c3/","x":0.56,"y":0.57},{"color":"#80A1E7","id":"Ceivar","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Ceivar","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/ceivar/","x":0.16,"y":0.73},{"color":"#FC9494","id":"Corrente Vermella","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Corrente Vermella","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/corrente_vermella/","x":0.85,"y":0.53},{"color":"#FC9494","id":"Creba Socialista","imaxe":"http://localhost:1313/organizacions/creba/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/creba/logo.jpg","nome":"Creba Socialista","nome_extendido":"Espazo de encontro e debate","size":26,"url":"/ilg/organizacion/outras/creba/","x":0.5,"y":0.81},{"color":"#FC9494","id":"CXC","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"CXC","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/cxc/","x":0.76,"y":0.7},{"color":"#E3E3E3","id":"Erguer","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Erguer","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/erguer/","x":0.21,"y":0.36},{"color":"#FC9494","id":"Esquerda Revolucionaria","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Esquerda Revolucionaria","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/esquerda_revolucionaria/","x":0.83,"y":0.41},{"color":"#80A1E7","id":"Estreleira","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Estreleira","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/estreleira/","x":0.16,"y":0.86},{"color":"#B2DC87","id":"Extintion Rebelion","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Extintion Rebelion","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/extintion_rebelion/","x":0.19,"y":0.18},{"color":null,"id":"FOG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"FOG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/fog/","x":0.06,"y":0.53},{"color":"#B2DC87","id":"Futuro vexetal","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Futuro vexetal","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/futuro_vexetal/","x":0.19,"y":0.1},{"color":"#FFD1A0","id":"Galiza por Palestina","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Galiza por Palestina","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/galiza_con_palestina/","x":0.46,"y":0.52},{"color":null,"id":"Galiza Nova","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Galiza Nova","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/galiza_nova/","x":0.3,"y":0.58},{"color":null,"id":"Isca!","imaxe":"http://localhost:1313/organizacions/isca/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/isca/logo.jpg","nome":"Isca!","nome_extendido":"Mocidade galega pola independencia, o socialismo e a destrución do patriarcado","size":26,"url":"/ilg/organizacion/outras/isca/","x":0.24,"y":0.62},{"color":"#E3E3E3","id":"Asociación Jenin","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Asociación Jenin","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/jenin/","x":0.54,"y":0.46},{"color":"#FFD1A0","id":"Mar de Lumes","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Mar de Lumes","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/mardelumes/","x":0.46,"y":0.64},{"color":"#D3A8D9","id":"MMMM","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"MMMM","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/mmmm/","x":0.36,"y":0.16},{"color":"#80A1E7","id":"MPI","imaxe":"http://localhost:1313/organizacions/mpi/foto_cabeceira.jpg_large","logo":"http://localhost:1313/organizacions/mpi/logo.jpg","nome":"MPI","nome_extendido":"Mocidade pola Independencia","size":26,"url":"/ilg/organizacion/outras/mpi/","x":0.27,"y":0.74},{"color":"#FC9494","id":"MS","imaxe":"http://localhost:1313/organizacions/ms/foto_cabeceira.jpg","logo":"http://localhost:1313/organizacions/ms/logo.jpg","nome":"MS","nome_extendido":"Movemento Socialista","size":26,"url":"/ilg/organizacion/outras/ms/","x":0.5,"y":0.88},{"color":"#FC9494","id":"PCG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"PCG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/pcg/","x":0.68,"y":0.88},{"color":"#FC9494","id":"PCOE","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"PCOE","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/pcoe/","x":0.8,"y":0.86},{"color":"#FC9494","id":"PCTG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"PCTG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/pctg/","x":0.82,"y":0.74},{"color":"#D3A8D9","id":"PFG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"PFG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/pfg/","x":0.42,"y":0.1},{"color":"#E3E3E3","id":"Queremos Galego","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Queremos Galego","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/queremos_galego/","x":0.37,"y":0.42},{"color":"#FFD1A0","id":"Rede Galega pola Palestina","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Rede Galega pola Palestina","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/rede_palestina/","x":0.64,"y":0.3},{"color":"#C0C0C0","id":"Refuxios da Memoria","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"Refuxios da Memoria","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/refuxios_da_memoria/","x":0.79,"y":0.16},{"color":"#C0C0C0","id":"SELG","imaxe":"http://localhost:1313/organizacions/selg/foto_cabeceira.png","logo":"http://localhost:1313/organizacions/selg/logo.png","nome":"SELG","nome_extendido":"Seminario de Estudos Libertarios Galegos","size":26,"url":"/ilg/organizacion/outras/selg/","x":0.71,"y":0.1},{"color":null,"id":"UMG","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"UMG","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/umg/","x":0.3,"y":0.52},{"color":"#FC9494","id":"XC","imaxe":"http://localhost:1313/","logo":"http://localhost:1313/","nome":"XC","nome_extendido":null,"size":26,"url":"/ilg/organizacion/outras/xc/","x":0.68,"y":0.81}];
+          const edges = [{"id":"4ª Internacional-Corrente Vermella","source":"4ª Internacional","target":"Corrente Vermella"},{"id":"4ª Internacional-Esquerda Revolucionaria","source":"4ª Internacional","target":"Esquerda Revolucionaria"},{"id":"4ª Internacional-Anticapitalistas","source":"4ª Internacional","target":"Anticapitalistas"},{"id":"A Mesa-Queremos Galego","source":"A Mesa","target":"Queremos Galego"},{"id":"UPG-UMG","source":"UPG","target":"UMG"},{"id":"M. Arredista-Isca!","source":"M. Arredista","target":"Isca!"},{"id":"Assembleias\nAbertas\nIndepen-\ndentistas-Ceivar","source":"Assembleias\nAbertas\nIndepen-\ndentistas","target":"Ceivar"},{"id":"BNG-Alicerce","source":"BNG","target":"Alicerce"},{"id":"BNG-FOG","source":"BNG","target":"FOG"},{"id":"BNG-UPG","source":"BNG","target":"UPG"},{"id":"BNG-Galiza Nova","source":"BNG","target":"Galiza Nova"},{"id":"BNG-M. Arredista","source":"BNG","target":"M. Arredista"},{"id":"Coord.\nGalega de\nSolidariedade\ncon Palestina-Asociación Jenin","source":"Coord.\nGalega de\nSolidariedade\ncon Palestina","target":"Asociación Jenin"},{"id":"Coord.\nGalega de\nSolidariedade\ncon Palestina-Mar de Lumes","source":"Coord.\nGalega de\nSolidariedade\ncon Palestina","target":"Mar de Lumes"},{"id":"Coord.\nGalega de\nSolidariedade\ncon Palestina-Galiza por Palestina","source":"Coord.\nGalega de\nSolidariedade\ncon Palestina","target":"Galiza por Palestina"},{"id":"Extintion Rebelion-Futuro vexetal","source":"Extintion Rebelion","target":"Futuro vexetal"},{"id":"MPI-Estreleira","source":"MPI","target":"Estreleira"},{"id":"MS-Creba Socialista","source":"MS","target":"Creba Socialista"},{"id":"PCG-XC","source":"PCG","target":"XC"},{"id":"PCTG-CXC","source":"PCTG","target":"CXC"},{"id":"Rede Galega pola Palestina-BDS Galiza","source":"Rede Galega pola Palestina","target":"BDS Galiza"},{"id":"Refuxios da Memoria-SELG","source":"Refuxios da Memoria","target":"SELG"}];
+          const contentMap = {"4ª Internacional":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","A Mesa":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","ADEGA":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Alicerce":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Anticapitalistas":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Asociación Jenin":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Assembleias\nAbertas\nIndepen-\ndentistas":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Avante LGBT+":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","BDS Galiza":"\u003cp\u003eBoicote, Desinvestimentos e Sancións a Israel!\nUn movemento global que se converteu no eixo reivindicativo da solidariedade con Palestina.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","BNG":"\u003cp\u003eSomos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos e desenvolvemos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente. Para iso, analizamos a realidade e intervimos nela para transformala, desde posicións abertamente independentistas, que aposten pola superación do capitalismo e a construción do socialismo e que asuman unha perspectiva consecuentemente feminista.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","CXC":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Ceivar":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Coord.\nGalega de\nSolidariedade\ncon Palestina":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Corrente Vermella":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Creba Socialista":"\u003cp\u003eEspazo de encontro, debate e formación de militantes con vontade socialista na Galiza 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eA Fenda\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","Erguer":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Esquerda Revolucionaria":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Estreleira":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Extintion Rebelion":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","FOG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Futuro vexetal":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Galiza Nova":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Galiza por Palestina":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Isca!":"\u003cp\u003eNacemos en 2006 a partir dun grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necesidade de organizar a mocidade en chave revolucionaria para defender un proxecto de cambio social real.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","M. Arredista":"\u003cp\u003eSomos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos e desenvolvemos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente. Para iso, analizamos a realidade e intervimos nela para transformala, desde posicións abertamente independentistas, que aposten pola superación do capitalismo e a construción do socialismo e que asuman unha perspectiva consecuentemente feminista.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","MMMM":"\u003ch1 id=\"marcha-mundial-das-mulleres\"\u003eMarcha Mundial das Mulleres\u003c/h1\u003e\n","MPI":"\u003cp\u003eA MPI  é unha rede de asembleas de adscrición individual que traballa, desde posicións anticapitalistas e feministas, pola libertación nacional e social da Galiza.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","MS":"\u003cp\u003eSomos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos e desenvolvemos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente. Para iso, analizamos a realidade e intervimos nela para transformala, desde posicións abertamente independentistas, que aposten pola superación do capitalismo e a construción do socialismo e que asuman unha perspectiva consecuentemente feminista.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","Mar de Lumes":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","PCG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","PCOE":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","PCTG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","PFG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Queremos Galego":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Rede Galega pola Palestina":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","Refuxios da Memoria":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","SELG":"\u003cp\u003eO Seminario de Estudos Libertarios Galegos (SELG) é unha iniciativa do colectivo Refuxios da Memoria, que nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003ePara que un Seminario?\u003c/summary\u003e\r\n  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.\r\n\u003cp\u003eDende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.\u003c/p\u003e\n\u003cp\u003ePese á ruptura do fío desta tradición, hoxe en día son moitas as persoas, e algunhas as organizacións, que no país identifícanse coa tradición e os principios do socialismo libertario. Porén, faltan os espazos de encontro e reflexión colectiva acerca desta tradición, dos seus principios e estratexias, das súas ferramentas de loita e da súa vixencia e aplicabilidade ao momento presente. Co SELG queremos convidar ás anarquistas do país, e ás galegas que teñan curiosidade polas ideas libertarias, a atoparnos e debater sobre esta tradición, coa vista posta no presente e o futuro do país.\u003c/p\u003e\n\u003cp\u003eComo se vai desenvolver?\u003c/p\u003e\n\u003cp\u003eCada ano elixiremos un tema de reflexión que despregaremos ao longo de todo o curso, celebrando sesións bimestrais do SELG. Cada unha destas sesión estará enfocada a un eixo de debate diferente, sobre o que traballaremos ao longo dunha xornada na que nos acompañarán militantes, investigadoras e representantes de organizacións libertarias galegas e ibéricas que nos achegarán as súas ideas e experiencias sobre a cuestión.\u003c/p\u003e\n\u003cp\u003eOs contidos de todas estas palestras e mesas redondas serán recollidos en relatorios, que compartiremos en aberto a través na nosa páxina web. Estes relatorios, xunto con algunhas lecturas propostas polas poñentes das palestras e polo grupo de coordinación da SELG, servirán como base para desenvolver debates locais, a través dos Grupos de Autoformación Libertaria (GAL) que xurdan ao longo do país.\u003c/p\u003e\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eXornadas\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eGrupos de Autoformación Libertaria\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e","UMG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","UPG":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n","XC":"\u003ch1 id=\"contido-de-exemplo\"\u003econtido de exemplo\u003c/h1\u003e\n"};
+          const container = document.getElementById('container');
+
+          
+          nodes.forEach(node => {
+            node.x = node.x * container.scrollWidth;
+            node.y = node.y * container.scrollHeight;
+          });
+
+          
+          const graph = new G6.Graph({
+            container: container,
+            width: container.scrollWidth,
+            height: container.scrollHeight || 600,
+            pixelRatio: 2,
+            modes: {
+              default: ['drag-canvas', 'zoom-canvas', 'drag-node']
+            },
+            layout: null,
+            defaultNode: {
+              type: 'circle',
+              style: {
+                fill: '#C6E5FF',
+                stroke: '#FFFFFF',
+                lineWidth: 2
+              },
+              labelCfg: {
+                style: {
+                  fontSize: 10,
+                  fill: '#333',
+                  fontWeight: 500,
+                }
+              }
+            },
+            defaultEdge: {
+              type: 'line',
+              style: {
+                stroke: '#AAB7C4',
+                lineWidth: 1,
+                opacity: 0.8
+              },
+              curveOffset: (d) => {
+                return d.index % 2 === 0 ? 10 : -10;
+              }
+            }
+          });
+
+          
+          function getCoordenadasRelativas(node) {
+            const container = document.getElementById('container');
+            const xRel = (node.x / container.scrollWidth).toFixed(2); 
+            const yRel = (node.y / container.scrollHeight).toFixed(2);
+            return { x: xRel, y: yRel };
+          }
+
+          
+          graph.node(node => ({
+            label: `${node.id}`,
+            style: {
+              fill: node.color || '#C6E5FF',
+              stroke: '#FFFFFF'
+            },
+            labelCfg: {
+              style: {
+                fontSize: 10,
+                fill: '#333',
+                fontWeight: 500,
+              }
+            }
+          }));
+
+          
+          let selectedNode = null;
+
+          
+          graph.on('afterdragnode', (e) => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
+          });
+
+          
+          graph.on('node:click', e => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
+
+            
+            graph.getNodes().forEach(n => {
+              graph.clearItemStates(n);
+              graph.updateItem(n, {
+                size: 26,
+                labelCfg: { style: { fontWeight: 500 } }
+              });
+            });
+
+            
+            graph.updateItem(node, {
+              size: 30,
+              labelCfg: { style: { fontWeight: 'bold' } }
+            });
+
+            actualizarContido(node);
+          });
+
+          
+          function actualizarContido(node) {
+            const model = node.getModel();
+            const dynamicContent = contentMap[model.id] || `<p>Sen contido dispoñible para ${model.nome}</p>`;
+            
+            document.getElementById('imaxe-cabeceira-container').innerHTML = `
+              <div class="imaxe-fondo">
+                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="imaxe-fondo">` : ''}
+              </div>`;
+
+            document.getElementById('info-orga').innerHTML = `
+              <div class="header-espazo">
+                <div class="titulo-container">
+                  ${model.logo ? `<img src="${model.logo}" alt="Logo ${model.nome}" class="logo-espazo">` : ''}
+                  <div class="titulos">
+                    <h2 class="titulo-espazo">${model.nome}</h2>
+                    ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
+                  </div>
+                </div>
+              </div>
+              <div id="contido-dinamico">
+                ${dynamicContent}
+              </div>`;
+          }
+
+          
+          graph.data({ nodes, edges });
+          graph.render();
+          graph.refresh();
+
+          
+          window.addEventListener('resize', () => {
+            if (!graph || graph.get('destroyed')) return;
+            graph.changeSize(container.scrollWidth, container.scrollHeight);
+            graph.fitView();
+          });
+
+          
+          console.log('Nodos:', nodes);
+          console.log('Enlaces:', edges);
+        </script>
+      </div>
+    </div>
+    <div id="info-window" class="window">
+      <div id="contido-orgas-info">
+        <div id="imaxe-cabeceira-container">
+        </div>
+        
+        <div id="info-orga">
+          <div id="contido-dinamico">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/organizacions.svg" alt=" Organización" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/biblioteca.svg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/logo.svg" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/espazos.svg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/calendario.svg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
+</body>
+</html>

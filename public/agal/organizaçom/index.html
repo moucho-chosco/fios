@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fios | Organizaçom</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body id="body" style="visibility: hidden;">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
+        </div>
+
+        <nav>
+            <ul id="menu-pages-list">
+                
+                
+                <li class="">
+                    <a href="/agal/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/biblioteca/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="active">
+                    <a href="/agal/organiza%C3%A7om/" class="menu-link">
+                        
+                            <img class="menu-icon negativo" src="/images/elementos/pantalla_ancha/organizacions_negativo.svg" alt=" Organizaçom" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organizaçom" />
+                        <span class="menu-text"> Organizaçom</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/espa%C3%A7os/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espaços" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espaços" />
+                        <span class="menu-text"> Espaços</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/convocatorias/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
+                        <span class="menu-text"> Convocatórias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
+                        <span class="menu-text"> Calendário</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/podcast/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/redes/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/agal/recursos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                
+                    
+                    
+                        <a href="/ilg/organizacion/">Galego AGAL ⇄</a>
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
+        </nav>
+    </div>
+</div>
+
+            </aside>
+            
+            
+            <main class="content">
+                
+<div id="organizacions-container" class="standard-section-container">
+  <div id="home-window-container" class="window-container">
+    <div id="main-home-window" class="window">
+      <div class="contido">
+        
+        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+
+        
+        <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
+
+        
+        <script>
+          
+          const data = {
+            id: 'Organizaçons',
+            color: '#E7E7E7',
+            children: [
+              {
+                id: 'Nacionalismo galego',
+                color: '#AAC2F3',
+                children: [
+                  { id: 'ANOVA' },
+                  { id: 'CIG' },
+                  { id: 'CUT' },
+                  { id: 'Erguer' },
+                  {
+                    id: 'BNG',
+                    children: [
+                      { id: 'FOG' },
+                      { id: 'Alicerce' },
+                      { id: 'Galiza Nova' },
+                      { id: 'UPG',
+                        children: [{id: 'UMG'}],
+                      },
+                      { id: 'Mv. Arredista',
+                        children: [{id: 'Isca!'}],
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                id: 'Independentismo',
+                color: '#7294DE',
+                children: [
+                  { id: 'Assembleias A. \nIndependentistas' },
+                  { id: 'MPI' },
+                  { id: 'Ceivar' },
+                  { id: 'Estreleira' }
+                ],
+              },
+              {
+                id: 'Anarquismo',
+                color: '#C0C0C0',
+                children: [
+                  { id: 'SELG'},
+                  { id: 'Refuxios da Memoria'},
+                  { id: 'Solidariedade\nObreira'},
+                  { id: 'CGT'},
+                  { id: 'CNT'},
+                  { id: 'Ardora'},
+                ],
+              },
+              {
+                id: 'MS',
+                color: '#FC9494',
+                children: [
+                  {id: 'Creba Socialista'},
+                ],
+              },
+              {
+                id: 'PCTG',
+                color: '#FC9494',
+                children: [
+                  {id: 'CXC'}
+                ],
+              },
+              {
+                id: 'PCOE',
+                color: '#FC9494',
+              },
+              {
+                id: 'PCG',
+                color: '#FC9494',
+                children: [
+                  {id: 'XC'}
+                ],
+              },
+              {
+                id: '4ª Internacional',
+                color: '#FC9494',
+                children: [
+                  {id: 'Esquerda\nRevolucionaria'},
+                  {id: 'Corrente Vermella'},
+                  {id: 'Anticapitalistas'},
+                ],
+              },
+              {
+                id: 'Feminismo',
+                color: '#D3A8D9',
+                children: [
+                  {id: 'MMMM'},
+                  {id: 'PFG'},
+                ],
+              },
+              {
+                id: 'Ecologismo',
+                color: '#B2DC87',
+                children: [
+                  {id: 'Extintion Rebelion'},
+                  {id: 'Futuro vexetal'},
+                  {id: 'ADEGA'},
+                ],
+              },
+              {
+                id: 'Internacionalismo',
+                children: [
+                  {id: 'Asociación Jenin'},
+                  {id: 'BDS'},
+                  {id: 'AIC'},
+                  {id: 'Mar de Lumes'},
+                  {id: 'Galiza con Palestina'},
+                ],
+              },
+            ],
+          };
+
+          function assignBranchColors(node, inheritedColor = '#C6E5FF') {
+            
+            node.color = node.color || inheritedColor;
+          
+            
+            if (node.children) {
+              node.children.forEach((child) => {
+                assignBranchColors(child, node.color); 
+              });
+            }
+          }
+          
+
+          
+          assignBranchColors(data, '#C6E5FF');
+
+          console.log(data);
+
+          
+          const container = document.getElementById('container');
+          const width = container.scrollWidth;
+          const height = container.scrollHeight || 600;
+
+          const graph = new G6.TreeGraph({
+            container: 'container',
+            width,
+            height,
+            pixelRatio: 2,
+            linkCenter: true,
+            minZoom: 0.8, 
+            maxZoom: 2,   
+            
+            
+            modes: {
+              default: [
+                {
+                  type: 'collapse-expand',
+                  onChange: (item, collapsed) => {
+                    const dataModel = item.get('model').data;
+                    dataModel.collapsed = collapsed;
+                    return true;
+                  },
+                },
+                'drag-canvas',
+                'zoom-canvas',
+              ],
+            },
+            
+            defaultNode: {
+              size: 30,
+              style: {
+                fill: '#FFFFFF',
+                stroke: '#5B8FF9',
+              },
+            },
+            
+            defaultEdge: {
+              style: {
+                stroke: '#A3B1BF',
+              },
+            },
+            
+            layout: {
+              type: 'dendrogram',
+              direction: 'LR',    
+              nodeSep: 30,
+              rankSep: 80,
+              radial: true,       
+            },
+          });
+
+          
+          graph.node((node) => {
+            return {
+              label: node.id,
+              style: {
+                fill: node.color || '#FFFFFF', 
+                stroke: '#5B8FF9',
+              },
+            };
+          });
+          
+          
+          graph.data(data);
+          graph.render();
+          graph.fitView();
+        </script>
+      </div>
+    </div>
+    <div id="info-window" class="window">
+      <div class="contido">
+        <h1 id="organizaçom">Organizaçom</h1>
+<p>Nesta secçom poderá-se ver um mapa de organizaçons militantes que operam a nível galego, ter acesso às suas redes e aprender sobre elas.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
+</body>
+</html>

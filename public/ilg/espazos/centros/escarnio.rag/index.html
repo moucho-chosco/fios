@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escárnio e Maldizer</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/mobil.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/normativa.js"></script>
+</head>
+<body id="body" style="visibility: hidden;">
+    <div class="container-columna">
+        <div class="container-fila">
+            
+            <aside class="sidebar-container">
+                <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="logo">
+            <img id="logo" src="/images/logo.svg" alt="Logo do sitio">
+        </div>
+
+        <nav>
+            <ul id="menu-pages-list">
+                
+                
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/principal.svg" alt=" Principal" />
+                        <span class="menu-text"> Principal</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/biblioteca.svg" alt=" Biblioteca" />
+                        <span class="menu-text"> Biblioteca</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/organizacions.svg" alt=" Organización" />
+                        <span class="menu-text"> Organización</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/espazos.svg" alt=" Espazos" />
+                        <span class="menu-text"> Espazos</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/convocatorias/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatorias" />
+                        <span class="menu-text"> Convocatorias</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendario" />
+                        <span class="menu-text"> Calendario</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/podcast/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
+                        <span class="menu-text"> Podcast</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/redes/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
+                        <span class="menu-text"> Redes</span>
+                    </a>
+                </li>
+                
+                
+                <li class="">
+                    <a href="/ilg/recursos/" class="menu-link">
+                        
+                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        
+                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/recursos.svg" alt=" Recursos" />
+                        <span class="menu-text"> Recursos</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <nav id="langSwitcher">
+                
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                    
+                        <a href="/">Galego ILG ⇄</a>
+                    
+                
+                    
+                    
+                
+            </nav>
+            
+            
+            <button class="toggle-button" onclick="toggleSidebar()"> 
+                <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+            </button>
+        </nav>
+    </div>
+</div>
+
+            </aside>
+            
+            
+            <main class="content">
+                
+  <h1>Escárnio e Maldizer</h1>
+
+  
+  
+  <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+
+  <p>O <em>CSOA Escárnio e Maldizer</em> é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!</p>
+<details class="details-principal">
+    <summary><span id="Cursos" class="resaltado" style="background-color: ">
+      Cursos
+    </span></summary>
+    <div style="margin: 0 15px;">
+      <p><p>Comezan os cursos do Escárnio:</p>
+<ul>
+<li>🌼 <strong>Luns</strong>, 19.00h: Iniciación pandereteira 🎶</li>
+<li>🌸 <strong>Martes</strong> (a partir de xaneiro), 21:00h: Círculo de inglés 👅</li>
+<li>🏵️ <strong>Mércores</strong>, 20:30h: Micros abertos 🎤</li>
+<li>💮 <strong>Xoves</strong>, 19:00h: Taller de movemento: o discurso corporal 💃</li>
+<li>🍀 <strong>Sábado</strong>, 12:30 a 15:00: Clube de bordado 🪡</li>
+</ul>
+<p>Todos os cursos son abertos e gratuitos.</p>
+</p>
+    </div>
+</details>
+
+<details>
+  <summary>História do centro</summary>
+  <p>O Centro Social A Fenda foi fundado en 1998 por un colectivo de activistas interesados en construír espazos para a acción e o debate. Desde entón, converteuse nun referente para a comunidade local.</p>
+</details>
+<details>
+  <summary>Objectivos</summary>
+  <ul>
+    <li>Promover a educación popular.</li>
+    <li>Fomentar o activismo político e cultural.</li>
+    <li>Organizar eventos para fortalecer a comunidade.</li>
+  </ul>
+</details>
+<details class="details-principal">
+    <summary><span id="Redes" class="resaltado" style="background-color: ">
+      Redes
+    </span></summary>
+    <div style="margin: 0 15px;">
+      <p><ul>
+<li>📸 Instagram: <a href="https://instagram.com/csoa.escarnioemaldizer">@csoa.escarnioemaldizer</a></li>
+<li>🐦 <a href="https://twitter.com/centrosocialafenda">Twitter</a></li>
+<li>📱 <a href="https://facebook.com/centrosocialafenda">Facebook</a></li>
+<li>🎥 <a href="https://youtube.com/centrosocialafenda">YouTube</a></li>
+<li>💬 <a href="https://t.me/centrosocialafenda">Telegram</a></li>
+</ul>
+</p>
+    </div>
+</details>
+
+<details>
+  <summary>Contacto</summary>
+  <p>Podes contactar connosco a través de:</p>
+  <ul>
+    <li>Email: contacto@afenda.org</li>
+    <li>Teléfono: 698 123 456</li>
+    <li>Enderezo: Rúa dos Activistas, 12, 15001 A Coruña</li>
+  </ul>
+</details>
+  
+
+            </main>
+        </div>
+        <aside class="sidebar-mobil-container">
+            <div class="sidebar-mobil-container">
+    <nav>
+        <ul class="menu-mobil">
+            
+                <li class="">
+                    <a href="/ilg/organizacion/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/organizacions.svg" alt=" Organización" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/biblioteca/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/biblioteca.svg" alt=" Biblioteca" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/logo.svg" alt=" Principal" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/espazos/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/espazos.svg" alt="Espazos" />
+                        </span>
+                    </a>
+                </li>
+            
+                <li class="">
+                    <a href="/ilg/calendario/" class="menu-link">
+                        <span class="menu-icon">
+                            <img src="/images/elementos/pantalla_estreita/calendario.svg" alt="Calendario" />
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+        </aside>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var screenWidth = window.innerWidth;
+            var container = document.querySelector('.container');
+            
+            if (screenWidth < 1600) {
+                container.classList.add('mobile-layout');
+            } else {
+                container.classList.add('desktop-layout');
+            }
+        });
+    </script>
+    
+</body>
+</html>

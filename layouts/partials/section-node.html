@@ -1,0 +1,25 @@
+{{- $node := dict "id" (partial "getNome" .) -}}
+{{- $color := partial "getColor" . -}}
+{{- if ne $color "null" -}}
+  {{- $node = merge $node (dict "color" $color) -}}
+{{- end -}}
+
+{{- $children := slice -}}
+{{- range .RegularPages -}}
+  {{- $child := dict "id" (.Params.nome | default .Title | jsonify) -}}
+  {{- with .Params.color | jsonify -}}
+    {{- $child = merge $child (dict "color" .) -}}
+  {{- end -}}
+  {{- $children = $children | append $child -}}
+{{- end -}}
+
+{{- range .Sections -}}
+  {{- $child := partial "section-node" . -}}
+  {{- $children = $children | append (transform.Unmarshal $child) -}}
+{{- end -}}
+
+{{- if gt (len $children) 0 -}}
+  {{- $node = merge $node (dict "children" $children) -}}
+{{- end -}}
+
+{{- $node | jsonify -}}

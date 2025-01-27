@@ -17,5 +17,4 @@ gotoCoords:
   lon: -7.558
 gotoZoom: 15
 ---
-
-Construíndo contrapoder no corazón de Lugo.
+Construíndo contrapoder no coraçom de Lugo. A Sociedade Cultural *Mádia leva!* é um projecto comprometido com a lingua e a cultura galega, assim mesmo também trabalhamos por impulsionar a organizaçom do povo, a democracia participativa, a defesa da Terra e a luita pela autodeterminaçom da GALIZA.

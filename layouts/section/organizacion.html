@@ -1,0 +1,228 @@
+{{ define "main" }}
+<div id="organizacions-container" class="standard-section-container">
+  <div id="home-window-container" class="window-container">
+    <div id="main-home-window" class="window">
+      <div class="contido">
+        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+
+        <!-- Área para mostrar coordenadas relativas -->
+        <div id="coordenadas-info" style="margin-top: 20px; display: none;">
+          <h3>Coordenadas relativas</h3>
+          <pre id="coordenadas-texto">Selecciona un nodo para ver as súas coordenadas.</pre>
+        </div>
+
+        <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
+
+        <script>
+          // 1. XENERAR DATOS CON HUGO
+          {{ $nodes := slice }}
+          {{ $edges := slice }}
+          {{ $contentMap := dict }}
+          {{ $processedEdges := dict }}
+          {{ $section := .Site.GetPage "section" "organizacion/outras" }}
+          {{ $allPages := $section.RegularPages }}
+
+          {{/* Crear nodos */}}
+          {{ range $allPages }}
+            {{ $node := dict 
+              "id" .Params.nome
+              "color" .Params.color
+              "url" .RelPermalink
+              "imaxe" (.Params.imaxe | absURL)
+              "logo" (.Params.logo | absURL)
+              "nome" .Params.nome
+              "nome_extendido" .Params.nome_extendido
+              "size" 26
+              "x" .Params.x 
+              "y" .Params.y 
+            }}
+            {{ $nodes = $nodes | append $node }}
+            {{ $contentMap = merge $contentMap (dict .Params.nome .Content) }}
+          {{ end }}
+
+          {{/* Crear enlaces */}}
+          {{ range $allPages }}
+            {{ $source := .Params.nome }}
+            {{ range .Params.children }}
+              {{ $target := . }}
+              {{ $edgeKey := printf "%s-%s" $source $target }}
+              {{ if and (where $allPages ".Params.nome" "==" $target) (not (isset $processedEdges $edgeKey)) }}
+                {{ $edge := dict 
+                  "source" $source
+                  "target" $target
+                  "id" $edgeKey
+                }}
+                {{ $edges = $edges | append $edge }}
+                {{ $processedEdges = merge $processedEdges (dict $edgeKey true) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          // 2. PASAR DATOS A JAVASCRIPT
+          const nodes = {{ $nodes | jsonify | safeJS }};
+          const edges = {{ $edges | jsonify | safeJS }};
+          const contentMap = {{ $contentMap | jsonify | safeJS }};
+          const container = document.getElementById('container');
+
+          // Converter coordenadas relativas a píxeles
+          nodes.forEach(node => {
+            node.x = node.x * container.scrollWidth;
+            node.y = node.y * container.scrollHeight;
+          });
+
+          // 3. CONFIGURACIÓN DO GRAFO (MODIFICADO)
+          const graph = new G6.Graph({
+            container: container,
+            width: container.scrollWidth,
+            height: container.scrollHeight || 600,
+            pixelRatio: 2,
+            modes: {
+              default: ['drag-canvas', 'zoom-canvas', 'drag-node']
+            },
+            layout: null,
+            defaultNode: {
+              type: 'circle',
+              style: {
+                fill: '#C6E5FF',
+                stroke: '#FFFFFF',
+                lineWidth: 2
+              },
+              labelCfg: {
+                style: {
+                  fontSize: 10,
+                  fill: '#333',
+                  fontWeight: 500,
+                }
+              }
+            },
+            defaultEdge: {
+              type: 'line',
+              style: {
+                stroke: '#AAB7C4',
+                lineWidth: 1,
+                opacity: 0.8
+              },
+              curveOffset: (d) => {
+                return d.index % 2 === 0 ? 10 : -10;
+              }
+            }
+          });
+
+          // 4. FUNCIÓN PARA CONVERTER COORDENADAS A RELATIVAS
+          function getCoordenadasRelativas(node) {
+            const container = document.getElementById('container');
+            const xRel = (node.x / container.scrollWidth).toFixed(2); // 2 decimais
+            const yRel = (node.y / container.scrollHeight).toFixed(2);
+            return { x: xRel, y: yRel };
+          }
+
+          // 5. PERSONALIZAR ETIQUETAS DOS NODOS
+          graph.node(node => ({
+            label: `${node.id}`,
+            style: {
+              fill: node.color || '#C6E5FF',
+              stroke: '#FFFFFF'
+            },
+            labelCfg: {
+              style: {
+                fontSize: 10,
+                fill: '#333',
+                fontWeight: 500,
+              }
+            }
+          }));
+
+          // 6. MANEXO DE EVENTOS
+          let selectedNode = null;
+
+          // Actualizar coordenadas ao mover un nodo
+          graph.on('afterdragnode', (e) => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
+          });
+
+          // Mostrar coordenadas ao facer clic nun nodo
+          graph.on('node:click', e => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
+
+            // Resetear todos os nodos
+            graph.getNodes().forEach(n => {
+              graph.clearItemStates(n);
+              graph.updateItem(n, {
+                size: 26,
+                labelCfg: { style: { fontWeight: 500 } }
+              });
+            });
+
+            // Destacar nodo seleccionado
+            graph.updateItem(node, {
+              size: 30,
+              labelCfg: { style: { fontWeight: 'bold' } }
+            });
+
+            actualizarContido(node);
+          });
+
+          // 7. FUNCIÓN ACTUALIZAR CONTIDO
+          function actualizarContido(node) {
+            const model = node.getModel();
+            const dynamicContent = contentMap[model.id] || `<p>Sen contido dispoñible para ${model.nome}</p>`;
+            
+            document.getElementById('imaxe-cabeceira-container').innerHTML = `
+              <div class="imaxe-fondo">
+                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="imaxe-fondo">` : ''}
+              </div>`;
+
+            document.getElementById('info-orga').innerHTML = `
+              <div class="header-espazo">
+                <div class="titulo-container">
+                  ${model.logo ? `<img src="${model.logo}" alt="Logo ${model.nome}" class="logo-espazo">` : ''}
+                  <div class="titulos">
+                    <h2 class="titulo-espazo">${model.nome}</h2>
+                    ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
+                  </div>
+                </div>
+              </div>
+              <div id="contido-dinamico">
+                ${dynamicContent}
+              </div>`;
+          }
+
+          // 8. INICIALIZACIÓN
+          graph.data({ nodes, edges });
+          graph.render();
+          graph.refresh();
+
+          // 9. MANEXO DE REDIMENSIÓN
+          window.addEventListener('resize', () => {
+            if (!graph || graph.get('destroyed')) return;
+            graph.changeSize(container.scrollWidth, container.scrollHeight);
+            graph.fitView();
+          });
+
+          // Debug: Ver datos en consola
+          console.log('Nodos:', nodes);
+          console.log('Enlaces:', edges);
+        </script>
+      </div>
+    </div>
+    <div id="info-window" class="window">
+      <div id="contido-orgas-info">
+        <div id="imaxe-cabeceira-container">
+        </div>
+        <!-- Contido dinámico -->
+        <div id="info-orga">
+          <div id="contido-dinamico">
+            <!-- O contido dinámico do espazo seleccionado irá aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -3,141 +3,141 @@ title = 'fios'
 buildFuture = true
 logo = "favicon.ico"
 
-defaultContentLanguage = "rag"
+defaultContentLanguage = "ilg"
 defaultContentLanguageInSubdir = true
 
 [languages]
-  [languages.rag]
-    languageName = "RAG"
+  [languages.ilg]
+    languageName = "ILG"
     weight = 1  
-    [languages.rag.menu]
-      [[languages.rag.menu.main]]
+    [languages.ilg.menu]
+      [[languages.ilg.menu.main]]
       name = " Principal"
-      url = "/rag/"
+      url = "/ilg/"
       weight = 1
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/"
       reducido = "🧵"
       imaxe = "/images/elementos/pantalla_ancha/principal.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/principal_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Biblioteca"
-      url = "/rag/biblioteca/"
+      url = "/ilg/biblioteca/"
       weight = 2
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/biblioteca/"
       reducido = "📚"
       imaxe =          "/images/elementos/pantalla_ancha/biblioteca.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/biblioteca_negativo.svg"
 
-      [[languages.rag.menu.main]]
-      name = " Organizacións"
-      url = "/rag/organizacions/"
+      [[languages.ilg.menu.main]]
+      name = " Organización"
+      url = "/ilg/organizacion/"
       weight = 3
-      [languages.rag.menu.main.params]
-      translatedURL = "/agal/organizaçons/"
+      [languages.ilg.menu.main.params]
+      translatedURL = "/agal/Organizaçom/"
       reducido = "✊"
       imaxe = "/images/elementos/pantalla_ancha/organizacions.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/organizacions_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Espazos"
-      url = "/rag/espazos/"
+      url = "/ilg/espazos/"
       weight = 4
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/espaços/"
       reducido = "🏠"
       imaxe = "/images/elementos/pantalla_ancha/espazos.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/espazos_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Calendario"
-      url = "/rag/calendario/"
+      url = "/ilg/calendario/"
       weight = 6
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/calendario/"
       reducido = "🗓️"
       imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Convocatorias"
-      url = "/rag/convocatorias/"
+      url = "/ilg/convocatorias/"
       weight = 5
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/convocatorias/"
       reducido = "📣"
       imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Podcast"
-      url = "/rag/podcast/"
+      url = "/ilg/podcast/"
       weight = 7
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/podcast/"
       reducido = "🎙️"
       imaxe = "/images/elementos/pantalla_ancha/podcast.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/podcast_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Redes"
-      url = "/rag/redes/"
+      url = "/ilg/redes/"
       weight = 8
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/redes/"
       reducido = "#️⃣"
       imaxe = "/images/elementos/pantalla_ancha/redes.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
 
-      [[languages.rag.menu.main]]
+      [[languages.ilg.menu.main]]
       name = " Recursos"
-      url = "/rag/recursos/"
+      url = "/ilg/recursos/"
       weight = 9
-      [languages.rag.menu.main.params]
+      [languages.ilg.menu.main.params]
       translatedURL = "/agal/recursos/"
       reducido = "➕"
       imaxe = "/images/elementos/pantalla_ancha/recursos.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/recursos_negativo.svg"
 
-      [[languages.rag.menu.mobil]]
+      [[languages.ilg.menu.mobil]]
       name = " Biblioteca"
-      url = "/rag/biblioteca/"
+      url = "/ilg/biblioteca/"
       weight = 3
-      [languages.rag.menu.mobil.params]
+      [languages.ilg.menu.mobil.params]
       translatedURL = "/agal/biblioteca/"
       imaxe = "/images/elementos/pantalla_estreita/biblioteca.svg"
 
-      [[languages.rag.menu.mobil]]
-      name = " Organizacions"
-      url = "/rag/organizacions/"
+      [[languages.ilg.menu.mobil]]
+      name = " Organización"
+      url = "/ilg/organizacion/"
       weight = 2
-      [languages.rag.menu.mobil.params]
-      translatedURL = "/agal/organizaçons/"
+      [languages.ilg.menu.mobil.params]
+      translatedURL = "/agal/Organizaçom/"
       imaxe = "/images/elementos/pantalla_estreita/organizacions.svg"
 
-      [[languages.rag.menu.mobil]]
+      [[languages.ilg.menu.mobil]]
       name = " Principal"
-      url = "/rag/"
+      url = "/ilg/"
       weight = 4
-      [languages.rag.menu.mobil.params]
+      [languages.ilg.menu.mobil.params]
       translatedURL = "/agal/"
       imaxe = "/images/elementos/pantalla_estreita/logo.svg"
 
-      [[languages.rag.menu.mobil]]
+      [[languages.ilg.menu.mobil]]
       name = "Espazos"
-      url = "/rag/espazos/"
+      url = "/ilg/espazos/"
       weight = 5
-      [languages.rag.menu.mobil.params]
+      [languages.ilg.menu.mobil.params]
       translatedURL = "/agal/espaços/"
       imaxe = "/images/elementos/pantalla_estreita/espazos.svg"
 
-      [[languages.rag.menu.mobil]]
+      [[languages.ilg.menu.mobil]]
       name = "Calendario"
-      url = "/rag/calendario/"
+      url = "/ilg/calendario/"
       weight = 6
-      [languages.rag.menu.mobil.params]
+      [languages.ilg.menu.mobil.params]
       translatedURL = "/agal/calendario/"
       imaxe = "/images/elementos/pantalla_estreita/calendario.svg"
 
@@ -150,7 +150,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/"
     weight = 1
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/"
+    translatedURL = "/ilg/"
     reducido = "🧵"
     imaxe = "/images/elementos/pantalla_ancha/principal.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/principal_negativo.svg"
@@ -160,17 +160,17 @@ defaultContentLanguageInSubdir = true
     url = "/agal/biblioteca/"
     weight = 2
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/biblioteca/"
+    translatedURL = "/ilg/biblioteca/"
     reducido = "📚"
     imaxe = "/images/elementos/pantalla_ancha/biblioteca.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/biblioteca_negativo.svg"
 
     [[languages.agal.menu.main]]
-    name = " Organizaçons"
-    url = "/agal/organizaçons/"
+    name = " Organizaçom"
+    url = "/agal/Organizaçom/"
     weight = 3
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/organizacions/"
+    translatedURL = "/ilg/organizacion/"
     reducido = "✊"
     imaxe = "/images/elementos/pantalla_ancha/organizacions.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/organizacions_negativo.svg"
@@ -180,7 +180,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/espaços/"
     weight = 4
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/espazos/"
+    translatedURL = "/ilg/espazos/"
     reducido = "🏠"
     imaxe = "/images/elementos/pantalla_ancha/espazos.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/espazos_negativo.svg"
@@ -190,7 +190,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/calendario/"
     weight = 6
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/calendario/"
+    translatedURL = "/ilg/calendario/"
     reducido = "🗓️"
     imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
@@ -200,7 +200,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/convocatorias/"
     weight = 5
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/convocatorias/"
+    translatedURL = "/ilg/convocatorias/"
     reducido = "📣"
     imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
@@ -210,7 +210,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/podcast/"
     weight = 7
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/podcast/"
+    translatedURL = "/ilg/podcast/"
     reducido = "🎙️"
     imaxe = "/images/elementos/pantalla_ancha/podcast.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/podcast_negativo.svg"
@@ -220,7 +220,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/redes/"
     weight = 8
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/redes/"
+    translatedURL = "/ilg/redes/"
     reducido = "#️⃣"
     imaxe = "/images/elementos/pantalla_ancha/redes.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
@@ -230,7 +230,7 @@ defaultContentLanguageInSubdir = true
     url = "/agal/recursos/"
     weight = 9
     [languages.agal.menu.main.params]
-    translatedURL = "/rag/recursos/"
+    translatedURL = "/ilg/recursos/"
     reducido = "➕"
     imaxe = "/images/elementos/pantalla_ancha/recursos.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/recursos_negativo.svg"

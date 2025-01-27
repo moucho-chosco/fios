@@ -1,0 +1,3 @@
+{{- with . -}}
+  {{- .Params.nome | default .Title | jsonify -}}
+{{- end -}}

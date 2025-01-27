@@ -1,0 +1,212 @@
+{{ define "main" }}
+<div id="organizacions-container" class="standard-section-container">
+  <div id="home-window-container" class="window-container">
+    <div id="main-home-window" class="window">
+      <div class="contido">
+        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+
+        <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
+
+        <script>
+          let selectedNode = null;
+          const info_window = document.querySelector('#info-window .contido');
+
+          // 1. XENERAR DATOS CON HUGO
+          {{ $nodes := dict }}
+          {{ $section := .Site.GetPage "section" "organizacion/datos" }}
+          {{ $allPages := $section.RegularPages }}
+          {{ $contentMap := dict }}
+          
+          {{/* Crear nodos e mapa de contidos */}}
+          {{ range $allPages }}
+            {{ $node := dict 
+              "id" .Params.nome
+              "color" .Params.color
+              "children" slice
+              "url" .RelPermalink
+              "imaxe" .Params.imaxe
+              "logo" .Params.logo
+              "nome" .Params.nome
+              "nome_extendido" .Params.nome_extendido
+            }}
+            {{ $nodes = merge $nodes (dict .Params.nome $node) }}
+            {{ $contentMap = merge $contentMap (dict .Params.nome .Content) }}
+          {{ end }}
+        
+          {{/* Encher fillos */}}
+          {{ range $allPages }}
+            {{ $current := index $nodes .Params.nome }}
+            {{ $children := slice }}
+            {{ range .Params.children }}
+              {{ $child := index $nodes . }}
+              {{ if $child }}
+                {{ $children = $children | append $child }}
+              {{ end }}
+            {{ end }}
+            {{ $nodes = merge $nodes (dict .Params.nome (merge $current (dict "children" $children))) }}
+          {{ end }}
+        
+          {{ $root := index $nodes " " }}
+
+          // 2. PASAR DATOS A JAVASCRIPT
+          const data = {{ $root | jsonify | safeJS }};
+          const contentMap = {{ $contentMap | jsonify | safeJS }};
+
+          function assignBranchColors(node, inheritedColor = '#C6E5FF') {
+            node.color = node.color || inheritedColor;
+            if (node.children) {
+              node.children.forEach((child) => {
+                assignBranchColors(child, node.color);
+              });
+            }
+          }
+          
+          assignBranchColors(data, '#C6E5FF');
+
+          // 3. CONFIGURACIÓN DO GRAFO
+          const container = document.getElementById('container');
+          const graph = new G6.TreeGraph({
+            renderer: 'canvas',
+            container: container, // <-- Elemento DOM, non string
+            width: container ? container.scrollWidth : 800,
+            height: container ? (container.scrollHeight || 600) : 600,
+            pixelRatio: 2,
+            defaultNode: {
+              type: 'circle',
+              size: 26,
+              style: {
+                fill: '#FFFFFF', // Cor base temporal
+                lineWidth: 2 // Importante para que o stroke sexa visible
+              },
+            },
+            nodeStateStyles: {},
+            layout: {
+              type: 'dendrogram',
+              direction: 'LR',
+              radial: true,
+              nodeSep: 30,
+              rankSep: 80
+            }
+          });
+
+          // 4. EVENTOS E INTERACTIVIDADE
+          graph.node(node => ({
+            label: node.id,
+            style: { 
+              fill: node.color || '#FFFFFF',  // Cor principal dende datos
+              stroke: 'transparent',          // Bordo transparente por defecto
+              lineWidth: 0                    // Grosor 0 para non ver o bordo
+            },
+            labelCfg: {
+              style: {
+                fontSize: 10,
+                fill: '#333',
+                fontWeight: 500,
+              }
+            }
+          }));
+
+          // Animación de hover
+          graph.on('node:mouseenter', e => {
+            graph.updateItem(e.item, {
+              size:     e.item === selectedNode ? 30 : 28,
+              labelCfg: e.item === selectedNode ? { style: { fontSize: 10, fontWeight: 'bold'} } : { style: { fontSize: 10 } }
+            }, true, { duration: 300 });
+          });
+
+          graph.on('node:mouseleave', e => {
+            graph.updateItem(e.item, {
+              size:     e.item === selectedNode ? 30 : 26,
+              labelCfg: e.item === selectedNode ? { style: { fontSize: 10, fontWeight: 'bold'} } : { style: { fontSize: 10 } },
+            }, true, { duration: 300 });
+          });
+
+          // Cargar contido ao facer clic
+          graph.on('node:click', e => {
+            const node = e.item;
+            selectedNode = e.item;
+            const model = node.getModel();
+            const currentStyle = model.style || {};
+          
+            // Resetear TODOS os nodos
+            graph.getNodes().forEach(n => {
+              const originalStyle = n.getModel().style || {};
+              graph.updateItem(n, {
+                size: 26,
+                style: {
+                  ...originalStyle,
+                  lineWidth: 0,
+                  stroke: 'transparent',
+                  shadowColor: null
+                }
+              }, true);
+            });
+          
+            // Aplicar cambios AO NODO SELECCIONADO
+            graph.updateItem(node, {
+              size: 30,
+              style: {
+                ...currentStyle,    // Mantén cor orixinal
+              },
+              labelCfg: {
+                style: {
+                  fontWeight: 'bold',
+                }
+              }
+            }, true);
+          
+            // Actualizar contido
+            //document.querySelector('#info-window .contido').innerHTML = 
+              //contentMap[model.id] || `<p>Sen contido para ${model.id}</p>`;
+            actualizarContido(node);
+          });
+
+          // 5. INICIALIZACIÓN
+          graph.data(data);
+          graph.render();
+          graph.fitView();
+
+          // 7. FUNCIÓN ACTUALIZAR CONTIDO (Correxida)
+          function actualizarContido(node) {
+            const model = node.getModel();
+            const dynamicContent = contentMap[model.id] || '<p>Sen contido dispoñible</p>';
+            const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
+            const infoContainer = document.getElementById("info-orga");
+
+            cabeceiraContainer.innerHTML = `
+              <div class="imaxe-fondo">
+                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="imaxe-fondo">` : ''}
+              </div>`;
+            
+            infoContainer.innerHTML = `
+              <div class="header-espazo">
+                <div class="titulo-container">
+                  ${model.logo ? `<img src="${model.logo}" alt="Logo ${model.nome}" class="logo-espazo">` : ''}
+                  <div class="titulos">
+                    <h2 class="titulo-espazo">${model.nome}</h2>
+                    ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
+                  </div>
+                </div>
+              </div>
+              <div id="contido-dinamico">
+                ${dynamicContent}
+              </div>`;
+          }
+        </script>
+      </div>
+    </div>
+    <div id="info-window" class="window">
+      <div id="contido-orgas-info">
+        <div id="imaxe-cabeceira-container">
+        </div>
+        <!-- Contido dinámico -->
+        <div id="info-orga">
+          <div id="contido-dinamico">
+            <!-- O contido dinámico do espazo seleccionado irá aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

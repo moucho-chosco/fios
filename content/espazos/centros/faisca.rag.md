@@ -19,7 +19,7 @@ gotoZoom: 13
 ---
 O ánimo do *LS Faísca* non se cingue exclusivamente ao ámbito cultural, se non que partindo dun proxecto cultural e socio-político queremos contribuír á creación dun Movemento Popular camiño da emancipación do noso pobo e da nosa clase. 
 
-O asemblearismo, a pluralidade, a autogestión e a independéncia a respeito de calquera estrutura ou organización, son os principios organizativos polos que nos xerimos.
+O asemblearismo, a pluralidade, a autoxestión e a independencia a respecto de calquera estrutura ou organización, son os principios organizativos polos que nos xerimos.
 
 <details>
   <summary>Obxectivos</summary>
