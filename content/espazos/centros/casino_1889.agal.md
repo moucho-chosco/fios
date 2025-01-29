@@ -32,7 +32,7 @@ O Casino é um espaço do povo e para o povo.
   <p>No Centro Social organizamos umha ampla variedade de atividades:</p>
   <ul>
     <li>Talheres</li>
-    <li>Charlas</li>
+    <li>Faladoiros</li>
     <li>Projeçons</li>
     <li>Juntanzas</li>
   </ul>
@@ -65,7 +65,7 @@ O Casino é um espaço do povo e para o povo.
 </details>
 
 <details>
-  <summary>Contato</summary>
+  <summary>Contacto</summary>
   <p>Podes contatar connosco a través de:</p>
   <ul>
     <li>Email: contacto@email.com</li>

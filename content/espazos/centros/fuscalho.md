@@ -16,7 +16,9 @@ gotoCoords:
   lon: -8.8775
 gotoZoom: 16
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+O Fuscalho é un Centro Social autoxestonado independentista. Mantemos obradoiros, palestras, concertos e actividades de forma voluntaria. Un dos principais ingresos é o servizo de balcón para asociad@s, por iso vos convidamos a facervos soci@s e vir tomar algo.
+
+Viva Palestina libre! Palestina vencerá!
 
 <details>
   <summary>Obxectivos</summary>

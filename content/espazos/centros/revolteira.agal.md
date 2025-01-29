@@ -19,18 +19,58 @@ gotoZoom: 14
 ---
 
 *A Revolteira* é uma alternativa comunitária fronte o sistema que nos exclue. Um lugar onde sentirnos acompanhadas e felices.
+<details>
+  <summary>Objetivos</summary>
+  <ul>
+    <li>Objetivo 1</li>
+    <li>Objetivo 2</li>
+    <li>Objetivo 3</li>
+  </ul>
+</details>
 
-{{< details title="Somos" >}}
+<details>
+  <summary>Atividades habituais</summary>
+  <p>No Centro Social organizamos umha ampla variedade de atividades:</p>
+  <ul>
+    <li>Talheres</li>
+    <li>Faladoiros</li>
+    <li>Projeçons</li>
+    <li>Juntanzas</li>
+  </ul>
+</details>
 
-A Revolteira nasce como alternativa coletiva e comunitária a um sistema capitalista, colonial e heteropatriarcal que exclue as maiorías e avanza cara ao colapso social e ambiental dos nossos bárrios, da nossa cidade, do nosso país e do nosso planeta.
+<details>
+  <summary>Horários</summary>
+  <p>Os horários habituais do centro som os seguintes:</p>
+  <ul>
+    <li><strong>Segundas a sextas:</strong> 16:00 - 21:00.</li>
+    <li><strong>Sábados:</strong> 10:00 - 14:00 e 16:00 - 20:00.</li>
+    <li><strong>Domingos:</strong> Pechado, excepto para eventos programados.</li>
+  </ul>
+</details>
 
-O seu germe remonta-se a finais de 2021 e parte da necessidade compartida de atopar novos lugares que sirvam para encontrarmo-nos e reativar loitas e iniciativas comunitárias na Corunha e a sua contorna. Jà desde a sua concepçom, o projeto buscou ensanchar o  ámbito cultural e comunitário explorando tamém a via económica, a través do cooperativismo, como un eixo mais de transformaçom social. Quigemos face-lo, ademais, desde o cercano, desde o bárrio, o ponto de partida onde gerar espaços abertos de encontro entre vizinhas, companheiras e ativistas, baixo a lógica da cooperaçom, o apoio mútuo e a plena autonomia.
+<details>
+  <summary>Redes</summary>
+  <p>Conhece-nos a través de:</p>
+  <ul>
+    <li>Instragram</li>
+    <li>Twiter/X</li>
+    <li>Facebook</li>
+    <li>Bluesky</li>
+  </ul>
+</details>
 
-Para iso, na Revolteira conformámonos como un colectivo de base asamblearia e arredor do noso local social, na rúa Falperra, 13. Alí queremos crear un espazo funcional coas loitas e os cambios cos que estamos comprometidas, pero tamén un lugar onde sentírmonos acompañadas e felices. E tamén para bailar e gozar cando se precise.
+<details>
+  <summary>História do centro</summary>
+  <p></p>
+</details>
 
-Queremos converternos en espazo seguro para pensar, traballar e construír, para así  ir artellando unha contorna habitable na que cuestionármornos e medrar de forma individual e colectiva. Queremos facelo, ademais, desde unha perspectiva interseccional que recolla as aprendizaxes e ferramentas dos feminismos, das loitas antirracistas, do movemento lgbtqi+, da loita de clases, dos ecoloxismos, dos movementos anticapacitistas, dos activismos trans, dos movementos autónomos de base e de toda unha xenealoxía de resistencias que determinan e nutren o noso xeito de facer.
-
-Aspiramos a ser un espazo onde poder imaxinar futuros posibles e alternativos ás narrativas reaccionarias que nos paralizan e desactivan, albiscalos e camiñar cara a eles.
-
-{{< /details >}}
-
+<details>
+  <summary>Contacto</summary>
+  <p>Podes contatar connosco a través de:</p>
+  <ul>
+    <li>Email: contacto@email.com</li>
+    <li>Teléfono: 111 111 111</li>
+    <li>Endereço: - </li>
+  </ul>
+</details>

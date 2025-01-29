@@ -8,6 +8,7 @@ children:
 nome_extendido: Movemento Arredista
 logo:  "/organizacions/arredista/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/arredista/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+clase: colectivo
 ---
 Somos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos e desenvolvemos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente. Para iso, analizamos a realidade e intervimos nela para transformala, desde posicións abertamente independentistas, que aposten pola superación do capitalismo e a construción do socialismo e que asuman unha perspectiva consecuentemente feminista.
 

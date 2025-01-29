@@ -1,9 +1,7 @@
 ---
-nome: "Extintion Rebelion"
+nome: "Extintion Rebellion"
 x: 0.23
 y: 0.24
-color: '#B2DC87'
-children:
-    - "Futuro vexetal"
+color: '#E3E3E3'
 ---
 # contido de exemplo

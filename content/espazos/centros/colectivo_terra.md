@@ -19,7 +19,7 @@ gotoCoords:
   lon: -8.16636505040621
 gotoZoom: 16
 ---
-O *Colectivo Terra* é un centro social en Pondedeume.
+O Colectivo *Terra* de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.
 
 <details>
   <summary>Obxectivos</summary>

@@ -3,9 +3,10 @@ nome: "BDS Galiza"
 x: 0.59
 y: 0.36
 color: '#FFD1A0'
-nome_extendido: "Boicote, Desinvestimentos e Sancións"
+nome_extendido: "Boicote, Desinvestimentos e Sancións a Israel"
 logo:  "/organizacions/bds/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bds/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+clase: colectivo
 ---
 Boicote, Desinvestimentos e Sancións a Israel!
 Un movemento global que se converteu no eixo reivindicativo da solidariedade con Palestina.

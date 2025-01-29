@@ -17,7 +17,7 @@ gotoCoords:
   lon: -7.558
 gotoZoom: 15
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+O CSA *Vagalume^* é un espazo social aberto e autoxestionado no corazón de Lugo.
 
 <details>
   <summary>Obxectivos</summary>

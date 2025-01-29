@@ -3,7 +3,7 @@
   <div id="home-window-container" class="window-container">
     <div id="main-home-window" class="window">
       <div class="contido">
-        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+        <div id="container" style="width: 52%; height: 80vh; border: 0px solid #ccc; margin-left: 10px;margin-top: -10px !important;"></div>
 
         <!-- Área para mostrar coordenadas relativas -->
         <div id="coordenadas-info" style="margin-top: 20px; display: none;">
@@ -212,15 +212,54 @@
       </div>
     </div>
     <div id="info-window" class="window">
-      <div id="contido-orgas-info">
-        <div id="imaxe-cabeceira-container">
-        </div>
-        <!-- Contido dinámico -->
-        <div id="info-orga">
-          <div id="contido-dinamico">
-            <!-- O contido dinámico do espazo seleccionado irá aquí -->
+      <div id="filtros-espazos-box">
+        <div id="filtros-espazos" class="barra-superior">
+          <div id="filters">
+            <select class="filter">
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera tipo</option>
+              {{ range where .Site.RegularPages ".Params.tipo_orga" true }}
+                <option value="">🏷️ {{ .Title }}</option>
+              {{ end }}
+            </select>
+          </div>
+          
+  
+          <div id="barra-busqueda-calendario" class="barra-busqueda">
+            <input type="text" id="busqueda-centros" placeholder="Buscar colectivas..." />
           </div>
         </div>
+      </div>
+      
+
+      <div id="contido-espazos-info">
+        <p id="mensaxe-sen-resultados" style="display: none;">
+          Non se atoparon espazos coincidentes nesta área
+          </p>
+          <div id="tarxetas-centros" class="tarxetas-container" style=";">
+            {{ range shuffle (where .Site.RegularPages ".Params.clase" "colectivo") }}
+              <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+                <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
+                <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
+                <h3>{{ .Params.nome }}</h3>
+                <p>{{ .Params.nome_extendido }}</p>
+              </div>
+            {{ end }}
+          </div>
+          <button id="volver-galiza" class="boton-atras" style="display: block;">
+            <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
+          </button> 
+          <div id="imaxe-cabeceira-container">
+          </div>
+          <div id="contido-orgas-info">
+            <div id="imaxe-cabeceira-container">
+            </div>
+            <!-- Contido dinámico -->
+            <div id="info-orga">
+              <div id="contido-dinamico">
+                <!-- O contido dinámico do espazo seleccionado irá aquí -->
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>

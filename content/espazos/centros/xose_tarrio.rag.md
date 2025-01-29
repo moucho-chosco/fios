@@ -17,7 +17,7 @@ gotoCoords:
   lon: -8.408
 gotoZoom: 14
 ---
-O *Ateneo Libertario Xosé Tarrío* xurde o 9 de maio de 2015 co fin de espallar a autoxestión.
+O *Ateneo Libertario Xosé Tarrío* xorde o 9 de maio de 2015 co fin de espallar a autoxestión.
 Abaixo os muros das prisions, contra todo tipo de poder.
 
 <details>

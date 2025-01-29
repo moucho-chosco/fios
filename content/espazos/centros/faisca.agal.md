@@ -35,7 +35,7 @@ O assemblearismo, a pluralidade, a autogestiom e a independência a respeito de 
   <p>No Centro Social organizamos umha ampla variedade de atividades:</p>
   <ul>
     <li>Talheres</li>
-    <li>Colóquios</li>
+    <li>Faladoiros</li>
     <li>Projeçons</li>
     <li>Juntanzas</li>
   </ul>
@@ -73,6 +73,6 @@ O assemblearismo, a pluralidade, a autogestiom e a independência a respeito de 
   <ul>
     <li>Email: contacto@email.com</li>
     <li>Teléfono: 111 111 111</li>
-    <li>Enderezo: - </li>
+    <li>Endereço: - </li>
   </ul>
 </details>

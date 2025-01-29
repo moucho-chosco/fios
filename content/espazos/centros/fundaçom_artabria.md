@@ -16,7 +16,7 @@ gotoCoords:
   lon:  -8.2248900
 gotoZoom: 14
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+A Associaçom Reintegracionista Artábria, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
 
 <details>
   <summary>Obxectivos</summary>

@@ -17,7 +17,7 @@ gotoCoords:
   lon: -8.735
 gotoZoom: 13
 ---
-Fundado en 2003, 21 anos mantendo Vigo en pe!
+Fundado en 2003, A Revolta é un centro social independentista que leva 22 anos mantendo Vigo en pé desde o traballo asociativo e cultural.
 
 <details>
   <summary>Obxectivos</summary>

@@ -1,6 +1,6 @@
 ---
 nome: MS
-x: 0.50
+x: 0.45
 y: 0.88
 color: '#FC9494'
 children:

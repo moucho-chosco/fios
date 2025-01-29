@@ -1,11 +1,12 @@
 ---
 nome: "SELG"
-x: 0.71
-y: 0.16
+x: 0.82
+y: 0.30
 color: '#C0C0C0'
 nome_extendido: "Seminario de Estudos Libertarios Galegos"
 logo:  "/organizacions/selg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/selg/foto_cabeceira.png"  # Ruta á imaxe de fondo
+clase: colectivo
 ---
 O Seminario de Estudos Libertarios Galegos (SELG) é unha iniciativa do colectivo Refuxios da Memoria, que nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario.
 

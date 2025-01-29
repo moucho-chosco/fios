@@ -17,7 +17,7 @@ gotoCoords:
   lon: -8.559
 gotoZoom: 16
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+O Centro Social *O Matadoiro* é a casa da Asociación Cultural, Deportiva e Ecolóxica *Treze-Catorze*, un colectivo galeguista, feminista e ecoloxista que se centra arredor da cultura común e o coidado do medio ambiente.
 
 <details>
   <summary>Obxectivos</summary>

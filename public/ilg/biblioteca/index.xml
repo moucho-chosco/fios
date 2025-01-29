@@ -17,9 +17,16 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag/</link>
+      <link>http://localhost:1313/ilg/biblioteca/obras/butler_xenero_en_disputa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag/</guid>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/butler_xenero_en_disputa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag-copy/</guid>
       <description></description>
     </item>
     <item>
@@ -83,6 +90,69 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decrecentismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia do Nacionalismo Galego</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy/</guid>
       <description></description>
     </item>
   </channel>

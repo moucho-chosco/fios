@@ -59,9 +59,16 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag/</link>
+      <link>http://localhost:1313/ilg/biblioteca/obras/butler_xenero_en_disputa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag/</guid>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/butler_xenero_en_disputa/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa.rag-copy/</guid>
       <description></description>
     </item>
     <item>
@@ -125,6 +132,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/</guid>
       <description></description>
     </item>
     <item>
@@ -220,6 +234,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/</guid>
+      <description>&lt;p&gt;O Espaço Clara Corbelhe procura ser um verdadeiro espaço de subjetivização política capaz de projetar um pensamento emancipador ao redor de novas formas de geração de conhecimento; configurando um caseto aberto à construção de sentido compartilhado, em permanente discussão e tensão, na firme vontade de se converter numa referência para a produção de discurso e investigação sobre o presente. Toda a atividade do Espaço Clara Corbelhe parte da necessidade prévia de diálogo como ferramenta de construção de discursos e narrativas críticas, bem como da necessidade de uma intervenção direta na criação de significados com a comunidade e os seus atores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/outras/corrente_vermella/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/corrente_vermella/</guid>
@@ -269,6 +290,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/fios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/fios/</guid>
+      <description>&lt;p&gt;O Espaço Clara Corbelhe procura ser um verdadeiro espaço de subjetivização política capaz de projetar um pensamento emancipador ao redor de novas formas de geração de conhecimento; configurando um caseto aberto à construção de sentido compartilhado, em permanente discussão e tensão, na firme vontade de se converter numa referência para a produção de discurso e investigação sobre o presente. Toda a atividade do Espaço Clara Corbelhe parte da necessidade prévia de diálogo como ferramenta de construção de discursos e narrativas críticas, bem como da necessidade de uma intervenção direta na criação de significados com a comunidade e os seus atores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/outras/fog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/fog/</guid>
@@ -314,7 +342,7 @@
       <link>http://localhost:1313/ilg/organizacion/outras/mardelumes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/mardelumes/</guid>
-      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+      <description>&lt;p&gt;Mar de lumes é unha organización de solidariedade internacionalista, contra o imperialismo, pola soberanía dos pobos e pola internacionalización da causa emancipadora da Galiza&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -503,13 +531,13 @@
       <link>http://localhost:1313/ilg/espazos/centros/galleira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/galleira/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;A Galleira é unha asociación cultural, asemblearia, soberanista, aberta e apartidista que ten a vontade de loitar pola nosa lingua, a nosa cultura, a nosa música, pola igualdade de xénero, polo soberanía alimentar, polo noso patrimonio natural e arquitectónico. Que quere traballar por todo o que Galiza é.&lt;/p&gt;&#xA;&lt;p&gt;E nela son benvidas/os todas/os galegas/os de ben!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Gralha</title>
-      <link>http://localhost:1313/ilg/espazos/centros/gralha/</link>
+      <link>http://localhost:1313/ilg/espazos/outros-centros/gralha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/gralha/</guid>
+      <guid>http://localhost:1313/ilg/espazos/outros-centros/gralha/</guid>
       <description>&lt;p&gt;Autoxestión, autonomía, comunidade, feminismo, antiracismo, veganismo popular, apoio mutuo, anticapitalismo&amp;hellip;&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -524,7 +552,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/nubeira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/nubeira/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;[A Nubeira é un novo CSA en Vigo. A súa direción concreta aínda non foi publicada]&lt;/p&gt;&#xA;&lt;p&gt;Contan as malas linguas que existe unha muller grande e brava, vestida con peles negras e acompañada de cobras e lagartos. Un ser capaz de provocar tormentas e dirixir os raios, invocar a treboada e a néboa, someter a choiva e o lóstrego a súa vontade… Unha moradora dos aires, unha peregrina das nubes, unha forza creadora e destrutora do mundo. Din que sae polas mañás das ferrerías para cabalgar os ceos e que, ás veces, moi de cando en cando, baixa á terra para ver o resultado das súas fazañas.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Pedreira</title>
@@ -545,7 +573,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/revolta_do_berbes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/revolta_do_berbes/</guid>
-      <description>&lt;p&gt;Fundado en 2003, 21 anos mantendo Vigo en pe!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Fundado en 2003, A Revolta é un centro social independentista que leva 22 anos mantendo Vigo en pé desde o traballo asociativo e cultural.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Revolteira</title>
@@ -559,7 +587,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/tiradoura/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/tiradoura/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;A Asociación Cultural A Tiradoura traballa nun centro social en Cangas do Morrazo e céntrase na organización de eventos culturais.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Acéfala</title>
@@ -567,6 +595,48 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/acefala.rag/</guid>
       <description>&lt;p&gt;&lt;em&gt;Acéfala&lt;/em&gt; é un colectivo cultural cun espazo autónomo en Monte Alto (A Coruña).&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Achegamento ao Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</guid>
+      <description></description>
     </item>
     <item>
       <title>Aluandê</title>
@@ -583,6 +653,13 @@
       <description></description>
     </item>
     <item>
+      <title>Antirrepresivas</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/antirepresivas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/antirepresivas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>Ateneo Ferrolán</title>
       <link>http://localhost:1313/ilg/espazos/centros/ateneo_ferrolan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -594,7 +671,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</guid>
-      <description>&lt;p&gt;O &lt;em&gt;Ateneo Libertario Xosé Tarrío&lt;/em&gt; xurde o 9 de maio de 2015 co fin de espallar a autoxestión.&#xA;Abaixo os muros das prisions, contra todo tipo de poder.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O &lt;em&gt;Ateneo Libertario Xosé Tarrío&lt;/em&gt; xorde o 9 de maio de 2015 co fin de espallar a autoxestión.&#xA;Abaixo os muros das prisions, contra todo tipo de poder.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Buril</title>
@@ -622,13 +699,20 @@
       <link>http://localhost:1313/ilg/espazos/centros/colectivo_terra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/colectivo_terra/</guid>
-      <description>&lt;p&gt;O &lt;em&gt;Colectivo Terra&lt;/em&gt; é un centro social en Pondedeume.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;O Colectivo &lt;em&gt;Terra&lt;/em&gt; de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compostela</title>
       <link>http://localhost:1313/ilg/espazos/localidades/compostela/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/localidades/compostela/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decrecentismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-5/</guid>
       <description></description>
     </item>
     <item>
@@ -657,21 +741,28 @@
       <link>http://localhost:1313/ilg/espazos/centros/funda%C3%A7om_artabria/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/funda%C3%A7om_artabria/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;A Associaçom Reintegracionista Artábria, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fuscalho</title>
       <link>http://localhost:1313/ilg/espazos/centros/fuscalho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/fuscalho/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O Fuscalho é un Centro Social autoxestonado independentista. Mantemos obradoiros, palestras, concertos e actividades de forma voluntaria. Un dos principais ingresos é o servizo de balcón para asociad@s, por iso vos convidamos a facervos soci@s e vir tomar algo.&lt;/p&gt;&#xA;&lt;p&gt;Viva Palestina libre! Palestina vencerá!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gomes Gaioso</title>
       <link>http://localhost:1313/ilg/espazos/centros/gomes_gaioso/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/gomes_gaioso/</guid>
-      <description>&lt;p&gt;☆ ☭ 🟣&#xA;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Somos un proxecto encadrado en parámetros revolucionarios da esquerda soberanista.&lt;/p&gt;&#xA;&lt;p&gt;O Gomes Gaioso é un espazo plural e de confluencia para @s que loitamos pola Independencia da Galiza; polo Socialismo como única alternativa posíbel ás condicións materiais e valores que o capitalismo xera; pola abolición do patriarcado e a clara igualdade entre mulleres e homes; por unha democracia real, popular e participativa; polo monolingüismo social e reintegracionismo lingüístico para atinxir a plena normalizaxión lingüística e galeguizaxión do País; polo compromiso co medio ambiente; por unha cultura democrática e popular de e para nós propi@s á marxe dos medios de comunicación e das institucións; pola abolición dos exércitos ao servizo do Capital; por unha sexualidade libre; pola solidariedade internacionalista con aqueles pobos que como o noso loitan pola súa liberdade e emancipación.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Historia do Nacionalismo Galego</title>
+      <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy/</guid>
+      <description></description>
     </item>
     <item>
       <title>Independentismo</title>
@@ -695,6 +786,13 @@
       <description>&lt;p&gt;Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural &lt;em&gt;Mádia leva!&lt;/em&gt; é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Mocidade</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/mocidade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/mocidade/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>O Fervedoiro</title>
       <link>http://localhost:1313/ilg/espazos/centros/fervedoiro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -706,14 +804,14 @@
       <link>http://localhost:1313/ilg/espazos/centros/matadoiro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/matadoiro/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O Centro Social &lt;em&gt;O Matadoiro&lt;/em&gt; é a casa da Asociación Cultural, Deportiva e Ecolóxica &lt;em&gt;Treze-Catorze&lt;/em&gt;, un colectivo galeguista, feminista e ecoloxista que se centra arredor da cultura común e o coidado do medio ambiente.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>O Pichel</title>
       <link>http://localhost:1313/ilg/espazos/centros/pichel.rag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/pichel.rag/</guid>
-      <description>&lt;p&gt;Benvide ao Centro Social &lt;em&gt;O Pichel&lt;/em&gt;, un lugar onde promover a lingua galega e a comunidade.A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O Pichel é o centro social xestionado pola asociación cultural A &lt;em&gt;Gentalha do Pichel&lt;/em&gt;. Sitúase na rúa Santa Clara, número 21, en Compostela.&lt;/p&gt;&#xA;&lt;p&gt;A Gentalha partilla o centro social con outros colectivos, MPI, Ceivar, o Cineclube Compostela, a Federación ecoloxista Galega e o Novas da Galiza. Mais o centro social tamén está aberto a iniciativas doutros coletivos que poidan precisar un espazo para desenvolver as súas actividades, só cómpre que sexa en galego. O noso centro social é un espazo libre de contidos machistas, homófobos, racistas ou xenófobos.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ourense</title>
@@ -730,6 +828,13 @@
       <description></description>
     </item>
     <item>
+      <title>Sindicatos</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/sindicato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/sindicato/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>Socialismo</title>
       <link>http://localhost:1313/ilg/espazos/etiquetas/socialismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -741,7 +846,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/vagalume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/vagalume/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Associaçom Reintegracionista Artábria&lt;/em&gt;, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O CSA &lt;em&gt;Vagalume^&lt;/em&gt; é un espazo social aberto e autoxestionado no corazón de Lugo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vigo</title>

@@ -255,7 +255,8 @@ p {
 
 .sidebar-container.full-mode .sidebar ul li.active:hover,
 .sidebar-container.full-mode .sidebar ul li.active a:hover {
-    background-color: #222121;
+    background-color: #000000;
+    opacity: 1;
     color: #ffffff;
     cursor: default;
 }
@@ -266,7 +267,7 @@ p {
 }
 
 .sidebar-container.reduced-mode .sidebar ul li:hover {
-    opacity: 0.6;
+    opacity: 1;
     transition: opacity 0.3s;
 }
 
@@ -421,10 +422,22 @@ nav a:hover {
 ------------------------- */
 #biblioteca-container {
     margin: 50px;
-    height: 50vh;
-    margin-top: 50vh;
+    height: 60vh;
+    margin-top: 39vh;
     overflow: auto;
     overflow-x: hidden;
+
+    /* Ocultar a barra de desprazamento en navegadores WebKit (Chrome, Safari) */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+/* Ocultar a barra de desprazamento en navegadores baseados en WebKit (Chrome, Safari) */
+#biblioteca-container::-webkit-scrollbar {
+    display: none;
+}
+
+#filtros-biblioteca-box {
 }
 
 
@@ -432,31 +445,83 @@ nav a:hover {
     position: fixed;
     top: 0;
     overflow: hidden;
-    height: 50vh;
-    background-color: #e6e6e6;
+    margin-top: 5vh;
+    height: 35vh;
+    width: 82%;
+    background-color: #ffffff;
     z-index: 9999;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .fondo-banner {
     position: fixed;
-    height: 50vh;
+    margin-top: 5vh;
+    height: 35vh;
     top: 0;
-    right: 0;
+    right: 3%;
+    border-radius: 12px;
     
 }
 
 .titulo-banner {
     position: relative;
     height: 100%;
-    top: 0;
-    left: 0;
+    top: -20%;
+    left: 1%;
 }
+
+.titulo-carousel {
+    font-size: 1.5rem;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    width: auto;
+    border-radius: 4px;
+    padding: 1px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+
+/* Imaxe de portada */
+.cover-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Información do elemento */
+.item-info {
+    padding: 0.5rem;
+}
+
+.item-info h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Estilo para ocultar a barra de desprazamento no contedor do carrusel */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container {
+    -ms-overflow-style: none; /* Para IE e Edge */
+    scrollbar-width: none; /* Para Firefox */
+}
+
 
 .lista-libros {
     display: grid;
     gap: 15px;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     grid-auto-rows: 1fr; /* Asegúrate de que as filas teñan a mesma altura */
     justify-items: center; /* Centra os elementos dentro de cada celda */
     margin-top: 3vh;
@@ -466,26 +531,34 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 10px;
     aspect-ratio: 2 / 3;
-    border: 6px solid white; /* Sen rebordo por defecto */
+    border: 4px solid rgba(255, 255, 255, 0); /* Sen rebordo por defecto */
     transition: border-color 0.3s ease;
     transition: transform 0.1s ease;
     cursor: pointer;
 }
+
+.libro {
+    flex: 0 0 150px; /* Tamaño fixo de cada libro */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
   
   .libro.seleccionado {
-    border: 6px solid rgb(0, 0, 0); /* Rebordo branco cando está seleccionado */
+    border: 4px solid rgb(255, 255, 255); /* Rebordo branco cando está seleccionado */
     transform: translateY(-6px);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
   }
 
 .libro:hover {
     transform: translateY(-6px);
     transition: transform 0.1s ease;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
 }
 
 .libro-titulo {
@@ -518,96 +591,84 @@ nav a:hover {
     margin: 4px 0;
 }
 
-.button {
-    margin-top: 12px;
-    padding: 8px 16px;
-    background-color: #141414;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #707070;
-}
-
-/* Estilo principal do modal */
-.modal {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+.carousel-container {
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    z-index: 1000;
+    overflow: hidden;
+    margin: 0px 0;
+    background-color: #ffffff00;
 }
 
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 800px; /* Límite de ancho */
-    width: 90%; /* Adaptable a pantallas pequenas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.carousel-track {
     display: flex;
-    flex-direction: column; /* Contido vertical */
+    gap: 15px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease-in-out;
 }
 
-/* Corpo principal con imaxe e texto */
-.modal-body {
-    display: flex;
-    gap: 20px; /* Espazo entre o texto e a imaxe */
-}
-
-/* Texto á esquerda */
-.modal-text {
-    flex: 2; /* O texto ocupa 2/3 do espazo */
-}
-
-/* Imaxe á dereita */
-.modal-image {
-    flex: 1; /* A imaxe ocupa 1/3 do espazo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-image img {
-    max-width: 100%; /* A imaxe ocupa todo o ancho dispoñible */
-    height: auto; /* Mantén as proporcións */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Botón para pechar */
-.close-button {
+/* Botóns de navegación */
+.carousel-prev, .carousel-next {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    color: #333;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
+    z-index: 100;
 }
 
-/* Estilo do botón de descarga */
-.modal-text .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #818181;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-text .button:hover {
-    background-color: #003c8f;
+
+
+.search-container {
+    position: absolute;
+    top: 20px;  /* Distancia desde a parte superior */
+    right: 20px; /* Distancia desde a parte dereita */
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
 }
+
+#search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 150px; /* Axusta segundo o necesario */
+}
+
+#search-button {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#search-button img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+#search-button:hover img {
+    opacity: 1;
+}
+
 
 /* ================================================================= 
    ORGANIZACIÓNS

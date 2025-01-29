@@ -17,8 +17,9 @@ gotoCoords:
 gotoZoom: 14
 type: "centro_social"
 ---
-☆ ☭ 🟣
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+Somos un proxecto encadrado en parámetros revolucionarios da esquerda soberanista.
+
+O Gomes Gaioso é un espazo plural e de confluencia para @s que loitamos pola Independencia da Galiza; polo Socialismo como única alternativa posíbel ás condicións materiais e valores que o capitalismo xera; pola abolición do patriarcado e a clara igualdade entre mulleres e homes; por unha democracia real, popular e participativa; polo monolingüismo social e reintegracionismo lingüístico para atinxir a plena normalizaxión lingüística e galeguizaxión do País; polo compromiso co medio ambiente; por unha cultura democrática e popular de e para nós propi@s á marxe dos medios de comunicación e das institucións; pola abolición dos exércitos ao servizo do Capital; por unha sexualidade libre; pola solidariedade internacionalista con aqueles pobos que como o noso loitan pola súa liberdade e emancipación.
 
 <details>
   <summary>Obxectivos</summary>

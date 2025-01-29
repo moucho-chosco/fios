@@ -17,28 +17,61 @@ gotoCoords:
   lon:  -8.2248900
 gotoZoom: 14
 ---
+A Revolta nasceu em 1997 como comparsa de Entruido e aginha ampliou a sua atividade para defender a cultura, a língua e o meio ambiente. Desde aquela, promove festas participativas (como a Lumeirada na noite do 23 de junho), organiza comidas populares e atividades que integram à infância e às familias, e reivindica espaços naturais como a Fraga de Menáncaro. Emprega o galego como língua vehicular, aposta pola festa ativa com valores de solidariedade e igualdade, e colabora com outras entidades na defensa das tradiçons, a cultura, a justiça social e os dereitos das mulheres, das diversidades afetivo-sexuais e da Terra.
+
 
 <details>
-  <summary>Quem somos?</summary>
-  <p>
-  A Revolta nasce como comparsa no Antroido de 1997, posteriormente decidimos continuar com actividades de lecer e de festas participativas, polo que como grupo acudimos à Romaria de Chamorro esse mesmo ano. Mas desde o ano 2003, sempre esse dia, imos até à Fraga de Menáncaro para reivindicar a sua proteçom como espaço natural de interesse ecológico e paisagístico.
+  <summary>Objetivos</summary>
+  <ul>
+    <li>Objetivo 1</li>
+    <li>Objetivo 2</li>
+    <li>Objetivo 3</li>
+  </ul>
+</details>
 
-A música e os jogos eram e som o que une ao colectivo. Sempre fumos um grupo onde as crianças por numerossas e importantes, tivérom como agora seguem tendo, um papel destacado.
+<details>
+  <summary>Atividades habituais</summary>
+  <p>No Centro Social organizamos umha ampla variedade de atividades:</p>
+  <ul>
+    <li>Talheres</li>
+    <li>Faladoiros</li>
+    <li>Projeçons</li>
+    <li>Juntanzas</li>
+  </ul>
+</details>
 
-A uniom e a alegria compartida, figérom que as comidas colectivas no campo, disfrutando plenamente da natureza, passaram a formar parte dum jeito de divertimento.
+<details>
+  <summary>Horários</summary>
+  <p>Os horários habituais do centro som os seguintes:</p>
+  <ul>
+    <li><strong>Segundas a sextas:</strong> 16:00 - 21:00.</li>
+    <li><strong>Sábados:</strong> 10:00 - 14:00 e 16:00 - 20:00.</li>
+    <li><strong>Domingos:</strong> Pechado, excepto para eventos programados.</li>
+  </ul>
+</details>
 
-Descubrimos que a festa activa, onde a participaçom de todas e todos, conformava valores e sentimentos positivos.
+<details>
+  <summary>Redes</summary>
+  <p>Conhece-nos a través de:</p>
+  <ul>
+    <li>Instragram</li>
+    <li>Twiter/X</li>
+    <li>Facebook</li>
+    <li>Bluesky</li>
+  </ul>
+</details>
 
-Mais que um acordo, foi umha prática unánime a que nos levou a que se formase um colectivo sociocultural, etnográfico, de recuperaçom das tradiçons e de lecer.
+<details>
+  <summary>História do centro</summary>
+  <p></p>
+</details>
 
-Figemos do Galego a nossa língua veicular, consideramos que a Língua própria, junto à Terra que pisamos som o património mais importante que posuimos como Povo, ademais da vontade de querer e ser galegas e galegos.
-
-Em 1997, participamos tamém nos Maios de Canido e figemos a Lumeirada da Revolta em Caranza todas as noites do 23 de Junho até hoje.
-
-Ainda que a festa de mais participaçom seja o Antroido, onde o ingénio, a creatividade e a participaçom colectiva som intensas, tamém no Outono celebramos o Samaim e o Magosto, onde os contos de medo e ir a apanhar as castanhas aos poucos soutos que quedam na Comarca, formam parte da nossa actividade. Ainda que alguns ou algumhas de nós prefiram antes os arenques que as castanhas.
-
-Desde finais de 1998 até principios de 2007, estivemos integrados, ainda que mantendo a nossa autonomia, dentro da Fundaçom Artábria. Agora voltamos a ser independentes sem ligaçons orgánicas.
-
-Agora vemo-nos numha nova etapa co ánimo de seguir participando social e culturalmente, intentando colaborar com todas as entidades que nos seus objectivos esteja a recuperaçom das tradiçons e festas populares; a defensa da cultura e a língua; a prática duns valores solidários; a justiça; a igualdade; a diversidade; a democracia participativa e a participaçom da cidadania; a defensa dos direitos humanos e cidadans; a defensa dos direitos das mulleres pola igualdade na diferência; a defensa dos direitos de gais, lesbianas e outros colectivos na sua diversidade e liberdade de opçom sexual; a defensa dos direitos históricos da Galiza; a defensa da Terra e do meio ambiente; a conquista da Paz com justiça e igualdade; e um forte NOM à guerra, à violência e à pobreza.
-  </p>
+<details>
+  <summary>Contacto</summary>
+  <p>Podes contatar connosco a través de:</p>
+  <ul>
+    <li>Email: contacto@email.com</li>
+    <li>Teléfono: 111 111 111</li>
+    <li>Endereço: - </li>
+  </ul>
 </details>

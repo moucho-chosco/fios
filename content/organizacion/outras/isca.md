@@ -2,11 +2,12 @@
 nome: "Isca!"
 x: 0.24
 y: 0.62
-nome_extendido: Mocidade galega pola independencia, o socialismo e a destrución do patriarcado
+nome_extendido: Independencia, socialismo e destrución do patriarcado
 logo:  "/organizacions/isca/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/isca/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 children:
     - Galiza Nova
+clase: colectivo
 ---
 Nacemos en 2006 a partir dun grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necesidade de organizar a mocidade en chave revolucionaria para defender un proxecto de cambio social real.
 

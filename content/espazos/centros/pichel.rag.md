@@ -17,7 +17,10 @@ gotoCoords:
   lon: -8.544
 gotoZoom: 14
 ---
-Benvide ao Centro Social *O Pichel*, un lugar onde promover a lingua galega e a comunidade.A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+
+O Pichel é o centro social xestionado pola asociación cultural A *Gentalha do Pichel*. Sitúase na rúa Santa Clara, número 21, en Compostela.
+
+A Gentalha partilla o centro social con outros colectivos, MPI, Ceivar, o Cineclube Compostela, a Federación ecoloxista Galega e o Novas da Galiza. Mais o centro social tamén está aberto a iniciativas doutros coletivos que poidan precisar un espazo para desenvolver as súas actividades, só cómpre que sexa en galego. O noso centro social é un espazo libre de contidos machistas, homófobos, racistas ou xenófobos.
 
 <details>
   <summary>Obxectivos</summary>

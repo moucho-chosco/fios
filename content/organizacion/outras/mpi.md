@@ -8,6 +8,7 @@ logo:  "/organizacions/mpi/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mpi/foto_cabeceira.jpg_large"  # Ruta á imaxe de fondo
 children:
   - Estreleira
+clase: colectivo
 ---
 A MPI  é unha rede de asembleas de adscrición individual que traballa, desde posicións anticapitalistas e feministas, pola libertación nacional e social da Galiza.
 

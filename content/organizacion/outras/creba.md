@@ -1,11 +1,12 @@
 ---
 nome: Creba Socialista
-x: 0.50
+x: 0.45
 y: 0.81
 color: '#FC9494'
 nome_extendido: Espazo de encontro e debate
 logo:  "/organizacions/creba/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/creba/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+clase: colectivo
 ---
 Espazo de encontro, debate e formación de militantes con vontade socialista na Galiza 🚩.
 

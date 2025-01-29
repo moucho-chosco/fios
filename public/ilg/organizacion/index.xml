@@ -57,5 +57,26 @@
       <guid>http://localhost:1313/ilg/organizacion/sindicatos/solidariedade_obreira/</guid>
       <description>&lt;p&gt;&lt;em&gt;Solidariedade Obreira&lt;/em&gt; é unha organización sindical inspirada no antiautoritarismo, é dicir, un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Para que un Seminario?&lt;/summary&gt;&#xD;&#xA;  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.&#xD;&#xA;&lt;p&gt;Dende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Antirrepresivas</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/antirepresivas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/antirepresivas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Mocidade</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/mocidade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/mocidade/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Sindicatos</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/sindicato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/sindicato/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
   </channel>
 </rss>

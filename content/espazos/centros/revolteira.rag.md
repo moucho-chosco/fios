@@ -17,7 +17,6 @@ gotoCoords:
   lon: -8.408
 gotoZoom: 14
 ---
-
 *A Revolteira* é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.
 
 <details>

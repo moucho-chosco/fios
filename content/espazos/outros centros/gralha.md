@@ -6,7 +6,7 @@ participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
 logo:  "/espazos/centros/gralha/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/gralha/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#555555"
-centro: true
+centro: false
 localidade: "Porto"
 location:
   lat: 41.15468298531052

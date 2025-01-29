@@ -191,6 +191,8 @@
   </url><url>
     <loc>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/4_internacional/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/a_mesa/</loc>
@@ -217,6 +219,8 @@
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/ceivar/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/corrente_vermella/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/creba/</loc>
@@ -230,6 +234,8 @@
     <loc>http://localhost:1313/ilg/organizacion/outras/estreleira/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/extintion_rebelion/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/fios/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/fog/</loc>
   </url><url>
@@ -288,6 +294,16 @@
     <loc>http://localhost:1313/ilg/espazos/centros/alvari%C3%A7a.rag/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/casa_branca/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/casa_branca/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/espazos/centros/casa_branca/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/casa_colorida/</loc>
     <xhtml:link
@@ -339,16 +355,16 @@
                 href="http://localhost:1313/ilg/espazos/centros/galleira/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ilg/espazos/centros/gralha/</loc>
+    <loc>http://localhost:1313/ilg/espazos/outros-centros/gralha/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/espazos/centros/gralha/"
+                href="http://localhost:1313/agal/espazos/outros-centros/gralha/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:1313/ilg/espazos/centros/gralha/"
+                href="http://localhost:1313/ilg/espazos/outros-centros/gralha/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/hedreira/</loc>
@@ -426,6 +442,14 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/acefala.rag/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/aluande.rag/</loc>
   </url><url>
@@ -519,6 +543,8 @@
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy-5/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/escarnio.rag/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/faisca.rag/</loc>
@@ -570,6 +596,8 @@
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/centros/gomes_gaioso/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo-copy/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/etiquetas/independentismo/</loc>
   </url><url>

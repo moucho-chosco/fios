@@ -19,7 +19,9 @@ gotoCoords:
   lon: -7.86707
 gotoZoom: 15
 ---
-A *Associaçom Reintegracionista Artábria*, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
+A Galleira é unha asociación cultural, asemblearia, soberanista, aberta e apartidista que ten a vontade de loitar pola nosa lingua, a nosa cultura, a nosa música, pola igualdade de xénero, polo soberanía alimentar, polo noso patrimonio natural e arquitectónico. Que quere traballar por todo o que Galiza é.
+
+E nela son benvidas/os todas/os galegas/os de ben!
 
 <details>
   <summary>Obxectivos</summary>

@@ -179,162 +179,295 @@
             <main class="content">
                 
 <script src="/scripts/biblioteca.js"></script>
-<div id="biblioteca-container" class="standard-section-container" >
+<div id="biblioteca-container" class="standard-section-container">
+
+    <div class="search-container">
+        <button id="search-button">
+            <img src="/images/elementos/pantalla_ancha/search.svg" alt="Buscar">
+        </button>
+        <input type="text" id="search-input" placeholder="Buscar...">
+        
+    </div>
+
     <div class="banner-biblioteca">
         <img class="fondo-banner" src="/images/banners/fondos/lenin_estado.png" alt="Fondo do banner">
         <img class="titulo-banner" src="/images/banners/titulos/lenin_estado.png" alt="Fondo do banner">
-        <p  class="descricion-banner">descrición</p>
+        <p class="descricion-banner">descrición</p>
     </div>
 
-    <div class="lista-libros">
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/Gil-de-San-Vicente_Pensar.gif" alt="Portada de ">
-                
+    
+    <h2 class="titulo-carousel">Itinerarios</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/achegamento_ao_anarquismo.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
             </div>
-            <div class="libro-titulo">
-                <h2>Pensar e practicar o marxismo</h2>
-                <p>: #</p>
-                <p>Iñaki Gil de San Vicente</p>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
             </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/o_xenero_en_disputa.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/resistencia_palestina.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/decrecentismo.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
+            <div  class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <img src="/biblioteca/itinerarios/historia_do_nacionalismo_galego.png" 
+                        alt="Portada " 
+                        loading="lazy">
+                </div>
+            </div>
+            
         </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/marx_o_capital.jpeg" alt="Portada de ">
-                
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+
+    
+    <h2 class="titulo-carousel resaltado" >Temática: socialismo</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/Gil-de-San-Vicente_Pensar.gif" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Pensar e practicar o marxismo</h2>
+                    <p>: #</p>
+                    <p>Iñaki Gil de San Vicente</p>
+                </div>
             </div>
-            <div class="libro-titulo">
-                <h2>O Capital, tomo 1</h2>
-                <p>O Capital: #</p>
-                <p>Karl Marx e Friedrich Engels</p>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/Fisher_realismo_alta.jpg" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Realismo Capitalista</h2>
+                    <p>: #</p>
+                    <p>Mark Fisher</p>
+                </div>
             </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/soren_mau_compulsion_muda.gif" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Compulsión muda</h2>
+                    <p>: #</p>
+                    <p>Soren Mau</p>
+                </div>
+            </div>
+            
+            <div class="libro seleccionado" onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>O Estado e a Revolución</h2>
+                    <p>: #</p>
+                    <p>Vladimir Ilitch Lenin</p>
+                </div>
+            </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Explotadas e Explotadoras</h2>
+                    <p>Cadernos de Educación Popular: #1</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
+            </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Explotación capitalista</h2>
+                    <p>Cadernos de Educación Popular: #2</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
+            </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Monopolios e miseria</h2>
+                    <p>Cadernos de Educación Popular: #3</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
+            </div>
+            
         </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/maia_ramnath_decolonizing_anarchism.jpg" alt="Portada de ">
-                
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <h2 class="titulo-carousel">Temática: anarquismo</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.jpg" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Decolonizando o anarquismo</h2>
+                    <p>: #</p>
+                    <p>Maia Ramnath</p>
+                </div>
             </div>
-            <div class="libro-titulo">
-                <h2>Decolonizando o anarquismo</h2>
-                <p>: #</p>
-                <p>Maia Ramnath</p>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/kropotkin_apoio_mutuo.jpg" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>O apoio mutuo</h2>
+                    <p>: #</p>
+                    <p>Piotr Kropotkin</p>
+                </div>
             </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/kropotkin_pan.jpg" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>A Conquista do pan</h2>
+                    <p>: #</p>
+                    <p>Piotr Kropotkin</p>
+                </div>
+            </div>
+            
         </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/Fisher_realismo_alta.jpg" alt="Portada de ">
-                
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <h2 class="titulo-carousel">Autora: Marta Harnecker</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Explotadas e Explotadoras</h2>
+                    <p>Cadernos de Educación Popular: #1</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
             </div>
-            <div class="libro-titulo">
-                <h2>Realismo Capitalista</h2>
-                <p>: #</p>
-                <p>Mark Fisher</p>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Explotación capitalista</h2>
+                    <p>Cadernos de Educación Popular: #2</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
             </div>
+            
+            <div class="libro " onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    
+                    <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" alt="Portada de ">
+                    
+                </div>
+                <div class="libro-titulo">
+                    <h2>Monopolios e miseria</h2>
+                    <p>Cadernos de Educación Popular: #3</p>
+                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                </div>
+            </div>
+            
         </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/harnecker_c1_portada.png" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>Explotadas e Explotadoras</h2>
-                <p>Cadernos de Educación Popular: #1</p>
-                <p>Marta Harnecker e Gabriela Uribe</p>
-            </div>
-        </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/harnecker_explotacion_capitalista.png" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>Explotación capitalista</h2>
-                <p>Cadernos de Educación Popular: #2</p>
-                <p>Marta Harnecker e Gabriela Uribe</p>
-            </div>
-        </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/harnecker_monopolios_e_miseria.png" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>Monopolios e miseria</h2>
-                <p>Cadernos de Educación Popular: #3</p>
-                <p>Marta Harnecker e Gabriela Uribe</p>
-            </div>
-        </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/kropotkin_apoio_mutuo.jpg" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>O apoio mutuo</h2>
-                <p>: #</p>
-                <p>Piotr Kropotkin</p>
-            </div>
-        </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/kropotkin_pan.jpg" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>A Conquista do pan</h2>
-                <p>: #</p>
-                <p>Piotr Kropotkin</p>
-            </div>
-        </div>
-        
-        <div class="libro " onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/federici_bruxa.jpg" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>Calibán e a bruxa</h2>
-                <p>: #</p>
-                <p>Silvia Federici</p>
-            </div>
-        </div>
-        
-        <div class="libro seleccionado" onclick="seleccionarLibro(this)">
-            <div class="libro-portada">
-                
-                <img src="/images/lenin_o_estado_e_a_revolucion.jpg" alt="Portada de ">
-                
-            </div>
-            <div class="libro-titulo">
-                <h2>O Estado e a Revolución</h2>
-                <p>: #</p>
-                <p>Vladimir Ilitch Lenin</p>
-            </div>
-        </div>
-        
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
     </div>
     
 </div>
-
 
             </main>
         </div>
