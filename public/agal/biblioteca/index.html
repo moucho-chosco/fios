@@ -179,820 +179,778 @@
             
             <main class="content">
                 
-<script src="/scripts/biblioteca.js"></script>
-<div id="biblioteca-container" class="standard-section-container">
-
-    <div class="search-container">
-        <button id="search-button">
-            <img src="/images/elementos/pantalla_ancha/search.svg" alt="Buscar">
-        </button>
-        <input type="text" id="search-input" placeholder="Buscar...">
+    <script src="/scripts/biblioteca.js"></script>
+    <div id="biblioteca-container" class="standard-section-container">
+    
+        <div class="search-container">
+            <button id="search-button">
+                <img src="/images/elementos/pantalla_ancha/search.svg" alt="Buscar">
+            </button>
+            <input type="text" id="search-input" placeholder="Buscar...">
+            
+        </div>
+    
+        <div class="banner-biblioteca">
+            <picture>
+                <source class="fondo-banner-webp" srcset="/biblioteca/banners/fondos/inicial.webp" type="image/webp">
+                <img    class="fondo-banner"          src="/biblioteca/banners/fondos/inicial.png" alt="Fondo do banner">
+            </picture>
+            <picture>
+                <source class="titulo-banner-webp" srcset="/biblioteca/banners/titulos/inicial.webp" type="image/webp">
+                <img    class="titulo-banner"         src="/biblioteca/banners/titulos/inicial.png" alt="Titulo do banner">
+            </picture>
+            
+            <p class="descricion-banner" style="z-index:'99999';">
+                Alguma vez sentiches que queres aprender pero nom sabes nem por onde começar?
+                Pois bem-vide à biblioteca de fios! Aqui atoparás livros e artigos (no futuro tamém outros recursos) de grande valor
+                formativo organizados por temáticas, formatos, autoras, séries... Ademais, os itinerários som rotas de leitura elaboradas para
+                dar um contexto mais intuitivo e coerente a cuestons específicas de interesse.
+            </p>
+            <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
+            <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
+        </div>
+    
+        <div class="warning warning-white" style="margin-top: 3vh;">⚠️ 
+            O contido desta secçom mostra-se a modo de exemplo/prototipo unicamente técnico. Os itinerários, categorias e livros fôrom selecionados como mostra,
+            sendo a intençom elaborar os definitivos em colaboraçom com diferentes organizaçons. As sínteses tamém som a modo de exemplo e
+            o seu contido nom deve ser tomado como relevante. Ademais, ainda é necessário trabalho de optimizaçom para melhorar a fluidez da experiência de usuário.
+        </div>
+        
+        
+        <h2 class="titulo-carousel">Itinerários</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/decrecemento_f.png"
+                data-titulo-banner="/biblioteca/banners/titulos/decrecemento_agal.png"
+                data-texto-banner= "O decrecimento propom um câmbio de paradigma fronte ao crecimento económico ilimitado, apostando por uma sociedade mais sustentável e equitativa. Mais aló de reducir o consumo, implica repensar o benestar, fortalecer os lazos comunitários e adotar modelos produtivos respetuosos co meio. Este itinerário de leitura ofrece chaves para compreender e aplicar esta visom transformadora."
+                data-cor-banner="#e9e2c8"
+                data-cor-texto="#121212"
+                data-marxe-texto="13vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/decrecemento.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/decrecemento.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/introducion_a_obra_de_lenin.png"
+                data-titulo-banner="/biblioteca/banners/titulos/introducion_a_lenin_agal.png"
+                data-texto-banner= "Analisa os fundamentos do pensamento de Lenin, centrando-se em obras como Que fazer? e O Estado e a revoluçom. Explora a sua teoria revolucionária, o papel do partido de vangarda e a crítica ao Estado capitalista, destacando a sua influência no movimento obreiro e a sua relevância histórica."
+                data-cor-banner="#9f1111"
+                data-cor-texto="#e9e2c8"
+                data-marxe-texto="17vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton="#09090B"
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/introducion_a_obra_de_lenin.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/resistencia_palestina.png"
+                data-titulo-banner="/biblioteca/banners/titulos/resistencia_palestina_agal.png"
+                data-texto-banner= "Este itinerário explora a história e as estratégias da resistência palestina fronte à ocupaçom e o colonialismo. Desde as primeiras mobilizaçons populares até a formaçom de organizaçons como a FPLP e Hamas, analisa-se a luita pola autodeterminaçom e os dereitos nacionais. A leitura inclui reflexons sobre a resistência armada, a desobediência civil e a solidariedade internacional, destacando os desafios atuais e as vias para uma soluçom justa."
+                data-cor-banner="#e9e2c8"
+                data-cor-texto="#101010"
+                data-marxe-texto="13vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton="#0e6830"
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/resistencia_palestina.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/resistencia_palestina.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/xenero_e_disidencia.png"
+                data-titulo-banner="/biblioteca/banners/titulos/xenero_e_disidencia_agal.png"
+                data-texto-banner= "Este itinerário examina as relaçons entre identidade de género e as expresons de disidência, desafiando as normas estabelecidas e abrindo espaços para a inclusom. A selecçom de textos questiona as construçons tradicionais do género e ofrece novas perspetivas sobre a diversidade, convidando à reflexom sobre a transformaçom dos espazos sociais cara à igualdade e o respeto pola diferença."
+                data-cor-banner="#592469"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="15vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/xenero_e_disidencia.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/xenero_e_disidencia.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/lingua_e_nacion.png"
+                data-titulo-banner="/biblioteca/banners/titulos/lingua_e_nacion_agal.png"
+                data-texto-banner= "A língua é um pilar fundamental da identidade nacional, atuando como ferramenta de memória, coesom social e resistência cultural. Ela preserva histórias e valores coletivos, fortalece o senntimento de pertença e, em contextos de opressom, transforma-se em símbolo de luita pola soberania e autodeterminaçom."
+                data-cor-banner="#e9e2c8"
+                data-cor-texto="#101010"
+                data-marxe-texto="15vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/lingua_e_nacion.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/lingua_e_nacion.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div  class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/achegamento_ao_anarquismo.png"
+                data-titulo-banner="/biblioteca/banners/titulos/achegamento_ao_anarquismo_t.png"
+                data-texto-banner= "Introduce os princípios básicos do anarquismo, desde Bakunin e Kropotkin até práticas contemporáneas. Aborda a crítica ao Estado, a autogestom e o anticapitalismo, destacando a sua influência em movimentos sociais e luitas pola liberdade e justiça social."
+                data-cor-banner="#000000"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="18vh"
+                data-tipo="itinerario"
+                data-cor-fondo-boton="#CE0A5B"
+                data-cor-texto-boton="#eeeeee"
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/itinerarios/achegamento_ao_anarquismo.webp" type="image/webp">
+                            <img src="/biblioteca/itinerarios/achegamento_ao_anarquismo.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+    
+        
+        <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/realismo_capitalista.png"
+                data-titulo-banner="/biblioteca/banners/titulos/realismo_capitalista_agal.png"
+                data-texto-banner= "Como sinalou Fredric Jameson, &#34;é mais fácil imaginar o fim do mundo que o fim do capitalismo&#34;. Mark Fisher explora este &#34;realismo capitalista&#34; como um marco ideológico que nom só domina a economia, senom que coloniza a cultura, a política e a subjetividade, limitando a capacidade de imaginar alternativas."
+                data-cor-banner="#ffffff"
+                data-cor-texto="#101010"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/Fisher_realismo_alta.webp" type="image/webp">
+                            <img src="/biblioteca/obras/Fisher_realismo_alta.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/desenvolvemento_desigual.png"
+                data-titulo-banner="/biblioteca/banners/titulos/desenvolvemento_desigual_agal.png"
+                data-texto-banner= "A geografia crítica transformou-se nas últimas décadas duma disciplina centrada en fenómenos objetivos a um campo de luita na análise da produçom do capitalismo. Neil Smith oferece-nos uma teoria pioneira do desenvolvimento geográfico desigual, vinculando a produçom do espaço e da natureza coa dinámica do capital."
+                data-cor-banner="#CCD4C4"
+                data-cor-texto="#101010"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton="#acb79a"
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/smith_desenvolvemento_desigual.webp" type="image/webp">
+                            <img src="/biblioteca/obras/smith_desenvolvemento_desigual.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/caliban_e_a_bruxa.png"
+                data-titulo-banner="/biblioteca/banners/titulos/caliban_e_a_bruxa_agal.png"
+                data-texto-banner= "A transiçom do feudalismo ao capitalismo estivo marcada por uma violéncia extrema que esmagou movimentos urbanos e campesinhos que practicabam modelos comunitários e de reparto de riqueza. Silvia Federici analisa como esta derrota permitiu a acumulaçom originária mediante a expropiaçom de terreos comuns, o colonialismo, a escravitude e uma guerra aberta polo control dos corpos e saberes das mulheres."
+                data-cor-banner="#0E6830"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton="#ffffff"
+                data-cor-texto-boton="#000000"
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/federici_caliban_e_a_bruxa.webp" type="image/webp">
+                            <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/compulsion_muda.png"
+                data-titulo-banner="/biblioteca/banners/titulos/compulsion_muda_agal.png"
+                data-texto-banner= "Søren Mau fai uma análise profunda do poder estrutural do capitalismo, além da coerçom direta. Mau explora como o sistema económico exerce um controle &#39;mudo&#39; a través de mecanismos invisíveis que moldeam a vida cotiã, obrigando aos indivíduos a participar nel mesmo sem necessidade de violéncia explícita."
+                data-cor-banner="#071513"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton="#eeeeee"
+                data-cor-texto-boton="#101010"
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/soren_mau_compulsion_muda.webp" type="image/webp">
+                            <img src="/biblioteca/obras/soren_mau_compulsion_muda.gif" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/metodo_yakarta.png"
+                data-titulo-banner="/biblioteca/banners/titulos/metodo_yakarta_agal.png"
+                data-texto-banner= "Desde os massacres em Indonésia até as ditaduras em América Latina, Vincent Bevins revela como os Estados Unidos e os seus aliados exportarom um modelo de represom que deixou milhons de vítimas e moldeou o mundo atual. Uma leitura essencial para quem queira entender como se construíu o mundo em que vivimos e por que é tam necessário luitar pola memória e a justiça."
+                data-cor-banner="#23181c"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton="#eeeeee"
+                data-cor-texto-boton="#23181c"
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/bevins_metodo_jakarta.webp" type="image/webp">
+                            <img src="/biblioteca/obras/bevins_metodo_jakarta.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/governo_neoliberal_da_vida.png"
+                data-titulo-banner="/biblioteca/banners/titulos/governo_neoliberal_da_vida_t.png"
+                data-texto-banner= "Desde uma perspetiva (pós)foucaultiana, Borxa Colmenero analisa o neoliberalismo como uma &#34;arte de governo&#34; que vai além do espontáneo, convertendo-se numa política que regula a gestão social. Neste marco, os individuos pasam de ser os sujeitos pasivos da sociedade fabril a autogestores responsáveis das suas próprias capacidades e recursos, orientados ao seu desenvolvemento na complexa rede contemporánea."
+                data-cor-banner="#ffffff"
+                data-cor-texto="#101010"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.webp" type="image/webp">
+                            <img src="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/"
+                data-titulo-banner="/"
+                data-texto-banner= ""
+                data-cor-banner=""
+                data-cor-texto=""
+                data-marxe-texto=""
+                data-tipo="obra"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/cancela_utopias_dixitais.webp" type="image/webp">
+                            <img src="/biblioteca/obras/cancela_utopias_dixitais.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/biblioteca/banners/fondos/compulsion_muda.png"
+                data-titulo-banner="/biblioteca/banners/titulos/compulsion_muda_t.png"
+                data-texto-banner= "Compulsión muda do filósofo marxista danés Søren Mau é unha análise profunda do poder estrutural do capitalismo, alén da coerción directa. Mau explora como o sistema económico exerce un control &#39;mudo&#39; a través de mecanismos invisibles que moldean a vida cotiá, obrigando aos individuos a participar nel mesmo sen necesidade de violencia explícita."
+                data-cor-banner="#071513"
+                data-cor-texto="#ffffff"
+                data-marxe-texto="16vh"
+                data-tipo="obra"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/mandel_capitalismo_tardio.webp" type="image/webp">
+                            <img src="/biblioteca/obras/mandel_capitalismo_tardio.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro"
+                data-fondo-banner= "/"
+                data-titulo-banner="/"
+                data-texto-banner= ""
+                data-cor-banner=""
+                data-cor-texto=""
+                data-marxe-texto=""
+                data-tipo="obra"
+                data-cor-fondo-boton=""
+                data-cor-texto-boton=""
+                onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_c1_portada.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_c1_portada.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+        <h2 class="titulo-carousel">Temática: género</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/delphy_feminismo_materialista.webp" type="image/webp">
+                            <img src="/biblioteca/obras/delphy_feminismo_materialista.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.webp" type="image/webp">
+                            <img src="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/goldman_muller_estado_e_revolucion.webp" type="image/webp">
+                            <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/lewis_a_politica_de_todes.webp" type="image/webp">
+                            <img src="/biblioteca/obras/lewis_a_politica_de_todes.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/butler_o_xenero_en_disputa.webp" type="image/webp">
+                            <img src="/biblioteca/obras/butler_o_xenero_en_disputa.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.webp" type="image/webp">
+                            <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/ackelsberg_mulleres_libres.webp" type="image/webp">
+                            <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/federici_caliban_e_a_bruxa.webp" type="image/webp">
+                            <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+        <h2 class="titulo-carousel">Temática: anarquismo</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/art1.webp" type="image/webp">
+                            <img src="/biblioteca/obras/art1.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/taibo_anarquismos.webp" type="image/webp">
+                            <img src="/biblioteca/obras/taibo_anarquismos.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/graeber_o_amencer_do_todo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/graeber_o_amencer_do_todo.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/correa_pobo_forte.webp" type="image/webp">
+                            <img src="/biblioteca/obras/correa_pobo_forte.gif" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/perez_anarquia_relacional.webp" type="image/webp">
+                            <img src="/biblioteca/obras/perez_anarquia_relacional.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.webp" type="image/webp">
+                            <img src="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/ackelsberg_mulleres_libres.webp" type="image/webp">
+                            <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/kropotkin_apoio_mutuo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/kropotkin_apoio_mutuo.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/kropotkin_pan.webp" type="image/webp">
+                            <img src="/biblioteca/obras/kropotkin_pan.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+        <h2 class="titulo-carousel">Série: Cadernos de Educaçom Popular</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_c1_portada.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_c1_portada.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_explotacion_capitalista.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_monopolios_e_miseria.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_loita_de_clases.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_loita_de_clases.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_imperialismo_e_dependencia.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_imperialismo_e_dependencia.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_capitalismo_e_socialismo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_capitalismo_e_socialismo.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/harnecker_socialismo_e_comunismo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/harnecker_socialismo_e_comunismo.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+        <h2 class="titulo-carousel">Temática: revoluçom</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/kollontai_amor_vermello.webp" type="image/webp">
+                            <img src="/biblioteca/obras/kollontai_amor_vermello.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/goldman_muller_estado_e_revolucion.webp" type="image/webp">
+                            <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.webp" type="image/webp">
+                            <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.webp" type="image/webp">
+                            <img src="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/lenin_o_estado_e_a_revolucion.webp" type="image/webp">
+                            <img src="/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    
+        <h2 class="titulo-carousel resaltado" >Formato: artigos</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/einstein_por_que_socialismo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/einstein_por_que_socialismo.jpeg" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/art1.webp" type="image/webp">
+                            <img src="/biblioteca/obras/art1.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+                <div class="libro" onclick="seleccionarLibro(this)">
+                    <div class="libro-portada">
+                        <picture>
+                            <source srcset="/biblioteca/obras/lenin_marxismo_e_reformismo.webp" type="image/webp">
+                            <img src="/biblioteca/obras/lenin_marxismo_e_reformismo.png" 
+                                alt="Portada " 
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
         
     </div>
-
-    <div class="banner-biblioteca">
-        <img class="fondo-banner" src="/biblioteca/banners/fondos/inicial.png" alt="Fondo do banner">
-        <img class="titulo-banner" src="/biblioteca/banners/titulos/inicial.png" alt="Titulo do banner">
-        <p class="descricion-banner" style="z-index:'99999';">
-            Alguma vez sentiches que queres aprender pero nom sabes nem por onde começar?
-            Pois bem-vide à biblioteca de fios! Aqui atoparás livros e artigos (no futuro tamém outros recursos) de grande valor
-            formativo organizados por temáticas, formatos, autoras, séries... Ademais, os itinerários som rotas de leitura elaboradas para
-            dar um contexto mais intuitivo e coerente a cuestons específicas de interesse.
-        </p>
-        <a  id="boton-itinerario" class="boton-itinerario" style="display:none;cursor: pointer;">Ver itinerário</a>
-        <a  id="boton-obra" class="boton-itinerario" style="display:none;cursor: pointer;">Ver ligaçons</a>
-    </div>
-
-    <div class="warning warning-white" style="margin-top: 3vh;">⚠️ 
-        O contido desta secçom mostra-se a modo de exemplo/prototipo unicamente técnico. Os itinerários, categorias e livros fôrom selecionados como mostra,
-        sendo a intençom elaborar os definitivos em colaboraçom com diferentes organizaçons. As sínteses tamém som a modo de exemplo e
-        o seu contido nom deve ser tomado como relevante. Ademais, ainda é necessário trabalho de optimizaçom para melhorar a fluidez da experiência de usuário.
-    </div>
     
-    
-    <h2 class="titulo-carousel">Itinerários</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/decrecemento_f.png"
-            data-titulo-banner="/biblioteca/banners/titulos/decrecemento_agal.png"
-            data-texto-banner= "O decrecimento propom um câmbio de paradigma fronte ao crecimento económico ilimitado, apostando por uma sociedade mais sustentável e equitativa. Mais aló de reducir o consumo, implica repensar o benestar, fortalecer os lazos comunitários e adotar modelos produtivos respetuosos co meio. Este itinerário de leitura ofrece chaves para compreender e aplicar esta visom transformadora."
-            data-cor-banner="#e9e2c8"
-            data-cor-texto="#121212"
-            data-marxe-texto="13vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/decrecemento.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/introducion_a_obra_de_lenin.png"
-            data-titulo-banner="/biblioteca/banners/titulos/introducion_a_lenin_agal.png"
-            data-texto-banner= "Analisa os fundamentos do pensamento de Lenin, centrando-se em obras como Que fazer? e O Estado e a revoluçom. Explora a sua teoria revolucionária, o papel do partido de vangarda e a crítica ao Estado capitalista, destacando a sua influência no movimento obreiro e a sua relevância histórica."
-            data-cor-banner="#9f1111"
-            data-cor-texto="#e9e2c8"
-            data-marxe-texto="17vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton="#09090B"
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/resistencia_palestina.png"
-            data-titulo-banner="/biblioteca/banners/titulos/resistencia_palestina_agal.png"
-            data-texto-banner= "Este itinerário explora a história e as estratégias da resistência palestina fronte à ocupaçom e o colonialismo. Desde as primeiras mobilizaçons populares até a formaçom de organizaçons como a FPLP e Hamas, analisa-se a luita pola autodeterminaçom e os dereitos nacionais. A leitura inclui reflexons sobre a resistência armada, a desobediência civil e a solidariedade internacional, destacando os desafios atuais e as vias para uma soluçom justa."
-            data-cor-banner="#e9e2c8"
-            data-cor-texto="#101010"
-            data-marxe-texto="13vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton="#0e6830"
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/resistencia_palestina.png" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/xenero_e_disidencia.png"
-            data-titulo-banner="/biblioteca/banners/titulos/xenero_e_disidencia_agal.png"
-            data-texto-banner= "Este itinerário examina as relaçons entre identidade de género e as expresons de disidência, desafiando as normas estabelecidas e abrindo espaços para a inclusom. A selecçom de textos questiona as construçons tradicionais do género e ofrece novas perspetivas sobre a diversidade, convidando à reflexom sobre a transformaçom dos espazos sociais cara à igualdade e o respeto pola diferença."
-            data-cor-banner="#592469"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="15vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/xenero_e_disidencia.png" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/lingua_e_nacion.png"
-            data-titulo-banner="/biblioteca/banners/titulos/lingua_e_nacion_agal.png"
-            data-texto-banner= "A língua é um pilar fundamental da identidade nacional, atuando como ferramenta de memória, coesom social e resistência cultural. Ela preserva histórias e valores coletivos, fortalece o senntimento de pertença e, em contextos de opressom, transforma-se em símbolo de luita pola soberania e autodeterminaçom."
-            data-cor-banner="#e9e2c8"
-            data-cor-texto="#101010"
-            data-marxe-texto="15vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/lingua_e_nacion.png" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-            <div  class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/achegamento_ao_anarquismo.png"
-            data-titulo-banner="/biblioteca/banners/titulos/achegamento_ao_anarquismo_t.png"
-            data-texto-banner= "Introduce os princípios básicos do anarquismo, desde Bakunin e Kropotkin até práticas contemporáneas. Aborda a crítica ao Estado, a autogestom e o anticapitalismo, destacando a sua influência em movimentos sociais e luitas pola liberdade e justiça social."
-            data-cor-banner="#000000"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="18vh"
-            data-tipo="itinerario"
-            data-cor-fondo-boton="#CE0A5B"
-            data-cor-texto-boton="#eeeeee"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/achegamento_ao_anarquismo.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-
-    
-    <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/realismo_capitalista.png"
-            data-titulo-banner="/biblioteca/banners/titulos/realismo_capitalista_agal.png"
-            data-texto-banner= "Como sinalou Fredric Jameson, &#34;é mais fácil imaginar o fim do mundo que o fim do capitalismo&#34;. Mark Fisher explora este &#34;realismo capitalista&#34; como um marco ideológico que nom só domina a economia, senom que coloniza a cultura, a política e a subjetividade, limitando a capacidade de imaginar alternativas."
-            data-cor-banner="#ffffff"
-            data-cor-texto="#101010"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/Fisher_realismo_alta.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Realismo Capitalista</h2>
-                    <p>: #</p>
-                    <p>Mark Fisher</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/desenvolvemento_desigual.png"
-            data-titulo-banner="/biblioteca/banners/titulos/desenvolvemento_desigual_agal.png"
-            data-texto-banner= "A geografia crítica transformou-se nas últimas décadas duma disciplina centrada en fenómenos objetivos a um campo de luita na análise da produçom do capitalismo. Neil Smith oferece-nos uma teoria pioneira do desenvolvimento geográfico desigual, vinculando a produçom do espaço e da natureza coa dinámica do capital."
-            data-cor-banner="#CCD4C4"
-            data-cor-texto="#101010"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton="#acb79a"
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/smith_desenvolvemento_desigual.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Desenvolvimento desigual</h2>
-                    <p>: #</p>
-                    <p>Neil Smith</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/caliban_e_a_bruxa.png"
-            data-titulo-banner="/biblioteca/banners/titulos/caliban_e_a_bruxa_agal.png"
-            data-texto-banner= "A transiçom do feudalismo ao capitalismo estivo marcada por uma violéncia extrema que esmagou movimentos urbanos e campesinhos que practicabam modelos comunitários e de reparto de riqueza. Silvia Federici analisa como esta derrota permitiu a acumulaçom originária mediante a expropiaçom de terreos comuns, o colonialismo, a escravitude e uma guerra aberta polo control dos corpos e saberes das mulheres."
-            data-cor-banner="#0E6830"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton="#ffffff"
-            data-cor-texto-boton="#000000"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Calibán e a Bruxa</h2>
-                    <p>: #</p>
-                    <p>Silvia Federici</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/compulsion_muda.png"
-            data-titulo-banner="/biblioteca/banners/titulos/compulsion_muda_agal.png"
-            data-texto-banner= "Søren Mau fai uma análise profunda do poder estrutural do capitalismo, além da coerçom direta. Mau explora como o sistema económico exerce um controle &#39;mudo&#39; a través de mecanismos invisíveis que moldeam a vida cotiã, obrigando aos indivíduos a participar nel mesmo sem necessidade de violéncia explícita."
-            data-cor-banner="#071513"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton="#eeeeee"
-            data-cor-texto-boton="#101010"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/soren_mau_compulsion_muda.gif" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Compulsom muda</h2>
-                    <p>: #</p>
-                    <p>Soren Mau</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/metodo_yakarta.png"
-            data-titulo-banner="/biblioteca/banners/titulos/metodo_yakarta_agal.png"
-            data-texto-banner= "Desde os massacres em Indonésia até as ditaduras em América Latina, Vincent Bevins revela como os Estados Unidos e os seus aliados exportarom um modelo de represom que deixou milhons de vítimas e moldeou o mundo atual. Uma leitura essencial para quem queira entender como se construíu o mundo em que vivimos e por que é tam necessário luitar pola memória e a justiça."
-            data-cor-banner="#23181c"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton="#eeeeee"
-            data-cor-texto-boton="#23181c"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/bevins_metodo_jakarta.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>1O Método Yakarta</h2>
-                    <p>: #</p>
-                    <p>Vincent Bevins</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/governo_neoliberal_da_vida.png"
-            data-titulo-banner="/biblioteca/banners/titulos/governo_neoliberal_da_vida_t.png"
-            data-texto-banner= "Desde uma perspetiva (pós)foucaultiana, Borxa Colmenero analisa o neoliberalismo como uma &#34;arte de governo&#34; que vai além do espontáneo, convertendo-se numa política que regula a gestão social. Neste marco, os individuos pasam de ser os sujeitos pasivos da sociedade fabril a autogestores responsáveis das suas próprias capacidades e recursos, orientados ao seu desenvolvemento na complexa rede contemporánea."
-            data-cor-banner="#ffffff"
-            data-cor-texto="#101010"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O governo neoliberal da vida</h2>
-                    <p>: #</p>
-                    <p>zBorxa Colmenero</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/"
-            data-titulo-banner="/"
-            data-texto-banner= ""
-            data-cor-banner=""
-            data-cor-texto=""
-            data-marxe-texto=""
-            data-tipo="obra"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/cancela_utopias_dixitais.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Utopías dixitais</h2>
-                    <p>: #</p>
-                    <p>zEkaitz Cancela</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/biblioteca/banners/fondos/compulsion_muda.png"
-            data-titulo-banner="/biblioteca/banners/titulos/compulsion_muda_t.png"
-            data-texto-banner= "Compulsión muda do filósofo marxista danés Søren Mau é unha análise profunda do poder estrutural do capitalismo, alén da coerción directa. Mau explora como o sistema económico exerce un control &#39;mudo&#39; a través de mecanismos invisibles que moldean a vida cotiá, obrigando aos individuos a participar nel mesmo sen necesidade de violencia explícita."
-            data-cor-banner="#071513"
-            data-cor-texto="#ffffff"
-            data-marxe-texto="16vh"
-            data-tipo="obra"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mandel_capitalismo_tardio.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Capitalismo tardío</h2>
-                    <p>: #</p>
-                    <p>zErnest Mandel</p>
-                </div>
-            </div>
-            
-            <div class="libro"
-            data-fondo-banner= "/"
-            data-titulo-banner="/"
-            data-texto-banner= ""
-            data-cor-banner=""
-            data-cor-texto=""
-            data-marxe-texto=""
-            data-tipo="obra"
-            data-cor-fondo-boton=""
-            data-cor-texto-boton=""
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotadas e Explotadoras</h2>
-                    <p>[Cadernos de Educación Popular]: #1</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel">Temática: género</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/delphy_feminismo_materialista.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Por un feminismo materialista</h2>
-                    <p>: #</p>
-                    <p>Christine Delphy</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A defunción dos sexos</h2>
-                    <p>: #</p>
-                    <p>Daniela Fernández</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Muller, Estado e Revolución</h2>
-                    <p>: #</p>
-                    <p>Goldman</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lewis_a_politica_de_todes.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A política de todes</h2>
-                    <p>: #</p>
-                    <p>Holly Lewis</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/butler_o_xenero_en_disputa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O xénero en disputa&#34;</h2>
-                    <p>: #</p>
-                    <p>Judit Butler</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A longa revolución das mulleres</h2>
-                    <p>: #</p>
-                    <p>Juliet Mitchell</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Mulleres Libres</h2>
-                    <p>: #</p>
-                    <p>Martha Ackelsberg</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Calibán e a Bruxa</h2>
-                    <p>: #</p>
-                    <p>Silvia Federici</p>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel">Temática: anarquismo</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/art1.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Un obituario para as políticas de identidade</h2>
-                    <p>: #</p>
-                    <p>Bomb</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/taibo_anarquismos.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Anarquismos: Onte, hoxe e mañá</h2>
-                    <p>: #</p>
-                    <p>Carlos Taibo</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/graeber_o_amencer_do_todo.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O amencer do todo</h2>
-                    <p>: #</p>
-                    <p>David graeber</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/correa_pobo_forte.gif" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Crear un pobo forte</h2>
-                    <p>: #</p>
-                    <p>Felipe Correa</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/perez_anarquia_relacional.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Anarquía Relacional</h2>
-                    <p>: #</p>
-                    <p>Juan Carlos Pérez Cortés</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Decolonizando o anarquismo</h2>
-                    <p>: #</p>
-                    <p>Maia Ramnath</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Mulleres Libres</h2>
-                    <p>: #</p>
-                    <p>Martha Ackelsberg</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kropotkin_apoio_mutuo.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O apoio mutuo</h2>
-                    <p>: #</p>
-                    <p>Piotr Kropotkin</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kropotkin_pan.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A Conquista do pan</h2>
-                    <p>: #</p>
-                    <p>Piotr Kropotkin</p>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel">Série: Cadernos de Educaçom Popular</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotadas e Explotadoras</h2>
-                    <p>[Cadernos de Educación Popular]: #1</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotación capitalista</h2>
-                    <p>[Cadernos de Educación Popular]: #2</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Monopolios e miseria</h2>
-                    <p>[Cadernos de Educación Popular]: #3</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_loita_de_clases.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #4</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_imperialismo_e_dependencia.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #5</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_capitalismo_e_socialismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #6</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_socialismo_e_comunismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #7</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel">Temática: revoluçom</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kollontai_amor_vermello.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel resaltado" >Formato: artigos</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/einstein_por_que_socialismo.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Por que socialismo?</h2>
-                    <p>: #</p>
-                    <p>Albert Einstein</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/art1.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Un obituario para as políticas de identidade</h2>
-                    <p>: #</p>
-                    <p>Bomb</p>
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lenin_marxismo_e_reformismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Marxismo e Reformismo</h2>
-                    <p>: #</p>
-                    <p>Vladimir I. Lenin</p>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-    
-</div>
-
             </main>
         </div>
         <aside class="sidebar-mobil-container">
