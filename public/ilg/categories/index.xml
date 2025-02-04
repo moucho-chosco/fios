@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on fios</title>
-    <link>http://localhost:1313/ilg/categories/</link>
+    <link>http://localhost:60906/ilg/categories/</link>
     <description>Recent content in Categories on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
-    <atom:link href="http://localhost:1313/ilg/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60906/ilg/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -11,8 +11,15 @@
     </div>
 
     <div class="banner-biblioteca">
-        <img class="fondo-banner" src="{{ "/biblioteca/banners/fondos/inicial.png" | relURL }}" alt="Fondo do banner">
-        <img class="titulo-banner" src="{{ "/biblioteca/banners/titulos/inicial.png" | relURL }}" alt="Titulo do banner">
+        <picture>
+            <source class="fondo-banner-webp" srcset="{{ "/biblioteca/banners/fondos/inicial.webp" | relURL }}" type="image/webp">
+            <img    class="fondo-banner"          src="{{ "/biblioteca/banners/fondos/inicial.png"  | relURL }}" alt="Fondo do banner">
+        </picture>
+        <picture>
+            <source class="titulo-banner-webp" srcset="{{ "/biblioteca/banners/titulos/inicial.webp" | relURL }}" type="image/webp">
+            <img    class="titulo-banner"         src="{{ "/biblioteca/banners/titulos/inicial.png"  | relURL }}" alt="Titulo do banner">
+        </picture>
+        
         <p class="descricion-banner" style="z-index:'99999';">
             Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
             Pois benvide á biblioteca de fios! Aquí atoparás libros, artigos (no futuro tamén outros recursos) de grande valor
@@ -46,9 +53,12 @@
             data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="{{ .Params.portada | relURL }}" 
-                        alt="Portada {{ $.Params.titulo }}" 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -75,14 +85,12 @@
             data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
-                    <h2>{{ .Params.titulo }}</h2>
-                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
-                    <p>{{ .Params.autore }}</p>
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -97,14 +105,12 @@
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "xénero")) ".Params.autore" }}
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
-                    <h2>{{ .Params.titulo }}</h2>
-                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
-                    <p>{{ .Params.autore }}</p>
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -119,14 +125,12 @@
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "anarquismo")) ".Params.autore" }}
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
-                    <h2>{{ .Params.titulo }}</h2>
-                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
-                    <p>{{ .Params.autore }}</p>
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -141,14 +145,12 @@
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.serie" "intersect" (slice "Cadernos de Educación Popular")) ".Params.autore" }}
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
-                    <h2>{{ .Params.titulo }}</h2>
-                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
-                    <p>{{ .Params.autore }}</p>
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -163,11 +165,12 @@
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "revolución")) ".Params.autore" }}
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}
@@ -182,14 +185,12 @@
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.formato" "intersect" (slice "artigo")) ".Params.autore" }}
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    {{ with .Params.portada }}
-                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
-                    {{ end }}
-                </div>
-                <div class="libro-titulo">
-                    <h2>{{ .Params.titulo }}</h2>
-                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
-                    <p>{{ .Params.autore }}</p>
+                    <picture>
+                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                        <img src="{{ .Params.portada | relURL }}" 
+                            alt="Portada {{ $.Params.titulo }}" 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             {{ end }}

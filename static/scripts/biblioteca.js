@@ -10,6 +10,8 @@ function seleccionarLibro(elemento) {
     // Obter os elementos do banner
     const fondoBannerEl = document.querySelector('.banner-biblioteca .fondo-banner');
     const tituloBannerEl = document.querySelector('.banner-biblioteca .titulo-banner');
+    const fondoBannerElWebp = document.querySelector('.banner-biblioteca .fondo-banner-webp');
+    const tituloBannerElWebp = document.querySelector('.banner-biblioteca .titulo-banner-webp');
     const textoBannerEl  = document.querySelector('.banner-biblioteca .descricion-banner');
     const bannerBibliotecaEl = document.querySelector('.banner-biblioteca');
     const botonObraEl = document.querySelector('#boton-obra');
@@ -29,9 +31,11 @@ function seleccionarLibro(elemento) {
     // Actualizar o banner se os datos existen
     if (fondoUrl) {
       fondoBannerEl.src = fondoUrl;
-    }
+      fondoBannerElWebp.srcset = fondoUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+    }  
     if (tituloUrl) {
-      tituloBannerEl.src = tituloUrl;
+      tituloBannerEl.src =     tituloUrl;
+      tituloBannerElWebp.srcset = tituloUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
     }
     if (texto) {
       textoBannerEl.textContent = texto;
