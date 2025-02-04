@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fíos | Podcast on fios</title>
-    <link>http://localhost:60906/ilg/podcast/</link>
+    <link>http://localhost:1313/ilg/podcast/</link>
     <description>Recent content in fíos | Podcast on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:60906/ilg/podcast/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ilg/podcast/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

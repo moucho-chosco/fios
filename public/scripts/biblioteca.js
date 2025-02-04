@@ -29,52 +29,68 @@ function seleccionarLibro(elemento) {
     const corTextoBoton = elemento.dataset.corTextoBoton;
   
     // Actualizar o banner se os datos existen
-    if (fondoUrl) {
-      fondoBannerEl.src = fondoUrl;
-      fondoBannerElWebp.srcset = fondoUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
-    }  
-    if (tituloUrl) {
-      tituloBannerEl.src =     tituloUrl;
-      tituloBannerElWebp.srcset = tituloUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
-    }
-    if (texto) {
-      textoBannerEl.textContent = texto;
-    }
-    if (corBanner) {
-        bannerBibliotecaEl.style.backgroundColor = corBanner;
-    }
-    if (corTexto) {
-        textoBannerEl.style.color = corTexto;
-    }
-    if (marxeTexto) {
-        textoBannerEl.style.marginTop = marxeTexto;
-    }
-    if(tipo=="obra"){
-      console.log("obra");
-      botonObraEl.style.display = "inline-block";
-      botonItinerarioEl.style.display = "none";
-      botonObraEl.style.backgroundColor = "black";
-      botonObraEl.style.color = "white";
-      if(corFondoBoton)
-        botonObraEl.style.backgroundColor = corFondoBoton;
-      if(corTextoBoton)
-        botonObraEl.style.color = corTextoBoton;
-    } else if (tipo=="itinerario") {
-      console.log("itinerario");
-      botonObraEl.style.display = "none";
-      botonItinerarioEl.style.display = "inline-block";
-      botonItinerarioEl.style.backgroundColor = "black";
-      botonItinerarioEl.style.color = "white";
-      if(corFondoBoton)
-        botonItinerarioEl.style.backgroundColor = corFondoBoton;
-      if(corTextoBoton)
-        botonItinerarioEl.style.color = corTextoBoton;
-      
-    }else{
-      console.log("outro");
-      botonObraEl.style.display = "none";
-      botonItinerarioEl.style.display = "none";
-    }
+    if (fondoUrl && tituloUrl) {
+
+      const imgFondoWebp  = new Image();
+      const imgTituloWebp = new Image();
+      imgFondoWebp.src  = fondoUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+      imgTituloWebp.src = tituloUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+      let fondoCargado = false;
+      let tituloCargado = false;
+  
+      function verificarCambio() {
+        if (fondoCargado && tituloCargado) {
+          fondoBannerElWebp.srcset  =  fondoUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+          tituloBannerElWebp.srcset =  tituloUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+          fondoBannerEl.src  = fondoUrl;
+          tituloBannerEl.src = tituloUrl;
+          if (texto) {
+            textoBannerEl.textContent = texto;
+          }
+          if (corBanner) {
+              bannerBibliotecaEl.style.backgroundColor = corBanner;
+          }
+          if (corTexto) {
+              textoBannerEl.style.color = corTexto;
+          }
+          if (marxeTexto) {
+              textoBannerEl.style.marginTop = marxeTexto;
+          }
+          if(tipo=="obra"){
+            botonObraEl.style.display = "inline-block";
+            botonItinerarioEl.style.display = "none";
+            botonObraEl.style.backgroundColor = "black";
+            botonObraEl.style.color = "white";
+            if(corFondoBoton)
+              botonObraEl.style.backgroundColor = corFondoBoton;
+            if(corTextoBoton)
+              botonObraEl.style.color = corTextoBoton;
+          } else if (tipo=="itinerario") {
+            botonObraEl.style.display = "none";
+            botonItinerarioEl.style.display = "inline-block";
+            botonItinerarioEl.style.backgroundColor = "black";
+            botonItinerarioEl.style.color = "white";
+            if(corFondoBoton)
+              botonItinerarioEl.style.backgroundColor = corFondoBoton;
+            if(corTextoBoton)
+              botonItinerarioEl.style.color = corTextoBoton;
+          }else{
+            botonObraEl.style.display = "none";
+            botonItinerarioEl.style.display = "none";
+          }
+        }
+      }
+
+      imgFondoWebp.onload = () => {
+          fondoCargado = true;
+          verificarCambio();
+      };
+
+      imgTituloWebp.onload = () => {
+          tituloCargado = true;
+          verificarCambio();
+      };
+    } 
   }
   
 
@@ -108,5 +124,3 @@ function seleccionarLibro(elemento) {
         });
     });
 });
-
-

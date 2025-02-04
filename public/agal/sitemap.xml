@@ -2,1590 +2,1590 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:60906/agal/podcast/</loc>
+    <loc>http://localhost:1313/agal/podcast/</loc>
     <lastmod>2024-11-18T18:18:12+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/podcast/"
+                href="http://localhost:1313/ilg/podcast/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/podcast/"
+                href="http://localhost:1313/agal/podcast/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/recursos/</loc>
+    <loc>http://localhost:1313/agal/recursos/</loc>
     <lastmod>2024-11-18T18:18:44+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/recursos/"
+                href="http://localhost:1313/ilg/recursos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/recursos/"
+                href="http://localhost:1313/agal/recursos/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/redes/</loc>
+    <loc>http://localhost:1313/agal/redes/</loc>
     <lastmod>2024-11-18T18:18:34+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/redes/"
+                href="http://localhost:1313/ilg/redes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/redes/"
+                href="http://localhost:1313/agal/redes/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espa%C3%A7os/</loc>
+    <loc>http://localhost:1313/agal/espa%C3%A7os/</loc>
     <lastmod>2024-11-18T18:18:03+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/"
+                href="http://localhost:1313/ilg/espazos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espa%C3%A7os/"
+                href="http://localhost:1313/agal/espa%C3%A7os/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/convocatorias/</loc>
+    <loc>http://localhost:1313/agal/convocatorias/</loc>
     <lastmod>2024-11-18T18:17:52+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/convocatorias/"
+                href="http://localhost:1313/ilg/convocatorias/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/convocatorias/"
+                href="http://localhost:1313/agal/convocatorias/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/calendario/</loc>
+    <loc>http://localhost:1313/agal/calendario/</loc>
     <lastmod>2024-11-18T18:17:37+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/calendario/"
+                href="http://localhost:1313/ilg/calendario/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/calendario/"
+                href="http://localhost:1313/agal/calendario/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organiza%C3%A7om/</loc>
+    <loc>http://localhost:1313/agal/organiza%C3%A7om/</loc>
     <lastmod>2024-11-18T18:17:24+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/"
+                href="http://localhost:1313/ilg/organizacion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organiza%C3%A7om/"
+                href="http://localhost:1313/agal/organiza%C3%A7om/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/</loc>
     <lastmod>2024-11-18T18:16:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/"
+                href="http://localhost:1313/ilg/biblioteca/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/"
+                href="http://localhost:1313/agal/biblioteca/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c1/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c1/</loc>
     <lastmod>2024-11-15T10:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c1/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c1/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c1/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/</loc>
+    <loc>http://localhost:1313/agal/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/"
+                href="http://localhost:1313/ilg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/"
+                href="http://localhost:1313/agal/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/ackelsberg_mulleres_libres/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/ackelsberg_mulleres_libres/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/ackelsberg_mulleres_libres/"
+                href="http://localhost:1313/ilg/biblioteca/obras/ackelsberg_mulleres_libres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/ackelsberg_mulleres_libres/"
+                href="http://localhost:1313/agal/biblioteca/obras/ackelsberg_mulleres_libres/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/bevins_metodo_yakarta/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/bevins_metodo_yakarta/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/bevins_metodo_yakarta/"
+                href="http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/bevins_metodo_yakarta/"
+                href="http://localhost:1313/agal/biblioteca/obras/bevins_metodo_yakarta/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/bomb_obituario/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/bomb_obituario/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/bomb_obituario/"
+                href="http://localhost:1313/ilg/biblioteca/obras/bomb_obituario/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/bomb_obituario/"
+                href="http://localhost:1313/agal/biblioteca/obras/bomb_obituario/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/butler_xenero_en_disputa/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/butler_xenero_en_disputa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/butler_xenero_en_disputa/"
+                href="http://localhost:1313/ilg/biblioteca/obras/butler_xenero_en_disputa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/butler_xenero_en_disputa/"
+                href="http://localhost:1313/agal/biblioteca/obras/butler_xenero_en_disputa/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/cancela_utopias_dixitais/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/cancela_utopias_dixitais/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/cancela_utopias_dixitais/"
+                href="http://localhost:1313/ilg/biblioteca/obras/cancela_utopias_dixitais/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/cancela_utopias_dixitais/"
+                href="http://localhost:1313/agal/biblioteca/obras/cancela_utopias_dixitais/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/"
+                href="http://localhost:1313/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/"
+                href="http://localhost:1313/agal/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/correa_pobo_forte/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/correa_pobo_forte/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/correa_pobo_forte/"
+                href="http://localhost:1313/ilg/biblioteca/obras/correa_pobo_forte/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/correa_pobo_forte/"
+                href="http://localhost:1313/agal/biblioteca/obras/correa_pobo_forte/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/delphy_feminismo_materialista/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/delphy_feminismo_materialista/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/delphy_feminismo_materialista/"
+                href="http://localhost:1313/ilg/biblioteca/obras/delphy_feminismo_materialista/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/delphy_feminismo_materialista/"
+                href="http://localhost:1313/agal/biblioteca/obras/delphy_feminismo_materialista/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/einstein_por_que_socialismo/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/einstein_por_que_socialismo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/einstein_por_que_socialismo/"
+                href="http://localhost:1313/ilg/biblioteca/obras/einstein_por_que_socialismo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/einstein_por_que_socialismo/"
+                href="http://localhost:1313/agal/biblioteca/obras/einstein_por_que_socialismo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/federici_caliban-e-a-bruxa/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/ilg/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/federici_caliban-e-a-bruxa/"
+                href="http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/fernandez_a_defuncion_dos_sexos/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/fernandez_a_defuncion_dos_sexos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/fernandez_a_defuncion_dos_sexos/"
+                href="http://localhost:1313/ilg/biblioteca/obras/fernandez_a_defuncion_dos_sexos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/fernandez_a_defuncion_dos_sexos/"
+                href="http://localhost:1313/agal/biblioteca/obras/fernandez_a_defuncion_dos_sexos/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/fisher_realismo-capitalista/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/fisher_realismo-capitalista/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/fisher_realismo-capitalista/"
+                href="http://localhost:1313/ilg/biblioteca/obras/fisher_realismo-capitalista/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/fisher_realismo-capitalista/"
+                href="http://localhost:1313/agal/biblioteca/obras/fisher_realismo-capitalista/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/gil-pensar/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/gil-pensar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/gil-pensar/"
+                href="http://localhost:1313/ilg/biblioteca/obras/gil-pensar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/gil-pensar/"
+                href="http://localhost:1313/agal/biblioteca/obras/gil-pensar/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/goldman_muller_estado_e_revolucion/"
+                href="http://localhost:1313/ilg/biblioteca/obras/goldman_muller_estado_e_revolucion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/"
+                href="http://localhost:1313/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/graeber_o_amencer_do_todo/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/graeber_o_amencer_do_todo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/graeber_o_amencer_do_todo/"
+                href="http://localhost:1313/ilg/biblioteca/obras/graeber_o_amencer_do_todo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/graeber_o_amencer_do_todo/"
+                href="http://localhost:1313/agal/biblioteca/obras/graeber_o_amencer_do_todo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c2/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c2/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c2/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c2/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c3/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c3/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c3/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c3/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c4/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c4/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c4/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c4/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c5/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c5/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c5/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c5/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c5/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c6/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c6/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c6/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c6/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c6/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/harnecker_c7/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/harnecker_c7/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/harnecker_c7/"
+                href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/harnecker_c7/"
+                href="http://localhost:1313/agal/biblioteca/obras/harnecker_c7/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/kollontai_amor_vermello/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/kollontai_amor_vermello/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/kollontai_amor_vermello/"
+                href="http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/kollontai_amor_vermello/"
+                href="http://localhost:1313/agal/biblioteca/obras/kollontai_amor_vermello/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/kropotkin_apoio_mutuo/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/kropotkin_apoio_mutuo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/kropotkin_apoio_mutuo/"
+                href="http://localhost:1313/ilg/biblioteca/obras/kropotkin_apoio_mutuo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/kropotkin_apoio_mutuo/"
+                href="http://localhost:1313/agal/biblioteca/obras/kropotkin_apoio_mutuo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/kropotkin_pan/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/kropotkin_pan/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/kropotkin_pan/"
+                href="http://localhost:1313/ilg/biblioteca/obras/kropotkin_pan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/kropotkin_pan/"
+                href="http://localhost:1313/agal/biblioteca/obras/kropotkin_pan/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/lenin_marxismo_e_reformismo/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/lenin_marxismo_e_reformismo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/lenin_marxismo_e_reformismo/"
+                href="http://localhost:1313/ilg/biblioteca/obras/lenin_marxismo_e_reformismo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/lenin_marxismo_e_reformismo/"
+                href="http://localhost:1313/agal/biblioteca/obras/lenin_marxismo_e_reformismo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/lenin_o_estado_e_a_revolucion/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/lenin_o_estado_e_a_revolucion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/lenin_o_estado_e_a_revolucion/"
+                href="http://localhost:1313/ilg/biblioteca/obras/lenin_o_estado_e_a_revolucion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/lenin_o_estado_e_a_revolucion/"
+                href="http://localhost:1313/agal/biblioteca/obras/lenin_o_estado_e_a_revolucion/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/lewis_a_politica_de_todes/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/lewis_a_politica_de_todes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/lewis_a_politica_de_todes/"
+                href="http://localhost:1313/ilg/biblioteca/obras/lewis_a_politica_de_todes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/lewis_a_politica_de_todes/"
+                href="http://localhost:1313/agal/biblioteca/obras/lewis_a_politica_de_todes/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/luxemburgo_reforma_ou_revolucion/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/luxemburgo_reforma_ou_revolucion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/luxemburgo_reforma_ou_revolucion/"
+                href="http://localhost:1313/ilg/biblioteca/obras/luxemburgo_reforma_ou_revolucion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/luxemburgo_reforma_ou_revolucion/"
+                href="http://localhost:1313/agal/biblioteca/obras/luxemburgo_reforma_ou_revolucion/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/mandel_capitalismo_tardio/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/mandel_capitalismo_tardio/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/mandel_capitalismo_tardio/"
+                href="http://localhost:1313/ilg/biblioteca/obras/mandel_capitalismo_tardio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/mandel_capitalismo_tardio/"
+                href="http://localhost:1313/agal/biblioteca/obras/mandel_capitalismo_tardio/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/marx_capital/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/marx_capital/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/marx_capital/"
+                href="http://localhost:1313/ilg/biblioteca/obras/marx_capital/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/marx_capital/"
+                href="http://localhost:1313/agal/biblioteca/obras/marx_capital/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/"
+                href="http://localhost:1313/ilg/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/"
+                href="http://localhost:1313/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/perez_anarquia_relacional/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/perez_anarquia_relacional/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/perez_anarquia_relacional/"
+                href="http://localhost:1313/ilg/biblioteca/obras/perez_anarquia_relacional/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/perez_anarquia_relacional/"
+                href="http://localhost:1313/agal/biblioteca/obras/perez_anarquia_relacional/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/"
+                href="http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/ramnath_decolonizing_anarchism/"
+                href="http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/smith_desenvolvemento_desigual/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/smith_desenvolvemento_desigual/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/smith_desenvolvemento_desigual/"
+                href="http://localhost:1313/ilg/biblioteca/obras/smith_desenvolvemento_desigual/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/smith_desenvolvemento_desigual/"
+                href="http://localhost:1313/agal/biblioteca/obras/smith_desenvolvemento_desigual/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/soren_mau_compusion_muda/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/soren_mau_compusion_muda/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/soren_mau_compusion_muda/"
+                href="http://localhost:1313/ilg/biblioteca/obras/soren_mau_compusion_muda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/soren_mau_compusion_muda/"
+                href="http://localhost:1313/agal/biblioteca/obras/soren_mau_compusion_muda/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/obras/taibo_anarquismos/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/obras/taibo_anarquismos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/obras/taibo_anarquismos/"
+                href="http://localhost:1313/ilg/biblioteca/obras/taibo_anarquismos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/obras/taibo_anarquismos/"
+                href="http://localhost:1313/agal/biblioteca/obras/taibo_anarquismos/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/tematicas/federici_caliban-e-a-bruxa/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/tematicas/federici_caliban-e-a-bruxa/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/a_mesa/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/a_mesa/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/a_mesa/"
+                href="http://localhost:1313/ilg/organizacion/outras/a_mesa/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/a_mesa/"
+                href="http://localhost:1313/agal/organizacion/outras/a_mesa/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/adega/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/adega/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/adega/"
+                href="http://localhost:1313/ilg/organizacion/outras/adega/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/adega/"
+                href="http://localhost:1313/agal/organizacion/outras/adega/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/alicerce/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/alicerce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/alicerce/"
+                href="http://localhost:1313/ilg/organizacion/outras/alicerce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/alicerce/"
+                href="http://localhost:1313/agal/organizacion/outras/alicerce/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/anticapitalistas/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/anticapitalistas/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/anticapitalistas/"
+                href="http://localhost:1313/ilg/organizacion/outras/anticapitalistas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/anticapitalistas/"
+                href="http://localhost:1313/agal/organizacion/outras/anticapitalistas/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/arredista-copy/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/arredista-copy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/arredista-copy/"
+                href="http://localhost:1313/ilg/organizacion/outras/arredista-copy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/arredista-copy/"
+                href="http://localhost:1313/agal/organizacion/outras/arredista-copy/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/arredista/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/arredista/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/arredista/"
+                href="http://localhost:1313/ilg/organizacion/outras/arredista/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/arredista/"
+                href="http://localhost:1313/agal/organizacion/outras/arredista/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/assembleias/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/assembleias/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/assembleias/"
+                href="http://localhost:1313/ilg/organizacion/outras/assembleias/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/assembleias/"
+                href="http://localhost:1313/agal/organizacion/outras/assembleias/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/avante_lgbt/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/avante_lgbt/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/avante_lgbt/"
+                href="http://localhost:1313/ilg/organizacion/outras/avante_lgbt/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/avante_lgbt/"
+                href="http://localhost:1313/agal/organizacion/outras/avante_lgbt/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/bds/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/bds/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/bds/"
+                href="http://localhost:1313/ilg/organizacion/outras/bds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/bds/"
+                href="http://localhost:1313/agal/organizacion/outras/bds/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/bng/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/bng/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/bng/"
+                href="http://localhost:1313/ilg/organizacion/outras/bng/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/bng/"
+                href="http://localhost:1313/agal/organizacion/outras/bng/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/c3/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/c3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/c3/"
+                href="http://localhost:1313/ilg/organizacion/outras/c3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/c3/"
+                href="http://localhost:1313/agal/organizacion/outras/c3/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/clara_corbelhe/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/clara_corbelhe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/clara_corbelhe/"
+                href="http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/clara_corbelhe/"
+                href="http://localhost:1313/agal/organizacion/outras/clara_corbelhe/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/cmc/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/cmc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/cmc/"
+                href="http://localhost:1313/ilg/organizacion/outras/cmc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/cmc/"
+                href="http://localhost:1313/agal/organizacion/outras/cmc/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/corrente_vermella/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/corrente_vermella/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/corrente_vermella/"
+                href="http://localhost:1313/ilg/organizacion/outras/corrente_vermella/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/corrente_vermella/"
+                href="http://localhost:1313/agal/organizacion/outras/corrente_vermella/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/creba/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/creba/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/creba/"
+                href="http://localhost:1313/ilg/organizacion/outras/creba/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/creba/"
+                href="http://localhost:1313/agal/organizacion/outras/creba/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/erguer/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/erguer/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/erguer/"
+                href="http://localhost:1313/ilg/organizacion/outras/erguer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/erguer/"
+                href="http://localhost:1313/agal/organizacion/outras/erguer/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/esquerda_revolucionaria/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/esquerda_revolucionaria/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/esquerda_revolucionaria/"
+                href="http://localhost:1313/ilg/organizacion/outras/esquerda_revolucionaria/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/esquerda_revolucionaria/"
+                href="http://localhost:1313/agal/organizacion/outras/esquerda_revolucionaria/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/estreleira/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/estreleira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/estreleira/"
+                href="http://localhost:1313/ilg/organizacion/outras/estreleira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/estreleira/"
+                href="http://localhost:1313/agal/organizacion/outras/estreleira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/extintion_rebelion/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/extintion_rebelion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/extintion_rebelion/"
+                href="http://localhost:1313/ilg/organizacion/outras/extintion_rebelion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/extintion_rebelion/"
+                href="http://localhost:1313/agal/organizacion/outras/extintion_rebelion/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/fios/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/fios/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/fios/"
+                href="http://localhost:1313/ilg/organizacion/outras/fios/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/fios/"
+                href="http://localhost:1313/agal/organizacion/outras/fios/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/galiza_con_palestina/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/galiza_con_palestina/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/galiza_con_palestina/"
+                href="http://localhost:1313/ilg/organizacion/outras/galiza_con_palestina/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/galiza_con_palestina/"
+                href="http://localhost:1313/agal/organizacion/outras/galiza_con_palestina/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/galiza_nova/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/galiza_nova/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/galiza_nova/"
+                href="http://localhost:1313/ilg/organizacion/outras/galiza_nova/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/galiza_nova/"
+                href="http://localhost:1313/agal/organizacion/outras/galiza_nova/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/isca/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/isca/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/isca/"
+                href="http://localhost:1313/ilg/organizacion/outras/isca/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/isca/"
+                href="http://localhost:1313/agal/organizacion/outras/isca/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/jenin/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/jenin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/jenin/"
+                href="http://localhost:1313/ilg/organizacion/outras/jenin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/jenin/"
+                href="http://localhost:1313/agal/organizacion/outras/jenin/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/mardelumes/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/mardelumes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/mardelumes/"
+                href="http://localhost:1313/ilg/organizacion/outras/mardelumes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/mardelumes/"
+                href="http://localhost:1313/agal/organizacion/outras/mardelumes/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/mmmm/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/mmmm/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/mmmm/"
+                href="http://localhost:1313/ilg/organizacion/outras/mmmm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/mmmm/"
+                href="http://localhost:1313/agal/organizacion/outras/mmmm/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/mpi/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/mpi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/mpi/"
+                href="http://localhost:1313/ilg/organizacion/outras/mpi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/mpi/"
+                href="http://localhost:1313/agal/organizacion/outras/mpi/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/pcg/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/pcg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/pcg/"
+                href="http://localhost:1313/ilg/organizacion/outras/pcg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/pcg/"
+                href="http://localhost:1313/agal/organizacion/outras/pcg/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/pctg/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/pctg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/pctg/"
+                href="http://localhost:1313/ilg/organizacion/outras/pctg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/pctg/"
+                href="http://localhost:1313/agal/organizacion/outras/pctg/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/pfg/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/pfg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/pfg/"
+                href="http://localhost:1313/ilg/organizacion/outras/pfg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/pfg/"
+                href="http://localhost:1313/agal/organizacion/outras/pfg/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/queremos_galego/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/queremos_galego/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/queremos_galego/"
+                href="http://localhost:1313/ilg/organizacion/outras/queremos_galego/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/queremos_galego/"
+                href="http://localhost:1313/agal/organizacion/outras/queremos_galego/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/rede_palestina/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/rede_palestina/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/rede_palestina/"
+                href="http://localhost:1313/ilg/organizacion/outras/rede_palestina/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/rede_palestina/"
+                href="http://localhost:1313/agal/organizacion/outras/rede_palestina/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/refuxios_da_memoria/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/refuxios_da_memoria/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/refuxios_da_memoria/"
+                href="http://localhost:1313/ilg/organizacion/outras/refuxios_da_memoria/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/refuxios_da_memoria/"
+                href="http://localhost:1313/agal/organizacion/outras/refuxios_da_memoria/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/selg/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/selg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/selg/"
+                href="http://localhost:1313/ilg/organizacion/outras/selg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/selg/"
+                href="http://localhost:1313/agal/organizacion/outras/selg/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/umg/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/umg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/umg/"
+                href="http://localhost:1313/ilg/organizacion/outras/umg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/umg/"
+                href="http://localhost:1313/agal/organizacion/outras/umg/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/verdegaia/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/verdegaia/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/verdegaia/"
+                href="http://localhost:1313/ilg/organizacion/outras/verdegaia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/verdegaia/"
+                href="http://localhost:1313/agal/organizacion/outras/verdegaia/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/xc/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/xc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/xc/"
+                href="http://localhost:1313/ilg/organizacion/outras/xc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/xc/"
+                href="http://localhost:1313/agal/organizacion/outras/xc/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/proxectos/ceivar/</loc>
+    <loc>http://localhost:1313/agal/organizacion/proxectos/ceivar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/proxectos/ceivar/"
+                href="http://localhost:1313/ilg/organizacion/proxectos/ceivar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/proxectos/ceivar/"
+                href="http://localhost:1313/agal/organizacion/proxectos/ceivar/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/proxectos/pcoe/</loc>
+    <loc>http://localhost:1313/agal/organizacion/proxectos/pcoe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/proxectos/pcoe/"
+                href="http://localhost:1313/ilg/organizacion/proxectos/pcoe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/proxectos/pcoe/"
+                href="http://localhost:1313/agal/organizacion/proxectos/pcoe/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/decrecimento/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/decrecimento/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/decrecimento/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/decrecimento/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/decrecimento/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/decrecimento/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/introducion_a_obra_de_lenin/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/introducion_a_obra_de_lenin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/introducion_a_obra_de_lenin/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/introducion_a_obra_de_lenin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/introducion_a_obra_de_lenin/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/introducion_a_obra_de_lenin/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/resistencia_palestina/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/resistencia_palestina/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/resistencia_palestina/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/resistencia_palestina/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/resistencia_palestina/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/resistencia_palestina/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/xenero_e_disidencia/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/xenero_e_disidencia/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/xenero_e_disidencia/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/xenero_e_disidencia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/xenero_e_disidencia/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/xenero_e_disidencia/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/lingua_e_nacion/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/lingua_e_nacion/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/lingua_e_nacion/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/lingua_e_nacion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/lingua_e_nacion/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/lingua_e_nacion/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/alvari%C3%A7a/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/alvari%C3%A7a/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/alvari%C3%A7a/"
+                href="http://localhost:1313/ilg/espazos/centros/alvari%C3%A7a/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/alvari%C3%A7a/"
+                href="http://localhost:1313/agal/espazos/centros/alvari%C3%A7a/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/casa_branca/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/casa_branca/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/casa_branca/"
+                href="http://localhost:1313/ilg/espazos/centros/casa_branca/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/casa_branca/"
+                href="http://localhost:1313/agal/espazos/centros/casa_branca/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/casa_colorida/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/casa_colorida/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/casa_colorida/"
+                href="http://localhost:1313/ilg/espazos/centros/casa_colorida/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/casa_colorida/"
+                href="http://localhost:1313/agal/espazos/centros/casa_colorida/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/chave_das_noces/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/chave_das_noces/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/chave_das_noces/"
+                href="http://localhost:1313/ilg/espazos/centros/chave_das_noces/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/chave_das_noces/"
+                href="http://localhost:1313/agal/espazos/centros/chave_das_noces/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/a_corunha/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/a_corunha/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/a_corunha/"
+                href="http://localhost:1313/ilg/espazos/localidades/a_corunha/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/a_corunha/"
+                href="http://localhost:1313/agal/espazos/localidades/a_corunha/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/fenda/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/fenda/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/galleira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/galleira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/galleira/"
+                href="http://localhost:1313/ilg/espazos/centros/galleira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/galleira/"
+                href="http://localhost:1313/agal/espazos/centros/galleira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/outros-centros/gralha/</loc>
+    <loc>http://localhost:1313/agal/espazos/outros-centros/gralha/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/outros-centros/gralha/"
+                href="http://localhost:1313/ilg/espazos/outros-centros/gralha/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/outros-centros/gralha/"
+                href="http://localhost:1313/agal/espazos/outros-centros/gralha/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/hedreira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/hedreira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/hedreira/"
+                href="http://localhost:1313/ilg/espazos/centros/hedreira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/hedreira/"
+                href="http://localhost:1313/agal/espazos/centros/hedreira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/nubeira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/nubeira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/nubeira/"
+                href="http://localhost:1313/ilg/espazos/centros/nubeira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/nubeira/"
+                href="http://localhost:1313/agal/espazos/centros/nubeira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/pedreira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/pedreira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/pedreira/"
+                href="http://localhost:1313/ilg/espazos/centros/pedreira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/pedreira/"
+                href="http://localhost:1313/agal/espazos/centros/pedreira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/revolta_de_trasancos/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/revolta_de_trasancos/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/revolta_de_trasancos/"
+                href="http://localhost:1313/ilg/espazos/centros/revolta_de_trasancos/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/revolta_de_trasancos/"
+                href="http://localhost:1313/agal/espazos/centros/revolta_de_trasancos/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/revolta_do_berbes/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/revolta_do_berbes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/revolta_do_berbes/"
+                href="http://localhost:1313/ilg/espazos/centros/revolta_do_berbes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/revolta_do_berbes/"
+                href="http://localhost:1313/agal/espazos/centros/revolta_do_berbes/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/revolteira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/revolteira/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/tiradoura/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/tiradoura/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/tiradoura/"
+                href="http://localhost:1313/ilg/espazos/centros/tiradoura/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/tiradoura/"
+                href="http://localhost:1313/agal/espazos/centros/tiradoura/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/matadoiro/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/matadoiro/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/matadoiro/"
+                href="http://localhost:1313/ilg/espazos/centros/matadoiro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/matadoiro/"
+                href="http://localhost:1313/agal/espazos/centros/matadoiro/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/acefala/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/acefala/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/acefala/"
+                href="http://localhost:1313/ilg/espazos/centros/acefala/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/acefala/"
+                href="http://localhost:1313/agal/espazos/centros/acefala/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/biblioteca/itinerarios/achegamento_ao_anarquismo/</loc>
+    <loc>http://localhost:1313/agal/biblioteca/itinerarios/achegamento_ao_anarquismo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/"
+                href="http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/biblioteca/itinerarios/achegamento_ao_anarquismo/"
+                href="http://localhost:1313/agal/biblioteca/itinerarios/achegamento_ao_anarquismo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/aluande/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/aluande/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/aluande/"
+                href="http://localhost:1313/ilg/espazos/centros/aluande/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/aluande/"
+                href="http://localhost:1313/agal/espazos/centros/aluande/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/tipos/antirepresivas/</loc>
+    <loc>http://localhost:1313/agal/organizacion/tipos/antirepresivas/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/tipos/antirepresivas/"
+                href="http://localhost:1313/ilg/organizacion/tipos/antirepresivas/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/tipos/antirepresivas/"
+                href="http://localhost:1313/agal/organizacion/tipos/antirepresivas/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/ateneo_ferrolan/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/ateneo_ferrolan/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/ateneo_ferrolan/"
+                href="http://localhost:1313/ilg/espazos/centros/ateneo_ferrolan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/ateneo_ferrolan/"
+                href="http://localhost:1313/agal/espazos/centros/ateneo_ferrolan/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/xose_tarrio/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/xose_tarrio/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/buril/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/buril/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/buril/"
+                href="http://localhost:1313/ilg/espazos/centros/buril/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/buril/"
+                href="http://localhost:1313/agal/espazos/centros/buril/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/casa_obreira/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/casa_obreira/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/casa_obreira/"
+                href="http://localhost:1313/ilg/espazos/centros/casa_obreira/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/casa_obreira/"
+                href="http://localhost:1313/agal/espazos/centros/casa_obreira/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/casino_1889/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/casino_1889/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/casino_1889/"
+                href="http://localhost:1313/ilg/espazos/centros/casino_1889/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/casino_1889/"
+                href="http://localhost:1313/agal/espazos/centros/casino_1889/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/categories/</loc>
+    <loc>http://localhost:1313/agal/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/categories/"
+                href="http://localhost:1313/ilg/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/categories/"
+                href="http://localhost:1313/agal/categories/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/colectivo_terra/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/colectivo_terra/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/colectivo_terra/"
+                href="http://localhost:1313/ilg/espazos/centros/colectivo_terra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/colectivo_terra/"
+                href="http://localhost:1313/agal/espazos/centros/colectivo_terra/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/compostela/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/compostela/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/compostela/"
+                href="http://localhost:1313/ilg/espazos/localidades/compostela/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/compostela/"
+                href="http://localhost:1313/agal/espazos/localidades/compostela/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/outras/</loc>
+    <loc>http://localhost:1313/agal/organizacion/outras/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/outras/"
+                href="http://localhost:1313/ilg/organizacion/outras/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/outras/"
+                href="http://localhost:1313/agal/organizacion/outras/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/escarnio/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/escarnio/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/faisca/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/faisca/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/ferrol/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/ferrol/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/ferrol/"
+                href="http://localhost:1313/ilg/espazos/localidades/ferrol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/ferrol/"
+                href="http://localhost:1313/agal/espazos/localidades/ferrol/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/funda%C3%A7om_artabria/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/funda%C3%A7om_artabria/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/funda%C3%A7om_artabria/"
+                href="http://localhost:1313/ilg/espazos/centros/funda%C3%A7om_artabria/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/funda%C3%A7om_artabria/"
+                href="http://localhost:1313/agal/espazos/centros/funda%C3%A7om_artabria/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/fuscalho/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/fuscalho/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/fuscalho/"
+                href="http://localhost:1313/ilg/espazos/centros/fuscalho/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/fuscalho/"
+                href="http://localhost:1313/agal/espazos/centros/fuscalho/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/gomes_gaioso/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/gomes_gaioso/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/gomes_gaioso/"
+                href="http://localhost:1313/ilg/espazos/centros/gomes_gaioso/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/gomes_gaioso/"
+                href="http://localhost:1313/agal/espazos/centros/gomes_gaioso/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/lugo/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/lugo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/lugo/"
+                href="http://localhost:1313/ilg/espazos/localidades/lugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/lugo/"
+                href="http://localhost:1313/agal/espazos/localidades/lugo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/madia_leva/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/madia_leva/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/madia_leva/"
+                href="http://localhost:1313/ilg/espazos/centros/madia_leva/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/madia_leva/"
+                href="http://localhost:1313/agal/espazos/centros/madia_leva/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/tipos/mocidade/</loc>
+    <loc>http://localhost:1313/agal/organizacion/tipos/mocidade/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/tipos/mocidade/"
+                href="http://localhost:1313/ilg/organizacion/tipos/mocidade/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/tipos/mocidade/"
+                href="http://localhost:1313/agal/organizacion/tipos/mocidade/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/fervedoiro/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/fervedoiro/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/fervedoiro/"
+                href="http://localhost:1313/ilg/espazos/centros/fervedoiro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/fervedoiro/"
+                href="http://localhost:1313/agal/espazos/centros/fervedoiro/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/pichel/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/pichel/</loc>
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/ourense/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/ourense/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/ourense/"
+                href="http://localhost:1313/ilg/espazos/localidades/ourense/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/ourense/"
+                href="http://localhost:1313/agal/espazos/localidades/ourense/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/pontevedra/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/pontevedra/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/pontevedra/"
+                href="http://localhost:1313/ilg/espazos/localidades/pontevedra/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/pontevedra/"
+                href="http://localhost:1313/agal/espazos/localidades/pontevedra/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/organizacion/tipos/sindicato/</loc>
+    <loc>http://localhost:1313/agal/organizacion/tipos/sindicato/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/organizacion/tipos/sindicato/"
+                href="http://localhost:1313/ilg/organizacion/tipos/sindicato/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/organizacion/tipos/sindicato/"
+                href="http://localhost:1313/agal/organizacion/tipos/sindicato/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/tags/</loc>
+    <loc>http://localhost:1313/agal/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/tags/"
+                href="http://localhost:1313/ilg/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/tags/"
+                href="http://localhost:1313/agal/tags/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/vagalume/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/vagalume/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/centros/vagalume/"
+                href="http://localhost:1313/ilg/espazos/centros/vagalume/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/centros/vagalume/"
+                href="http://localhost:1313/agal/espazos/centros/vagalume/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/localidades/vigo/</loc>
+    <loc>http://localhost:1313/agal/espazos/localidades/vigo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:60906/ilg/espazos/localidades/vigo/"
+                href="http://localhost:1313/ilg/espazos/localidades/vigo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:60906/agal/espazos/localidades/vigo/"
+                href="http://localhost:1313/agal/espazos/localidades/vigo/"
                 />
   </url><url>
-    <loc>http://localhost:60906/agal/espazos/centros/xebra/</loc>
+    <loc>http://localhost:1313/agal/espazos/centros/xebra/</loc>
   </url>
 </urlset>
