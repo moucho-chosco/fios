@@ -9,15 +9,14 @@ cor: "#b6c8e8"
 centro: true
 localidade: "Vigo"
 location:
-  lat: 42.23282
-  lon: -8.72264
+  lat: 42.22973845758315
+  lon: -8.717856910972488
 type: "centro_social"
 gotoCoords:
   lat: 42.240
   lon: -8.735
 gotoZoom: 13
 ---
-[A Nubeira é um novo CSA em Vigo. A sua direçom concreta ainda nom foi publicada]
 
 Contam as malas línguas que existe umha mulher grande e brava, vestida com peles negras e acompanhada de cobras e lagartos. Um ser capaz de provocar tormentas e dirigir os raios, invocar a treboada e a néboa, someter a choiva e o lóstrego à sua vontade… Umha moradora dos aires, umha peregrina das nubes, umha força criadora e destrutora do mundo. Dim que sae polas manhãs das ferrerias para cabalgar os ceos e que, às vezes, mui de quando em quando, baixa à terra para ver o resultado das suas façanhas.
 
