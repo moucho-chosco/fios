@@ -25,7 +25,7 @@
               {{ end }}
             </select>
             <select class="filter">
-              <option value="galiza,42.7751,-8.0339,7">🏷️ Qualquer etiqueta</option>
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
               {{ range where .Site.RegularPages ".Params.etiqueta" true }}
                 <option value="">🏷️ {{ .Title }}</option>
               {{ end }}
@@ -57,6 +57,9 @@
       
 
       <div id="contido-espazos-info">
+        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+          ⚠️ O contido desta secçom mostra-se a modo de exemplo técnico. Os espaços representados e o mapa podem mudar en funçom do feedback recibido.
+        </div>
         <p id="mensaxe-sen-resultados" style="display: none;">
           Nom se atoparom espaços coincidentes nesta área
           </p>
@@ -342,6 +345,9 @@ function selectCentro(espazo) {
   const tarxetasContainer = document.getElementById("tarxetas-centros");
   tarxetasContainer.style.display = "none";
 
+  const warningInfoorgas = document.getElementById("warning-infoorgas");
+  warningInfoorgas.style.display = "none";
+
   // 3. Mostrar a información do centro
   const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
   const infoContainer = document.getElementById("info-espazo");
@@ -400,6 +406,8 @@ function mostrarTarxetas() {
   const infoContainer = document.getElementById("info-espazo");
   const bounds = map.getBounds(); // Obter os límites visibles do mapa
   const botonVolver = document.getElementById("volver-galiza");
+  const warningInfoorgas = document.getElementById("warning-infoorgas");
+  warningInfoorgas.style.display = "block";
 
   // Filtrar os espazos dentro dos límites do mapa
   const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");

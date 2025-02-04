@@ -168,6 +168,7 @@
             
             <button class="toggle-button" onclick="toggleSidebar()"> 
                 <img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">
+                contraer
             </button>
         </nav>
     </div>
@@ -220,7 +221,7 @@
                     
                   </select>
                   <select class="filter">
-                    <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+                    <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
                     
                       <option value="">🏷️ Anarquismo</option>
                     
@@ -239,20 +240,6 @@
               </p>
               <div id="tarxetas-centros" class="tarxetas-container" style="display:grid;">
                 
-                  <div class="tarxeta-centro" data-key="evento3">
-                    <div class="franxa-cor" style="background: ;"></div>
-                    <h3>proba</h3>
-                    <span class="localidade">📍Sen Localidade</span>
-                    <p>PROBAAA</p>
-                  </div>
-                
-                  <div class="tarxeta-centro" data-key="evento4">
-                    <div class="franxa-cor" style="background: ;"></div>
-                    <h3>Asemblea Xeral 4</h3>
-                    <span class="localidade">📍Sen Localidade</span>
-                    <p>Asemblea para definir as prioridades do trimestre.</p>
-                  </div>
-                
               </div>
               <button id="volver-galiza" class="boton-atras" style="display: block;">←</button>      
               <div id="imaxe-cabeceira-container">
@@ -268,10 +255,10 @@
     
 
     <script>
-        console.log("Número de páxinas de eventos encontradas: 3");
+        console.log("Número de páxinas de eventos encontradas: 0");
 
         
-        window.calendarEvents = [{"description":"PROBAAA","start":"2025-01-24T18:00:00","title":"proba","url":"http://localhost:1313/ilg/calendario/eventos/evento3/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Asemblea Xeral 4","url":"http://localhost:1313/ilg/calendario/eventos/evento4/"},{"description":"Asemblea para definir as prioridades do trimestre.","start":"2024-11-24T18:00:00","title":"Encontro formativo","url":"http://localhost:1313/ilg/calendario/eventos/evento2/"}];
+        window.calendarEvents = [];
     </script>
 
     <script src="/scripts/calendario.js"></script>

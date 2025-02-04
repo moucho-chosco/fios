@@ -8,4 +8,6 @@ weight = 1
 
 # Podcast
 
-Nesta secçom explorarám-se os contidos publicados do podcast e a produçom audiovisual.
+<div id="warning-infoorgas" class="warning" style="margin:0%;margin-top:0;margin-bottom:3%; font-size:14px;">
+⚠️ O contido desta secçom ainda nom foi elaborado. Nesta secçom explorarám-se os contidos publicados do podcast e a produçom audiovisual.
+</div>

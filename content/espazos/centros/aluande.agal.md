@@ -16,6 +16,8 @@ gotoCoords:
   lon: -8.544
 gotoZoom: 14
 ---
+<div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios espaços os que decidam o contido de cada página.</div>
+
 Um espaço afrocentrado e antirracista, que reconhece e celebra as transexistências e a transcestralidade. Dedicamos-nos a valorizar e manter viva a cultura de matriz africana e a acolher e trançar saberes, vivências e resistências desde as margens.
 
 <details>

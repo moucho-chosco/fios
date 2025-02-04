@@ -3,223 +3,472 @@
   <div id="home-window-container" class="window-container">
     <div id="main-home-window" class="window">
       <div class="contido">
-        <!-- Div onde se pintará o gráfico -->
-        <div id="container" style="width: 50%; height: 80vh; border: 0px solid #ccc;"></div>
+        <div id="container" style="width: 49%; height: 80vh; border: 0px solid #ccc; margin-left: 10px;margin-top: -10px !important;"></div>
 
-        <!-- 1) Cargamos a libraría G6 (UMD) dende o CDN -->
+        <!-- Área para mostrar coordenadas relativas -->
+        <div id="coordenadas-info" style="margin-top: 20px; display: none;">
+          <h3>Coordenadas relativas</h3>
+          <pre id="coordenadas-texto">Selecciona un nodo para ver as súas coordenadas.</pre>
+        </div>
+
         <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
 
-        <!-- 2) Script co código do TreeGraph con datos "partidos e organizacións" -->
         <script>
-          // Exemplo de datos xerarquizados inventados
-          const data = {
-            id: 'Organizaçons',
-            color: '#E7E7E7',
-            children: [
-              {
-                id: 'Nacionalismo galego',
-                color: '#AAC2F3',
-                children: [
-                  { id: 'ANOVA' },
-                  { id: 'CIG' },
-                  { id: 'CUT' },
-                  { id: 'Erguer' },
-                  {
-                    id: 'BNG',
-                    children: [
-                      { id: 'FOG' },
-                      { id: 'Alicerce' },
-                      { id: 'Galiza Nova' },
-                      { id: 'UPG',
-                        children: [{id: 'UMG'}],
-                      },
-                      { id: 'Mv. Arredista',
-                        children: [{id: 'Isca!'}],
-                      },
-                    ],
-                  },
-                ],
-              },
-              {
-                id: 'Independentismo',
-                color: '#7294DE',
-                children: [
-                  { id: 'Assembleias A. \nIndependentistas' },
-                  { id: 'MPI' },
-                  { id: 'Ceivar' },
-                  { id: 'Estreleira' }
-                ],
-              },
-              {
-                id: 'Anarquismo',
-                color: '#C0C0C0',
-                children: [
-                  { id: 'SELG'},
-                  { id: 'Refuxios da Memoria'},
-                  { id: 'Solidariedade\nObreira'},
-                  { id: 'CGT'},
-                  { id: 'CNT'},
-                  { id: 'Ardora'},
-                ],
-              },
-              {
-                id: 'MS',
-                color: '#FC9494',
-                children: [
-                  {id: 'Creba Socialista'},
-                ],
-              },
-              {
-                id: 'PCTG',
-                color: '#FC9494',
-                children: [
-                  {id: 'CXC'}
-                ],
-              },
-              {
-                id: 'PCOE',
-                color: '#FC9494',
-              },
-              {
-                id: 'PCG',
-                color: '#FC9494',
-                children: [
-                  {id: 'XC'}
-                ],
-              },
-              {
-                id: '4ª Internacional',
-                color: '#FC9494',
-                children: [
-                  {id: 'Esquerda\nRevolucionaria'},
-                  {id: 'Corrente Vermella'},
-                  {id: 'Anticapitalistas'},
-                ],
-              },
-              {
-                id: 'Feminismo',
-                color: '#D3A8D9',
-                children: [
-                  {id: 'MMMM'},
-                  {id: 'PFG'},
-                ],
-              },
-              {
-                id: 'Ecologismo',
-                color: '#B2DC87',
-                children: [
-                  {id: 'Extintion Rebelion'},
-                  {id: 'Futuro vexetal'},
-                  {id: 'ADEGA'},
-                ],
-              },
-              {
-                id: 'Internacionalismo',
-                children: [
-                  {id: 'Asociación Jenin'},
-                  {id: 'BDS'},
-                  {id: 'AIC'},
-                  {id: 'Mar de Lumes'},
-                  {id: 'Galiza con Palestina'},
-                ],
-              },
-            ],
-          };
+          // 1. XENERAR DATOS CON HUGO
+          {{ $nodes := slice }}
+          {{ $edges := slice }}
+          {{ $contentMap := dict }}
+          {{ $processedEdges := dict }}
+          {{ $section := .Site.GetPage "section" "organizacion/outras" }}
+          {{ $allPages := $section.RegularPages }}
 
-          function assignBranchColors(node, inheritedColor = '#C6E5FF') {
-            // Asegúrate de que o nodo teña unha cor (propia ou herdada)
-            node.color = node.color || inheritedColor;
-          
-            // Se o nodo ten fillos, aplícales a cor recursivamente
-            if (node.children) {
-              node.children.forEach((child) => {
-                assignBranchColors(child, node.color); // O fillo herda a cor do pai
-              });
-            }
-          }
-          
+          // Creamos nodos
+          {{ range $allPages }}
+            {{ $node := dict 
+              "id" .Params.nome
+              "key" .File.BaseFileName       
+              "color" .Params.color
+              "url" .RelPermalink
+              "imaxe" (.Params.imaxe | absURL)
+              "logo" (.Params.logo | absURL)
+              "nome" .Params.nome
+              "nome_extendido" .Params.nome_extendido
+              "size" 26
+              "x" .Params.x
+              "y" .Params.y
+            }}
+            {{ $nodes = $nodes | append $node }}
+            {{ $contentMap = merge $contentMap (dict .Params.nome .Content) }}
+          {{ end }}
 
-          // Asignamos cores a cada rama
-          assignBranchColors(data, '#C6E5FF');
+          // Creamos enlaces
+          {{ range $allPages }}
+            {{ $source := .Params.nome }}
+            {{ range .Params.children }}
+              {{ $target := . }}
+              {{ $edgeKey := printf "%s-%s" $source $target }}
+              {{ if and (where $allPages ".Params.nome" "==" $target) (not (isset $processedEdges $edgeKey)) }}
+                {{ $edge := dict 
+                  "source" $source
+                  "target" $target
+                  "id" $edgeKey
+                }}
+                {{ $edges = $edges | append $edge }}
+                {{ $processedEdges = merge $processedEdges (dict $edgeKey true) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
 
-          console.log(data);
-
-          // Creamos a instancia de TreeGraph
+          // 2. PASAR DATOS A JAVASCRIPT
+          const nodes = {{ $nodes | jsonify | safeJS }};
+          const edges = {{ $edges | jsonify | safeJS }};
+          const contentMap = {{ $contentMap | jsonify | safeJS }};
           const container = document.getElementById('container');
-          const width = container.scrollWidth;
-          const height = container.scrollHeight || 600;
 
-          const graph = new G6.TreeGraph({
-            container: 'container',
-            width,
-            height,
+          // Converter coordenadas relativas a píxeles
+          nodes.forEach(node => {
+            node.x = node.x * container.scrollWidth;
+            node.y = node.y * container.scrollHeight;
+          });
+
+          // 3. CONFIGURACIÓN DO GRAFO (MODIFICADO)
+          const graph = new G6.Graph({
+            container: container,
+            width: container.scrollWidth,
+            height: container.scrollHeight || 600,
             pixelRatio: 2,
-            linkCenter: true,
-            minZoom: 0.8, // Zoom mínimo
-            maxZoom: 2,   // Zoom máximo
-            // Modos: collapse-expand (para abrir/pechar subárbores),
-            // drag-canvas e zoom-canvas
             modes: {
-              default: [
-                {
-                  type: 'collapse-expand',
-                  onChange: (item, collapsed) => {
-                    const dataModel = item.get('model').data;
-                    dataModel.collapsed = collapsed;
-                    return true;
-                  },
-                },
-                'drag-canvas',
-                'zoom-canvas',
-              ],
+              default: ['drag-canvas', 'zoom-canvas', 'drag-node']
             },
-            // Estilo de nó por defecto
+            layout: null,
             defaultNode: {
-              size: 30,
+              type: 'circle',
               style: {
-                fill: '#FFFFFF',
-                stroke: '#5B8FF9',
+                fill: '#C6E5FF',
+                stroke: '#FFFFFF',
+                lineWidth: 2
               },
+              labelCfg: {
+                style: {
+                  fontSize: 10,
+                  fill: '#333',
+                  fontWeight: 500,
+                }
+              }
             },
-            // Estilo de aresta por defecto
             defaultEdge: {
+              type: 'line',
               style: {
-                stroke: '#A3B1BF',
+                stroke: '#AAB7C4',
+                lineWidth: 1,
+                opacity: 0.8
               },
+              curveOffset: (d) => {
+                return d.index % 2 === 0 ? 10 : -10;
+              }
+            }
+          });
+          // 5. PERSONALIZAR ETIQUETAS DOS NODOS
+          graph.node(node => ({
+            label: `${node.id}`,
+            style: {
+              fill: node.color || '#C6E5FF',
+              stroke: '#FFFFFF'
             },
-            // Layout "dendrogram" en modo radial
-            layout: {
-              type: 'dendrogram',
-              direction: 'LR',    // A dirección base (non é tan relevante se radial=true)
-              nodeSep: 30,
-              rankSep: 80,
-              radial: true,       // True => dispón os nodos en "anéis"
-            },
+            labelCfg: {
+              style: {
+                fontSize: 12,
+                fill: '#333',
+                fontWeight: 500,
+              }
+            }
+          }));
+
+          // 6. MANEXO DE EVENTOS
+          let selectedNode = null;
+
+          // Actualizar coordenadas ao mover un nodo
+          graph.on('afterdragnode', (e) => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
           });
 
-          // Etiqueta de cada nó = o seu id
-          graph.node((node) => {
-            return {
-              label: node.id,
-              style: {
-                fill: node.color || '#FFFFFF', // Cor predeterminada no caso de erro
-                stroke: '#5B8FF9',
-              },
-            };
+          // Mostrar coordenadas ao facer clic nun nodo
+          graph.on('node:click', e => {
+            const node = e.item;
+            const model = node.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+            document.getElementById('coordenadas-texto').innerText = `Nodo: ${model.id}\nX: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)\nY: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)`;
+
+            // Resetear todos os nodos
+            graph.getNodes().forEach(n => {
+              graph.clearItemStates(n);
+              graph.updateItem(n, {
+                size: 26,
+                labelCfg: { style: { fontWeight: 500 , fontSize: 12} }
+              });
+            });
+
+            // Destacar nodo seleccionado
+            graph.updateItem(node, {
+              size: 30,
+              labelCfg: { style: { fontWeight: 'bold' , fontSize: 12} }
+            });
+
+            actualizarContido(node);
+            ocultar_tarxetas();
           });
-          
-          // Cargamos os datos, renderizamos e axustamos a vista
-          graph.data(data);
+
+          // 8. INICIALIZACIÓN
+          graph.data({ nodes, edges });
           graph.render();
           graph.fitView();
+          graph.refresh();
+
+          // 9. MANEXO DE REDIMENSIÓN
+          window.addEventListener('resize', () => {
+            if (!graph || graph.get('destroyed')) return;
+            graph.changeSize(container.scrollWidth, container.scrollHeight);
+            graph.fitView();
+          });
+
+          // Debug: Ver datos en consola
+          console.log('Nodos:', nodes);
+          console.log('Enlaces:', edges);
+     
+            
+          precargarImaxes(nodes);
+
+          
+          document.addEventListener("DOMContentLoaded", () => {
+
+            precargarImaxes(nodes);
+
+            // INICIALIZAR TARXETAS
+
+            mostrarTarxetas();
+            // Evento para seleccionar un centro ao facer clic nunha tarxeta
+            document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
+              tarxeta.addEventListener("click", () => {
+                const key = tarxeta.getAttribute("data-key");
+                const colectivo = nodes.find(e => e.key === key);
+          
+                if (colectivo) {
+                  selectColectivo(colectivo);
+                }
+              });
+            });
+
+            // FRECHA ATRÁS
+
+            const botonVolver = document.getElementById("volver-galiza");
+            botonVolver.addEventListener("click", () => {
+              mostrarTarxetas();
+              deselectMarkers();
+            });
+            
+            // BARRA DE BÚSQUEDA
+
+            const barraBusqueda = document.getElementById("busqueda-centros");
+            const tarxetasContainer = document.getElementById("tarxetas-centros");
+            const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+          
+            barraBusqueda.addEventListener("input", () => {
+              mostrarTarxetas();
+            });
+
+            // SELCCIONAR COLECTIVOS
+
+            // Evento para seleccionar un colectivo ao facer clic nunha tarxeta
+            document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
+              tarxeta.addEventListener("click", () => {
+                const key = tarxeta.getAttribute("data-key");
+                const colectivo = nodes.find(e => e.key === key);
+                selectColectivo(colectivo)
+              });
+            });
+
+          });
+
+          function actualizarContido(node) {
+            const model = node.getModel();
+            const dynamicContent = contentMap[model.id] || `<p>Sen contido dispoñible para ${model.nome}</p>`;
+            
+            document.getElementById('imaxe-cabeceira-container').innerHTML = `
+              <div class="imaxe-fondo">
+                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="fondo-espazo">` : ''}
+              </div>`;
+              
+
+            document.getElementById('info-orga').innerHTML = `
+            
+              <div class="header-espazo">
+                <img src="${model.logo}" alt="${model.title} logo" class="logo-espazo">
+                <h2 class="titulo-espazo">${model.nome}</h2>
+                ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
+              </div>
+              <div id="contido-dinamico">
+                ${dynamicContent}
+              </div>`;
+          }
+          
+          function getCoordenadasRelativas(node) {
+            const container = document.getElementById('container');
+            const xRel = (node.x / container.scrollWidth).toFixed(2); // 2 decimais
+            const yRel = (node.y / container.scrollHeight).toFixed(2);
+            return { x: xRel, y: yRel };
+          }
+
+          function selectColectivo(colectivo) {
+            // 1. Buscar no grafo o “node item” (o obxecto interno de G6)
+            const nodeItem = graph.findById(colectivo.id);
+            
+            if (!nodeItem) {
+              console.warn('Non se atopou no grafo o nodo con ID:', colectivo.id);
+              return;
+            }
+          
+            // 2. Obter o modelo con nodeItem.getModel()
+            const model = nodeItem.getModel();
+            const coordenadas = getCoordenadasRelativas(model);
+          
+            // 3. Mostrar coordenadas (se queres)
+            document.getElementById('coordenadas-texto').innerText = `
+              Nodo: ${model.id}
+              X: ${coordenadas.x} (${(coordenadas.x * 100).toFixed(0)}%)
+              Y: ${coordenadas.y} (${(coordenadas.y * 100).toFixed(0)}%)
+            `;
+          
+            // 4. Deseleccionar todos os nodos
+            graph.getNodes().forEach(n => {
+              graph.clearItemStates(n);
+              graph.updateItem(n, {
+                size: 26,
+                labelCfg: { style: { fontWeight: 500 } }
+              });
+            });
+          
+            // 5. Destacar o nodo seleccionado
+            graph.updateItem(nodeItem, {
+              size: 30,
+              labelCfg: { style: { fontWeight: 'bold' } }
+            });
+          
+            // 6. Actualizar contido no panel lateral
+            actualizarContido(nodeItem);
+            ocultar_tarxetas();
+          }
+          
+            function mostrarTarxetas() {
+              const barraBusqueda = document.getElementById("busqueda-centros");
+              const termo = barraBusqueda ? barraBusqueda.value.toLowerCase() : "";
+              const tarxetasContainer = document.getElementById("tarxetas-centros");
+              const mensaxe = document.getElementById("mensaxe-sen-resultados");
+              const filtros = document.getElementById("filtros-espazos-box");
+              const contido = document.getElementById("contido-especifico");
+              const warningInfoorgas = document.getElementById("warning-infoorgas");
+              if (filtros) filtros.style.display = "block";
+              if (contido) contido.style.display = "none";
+              if (warningInfoorgas) warningInfoorgas.style.display = "block";
+
+              // Todas as tarxetas
+              const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");
+              let visibleCount = 0;
+
+              tarxetas.forEach(tarxeta => {
+                const titulo = tarxeta.querySelector("h3")?.textContent.toLowerCase() || "";
+                const descricion = tarxeta.querySelector("p")?.textContent.toLowerCase() || "";
+
+                if (titulo.includes(termo) || descricion.includes(termo)) {
+                  tarxeta.style.display = "block";
+                  visibleCount++;
+                } else {
+                  tarxeta.style.display = "none";
+                }
+              });
+
+              if (mensaxe) {
+                mensaxe.style.display = (visibleCount === 0) ? "block" : "none";
+              }
+
+              // Aseguramos que se vexan as tarxetas
+              tarxetasContainer.style.display = "grid";
+            }
+          
+          function deselectMarkers() {
+            graph.getNodes().forEach(n => {
+              graph.clearItemStates(n);
+              graph.updateItem(n, {
+                size: 26,
+                labelCfg: { style: { fontWeight: 500 } }
+              });
+            });
+          }
+
+          function ocultar_tarxetas() {
+            const contido = document.getElementById("contido-especifico");
+            const tarxetasContainer = document.getElementById("tarxetas-centros");
+            const warningInfoorgas = document.getElementById("warning-infoorgas");
+            const filtros = document.getElementById("filtros-espazos-box");
+            if (contido) contido.style.display = "block";
+            if (tarxetasContainer) tarxetasContainer.style.display = "none";
+            if (filtros) filtros.style.display = "none";
+            if (warningInfoorgas) warningInfoorgas.style.display = "none";
+
+            // 7. (Opcional) Mostrar o botón de “Volver”
+            const botonVolver = document.getElementById("volver-galiza");
+            if (botonVolver) botonVolver.style.display = "block";
+          }
+          
+          // Precargar imaxes de logos e fondos
+          function precargarImaxes(nodes) {
+            nodes.forEach(node => {
+              // Precargar logo
+              if (node.logo && node.logo.trim() !== '') {
+                new Image().src = node.logo;
+              }
+              
+              // Precargar imaxe de fondo
+              if (node.imaxe && node.imaxe.trim() !== '') {
+                new Image().src = node.imaxe;
+              }
+            });
+          }
+        
         </script>
       </div>
     </div>
     <div id="info-window" class="window">
-      <div class="contido">
-        {{ .Content }}
+      <div id="filtros-espazos-box">
+        <div id="filtros-espazos" class="barra-superior">
+          <div id="filters">
+            <select class="filter">
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Qualquer tipo</option>
+              {{ range where .Site.RegularPages ".Params.tipo_orga" true }}
+                <option value="">🏷️ {{ .Title }}</option>
+              {{ end }}
+            </select>
+          </div>
+          
+  
+          <div id="barra-busqueda-calendario" class="barra-busqueda">
+            <input type="text" id="busqueda-centros" placeholder="Buscar colectivos..." />
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="contido-orgas-info">
+        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+          ⚠️ O contido desta secçom mostra-se a modo de exemplo técnico. As organizaçons representadas e o mapa podem mudar en funçom do feedback recibido. A intençom é engadir tamém informaçom sobre sindicatos, editoriais, assembleias e coletivos locais, e outros coletivos anti-capitalistas. 
+        </div>
+        <p id="mensaxe-sen-resultados" style="display: none;">
+          Nom se atopárom coletivos coincidentes
+        </p>
+          <div id="tarxetas-centros" class="tarxetas-container" style="display: none;">
+            {{ range shuffle (where .Site.RegularPages ".Params.clase" "colectivo") }}
+              <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+                <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
+                <h3>{{ .Params.nome }}</h3>
+                <p>{{ .Params.nome_extendido }}</p>
+              </div>
+            {{ end }}
+          </div>
+          <button id="volver-galiza" class="boton-atras" style="display: block;">
+            <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
+          </button> 
+          <div id="contido-especifico">
+            <div id="imaxe-cabeceira-container">
+            </div>
+            <!-- Contido dinámico -->
+            <div id="info-orga">
+              <div id="contido-dinamico">
+                <!-- O contido dinámico do espazo seleccionado irá aquí -->
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
 </div>
 {{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

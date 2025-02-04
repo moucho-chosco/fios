@@ -10,8 +10,8 @@ tematicas:
     - economia
     - marx
     - clasico
+    - capitalismo
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/marx_o_capital.jpeg" # Opcional, imaxe da portada
-etiquetas: ["socialismo", "Chile"]
 link_externo: "a"
 ---

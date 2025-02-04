@@ -25,7 +25,7 @@
               {{ end }}
             </select>
             <select class="filter">
-              <option value="galiza,42.7751,-8.0339,7">🏷️ Calquera etiqueta</option>
+              <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
               {{ range where .Site.RegularPages ".Params.etiqueta" true }}
                 <option value="">🏷️ {{ .Title }}</option>
               {{ end }}
@@ -57,30 +57,33 @@
       
 
       <div id="contido-espazos-info">
+        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+          ⚠️ O contido desta sección móstrase a modo de exemplo técnico. Os espazos representados e o mapa poden mudar en función do feedback recibido.
+        </div>
         <p id="mensaxe-sen-resultados" style="display: none;">
           Non se atoparon espazos coincidentes nesta área
-          </p>
-          <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
-            {{ range shuffle (where .Site.RegularPages ".Params.centro" true) }}
-              <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
-                <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
-                <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
-                <h3>{{ .Title }}</h3>
-                <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
-                <p>{{ .Params.description }}</p>
-              </div>
-            {{ end }}
-          </div>
-          <button id="volver-galiza" class="boton-atras" style="display: block;">
-            <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
-          </button> 
-          <div id="imaxe-cabeceira-container">
-          </div>
-          <div id="info-espazo">
-            <div id="contido-dinamico">
-              <!-- O contido dinámico do espazo seleccionado irá aquí -->
+        </p>
+        <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
+          {{ range shuffle (where .Site.RegularPages ".Params.centro" true) }}
+            <div class="tarxeta-centro" data-key="{{ .File.BaseFileName }}">
+              <div class="franxa-cor" style="background: {{ .Params.cor }};"></div>
+              <img src="{{ .Params.logo }}" alt="Logo de {{ .Title }}" class="logo-tarxeta">
+              <h3>{{ .Title }}</h3>
+              <span class="localidade">📍{{ .Params.localidade | default "Sen Localidade" }}</span>
+              <p>{{ .Params.description }}</p>
             </div>
+          {{ end }}
+        </div>
+        <button id="volver-galiza" class="boton-atras" style="display: block;">
+          <img src="/images/elementos/frecha_atras.svg" alt="Frecha atrás" width="16" height="16">
+        </button> 
+        <div id="imaxe-cabeceira-container">
+        </div>
+        <div id="info-espazo">
+          <div id="contido-dinamico">
+            <!-- O contido dinámico do espazo seleccionado irá aquí -->
           </div>
+        </div>
       </div>
       
 
@@ -278,7 +281,7 @@ function updateLastLocationAndZoom() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarTarxetas()
+  mostrarTarxetas();
 
   // Evento para seleccionar un centro ao facer clic nunha tarxeta
   document.querySelectorAll(".tarxeta-centro").forEach((tarxeta) => {
@@ -367,6 +370,9 @@ function selectCentro(espazo) {
   const filtros = document.getElementById("filtros-espazos-box");
   filtros.style.display = "none";
 
+  const warningInfoorgas = document.getElementById("warning-infoorgas");
+  warningInfoorgas.style.display = "none";
+
   // 4. Colorear o marcador do centro seleccionado
   deselectMarkers(); // Asegurarse de que todos os marcadores estean deseleccionados
   newMarker = leafletMarkers.find(m => m.espazo.key === espazo.key);
@@ -400,6 +406,8 @@ function mostrarTarxetas() {
   const infoContainer = document.getElementById("info-espazo");
   const bounds = map.getBounds(); // Obter os límites visibles do mapa
   const botonVolver = document.getElementById("volver-galiza");
+  const warningInfoorgas = document.getElementById("warning-infoorgas");
+  if (warningInfoorgas) warningInfoorgas.style.display = "block";
 
   // Filtrar os espazos dentro dos límites do mapa
   const tarxetas = tarxetasContainer.querySelectorAll(".tarxeta-centro");

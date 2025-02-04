@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fios | Organizaçom on fios</title>
+    <link>https://fios.netlify.app/agal/organiza%C3%A7om/</link>
+    <description>Recent content in fios | Organizaçom on fios</description>
+    <generator>Hugo</generator>
+    <language>agal</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fios.netlify.app/agal/organiza%C3%A7om/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anti-repressivas</title>
+      <link>https://fios.netlify.app/agal/organizacion/tipos/antirepresivas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fios.netlify.app/agal/organizacion/tipos/antirepresivas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Mocidade</title>
+      <link>https://fios.netlify.app/agal/organizacion/tipos/mocidade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fios.netlify.app/agal/organizacion/tipos/mocidade/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Sindicatos</title>
+      <link>https://fios.netlify.app/agal/organizacion/tipos/sindicato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fios.netlify.app/agal/organizacion/tipos/sindicato/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

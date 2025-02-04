@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on fios</title>
+    <link>https://fios.netlify.app/ilg/tags/</link>
+    <description>Recent content in Tags on fios</description>
+    <generator>Hugo</generator>
+    <language>ilg</language>
+    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <atom:link href="https://fios.netlify.app/ilg/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blue</title>
+      <link>https://fios.netlify.app/ilg/tags/blue/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>https://fios.netlify.app/ilg/tags/blue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Green</title>
+      <link>https://fios.netlify.app/ilg/tags/green/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>https://fios.netlify.app/ilg/tags/green/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red</title>
+      <link>https://fios.netlify.app/ilg/tags/red/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>https://fios.netlify.app/ilg/tags/red/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chile</title>
+      <link>https://fios.netlify.app/ilg/tags/chile/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>https://fios.netlify.app/ilg/tags/chile/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Socialismo</title>
+      <link>https://fios.netlify.app/ilg/tags/socialismo/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>https://fios.netlify.app/ilg/tags/socialismo/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

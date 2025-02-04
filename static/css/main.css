@@ -63,6 +63,19 @@ p {
     margin-top: 12px; /* Espazo antes de cada sección */
   }
 
+.warning {
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    padding: 8px;
+    background-color: #ececec;
+    border-radius: 5px;
+}
+
+.warning-white {
+    background-color: #ffffff !important;
+    font-size: 13px;
+}
+
 /* -------------------------
    ORTOGRAFIA
 ------------------------- */
@@ -74,6 +87,8 @@ p {
     cursor: grab;
     width: 150px;
     text-align: left;
+    transition: opacity 0.3s;
+
 }
 
 #langSwitcher a {
@@ -272,7 +287,7 @@ p {
 }
 
 .sidebar-container.full-mode .sidebar ul li {
-    ackground-color: #ffffff;
+    background-color: #ffffff;
     border-radius: 4px;
     transition: background-color 0.2s;
     transition: opacity 0.3s;
@@ -288,14 +303,14 @@ p {
 .toggle-button {
     background: none;
     border: none;
-    position: relative;  /* Fixar a posición */
-    margin-left: 5%;
-    margin-top: 18px;
-    text-align: center;
+    position: fixed;  /* Fixar a posición */
+    bottom: 37px;
+    left: 35px;
     cursor: pointer;
     opacity: 0.2;  /* Facelo máis disimulada */
     transition: opacity 0.3s ease;  /* Transición para o cambio de opacidade */
 }
+
 
 .toggle-button img {
     width: 16px !important;
@@ -316,12 +331,12 @@ p {
 
 /* Ao pasar o rato sobre o botón, facelo máis visible */
 .toggle-button:hover {
-    opacity: 0.4;
+    opacity: 1;
 }
 
 /* Alternar entre os modos */
 .sidebar-container.reduced-mode .toggle-button {
-    margin-left: 7%;
+    left: 20px;
 }
 
 .sidebar-container.reduced-mode {
@@ -423,7 +438,7 @@ nav a:hover {
 #biblioteca-container {
     margin: 50px;
     height: 60vh;
-    margin-top: 39vh;
+    margin-top: 40vh;
     overflow: auto;
     overflow-x: hidden;
 
@@ -447,28 +462,68 @@ nav a:hover {
     overflow: hidden;
     margin-top: 5vh;
     height: 35vh;
-    width: 82%;
-    background-color: #ffffff;
-    z-index: 9999;
+    left: 220px;
+    right: 50px;
+    background-color: #141414;
+    z-index: 999;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* Engade a transición */
+    transition: left 0.3s ease;
 }
 
+.banner-biblioteca.reduced-mode {
+    left: 115px;
+}
+
+
+
+
 .fondo-banner {
-    position: fixed;
-    margin-top: 5vh;
+    position: absolute;
     height: 35vh;
-    top: 0;
-    right: 3%;
-    border-radius: 12px;
-    
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 0;
 }
 
 .titulo-banner {
+    position: absolute;
+    height: 35vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 0;
+}
+
+.descricion-banner {
     position: relative;
-    height: 100%;
-    top: -20%;
-    left: 1%;
+    color: whitesmoke;
+    margin-left: 40px;
+    margin-top: 15vh;
+    width: 55%;
+    z-index: 3;
+}
+
+.boton-itinerario {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #1d1d1d; /* Cor de fondo */
+    color: white;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative; /* Asegura que respecte o fluxo normal */
+    z-index: 10000; /* Asegura que quede por riba doutros elementos */
+    margin-left: 40px;
+    transition: transform 0.15s ease-in-out; 
+}
+
+.boton-itinerario:hover {
+    transform: scale(1.02);
+    color: white; /* Texto negro para contraste */
 }
 
 .titulo-carousel {
@@ -671,7 +726,7 @@ nav a:hover {
 
 
 /* ================================================================= 
-   ORGANIZACIÓNS
+   ORGANIZACIÓN
    ================================================================= */
 
 #contido-orgas-info{
@@ -693,6 +748,7 @@ nav a:hover {
     height: auto; /* Define unha altura clara, se é necesario */
     overflow: hidden; /* Asegura que o contido non se expanda fóra dos límites */
   }
+
 
   #info-orga p {
     color: #000000;             /* Cor do texto */
@@ -792,13 +848,13 @@ nav a:hover {
         margin-bottom: -0px;
       }
       .tarxeta-centro p {
-        font-size: 11px;
+        font-size: 13px;
         margin-bottom: -5px;
         text-align: center !important;
       }
 
       .tarxeta-centro span {
-        font-size: 10px;
+        font-size: 13px;
       }
       
       .logo-tarxeta {
@@ -872,6 +928,11 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);  /* Sombra para dar efecto de elevación */
     z-index: 10;                 /* Garante que o logo estea por enriba da imaxe */
   }
+
+  /* Estilo do logo */
+  .logo-espazo img{
+    z-index: 1000000;                 /* Garante que o logo estea por enriba da imaxe */
+  }
   
   /* Estilos do nome (título) */
   #info-espazo h2 {
@@ -905,7 +966,7 @@ nav a:hover {
   #contido-dinamico p,
   #contido-dinamico li {
     color: #000000;             /* Cor do texto */
-    font-size: 13px;
+    font-size: 14px;
     text-align: justify;
   }
 
@@ -998,8 +1059,8 @@ nav a:hover {
   .barra-busqueda input {
     width: 200px;                   /* Ancho fixo */
     padding: 6px 10px;              /* Espazo interno */
-    border: 0px solid #ddd;
-    border-radius: 4px;
+    border: 2px solid #f0f0f0 !important; /* Azul escuro */
+    border-radius: 16px;
     font-size: 14px;
     transition: all 0.2s;
   }
@@ -1227,8 +1288,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 #barra-busqueda-calendario {
-    border-radius: 5px !important; /* Bordes redondeados */
-    border: 1px solid #000000 !important; /* Azul escuro */
 }
 
 /* -------------------------

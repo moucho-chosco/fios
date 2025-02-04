@@ -11,17 +11,40 @@
     </div>
 
     <div class="banner-biblioteca">
-        <img class="fondo-banner" src="{{ "/images/banners/fondos/lenin_estado.png" | relURL }}" alt="Fondo do banner">
-        <img class="titulo-banner" src="{{ "/images/banners/titulos/lenin_estado.png" | relURL }}" alt="Fondo do banner">
-        <p class="descricion-banner">descrición</p>
+        <img class="fondo-banner" src="{{ "/biblioteca/banners/fondos/inicial.png" | relURL }}" alt="Fondo do banner">
+        <img class="titulo-banner" src="{{ "/biblioteca/banners/titulos/inicial.png" | relURL }}" alt="Titulo do banner">
+        <p class="descricion-banner" style="z-index:'99999';">
+            Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
+            Pois benvide á biblioteca de fios! Aquí atoparás libros, artigos (no futuro tamén outros recursos) de grande valor
+            formativo organizados por temáticas, formatos, autoras, series... Ademais, os itinerarios son rutas de lectura elaboradas para
+            dar un contexto máis intuitivo e coerente a cuestións específicas de interese.
+        </p>
+        <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
+        <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
     </div>
 
+    <div class="warning warning-white" style="margin-top: 3vh;">⚠️ 
+        O contido desta sección móstrase a modo de exemplo/prototipo unicamento técnico. Os itinerarios, categorías e libros foron seleccionados como mostra,
+        sendo a intención elaborar os definitivos en colaboración con diferentes organizacións. As sínteses tamén son a modo de exemplo e
+        o seu contido non debe ser tomado como relevante.
+    </div>
+    
     <!-- Carrusel de itinerarios -->
     <h2 class="titulo-carousel">Itinerarios</h2>
     <div class="carousel-container">
         <div class="carousel-track">
             {{ range where .Site.RegularPages ".Params.tipo" "itinerario" }}
-            <div  class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}" onclick="seleccionarLibro(this)">
+            <div  class="libro"
+            data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
+            data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
+            data-texto-banner= "{{ .Params.texto_banner }}"
+            data-cor-banner="{{ .Params.cor_banner }}"
+            data-cor-texto="{{ .Params.cor_texto }}"
+            data-marxe-texto="{{ .Params.marxe_texto }}"
+            data-tipo="{{ .Params.tipo }}"
+            data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
+            data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
+            onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
                     <img src="{{ .Params.portada | relURL }}" 
                         alt="Portada {{ $.Params.titulo }}" 
@@ -36,11 +59,43 @@
 
 
     
-    <h2 class="titulo-carousel resaltado" >Temática: socialismo</h2>
+    <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
     <div class="carousel-container">
         <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "socialismo")) ".Params.autore" }}
-            <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}" onclick="seleccionarLibro(this)">
+            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "capitalismo")) ".Params.autore" }}
+            <div class="libro"
+            data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
+            data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
+            data-texto-banner= "{{ .Params.texto_banner }}"
+            data-cor-banner="{{ .Params.cor_banner }}"
+            data-cor-texto="{{ .Params.cor_texto }}"
+            data-marxe-texto="{{ .Params.marxe_texto }}"
+            data-tipo="{{ .Params.tipo }}"
+            data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
+            data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
+            onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    {{ with .Params.portada }}
+                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
+                    {{ end }}
+                </div>
+                <div class="libro-titulo">
+                    <h2>{{ .Params.titulo }}</h2>
+                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
+                    <p>{{ .Params.autore }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <h2 class="titulo-carousel">Temática: xénero</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "xénero")) ".Params.autore" }}
+            <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
                     {{ with .Params.portada }}
                     <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
@@ -62,7 +117,7 @@
     <div class="carousel-container">
         <div class="carousel-track">
             {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "anarquismo")) ".Params.autore" }}
-            <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}" onclick="seleccionarLibro(this)">
+            <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
                     {{ with .Params.portada }}
                     <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
@@ -80,11 +135,52 @@
         <button class="carousel-next">&#10095;</button>
     </div>
 
-    <h2 class="titulo-carousel">Autora: Marta Harnecker</h2>
+    <h2 class="titulo-carousel">Serie: Cadernos de Educación Popular</h2>
     <div class="carousel-container">
         <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.autore" "intersect" (slice "Marta Harnecker")) ".Params.autore" }}
-            <div class="libro {{ if eq .Params.titulo "O Estado e a Revolución" }}seleccionado{{ end }}" onclick="seleccionarLibro(this)">
+            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.serie" "intersect" (slice "Cadernos de Educación Popular")) ".Params.autore" }}
+            <div class="libro" onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    {{ with .Params.portada }}
+                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
+                    {{ end }}
+                </div>
+                <div class="libro-titulo">
+                    <h2>{{ .Params.titulo }}</h2>
+                    <p>{{ .Params.serie }}: #{{ .Params.numero }}</p>
+                    <p>{{ .Params.autore }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <h2 class="titulo-carousel">Temática: revolución</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "revolución")) ".Params.autore" }}
+            <div class="libro" onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    {{ with .Params.portada }}
+                    <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">
+                    {{ end }}
+                </div>
+                <div class="libro-titulo">
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </div>
+
+    <h2 class="titulo-carousel resaltado" >Formato: artigos</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.formato" "intersect" (slice "artigo")) ".Params.autore" }}
+            <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
                     {{ with .Params.portada }}
                     <img src="{{ . }}" alt="Portada de {{ $.Params.titulo }}">

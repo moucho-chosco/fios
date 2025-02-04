@@ -9,4 +9,8 @@ weight = 1
 
 # Podcast
 
-Nesta sección exploraranse os contidos publicados do podcast e a produción audiovisual.
+
+
+<div id="warning-infoorgas" class="warning" style="margin:0%;margin-top:0;margin-bottom:3%; font-size:14px;">
+⚠️ O contido desta sección aínda non foi elaborado. Nesta sección exploraranse os contidos publicados do podcast e a produción audiovisual.
+</div>

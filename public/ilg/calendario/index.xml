@@ -6,28 +6,7 @@
     <description>Recent content in fíos | Calendario on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
-    <lastBuildDate>Fri, 24 Jan 2025 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/ilg/calendario/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>proba</title>
-      <link>http://localhost:1313/ilg/calendario/eventos/evento3/</link>
-      <pubDate>Fri, 24 Jan 2025 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/calendario/eventos/evento3/</guid>
-      <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: CSOA Escárnio e Maldizer.&#xA;Hora: 18:00.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Asemblea Xeral 4</title>
-      <link>http://localhost:1313/ilg/calendario/eventos/evento4/</link>
-      <pubDate>Wed, 20 Nov 2024 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/calendario/eventos/evento4/</guid>
-      <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: Centro Social Atocha.&#xA;Hora: 18:00.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Encontro formativo</title>
-      <link>http://localhost:1313/ilg/calendario/eventos/evento2/</link>
-      <pubDate>Sun, 17 Nov 2024 18:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/calendario/eventos/evento2/</guid>
-      <description>&lt;p&gt;Asemblea aberta a todos os membros.&#xA;Lugar: Centro Social Atocha.&#xA;Hora: 18:00.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

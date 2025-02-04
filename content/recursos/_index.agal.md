@@ -8,4 +8,6 @@ draft = true
 
 # Recursos
 
-Nesta secçom agruparám-se outros recursos nom recolhidos nas secçons anteriores.
+<div id="warning-infoorgas" class="warning" style="margin:0%;margin-top:0;margin-bottom:3%; font-size:14px;">
+⚠️ O contido desta secçom ainda nom foi elaborado. Nesta secçom agruparám-se outros recursos nom recolhidos nas secçons anteriores.
+</div>

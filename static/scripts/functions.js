@@ -6,6 +6,7 @@ function getUrlParameter(name) {
 
 window.addEventListener('DOMContentLoaded', () => {
     const sidebarContainer = document.querySelector('.sidebar-container');
+    const bannerBiblioteca = document.querySelector('.banner-biblioteca');
     const toggleButton = document.querySelector('.toggle-button');
     const mode = getUrlParameter('sidebar-mode');  // Recuperar o parámetro da URL
 
@@ -15,10 +16,14 @@ window.addEventListener('DOMContentLoaded', () => {
     // Aplica inmediatamente o modo correcto antes de que a páxina se renderice
     if (mode === 'reduced') {
         sidebarContainer.classList.add('reduced-mode');
+        if(bannerBiblioteca)
+            bannerBiblioteca.classList.add('reduced-mode');
         toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra_reves.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á dereita
         updateSidebarLinksForMode('reduced');
     } else {
         sidebarContainer.classList.add('full-mode');
+        if(bannerBiblioteca)
+            bannerBiblioteca.classList.add('full-mode');
         toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á esquerda
         updateSidebarLinksForMode('full');
     }
@@ -35,22 +40,28 @@ window.addEventListener('DOMContentLoaded', () => {
 // Función para alternar entre os modos e actualizar a URL
 function toggleSidebar() {
     const sidebarContainer = document.querySelector('.sidebar-container');
+    const bannerBiblioteca = document.querySelector('.banner-biblioteca');
     const toggleButton = document.querySelector('.toggle-button');
     const langSwitcher = document.querySelector('#langSwitcher');
 
     // Alternar entre os modos
     sidebarContainer.classList.toggle('reduced-mode');
     sidebarContainer.classList.toggle('full-mode');
+    if(bannerBiblioteca){
+        bannerBiblioteca.classList.toggle('reduced-mode');
+        bannerBiblioteca.classList.toggle('full-mode');
+    }
+        
 
     // Se está no modo reducido, engadir o parámetro na URL
     if (sidebarContainer.classList.contains('reduced-mode')) {
         toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra_reves.svg" alt="Frecha atrás" width="16" height="16">'  ;  // Frecha á dereita no modo reducido
-        langSwitcher.style.display = 'none';  // Ocultar o selector de idioma
+        langSwitcher.style.opacity = 0;  // Ocultar o selector de idioma
         history.pushState(null, null, '?sidebar-mode=reduced');
         updateSidebarLinksForMode('reduced');
     } else {
         toggleButton.innerHTML = '<img src="/images/elementos/frecha_atras_negra.svg" alt="Frecha atrás" width="16" height="16">';  // Frecha á esquerda no modo completo
-        langSwitcher.style.display = 'block';  // Mostrar o selector de idioma
+        langSwitcher.style.opacity = 1;  // Mostrar o selector de idioma
         history.pushState(null, null, '?sidebar-mode=full');
         updateSidebarLinksForMode('full');
     }

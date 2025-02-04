@@ -10,10 +10,45 @@
     <atom:link href="http://localhost:1313/ilg/organizacion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/4_internacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/4_internacional/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/proxectos/ardora/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/proxectos/ardora/</guid>
       <description>&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Contacto&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Podes contactar connosco a través de:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/ceivar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/ceivar/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Ceivar é unha organización anti-represiva independentista.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é Ceivar?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/ms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/ms/</guid>
+      <description>&lt;p&gt;Somos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos e desenvolvemos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente. Para iso, analizamos a realidade e intervimos nela para transformala, desde posicións abertamente independentistas, que aposten pola superación do capitalismo e a construción do socialismo e que asuman unha perspectiva consecuentemente feminista.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/pcoe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/pcoe/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O &lt;em&gt;Partido Comunista Obrero Español&lt;/em&gt; (PCOE) é un partido comunista marxista-leninista fundado en 1973 por Enrique Líster, en resposta á viraxe eurocomunista do PCE. Legalizado en 1977, fusionouse parcialmente co PCE en 1986, pero un sector mantivo a súa independencia. Hoxe está liderado por Francisco Barjas e centra a súa labor na construción dun amplo fronte de masas polo socialismo.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
