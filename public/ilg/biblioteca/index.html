@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="gl">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=60906&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fíos | Biblioteca</title>
@@ -191,8 +191,15 @@
     </div>
 
     <div class="banner-biblioteca">
-        <img class="fondo-banner" src="/biblioteca/banners/fondos/inicial.png" alt="Fondo do banner">
-        <img class="titulo-banner" src="/biblioteca/banners/titulos/inicial.png" alt="Titulo do banner">
+        <picture>
+            <source class="fondo-banner-webp" srcset="/biblioteca/banners/fondos/inicial.webp" type="image/webp">
+            <img    class="fondo-banner"          src="/biblioteca/banners/fondos/inicial.png" alt="Fondo do banner">
+        </picture>
+        <picture>
+            <source class="titulo-banner-webp" srcset="/biblioteca/banners/titulos/inicial.webp" type="image/webp">
+            <img    class="titulo-banner"         src="/biblioteca/banners/titulos/inicial.png" alt="Titulo do banner">
+        </picture>
+        
         <p class="descricion-banner" style="z-index:'99999';">
             Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
             Pois benvide á biblioteca de fios! Aquí atoparás libros, artigos (no futuro tamén outros recursos) de grande valor
@@ -226,9 +233,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/decrecemento_ilg.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/decrecemento_ilg.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/decrecemento_ilg.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -244,9 +254,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin_ilg.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/introducion_a_obra_de_lenin_ilg.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/introducion_a_obra_de_lenin_ilg.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -262,9 +275,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/resistencia_palestina_ilg.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/resistencia_palestina_ilg.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/resistencia_palestina_ilg.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -280,9 +296,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/xenero_e_disidencia_ilg.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/xenero_e_disidencia_ilg.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/xenero_e_disidencia_ilg.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -298,9 +317,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/lingua_e_nacion_ilg.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/lingua_e_nacion_ilg.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/lingua_e_nacion_ilg.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -316,9 +338,12 @@
             data-cor-texto-boton="#eeeeee"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    <img src="/biblioteca/itinerarios/achegamento_ao_anarquismo.jpg" 
-                        alt="Portada " 
-                        loading="lazy">
+                    <picture>
+                        <source srcset="/biblioteca/itinerarios/achegamento_ao_anarquismo.webp" type="image/webp">
+                        <img src="/biblioteca/itinerarios/achegamento_ao_anarquismo.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -345,14 +370,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/Fisher_realismo_alta.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Realismo Capitalista</h2>
-                    <p>: #</p>
-                    <p>Mark Fisher</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/Fisher_realismo_alta.webp" type="image/webp">
+                        <img src="/biblioteca/obras/Fisher_realismo_alta.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -368,14 +391,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/smith_desenvolvemento_desigual.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Desenvolvemento desigual</h2>
-                    <p>: #</p>
-                    <p>Neil Smith</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/smith_desenvolvemento_desigual.webp" type="image/webp">
+                        <img src="/biblioteca/obras/smith_desenvolvemento_desigual.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -391,14 +412,12 @@
             data-cor-texto-boton="#000000"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Calibán e a Bruxa</h2>
-                    <p>: #</p>
-                    <p>Silvia Federici</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/federici_caliban_e_a_bruxa.webp" type="image/webp">
+                        <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -414,14 +433,12 @@
             data-cor-texto-boton="#101010"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/soren_mau_compulsion_muda.gif" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Compulsión muda</h2>
-                    <p>: #</p>
-                    <p>Soren Mau</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/soren_mau_compulsion_muda.webp" type="image/webp">
+                        <img src="/biblioteca/obras/soren_mau_compulsion_muda.gif" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -437,14 +454,12 @@
             data-cor-texto-boton="#23181c"
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/bevins_metodo_jakarta.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>1O Método Yakarta</h2>
-                    <p>: #</p>
-                    <p>Vincent Bevins</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/bevins_metodo_jakarta.webp" type="image/webp">
+                        <img src="/biblioteca/obras/bevins_metodo_jakarta.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -460,14 +475,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O governo neoliberal da vida</h2>
-                    <p>: #</p>
-                    <p>zBorxa Colmenero</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.webp" type="image/webp">
+                        <img src="/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -483,14 +496,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/cancela_utopias_dixitais.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Utopías dixitais</h2>
-                    <p>: #</p>
-                    <p>zEkaitz Cancela</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/cancela_utopias_dixitais.webp" type="image/webp">
+                        <img src="/biblioteca/obras/cancela_utopias_dixitais.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -506,14 +517,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mandel_capitalismo_tardio.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Capitalismo tardío</h2>
-                    <p>: #</p>
-                    <p>zErnest Mandel</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/mandel_capitalismo_tardio.webp" type="image/webp">
+                        <img src="/biblioteca/obras/mandel_capitalismo_tardio.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -529,14 +538,12 @@
             data-cor-texto-boton=""
             onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotadas e Explotadoras</h2>
-                    <p>[Cadernos de Educación Popular]: #1</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_c1_portada.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_c1_portada.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -551,105 +558,89 @@
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/delphy_feminismo_materialista.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Por un feminismo materialista</h2>
-                    <p>: #</p>
-                    <p>Christine Delphy</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/delphy_feminismo_materialista.webp" type="image/webp">
+                        <img src="/biblioteca/obras/delphy_feminismo_materialista.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A defunción dos sexos</h2>
-                    <p>: #</p>
-                    <p>Daniela Fernández</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.webp" type="image/webp">
+                        <img src="/biblioteca/obras/fernandez_a_defuncion_dos_sexos.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Muller, Estado e Revolución</h2>
-                    <p>: #</p>
-                    <p>Goldman</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/goldman_muller_estado_e_revolucion.webp" type="image/webp">
+                        <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lewis_a_politica_de_todes.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A política de todes</h2>
-                    <p>: #</p>
-                    <p>Holly Lewis</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/lewis_a_politica_de_todes.webp" type="image/webp">
+                        <img src="/biblioteca/obras/lewis_a_politica_de_todes.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/butler_o_xenero_en_disputa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O xénero en disputa&#34;</h2>
-                    <p>: #</p>
-                    <p>Judit Butler</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/butler_o_xenero_en_disputa.webp" type="image/webp">
+                        <img src="/biblioteca/obras/butler_o_xenero_en_disputa.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A longa revolución das mulleres</h2>
-                    <p>: #</p>
-                    <p>Juliet Mitchell</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.webp" type="image/webp">
+                        <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Mulleres Libres</h2>
-                    <p>: #</p>
-                    <p>Martha Ackelsberg</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/ackelsberg_mulleres_libres.webp" type="image/webp">
+                        <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Calibán e a Bruxa</h2>
-                    <p>: #</p>
-                    <p>Silvia Federici</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/federici_caliban_e_a_bruxa.webp" type="image/webp">
+                        <img src="/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -664,118 +655,100 @@
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/art1.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Un obituario para as políticas de identidade</h2>
-                    <p>: #</p>
-                    <p>Bomb</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/art1.webp" type="image/webp">
+                        <img src="/biblioteca/obras/art1.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/taibo_anarquismos.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Anarquismos: Onte, hoxe e mañá</h2>
-                    <p>: #</p>
-                    <p>Carlos Taibo</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/taibo_anarquismos.webp" type="image/webp">
+                        <img src="/biblioteca/obras/taibo_anarquismos.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/graeber_o_amencer_do_todo.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O amencer do todo</h2>
-                    <p>: #</p>
-                    <p>David graeber</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/graeber_o_amencer_do_todo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/graeber_o_amencer_do_todo.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/correa_pobo_forte.gif" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Crear un pobo forte</h2>
-                    <p>: #</p>
-                    <p>Felipe Correa</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/correa_pobo_forte.webp" type="image/webp">
+                        <img src="/biblioteca/obras/correa_pobo_forte.gif" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/perez_anarquia_relacional.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Anarquía Relacional</h2>
-                    <p>: #</p>
-                    <p>Juan Carlos Pérez Cortés</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/perez_anarquia_relacional.webp" type="image/webp">
+                        <img src="/biblioteca/obras/perez_anarquia_relacional.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Decolonizando o anarquismo</h2>
-                    <p>: #</p>
-                    <p>Maia Ramnath</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.webp" type="image/webp">
+                        <img src="/biblioteca/obras/maia_ramnath_decolonizing_anarchism.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Mulleres Libres</h2>
-                    <p>: #</p>
-                    <p>Martha Ackelsberg</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/ackelsberg_mulleres_libres.webp" type="image/webp">
+                        <img src="/biblioteca/obras/ackelsberg_mulleres_libres.jpeg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kropotkin_apoio_mutuo.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>O apoio mutuo</h2>
-                    <p>: #</p>
-                    <p>Piotr Kropotkin</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/kropotkin_apoio_mutuo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/kropotkin_apoio_mutuo.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kropotkin_pan.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>A Conquista do pan</h2>
-                    <p>: #</p>
-                    <p>Piotr Kropotkin</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/kropotkin_pan.webp" type="image/webp">
+                        <img src="/biblioteca/obras/kropotkin_pan.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -790,92 +763,78 @@
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_c1_portada.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotadas e Explotadoras</h2>
-                    <p>[Cadernos de Educación Popular]: #1</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_c1_portada.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_c1_portada.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Explotación capitalista</h2>
-                    <p>[Cadernos de Educación Popular]: #2</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_explotacion_capitalista.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_explotacion_capitalista.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Monopolios e miseria</h2>
-                    <p>[Cadernos de Educación Popular]: #3</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_monopolios_e_miseria.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_monopolios_e_miseria.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_loita_de_clases.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #4</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_loita_de_clases.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_loita_de_clases.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_imperialismo_e_dependencia.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #5</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_imperialismo_e_dependencia.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_imperialismo_e_dependencia.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_capitalismo_e_socialismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #6</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_capitalismo_e_socialismo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_capitalismo_e_socialismo.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/harnecker_socialismo_e_comunismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Loita de clases</h2>
-                    <p>[Cadernos de Educación Popular]: #7</p>
-                    <p>[Marta Harnecker Gabriela Uribe]</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/harnecker_socialismo_e_comunismo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/harnecker_socialismo_e_comunismo.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -890,51 +849,56 @@
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/kollontai_amor_vermello.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
+                    <picture>
+                        <source srcset="/biblioteca/obras/kollontai_amor_vermello.webp" type="image/webp">
+                        <img src="/biblioteca/obras/kollontai_amor_vermello.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                </div>
-            </div>
-            
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.jpg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
+                    <picture>
+                        <source srcset="/biblioteca/obras/goldman_muller_estado_e_revolucion.webp" type="image/webp">
+                        <img src="/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" alt="Portada de ">
-                    
+                    <picture>
+                        <source srcset="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.webp" type="image/webp">
+                        <img src="/biblioteca/obras/mitchell_longa_revolucion_das_mulleres.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
-                <div class="libro-titulo">
+            </div>
+            
+            <div class="libro" onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <picture>
+                        <source srcset="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.webp" type="image/webp">
+                        <img src="/biblioteca/obras/luxemburgo_reforma_ou_revolucion.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            
+            <div class="libro" onclick="seleccionarLibro(this)">
+                <div class="libro-portada">
+                    <picture>
+                        <source srcset="/biblioteca/obras/lenin_o_estado_e_a_revolucion.webp" type="image/webp">
+                        <img src="/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
@@ -949,40 +913,34 @@
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/einstein_por_que_socialismo.jpeg" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Por que socialismo?</h2>
-                    <p>: #</p>
-                    <p>Albert Einstein</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/einstein_por_que_socialismo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/einstein_por_que_socialismo.jpeg" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/art1.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Un obituario para as políticas de identidade</h2>
-                    <p>: #</p>
-                    <p>Bomb</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/art1.webp" type="image/webp">
+                        <img src="/biblioteca/obras/art1.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
             <div class="libro" onclick="seleccionarLibro(this)">
                 <div class="libro-portada">
-                    
-                    <img src="/biblioteca/obras/lenin_marxismo_e_reformismo.png" alt="Portada de ">
-                    
-                </div>
-                <div class="libro-titulo">
-                    <h2>Marxismo e Reformismo</h2>
-                    <p>: #</p>
-                    <p>Vladimir I. Lenin</p>
+                    <picture>
+                        <source srcset="/biblioteca/obras/lenin_marxismo_e_reformismo.webp" type="image/webp">
+                        <img src="/biblioteca/obras/lenin_marxismo_e_reformismo.png" 
+                            alt="Portada " 
+                            loading="lazy">
+                    </picture>
                 </div>
             </div>
             
