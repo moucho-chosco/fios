@@ -755,14 +755,13 @@ nav a:hover {
     text-align: left;        /* Alineación á esquerda */
     margin-left: 0vh;               /* Elimina marxe ao redor do título */
   }
-
   .social-icons-container {
+    position: absolute;
+    top: 110px; /* Distancia desde arriba */
+    right: 40px; /* Distancia desde a dereita */
     display: flex;
     gap: 12px;
-    margin-top: 10px;
-    justify-content: flex-end; /* Alinear as iconas á dereita */
   }
-  
   .social-icon {
     display: inline-flex;
     align-items: center;
