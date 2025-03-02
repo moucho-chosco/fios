@@ -834,6 +834,18 @@
                 href="http://localhost:1313/ilg/organizacion/outras/esquerda_revolucionaria/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/estreleira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/outras/estreleira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/outras/estreleira/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/fios/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1076,18 +1088,6 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/organizacion/proxectos/ceivar/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ilg/organizacion/proxectos/estreleira/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="agal"
-                href="http://localhost:1313/agal/organizacion/proxectos/estreleira/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ilg"
-                href="http://localhost:1313/ilg/organizacion/proxectos/estreleira/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</loc>
