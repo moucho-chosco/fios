@@ -1,0 +1,1336 @@
+/* -------------------------
+   GLOBAL STYLES
+------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+    color: #4f4f4f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* Light */
+}
+
+a {
+    color: #e2e2e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.window-container {
+    display: flex; height: 85vh;
+    gap: 2.5%; /* Espazo entre as ventás */
+}
+
+.window {
+    flex: 1;
+    background-size: cover;  /* A foto ocupará todo o espazo do contedor */
+    background-position: center;  /* Centra a imaxe de fondo */
+    height: 89vh !important;  /* Altura do viewport, cubre toda a pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block; 
+    width: 27%;            /* Ancho de la caja */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Opcional */
+    overflow-y: auto;
+  }
+
+.contido {
+    margin-top: 5vh;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.resaltado {
+    color: white;
+    padding: 0 0.2em;
+    font-weight: 300; /* Light */
+
+}
+
+.details-principal {
+    margin-top: 12px; /* Espazo antes de cada sección */
+  }
+
+.warning {
+    color: rgb(77, 77, 77);
+    font-size: 13px;
+    padding: 8px;
+    background-color: #ececec;
+    border-radius: 5px;
+}
+
+.warning-white {
+    background-color: #ffffff !important;
+    font-size: 13px;
+}
+
+/* -------------------------
+   ORTOGRAFIA
+------------------------- */
+
+#langSwitcher {
+    position: fixed;
+    bottom: 17px;
+    left: 40px;
+    cursor: grab;
+    width: 150px;
+    text-align: left;
+    transition: opacity 0.3s;
+
+}
+
+#langSwitcher a {
+    color:  #cfcfcf;
+    font-size: 13px;
+}
+
+/* -------------------------
+   LAYOUT CONTAINER
+------------------------- */
+.container-fila {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container-columna {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* -------------------------
+   SIDEBAR
+------------------------- */
+/* Barra lateral */
+.sidebar-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-right: 0px solid #000000;
+    display: flex;
+    width: 170px;
+    transition: none;  /* Sin transicións ao cargar */
+    max-width: 210px;
+}
+
+
+
+/* Para o modo reducido */
+.sidebar-container.reduced-mode {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-right: 0px solid #000000;
+    display: flex;
+    padding-right: 15px;
+    transition: none;  /* Inicialmente, sen transición */
+}
+
+
+/* A parte interna da barra lateral (side bar) */
+.sidebar {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px 0 0 8px;
+}
+
+.menu-icon {
+    width: 28px !important ;
+    height: auto !important;
+    display: inline-block; /* Evitar desprazamentos inesperados */
+    object-fit: contain; /* Asegura que o contido se axuste sen recortes */
+}
+
+.sidebar-container.full-mode .sidebar .reduced-icon {
+    display: none !important;
+}
+
+.sidebar-container.reduced-mode .sidebar .positivo,
+.sidebar-container.reduced-mode .sidebar .negativo
+{
+    display: none !important;
+}
+
+.sidebar-container.reduced-mode .sidebar .reduced-icon {
+    width: auto ;
+    height: 23px!important;
+    display: block; /* Evitar desprazamentos inesperados */
+    object-fit: contain; /* Asegura que o contido se axuste sen recortes */
+    display: inline;
+}
+
+
+/* Logo */
+.logo {
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 75%;
+    margin-left: 40px;
+    height: auto;
+}
+
+/* Modo reducido */
+.sidebar-container.reduced-mode .logo{
+    margin-left: 0px;
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+/* Modo reducido */
+.sidebar-container.reduced-mode .logo img {
+    margin-left: -2px;
+    width: 100%;   /* Reduzir o tamaño do logo cando a barra está no modo reducido */
+}
+
+/* Modo reducido */
+.sidebar-container.full-mode .logo img {
+    margin-left: 7px;
+    width: 100%;   /* Reduzir o tamaño do logo cando a barra está no modo reducido */
+}
+
+
+/* Enlaces */
+.sidebar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+
+.menu-link {
+    display: flex;
+    align-items: center;   /* Centrado vertical */
+    gap: 8px;             /* Espacio horizontal entre icono y texto */
+    
+    /* Resto de reglas */
+    padding: 2px 3px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4px;
+}
+
+.sidebar ul li {
+    opacity: 0.25;
+    transition: opacity 0.3s;
+}
+
+/* Modo completo: Mostra o nome completo */
+.sidebar.full-mode .menu-text {
+    display: inline-block;
+}
+
+/* Menu activo */
+.sidebar-container.full-mode .sidebar ul li.active {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #222121;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.sidebar-container.reduced-mode .sidebar ul li.active {
+    color: #000000;
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.sidebar ul li.active a {
+    color: #ffffff;
+}
+
+.sidebar-container.full-mode .sidebar ul li.active:hover,
+.sidebar-container.full-mode .sidebar ul li.active a:hover {
+    background-color: #000000;
+    opacity: 1;
+    color: #ffffff;
+    cursor: default;
+}
+
+.sidebar-container.reduced-mode .sidebar ul li.active:hover,
+.sidebar-container.reduced-mode .sidebar ul li.active a:hover {
+    opacity: 1;
+}
+
+.sidebar-container.reduced-mode .sidebar ul li:hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.sidebar-container.full-mode .sidebar ul li {
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    transition: opacity 0.3s;
+}
+
+/* Elementos non activos */
+.sidebar-container.full-mode .sidebar ul li:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* Botón para alternar entre os modos (frecha) */
+.toggle-button {
+    background: none;
+    border: none;
+    position: fixed;  /* Fixar a posición */
+    bottom: 37px;
+    left: 35px;
+    cursor: pointer;
+    opacity: 0.2;  /* Facelo máis disimulada */
+    transition: opacity 0.3s ease;  /* Transición para o cambio de opacidade */
+}
+
+
+.toggle-button img {
+    width: 16px !important;
+    height: auto;
+}
+
+.sidebar-container.full-mode .logo {
+    width: 130px !important;
+    height: auto;
+    transition: width 0.3s ease !important;
+}
+
+.sidebar-container.reduced-mode .logo {
+    width: 50px !important;
+    height: auto;
+    transition: width 0.3s ease !important;
+}
+
+/* Ao pasar o rato sobre o botón, facelo máis visible */
+.toggle-button:hover {
+    opacity: 1;
+}
+
+/* Alternar entre os modos */
+.sidebar-container.reduced-mode .toggle-button {
+    left: 20px;
+}
+
+.sidebar-container.reduced-mode {
+    width: 50px; /* Menor ancho no modo reducido */
+}
+
+/* Estilos para o nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+nav a {
+    color: #484848;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Icono normal (positivo o negativo) en modo FULL */
+.sidebar-container.full-mode .sidebar .positivo,
+.sidebar-container.full-mode .sidebar .negativo {
+    width: 16px;
+    height: 16px !important;
+    object-fit: contain;
+    display: inline-block; /* o block, si tu contenedor es flex */
+}
+
+/* Modo completo: Mostra o nome completo */
+.sidebar-container.full-mode .sidebar .menu-text {
+    display: inline-block;
+}
+
+.sidebar-container.reduced-mode .sidebar .menu-text {
+    display: none;
+}
+.sidebar-container.full-mode .sidebar .menu-icon {
+    display: inline-block;
+}
+
+.sidebar-container.reduced-mode .sidebar .menu-icon {
+    display: inline-block;
+    font-size: 20px; /* Tamaño para o emoji */
+    color:rgb(0, 0, 0);
+}
+
+
+/* -------------------------
+   CONTENT AREA STYLES
+------------------------- */
+.content {
+    flex: 1;
+    padding: 0px;
+}
+
+.content h1, .content h2, .content h3 {
+    color: #222;
+    font-weight: 700; /* Máximo recomendado */
+}
+
+.standard-section-container {
+    margin: 5.7vh;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* -------------------------
+   BUTTON STYLES
+------------------------- */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #696969;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #585858;
+}
+
+/* -------------------------
+   BIBLIOTECA
+------------------------- */
+#biblioteca-container {
+    margin: 50px;
+    height: 60vh;
+    margin-top: 40vh;
+    overflow: auto;
+    overflow-x: hidden;
+
+    /* Ocultar a barra de desprazamento en navegadores WebKit (Chrome, Safari) */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+/* Ocultar a barra de desprazamento en navegadores baseados en WebKit (Chrome, Safari) */
+#biblioteca-container::-webkit-scrollbar {
+    display: none;
+}
+
+#filtros-biblioteca-box {
+}
+
+
+.banner-biblioteca {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    margin-top: 5vh;
+    height: 35vh;
+    left: 220px;
+    right: 50px;
+    background-color: #141414;
+    z-index: 999;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    /* Engade a transición */
+    transition: left 0.3s ease;
+}
+
+.banner-biblioteca.reduced-mode {
+    left: 115px;
+}
+
+
+
+
+.fondo-banner {
+    position: absolute;
+    height: 35vh;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 0;
+}
+
+.titulo-banner {
+    position: absolute;
+    height: 35vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 0;
+}
+
+.descricion-banner {
+    position: relative;
+    color: whitesmoke;
+    margin-left: 40px;
+    margin-top: 15vh;
+    width: 55%;
+    z-index: 3;
+}
+
+.boton-itinerario {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #1d1d1d; /* Cor de fondo */
+    color: white;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative; /* Asegura que respecte o fluxo normal */
+    z-index: 10000; /* Asegura que quede por riba doutros elementos */
+    margin-left: 40px;
+    transition: transform 0.15s ease-in-out; 
+}
+
+.boton-itinerario:hover {
+    transform: scale(1.02);
+    color: white; /* Texto negro para contraste */
+}
+
+.titulo-carousel {
+    font-size: 1.5rem;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    width: auto;
+    border-radius: 4px;
+    padding: 1px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+
+/* Imaxe de portada */
+.cover-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Información do elemento */
+.item-info {
+    padding: 0.5rem;
+}
+
+.item-info h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Estilo para ocultar a barra de desprazamento no contedor do carrusel */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-container {
+    -ms-overflow-style: none; /* Para IE e Edge */
+    scrollbar-width: none; /* Para Firefox */
+}
+
+
+.lista-libros {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-auto-rows: 1fr; /* Asegúrate de que as filas teñan a mesma altura */
+    justify-items: center; /* Centra os elementos dentro de cada celda */
+    margin-top: 3vh;
+    }
+
+.libro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    aspect-ratio: 2 / 3;
+    border: 4px solid rgba(255, 255, 255, 0); /* Sen rebordo por defecto */
+    transition: border-color 0.3s ease;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+}
+
+.libro {
+    flex: 0 0 150px; /* Tamaño fixo de cada libro */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+  
+  .libro.seleccionado {
+    border: 4px solid rgb(255, 255, 255); /* Rebordo branco cando está seleccionado */
+    transform: translateY(-6px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  }
+
+.libro:hover {
+    transform: translateY(-6px);
+    transition: transform 0.1s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.libro-titulo {
+    max-width: 100%; /* O texto ocupa un 70% do ancho */
+}
+
+.libro-portada {
+    max-width: 100%; /* A portada ocupa un 25% do ancho */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.libro-portada img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.libro h2 {
+    font-size: 12px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.libro p {
+    font-size: 11px;
+    color: #555;
+    margin: 4px 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0;
+    background-color: #ffffff00;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 15px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Botóns de navegación */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.search-container {
+    position: absolute;
+    top: 20px;  /* Distancia desde a parte superior */
+    right: 20px; /* Distancia desde a parte dereita */
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 150px; /* Axusta segundo o necesario */
+}
+
+#search-button {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#search-button img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+#search-button:hover img {
+    opacity: 1;
+}
+
+
+/* ================================================================= 
+   ORGANIZACIÓN
+   ================================================================= */
+
+#contido-orgas-info{
+    height: 86vh;
+    overflow: auto;
+}
+
+#contido-orgas-info::-webkit-scrollbar {
+    width: 0px; /* Ancho da barra de scroll */
+}
+
+/* Caixa branca que contén o nome e a descrición */
+#info-orga {
+    position: relative; 
+    max-width: 100%;
+    text-align: left;
+    margin-top: -12vh;
+    padding: 6vh;
+    height: auto; /* Define unha altura clara, se é necesario */
+    overflow: hidden; /* Asegura que o contido non se expanda fóra dos límites */
+  }
+
+
+  #info-orga p {
+    color: #000000;             /* Cor do texto */
+    text-align: left;        /* Alineación á esquerda */
+    margin-left: 0vh;               /* Elimina marxe ao redor do título */
+  }
+
+  .social-icons-container {
+    position: absolute;
+    top: 110px; /* Distancia desde arriba */
+    right: 40px; /* Distancia desde a dereita */
+    gap: 12px;
+  }
+  
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+  }
+  
+  .social-icon img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Opcional: se queres que a caixa completa do header sexa flexible para mellor distribución */
+  .header-espazo {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ================================================================= 
+   ESPAZOS
+   ================================================================= */
+
+    /* Axusta o tamaño do mapa */
+    #map {
+        height: 100%;
+        width: 100%; /* Ou 100% para ocupar todo o espazo */
+    }
+    
+
+    #info-window {
+        overflow: hidden;
+    }
+
+    #map-window {
+        overflow: hidden;
+    }
+
+    #filtros-espazos-box{
+        overflow-y:hidden;
+        margin: 30px;
+        margin-bottom: 20px;
+    }
+
+    #contido-espazos-info{
+        height: 86vh;
+        overflow: auto;
+    }
+    
+    
+    #contido-espazos-info::-webkit-scrollbar {
+        width: 0px; /* Ancho da barra de scroll */
+    }
+
+    #menu-pages-list{
+        display:grid;
+        align-items: center !important;
+    }
+  
+
+    .tarxetas-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        gap: 16px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 105px;
+        z-index: 99999;
+      }
+      
+      .tarxeta-centro {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .tarxeta-centro:hover {
+        transform: scale(1.023);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .franxa-cor {
+        height: 8px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+
+      .tarxeta-centro img {
+        border: 2px solid #eeeeee;
+        
+      }
+
+      .tarxeta-centro h3 {
+        font-size: 16px;
+        margin-bottom: -0px;
+      }
+      .tarxeta-centro p {
+        font-size: 13px;
+        margin-bottom: -5px;
+        text-align: center !important;
+      }
+
+      .tarxeta-centro span {
+        font-size: 13px;
+      }
+      
+      .logo-tarxeta {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: -15px;
+      }
+      
+
+  
+  /* Caixa branca que contén o nome e a descrición */
+  #info-espazo {
+    position: relative; 
+    max-width: 100%;
+    text-align: left;
+    margin-top: -12vh;
+    padding: 6vh;
+    height: auto; /* Define unha altura clara, se é necesario */
+    overflow: hidden; /* Asegura que o contido non se expanda fóra dos límites */
+  }
+
+  .imaxe-fondo {
+    position: relative;
+    width: 100%;
+    height: 22vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  /* Imaxe que ocupa todo o espazo do contedor */
+  .imaxe-fondo img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: translateZ(0); /* Axuda co rendemento */
+  }
+
+  #imaxe-cabeceira-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imaxe se axuste ben */
+    transform: translateZ(0); /* Axuda co rendemento */
+  }
+  
+  /* Contedor que agrupa o logo e o título */
+  .header-espazo {
+    display: flex;           /* Usamos flexbox */
+    flex-direction: column;
+    align-items:start;     /* Alinea verticalmente os elementos no centro */
+  }
+  
+
+  /* Estilo do logo */
+  .logo-espazo {
+    position: relative;         /* O logo se posiciona de forma absoluta dentro do contedor */
+    margin-top: 0vh;                 /* Fai que o logo se asome por riba da imaxe */
+    margin-left: -5px;                 /* Pódese axustar a posición horizontal do logo */
+    width: auto;                /* Tamaño do logo, pódese axustar */
+    height: 12vh;               /* Mantén as mesmas dimensións para un logo redondo */
+    border-radius: 50%;         /* Esto fai que o logo sexa redondo */
+    background-color: #fff;     /* Fondo branco do logo (pódese cambiar) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);  /* Sombra para dar efecto de elevación */
+    z-index: 10;                 /* Garante que o logo estea por enriba da imaxe */
+  }
+
+  /* Estilo do logo */
+  .logo-espazo img{
+    z-index: 1000000;                 /* Garante que o logo estea por enriba da imaxe */
+  }
+  
+  /* Estilos do nome (título) */
+  #info-espazo h2 {
+    font-size: calc(1.3rem + 0.5vh);         /* Tamaño do texto */
+    position: relative;
+    margin-top: 5px;
+    font-weight: bold;       /* Negrita */
+    color: #000000;             /* Cor do texto */
+    text-align: left;        /* Alineación á esquerda */
+  }/* Contedor para a imaxe de fondo */
+
+  #info-espazo p {
+    color: #000000;             /* Cor do texto */
+    text-align: left;        /* Alineación á esquerda */
+    margin-left: 0vh;               /* Elimina marxe ao redor do título */
+  }
+  
+  .descricion-espazo {
+    margin-top: -15px;
+    text-align: left;
+  }
+
+
+  /* O contido sobre cada centro social, que se toma dende os arquivos .md*/
+
+  #contido-dinamico h2 {
+    color: #000000;             /* Cor do texto */
+    font-size: 16px;
+  }
+
+  #contido-dinamico p,
+  #contido-dinamico li {
+    color: #000000;             /* Cor do texto */
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  summary {
+    color: #000000;             /* Cor do texto */
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  
+
+/* Modificar directamente os botóns de zoom */
+.leaflet-control-zoom a {
+    background-color: #000 !important; /* Fondo negro dos botóns */
+    color: #fff            !important; /* Texto branco nos botóns */
+    font-weight: bold        !important; /* Grosor do símbolo */
+    font-size: 18px          !important; /* Tamaño do texto */
+    text-align: center       !important; /* Centrar o símbolo */
+    line-height: 36px        !important; /* Centra verticalmente o símbolo no botón */
+    width: 36px              !important; /* Largura do botón */
+    height: 36px             !important; /* Altura do botón */
+    border: none             !important; /* Elimina bordes */
+    margin-top: 2px         !important;
+    border-radius: 5px       !important; /* Esquinas redondeadas */
+    box-shadow: none         !important; /* Elimina a sombra por defecto */
+    transition: background-color 0.3s ease !important; /* Efecto ao pasar o rato */
+  }
+  
+  /* Modificar os botóns ao pasar o rato */
+  .leaflet-control-zoom a:hover {
+    background-color: #333 !important; /* Fondo gris escuro ao pasar o rato */
+    color: #fff            !important; /* Mantén o texto branco */
+  }
+  
+  /* Eliminar o fondo negro detrás dos botóns */
+  .leaflet-control-zoom {
+    background: none  !important; /* Elimina o fondo detrás dos botóns */
+    border: none      !important; /* Elimina calquera borde adicional */
+    box-shadow: none  !important; /* Elimina sombra do contedor */
+  }
+
+  /* Aplica o efecto "darken" usando mix-blend-mode */
+  .leaflet-tile-container img {
+    mix-blend-mode: normal !important; /* ou darken, dependendo do efecto desexado */
+  }
+  
+  /* Opcional: forza a transparencia na capa superposta */
+  .leaflet-tile-container {
+    opacity: 1; /* Axusta a opacidade segundo o resultado desexado */
+  }
+
+  .barra-superior {
+    display: flex;                  /* Dispoñer elementos en fila */
+    align-items: center;            /* Alineación vertical centrada */
+    justify-content: space-between; /* Espazo entre o select e a barra de busca */
+    gap: 10px;                      /* Espazo entre os elementos */
+  }
+  
+  .filter {
+    font-size: 14px;                /* Mantén o tamaño do texto */
+    padding: 6px 10px;             /* Espazo interno */
+    background-color: #000000;      /* Cor de fondo */
+    border-radius: 5px;             /* Bordos redondeados */
+    color: #ffffff;                 /* Cor do texto */
+    appearance: none;               /* Elimina a apariencia por defecto */
+    -webkit-appearance: none;       /* Safari */
+    -moz-appearance: none;          /* Firefox */
+    cursor: pointer;                /* Cambiar cursor a man */
+    transition: all 0.3s ease;      /* Transición suave */
+  }
+  
+  .filter option {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter option:hover {
+    background-color: #f73232 !important;
+    color: #000000 !important;
+  }
+  
+  .barra-busqueda {
+    flex-shrink: 0;                 /* A barra non cambia de tamaño se o contedor redimensiona */
+    position: relative;
+  }
+  
+  .barra-busqueda input {
+    width: 200px;                   /* Ancho fixo */
+    padding: 6px 10px;              /* Espazo interno */
+    border: 2px solid #f0f0f0 !important; /* Azul escuro */
+    border-radius: 16px;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .barra-busqueda input:focus {
+    outline: none;
+  }
+
+  #mensaxe-sen-resultados {
+    color: #979797;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 39vh;
+  }
+
+  
+  .boton-atras {
+    position: absolute;
+    margin-top: 10px; 
+    margin-left: 10px; 
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .boton-atras:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slider-container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espazo entre o slider e o ano */
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Quitar o estilo predeterminado */
+    width: 100%; /* Largura do slider */
+    height: 10px; /* Altura do slider */
+    background: #d6d6d6; /* Cor de fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    outline: none; /* Quitar o borde ao seleccionar */
+    cursor: pointer; /* Cambiar o cursor ao pasar o rato */
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quitar o estilo predeterminado */
+    width: 15px; /* Tamaño do botón */
+    height: 15px;
+    background: #949494; /* Cor do botón */
+    border-radius: 50%; /* Forma redonda */
+    cursor: pointer;
+    border: 0px solid #fff; /* Borde branco */
+}
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+  
+  
+
+/* -------------------------
+   CALENDARIO
+------------------------- */
+
+#calendar-window {
+    overflow: hidden;
+}
+
+#calendar {
+    max-width: 100%;
+    max-height: 88vh !important;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 0px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#filtros-calendario {
+    margin: 3vh;
+}
+
+/* Personaliza os eventos */
+.fc-event {
+    background-color: #d1d1d1 !important; /* Fondo azul */
+    color: #ffffff !important; /* Texto branco */
+    border: none !important; /* Sen bordes */
+    font-size: 14px;
+}
+
+/* Evento ao pasar o rato */
+.fc-event:hover {
+    background-color: #a1a1a1 !important; /* Cor máis escura */
+}
+
+/* Día actual */
+.fc-day-today {
+    background-color: #000000 !important; /* Fondo lixeiramente azul */
+}
+.fc-button,
+.fc-today-button,
+.fc-prev-button,
+.fc-next-button {
+    background-color: #000000 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+    margin: 2px !important;
+    padding: 5px 10px !important;
+    font-weight: bold !important;
+}
+
+
+/* Botón "prev" (anterior) */
+.fc-toolbar-chunk .fc-prev-button {
+    background-color: #0f0f0f !important; /* Laranxa */
+    color: #ffffff !important;
+    border: none !important;
+}
+
+/* Botón "next" (seguinte) */
+.fc-toolbar-chunk .fc-next-button {
+    background-color: #0f0f0f !important; /* Verde */
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.fc-button:hover,
+.fc-today-button:hover,
+.fc-prev-button:hover,
+.fc-next-button:hover {
+    background-color: #505050 !important;
+}
+
+#fc-dom-1 {
+    color: #000000 !important; /* Cor branca */
+    font-size: 18px; /* Tamaño do texto */
+    font-weight: 1000; /* Light */
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; /* Centrar o texto */
+}
+
+.fc-scrollgrid {
+    height: 90% !important;
+}
+
+.fc-daygrid-day-frame {
+    min-height: auto !important; /* Deixa que a altura dos días se adapte */
+}
+.fc-daygrid-day-number {
+    color: #000000 !important; /* Cor do número */
+    font-weight: light !important; 
+}
+
+.fc-daygrid-day-frame {
+    height: 100%; /* O contido de cada día ocupa toda a altura dispoñible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Os eventos e números de día quedan arriba */
+    align-items: center;
+}
+
+/* Cambiar a cor do botón activo */
+.fc-button.fc-button-active {
+    background-color: #4b4b4b!important;
+    color: #fff!important;
+    border-color: #4b4b4b!important;
+}
+
+/* Cambiar a cor de fondo do día de hoxe */
+.fc-day-today {
+    background-color: #ffffff !important; /* Azul claro */
+    border: 3px solid #64a5d5 !important; /* Azul escuro */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
+}
+
+/* Cambiar a cor de fondo do día de hoxe */
+.fc-timegrid-col.fc-day-today {
+    background-color: #f5f5f5 !important; /* Azul claro */
+    border: 0px solid #ffffff !important; /* Azul escuro */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important; /* Engadir sombra */
+}
+
+.fc-day-today .fc-daygrid-day-number {
+    color: #000000 !important; /* Cambiar a cor do número */
+    font-weight: bold !important; /* Texto en negrita */
+}
+ /* Usar o selector de atributo exacto */
+ .fc [class="fc-col-header-cell-cushion "] {
+    font-size: 12px !important; /* Tamaño da fonte */
+    color: #ffffff !important; /* Cor do texto */
+    font-weight: light !important; /* Texto en negrita */
+    text-align: center !important; /* Centrar o texto */
+    text-decoration: none !important; /* Eliminar subliñado */
+}
+
+/* Opcional: Cambiar o fondo do contedor */
+.fc .fc-col-header-cell {
+    background-color: #252525 !important; /* Fondo azul claro */
+    border-bottom: 4px solid #64a5d5 !important; /* Liña de separación inferior */
+    padding: 5px !important; /* Espazo arredor */
+    text-align: center !important;
+}
+
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+    font-size: 13px !important; /* Tamaño da fonte */
+    color: #080808 !important; /* Cor do texto */
+    font-weight: light !important; /* Texto en negrita */
+    text-align: left !important; /* Centrar o texto */
+    text-decoration: none !important; /* Eliminar subliñado */
+}
+
+#barra-busqueda-calendario {
+}
+
+/* -------------------------
+   OUTROS ELEMENTOS
+------------------------- */
+
+  /* Inicialmente, a barra de desprazamento está oculta */
+  #body,
+  .container-columna,
+  .container-fila{
+    overflow: hidden;
+  }
+  
+  

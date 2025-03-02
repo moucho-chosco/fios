@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fios | Recursos on fios</title>
+    <link>http://localhost:1313/agal/recursos/</link>
+    <description>Recent content in fios | Recursos on fios</description>
+    <generator>Hugo</generator>
+    <language>agal</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/agal/recursos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
