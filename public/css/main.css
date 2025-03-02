@@ -757,11 +757,10 @@ nav a:hover {
   }
 
   .social-icons-container {
-    position: absolute;
-    top: 110px; /* Distancia desde arriba */
-    right: 40px; /* Distancia desde a dereita */
     display: flex;
     gap: 12px;
+    margin-top: 10px;
+    justify-content: flex-end; /* Alinear as iconas á dereita */
   }
   
   .social-icon {
