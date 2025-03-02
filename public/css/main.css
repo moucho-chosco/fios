@@ -762,6 +762,7 @@ nav a:hover {
     display: flex;
     gap: 12px;
   }
+  
   .social-icon {
     display: inline-flex;
     align-items: center;
