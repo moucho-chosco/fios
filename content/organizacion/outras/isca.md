@@ -8,6 +8,10 @@ imaxe: "/organizacions/isca/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 children:
     - Galiza Nova
 clase: colectivo
+instagram: https://www.instagram.com/iscamocidade/
+twitter: https://x.com/iscagz
+facebook: https://www.facebook.com/iscagz
+web: https://iscagz.org/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

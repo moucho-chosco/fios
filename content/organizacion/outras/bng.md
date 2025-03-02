@@ -11,10 +11,14 @@ children:
     - FOG
     - UPG
     - Galiza Nova
-    - M. Arredista
+    - "Movemento\nArredista"
 nome_extendido: Bloque Nacionalista Galego
 logo:  "/organizacions/bng/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bng/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+instagram: https://www.instagram.com/o_bloque/
+twitter: https://x.com/obloque
+facebook: https://facebook.com/obloque
+web: https://www.bng.gal/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

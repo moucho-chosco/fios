@@ -755,9 +755,41 @@ nav a:hover {
     text-align: left;        /* Alineación á esquerda */
     margin-left: 0vh;               /* Elimina marxe ao redor do título */
   }
+
+  .social-icons-container {
+    position: absolute;
+    top: 110px; /* Distancia desde arriba */
+    right: 40px; /* Distancia desde a dereita */
+    display: flex;
+    gap: 12px;
+  }
   
-
-
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+  }
+  
+  .social-icon img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Opcional: se queres que a caixa completa do header sexa flexible para mellor distribución */
+  .header-espazo {
+    display: flex;
+    flex-direction: column;
+  }
 
 /* ================================================================= 
    ESPAZOS

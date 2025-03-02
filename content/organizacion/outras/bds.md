@@ -1,12 +1,14 @@
 ---
 nome: "BDS Galiza"
-x: 0.59
-y: 0.36
+x: 0.64
+y: 0.32
 color: '#FFD1A0'
 nome_extendido: "Boicote, Desinvestimentos e Sancións a Israel"
 logo:  "/organizacions/bds/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bds/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/bdsgaliza
+facebook: https://www.facebook.com/BDSGaliza/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

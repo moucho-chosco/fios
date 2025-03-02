@@ -7,6 +7,8 @@ nome_extendido: Corrente política dentro do BNG
 logo:  "/organizacions/alicerce/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/alicerce/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: outro
+instagram: https://www.instagram.com/alicercegaliza/
+facebook: https://www.facebook.com/profile.php?id=61568115197808
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

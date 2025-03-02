@@ -1,7 +1,7 @@
 ---
 nome: Avante LGBT+
 x: 0.42
-y: 0.30
+y: 0.34
 color: '#FFE17D'
 nome_extendido: "Em loita contra o patriarcado e a cisheteronorma"
 logo:  "/organizacions/avante_lgbt/logo.png"  # Ruta á imaxe do logo

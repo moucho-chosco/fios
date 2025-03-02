@@ -1,23 +1,19 @@
 ---
-nome: "XR Galiza"
-x: 0.20
-y: 0.17
-color: '#E3E3E3'
-nome_extendido: Extintion Rebellion Galiza
-logo:  "/organizacions/xr/logo.png"  # Ruta á imaxe do logo
-imaxe: "/organizacions/xr/foto_cabeceira.png"  # Ruta á imaxe de fondo
+nome: "Rede Galega\n de Estudos Queer"
+x: 0.52
+y: 0.27
+color: '#FFE17D'
+nome_extendido: "Espaço de pesquisa sobre género e sexualidade na Galiza"
+logo:  "/organizacions/estudos_queer/logo.png"  # Ruta á imaxe do logo
+imaxe: "/organizacions/estudos_queer/foto_cabeceira.gif"  # Ruta á imaxe de fondo
 clase: colectivo
 ---
-<div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
+<div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-Extinction Rebellion Galiza está formado por persoas con diferentes orixes e experiencias pero co punto en común da súa preocupación polo cambio climático de orixe humano. Consideramos a nosa obriga ofrecer parte do noso tempo e recursos a conseguir calquer cambio, por pequeno que sexa, que contribúa a minimizar ou mitigar parte dos efectos que o cambio climático provocarán no nosa contorna e na nosa sociedade. Na actualidade existen tres nodos locais con diferentes niveis de actividade:
-
-- XRCorunha
-- XRVigo
-- XRCompostela
+Somos um grupo de persoas a cabalo entre a academia e o ativismo que quer dar visibilidade e movimento aos estudos de género e LGBTIQ+ na Galiza.
 
 <details>
-  <summary>Que é a Extintion Rebellion?</summary>
+  <summary>Que é a Rede Galega de Estudos Queer?</summary>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi
 

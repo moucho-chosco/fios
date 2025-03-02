@@ -7,6 +7,9 @@ nome_extendido: "Colectivos da Mocidade Comunista"
 logo:  "/organizacions/cmc/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/cmc/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/cmc_galiza/
+twitter: https://x.com/CMC_Galiza
+facebook: https://www.facebook.com/cmcgaliza/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

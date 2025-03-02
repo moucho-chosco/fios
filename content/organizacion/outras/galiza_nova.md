@@ -6,6 +6,10 @@ nome_extendido: Organización Xuvenil do BNG
 logo:  "/organizacions/galiza_nova/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/galiza_nova/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/galizanova/
+twitter: https://x.com/galizanova
+facebook: https://www.facebook.com/galizanova
+web: https://galizanova.gal/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

@@ -2,7 +2,7 @@
 nome: "Verdegaia"
 x: 0.23
 y: 0.24
-color: '#b2dc87'
+color: '#E3E3E3'
 nome_extendido: Associaçom ecologista galega
 logo:  "/organizacions/verdegaia/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/verdegaia/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

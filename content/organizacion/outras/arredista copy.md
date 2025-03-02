@@ -8,6 +8,10 @@ nome_extendido: Unión do Povo Galego
 logo:  "/organizacions/upg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/upg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/galizaupg/
+twitter: https://x.com/GalizaUPG
+facebook: https://www.facebook.com/uniondopovogalego
+web: https://upg.gal/
 ---
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>

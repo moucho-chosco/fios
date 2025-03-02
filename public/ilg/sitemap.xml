@@ -184,6 +184,8 @@
                 href="http://localhost:1313/ilg/biblioteca/obras/ackelsberg_mulleres_libres/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/obras/apelidoautore_titulo/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</loc>
     <xhtml:link
                 rel="alternate"
@@ -640,6 +642,18 @@
                 href="http://localhost:1313/ilg/organizacion/outras/alicerce/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/amal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/outras/amal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/outras/amal/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/anticapitalistas/</loc>
     <xhtml:link
                 rel="alternate"
@@ -784,6 +798,18 @@
                 href="http://localhost:1313/ilg/organizacion/outras/creba/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/ecoloxistas_galiza/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/outras/ecoloxistas_galiza/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/outras/ecoloxistas_galiza/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/erguer/</loc>
     <xhtml:link
                 rel="alternate"
@@ -806,30 +832,6 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/organizacion/outras/esquerda_revolucionaria/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ilg/organizacion/outras/estreleira/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="agal"
-                href="http://localhost:1313/agal/organizacion/outras/estreleira/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ilg"
-                href="http://localhost:1313/ilg/organizacion/outras/estreleira/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/ilg/organizacion/outras/extintion_rebelion/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="agal"
-                href="http://localhost:1313/agal/organizacion/outras/extintion_rebelion/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ilg"
-                href="http://localhost:1313/ilg/organizacion/outras/extintion_rebelion/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/fios/</loc>
@@ -976,6 +978,18 @@
                 href="http://localhost:1313/ilg/organizacion/outras/queremos_galego/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/outras/rede_galega_estudos_queer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/outras/rede_galega_estudos_queer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/outras/rede_galega_estudos_queer/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/rede_palestina/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1062,6 +1076,18 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/organizacion/proxectos/ceivar/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/proxectos/estreleira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/proxectos/estreleira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/proxectos/estreleira/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</loc>

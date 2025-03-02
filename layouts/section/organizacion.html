@@ -33,6 +33,11 @@
               "logo" (.Params.logo | absURL)
               "nome" .Params.nome
               "nome_extendido" .Params.nome_extendido
+              "instagram" .Params.instagram
+              "twitter" .Params.twitter
+              "facebook" .Params.facebook
+              "web" .Params.web
+              "correo" .Params.correo
               "size" 26
               "x" .Params.x
               "y" .Params.y
@@ -236,17 +241,51 @@
           function actualizarContido(node) {
             const model = node.getModel();
             const dynamicContent = contentMap[model.id] || `<p>Sen contido dispoñible para ${model.nome}</p>`;
+        
+            // Crear iconas de redes sociais
+            let socialIcons = '';
             
+            // Asegurarse de que os enlaces son absolutos, engadindo https:// se é necesario
+            const ensureAbsoluteUrl = (url) => {
+              if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+                return 'https://' + url;
+              }
+              return url;
+            };
+            
+            // Definir a ruta base para as iconas
+            const iconsBasePath = "/images/social/";
+            
+            // Comprobar cada rede social e engadir icona só se existe
+            if (model.instagram) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.instagram)}" target="_blank" class="social-icon" title="Instagram"><img src="${iconsBasePath}instagram.svg" alt="Instagram"></a>`;
+            }
+            
+            if (model.twitter) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.twitter)}" target="_blank" class="social-icon" title="Twitter/X"><img src="${iconsBasePath}twitter.svg" alt="Twitter"></a>`;
+            }
+            
+            if (model.facebook) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.facebook)}" target="_blank" class="social-icon" title="Facebook"><img src="${iconsBasePath}facebook.svg" alt="Facebook"></a>`;
+            }
+            
+            if (model.web) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.web)}" target="_blank" class="social-icon" title="Páxina web"><img src="${iconsBasePath}website.png" alt="Web"></a>`;
+            }
+            
+            
+            // Engadir div con iconas só se hai algunha
+            const socialIconsContainer = socialIcons ? `<div class="social-icons-container">${socialIcons}</div>` : '';
+          
             document.getElementById('imaxe-cabeceira-container').innerHTML = `
-              <div class="imaxe-fondo">
-                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="fondo-espazo">` : ''}
-              </div>`;
-              
+            <div class="imaxe-fondo">
+              ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="fondo-espazo">` : ''}
+            </div>`;
 
             document.getElementById('info-orga').innerHTML = `
-            
               <div class="header-espazo">
                 <img src="${model.logo}" alt="${model.title} logo" class="logo-espazo">
+                ${socialIconsContainer}
                 <h2 class="titulo-espazo">${model.nome}</h2>
                 ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
               </div>

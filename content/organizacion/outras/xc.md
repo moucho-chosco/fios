@@ -7,6 +7,8 @@ nome_extendido: Xuventude do PCG
 logo:  "/organizacions/xc/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/xc/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/xcgaliza/
+twitter: https://x.com/XCGaliza
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

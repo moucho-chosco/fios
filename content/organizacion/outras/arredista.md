@@ -9,6 +9,11 @@ nome_extendido: Organización revolucionaria
 logo:  "/organizacions/arredista/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/arredista/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/arredista/
+twitter: https://x.com/arredista
+facebook: https://www.facebook.com/arredista
+web: https://arredista.gal/
+
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

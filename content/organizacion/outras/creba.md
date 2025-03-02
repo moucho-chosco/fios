@@ -7,6 +7,8 @@ nome_extendido: Espazo de encontro e debate
 logo:  "/organizacions/creba/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/creba/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/creba.socialista/?hl=es
+twitter: https://x.com/CrebaSocialista
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

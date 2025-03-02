@@ -9,6 +9,10 @@ nome_extendido: Partido Comunista de Galicia
 logo:  "/organizacions/pcg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pcg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/pcgalicia/
+twitter: https://x.com/PCGalicia
+facebook: https://www.facebook.com/PCGALICIA/
+web: https://pcgalicia.org/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

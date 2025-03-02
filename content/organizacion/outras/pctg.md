@@ -9,6 +9,9 @@ nome_extendido: Partido Comunista dos Traballadores da Galiza
 logo:  "/organizacions/pctg/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pctg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/pctg_/
+twitter: https://x.com/pctg_
+facebook: https://www.facebook.com/PCTGpartidocomunista
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

@@ -8,6 +8,11 @@ children:
 nome_extendido: A asociación do galego
 logo:  "/organizacions/a_mesa/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/a_mesa/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+instagram: https://www.instagram.com/amesanl/
+twitter: https://x.com/amesanl
+facebook: https://www.facebook.com/amesanl?locale=gl_ES
+web: www.amesa.gal
+correo: amesa@amesa.gal
 clase: outro
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
@@ -39,11 +44,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus e
 </details>
 
 <details>
-  <summary>Redes</summary>
-  <p>Fusce rhoncus, ante et iaculis aliquet, massa sem lacinia nibh, ut tristique metus sapien ac nisl. Aliquam mollis nibh sit amet diam vehicula convallis. Integer posuere ipsum vel suscipit blandit. Nunc et mollis lorem, at luctus risus. Vestibulum bibendum diam in pellentesque imperdiet. Cras rutrum turpis ut mi maximus scelerisque. Duis quis enim velit. Mauris id vulputate ex.</p>
-</details>
-
-<details>
   <summary>Contacto</summary>
-  <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque neque augue, dapibus in ornare id, porta tristique risus. Proin non massa a felis rhoncus semper vitae eu mauris. Aenean semper urna eget erat bibendum, at laoreet nulla facilisis. Maecenas in libero vel arcu pretium luctus sit amet porttitor orci.</p>
+  <ul>
+    <li>Correo: amesa@amesa.gal</li>
+  </ul>
 </details>

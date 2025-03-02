@@ -1,7 +1,7 @@
 ---
 nome: Rede Galega pola Palestina
-x: 0.64
-y: 0.30
+x: 0.60
+y: 0.39
 color: '#FFD1A0'
 children:
     - "BDS Galiza"
