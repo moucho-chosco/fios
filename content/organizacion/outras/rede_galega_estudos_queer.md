@@ -2,11 +2,15 @@
 nome: "Rede Galega\n de Estudos Queer"
 x: 0.52
 y: 0.27
-color: '#FFE17D'
+color: '#FFF4CF'
 nome_extendido: "Espazo de pesquisa sobre xénero e sexualidade na Galiza"
 logo:  "/organizacions/estudos_queer/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/estudos_queer/foto_cabeceira.gif"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outro
+instagram: https://www.instagram.com/RGEQueer
+twitter: https://x.com/RGEQueer
+facebook: https://www.facebook.com/RGEQueer
+web: https://redegalegadeestudosqueer.wordpress.com/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

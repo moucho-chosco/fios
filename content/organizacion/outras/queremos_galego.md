@@ -2,11 +2,16 @@
 nome: Queremos Galego
 x: 0.37
 y: 0.42
-color: '#E3E3E3'
+color: '#E8F4FF'
 nome_extendido: Plataforma cidadá en defensa da lingua
 logo:  "/organizacions/queremos_galego/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/queremos_galego/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: outro
+instagram: https://www.instagram.com/queremosgalego/
+twitter: https://x.com/QueremosGalego
+facebook: https://www.facebook.com/queremosgalego/?locale=gl_ES
+web: https://www.queremosgalego.gal/
+
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

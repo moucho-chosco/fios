@@ -1,12 +1,14 @@
 ---
 nome: Creba Socialista
 x: 0.45
-y: 0.81
+y: 0.77
 color: '#FC9494'
 nome_extendido: Espaço de encontro e debate
 logo:  "/organizacions/creba/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/creba/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/creba.socialista/?hl=es
+twitter: https://x.com/CrebaSocialista
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

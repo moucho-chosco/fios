@@ -2,13 +2,14 @@
 nome: Rede Galega pola Palestina
 x: 0.60
 y: 0.39
-color: '#FFD1A0'
+color: '#FFEDD9'
 children:
     - "BDS Galiza"
 nome_extendido: Espazo aberto de soldiariedade coa Palestina
 logo:  "/organizacions/rede_palestina/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/rede_palestina/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/redegalegapalestina/?locale=zh_CN&hl=ar
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

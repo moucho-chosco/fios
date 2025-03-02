@@ -2,11 +2,15 @@
 nome: "Galiza por Palestina"
 x: 0.46
 y: 0.52
-color: '#FFD1A0'
+color: '#FFEDD9'
 nome_extendido: Asociación en apoio á causa árabe
 logo:  "/organizacions/galiza_con_palestina/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/galiza_con_palestina/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/galizaporpalestina/
+twitter: https://x.com/galizapalestina
+facebook: https://www.facebook.com/galizaporpalestina
+web: 
 ---
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>

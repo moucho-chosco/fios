@@ -7,6 +7,10 @@ nome_extendido: Organización marxista
 logo:  "/organizacions/esquerda_revolucionaria/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/esquerda_revolucionaria/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/esquerdarevol/
+twitter: 
+facebook: 
+
 ---
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>

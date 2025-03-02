@@ -1,7 +1,7 @@
 ---
 nome: A.M.A.L.
-x: 0.16
-y: 0.80
+x: 0.27
+y: 0.82
 color: '#80A1E7'
 nome_extendido: Agrupaçom de Montanha Águas Limpas
 logo:  "/organizacions/amal/logo.png"  # Ruta á imaxe do logo
@@ -9,6 +9,7 @@ imaxe: "/organizacions/amal/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 instagram: https://www.instagram.com/amalaguas/
 twitter: https://x.com/AmalAguas
 facebook: https://www.facebook.com/people/AMAL-Agrupa%C3%A7om-de-Montanha-Augas-Limpas/100025707490388/
+clase: colectivo
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

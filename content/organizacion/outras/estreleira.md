@@ -1,13 +1,17 @@
 ---
 nome: Estreleira
 x: 0.16
-y: 0.80
-color: '#E3E3E3'
+y: 0.83
+color: '#E9F0FF'
 nome_extendido: Iniciativa para a difusión dos símbolos da nación galega.
 logo:  "/organizacions/estreleira/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/estreleira/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+clase: outro
+instagram: https://www.instagram.com/estreleiragal/?locale=zh_CN&hl=ar
+twitter: https://x.com/Estreleiragal
+facebook: 
 ---
-<div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
+<div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
 O domingo, 27 de xuño do ano 2021, no cumio do Pico Sacro, e no mesmo día de proclamación da primeira república galega, un grupo de persoas presentaron as bases da iniciativa. O seu obxectivo é divulgar e popularizar os símbolos galegos máis senlleiros. Neste acto as persoas promotoras fixeron un chamamento para inzar o país de estreleiras polo 25 de xullo, Día da Galiza.
 

@@ -1,13 +1,16 @@
 ---
 nome: MPI
 x: 0.27
-y: 0.74
+y: 0.72
 color: '#80A1E7'
 nome_extendido: Mocidade pola Independência
 logo:  "/organizacions/mpi/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mpi/foto_cabeceira.jpg_large"  # Ruta á imaxe de fondo
 children:
 clase: colectivo
+instagram: https://www.instagram.com/mpi_galiza
+twitter: https://x.com/mpigaliza
+facebook:
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

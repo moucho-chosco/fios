@@ -8,10 +8,14 @@ imaxe: "/organizacions/isca/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 children:
     - Galiza Nova
 clase: colectivo
+instagram: https://www.instagram.com/iscamocidade/
+twitter: https://x.com/iscagz
+facebook: https://www.facebook.com/iscagz
+web: https://iscagz.org/
 ---
-<div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
+---
 
-Isca! nace en 2006 a partir dun grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necesidade de organizar a mocidade en chave revolucionaria para defender un proxecto de cambio social real. Desde 2021 forma parte de Galiza Nova.
+Isca! nasce em 2006 a partir dum grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necessidade de organizar a mocidade em chave revolucionária para defender um projeto de cambio social real. Desde 2021 forma parte de Galiza Nova.
 
 <details>
   <summary>Que é Isca?</summary>

@@ -7,6 +7,10 @@ nome_extendido: Plataforma Feminista Galega
 logo:  "/organizacions/pfg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pfg/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/plataformafeministagalega
+twitter: https://twitter.com/PFeministaGz
+facebook: https://www.facebook.com/plataformafeministagalega/
+web: https://plataformafeministagalega.org/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

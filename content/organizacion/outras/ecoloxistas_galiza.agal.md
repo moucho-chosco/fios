@@ -1,15 +1,16 @@
 ---
 nome: "Ecoloxistas Galiza"
-x: 0.20
-y: 0.17
-color: '#E3E3E3'
+x: 0.25
+y: 0.25
+color: '#EAFFDD'
 nome_extendido: Ecoloxistas Galiza, Atlántica e Verde
 logo:  "/organizacions/ecoloxistas_galiza/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/ecoloxistas_galiza/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outro
 twitter: https://x.com/ecoloxistasgal
 instagram: https://www.instagram.com/ecoloxistas/
 facebook: facebook.com/ecoloxistas
+web: http://ecoloxistas.org/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

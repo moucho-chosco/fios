@@ -7,6 +7,10 @@ nome_extendido: "Espaço de produção crítica galega"
 logo:  "/organizacions/clara_corbelhe/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/clara_corbelhe/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/claracorbelhe/
+twitter: https://x.com/ClaraCorbelhe
+facebook: https://www.facebook.com/ClaraCorbelhe/
+web: https://claracorbelhe.gal/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

@@ -1,7 +1,7 @@
 ---
 nome: PCG
 x: 0.60
-y: 0.88
+y: 0.84
 color: '#FC9494'
 children:
   - "Xuventude\nComunista"
@@ -9,6 +9,10 @@ nome_extendido: Partido Comunista de Galicia
 logo:  "/organizacions/pcg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pcg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/pcgalicia/
+twitter: https://x.com/PCGalicia
+facebook: https://www.facebook.com/PCGALICIA/
+web: https://pcgalicia.org/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

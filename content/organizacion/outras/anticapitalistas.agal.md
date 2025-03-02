@@ -7,11 +7,14 @@ nome_extendido: Construindo um movimento anticapitalista
 logo:  "/organizacions/anticapitalistas/logo.jpeg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/anticapitalistas/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/anticapi_galiza/
+twitter: https://x.com/anticapi_GZ
+facebook: https://www.facebook.com/anticapigz
 ---
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-Anticapitalistas é unha organización política estatal que aspira a construír un movemento revolucionario internacionalista que transforme profundamente a sociedade actual. Fronte á desigualdade e a injustiza que vertebran o sistema capitalista, defendemos unha democracia ecosocialista e feminista na que o conxunto da sociedade controle os resortes do poder económico, político e cultural.
+*Anticapitalistas* é uma organizaçom política estatal que aspira a construír um movimento revolucionário internacionalista que transforme profundamente a sociedade atual. Fronte à desigualdade e a injustiza que vertebram o sistema capitalista, defendemos uma democracia ecosocialista e feminista na que o conjunto da sociedade controle os resortes do poder económico, político e cultural.
 
 <details>
   <summary>Que é Anticapitalistas?</summary>

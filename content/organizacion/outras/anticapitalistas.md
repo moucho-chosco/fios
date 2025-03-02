@@ -14,7 +14,7 @@ facebook: https://www.facebook.com/anticapigz
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-Anticapitalistas é unha organización política estatal que aspira a construír un movemento revolucionario internacionalista que transforme profundamente a sociedade actual. Fronte á desigualdade e a injustiza que vertebran o sistema capitalista, defendemos unha democracia ecosocialista e feminista na que o conxunto da sociedade controle os resortes do poder económico, político e cultural.
+Anticapitalistas é unha organización política estatal que aspira a construír un movemento revolucionario internacionalista que transforme profundamente a sociedade actual. Fronte á desigualdade e a inxustiza que vertebran o sistema capitalista, defendemos unha democracia ecosocialista e feminista na que o conxunto da sociedade controle os resortes do poder económico, político e cultural.
 
 <details>
   <summary>Que é Anticapitalistas?</summary>

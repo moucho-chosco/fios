@@ -8,7 +8,7 @@
         <!-- Área para mostrar coordenadas relativas -->
         <div id="coordenadas-info" style="margin-top: 20px; display: none;">
           <h3>Coordenadas relativas</h3>
-          <pre id="coordenadas-texto">Selecciona un nodo para ver as súas coordenadas.</pre>
+          <pre id="coordenadas-texto">Seleciona um nodo para ver as suas coordenadas.</pre>
         </div>
 
         <script src="https://unpkg.com/@antv/g6@4.8.8/dist/g6.min.js"></script>
@@ -33,6 +33,11 @@
               "logo" (.Params.logo | absURL)
               "nome" .Params.nome
               "nome_extendido" .Params.nome_extendido
+              "instagram" .Params.instagram
+              "twitter" .Params.twitter
+              "facebook" .Params.facebook
+              "web" .Params.web
+              "correo" .Params.correo
               "size" 26
               "x" .Params.x
               "y" .Params.y
@@ -126,6 +131,7 @@
 
           // 6. MANEXO DE EVENTOS
           let selectedNode = null;
+
 
           // Actualizar coordenadas ao mover un nodo
           graph.on('afterdragnode', (e) => {
@@ -235,17 +241,51 @@
           function actualizarContido(node) {
             const model = node.getModel();
             const dynamicContent = contentMap[model.id] || `<p>Sen contido dispoñible para ${model.nome}</p>`;
+        
+            // Crear iconas de redes sociais
+            let socialIcons = '';
             
+            // Asegurarse de que os enlaces son absolutos, engadindo https:// se é necesario
+            const ensureAbsoluteUrl = (url) => {
+              if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+                return 'https://' + url;
+              }
+              return url;
+            };
+            
+            // Definir a ruta base para as iconas
+            const iconsBasePath = "/images/social/";
+            
+            // Comprobar cada rede social e engadir icona só se existe
+            if (model.instagram) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.instagram)}" target="_blank" class="social-icon" title="Instagram"><img src="${iconsBasePath}instagram.svg" alt="Instagram"></a>`;
+            }
+            
+            if (model.twitter) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.twitter)}" target="_blank" class="social-icon" title="Twitter/X"><img src="${iconsBasePath}twitter.svg" alt="Twitter"></a>`;
+            }
+            
+            if (model.facebook) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.facebook)}" target="_blank" class="social-icon" title="Facebook"><img src="${iconsBasePath}facebook.svg" alt="Facebook"></a>`;
+            }
+            
+            if (model.web) {
+              socialIcons += `<a href="${ensureAbsoluteUrl(model.web)}" target="_blank" class="social-icon" title="Páxina web"><img src="${iconsBasePath}website.png" alt="Web"></a>`;
+            }
+            
+            
+            // Engadir div con iconas só se hai algunha
+            const socialIconsContainer = socialIcons ? `<div class="social-icons-container">${socialIcons}</div>` : '';
+          
             document.getElementById('imaxe-cabeceira-container').innerHTML = `
-              <div class="imaxe-fondo">
-                ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="fondo-espazo">` : ''}
-              </div>`;
-              
+            <div class="imaxe-fondo">
+              ${model.imaxe ? `<img src="${model.imaxe}" alt="${model.nome}" class="fondo-espazo">` : ''}
+            </div>`;
 
             document.getElementById('info-orga').innerHTML = `
-            
               <div class="header-espazo">
                 <img src="${model.logo}" alt="${model.title} logo" class="logo-espazo">
+                ${socialIconsContainer}
                 <h2 class="titulo-espazo">${model.nome}</h2>
                 ${model.nome_extendido ? `<p class="descricion-espazo">${model.nome_extendido}</p>` : ''}
               </div>
@@ -394,7 +434,7 @@
           
   
           <div id="barra-busqueda-calendario" class="barra-busqueda">
-            <input type="text" id="busqueda-centros" placeholder="Buscar colectivos..." />
+            <input type="text" id="busqueda-centros" placeholder="Buscar coletivos..." />
           </div>
         </div>
       </div>
@@ -402,10 +442,10 @@
 
       <div id="contido-orgas-info">
         <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
-          ⚠️ O contido desta secçom mostra-se a modo de exemplo técnico. As organizaçons representadas e o mapa podem mudar en funçom do feedback recibido. A intençom é engadir tamém informaçom sobre sindicatos, editoriais, assembleias e coletivos locais, e outros coletivos anti-capitalistas. 
+          ⚠️ O contido desta secçom mostra-se a modo de exemplo têcnico. As organizaçons representadas e o mapa podem mudar em funçom do feedback recibido. A intençom é engadir tamém informaçom sobre sindicatos, editoriais, assembleias e coletivos locais, e outros coletivos anticapitalistas.
         </div>
         <p id="mensaxe-sen-resultados" style="display: none;">
-          Nom se atopárom coletivos coincidentes
+          Non se atoparon colectivos coincidentes
         </p>
           <div id="tarxetas-centros" class="tarxetas-container" style="display: none;">
             {{ range shuffle (where .Site.RegularPages ".Params.clase" "colectivo") }}

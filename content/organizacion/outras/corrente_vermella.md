@@ -7,6 +7,7 @@ nome_extendido: Organización marxista
 logo:  "/organizacions/corrente_vermella/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/corrente_vermella/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+facebook: https://www.facebook.com/CorrenteVermella
 ---
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>

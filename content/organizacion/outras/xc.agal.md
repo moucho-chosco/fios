@@ -1,12 +1,14 @@
 ---
 nome: "Xuventude\nComunista"
 x: 0.60
-y: 0.79
+y: 0.74
 color: '#FC9494'
 nome_extendido: Juventude do PCG
 logo:  "/organizacions/xc/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/xc/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/xcgaliza/
+twitter: https://x.com/XCGaliza
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 

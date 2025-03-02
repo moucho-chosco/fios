@@ -1,7 +1,7 @@
 ---
 nome: PCTG
-x: 0.80
-y: 0.85
+x: 0.82
+y: 0.83
 color: '#FC9494'
 children:
   - CMC

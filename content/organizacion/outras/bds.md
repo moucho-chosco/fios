@@ -2,7 +2,7 @@
 nome: "BDS Galiza"
 x: 0.64
 y: 0.32
-color: '#FFD1A0'
+color: '#FFEDD9'
 nome_extendido: "Boicote, Desinvestimentos e Sancións a Israel"
 logo:  "/organizacions/bds/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bds/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

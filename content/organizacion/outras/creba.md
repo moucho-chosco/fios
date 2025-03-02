@@ -1,7 +1,7 @@
 ---
 nome: Creba Socialista
 x: 0.45
-y: 0.81
+y: 0.77
 color: '#FC9494'
 nome_extendido: Espazo de encontro e debate
 logo:  "/organizacions/creba/logo.jpg"  # Ruta á imaxe do logo

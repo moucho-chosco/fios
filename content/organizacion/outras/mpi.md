@@ -1,7 +1,7 @@
 ---
 nome: MPI
 x: 0.27
-y: 0.74
+y: 0.72
 color: '#80A1E7'
 nome_extendido: Mocidade pola Independencia
 logo:  "/organizacions/mpi/logo.jpg"  # Ruta á imaxe do logo

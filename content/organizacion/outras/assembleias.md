@@ -1,7 +1,7 @@
 ---
 nome: "Assembleias\nAbertas\nIndependentistas"
-x: 0.27
-y: 0.86
+x: 0.16
+y: 0.73
 color: '#80A1E7'
 children:
     - Ceivar
@@ -9,6 +9,10 @@ nome_extendido: Estruturas abertas de carácter comarcal
 logo:  "/organizacions/assembleias/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/assembleias/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/assembleias_independentistas
+twitter: https://twitter.com/assembleias_i
+facebook: https://www.facebook.com/Assembleias-Abertas-Independentistas-105247525096754
+web: http://www.assembleias.gal/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

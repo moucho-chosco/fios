@@ -8,6 +8,9 @@ nome_extendido: "Unión da Mocidade Galega"
 logo:  "/organizacions/umg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/umg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/galizaumg/
+twitter: https://x.com/GalizaUMG
+facebook: https://www.facebook.com/GalizaUMG
 ---
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>

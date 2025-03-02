@@ -1,12 +1,12 @@
 ---
 nome: "Verdegaia"
-x: 0.23
-y: 0.24
-color: '#E3E3E3'
+x: 0.18
+y: 0.18
+color: '#EAFFDD'
 nome_extendido: Asociación ecoloxista galega
 logo:  "/organizacions/verdegaia/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/verdegaia/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outro
 instagram: https://www.instagram.com/verdegaiagz
 twitter: https://x.com/verdegaiagz/
 facebook: https://www.facebook.com/ecoloxistasverdegaia/

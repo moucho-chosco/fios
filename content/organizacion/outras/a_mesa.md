@@ -2,7 +2,7 @@
 nome: A MESA
 x: 0.30
 y: 0.36
-color: '#E3E3E3'
+color: '#E8F4FF'
 children:
     - Queremos Galego
 nome_extendido: A asociación do galego
@@ -17,7 +17,7 @@ clase: outro
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-A Mesa pola Normalización Lingüística é unha plataforma independente, plural e apartidaria que ten como único obxectivo a promoción do uso do galego en todos os ámbitos da vida social propios de calquera idioma. O seu papel é o de emprender iniciativas que sensibilicen a poboación e que abran novas vías de uso do noso idioma en distintos ámbitos, así como denunciar todo tipo de agresións e discriminacións que poida sufrir a lingua galega e asegurar que se respecte o seu uso individual e colectivo.
+A *Mesa pola Normalización Lingüística* é unha plataforma independente, plural e apartidaria que ten como único obxectivo a promoción do uso do galego en todos os ámbitos da vida social propios de calquera idioma. O seu papel é o de emprender iniciativas que sensibilicen a poboación e que abran novas vías de uso do noso idioma en distintos ámbitos, así como denunciar todo tipo de agresións e discriminacións que poida sufrir a lingua galega e asegurar que se respecte o seu uso individual e colectivo.
 
 <details>
   <summary>Que é a MESA pola normalización lingüística?</summary>

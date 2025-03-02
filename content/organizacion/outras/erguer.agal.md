@@ -2,15 +2,19 @@
 nome: Erguer
 x: 0.21
 y: 0.36
-color: '#E3E3E3'
+color: '#E8F4FF'
 nome_extendido: Estudantes da Galiza
 logo:  "/organizacions/erguer/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/erguer/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: outro
+instagram: https://www.instagram.com/erguergaliza
+twitter: https://x.com/erguergaliza
+facebook: https://www.facebook.com/@erguergaliza/
+web: https://erguer.gal/gl/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-Erguer é a ferramenta unitaria do estudantado galego, formada no ano 2016 a través dun proceso de asembleas abertas nas que se colectivizou o proxecto entre o estudantado de todo o país. As estudantes non organizadas até o momento, xunto ás membros das tres organizacións estudiantís nacionalistas da altura (Agir, Comités e Liga Estudantil Galega), baixo o lema “Libera  e transforma Galiza desde as aulas”. Así naceu Erguer como nova organización que une ao estudantado nacionalista e independentista galego.
+*Erguer* é a ferramenta unitária do estudantado galego, formada no ano 2016 a través dum processo de assembleias abertas nas que se coletivizou o projeto entre o estudantado de todo o país. As estudantes nom organizadas até o momento, junto às membros das tres organizaçons estudiantís nacionalistas da altura (Agir, Comités e Liga Estudantil Galega), baixo o lema “Libera  e transforma Galiza desde as aulas”. Assi nasceu Erguer como nova organizaçom que une ao estudantado nacionalista e independentista galego.
 
 <details>
   <summary>Que é Erguer?</summary>

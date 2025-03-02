@@ -1,7 +1,7 @@
 ---
 nome: "Xuventude\nComunista"
 x: 0.60
-y: 0.79
+y: 0.74
 color: '#FC9494'
 nome_extendido: Xuventude do PCG
 logo:  "/organizacions/xc/logo.jpg"  # Ruta á imaxe do logo

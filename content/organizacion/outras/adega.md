@@ -2,7 +2,7 @@
 nome: ADEGA
 x: 0.14
 y: 0.32
-color: '#E3E3E3'
+color: '#EAFFDD'
 nome_extendido: Asociación para a Defensa Ecolóxica de Galiza
 logo:  "/organizacions/adega/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/adega/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -13,7 +13,7 @@ web: https://adega.gal/portada.php?idioma=gl
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-A Asociación para a Defensa Ecolóxica de Galiza (ADEGA) é unha asociación ecoloxista democrática, independente e sen ánimo de lucro que traballa en defensa do medio ambiente galego e global do que depende a nosa calidade de vida. ADEGA avoga por un modelo de desenvolvemento ecoloxicamente sustentábel e socialmente xusto, por un modelo de desenvolvemento sen destrución ambiental que reduza as desigualdades dentro de cada país e entre países.
+A *Asociación para a Defensa Ecolóxica de Galiza* (ADEGA) é unha asociación ecoloxista democrática, independente e sen ánimo de lucro que traballa en defensa do medio ambiente galego e global do que depende a nosa calidade de vida. ADEGA avoga por un modelo de desenvolvemento ecoloxicamente sustentábel e socialmente xusto, por un modelo de desenvolvemento sen destrución ambiental que reduza as desigualdades dentro de cada país e entre países.
 
 <details>
   <summary>Que é ADEGA?</summary>

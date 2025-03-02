@@ -16,7 +16,7 @@ web: https://upg.gal/
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-A Unión do Povo Galego (UPG) é un partido comunista e patriótico, fundado en 1964, que defende os intereses da clase traballadora e do conxunto das clases populares galegas. A UPG asume a loita de liberación nacional na perspectiva da instauración dun Estado galego democrático e popular como única maneira de acabar coa colonización que padece o noso País e como paso indispensábel para a construción do socialismo na Galiza.
+A *Unión do Povo Galego* (UPG) é un partido comunista e patriótico, fundado en 1964, que defende os intereses da clase traballadora e do conxunto das clases populares galegas. A UPG asume a loita de liberación nacional na perspectiva da instauración dun Estado galego democrático e popular como única maneira de acabar coa colonización que padece o noso País e como paso indispensábel para a construción do socialismo na Galiza.
 
 <details>
   <summary>Que é a UPG?</summary>

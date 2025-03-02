@@ -13,7 +13,7 @@ twitter: https://x.com/iscagz
 facebook: https://www.facebook.com/iscagz
 web: https://iscagz.org/
 ---
-<div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
+---
 
 Isca! nace en 2006 a partir dun grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necesidade de organizar a mocidade en chave revolucionaria para defender un proxecto de cambio social real. Desde 2021 forma parte de Galiza Nova.
 

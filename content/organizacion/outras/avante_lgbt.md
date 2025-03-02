@@ -7,6 +7,10 @@ nome_extendido: "En loita contra o patriarcado e a cisheteronorma"
 logo:  "/organizacions/avante_lgbt/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/avante_lgbt/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/avantelgbt/
+twitter: https://x.com/AvanteLGBT
+facebook: https://www.facebook.com/AvanteLGBT
+web: https://avantelgbt.com/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

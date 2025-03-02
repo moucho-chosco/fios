@@ -7,6 +7,10 @@ nome_extendido: Comité Galego de Solidariedade Internacionalista
 logo:  "/organizacions/mardelumes/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mardelumes/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
+instagram: https://www.instagram.com/mardelumes/
+twitter: https://x.com/mardelumes
+facebook: https://www.facebook.com/mardelumes/?locale=gl_ES
+web: https://mardelumes.org/nos/
 ---
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>

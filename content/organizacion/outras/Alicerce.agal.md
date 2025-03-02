@@ -2,15 +2,17 @@
 nome: Alicerce
 x: 0.10
 y: 0.50
-color: '#E3E3E3'
+color: '#E8F4FF'
 nome_extendido: Corrente política dentro do BNG
 logo:  "/organizacions/alicerce/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/alicerce/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: outro
+instagram: https://www.instagram.com/alicercegaliza/
+facebook: https://www.facebook.com/profile.php?id=61568115197808
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-Alicerce nace para poder fortalecer os principios, pór en común as ideas e participar dun xeito máis activo na propia organización. Nacemos pois, cun espírito eminentemente construtivo e, en definitiva, para mellorar o BNG
+*Alicerce* nasce para poder fortalecer os princípios, pôr en comúm as ideias e participar dum jeito mais ativo na própria organizaçom. Nacemos pois, cum espírito eminentemente construtivo e, em definitiva, para melhorar o BNG.
 
 <details>
   <summary>Que é Alicerce?</summary>

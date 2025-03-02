@@ -2,11 +2,12 @@
 nome: "Asociación Galaico-Árabe Jenin"
 x: 0.56
 y: 0.46
-color: '#E3E3E3'
+color: '#FFEDD9'
 nome_extendido: Comunidade Palestina en Galicia
 logo:  "/organizacions/jenin/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/jenin/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: comunidade
+instagram: https://www.instagram.com/asociacion.jenin/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

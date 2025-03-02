@@ -2,7 +2,7 @@
 nome: BNG
 x: 0.16
 y: 0.44
-color: '#E3E3E3'
+color: '#E8F4FF'
 nome_extendido: "Bloque Nacionalista Galego"
 logo:  "/organizacions/bng/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bng/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -11,10 +11,14 @@ children:
     - FOG
     - UPG
     - Galiza Nova
-    - M. Arredista
+    - "Movemento\nArredista"
 nome_extendido: Bloque Nacionalista Galego
 logo:  "/organizacions/bng/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bng/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
+instagram: https://www.instagram.com/o_bloque/
+twitter: https://x.com/obloque
+facebook: https://facebook.com/obloque
+web: https://www.bng.gal/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
