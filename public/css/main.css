@@ -759,7 +759,6 @@ nav a:hover {
     position: absolute;
     top: 110px; /* Distancia desde arriba */
     right: 40px; /* Distancia desde a dereita */
-    display: flex;
     gap: 12px;
   }
   
