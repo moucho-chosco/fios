@@ -74,45 +74,12 @@
                 
                 
                 <li class="">
-                    <a href="/agal/convocatorias/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
-                        <span class="menu-text"> Convocatórias</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
-                    <a href="/agal/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        <span class="menu-text"> Calendário</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
                     <a href="/agal/podcast/" class="menu-link">
                         
                             <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
                         <span class="menu-text"> Podcast</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
-                    <a href="/agal/redes/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
-                        <span class="menu-text"> Redes</span>
                     </a>
                 </li>
                 
@@ -147,12 +114,6 @@
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
@@ -160,7 +121,11 @@
                 
                     
                     
-                        <a href="/ilg/espazos/">Galego AGAL ⇄</a>
+                        <a href="/ilg/espazos/" id="langButton" class="normativa-button">
+                        
+                            <img class="lang-icon" src="/images/elementos/pantalla_ancha/eneaga.png" alt="Normativa AGAL" width="25" height="25">
+                        
+                        </a>
                     
                 
             </nav>
@@ -216,10 +181,6 @@
                 <option value="vigo.agal,42.24,-8.735,13">📍 Vigo</option>
               
             </select>
-            <select class="filter">
-              <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
-              
-            </select>
           </div>
           
           
@@ -232,7 +193,7 @@
       
 
       <div id="contido-espazos-info">
-        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+        <div id="warning-infoorgas" class="warning" style="display: none;margin:5%;margin-top:0;margin-bottom:3%;">
           ⚠️ O contido desta secçom mostra-se a modo de exemplo técnico. Os espaços representados e o mapa podem mudar en funçom do feedback recibido.
         </div>
         <p id="mensaxe-sen-resultados" style="display: none;">
@@ -240,52 +201,20 @@
           </p>
           <div id="tarxetas-centros" class="tarxetas-container" style="display:none;">
             
-              <div class="tarxeta-centro" data-key="gomes_gaioso.agal">
-                <div class="franxa-cor" style="background: #FF5858;"></div>
-                <img src="/espazos/centros/gomes_gaioso/logo.png" alt="Logo de Gomes Gaioso" class="logo-tarxeta">
-                <h3>Gomes Gaioso</h3>
+              <div class="tarxeta-centro" data-key="aluande.agal">
+                <div class="franxa-cor" style="background: #f7a861;"></div>
+                <img src="/espazos/centros/aluande/logo.jpg" alt="Logo de Aluandê" class="logo-tarxeta">
+                <h3>Aluandê</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Espaço afrocentrado, antirracista e transinclusivo</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolteira.agal">
+                <div class="franxa-cor" style="background: #55B47B;"></div>
+                <img src="/espazos/centros/a_revolteira/logo.png" alt="Logo de A Revolteira" class="logo-tarxeta">
+                <h3>A Revolteira</h3>
                 <span class="localidade">📍A Corunha</span>
-                <p>Centro social independentista, socialista e antipatriarcal</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="revolta_de_trasancos.agal">
-                <div class="franxa-cor" style="background: #f2d054;"></div>
-                <img src="/espazos/centros/a_revolta_de_trasancos/logo.jpg" alt="Logo de A Revolta de Trasancos" class="logo-tarxeta">
-                <h3>A Revolta de Trasancos</h3>
-                <span class="localidade">📍Trasancos</span>
-                <p>Coletivo Sociocultural</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="chave_das_noces.agal">
-                <div class="franxa-cor" style="background: #eb008b;"></div>
-                <img src="/espazos/centros/a_chave_das_noces/logo.jpg" alt="Logo de A Chave das Noces" class="logo-tarxeta">
-                <h3>A Chave das Noces</h3>
-                <span class="localidade">📍Castroverde</span>
-                <p>Centro Social em Castroverde</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="hedreira.agal">
-                <div class="franxa-cor" style="background: #179429;"></div>
-                <img src="/espazos/centros/a_hedreira/logo.jpg" alt="Logo de A Hedreira" class="logo-tarxeta">
-                <h3>A Hedreira</h3>
-                <span class="localidade">📍Lugo</span>
-                <p>Centro Social Autogerido</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="revolta_do_berbes.agal">
-                <div class="franxa-cor" style="background: #1F7DBD;"></div>
-                <img src="/espazos/centros/a_revolta_do_berbes/logo.png" alt="Logo de A Revolta do Berbês" class="logo-tarxeta">
-                <h3>A Revolta do Berbês</h3>
-                <span class="localidade">📍Vigo</span>
-                <p>Centro Social Independentista</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="tiradoura.agal">
-                <div class="franxa-cor" style="background: #BC0707;"></div>
-                <img src="/espazos/centros/a_tiradoura/logo.jpg" alt="Logo de A Tiradoura" class="logo-tarxeta">
-                <h3>A Tiradoura</h3>
-                <span class="localidade">📍Cangas do Morraço</span>
-                <p>Associaçom Cultural</p>
+                <p>Espaço Autogerido</p>
               </div>
             
               <div class="tarxeta-centro" data-key="alvariça.agal">
@@ -304,140 +233,12 @@
                 <p>Centro Social e Cultural</p>
               </div>
             
-              <div class="tarxeta-centro" data-key="faisca.agal">
-                <div class="franxa-cor" style="background: #DB0C14;"></div>
-                <img src="/espazos/centros/faisca2/logo.png" alt="Logo de Faísca" class="logo-tarxeta">
-                <h3>Faísca</h3>
-                <span class="localidade">📍Vigo</span>
-                <p>Local Social Autogerido</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="escarnio.agal">
-                <div class="franxa-cor" style="background: #746D6F;"></div>
-                <img src="/espazos/centros/escarnio/logo.png" alt="Logo de Escárnio e Maldizer" class="logo-tarxeta">
-                <h3>Escárnio e Maldizer</h3>
-                <span class="localidade">📍Compostela</span>
-                <p>Centro Social Okupado Autogerido</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="aluande.agal">
-                <div class="franxa-cor" style="background: #f7a861;"></div>
-                <img src="/espazos/centros/aluande/logo.jpg" alt="Logo de Aluandê" class="logo-tarxeta">
-                <h3>Aluandê</h3>
-                <span class="localidade">📍Compostela</span>
-                <p>Espaço afrocentrado, antirracista e transinclusivo</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="nubeira.agal">
-                <div class="franxa-cor" style="background: #b6c8e8;"></div>
-                <img src="/espazos/centros/nubeira/logo.png" alt="Logo de A Nubeira" class="logo-tarxeta">
-                <h3>A Nubeira</h3>
-                <span class="localidade">📍Vigo</span>
-                <p>Centro Social Autogerido</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="matadoiro.agal">
-                <div class="franxa-cor" style="background: #eb008b;"></div>
-                <img src="/espazos/centros/o_matadoiro/logo.jpg" alt="Logo de ACDE Treze Catorze" class="logo-tarxeta">
-                <h3>ACDE Treze Catorze</h3>
-                <span class="localidade">📍Salceda de Caselas</span>
-                <p>Associaçom Cultural</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="fuscalho.agal">
-                <div class="franxa-cor" style="background: #2740D2;"></div>
-                <img src="/espazos/centros/fuscalho/logo.jpg" alt="Logo de Fuscalho" class="logo-tarxeta">
-                <h3>Fuscalho</h3>
-                <span class="localidade">📍A Guarda</span>
-                <p>Espaço Autogerido na Guarda</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="revolteira.agal">
-                <div class="franxa-cor" style="background: #55B47B;"></div>
-                <img src="/espazos/centros/a_revolteira/logo.png" alt="Logo de A Revolteira" class="logo-tarxeta">
-                <h3>A Revolteira</h3>
-                <span class="localidade">📍A Corunha</span>
-                <p>Espaço Autogerido na Corunha</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="pedreira.agal">
-                <div class="franxa-cor" style="background: #E64C3B;"></div>
-                <img src="/espazos/centros/a_pedreira/logo.jpg" alt="Logo de A Pedreira" class="logo-tarxeta">
-                <h3>A Pedreira</h3>
-                <span class="localidade">📍Ponte Vedra</span>
-                <p>Espaço Autogerido em Pontevedra</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="colectivo_terra.agal">
-                <div class="franxa-cor" style="background: #e72444;"></div>
-                <img src="/espazos/centros/colectivo_terra/logo.jpg" alt="Logo de Coletivo Terra" class="logo-tarxeta">
-                <h3>Coletivo Terra</h3>
-                <span class="localidade">📍Pontedeume</span>
-                <p>Centro Social de Pontedeume</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="casa_branca.agal">
-                <div class="franxa-cor" style="background: #E2E2E2;"></div>
-                <img src="/espazos/centros/casa_branca/logo.png" alt="Logo de A Casa Branca" class="logo-tarxeta">
-                <h3>A Casa Branca</h3>
-                <span class="localidade">📍Compostela</span>
-                <p>Asociación Cultural Autoxestionada</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="casa_colorida.agal">
-                <div class="franxa-cor" style="background: #eb008b;"></div>
-                <img src="/espazos/centros/a_casa_colorida/logo.jpg" alt="Logo de A Casa Colorida" class="logo-tarxeta">
-                <h3>A Casa Colorida</h3>
-                <span class="localidade">📍Nigrám</span>
-                <p>Laboratório do Comúm na Galiza</p>
-              </div>
-            
               <div class="tarxeta-centro" data-key="ateneo_ferrolan.agal">
                 <div class="franxa-cor" style="background: #1f7dbd;"></div>
                 <img src="/espazos/centros/ateneo_ferrolan/logo.png" alt="Logo de Ateneo Ferrolám" class="logo-tarxeta">
                 <h3>Ateneo Ferrolám</h3>
                 <span class="localidade">📍Ferrol</span>
                 <p>Lugar de encontro para a cultura</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="galleira.agal">
-                <div class="franxa-cor" style="background: #B5D0DB;"></div>
-                <img src="/espazos/centros/a_galleira/logo.png" alt="Logo de A Galheira" class="logo-tarxeta">
-                <h3>A Galheira</h3>
-                <span class="localidade">📍Ourense</span>
-                <p>Espaço Aberto Nacionalista de Ourense</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="fervedoiro.agal">
-                <div class="franxa-cor" style="background: #3A7CC7;"></div>
-                <img src="/espazos/centros/o_fervedoiro/logo.jpeg" alt="Logo de O Fervedoiro" class="logo-tarxeta">
-                <h3>O Fervedoiro</h3>
-                <span class="localidade">📍Ribeira</span>
-                <p>Espaço Social em Ribeira</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="casino_1889.agal">
-                <div class="franxa-cor" style="background: #AD1C4F;"></div>
-                <img src="/espazos/centros/casino_1889/logo_3.png" alt="Logo de Casino 1889" class="logo-tarxeta">
-                <h3>Casino 1889</h3>
-                <span class="localidade">📍Carballo</span>
-                <p>Centro Social Autogerido</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="fundaçom_artabria.agal">
-                <div class="franxa-cor" style="background: #d4112c;"></div>
-                <img src="/espazos/centros/artabria/logo.jpg" alt="Logo de Fundaçom Artábria" class="logo-tarxeta">
-                <h3>Fundaçom Artábria</h3>
-                <span class="localidade">📍Ferrol</span>
-                <p>Associaçom Cultural</p>
-              </div>
-            
-              <div class="tarxeta-centro" data-key="xebra.agal">
-                <div class="franxa-cor" style="background: #89C4FF;"></div>
-                <img src="/espazos/centros/xebra/logo.png" alt="Logo de Xebra!" class="logo-tarxeta">
-                <h3>Xebra!</h3>
-                <span class="localidade">📍Burela</span>
-                <p>Associaçom cultural</p>
               </div>
             
               <div class="tarxeta-centro" data-key="buril.agal">
@@ -448,12 +249,44 @@
                 <p>Associaçom Cultural, Deportiva e Ecológica</p>
               </div>
             
-              <div class="tarxeta-centro" data-key="pichel.agal">
-                <div class="franxa-cor" style="background: #bbbc00;"></div>
-                <img src="/espazos/centros/o_pichel/logo.png" alt="Logo de O Pichel" class="logo-tarxeta">
-                <h3>O Pichel</h3>
-                <span class="localidade">📍Compostela</span>
-                <p>Centro Social da Gentalha do Pichel</p>
+              <div class="tarxeta-centro" data-key="tiradoura.agal">
+                <div class="franxa-cor" style="background: #BC0707;"></div>
+                <img src="/espazos/centros/a_tiradoura/logo.jpg" alt="Logo de A Tiradoura" class="logo-tarxeta">
+                <h3>A Tiradoura</h3>
+                <span class="localidade">📍Cangas do Morraço</span>
+                <p>Associaçom Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fundaçom_artabria.agal">
+                <div class="franxa-cor" style="background: #d4112c;"></div>
+                <img src="/espazos/centros/artabria/logo.jpg" alt="Logo de Fundaçom Artábria" class="logo-tarxeta">
+                <h3>Fundaçom Artábria</h3>
+                <span class="localidade">📍Ferrol</span>
+                <p>Associaçom Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casa_colorida.agal">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/a_casa_colorida/logo.jpg" alt="Logo de A Casa Colorida" class="logo-tarxeta">
+                <h3>A Casa Colorida</h3>
+                <span class="localidade">📍Nigrám</span>
+                <p>Laboratório do Comúm na Galiza</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casino_1889.agal">
+                <div class="franxa-cor" style="background: #AD1C4F;"></div>
+                <img src="/espazos/centros/casino_1889/logo_3.png" alt="Logo de Casino 1889" class="logo-tarxeta">
+                <h3>Casino 1889</h3>
+                <span class="localidade">📍Carballo</span>
+                <p>Centro Social Autogerido</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolta_do_berbes.agal">
+                <div class="franxa-cor" style="background: #1F7DBD;"></div>
+                <img src="/espazos/centros/a_revolta_do_berbes/logo.png" alt="Logo de A Revolta do Berbês" class="logo-tarxeta">
+                <h3>A Revolta do Berbês</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Centro Social Independentista</p>
               </div>
             
               <div class="tarxeta-centro" data-key="acefala.agal">
@@ -464,20 +297,84 @@
                 <p>Espaço autónomo no bárrio de Monte Alto</p>
               </div>
             
-              <div class="tarxeta-centro" data-key="fenda.agal">
-                <div class="franxa-cor" style="background: #f15e80;"></div>
-                <img src="/espazos/centros/a_fenda/logo.png" alt="Logo de A Fenda" class="logo-tarxeta">
-                <h3>A Fenda</h3>
-                <span class="localidade">📍A Corunha</span>
-                <p>Espaço baixo a estratégia socialista </p>
+              <div class="tarxeta-centro" data-key="vagalume.agal">
+                <div class="franxa-cor" style="background: #f3c61c;"></div>
+                <img src="/espazos/centros/vagalume/logo.jpg" alt="Logo de Vagalume" class="logo-tarxeta">
+                <h3>Vagalume</h3>
+                <span class="localidade">📍Lugo</span>
+                <p>Centro Social Aberto</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="colectivo_terra.agal">
+                <div class="franxa-cor" style="background: #e72444;"></div>
+                <img src="/espazos/centros/colectivo_terra/logo.jpg" alt="Logo de Coletivo Terra" class="logo-tarxeta">
+                <h3>Coletivo Terra</h3>
+                <span class="localidade">📍Pontedeume</span>
+                <p>Centro Social de Pontedeume</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="nubeira.agal">
+                <div class="franxa-cor" style="background: #b6c8e8;"></div>
+                <img src="/espazos/centros/nubeira/logo.png" alt="Logo de A Nubeira" class="logo-tarxeta">
+                <h3>A Nubeira</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Centro Social Autogerido</p>
               </div>
             
               <div class="tarxeta-centro" data-key="xose_tarrio.agal">
                 <div class="franxa-cor" style="background: #A637CA;"></div>
-                <img src="/espazos/centros/xose_tarrio/logo.png" alt="Logo de Ateneo Libertario Xosé Tarrío" class="logo-tarxeta">
-                <h3>Ateneo Libertario Xosé Tarrío</h3>
+                <img src="/espazos/centros/xose_tarrio/logo.png" alt="Logo de Ateneo Xosé Tarrío" class="logo-tarxeta">
+                <h3>Ateneo Xosé Tarrío</h3>
                 <span class="localidade">📍A Corunha</span>
                 <p>Anarquismo de bárrio</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fervedoiro.agal">
+                <div class="franxa-cor" style="background: #3A7CC7;"></div>
+                <img src="/espazos/centros/o_fervedoiro/logo.jpeg" alt="Logo de O Fervedoiro" class="logo-tarxeta">
+                <h3>O Fervedoiro</h3>
+                <span class="localidade">📍Ribeira</span>
+                <p>Espaço Social</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="hedreira.agal">
+                <div class="franxa-cor" style="background: #179429;"></div>
+                <img src="/espazos/centros/a_hedreira/logo.jpg" alt="Logo de A Hedreira" class="logo-tarxeta">
+                <h3>A Hedreira</h3>
+                <span class="localidade">📍Lugo</span>
+                <p>Centro Social Autogerido</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="chave_das_noces.agal">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/a_chave_das_noces/logo.jpg" alt="Logo de A Chave das Noces" class="logo-tarxeta">
+                <h3>A Chave das Noces</h3>
+                <span class="localidade">📍Castroverde</span>
+                <p>Centro Social em Castroverde</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="matadoiro.agal">
+                <div class="franxa-cor" style="background: #eb008b;"></div>
+                <img src="/espazos/centros/o_matadoiro/logo.jpg" alt="Logo de ACDE Treze Catorze" class="logo-tarxeta">
+                <h3>ACDE Treze Catorze</h3>
+                <span class="localidade">📍Salceda de Caselas</span>
+                <p>Associaçom Cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="revolta_de_trasancos.agal">
+                <div class="franxa-cor" style="background: #f2d054;"></div>
+                <img src="/espazos/centros/a_revolta_de_trasancos/logo.jpg" alt="Logo de A Revolta de Trasancos" class="logo-tarxeta">
+                <h3>A Revolta de Trasancos</h3>
+                <span class="localidade">📍Ferrol</span>
+                <p>Coletivo Sociocultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="pedreira.agal">
+                <div class="franxa-cor" style="background: #E64C3B;"></div>
+                <img src="/espazos/centros/a_pedreira/logo.jpg" alt="Logo de A Pedreira" class="logo-tarxeta">
+                <h3>A Pedreira</h3>
+                <span class="localidade">📍Ponte Vedra</span>
+                <p>Espaço Autogerido em Pontevedra</p>
               </div>
             
               <div class="tarxeta-centro" data-key="casa_obreira.agal">
@@ -488,12 +385,84 @@
                 <p>Centro Cultural</p>
               </div>
             
-              <div class="tarxeta-centro" data-key="vagalume.agal">
-                <div class="franxa-cor" style="background: #f3c61c;"></div>
-                <img src="/espazos/centros/vagalume/logo.jpg" alt="Logo de Vagalume" class="logo-tarxeta">
-                <h3>Vagalume</h3>
-                <span class="localidade">📍Lugo</span>
-                <p>Centro Social Aberto</p>
+              <div class="tarxeta-centro" data-key="fenda.agal">
+                <div class="franxa-cor" style="background: #f15e80;"></div>
+                <img src="/espazos/centros/a_fenda/logo.png" alt="Logo de A Fenda" class="logo-tarxeta">
+                <h3>A Fenda</h3>
+                <span class="localidade">📍A Corunha</span>
+                <p>Espaço baixo a estratégia socialista </p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="xebra.agal">
+                <div class="franxa-cor" style="background: #89C4FF;"></div>
+                <img src="/espazos/centros/xebra/logo.png" alt="Logo de Xebra!" class="logo-tarxeta">
+                <h3>Xebra!</h3>
+                <span class="localidade">📍Burela</span>
+                <p>Associaçom cultural</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="pichel.agal">
+                <div class="franxa-cor" style="background: #bbbc00;"></div>
+                <img src="/espazos/centros/o_pichel/logo.png" alt="Logo de O Pichel" class="logo-tarxeta">
+                <h3>O Pichel</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Centro Social da Gentalha do Pichel</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="escarnio.agal">
+                <div class="franxa-cor" style="background: #746D6F;"></div>
+                <img src="/espazos/centros/escarnio/logo.png" alt="Logo de Escárnio e Maldizer" class="logo-tarxeta">
+                <h3>Escárnio e Maldizer</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Centro Social Okupado Autogerido</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="fuscalho.agal">
+                <div class="franxa-cor" style="background: #2740D2;"></div>
+                <img src="/espazos/centros/fuscalho/logo.jpg" alt="Logo de Fuscalho" class="logo-tarxeta">
+                <h3>Fuscalho</h3>
+                <span class="localidade">📍A Guarda</span>
+                <p>Espaço Autogerido</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="casa_branca.agal">
+                <div class="franxa-cor" style="background: #E2E2E2;"></div>
+                <img src="/espazos/centros/casa_branca/logo.png" alt="Logo de A Casa Branca" class="logo-tarxeta">
+                <h3>A Casa Branca</h3>
+                <span class="localidade">📍Compostela</span>
+                <p>Asociación Cultural Autoxestionada</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="galleira.agal">
+                <div class="franxa-cor" style="background: #B5D0DB;"></div>
+                <img src="/espazos/centros/a_galleira/logo.png" alt="Logo de A Galheira" class="logo-tarxeta">
+                <h3>A Galheira</h3>
+                <span class="localidade">📍Ourense</span>
+                <p>Espaço Aberto Nacionalista</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="gomes_gaioso.agal">
+                <div class="franxa-cor" style="background: #FF5858;"></div>
+                <img src="/espazos/centros/gomes_gaioso/logo.png" alt="Logo de Gomes Gaioso" class="logo-tarxeta">
+                <h3>Gomes Gaioso</h3>
+                <span class="localidade">📍A Corunha</span>
+                <p>Centro social independentista, socialista e antipatriarcal</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="entropia.agal">
+                <div class="franxa-cor" style="background: #8bbe58;"></div>
+                <img src="/espazos/centros/entropia/logo.jpg" alt="Logo de Entropía" class="logo-tarxeta">
+                <h3>Entropía</h3>
+                <span class="localidade">📍Oca</span>
+                <p>Asociaçom Sociocultural ecologista, transfeminista e antirracista</p>
+              </div>
+            
+              <div class="tarxeta-centro" data-key="faisca.agal">
+                <div class="franxa-cor" style="background: #DB0C14;"></div>
+                <img src="/espazos/centros/faisca2/logo.png" alt="Logo de Faísca" class="logo-tarxeta">
+                <h3>Faísca</h3>
+                <span class="localidade">📍Vigo</span>
+                <p>Local Social Autogerido</p>
               </div>
             
           </div>
@@ -706,7 +675,7 @@ const espazos = [
       gotoZoom:   "14",
       gotoLat: "43.368",
       gotoLon: "-8.408",
-      content: "\u003cp\u003e\u003cem\u003eA Fenda\u003c/em\u003e é um novo espaço desde onde responder às necessidades do proletariado da cidade.\nUm espaço para organizar-nos sobre a independência política de classe 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      content: "\u003chr\u003e\n\u003cp\u003e\u003cem\u003eA Fenda\u003c/em\u003e é um novo espaço desde onde responder às necessidades do proletariado da cidade.\nUm espaço para organizar-nos sobre a independência política de classe 🚩.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  43.364293 , lon:  -8.424243  }
     },
   
@@ -714,7 +683,7 @@ const espazos = [
       key: "galleira.agal",
       title: "A Galheira",
       subtitle: "",
-      description: "Espaço Aberto Nacionalista de Ourense",
+      description: "Espaço Aberto Nacionalista",
       direcion: "",
       logo: "\/espazos\/centros\/a_galleira\/logo.png",
       imaxe: "\/espazos\/centros\/a_galleira\/foto_cabeceira.jpg",
@@ -757,7 +726,7 @@ const espazos = [
       gotoZoom:   "13",
       gotoLat: "42.24",
       gotoLon: "-8.735",
-      content: "\u003cp\u003eContam as malas línguas que existe umha mulher grande e brava, vestida com peles negras e acompanhada de cobras e lagartos. Um ser capaz de provocar tormentas e dirigir os raios, invocar a treboada e a néboa, someter a choiva e o lóstrego à sua vontade… Umha moradora dos aires, umha peregrina das nubes, umha força criadora e destrutora do mundo. Dim que sae polas manhãs das ferrerias para cabalgar os ceos e que, às vezes, mui de quando em quando, baixa à terra para ver o resultado das suas façanhas.\u003c/p\u003e\n\u003cp\u003eNós, como a Nubeira, tamém queremos recoletar toda a energia que está dispersa ao longo da nossa cidade e, coa mesma determinaçom do raio, crear um feixe luminoso, um crisol onde nos amalgamar em comunidade.\u003c/p\u003e\n\u003cp\u003e⚡⚡🌩🌩⚡⚡\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      content: "\u003cp\u003eDisque A Nubeira tem o poder de invocar treboadas. Nós queremos traer um raio de luz que alumee a cidade que imaginamos 🌩⚡\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.22973845758315 , lon:  -8.717856910972488  }
     },
   
@@ -816,7 +785,7 @@ const espazos = [
       key: "revolteira.agal",
       title: "A Revolteira",
       subtitle: "",
-      description: "Espaço Autogerido na Corunha",
+      description: "Espaço Autogerido",
       direcion: "",
       logo: "\/espazos\/centros\/a_revolteira\/logo.png",
       imaxe: "\/espazos\/centros\/a_revolteira\/foto_cabeceira.jpg",
@@ -893,7 +862,7 @@ const espazos = [
       gotoZoom:   "14",
       gotoLat: "42.879",
       gotoLon: "-8.544",
-      content: "\u003cdiv class=\"warning\"\u003e⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios espaços os que decidam o contido de cada página.\u003c/div\u003e\r\n\u003cp\u003eUm espaço afrocentrado e antirracista, que reconhece e celebra as transexistências e a transcestralidade. Dedicamos-nos a valorizar e manter viva a cultura de matriz africana e a acolher e trançar saberes, vivências e resistências desde as margens.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      content: "\u003chr\u003e\n\u003cdiv class=\"warning\"\u003e⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios espaços os que decidam o contido de cada página.\u003c/div\u003e\r\n\u003cp\u003eUm espaço afrocentrado e antirracista, que reconhece e celebra as transexistências e a transcestralidade. Dedicamos-nos a valorizar e manter viva a cultura de matriz africana e a acolher e trançar saberes, vivências e resistências desde as margens.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObjetivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObjetivo 1\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 2\u003c/li\u003e\r\n    \u003cli\u003eObjetivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eAtividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos umha ampla variedade de atividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalheres\u003c/li\u003e\r\n    \u003cli\u003eFaladoiros\u003c/li\u003e\r\n    \u003cli\u003eProjeçons\u003c/li\u003e\r\n    \u003cli\u003eJuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorários\u003c/summary\u003e\r\n  \u003cp\u003eOs horários habituais do centro som os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSegundas a sextas:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eConhece-nos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistória do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contatar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEndereço: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
       location: { lat:  42.890695056496504 , lon:  -8.528207746840145  }
     },
   
@@ -916,7 +885,7 @@ const espazos = [
   
     {
       key: "xose_tarrio.agal",
-      title: "Ateneo Libertario Xosé Tarrío",
+      title: "Ateneo Xosé Tarrío",
       subtitle: "",
       description: "Anarquismo de bárrio",
       direcion: "",
@@ -1000,11 +969,28 @@ const espazos = [
     },
   
     {
+      key: "entropia.agal",
+      title: "Entropía",
+      subtitle: "",
+      description: "Asociaçom Sociocultural ecologista, transfeminista e antirracista",
+      direcion: "",
+      logo: "\/espazos\/centros\/entropia\/logo.jpg",
+      imaxe: "\/espazos\/centros\/entropia\/foto_cabeceira.jpg",
+      cor: "#8bbe58",
+      seleccionado: false,
+      gotoZoom:   "14",
+      gotoLat: "42.740346686553494",
+      gotoLon: "-8.384497348179375",
+      content: "\u003chr\u003e\n\u003cp\u003eEntropía é um espaço autogerido no rural aberto a todas aquelas persoas que queiram participar.\u003c/p\u003e\n\u003cdetails\u003e\r\n  \u003csummary\u003eObxectivos\u003c/summary\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eObxectivo 1\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 2\u003c/li\u003e\r\n    \u003cli\u003eObxectivo 3\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eActividades habituais\u003c/summary\u003e\r\n  \u003cp\u003eNo Centro Social organizamos unha ampla variedade de actividades:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eTalleres\u003c/li\u003e\r\n    \u003cli\u003eCharlas\u003c/li\u003e\r\n    \u003cli\u003eProxeccións\u003c/li\u003e\r\n    \u003cli\u003eXuntanzas\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHorarios\u003c/summary\u003e\r\n  \u003cp\u003eOs horarios habituais do centro son os seguintes:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003e\u003cstrong\u003eLuns a venres:\u003c/strong\u003e 16:00 - 21:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eSábados:\u003c/strong\u003e 10:00 - 14:00 e 16:00 - 20:00.\u003c/li\u003e\r\n    \u003cli\u003e\u003cstrong\u003eDomingos:\u003c/strong\u003e Pechado, excepto para eventos programados.\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eRedes\u003c/summary\u003e\r\n  \u003cp\u003eCoñécenos a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eInstragram\u003c/li\u003e\r\n    \u003cli\u003eTwiter/X\u003c/li\u003e\r\n    \u003cli\u003eFacebook\u003c/li\u003e\r\n    \u003cli\u003eBluesky\u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eHistoria do centro\u003c/summary\u003e\r\n  \u003cp\u003e\u003c/p\u003e\r\n\u003c/details\u003e\r\n\u003cdetails\u003e\r\n  \u003csummary\u003eContacto\u003c/summary\u003e\r\n  \u003cp\u003ePodes contactar connosco a través de:\u003c/p\u003e\r\n  \u003cul\u003e\r\n    \u003cli\u003eEmail: contacto@email.com\u003c/li\u003e\r\n    \u003cli\u003eTeléfono: 111 111 111\u003c/li\u003e\r\n    \u003cli\u003eEnderezo: - \u003c/li\u003e\r\n  \u003c/ul\u003e\r\n\u003c/details\u003e",
+      location: { lat:  42.740346686553494 , lon:  -8.384497348179375  }
+    },
+  
+    {
       key: "escarnio.agal",
       title: "Escárnio e Maldizer",
       subtitle: "",
       description: "Centro Social Okupado Autogerido",
-      direcion: "Rua Algalia de Arriba, 11",
+      direcion: "",
       logo: "\/espazos\/centros\/escarnio\/logo.png",
       imaxe: "\/espazos\/centros\/escarnio\/foto_cabeceira.png",
       cor: "#746D6F",
@@ -1054,7 +1040,7 @@ const espazos = [
       key: "fuscalho.agal",
       title: "Fuscalho",
       subtitle: "",
-      description: "Espaço Autogerido na Guarda",
+      description: "Espaço Autogerido",
       direcion: "",
       logo: "\/espazos\/centros\/fuscalho\/logo.jpg",
       imaxe: "\/espazos\/centros\/fuscalho\/foto_cabeceira.jpg",
@@ -1105,7 +1091,7 @@ const espazos = [
       key: "fervedoiro.agal",
       title: "O Fervedoiro",
       subtitle: "",
-      description: "Espaço Social em Ribeira",
+      description: "Espaço Social",
       direcion: "",
       logo: "\/espazos\/centros\/o_fervedoiro\/logo.jpeg",
       imaxe: "\/espazos\/centros\/o_fervedoiro\/foto_cabeceira.jpg",
@@ -1552,16 +1538,6 @@ function precargarImaxes(espazos) {
     </div>
 
     <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            var screenWidth = window.innerWidth;
-            var container = document.querySelector('.container');
-            
-            if (screenWidth < 1600) {
-                container.classList.add('mobile-layout');
-            } else {
-                container.classList.add('desktop-layout');
-            }
-        });
     </script>
     
 </body>

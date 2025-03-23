@@ -16,6 +16,10 @@ gotoCoords:
   lat: 42.240
   lon: -8.735
 gotoZoom: 13
+instagram: https://www.instagram.com/csrevolta
+twitter:   https://x.com/cs_revolta
+facebook:
+web:
 ---
 Fundado em 2003, *A Revolta* é um centro social independentista que leva 22 anos mantendo Vigo em pe desde o trabalho associativo e cultural.
 

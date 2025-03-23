@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.009
   lon: -7.558
 gotoZoom: 15
+instagram: https://www.instagram.com/madialevagz/
+twitter:   https://x.com/GzMadia
+facebook:  https://www.facebook.com/GzMadia
+web:
 ---
 Construíndo contrapoder no coraçom de Lugo. A Sociedade Cultural *Mádia leva!* é um projecto comprometido com a lingua e a cultura galega, assim mesmo também trabalhamos por impulsionar a organizaçom do povo, a democracia participativa, a defesa da Terra e a luita pela autodeterminaçom da GALIZA.
 

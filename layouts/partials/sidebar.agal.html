@@ -29,7 +29,9 @@
                 {{ range .Site.Languages }}
                     {{ $lang := .Lang }}
                     {{ if eq $lang $currentLang }}
-                        <a href="{{ $translatedURL | relURL }}">Galego {{ .LanguageName }} ⇄</a>
+                        <a href="{{ $translatedURL | relURL }}" class="normativa-button">
+                            <img src="/images/elementos/pantalla_ancha/eneaga.png" alt="Normativa ILG" width="25" height="25">
+                        </a>
                     {{ end }}
                 {{ end }}
             </nav>

@@ -4,11 +4,10 @@ autore: "Goldman"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - feminismo
-    - historia
-    - revolución
-    - xénero
+categorias:
+    - Comunismo
+    - Feminismo
+    - Estratexia
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/goldman_muller_estado_e_revolucion.jpg" # Opcional, imaxe da portada
 etiquetas: ["feminismo", "marxismo", "USA"]

@@ -4,11 +4,9 @@ autore: Daniela Fernández
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - feminismo
-    - LGBTIQ+
-    - xénero
-lugar:
+categorias:
+    - LGBT+
+lugares:
     - Galiza
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/fernandez_a_defuncion_dos_sexos.png" # Opcional, imaxe da portada

@@ -4,11 +4,8 @@ autore: "Piotr Kropotkin"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - iniciacion
-    - anarquismo
-    - apoio mutuo
-    - clasico
+categorias:
+    - Anarquismo
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/kropotkin_pan.jpg" # Opcional, imaxe da portada
 etiquetas: ["anarquismo", "Rusia"]

@@ -316,5 +316,117 @@
       <guid>http://localhost:1313/agal/biblioteca/itinerarios/achegamento_ao_anarquismo/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Anarquismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antirracismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/antirracismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/antirracismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capacitismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/capacitismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capitalismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/capitalismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/capitalismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colonialismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/colonialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/colonialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comunismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/comunismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/comunismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crise climática</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/crise_climatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/crise_climatica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estrategia</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/estratexia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/estratexia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ética Animal</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/etica_animal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/etica_animal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fascismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/fascismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/fascismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feminismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/feminismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/feminismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>História</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/historia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/historia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internacional</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/internacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/internacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LGBT&#43;</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/lgbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naçom</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/opresion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/opresion_nacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica militante</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/practica_militante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/practica_militante/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

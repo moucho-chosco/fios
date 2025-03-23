@@ -1,0 +1,234 @@
+{
+      "espazos": [{
+            "title": "A Alvariça",
+            "logo": "/espazos/centros/a_alvariça/logo.jpg",
+            "localidade": "Alhariz",
+            "description": "Centro Social",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/alvari%C3%A7a/"
+          },{
+            "title": "A Casa Branca",
+            "logo": "/espazos/centros/casa_branca/logo.png",
+            "localidade": "Compostela",
+            "description": "Asociación Cultural Autoxestionada",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/casa_branca/"
+          },{
+            "title": "A Casa Colorida",
+            "logo": "/espazos/centros/a_casa_colorida/logo.jpg",
+            "localidade": "Nigrám",
+            "description": "Laboratório do Comúm na Galiza",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/casa_colorida/"
+          },{
+            "title": "A Chave das Noces",
+            "logo": "/espazos/centros/a_chave_das_noces/logo.jpg",
+            "localidade": "Castroverde",
+            "description": "Centro Social em Castroverde",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/chave_das_noces/"
+          },{
+            "title": "A Fenda",
+            "logo": "/espazos/centros/a_fenda/logo.png",
+            "localidade": "A Corunha",
+            "description": "Espaço baixo a estratégia socialista ",
+            "info": "A Fenda é um novo espaço desde onde responder às necessidades do proletariado da cidade. Um espaço para organizar-nos sobre a independência política de classe 🚩",
+            "url": "/agal/espazos/centros/fenda/"
+          },{
+            "title": "A Galheira",
+            "logo": "/espazos/centros/a_galleira/logo.png",
+            "localidade": "Ourense",
+            "description": "Espaço Aberto Nacionalista",
+            "info": null,
+            "url": "/agal/espazos/centros/galleira/"
+          },{
+            "title": "A Hedreira",
+            "logo": "/espazos/centros/a_hedreira/logo.jpg",
+            "localidade": "Lugo",
+            "description": "Centro Social Autogerido",
+            "info": null,
+            "url": "/agal/espazos/centros/hedreira/"
+          },{
+            "title": "A Nubeira",
+            "logo": "/espazos/centros/nubeira/logo.png",
+            "localidade": "Vigo",
+            "description": "Centro Social Autogerido",
+            "info": null,
+            "url": "/agal/espazos/centros/nubeira/"
+          },{
+            "title": "A Pedreira",
+            "logo": "/espazos/centros/a_pedreira/logo.jpg",
+            "localidade": "Ponte Vedra",
+            "description": "Espaço Autogerido em Pontevedra",
+            "info": null,
+            "url": "/agal/espazos/centros/pedreira/"
+          },{
+            "title": "A Revolta de Trasancos",
+            "logo": "/espazos/centros/a_revolta_de_trasancos/logo.jpg",
+            "localidade": "Ferrol",
+            "description": "Coletivo Sociocultural",
+            "info": null,
+            "url": "/agal/espazos/centros/revolta_de_trasancos/"
+          },{
+            "title": "A Revolta do Berbês",
+            "logo": "/espazos/centros/a_revolta_do_berbes/logo.png",
+            "localidade": "Vigo",
+            "description": "Centro Social Independentista",
+            "info": null,
+            "url": "/agal/espazos/centros/revolta_do_berbes/"
+          },{
+            "title": "A Revolteira",
+            "logo": "/espazos/centros/a_revolteira/logo.png",
+            "localidade": "A Corunha",
+            "description": "Espaço Autogerido",
+            "info": null,
+            "url": "/agal/espazos/centros/revolteira/"
+          },{
+            "title": "A Tiradoura",
+            "logo": "/espazos/centros/a_tiradoura/logo.jpg",
+            "localidade": "Cangas do Morraço",
+            "description": "Associaçom Cultural",
+            "info": null,
+            "url": "/agal/espazos/centros/tiradoura/"
+          },{
+            "title": "ACDE Treze Catorze",
+            "logo": "/espazos/centros/o_matadoiro/logo.jpg",
+            "localidade": "Salceda de Caselas",
+            "description": "Associaçom Cultural",
+            "info": null,
+            "url": "/agal/espazos/centros/matadoiro/"
+          },{
+            "title": "Acéfala",
+            "logo": "/espazos/centros/acefala/logo.png",
+            "localidade": "A Corunha",
+            "description": "Espaço autónomo no bárrio de Monte Alto",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/acefala/"
+          },{
+            "title": "Aluandê",
+            "logo": "/espazos/centros/aluande/logo.jpg",
+            "localidade": "Compostela",
+            "description": "Espaço afrocentrado, antirracista e transinclusivo",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/aluande/"
+          },{
+            "title": "Ateneo Ferrolám",
+            "logo": "/espazos/centros/ateneo_ferrolan/logo.png",
+            "localidade": "Ferrol",
+            "description": "Lugar de encontro para a cultura",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/ateneo_ferrolan/"
+          },{
+            "title": "Ateneo Xosé Tarrío",
+            "logo": "/espazos/centros/xose_tarrio/logo.png",
+            "localidade": "A Corunha",
+            "description": "Anarquismo de bárrio",
+            "info": null,
+            "url": "/agal/espazos/centros/xose_tarrio/"
+          },{
+            "title": "Buril",
+            "logo": "/espazos/centros/buril/logo.jpg",
+            "localidade": "Sarria",
+            "description": "Associaçom Cultural, Deportiva e Ecológica",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/buril/"
+          },{
+            "title": "Casa Obreira",
+            "logo": "/espazos/centros/casa_obreira/logo.jpg",
+            "localidade": "Compostela",
+            "description": "Centro Cultural",
+            "info": "Espaço para debater-mos e construir-mos coletivamente o futuro que nos urge. «Sem teoria revolucionária nom pode haver movimento revolucionário».",
+            "url": "/agal/espazos/centros/casa_obreira/"
+          },{
+            "title": "Casino 1889",
+            "logo": "/espazos/centros/casino_1889/logo_3.png",
+            "localidade": "Carballo",
+            "description": "Centro Social Autogerido",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/casino_1889/"
+          },{
+            "title": "Coletivo Terra",
+            "logo": "/espazos/centros/colectivo_terra/logo.jpg",
+            "localidade": "Pontedeume",
+            "description": "Centro Social de Pontedeume",
+            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "url": "/agal/espazos/centros/colectivo_terra/"
+          },{
+            "title": "Entropía",
+            "logo": "/espazos/centros/entropia/logo.jpg",
+            "localidade": "Oca",
+            "description": "Asociaçom Sociocultural ecologista, transfeminista e antirracista",
+            "info": "O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.",
+            "url": "/agal/espazos/centros/entropia/"
+          },{
+            "title": "Escárnio e Maldizer",
+            "logo": "/espazos/centros/escarnio/logo.png",
+            "localidade": "Compostela",
+            "description": "Centro Social Okupado Autogerido",
+            "info": "O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.",
+            "url": "/agal/espazos/centros/escarnio/"
+          },{
+            "title": "Faísca",
+            "logo": "/espazos/centros/faisca2/logo.png",
+            "localidade": "Vigo",
+            "description": "Local Social Autogerido",
+            "info": "O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.",
+            "url": "/agal/espazos/centros/faisca/"
+          },{
+            "title": "Fundaçom Artábria",
+            "logo": "/espazos/centros/artabria/logo.jpg",
+            "localidade": "Ferrol",
+            "description": "Associaçom Cultural",
+            "info": null,
+            "url": "/agal/espazos/centros/funda%C3%A7om_artabria/"
+          },{
+            "title": "Fuscalho",
+            "logo": "/espazos/centros/fuscalho/logo.jpg",
+            "localidade": "A Guarda",
+            "description": "Espaço Autogerido",
+            "info": null,
+            "url": "/agal/espazos/centros/fuscalho/"
+          },{
+            "title": "Gomes Gaioso",
+            "logo": "/espazos/centros/gomes_gaioso/logo.png",
+            "localidade": "A Corunha",
+            "description": "Centro social independentista, socialista e antipatriarcal",
+            "info": null,
+            "url": "/agal/espazos/centros/gomes_gaioso/"
+          },{
+            "title": "Mádia Leva",
+            "logo": "/espazos/centros/madia_leva/logo.png",
+            "localidade": "Lugo",
+            "description": "Centro Social e Cultural",
+            "info": null,
+            "url": "/agal/espazos/centros/madia_leva/"
+          },{
+            "title": "O Fervedoiro",
+            "logo": "/espazos/centros/o_fervedoiro/logo.jpeg",
+            "localidade": "Ribeira",
+            "description": "Espaço Social",
+            "info": null,
+            "url": "/agal/espazos/centros/fervedoiro/"
+          },{
+            "title": "O Pichel",
+            "logo": "/espazos/centros/o_pichel/logo.png",
+            "localidade": "Compostela",
+            "description": "Centro Social da Gentalha do Pichel",
+            "info": null,
+            "url": "/agal/espazos/centros/pichel/"
+          },{
+            "title": "Vagalume",
+            "logo": "/espazos/centros/vagalume/logo.jpg",
+            "localidade": "Lugo",
+            "description": "Centro Social Aberto",
+            "info": null,
+            "url": "/agal/espazos/centros/vagalume/"
+          },{
+            "title": "Xebra!",
+            "logo": "/espazos/centros/xebra/logo.png",
+            "localidade": "Burela",
+            "description": "Associaçom cultural",
+            "info": null,
+            "url": "/agal/espazos/centros/xebra/"
+          }]
+    }

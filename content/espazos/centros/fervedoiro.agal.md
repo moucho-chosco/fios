@@ -1,6 +1,6 @@
 ---
 title: "O Fervedoiro"
-description: "Espaço Social em Ribeira"
+description: "Espaço Social"
 dirixido_por: 
 participan:
 centro: true
@@ -16,6 +16,10 @@ gotoCoords:
   lat: 42.557
   lon: -8.989
 gotoZoom: 15
+instagram:
+twitter:
+facebook:
+web:
 ---
  O Centro Social Autogerido *O Fervedoiro* é um punto de encontro alternativo, independente e livre em Ribeira.
 

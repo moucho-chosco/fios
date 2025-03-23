@@ -4,12 +4,9 @@ autore: "Vladimir Ilitch Lenin"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - socialismo
-    - comunismo
-    - estado
-    - clasico
-    - revolución
+categorias:
+    - Comunismo
+    - Estratexia
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/lenin_o_estado_e_a_revolucion.jpg" # Opcional, imaxe da portada
 etiquetas: ["socialismo", "bolchevismo"]

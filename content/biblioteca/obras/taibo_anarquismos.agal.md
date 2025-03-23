@@ -4,8 +4,8 @@ autore: "Carlos Taibo"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - anarquismo
+categorias:
+    - Anarquismo
 formato:
     - libro
 descricion: "Esta é unha breve descrición da obra 1."

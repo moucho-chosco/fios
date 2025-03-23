@@ -1,6 +1,6 @@
 ---
 title: "A Revolteira"
-description: "Espaço Autogerido na Corunha"
+description: "Espaço Autogerido"
 lang: "agal"
 dirixido_por: ""
 centro: true
@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.368
   lon: -8.408
 gotoZoom: 14
+instagram: https://www.instagram.com/arevolteira/
+twitter:
+facebook:
+web:       https://revolteira.gal/
 ---
 
 *A Revolteira* é uma alternativa comunitária fronte o sistema que nos exclue. Um lugar onde sentirnos acompanhadas e felices.

@@ -1,6 +1,6 @@
 ---
 title: "A Galleira"
-description: "Espazo Aberto Nacionalista de Ourense"
+description: "Espazo Aberto Nacionalista"
 dirixido_por: ""
 centro: true
 logo:  "/espazos/centros/a_galleira/logo.png"  # Ruta á imaxe do logo
@@ -18,6 +18,10 @@ gotoCoords:
   lat: 42.33769
   lon: -7.86707
 gotoZoom: 15
+instagram: https://www.instagram.com/a_galleira/
+twitter:
+facebook: https://www.facebook.com/AGalleiraOurense
+web:
 ---
 A Galleira é unha asociación cultural, asemblearia, soberanista, aberta e apartidista que ten a vontade de loitar pola nosa lingua, a nosa cultura, a nosa música, pola igualdade de xénero, polo soberanía alimentar, polo noso patrimonio natural e arquitectónico. Que quere traballar por todo o que Galiza é.
 

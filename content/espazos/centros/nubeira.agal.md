@@ -16,13 +16,13 @@ gotoCoords:
   lat: 42.240
   lon: -8.735
 gotoZoom: 13
+instagram: https://www.instagram.com/csanubeira/
+twitter:   https://x.com/csanubeira
+facebook:  https://www.facebook.com/csanubeira
+web:       https://anubeira.gal/
 ---
 
-Contam as malas línguas que existe umha mulher grande e brava, vestida com peles negras e acompanhada de cobras e lagartos. Um ser capaz de provocar tormentas e dirigir os raios, invocar a treboada e a néboa, someter a choiva e o lóstrego à sua vontade… Umha moradora dos aires, umha peregrina das nubes, umha força criadora e destrutora do mundo. Dim que sae polas manhãs das ferrerias para cabalgar os ceos e que, às vezes, mui de quando em quando, baixa à terra para ver o resultado das suas façanhas.
-
-Nós, como a Nubeira, tamém queremos recoletar toda a energia que está dispersa ao longo da nossa cidade e, coa mesma determinaçom do raio, crear um feixe luminoso, um crisol onde nos amalgamar em comunidade.
-
-⚡⚡🌩🌩⚡⚡
+Disque A Nubeira tem o poder de invocar treboadas. Nós queremos traer um raio de luz que alumee a cidade que imaginamos 🌩⚡
 
 <details>
   <summary>Objetivos</summary>

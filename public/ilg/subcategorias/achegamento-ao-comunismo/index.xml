@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Achegamento Ao Comunismo on fios</title>
+    <link>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</link>
+    <description>Recent content in Achegamento Ao Comunismo on fios</description>
+    <generator>Hugo</generator>
+    <language>ilg</language>
+    <atom:link href="http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comunismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crise climática</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ética Animal</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/historia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/historia/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

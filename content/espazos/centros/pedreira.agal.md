@@ -15,6 +15,10 @@ gotoCoords:
   lat: 42.4325
   lon: -8.649
 gotoZoom: 15
+instagram: https://www.instagram.com/apedreira_cs/
+twitter:   https://x.com/apedreira_cs
+facebook:  https://www.facebook.com/apedreira.cs
+web:
 ---
 A Pedreira é um Espaço autogerido de encontro e luita para todas as pessoas que crem noutra comarca possível: "Somos grupo de vizinhas da comarca de Ponte Vedra dispostas a transformar a vida social e cultural"
 

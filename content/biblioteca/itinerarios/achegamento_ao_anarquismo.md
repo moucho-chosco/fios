@@ -8,7 +8,7 @@ titulo_banner: "/biblioteca/banners/titulos/achegamento_ao_anarquismo_t.png"
 texto_banner: "Introduce os principios básicos do anarquismo, desde Bakunin e Kropotkin ata prácticas contemporáneas. Aborda a crítica ao Estado, a autoxestión e o anticapitalismo, destacando a súa influencia en movementos sociais e loitas pola liberdade e xustiza social."
 cor_banner: "#000000"
 cor_texto: "#ffffff"
-marxe_texto: 18vh
+marxe_texto: 130px
 cor_fondo_boton: "#CE0A5B"
 cor_texto_boton: "#eeeeee"
 ---

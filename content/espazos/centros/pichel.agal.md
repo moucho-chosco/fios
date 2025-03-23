@@ -15,6 +15,10 @@ gotoCoords:
   lat: 42.879
   lon: -8.544
 gotoZoom: 14
+instagram: https://www.instagram.com/gentalhadopichel/
+twitter:   https://x.com/CSPichel
+facebook:  https://www.facebook.com/gentalha.dopichel
+web:       https://gentalha.org/
 ---
 
 O Pichel é o centro social gerido pola associaçom cultural A Gentalha do Pichel. Situa-se na rua Santa Clara, número 21, em Compostela.

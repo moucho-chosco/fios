@@ -4,12 +4,10 @@ autore: "Felipe Correa"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - anarquismo
-    - especifismo
-    - plataformismo
+categorias:
+    - Anarquismo
 formato:
-    - libro
+    - libros
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/correa_pobo_forte.gif" # Opcional, imaxe da portada
 link_externo: "a"

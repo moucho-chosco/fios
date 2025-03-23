@@ -17,6 +17,11 @@ gotoCoords:
   lat: 43.6587
   lon: -7.357
 gotoZoom: 15
+instagram: https://www.instagram.com/xebraassociacom
+twitter:
+facebook:  https://www.facebook.com/p/xebra.cs
+web:
+---
 ---
 O *CS Xebra* é un centro social fundado en Burela por un colectivo da Mariña para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecoloxismo, socialismo) que leva máis de dez anos consolidándose como un lugar de encontro e defensa activa da cultura local.
 

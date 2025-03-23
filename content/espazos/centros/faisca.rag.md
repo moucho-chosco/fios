@@ -1,7 +1,7 @@
 ---
 title: "Faísca"
 description: "Local Social Autoxestionado"
-direcion: "Rúa Toledo Nº9 (Riomao d'Arriba)"
+info: O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.
 dirixido_por: ""
 logo:  "/espazos/centros/faisca2/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/faisca2/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -16,6 +16,10 @@ gotoCoords:
   lat: 42.240
   lon: -8.735
 gotoZoom: 13
+instagram: https://www.instagram.com/ls_faisca_vigo/
+twitter:
+facebook: https://www.facebook.com/faisca.vigo
+web:
 ---
 O ánimo do *LS Faísca* non se cingue exclusivamente ao ámbito cultural, se non que partindo dun proxecto cultural e socio-político queremos contribuír á creación dun Movemento Popular camiño da emancipación do noso pobo e da nosa clase. 
 

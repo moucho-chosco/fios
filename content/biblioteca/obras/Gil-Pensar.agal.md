@@ -4,10 +4,8 @@ autore: "Iñaki Gil de San Vicente"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - socialismo
-    - comunismo
-    - marx
+categorias:
+    - Comunismo
 descricion: "O libro presenta catro percorridos históricos e críticos a través dos medios de produción, as loitas populares e as ideoloxías como fíos condutores. Cada un deles responden a propostas expositivas diferentes, mais todos eles  complementarios e necesarios.
 
 Só a dialéctica materialista pode axudar a aproximarnos e comprender con solvencia a natureza complexa e dinámica da realidade, en que conflitos e contradicións internas son os auténticos motores do desenvolvemento da historia humana. Sirva de proba todos os casos de estudo abordados, mesmo algúns dos cales –sempre desde a obrigada concisión– son analizados desde ángulos diferentes.

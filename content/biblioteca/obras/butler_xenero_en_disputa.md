@@ -4,11 +4,9 @@ autore: "Judit Butler"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - feminismo
-    - xenero
-    - LGBTIQ+
-    - xénero
+categorias:
+    - Feminismo
+    - LGBT+
 lugar:
     - USA
 descricion: "Esta é unha breve descrición da obra 1."

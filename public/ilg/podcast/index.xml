@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fíos | Podcast on fios</title>
+    <title>fios | Podcast on fios</title>
     <link>http://localhost:1313/ilg/podcast/</link>
-    <description>Recent content in fíos | Podcast on fios</description>
+    <description>Recent content in fios | Podcast on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
     <lastBuildDate></lastBuildDate>

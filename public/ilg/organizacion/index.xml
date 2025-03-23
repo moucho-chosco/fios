@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fíos | Organizacion on fios</title>
+    <title>fios | Organizacións on fios</title>
     <link>http://localhost:1313/ilg/organizacion/</link>
-    <description>Recent content in fíos | Organizacion on fios</description>
+    <description>Recent content in fios | Organizacións on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
@@ -100,6 +100,13 @@
       <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
     </item>
     <item>
+      <title>Estudantís</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/estudantis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/estudantis/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>Mocidade</title>
       <link>http://localhost:1313/ilg/organizacion/tipos/mocidade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -107,7 +114,14 @@
       <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
     </item>
     <item>
-      <title>Sindicatos</title>
+      <title>Políticas</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/politicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/politicas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Sindicais</title>
       <link>http://localhost:1313/ilg/organizacion/tipos/sindicato/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/tipos/sindicato/</guid>

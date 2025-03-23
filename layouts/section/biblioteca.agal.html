@@ -1,14 +1,58 @@
 {{ define "main" }}
-    <script src="/scripts/biblioteca.js"></script>
     <div id="biblioteca-container" class="standard-section-container">
     
-        <div class="search-container">
-            <button id="search-button">
-                <img src="{{ "/images/elementos/pantalla_ancha/search.svg" | relURL }}" alt="Buscar">
-            </button>
-            <input type="text" id="search-input" placeholder="Buscar...">
-            
+        <div class="filtros-biblioteca-box">
+            <div class="filters-container ">
+                <div class="selector-categorias">
+                    <button id="boton-categorias">Todas as categorias</button>
+                    
+                    <div class="panel-categorias" id="panel-categorias">
+                      <!-- Columna de categorías -->
+                      <div class="columna-categorias">
+                        {{ range where .Site.Pages "Params.categoria" true }}
+                          <div class="categoria-item" 
+                               onmouseover="mostrarSubcategorias('{{ .Title }}')" 
+                               onclick="seleccionar('{{ .Title }}', 'categoria')"> <!-- Engadido -->
+                            {{ .Title }}
+                          </div>
+                        {{ end }}
+                      </div>
+                      
+                      <!-- Columna de subcategorías -->
+                      <div class="columna-subcategorias" id="subcategorias-container">
+                        <!-- Subcategorías cargaranse dinámicamente -->
+                      </div>
+                    </div>
+                  </div>
+                  <script>
+                    console.log("Páxinas cargadas:", [
+                      {{ range where .Site.Pages "Params.categoria" true }}
+                        "{{ .Title }}",
+                      {{ end }}
+                    ]);
+                  </script>
+                <select id="categoria-filter" class="filter">
+                    <option value="todas">Qualquer lugar</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.lugares }}
+                        <option value="{{ $name }}">{{ $name }}</option>
+                    {{ end }}
+                </select>
+                <select id="categoria-filter" class="filter">
+                    <option value="todas">Qualquer formato</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.formato }}
+                        <option value="{{ $name }}">{{ $name }}</option>
+                    {{ end }}
+                </select>
+            </div>
+        
+            <div class="search-container">
+                <button id="search-button">
+                    <img src="{{ "/images/elementos/pantalla_ancha/search.svg" | relURL }}" alt="Buscar">
+                </button>
+                <input type="text" id="search-input" placeholder="Buscar...">
+            </div>
         </div>
+        
     
         <div class="banner-biblioteca">
             <picture>
@@ -29,44 +73,6 @@
             <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
             <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
         </div>
-    
-        <div class="warning warning-white" style="margin-top: 3vh;">⚠️ 
-            O contido desta secçom mostra-se a modo de exemplo/prototipo unicamente técnico. Os itinerários, categorias e livros fôrom selecionados como mostra,
-            sendo a intençom elaborar os definitivos em colaboraçom com diferentes organizaçons. As sínteses tamém som a modo de exemplo e
-            o seu contido nom deve ser tomado como relevante. Ademais, ainda é necessário trabalho de optimizaçom para melhorar a fluidez da experiência de usuário.
-        </div>
-        
-        <!-- Carrusel de itinerarios -->
-        <h2 class="titulo-carousel">Itinerários</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range where .Site.RegularPages ".Params.tipo" "itinerario" }}
-                <div  class="libro"
-                data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
-                data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
-                data-texto-banner= "{{ .Params.texto_banner }}"
-                data-cor-banner="{{ .Params.cor_banner }}"
-                data-cor-texto="{{ .Params.cor_texto }}"
-                data-marxe-texto="{{ .Params.marxe_texto }}"
-                data-tipo="{{ .Params.tipo }}"
-                data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
-                data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
-                onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                {{ end }}
-            </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
-    
     
         
         <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
@@ -200,4 +206,5 @@
         </div>
         
     </div>
+    <script src="/scripts/biblioteca.js"></script>
     {{ end }}

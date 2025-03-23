@@ -4,9 +4,8 @@ autore: "zErnest Mandel"
 serie:
 Numero:
 ano: 2000
-tematicas:
-    - economia
-    - capitalismo
+categorias:
+    - Capitalismo
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/mandel_capitalismo_tardio.jpg" # Opcional, imaxe da portada
 etiquetas: ["socialismo", "Chile"]

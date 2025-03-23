@@ -4,10 +4,8 @@ autore: "Bomb"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - anarquismo
-    - feminismo
-    - interseccional
+categorias:
+    - Anarquismo
 formato:
     - artigo
 descricion: "Esta é unha breve descrición da obra 1."

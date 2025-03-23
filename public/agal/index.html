@@ -4,7 +4,7 @@
 	<meta name="generator" content="Hugo 0.143.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fíos | Principal</title>
+    <title>fios | Principal</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/mobil.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -75,45 +75,12 @@
                 
                 
                 <li class="">
-                    <a href="/agal/convocatorias/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/convocatorias.svg" alt=" Convocatórias" />
-                        <span class="menu-text"> Convocatórias</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
-                    <a href="/agal/calendario/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/calendario.svg" alt=" Calendário" />
-                        <span class="menu-text"> Calendário</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
                     <a href="/agal/podcast/" class="menu-link">
                         
                             <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
                         
                         <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/podcast.svg" alt=" Podcast" />
                         <span class="menu-text"> Podcast</span>
-                    </a>
-                </li>
-                
-                
-                <li class="">
-                    <a href="/agal/redes/" class="menu-link">
-                        
-                            <img class="menu-icon positivo" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
-                        
-                        <img class="menu-icon reduced-icon" src="/images/elementos/pantalla_ancha/redes.svg" alt=" Redes" />
-                        <span class="menu-text"> Redes</span>
                     </a>
                 </li>
                 
@@ -148,12 +115,6 @@
                 
                     
                 
-                    
-                
-                    
-                
-                    
-                
             
                 
                     
@@ -161,7 +122,11 @@
                 
                     
                     
-                        <a href="/ilg/">Galego AGAL ⇄</a>
+                        <a href="/ilg/" id="langButton" class="normativa-button">
+                        
+                            <img class="lang-icon" src="/images/elementos/pantalla_ancha/eneaga.png" alt="Normativa AGAL" width="25" height="25">
+                        
+                        </a>
                     
                 
             </nav>
@@ -180,31 +145,117 @@
             
             <main class="content">
                 
-  <div id="general-container" class="standard-section-container">
-    <div id="home-window-container" class="window-container">
-      <div id="main-home-window" class="window">
-        <div class="contido">
-          <h1 id="secçom-principal">Secçom principal</h1>
-<p>Bem-vide! Esta página é um prototipo, e pretende pressentar uma ideia da futura web de <em>fios</em>.</p>
-<ul>
-<li>
-<p>Nesta secçom aparecerá uma <strong>introduçom ao sítio</strong>. Haverá ventás onde se visualizarám as convocatórias mais inminentes, algúm espaço social, novidades na biblioteca, no podcast&hellip;</p>
-</li>
-<li>
-<p>Podes navegar polas secçons do menú lateral para explorar a web.</p>
-</li>
-<li>
-<p>Podes cambiar de normativa entre ILG e AGAL na esquina inferior esquerda.</p>
-</li>
-<li>
-<p>Podes encolher e expandir a barra lateral na esquina inferior esquerda.</p>
-</li>
-</ul>
+  <div id="principal-container" class="standard-section-container">
+    
+    
+    <div class="caixas-container">
+      <div class="fila primeira-fila">
+        <div class="caixa window banner-principal">
+          <div class="infofios-principal" id="infofios1">
+            <p class="titulo-principal">
+              Espazo divulgativo<br>
+              do común
+            </p>
+
+            <p class="texto-principal">
+              Unha caixa de ferramentas para a loita cultural...  
+            </p>
+          </div>
+          <img src="/images/banners/principal/banner_fios.png" alt="Imaxe" class="imaxe-dereita">
+        </div>
+        <div class="caixa window">Espazos</div>
+      </div>
+      <div class="fila segunda-fila">
+        <div class="caixa window">
+          <div class="colectiva-aleatoria">
+            <div id="colectiva-aleatoria-content">
+            </div>
+            <button class="ver-mais" id="ver-mais-principal">Ver colectivas</button>
+          </div>
+        
+          <script>
+            
+            fetch('/colectivas.json')
+              .then(response => response.json())
+              .then(data => {
+                const colectivas = data.colectivas;
+                console.log(colectivas);
+                if (colectivas.length > 0) {
+                  
+                  const colectivaAleatoria = colectivas[Math.floor(Math.random() * colectivas.length)];
+          
+                  
+                  const colectivaContent = document.getElementById('colectiva-aleatoria-content');
+                  colectivaContent.innerHTML = `
+                    <div class="colectiva-info">
+                      <img src="${colectivaAleatoria.logo}" alt="Logo de ${colectivaAleatoria.title}" class="logo-principal">
+                      <div class="texto">
+                        <h2>${colectivaAleatoria.title}</h2>
+                        <h3>${colectivaAleatoria.description || "Descrición"}</h3>
+                        <p>${colectivaAleatoria.info}</p>
+                      </div>
+                    </div>
+                  `;
+                } else {
+                  document.getElementById('colectiva-content').innerHTML = '<p>Non se atoparon colectivas.</p>';
+                }
+              })
+              .catch(error => {
+                console.error('Error ao cargar as colectivas:', error);
+                document.getElementById('colectiva-aleatoria-content').innerHTML = '<p>Erro ao cargar as colectivas.</p>';
+              });
+          </script>
+        </div>
+        <div class="caixa window">Convocatorias</div>
+        <div class="caixa window">
+          <div class="espazo-aleatorio">
+            <div id="espazo-content">
+            </div>
+            <button class="ver-mais" id="ver-mais-principal">Ver espazos</button>
+          </div>
+        
+          <script>
+            
+            fetch('/espazos.json')
+              .then(response => response.json())
+              .then(data => {
+                const espazos = data.espazos;
+                if (espazos.length > 0) {
+                  
+                  const espazoAleatorio = espazos[Math.floor(Math.random() * espazos.length)];
+          
+                  
+                  const espazoContent = document.getElementById('espazo-content');
+                  espazoContent.innerHTML = `
+                    <div class="espazo-info">
+                      <img src="${espazoAleatorio.logo}" alt="Logo de ${espazoAleatorio.title}" class="logo-principal">
+                      <div class="texto">
+                        <h2>${espazoAleatorio.title}</h2>
+                        <h3>${espazoAleatorio.description || "Descrición"} en ${espazoAleatorio.localidade || "Localidade"}</h3>
+                        <p>${espazoAleatorio.info}</p>
+                      </div>
+                    </div>
+                  `;
+                } else {
+                  document.getElementById('espazo-content').innerHTML = '<p>Non se atoparon espazos.</p>';
+                }
+              })
+              .catch(error => {
+                console.error('Error ao cargar os espazos:', error);
+                document.getElementById('espazo-content').innerHTML = '<p>Erro ao cargar os espazos.</p>';
+              });
+          </script>
 
         </div>
       </div>
+      <div class="fila terceira-fila">
+        <div class="caixa grande window">Biblioteca</div>
+        <div class="caixa pequena window">Podcast</div>
+      </div>
     </div>
-    
+  </div>
+  <div id="custom-scrollbar">
+    <div id="scrollbar-thumb"></div>
   </div>
 
             </main>
@@ -222,16 +273,6 @@
     </div>
 
     <script>
-        window.addEventListener('DOMContentLoaded', function () {
-            var screenWidth = window.innerWidth;
-            var container = document.querySelector('.container');
-            
-            if (screenWidth < 1600) {
-                container.classList.add('mobile-layout');
-            } else {
-                container.classList.add('desktop-layout');
-            }
-        });
     </script>
     
 </body>

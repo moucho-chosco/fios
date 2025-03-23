@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sociolingüística on fios</title>
+    <link>http://localhost:1313/ilg/subcategorias/socioling%C3%BC%C3%ADstica/</link>
+    <description>Recent content in Sociolingüística on fios</description>
+    <generator>Hugo</generator>
+    <language>ilg</language>
+    <atom:link href="http://localhost:1313/ilg/subcategorias/socioling%C3%BC%C3%ADstica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nación</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

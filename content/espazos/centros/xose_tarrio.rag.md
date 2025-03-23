@@ -1,5 +1,5 @@
 ---
-title: "Ateneo Libertario Xosé Tarrío"
+title: "Ateneo Xosé Tarrío"
 description: "Anarquismo de barrio"
 dirixido_por: ""
 centro: true
@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.368
   lon: -8.408
 gotoZoom: 14
+instagram: https://www.instagram.com/ateneo_libertario_xose_tarrio/?hl=es
+twitter:
+facebook:
+web:
 ---
 O *Ateneo Libertario Xosé Tarrío* xorde o 9 de maio de 2015 co fin de espallar a autoxestión.
 Abaixo os muros das prisions, contra todo tipo de poder.

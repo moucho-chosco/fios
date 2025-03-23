@@ -4,9 +4,8 @@ autore: "Piotr Kropotkin"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - anarquismo
-    - apoio mutuo
+categorias:
+    - Anarquismo
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/kropotkin_apoio_mutuo.jpg" # Opcional, imaxe da portada
 etiquetas: ["anarquismo", "Rusia"]

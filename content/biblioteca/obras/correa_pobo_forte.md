@@ -4,10 +4,8 @@ autore: "Felipe Correa"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - anarquismo
-    - especifismo
-    - plataformismo
+categorias:
+    - Anarquismo
 formato:
     - libro
 descricion: "Esta é unha breve descrición da obra 1."

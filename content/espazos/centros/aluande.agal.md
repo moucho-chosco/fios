@@ -1,7 +1,7 @@
 ---
 title: "Aluandê"
 description: "Espaço afrocentrado, antirracista e transinclusivo"
-dirixido_por:
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 centro: true
 logo:  "/espazos/centros/aluande/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/aluande/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -15,6 +15,9 @@ gotoCoords:
   lat: 42.879
   lon: -8.544
 gotoZoom: 14
+instagram: https://www.instagram.com/casa.aluande/?hl=es
+facebook: https://www.facebook.com/casa.aluande/
+---
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios espaços os que decidam o contido de cada página.</div>
 

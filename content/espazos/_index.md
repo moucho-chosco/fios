@@ -1,5 +1,5 @@
 +++
-title = 'fíos | Espazos'
+title = 'fios | Espazos'
 url = "/ilg/espazos/"
 lang = 'ilg'
 reducido = 'E'

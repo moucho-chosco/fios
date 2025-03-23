@@ -15,6 +15,10 @@ gotoCoords:
   lat: 43.009
   lon: -7.558
 gotoZoom: 15
+instagram: https://www.instagram.com/hedreira/
+twitter:
+facebook:  https://www.facebook.com/hedreira
+web:
 ---
 A Hedreira é un centro social autoxestionado na cidade de Lugo. Nace do desexo de construírmos un espazo de confluencia social e da necesidade de ter un lugar de encontro, xa que consideramos que é mais doado materializar as ideas cando compartimos o espazo.
 

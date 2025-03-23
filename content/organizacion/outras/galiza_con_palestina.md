@@ -6,7 +6,7 @@ color: '#FFEDD9'
 nome_extendido: Associaçom em apoio à causa árabe
 logo:  "/organizacions/galiza_con_palestina/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/galiza_con_palestina/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outra
 instagram: https://www.instagram.com/galizaporpalestina/
 twitter: https://x.com/galizapalestina
 facebook: https://www.facebook.com/galizaporpalestina

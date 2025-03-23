@@ -51,25 +51,25 @@ defaultContentLanguageInSubdir = true
       imaxe = "/images/elementos/pantalla_ancha/espazos.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/espazos_negativo.svg"
 
-      [[languages.ilg.menu.main]]
-      name = " Calendario"
-      url = "/ilg/calendario/"
-      weight = 6
-      [languages.ilg.menu.main.params]
-      translatedURL = "/agal/calendario/"
-      reducido = "🗓️"
-      imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
-      imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
+      # [[languages.ilg.menu.main]]
+      # name = " Calendario"
+      # url = "/ilg/calendario/"
+      # weight = 6
+      # [languages.ilg.menu.main.params]
+      # translatedURL = "/agal/calendario/"
+      # reducido = "🗓️"
+      # imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
+      # imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
 
-      [[languages.ilg.menu.main]]
-      name = " Convocatorias"
-      url = "/ilg/convocatorias/"
-      weight = 5
-      [languages.ilg.menu.main.params]
-      translatedURL = "/agal/convocatorias/"
-      reducido = "📣"
-      imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
-      imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
+      # [[languages.ilg.menu.main]]
+      # name = " Convocatorias"
+      # url = "/ilg/convocatorias/"
+      # weight = 5
+      # [languages.ilg.menu.main.params]
+      # translatedURL = "/agal/convocatorias/"
+      # reducido = "📣"
+      # imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
+      # imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
 
       [[languages.ilg.menu.main]]
       name = " Podcast"
@@ -81,15 +81,15 @@ defaultContentLanguageInSubdir = true
       imaxe = "/images/elementos/pantalla_ancha/podcast.svg"
       imaxe_negativo = "/images/elementos/pantalla_ancha/podcast_negativo.svg"
 
-      [[languages.ilg.menu.main]]
-      name = " Redes"
-      url = "/ilg/redes/"
-      weight = 8
-      [languages.ilg.menu.main.params]
-      translatedURL = "/agal/redes/"
-      reducido = "#️⃣"
-      imaxe = "/images/elementos/pantalla_ancha/redes.svg"
-      imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
+      # [[languages.ilg.menu.main]]
+      # name = " Redes"
+      # url = "/ilg/redes/"
+      # weight = 8
+      # [languages.ilg.menu.main.params]
+      # # translatedURL = "/agal/redes/"
+      # reducido = "#️⃣"
+      # imaxe = "/images/elementos/pantalla_ancha/redes.svg"
+      # imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
 
       [[languages.ilg.menu.main]]
       name = " Recursos"
@@ -185,25 +185,25 @@ defaultContentLanguageInSubdir = true
     imaxe = "/images/elementos/pantalla_ancha/espazos.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/espazos_negativo.svg"
 
-    [[languages.agal.menu.main]]
-    name = " Calendário"
-    url = "/agal/calendario/"
-    weight = 6
-    [languages.agal.menu.main.params]
-    translatedURL = "/ilg/calendario/"
-    reducido = "🗓️"
-    imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
-    imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
+    # [[languages.agal.menu.main]]
+    # name = " Calendário"
+    # url = "/agal/calendario/"
+    # weight = 6
+    # [languages.agal.menu.main.params]
+    # translatedURL = "/ilg/calendario/"
+    # reducido = "🗓️"
+    # imaxe = "/images/elementos/pantalla_ancha/calendario.svg"
+    # imaxe_negativo = "/images/elementos/pantalla_ancha/calendario_negativo.svg"
 
-    [[languages.agal.menu.main]]
-    name = " Convocatórias"
-    url = "/agal/convocatorias/"
-    weight = 5
-    [languages.agal.menu.main.params]
-    translatedURL = "/ilg/convocatorias/"
-    reducido = "📣"
-    imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
-    imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
+    # [[languages.agal.menu.main]]
+    # name = " Convocatórias"
+    # url = "/agal/convocatorias/"
+    # weight = 5
+    # [languages.agal.menu.main.params]
+    # translatedURL = "/ilg/convocatorias/"
+    # reducido = "📣"
+    # imaxe = "/images/elementos/pantalla_ancha/convocatorias.svg"
+    # imaxe_negativo = "/images/elementos/pantalla_ancha/convocatorias_negativo.svg"
 
     [[languages.agal.menu.main]]
     name = " Podcast"
@@ -215,15 +215,15 @@ defaultContentLanguageInSubdir = true
     imaxe = "/images/elementos/pantalla_ancha/podcast.svg"
     imaxe_negativo = "/images/elementos/pantalla_ancha/podcast_negativo.svg"
 
-    [[languages.agal.menu.main]]
-    name = " Redes"
-    url = "/agal/redes/"
-    weight = 8
-    [languages.agal.menu.main.params]
-    translatedURL = "/ilg/redes/"
-    reducido = "#️⃣"
-    imaxe = "/images/elementos/pantalla_ancha/redes.svg"
-    imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
+    # [[languages.agal.menu.main]]
+    # name = " Redes"
+    # url = "/agal/redes/"
+    # weight = 8
+    # [languages.agal.menu.main.params]
+    # translatedURL = "/ilg/redes/"
+    # reducido = "#️⃣"
+    # imaxe = "/images/elementos/pantalla_ancha/redes.svg"
+    # imaxe_negativo = "/images/elementos/pantalla_ancha/redes_negativo.svg"
 
     [[languages.agal.menu.main]]
     name = " Recursos"
@@ -245,6 +245,11 @@ defaultContentLanguageInSubdir = true
     imaxe = "/images/elementos/pantalla_estreita/biblioteca.svg"
     imaxe_negativo = "/images/elementos/pantalla_estreita/biblioteca.svg"
 
+[taxonomies]
+  categoria = "categorias"
+  subcategoria = "subcategorias"
+  lugar = "lugares"
+  formato = "formato"
 
 
 [params]
@@ -254,3 +259,14 @@ defaultContentLanguageInSubdir = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  json = ["JSON"]
+  categorias = ["JSON"]
+  espazos = ["JSON"]
+
+[outputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"

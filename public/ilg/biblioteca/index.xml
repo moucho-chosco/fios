@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fíos | Biblioteca on fios</title>
+    <title>fios | Biblioteca on fios</title>
     <link>http://localhost:1313/ilg/biblioteca/</link>
-    <description>Recent content in fíos | Biblioteca on fios</description>
+    <description>Recent content in fios | Biblioteca on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
     <lastBuildDate>Fri, 15 Nov 2024 10:00:00 +0000</lastBuildDate>
@@ -13,6 +13,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/harnecker_c1/</link>
       <pubDate>Fri, 15 Nov 2024 10:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/harnecker_c1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/index./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/index./</guid>
       <description></description>
     </item>
     <item>
@@ -314,6 +321,118 @@
       <link>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anticapacitismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antirracismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/antirracismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/antirracismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capitalismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/capitalismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/capitalismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colonialismo e imperialismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/colonialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/colonialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comunismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crise climática</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estratexia</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/estratexia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/estratexia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ética Animal</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fascismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/fascismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/fascismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feminismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/historia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/historia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internacional</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/internacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/internacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LGBT&#43;</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nación</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica militante</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/practica_militante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/practica_militante/</guid>
       <description></description>
     </item>
   </channel>

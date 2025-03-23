@@ -1,6 +1,7 @@
 ---
 title: "A Casa Branca"
 description: "Asociación Cultural Autoxestionada"
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 dirixido_por:
 centro: true
 logo:  "/espazos/centros/casa_branca/logo.png"  # Ruta á imaxe do logo
@@ -15,6 +16,10 @@ gotoCoords:
   lat: 42.897
   lon: -8.533
 gotoZoom: 14
+instagram: https://www.instagram.com/acasabranca_org/?hl=es
+twitter:
+facebook:
+web:
 ---
 Cultura dun xeito ecléctico e responsable onde TODES temos cabida. Polígono do Tambre.
 

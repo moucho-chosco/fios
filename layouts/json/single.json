@@ -1,0 +1,44 @@
+
+{{- if eq .Type "json" -}}
+  {{- if eq .Title "Categorías" -}}
+    {{- $categorias := slice -}}
+    {{- range where .Site.Pages "Params.categoria" "==" true -}}
+      {{- $categoria := dict "titulo" .Title "subcategorias" .Params.subcategorias -}}
+      {{- $categorias = $categorias | append $categoria -}}
+    {{- end -}}
+    {{- $categorias | jsonify -}}
+  {{- else if eq .Title "Espazos" -}}
+    {{- $espazos := where .Site.RegularPages ".Params.centro" true -}}
+    {
+      "espazos": [
+        {{- range $index, $espazo := $espazos -}}
+          {{- if $index -}},{{- end -}}
+          {
+            "title": {{ $espazo.Title | jsonify }},
+            "logo": {{ $espazo.Params.logo | jsonify }},
+            "localidade": {{ $espazo.Params.localidade | jsonify }},
+            "description": {{ $espazo.Params.description | jsonify }},
+            "info": {{ $espazo.Params.info | jsonify }},
+            "url": {{ $espazo.RelPermalink | jsonify }}
+          }
+        {{- end -}}
+      ]
+    }
+  {{- else if eq .Title "Colectivas" -}}
+    {{- $colectivas := where .Site.RegularPages ".Params.clase" "colectivo" -}}
+    {
+      "colectivas": [
+        {{- range $index, $colectiva := $colectivas -}}
+          {{- if $index -}},{{- end -}}
+          {
+            "title": {{ $colectiva.Params.nome | jsonify }},
+            "logo": {{ $colectiva.Params.logo | jsonify }},
+            "description": {{ $colectiva.Params.nome_extendido | jsonify }},
+            "info": {{ $colectiva.Params.info | jsonify }},
+            "url": {{ $colectiva.RelPermalink | jsonify }}
+          }
+        {{- end -}}
+      ]
+    }
+  {{- end -}}
+{{- end -}}

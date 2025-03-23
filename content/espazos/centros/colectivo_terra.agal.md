@@ -1,6 +1,7 @@
 ---
 title: "Coletivo Terra"
 description: "Centro Social de Pontedeume"
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 dirixido_por: ""
 centro: true
 logo:  "/espazos/centros/colectivo_terra/logo.jpg"  # Ruta á imaxe do logo
@@ -18,6 +19,10 @@ gotoCoords:
   lat: 43.4048354267391
   lon: -8.16636505040621
 gotoZoom: 16
+instagram: https://www.instagram.com/colectivoterra/?hl=es
+twitter:   https://x.com/colectivoterra
+facebook:  https://www.facebook.com/colectivo.terrapontedeume
+web:
 ---
 O Coletivo *Terra* de Pontedeume nasce co objetivo de plantar a nossa pequena semente na defensa e difusom dos dereitos do nosso povo, da nossa cultura, da nossa língua e da nossa história, desejando que esta semente germole e floreza, junto com outras muitas sementes, num futuro melhor para o nosso país.
 

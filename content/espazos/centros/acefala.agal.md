@@ -1,8 +1,7 @@
 ---
 title: "Acéfala"
 description: "Espaço autónomo no bárrio de Monte Alto"
-dirixido_por: "Asemblea do Escárnio"
-participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 logo:  "/espazos/centros/acefala/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/acefala/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#FDE22D"
@@ -16,6 +15,9 @@ gotoCoords:
   lat: 43.368
   lon: -8.408
 gotoZoom: 14
+instagram: https://www.instagram.com/acefala.colectivo/?hl=es
+facebook: https://www.facebook.com/acefala.colectivo/?locale=es_ES
+web: https://linktr.ee/acefala?fbclid=PAZXh0bgNhZW0CMTEAAaaffbOjsHJdg6iikMlzak_OW3uDc52DILvBzA9GBVDaPxZayrRaMPylHLo_aem_rZvU3MyRQC3v3wygkWK3UQ
 ---
 
 *Acéfala* é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).

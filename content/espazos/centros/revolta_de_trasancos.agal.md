@@ -7,7 +7,7 @@ centro: true
 logo:  "/espazos/centros/a_revolta_de_trasancos/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_revolta_de_trasancos/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#f2d054"
-localidade: "Trasancos"
+localidade: "Ferrol"
 location:
   lat: 43.48018435093307
   lon: -8.20404842156572
@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.4820100
   lon:  -8.2248900
 gotoZoom: 14
+instagram:
+twitter:
+facebook: https://www.facebook.com/RevoltaTrasancos
+web:
 ---
 A Revolta nasceu em 1997 como comparsa de Entruido e aginha ampliou a sua atividade para defender a cultura, a língua e o meio ambiente. Desde aquela, promove festas participativas (como a Lumeirada na noite do 23 de junho), organiza comidas populares e atividades que integram à infância e às familias, e reivindica espaços naturais como a Fraga de Menáncaro. Emprega o galego como língua vehicular, aposta pola festa ativa com valores de solidariedade e igualdade, e colabora com outras entidades na defensa das tradiçons, a cultura, a justiça social e os dereitos das mulheres, das diversidades afetivo-sexuais e da Terra.
 

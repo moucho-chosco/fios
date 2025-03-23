@@ -8,11 +8,8 @@ serie:
     - Cadernos de Educación Popular
 Numero: 1
 ano: 1971
-tematicas:
-    - socialismo
-    - comunismo
-    - economia
-    - capitalismo
+categorias:
+    - Comunismo
 descricion: 'Cadernos de Educación Popular foi unha colección publicada pola Editora Nacional Quimantú de Chile que tiña por obxectivo poñer elementos de educación política en mans das “grandes masas” para que estas participasen activamente no proceso político que vivía Chile dura- nte o goberno de Unidad Popular (1970-1973). As súas autoras foron Marta Harnecker (1937-2019) e Gabriela Uribe.
 
     A colección estaba dividida en dúas series. A primeira consistía en textos (Núms. 1-7) nos que se explicaban conceptos ideolóxicos que axudaban aos traballadores a entender o proceso que vivía o país e as etapas para lograr un sistema socialista. A segunda, "Para loitar polo socialismo", a partir do Núm. 8, abordaba as formas de organización e as claves para avanzar no desenvolvemento do socialismo.

@@ -1,6 +1,7 @@
 ---
 title: "A Casa Colorida"
 description: "Laboratório do Comúm na Galiza"
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 dirixido_por:
 centro: true
 logo:  "/espazos/centros/a_casa_colorida/logo.jpg"  # Ruta á imaxe do logo
@@ -15,6 +16,9 @@ gotoCoords:
   lat: 42.135
   lon: -8.812
 gotoZoom: 15
+instagram: https://www.instagram.com/medialabcolorida/?hl=es
+facebook: https://www.facebook.com/ColectivoCasaColorida/?locale=es_ES
+web:
 ---
 Laboratório do Comúm para o desenvolvimento Integral da Cultura Livre em Galiza. Aldeanía em rede p2p. Universidade Livre. Residência Artística, Ativismo Cultural e MediaHackLab.
 

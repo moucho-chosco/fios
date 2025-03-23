@@ -34,7 +34,13 @@
                 {{ range .Site.Languages }}
                     {{ $lang := .Lang }}
                     {{ if eq $lang $currentLang }}
-                        <a href="{{ $translatedURL | relURL }}">Galego {{ .LanguageName }} ⇄</a>
+                        <a href="{{ $translatedURL | relURL }}" id="langButton" class="normativa-button">
+                        {{ if eq $currentLang "ilg" }}
+                            <img class="lang-icon" src="/images/elementos/pantalla_ancha/enhe.png" alt="Normativa ILG" width="25" height="25">
+                        {{ else }}
+                            <img class="lang-icon" src="/images/elementos/pantalla_ancha/eneaga.png" alt="Normativa AGAL" width="25" height="25">
+                        {{ end }}
+                        </a>
                     {{ end }}
                 {{ end }}
             </nav>

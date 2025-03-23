@@ -1,0 +1,141 @@
+{
+      "colectivas": [{
+            "title": "A.M.A.L.",
+            "logo": "/organizacions/amal/logo.png",
+            "description": "Agrupaçom de Montanha Águas Limpas",
+            "info": null,
+            "url": "/ilg/organizacion/outras/amal/"
+          },{
+            "title": "Anticapitalistas",
+            "logo": "/organizacions/anticapitalistas/logo.jpeg",
+            "description": "Construíndo un movemento anticapitalista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/anticapitalistas/"
+          },{
+            "title": "UPG",
+            "logo": "/organizacions/upg/logo.png",
+            "description": "Unión do Povo Galego",
+            "info": null,
+            "url": "/ilg/organizacion/outras/arredista-copy/"
+          },{
+            "title": "Movemento\nArredista",
+            "logo": "/organizacions/arredista/logo.jpg",
+            "description": "Organización revolucionaria",
+            "info": null,
+            "url": "/ilg/organizacion/outras/arredista/"
+          },{
+            "title": "Assembleias\nAbertas\nIndependentistas",
+            "logo": "/organizacions/assembleias/logo.png",
+            "description": "Estruturas abertas de carácter comarcal",
+            "info": null,
+            "url": "/ilg/organizacion/outras/assembleias/"
+          },{
+            "title": "Avante LGBT+",
+            "logo": "/organizacions/avante_lgbt/logo.png",
+            "description": "En loita contra o patriarcado e a cisheteronorma",
+            "info": null,
+            "url": "/ilg/organizacion/outras/avante_lgbt/"
+          },{
+            "title": "Clara Corbelhe",
+            "logo": "/organizacions/clara_corbelhe/logo.png",
+            "description": "Espazo de produción crítica galega",
+            "info": null,
+            "url": "/ilg/organizacion/outras/clara_corbelhe/"
+          },{
+            "title": "CMC",
+            "logo": "/organizacions/cmc/logo.png",
+            "description": "Colectivos da Mocidade Comunista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/cmc/"
+          },{
+            "title": "Corrente Vermella",
+            "logo": "/organizacions/corrente_vermella/logo.jpg",
+            "description": "Organización marxista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/corrente_vermella/"
+          },{
+            "title": "Creba Socialista",
+            "logo": "/organizacions/creba/logo.jpg",
+            "description": "Espazo de encontro e debate",
+            "info": null,
+            "url": "/ilg/organizacion/outras/creba/"
+          },{
+            "title": "Esquerda Revolucionaria",
+            "logo": "/organizacions/esquerda_revolucionaria/logo.jpg",
+            "description": "Organización marxista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/esquerda_revolucionaria/"
+          },{
+            "title": "Galiza Nova",
+            "logo": "/organizacions/galiza_nova/logo.jpg",
+            "description": "Organización Xuvenil do BNG",
+            "info": null,
+            "url": "/ilg/organizacion/outras/galiza_nova/"
+          },{
+            "title": "Isca!",
+            "logo": "/organizacions/isca/logo.jpg",
+            "description": "Independencia, socialismo e destrución do patriarcado",
+            "info": null,
+            "url": "/ilg/organizacion/outras/isca/"
+          },{
+            "title": "Mar de Lumes",
+            "logo": "/organizacions/mardelumes/logo.png",
+            "description": "Comité Galego de Solidariedade Internacionalista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/mardelumes/"
+          },{
+            "title": "Marcha\nMundial\ndas Mulleres",
+            "logo": "/organizacions/mmmm/logo.png",
+            "description": "Colectivo feminista",
+            "info": null,
+            "url": "/ilg/organizacion/outras/mmmm/"
+          },{
+            "title": "MPI",
+            "logo": "/organizacions/mpi/logo.jpg",
+            "description": "Mocidade pola Independencia",
+            "info": null,
+            "url": "/ilg/organizacion/outras/mpi/"
+          },{
+            "title": "PCG",
+            "logo": "/organizacions/pcg/logo.png",
+            "description": "Partido Comunista de Galicia",
+            "info": null,
+            "url": "/ilg/organizacion/outras/pcg/"
+          },{
+            "title": "PCTG",
+            "logo": "/organizacions/pctg/logo.jpg",
+            "description": "Partido Comunista dos Traballadores da Galiza",
+            "info": null,
+            "url": "/ilg/organizacion/outras/pctg/"
+          },{
+            "title": "PFG",
+            "logo": "/organizacions/pfg/logo.png",
+            "description": "Plataforma Feminista Galega",
+            "info": null,
+            "url": "/ilg/organizacion/outras/pfg/"
+          },{
+            "title": "Refuxios da Memoria",
+            "logo": "/organizacions/refuxios_da_memoria/logo.jpg",
+            "description": "Memorial Libertario",
+            "info": null,
+            "url": "/ilg/organizacion/outras/refuxios_da_memoria/"
+          },{
+            "title": "SELG",
+            "logo": "/organizacions/selg/logo.png",
+            "description": "Seminario de Estudos Libertarios Galegos",
+            "info": null,
+            "url": "/ilg/organizacion/outras/selg/"
+          },{
+            "title": "UMG",
+            "logo": "/organizacions/umg/logo.png",
+            "description": "Unión da Mocidade Galega",
+            "info": null,
+            "url": "/ilg/organizacion/outras/umg/"
+          },{
+            "title": "Xuventude\nComunista",
+            "logo": "/organizacions/xc/logo.jpg",
+            "description": "Xuventude do PCG",
+            "info": null,
+            "url": "/ilg/organizacion/outras/xc/"
+          }]
+    }

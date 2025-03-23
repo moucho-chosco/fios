@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feminismo Interseccional on fios</title>
+    <link>http://localhost:1313/ilg/subcategorias/feminismo-interseccional/</link>
+    <description>Recent content in Feminismo Interseccional on fios</description>
+    <generator>Hugo</generator>
+    <language>ilg</language>
+    <atom:link href="http://localhost:1313/ilg/subcategorias/feminismo-interseccional/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anticapacitismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feminismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LGBT&#43;</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

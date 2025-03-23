@@ -1,6 +1,7 @@
 ---
 title: "Casa Obreira"
 description: "Centro Cultural"
+info: "Espaço para debater-mos e construir-mos coletivamente o futuro que nos urge. «Sem teoria revolucionária nom pode haver movimento revolucionário»."
 dirixido_por:
 centro: true
 logo:  "/espazos/centros/casa_obreira/logo.jpg"  # Ruta á imaxe do logo
@@ -15,6 +16,10 @@ gotoCoords:
   lat: 42.879
   lon: -8.544
 gotoZoom: 14
+instagram: https://www.instagram.com/casaobreira/?hl=es
+twitter:
+facebook: https://www.facebook.com/casa.obreira
+web:
 ---
 Espaço para debater-mos e construir-mos coletivamente o futuro que nos urge. «Sem teoria revolucionária nom pode haver movimento revolucionário».
 

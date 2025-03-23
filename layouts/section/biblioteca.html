@@ -1,203 +1,190 @@
 {{ define "main" }}
-<script src="/scripts/biblioteca.js"></script>
-<div id="biblioteca-container" class="standard-section-container">
-
-    <div class="search-container">
-        <button id="search-button">
-            <img src="{{ "/images/elementos/pantalla_ancha/search.svg" | relURL }}" alt="Buscar">
-        </button>
-        <input type="text" id="search-input" placeholder="Buscar...">
+    <div id="biblioteca-container" class="standard-section-container">
+    
+        <div class="filtros-biblioteca-box">
+            <div class="filters-container ">
+                <div class="selector-categorias">
+                    <button id="boton-categorias">Todas as categorías</button>
+                    
+                    <div class="panel-categorias" id="panel-categorias">
+                        <!-- Columna de categorías -->
+                        <div class="columna-categorias">
+                            <div class="categoria-item" 
+                                 onclick="seleccionar('Todo', 'categoria')">
+                                Todo
+                            </div>
+                            {{ $biblioteca := .Site.GetPage "/biblioteca" }} <!-- Obtén a páxina biblioteca.md -->
+                            {{ $categorias := slice }}
+                            {{ range $biblioteca.Params.categorias }}
+                                <div class="categoria-item" 
+                                     onmouseover="mostrarSubcategorias('{{ .nome }}')" 
+                                     onclick="seleccionar('{{ .nome }}', 'categoria')"
+                                     data-subcategorias='{{ .subcategorias | jsonify }}'>
+                                    {{ .nome }}
+                                </div>
+                            {{ end }}
+                            
+                            <div class="categoria-item" 
+                                 onmouseover="mostrarSubcategorias('Máis categorías')" 
+                                 onclick="seleccionar('Máis categorías', 'categoria')">
+                                Máis categorías
+                            </div>
+                        </div>
+                        
+                        <!-- Columna de subcategorías -->
+                        <div class="columna-subcategorias" id="subcategorias-container">
+                            <!-- Subcategorías cargaranse dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                <select id="categoria-filter" class="filter">
+                    <option value="todas">Lugar</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.lugares }}
+                        <option value="{{ $name }}">{{ $name }}</option>
+                    {{ end }}
+                </select>
+                <select id="categoria-filter" class="filter">
+                    <option value="todas">Formato</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.formato }}
+                        <option value="{{ $name }}">{{ $name }}</option>
+                    {{ end }}
+                </select>
+                <select id="categoria-filter" class="filter">
+                    <option value="todas">Dificultade</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.difucultade }}
+                        <option value="{{ $name }}">{{ $name }}</option>
+                    {{ end }}
+                </select>
+            </div>
         
-    </div>
-
-    <div class="banner-biblioteca">
-        <picture>
-            <source class="fondo-banner-webp" srcset="{{ "/biblioteca/banners/fondos/inicial.webp" | relURL }}" type="image/webp">
-            <img    class="fondo-banner"          src="{{ "/biblioteca/banners/fondos/inicial.png"  | relURL }}" alt="Fondo do banner">
-        </picture>
-        <picture>
-            <source class="titulo-banner-webp" srcset="{{ "/biblioteca/banners/titulos/inicial.webp" | relURL }}" type="image/webp">
-            <img    class="titulo-banner"         src="{{ "/biblioteca/banners/titulos/inicial.png"  | relURL }}" alt="Titulo do banner">
-        </picture>
-        
-        <p class="descricion-banner" style="z-index:'99999';">
-            Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
-            Pois benvide á biblioteca de fios! Aquí atoparás libros, artigos (no futuro tamén outros recursos) de grande valor
-            formativo organizados por temáticas, formatos, autoras, series... Ademais, os itinerarios son rutas de lectura elaboradas para
-            dar un contexto máis intuitivo e coerente a cuestións específicas de interese.
-        </p>
-        <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
-        <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
-    </div>
-
-    <div class="warning warning-white" style="margin-top: 3vh;">⚠️ 
-        O contido desta sección móstrase a modo de exemplo/prototipo unicamento técnico. Os itinerarios, categorías e libros foron seleccionados como mostra,
-        sendo a intención elaborar os definitivos en colaboración con diferentes organizacións. As sínteses tamén son a modo de exemplo e
-        o seu contido non debe ser tomado como relevante. Ademais, aínda é necesario traballo de optimización para mellorar a fluidez da experiencia de usuario.
-    </div>
+            <div class="search-container">
+                <button id="search-button">
+                    <img src="{{ "/images/elementos/pantalla_ancha/search.svg" | relURL }}" alt="Buscar">
+                </button>
+                <input type="text" id="search-input" placeholder="Buscar...">
+            </div>
+        </div>
     
-    <!-- Carrusel de itinerarios -->
-    <h2 class="titulo-carousel">Itinerarios</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range where .Site.RegularPages ".Params.tipo" "itinerario" }}
-            <div  class="libro"
-            data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
-            data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
-            data-texto-banner= "{{ .Params.texto_banner }}"
-            data-cor-banner="{{ .Params.cor_banner }}"
-            data-cor-texto="{{ .Params.cor_texto }}"
-            data-marxe-texto="{{ .Params.marxe_texto }}"
-            data-tipo="{{ .Params.tipo }}"
-            data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
-            data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
+        <div class="banner-biblioteca">
+            <picture>
+                <source class="fondo-banner-webp" srcset="{{ "/biblioteca/banners/fondos/inicial.webp" | relURL }}" type="image/webp">
+                <img    class="fondo-banner"          src="{{ "/biblioteca/banners/fondos/inicial.png"  | relURL }}" alt="Fondo do banner">
+            </picture>
+            <picture>
+                <source class="titulo-banner-webp" srcset="{{ "/biblioteca/banners/titulos/inicial.webp" | relURL }}" type="image/webp">
+                <img    class="titulo-banner"         src="{{ "/biblioteca/banners/titulos/inicial.png"  | relURL }}" alt="Titulo do banner">
+            </picture>
+            
+            <p class="descricion-banner" style="z-index:'99999';">
+                Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
+                Pois benvide á biblioteca de fios! Aqui atoparás libros e outros recursos de grande valor
+                formativo organizados por temáticas, formatos... Ademais, os itinerarios son rutas de lectura elaboradas para
+                dar un contexto máis intuitivo e coerente a cuestións específicas de interese.
+            </p>
+            <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
+            <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
         </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
 
-
+        <div id="grid-container" class="grid-books-container" style="display: none;">
+            <div id="books-grid" class="books-grid">
+              <!-- Books will be loaded here dynamically -->
+            </div>
+            <div id="loading-indicator" class="loading-indicator">
+              <div class="loader"></div>
+            </div>
+          </div>
     
-    <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "capitalismo")) ".Params.autore" }}
-            <div class="libro"
-            data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
-            data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
-            data-texto-banner= "{{ .Params.texto_banner }}"
-            data-cor-banner="{{ .Params.cor_banner }}"
-            data-cor-texto="{{ .Params.cor_texto }}"
-            data-marxe-texto="{{ .Params.marxe_texto }}"
-            data-tipo="{{ .Params.tipo }}"
-            data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
-            data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
-            onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
+        <!-- Creamos unha div contedor para os carruseis -->
+        <div id="carruseis-container">
+            <!-- Lista manual de categorías -->
+            {{ $biblioteca := .Site.GetPage "/biblioteca" }} <!-- Obtén a páxina biblioteca.md -->
+            {{ $categorias := slice }} <!-- Inicializa un slice baleiro -->
 
-    <h2 class="titulo-carousel">Temática: xénero</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "xénero")) ".Params.autore" }}
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
+            {{ range $biblioteca.Params.categorias }} <!-- Itera sobre as categorías -->
+                {{ $categorias = $categorias | append .nome }} <!-- Engade o nome da categoría ao slice -->
+            {{ end }}
+            
+            <!-- Renderizamos os carruseis na orde orixinal -->
+            {{ range $categorias }}
+            <div class="categoria-carrusel" data-categoria="{{ . }}">
+                <div class="cabeceira-carrusel">
+                    <h2 class="titulo-carousel">{{ . }}</h2>
+                    <button class="ver-mais">Ver todo</button>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        {{ $categoria := . }}
+                        {{/* Obtén todas as páxinas da categoría actual */}}
+                        {{ $paginasCategoria := where (where $.Site.RegularPages ".Params.tipo" "obra") ".Params.categorias" "intersect" (slice $categoria) }}
+                        
+                        {{/* Embaralla as páxinas para orde aleatoria */}}
+                        {{ $paginasAleatorias := shuffle $paginasCategoria }}
+                        
+                        {{/* Renderiza os items do carrusel en orde aleatoria */}}
+                        {{ range $paginasAleatorias }}
+                        <div class="libro"
+                        data-fondo-banner="{{ .Params.fondo_banner | relURL }}"
+                        data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
+                        data-texto-banner="{{ .Params.texto_banner }}"
+                        data-cor-banner="{{ .Params.cor_banner }}"
+                        data-cor-texto="{{ .Params.cor_texto }}"
+                        data-marxe-texto="{{ .Params.marxe_texto }}"
+                        data-tipo="{{ .Params.tipo }}"
+                        data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
+                        data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
+                        onclick="seleccionarLibro(this)">
+                            <div class="libro-portada">
+                                <picture>
+                                    <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
+                                    <img src="{{ .Params.portada | relURL }}" 
+                                        alt="Portada {{ .Params.titulo }}" 
+                                        loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
                 </div>
             </div>
             {{ end }}
         </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
+                
     </div>
-
-    <h2 class="titulo-carousel">Temática: anarquismo</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "anarquismo")) ".Params.autore" }}
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
+    <div id="custom-scrollbar">
+        <div id="scrollbar-thumb"></div>
     </div>
-
-    <h2 class="titulo-carousel">Serie: Cadernos de Educación Popular</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.serie" "intersect" (slice "Cadernos de Educación Popular")) ".Params.autore" }}
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel">Temática: revolución</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "revolución")) ".Params.autore" }}
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
-
-    <h2 class="titulo-carousel resaltado" >Formato: artigos</h2>
-    <div class="carousel-container">
-        <div class="carousel-track">
-            {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.formato" "intersect" (slice "artigo")) ".Params.autore" }}
-            <div class="libro" onclick="seleccionarLibro(this)">
-                <div class="libro-portada">
-                    <picture>
-                        <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                        <img src="{{ .Params.portada | relURL }}" 
-                            alt="Portada {{ $.Params.titulo }}" 
-                            loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
+    <script src="/scripts/biblioteca.js"></script>
     
-</div>
+    <!-- Script para embarallar as categorías na carga da páxina -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para embarallar un array (algoritmo Fisher-Yates)
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+            
+            // Obtén o contedor de carruseis
+            const carruseisContainer = document.getElementById('carruseis-container');
+            
+            // Obtén todos os carruseis de categoría
+            const carruseis = Array.from(document.querySelectorAll('.categoria-carrusel'));
+            
+            // Embaralla os carruseis
+            const carruseisEmbarallados = shuffleArray(carruseis);
+            
+            // Elimina os carruseis do contedor
+            carruseisContainer.innerHTML = '';
+            
+            // Engade os carruseis en orde aleatoria
+            carruseisEmbarallados.forEach(function(carrusel) {
+                carruseisContainer.appendChild(carrusel);
+            });
+        });
+    </script>
 {{ end }}

@@ -24,12 +24,6 @@
                 <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
               {{ end }}
             </select>
-            <select class="filter">
-              <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
-              {{ range where .Site.RegularPages ".Params.etiqueta" true }}
-                <option value="">🏷️ {{ .Title }}</option>
-              {{ end }}
-            </select>
           </div>
           <!--
           <div class="slider-container">
@@ -57,7 +51,7 @@
       
 
       <div id="contido-espazos-info">
-        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+        <div id="warning-infoorgas" class="warning" style="display: none;margin:5%;margin-top:0;margin-bottom:3%;">
           ⚠️ O contido desta secçom mostra-se a modo de exemplo técnico. Os espaços representados e o mapa podem mudar en funçom do feedback recibido.
         </div>
         <p id="mensaxe-sen-resultados" style="display: none;">

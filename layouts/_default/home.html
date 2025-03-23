@@ -1,12 +1,114 @@
 {{ define "main" }}
-  <div id="general-container" class="standard-section-container">
-    <div id="home-window-container" class="window-container">
-      <div id="main-home-window" class="window">
-        <div class="contido">
-          {{ .Content }}
+  <div id="principal-container" class="standard-section-container">
+    
+    <!-- Caixas distribuidas en 2 filas -->
+    <div class="caixas-container">
+      <div class="fila primeira-fila">
+        <div class="caixa window banner-principal">
+          <div class="infofios-principal" id="infofios1">
+            <p class="titulo-principal">
+              Espazo divulgativo<br>
+              do común
+            </p>
+
+            <p class="texto-principal">
+              Unha caixa de ferramentas para a loita cultural...  
+            </p>
+          </div>
+          <img src="{{ "images/banners/principal/banner_fios.png"  | relURL }}" alt="Imaxe" class="imaxe-dereita">
+        </div>
+        <div class="caixa window">Espazos</div>
+      </div>
+      <div class="fila segunda-fila">
+        <div class="caixa window">
+          <div class="colectiva-aleatoria">
+            <div id="colectiva-aleatoria-content">
+            </div>
+            <button class="ver-mais" id="ver-mais-principal">Ver colectivas</button>
+          </div>
+        
+          <script>
+            // Cargar o JSON con todos os espazos
+            fetch('/colectivas.json')
+              .then(response => response.json())
+              .then(data => {
+                const colectivas = data.colectivas;
+                console.log(colectivas);
+                if (colectivas.length > 0) {
+                  // Seleccionar un espazo ao azar
+                  const colectivaAleatoria = colectivas[Math.floor(Math.random() * colectivas.length)];
+          
+                  // Mostrar o espazo seleccionado
+                  const colectivaContent = document.getElementById('colectiva-aleatoria-content');
+                  colectivaContent.innerHTML = `
+                    <div class="colectiva-info">
+                      <img src="${colectivaAleatoria.logo}" alt="Logo de ${colectivaAleatoria.title}" class="logo-principal">
+                      <div class="texto">
+                        <h2>${colectivaAleatoria.title}</h2>
+                        <h3>${colectivaAleatoria.description || "Descrición"}</h3>
+                        <p>${colectivaAleatoria.info}</p>
+                      </div>
+                    </div>
+                  `;
+                } else {
+                  document.getElementById('colectiva-content').innerHTML = '<p>Non se atoparon colectivas.</p>';
+                }
+              })
+              .catch(error => {
+                console.error('Error ao cargar as colectivas:', error);
+                document.getElementById('colectiva-aleatoria-content').innerHTML = '<p>Erro ao cargar as colectivas.</p>';
+              });
+          </script>
+        </div>
+        <div class="caixa window">Convocatorias</div>
+        <div class="caixa window">
+          <div class="espazo-aleatorio">
+            <div id="espazo-content">
+            </div>
+            <button class="ver-mais" id="ver-mais-principal">Ver espazos</button>
+          </div>
+        
+          <script>
+            // Cargar o JSON con todos os espazos
+            fetch('/espazos.json')
+              .then(response => response.json())
+              .then(data => {
+                const espazos = data.espazos;
+                if (espazos.length > 0) {
+                  // Seleccionar un espazo ao azar
+                  const espazoAleatorio = espazos[Math.floor(Math.random() * espazos.length)];
+          
+                  // Mostrar o espazo seleccionado
+                  const espazoContent = document.getElementById('espazo-content');
+                  espazoContent.innerHTML = `
+                    <div class="espazo-info">
+                      <img src="${espazoAleatorio.logo}" alt="Logo de ${espazoAleatorio.title}" class="logo-principal">
+                      <div class="texto">
+                        <h2>${espazoAleatorio.title}</h2>
+                        <h3>${espazoAleatorio.description || "Descrición"} en ${espazoAleatorio.localidade || "Localidade"}</h3>
+                        <p>${espazoAleatorio.info}</p>
+                      </div>
+                    </div>
+                  `;
+                } else {
+                  document.getElementById('espazo-content').innerHTML = '<p>Non se atoparon espazos.</p>';
+                }
+              })
+              .catch(error => {
+                console.error('Error ao cargar os espazos:', error);
+                document.getElementById('espazo-content').innerHTML = '<p>Erro ao cargar os espazos.</p>';
+              });
+          </script>
+
         </div>
       </div>
+      <div class="fila terceira-fila">
+        <div class="caixa grande window">Biblioteca</div>
+        <div class="caixa pequena window">Podcast</div>
+      </div>
     </div>
-    
+  </div>
+  <div id="custom-scrollbar">
+    <div id="scrollbar-thumb"></div>
   </div>
 {{ end }}

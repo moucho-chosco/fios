@@ -4,10 +4,10 @@ autore: "Alexandra Kollontai"
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - revolución
-    - afectos
-    - relacións
+categorias:
+    - Comunismo
+    - Feminismo
+    - Estratexia
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/kollontai_amor_vermello.png" # Opcional, imaxe da portada
 etiquetas: ["feminismo", "marxismo", "USA"]

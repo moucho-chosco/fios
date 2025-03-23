@@ -1,6 +1,7 @@
 ---
 title: "A Chave das Noces"
 description: "Centro Social em Castroverde"
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 dirixido_por: ""
 centro: true
 logo:  "/espazos/centros/a_chave_das_noces/logo.jpg"  # Ruta á imaxe do logo
@@ -15,6 +16,10 @@ gotoCoords:
   lat: 43.055
   lon: -7.3261945204762515
 gotoZoom: 13
+instagram:
+twitter:
+facebook: https://www.facebook.com/ofeisdachavedasnoces/?locale=es_ES
+web:
 ---
 O CS *A Chave das Noces* é um centro social galeguista em Sam Cibrao de Montecubeiro, Castroverde.
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artigo on fios</title>
+    <link>http://localhost:1313/agal/formato/artigo/</link>
+    <description>Recent content in Artigo on fios</description>
+    <generator>Hugo</generator>
+    <language>agal</language>
+    <atom:link href="http://localhost:1313/agal/formato/artigo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/bomb_obituario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/bomb_obituario/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/einstein_por_que_socialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/einstein_por_que_socialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/lenin_marxismo_e_reformismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/lenin_marxismo_e_reformismo/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

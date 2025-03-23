@@ -1,8 +1,7 @@
 ---
 title: "Acéfala"
 description: "Espazo autónomo"
-dirixido_por: "Asemblea do Escárnio"
-participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 logo:  "/espazos/centros/acefala/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/acefala/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#FDE22D"
@@ -16,16 +15,28 @@ gotoCoords:
   lat: 43.368
   lon: -8.408
 gotoZoom: 14
+instagram: https://www.instagram.com/acefala.colectivo/?hl=es
+facebook: https://www.facebook.com/acefala.colectivo/?locale=es_ES
+web: https://linktr.ee/acefala?fbclid=PAZXh0bgNhZW0CMTEAAaaffbOjsHJdg6iikMlzak_OW3uDc52DILvBzA9GBVDaPxZayrRaMPylHLo_aem_rZvU3MyRQC3v3wygkWK3UQ
+---
 ---
 
 *Acéfala* é un colectivo cultural cun espazo autónomo en Monte Alto (A Coruña).
 
 <details>
-  <summary>Obxectivos</summary>
+  <summary>Como podo participar en Acéfala?</summary>
+  <ol>
+    <li><b>Vindo e aportando</b>: nos concertos, na cantina, con doazóns...</li>
+    <li><b>Facéndote membra</b>: participarás nas asembleas e terás acceso ao local</li>
+    <li><b>Facéndote mecenas</b>: tranferencia a ES87 3070 0044 5062 4458 7223 ou paypal a info@acefala.org</li>
+    <li><b>Compartindo info</b></li>
+  </ol>
+  <p>Así axúdasnos a:</p>
   <ul>
-    <li>Obxectivo 1</li>
-    <li>Obxectivo 2</li>
-    <li>Obxectivo 3</li>
+    <li>Comprar materiais e ferramentas</li>
+    <li>Seguir existindo</li>
+    <li>Arriscar coas propostas</li>
+    <li>Mellorar o espazo pouco a pouco</li>
   </ul>
 </details>
 
@@ -41,37 +52,17 @@ gotoZoom: 14
 </details>
 
 <details>
-  <summary>Horarios</summary>
-  <p>Os horarios habituais do centro son os seguintes:</p>
+  <summary>Direción</summary>
+  <p>Podes contactar connosco a través de:</p>
   <ul>
-    <li><strong>Luns a venres:</strong> 16:00 - 21:00.</li>
-    <li><strong>Sábados:</strong> 10:00 - 14:00 e 16:00 - 20:00.</li>
-    <li><strong>Domingos:</strong> Pechado, excepto para eventos programados.</li>
+    <li>Email: info@acefala.com</li>
   </ul>
-</details>
-
-<details>
-  <summary>Redes</summary>
-  <p>Coñécenos a través de:</p>
-  <ul>
-    <li>Instragram</li>
-    <li>Twiter/X</li>
-    <li>Facebook</li>
-    <li>Bluesky</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Historia do centro</summary>
-  <p></p>
 </details>
 
 <details>
   <summary>Contacto</summary>
   <p>Podes contactar connosco a través de:</p>
   <ul>
-    <li>Email: contacto@email.com</li>
-    <li>Teléfono: 111 111 111</li>
-    <li>Enderezo: - </li>
+    <li>Email: info@acefala.com</li>
   </ul>
 </details>

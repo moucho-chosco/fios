@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Revolución Rusa on fios</title>
+    <link>http://localhost:1313/agal/subcategorias/a-revoluci%C3%B3n-rusa/</link>
+    <description>Recent content in A Revolución Rusa on fios</description>
+    <generator>Hugo</generator>
+    <language>agal</language>
+    <atom:link href="http://localhost:1313/agal/subcategorias/a-revoluci%C3%B3n-rusa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comunismo</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/comunismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/comunismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crise climática</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/crise_climatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/crise_climatica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estrategia</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/estratexia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/estratexia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ética Animal</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/etica_animal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/etica_animal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>História</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/historia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/historia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naçom</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/opresion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/opresion_nacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica militante</title>
+      <link>http://localhost:1313/agal/biblioteca/categorias/practica_militante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/categorias/practica_militante/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

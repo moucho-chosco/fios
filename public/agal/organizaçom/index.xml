@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fios | Organizaçom on fios</title>
+    <title>fios | Organizaçons on fios</title>
     <link>http://localhost:1313/agal/organiza%C3%A7om/</link>
-    <description>Recent content in fios | Organizaçom on fios</description>
+    <description>Recent content in fios | Organizaçons on fios</description>
     <generator>Hugo</generator>
     <language>agal</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
@@ -23,21 +23,35 @@
       <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O &lt;em&gt;Partido Comunista Obrero Español&lt;/em&gt; (PCOE) é un partido comunista marxista-leninista fundado en 1973 por Enrique Líster, en resposta á viraxe eurocomunista do PCE. Legalizado en 1977, fusionouse parcialmente co PCE en 1986, pero un sector mantivo a súa independencia. Hoxe está liderado por Francisco Barjas e centra a súa labor na construción dun amplo fronte de masas polo socialismo.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Anti-repressivas</title>
+      <title>Coletivas Anti-repressivas</title>
       <link>http://localhost:1313/agal/organizacion/tipos/antirepresivas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/organizacion/tipos/antirepresivas/</guid>
       <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
     </item>
     <item>
-      <title>Mocidade</title>
+      <title>Organizaçons de mocidade</title>
       <link>http://localhost:1313/agal/organizacion/tipos/mocidade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/organizacion/tipos/mocidade/</guid>
       <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
     </item>
     <item>
-      <title>Sindicatos</title>
+      <title>Organizaçons Estudantís</title>
+      <link>http://localhost:1313/agal/organizacion/tipos/estudantis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/organizacion/tipos/estudantis/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Organizaçons políticas</title>
+      <link>http://localhost:1313/agal/organizacion/tipos/politicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/organizacion/tipos/politicas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Organizaçons sindicais</title>
       <link>http://localhost:1313/agal/organizacion/tipos/sindicato/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/organizacion/tipos/sindicato/</guid>

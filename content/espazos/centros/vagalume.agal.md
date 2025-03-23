@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.009
   lon: -7.558
 gotoZoom: 15
+instagram: https://www.instagram.com/vagalume_csca
+twitter:
+facebook:  https://www.facebook.com/p/Vagalume-CS-CA-100057684150480
+web:
 ---
 O CSA *Vagalume^* é um espaço social aberto e autogerido no coraçom de Lugo.
 

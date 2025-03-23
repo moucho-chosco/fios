@@ -6,7 +6,7 @@ color: '#FFA1E2'
 nome_extendido: "Espazo divulgativo do común"
 logo:  "/organizacions/fios/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/fios/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outra
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 

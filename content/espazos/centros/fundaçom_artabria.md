@@ -15,6 +15,10 @@ gotoCoords:
   lat: 43.4820100
   lon:  -8.2248900
 gotoZoom: 14
+instagram: https://www.instagram.com/ac.artabria/?hl=es
+twitter:   https://x.com/FArtabria
+facebook:  https://www.facebook.com/@fartabria/
+web:
 ---
 A Associaçom Reintegracionista Artábria, nacida en 1992 en Narón, transformouse en abril de 1998 en Fundación, inaugurando en setembro dese mesmo ano o seu Centro Social.
 

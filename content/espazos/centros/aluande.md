@@ -1,7 +1,7 @@
 ---
 title: "Aluandê"
 description: "Espazo afrocentrado, antirracista e transinclusivo"
-dirixido_por:
+info: "Un espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes."
 centro: true
 logo:  "/espazos/centros/aluande/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/aluande/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -15,6 +15,9 @@ gotoCoords:
   lat: 42.879
   lon: -8.544
 gotoZoom: 14
+instagram: https://www.instagram.com/casa.aluande/?hl=es
+facebook: https://www.facebook.com/casa.aluande/
+---
 ---
 Un espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.
 

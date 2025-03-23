@@ -4,9 +4,8 @@ autore: Albert Einstein
 serie:
 Numero:
 ano: 1971
-tematicas:
-    - socialismo
-    - economia
+categorias:
+    - Capitalismo
 formato:
     - artigo
 descricion: "Esta é unha breve descrición da obra 1."

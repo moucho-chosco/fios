@@ -24,12 +24,6 @@
                 <option value="{{ .File.BaseFileName }},{{ .Params.location.lat }},{{ .Params.location.lon }},{{ .Params.zoom }}">📍 {{ .Title }}</option>
               {{ end }}
             </select>
-            <select class="filter">
-              <option value="galiza,42.7751,-8.0339,7">🏷️ Todas</option>
-              {{ range where .Site.RegularPages ".Params.etiqueta" true }}
-                <option value="">🏷️ {{ .Title }}</option>
-              {{ end }}
-            </select>
           </div>
           <!--
           <div class="slider-container">
@@ -57,7 +51,7 @@
       
 
       <div id="contido-espazos-info">
-        <div id="warning-infoorgas" class="warning" style="margin:5%;margin-top:0;margin-bottom:3%;">
+        <div id="warning-infoorgas" class="warning" style="display:none;margin:5%;margin-top:0;margin-bottom:3%;">
           ⚠️ O contido desta sección móstrase a modo de exemplo técnico. Os espazos representados e o mapa poden mudar en función do feedback recibido.
         </div>
         <p id="mensaxe-sen-resultados" style="display: none;">
@@ -168,20 +162,24 @@
 const espazos = [
 {{ range where .Site.RegularPages ".Params.centro" true }}
     {
-      key: "{{ .File.BaseFileName }}",
-      title: "{{ .Title }}",
-      subtitle: "{{ .Params.subtitle }}",
+      key:         "{{ .File.BaseFileName }}",
+      title:       "{{ .Title }}",
+      subtitle:    "{{ .Params.subtitle }}",
       description: "{{ .Params.description }}",
-      direcion: "{{ .Params.direcion }}",
-      logo: "{{ .Params.logo }}",
-      imaxe: "{{ .Params.imaxe }}",
-      cor: "{{ .Params.cor }}",
+      direcion:    "{{ .Params.direcion }}",
+      logo:        "{{ .Params.logo }}",
+      imaxe:       "{{ .Params.imaxe }}",
+      cor:         "{{ .Params.cor }}",
+      instagram:   "{{ .Params.instagram }}",
+      twitter:     "{{ .Params.twitter }}",
+      facebook:    "{{ .Params.facebook }}",
+      web:         "{{ .Params.web }}",
       seleccionado: false,
-      gotoZoom:   "{{ .Params.gotoZoom }}",
-      gotoLat: "{{ .Params.gotoCoords.lat }}",
-      gotoLon: "{{ .Params.gotoCoords.lon }}",
-      content: {{ .Content }},
-      location: { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
+      gotoZoom:    "{{ .Params.gotoZoom }}",
+      gotoLat:     "{{ .Params.gotoCoords.lat }}",
+      gotoLon:     "{{ .Params.gotoCoords.lon }}",
+      content:      {{ .Content }},
+      location:     { lat: {{ .Params.location.lat }}, lon: {{ .Params.location.lon }} }
     },
   {{ end }}
 ];
@@ -349,6 +347,40 @@ function selectCentro(espazo) {
   const cabeceiraContainer = document.getElementById("imaxe-cabeceira-container");
   const infoContainer = document.getElementById("info-espazo");
 
+  let socialIcons = '';
+            
+  // Asegurarse de que os enlaces son absolutos, engadindo https:// se é necesario
+  const ensureAbsoluteUrl = (url) => {
+    if (url && !url.startsWith('http://') && !url.startsWith('https://')) {
+      return 'https://' + url;
+    }
+    return url;
+  };
+  
+  // Definir a ruta base para as iconas
+  const iconsBasePath = "/images/social/";
+  
+  // Comprobar cada rede social e engadir icona só se existe
+  if (espazo.instagram) {
+    socialIcons += `<a href="${ensureAbsoluteUrl(espazo.instagram)}" target="_blank" class="social-icon" title="Instagram"><img src="${iconsBasePath}instagram.svg" alt="Instagram"></a>`;
+  }
+  
+  if (espazo.twitter) {
+    socialIcons += `<a href="${ensureAbsoluteUrl(espazo.twitter)}" target="_blank" class="social-icon" title="Twitter/X"><img src="${iconsBasePath}twitter.svg" alt="Twitter"></a>`;
+  }
+  
+  if (espazo.facebook) {
+    socialIcons += `<a href="${ensureAbsoluteUrl(espazo.facebook)}" target="_blank" class="social-icon" title="Facebook"><img src="${iconsBasePath}facebook.svg" alt="Facebook"></a>`;
+  }
+  
+  if (espazo.web) {
+    socialIcons += `<a href="${ensureAbsoluteUrl(espazo.web)}" target="_blank" class="social-icon" title="Páxina web"><img src="${iconsBasePath}website.png" alt="Web"></a>`;
+  }
+  
+  
+  // Engadir div con iconas só se hai algunha
+  const socialIconsContainer = socialIcons ? `<div class="social-icons-container">${socialIcons}</div>` : '';
+
   cabeceiraContainer.innerHTML = `
     <div class="imaxe-fondo">
       <img src="${espazo.imaxe}" alt="${espazo.title} fondo" class="fondo-espazo">
@@ -357,6 +389,7 @@ function selectCentro(espazo) {
   infoContainer.innerHTML = `
     <div class="header-espazo">
       <img src="${espazo.logo}" alt="${espazo.title} logo" class="logo-espazo">
+      ${socialIconsContainer}
       <h2 class="titulo-espazo">${espazo.title}</h2>
       <p class="descricion-espazo">${espazo.description}</p>
     </div>

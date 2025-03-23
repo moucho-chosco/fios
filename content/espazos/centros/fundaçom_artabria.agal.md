@@ -15,6 +15,10 @@ gotoCoords:
   lat: 43.4820100
   lon:  -8.2248900
 gotoZoom: 14
+instagram: https://www.instagram.com/ac.artabria/?hl=es
+twitter:   https://x.com/FArtabria
+facebook:  https://www.facebook.com/@fartabria/
+web:
 ---
 A Associaçom Reintegracionista Artábria, nascida em 1992 en Narom, transformou-se em abril de 1998 en Fundaçom, inaugurando em setembro desse mesmo ano o seu Centro Social.
 

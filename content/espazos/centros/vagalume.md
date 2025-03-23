@@ -8,6 +8,7 @@ logo:  "/espazos/centros/vagalume/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/vagalume/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#f3c61c"
 localidade: "Lugo"
+info: "O CSA *Vagalume* é un espazo social aberto e autoxestionado no corazón de Lugo."
 location:
   lat: 43.01089483898635
   lon: -7.553977578134321
@@ -16,8 +17,12 @@ gotoCoords:
   lat: 43.009
   lon: -7.558
 gotoZoom: 15
+instagram: https://www.instagram.com/vagalume_csca
+twitter:
+facebook:  https://www.facebook.com/p/Vagalume-CS-CA-100057684150480
+web:
 ---
-O CSA *Vagalume^* é un espazo social aberto e autoxestionado no corazón de Lugo.
+O CSA *Vagalume* é un espazo social aberto e autoxestionado no corazón de Lugo.
 
 <details>
   <summary>Obxectivos</summary>

@@ -16,6 +16,10 @@ gotoCoords:
   lat: 42.100
   lon: -8.559
 gotoZoom: 16
+instagram: https://www.instagram.com/acdetrezecatorze
+twitter:
+facebook:  https://www.facebook.com/asociacion.trezecatorze
+web:
 ---
 O Centro Social *O Matadoiro* é a casa da Associaçom Cultural, Deportiva e Ecológica *Treze-Catorze*, um coletivo galeguista, feminista e ecologista que se centra arredor da cultura comúm e o coidado do meio ambiente.
 

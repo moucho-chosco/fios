@@ -119,41 +119,26 @@
                 href="http://localhost:1313/ilg/biblioteca/obras/harnecker_c1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ilg/tags/blue/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ilg/posts/post-3/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ilg/tags/green/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ilg/tags/red/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ilg/tags/</loc>
-    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/ilg/categorias/comunismo/</loc>
+    <lastmod>2024-11-15T10:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/tags/"
+                href="http://localhost:1313/agal/categorias/comunismo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:1313/ilg/tags/"
+                href="http://localhost:1313/ilg/categorias/comunismo/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ilg/posts/post-3/</loc>
+    <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ilg/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ilg/tags/chile/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/ilg/posts/post-1/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/ilg/tags/socialismo/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/ilg/posts/</loc>
@@ -171,6 +156,8 @@
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/index./</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/biblioteca/obras/ackelsberg_mulleres_libres/</loc>
     <xhtml:link
@@ -1238,7 +1225,17 @@
                 href="http://localhost:1313/ilg/espazos/localidades/a_corunha/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ilg/espazos/centros/fenda.rag/</loc>
+    <loc>http://localhost:1313/ilg/espazos/centros/fenda/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/fenda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/espazos/centros/fenda/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/galleira/</loc>
     <xhtml:link
@@ -1324,7 +1321,29 @@
                 href="http://localhost:1313/ilg/espazos/centros/revolta_do_berbes/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ilg/espazos/centros/revolteira.rag/</loc>
+    <loc>http://localhost:1313/ilg/espazos/centros/revolteira/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/revolteira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/espazos/centros/revolteira/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/a-revoluci%C3%B3n-rusa/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/a-revoluci%C3%B3n-rusa/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/a-revoluci%C3%B3n-rusa/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/tiradoura/</loc>
     <xhtml:link
@@ -1362,6 +1381,30 @@
                 href="http://localhost:1313/ilg/biblioteca/itinerarios/achegamento_ao_anarquismo/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/achegamento-ao-anarquismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/achegamento-ao-anarquismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/achegamento-ao-anarquismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/achegamento-ao-comunismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/aluande/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1374,7 +1417,117 @@
                 href="http://localhost:1313/ilg/espazos/centros/aluande/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/anarcofeminismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/anarcofeminismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/anarcofeminismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/anarcosindicalismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/anarcosindicalismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/anarcosindicalismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/anarquismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/anarquismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/anarquismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/anarquismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/anarquismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/anarquismo/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/etiquetas/anarquismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/anarquismo-especifista/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/anarquismo-especifista/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/anarquismo-especifista/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/capacitismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/capacitismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/anticomunismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/antiracismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/antiracismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/antiracismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/antirracismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/antirracismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/antirracismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/antirrepresi%C3%B3n/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/antirrepresi%C3%B3n/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/antirrepresi%C3%B3n/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/tipos/antirepresivas/</loc>
     <xhtml:link
@@ -1386,6 +1539,18 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/organizacion/tipos/antirepresivas/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/formato/artigo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/formato/artigo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/formato/artigo/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/ateneo_ferrolan/</loc>
@@ -1402,6 +1567,18 @@
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/auge-reacion%C3%A1rio/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/auge-reacion%C3%A1rio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/auge-reacion%C3%A1rio/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/buril/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1412,6 +1589,32 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/centros/buril/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/cadernos-de-educa%C3%A7om-popular/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/capitalismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/capitalismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/capitalismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/capitalismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/capitalismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/capitalismo/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/casa_obreira/</loc>
@@ -1438,17 +1641,43 @@
                 href="http://localhost:1313/ilg/espazos/centros/casino_1889/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ilg/categories/</loc>
+    <loc>http://localhost:1313/categorias.json</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="agal"
-                href="http://localhost:1313/agal/categories/"
+                href="http://localhost:1313/categorias.agal.json"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ilg"
-                href="http://localhost:1313/ilg/categories/"
+                href="http://localhost:1313/categorias.json"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/china/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/china/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/china/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/cibercomunismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/cibercomunismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/cibercomunismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/colectivas.json</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/colectivo_terra/</loc>
     <xhtml:link
@@ -1460,6 +1689,30 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/centros/colectivo_terra/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/colonialismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/colonialismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/colonialismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/colonialismo-e-imperialismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/colonialismo-e-imperialismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/colonialismo-e-imperialismo/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/compostela/</loc>
@@ -1474,6 +1727,30 @@
                 href="http://localhost:1313/ilg/espazos/localidades/compostela/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/comunismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/comunismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/crise_climatica/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/outras/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1486,9 +1763,179 @@
                 href="http://localhost:1313/ilg/organizacion/outras/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/decolonialismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/decolonialismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/decolonialismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/desenvolvemento-desigual/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/econom%C3%ADa-pol%C3%ADtica/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/econom%C3%ADa-pol%C3%ADtica/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/econom%C3%ADa-pol%C3%ADtica/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/espazos/centros/entropia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/espazos/centros/entropia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/espazos/centros/entropia/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/escarnio.rag/</loc>
   </url><url>
+    <loc>http://localhost:1313/espazos.json</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/espazos.agal.json"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/espazos.json"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/estratexia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/estratexia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/estratexia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/estratexia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/estratexia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/estratexia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/tipos/estudantis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/tipos/estudantis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/tipos/estudantis/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/etica_animal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/etica_animal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/euskal-herria/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/euskal-herria/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/euskal-herria/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/faisca.rag/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/fascismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/fascismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/fascismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/feminismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/feminismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/feminismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/feminismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/feminismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/feminismo-interseccional/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/feminismo-interseccional/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/feminismo-interseccional/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/feminismo-radical/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/feminismo-radical/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/feminismo-radical/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/ferrol/</loc>
     <xhtml:link
@@ -1500,6 +1947,42 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/localidades/ferrol/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/filosof%C3%ADa-anarquista/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/filosof%C3%ADa-anarquista/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/filosof%C3%ADa-anarquista/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/filosof%C3%ADa-marxista/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/filosof%C3%ADa-marxista/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/filosof%C3%ADa-marxista/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/formato/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/formato/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/formato/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/funda%C3%A7om_artabria/</loc>
@@ -1526,6 +2009,18 @@
                 href="http://localhost:1313/ilg/espazos/centros/fuscalho/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/lugares/galiza/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/lugares/galiza/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/lugares/galiza/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/gomes_gaioso/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1538,7 +2033,133 @@
                 href="http://localhost:1313/ilg/espazos/centros/gomes_gaioso/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/historia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/historia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/historia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/historia-do-anarquismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/historia-do-anarquismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/historia-do-anarquismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/hist%C3%B3ria-do-fascismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/hist%C3%B3ria-do-fascismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/hist%C3%B3ria-do-fascismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/imperialismo/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/etiquetas/independentismo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/indonesia/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/internacional/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/internacional/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/internacional/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/internacional/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/kurdist%C3%A1n-e-rojava/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/kurdist%C3%A1n-e-rojava/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/kurdist%C3%A1n-e-rojava/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/lgbt&#43;/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/lgbt&#43;/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/lgbt&#43;/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/lgbt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/lgbt/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/liberaci%C3%B3n-nacional/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/liberaci%C3%B3n-nacional/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/liberaci%C3%B3n-nacional/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/formato/libro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/formato/libro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/formato/libro/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/lugares/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/lugares/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/lugares/"
+                />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/lugo/</loc>
     <xhtml:link
@@ -1564,6 +2185,18 @@
                 href="http://localhost:1313/ilg/espazos/centros/madia_leva/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/materialismo-dial%C3%A9ctico/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/materialismo-dial%C3%A9ctico/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/materialismo-dial%C3%A9ctico/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ilg/organizacion/tipos/mocidade/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1574,6 +2207,42 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/organizacion/tipos/mocidade/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/opresion_nacional/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/neoliberalismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/neoliberalismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/neoliberalismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/categorias/neoliberalismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/categorias/neoliberalismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/categorias/neoliberalismo/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/fervedoiro/</loc>
@@ -1602,6 +2271,8 @@
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/pichel.rag/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/os-usa-no-mundo/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/ourense/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1612,6 +2283,42 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/localidades/ourense/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/pa%C3%AFsos-catalans/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/pa%C3%AFsos-catalans/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/pa%C3%AFsos-catalans/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/poder/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/poder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/poder/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/organizacion/tipos/politicas/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/organizacion/tipos/politicas/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/organizacion/tipos/politicas/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/pontevedra/</loc>
@@ -1625,6 +2332,46 @@
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/localidades/pontevedra/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/portugal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/portugal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/portugal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/biblioteca/categorias/practica_militante/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/biblioteca/categorias/practica_militante/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/biblioteca/categorias/practica_militante/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/probaaa/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/que-%C3%A9-o-fascismo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/que-%C3%A9-o-fascismo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/que-%C3%A9-o-fascismo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/revoluci%C3%B3n/</loc>
   </url><url>
     <loc>http://localhost:1313/ilg/organizacion/tipos/sindicato/</loc>
     <xhtml:link
@@ -1640,6 +2387,34 @@
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/etiquetas/socialismo/</loc>
   </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/socioling%C3%BC%C3%ADstica/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/urss/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/urss/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/urss/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/usa/</loc>
+  </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/vagalume/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1650,6 +2425,18 @@
                 rel="alternate"
                 hreflang="ilg"
                 href="http://localhost:1313/ilg/espazos/centros/vagalume/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/vietnam/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="agal"
+                href="http://localhost:1313/agal/subcategorias/vietnam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ilg"
+                href="http://localhost:1313/ilg/subcategorias/vietnam/"
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/localidades/vigo/</loc>
@@ -1665,5 +2452,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/ilg/espazos/centros/xebra.rag/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ilg/subcategorias/xenocidio/</loc>
   </url>
 </urlset>

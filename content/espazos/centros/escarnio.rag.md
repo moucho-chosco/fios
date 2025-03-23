@@ -1,8 +1,7 @@
 ---
 title: "Escárnio e Maldizer"
 description: "Centro Social Okupado Autoxestionado"
-direcion: "Rúa Algalia de Arriba, 11"
-dirixido_por: "Asemblea do Escárnio"
+info: O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.
 lang: "rag"
 participan: ["Asemblea do Escárnio", "Mocidades pola Independencia"]
 logo:  "/espazos/centros/escarnio/logo.png"  # Ruta á imaxe do logo
@@ -18,6 +17,10 @@ gotoCoords:
   lat: 42.879
   lon: -8.544
 gotoZoom: 14
+instagram: https://www.instagram.com/csoa.escarnioemaldizer/
+twitter:
+facebook:
+web:
 ---
  O *CSOA Escárnio e Maldizer* é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!
 

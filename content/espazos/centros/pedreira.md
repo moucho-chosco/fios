@@ -15,6 +15,10 @@ gotoCoords:
   lat: 42.4325
   lon: -8.649
 gotoZoom: 15
+instagram: https://www.instagram.com/apedreira_cs/
+twitter:   https://x.com/apedreira_cs
+facebook:  https://www.facebook.com/apedreira.cs
+web:
 ---
 A Pedreira é un Espazo Autoxestionado de encontro e loita para todas as persoas que cren noutra comarca posíbel: "Somos un grupo de veciñas da comarca de Pontevedra dispostas a transformar a vida social e cultural"
 

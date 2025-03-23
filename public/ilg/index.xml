@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fíos | Principal on fios</title>
+    <title>fios | Principal on fios</title>
     <link>http://localhost:1313/ilg/</link>
-    <description>Recent content in fíos | Principal on fios</description>
+    <description>Recent content in fios | Principal on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
     <lastBuildDate>Fri, 15 Nov 2024 10:00:00 +0000</lastBuildDate>
@@ -35,6 +35,13 @@
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
       <guid>http://localhost:1313/ilg/posts/post-1/</guid>
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/index./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/index./</guid>
+      <description></description>
     </item>
     <item>
       <title></title>
@@ -545,7 +552,7 @@
       <link>http://localhost:1313/ilg/organizacion/outras/selg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/selg/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O Seminario de Estudos Libertarios Galegos (SELG) é unha iniciativa do colectivo Refuxios da Memoria, que nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O Seminario de Estudos Libertarios Galegos (SELG) é unha iniciativa do colectivo Refuxios da Memoria, que nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -724,10 +731,10 @@
     </item>
     <item>
       <title>A Fenda</title>
-      <link>http://localhost:1313/ilg/espazos/centros/fenda.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/fenda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/fenda.rag/</guid>
-      <description>&lt;p&gt;&lt;em&gt;A Fenda&lt;/em&gt; é un novo espazo desde onde responder ás necesidades do proletariado da cidade.&#xA;Un espazo para organizarnos sobre a independencia política de clase 🚩.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ilg/espazos/centros/fenda/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;A Fenda&lt;/em&gt; é un novo espazo desde onde responder ás necesidades do proletariado da cidade.&#xA;Un espazo para organizarnos sobre a independencia política de clase 🚩.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Galleira</title>
@@ -755,7 +762,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/nubeira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/nubeira/</guid>
-      <description>&lt;p&gt;Contan as malas linguas que existe unha muller grande e brava, vestida con peles negras e acompañada de cobras e lagartos. Un ser capaz de provocar tormentas e dirixir os raios, invocar a treboada e a néboa, someter a choiva e o lóstrego a súa vontade… Unha moradora dos aires, unha peregrina das nubes, unha forza creadora e destrutora do mundo. Din que sae polas mañás das ferrerías para cabalgar os ceos e que, ás veces, moi de cando en cando, baixa á terra para ver o resultado das súas fazañas.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Disque A Nubeira ten o poder de invocar treboadas. Nós queremos traer un raio de luz que alumee a cidade que imaxinamos 🌩⚡&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Quen somos&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Logo de máis dun ano no que celebramos arredor 30 asembleas nas que, en total, deberon achegarse polo menos 200 persoas, percibimos e contastamos a necesidade de crear, dende a colectividade, un espazo propio, de todas, no que poder desenvolver as nosas inquedanzas artísticas, culturais, políticas e sociais sen ningún tipo de xerarquía. Un espazo autónomo e asembleario. &#xD;&#xA;&lt;p&gt;A pandemia e os anos previos levaron consigo a maior parte dos espazos de referencia para os movementos sociais na nosa contorna. Non marcharon todos, certo, pero quedou un oco que sentimos a pulsión de ocupar. E imos facelo.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Pedreira</title>
@@ -780,10 +787,10 @@
     </item>
     <item>
       <title>A Revolteira</title>
-      <link>http://localhost:1313/ilg/espazos/centros/revolteira.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/revolteira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/revolteira.rag/</guid>
-      <description>&lt;p&gt;&lt;em&gt;A Revolteira&lt;/em&gt; é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Somos&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&#xD;&#xA;&lt;p&gt;O seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ilg/espazos/centros/revolteira/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;A Revolteira&lt;/em&gt; é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Somos&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&#xD;&#xA;&lt;p&gt;O seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Tiradoura</title>
@@ -797,7 +804,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/acefala/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/acefala/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Acéfala&lt;/em&gt; é un colectivo cultural cun espazo autónomo en Monte Alto (A Coruña).&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Acéfala&lt;/em&gt; é un colectivo cultural cun espazo autónomo en Monte Alto (A Coruña).&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Como podo participar en Acéfala?&lt;/summary&gt;&#xD;&#xA;  &lt;ol&gt;&#xD;&#xA;    &lt;li&gt;&lt;b&gt;Vindo e aportando&lt;/b&gt;: nos concertos, na cantina, con doazóns...&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;b&gt;Facéndote membra&lt;/b&gt;: participarás nas asembleas e terás acceso ao local&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;b&gt;Facéndote mecenas&lt;/b&gt;: tranferencia a ES87 3070 0044 5062 4458 7223 ou paypal a info@acefala.org&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;b&gt;Compartindo info&lt;/b&gt;&lt;/li&gt;&#xD;&#xA;  &lt;/ol&gt;&#xD;&#xA;  &lt;p&gt;Así axúdasnos a:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Comprar materiais e ferramentas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Seguir existindo&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Arriscar coas propostas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Mellorar o espazo pouco a pouco&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Achegamento ao Anarquismo</title>
@@ -811,13 +818,34 @@
       <link>http://localhost:1313/ilg/espazos/centros/aluande/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/aluande/</guid>
-      <description>&lt;p&gt;Un espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Un espazo afrocentrado e antirracista, que recoñece e celebra as transexistencias e a transcestralidade. Dedicámosnos a valorizar e manter viva a cultura de matriz africana e a acoller e tranzar saberes, vivencias e resistencias desde as marxes.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anarquismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/anarquismo/</guid>
+      <description></description>
     </item>
     <item>
       <title>Anarquismo</title>
       <link>http://localhost:1313/ilg/espazos/etiquetas/anarquismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/etiquetas/anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anticapacitismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/capacitismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antirracismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/antirracismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/antirracismo/</guid>
       <description></description>
     </item>
     <item>
@@ -835,7 +863,7 @@
       <description>&lt;p&gt;Refundado no ano 1976, o &lt;em&gt;Ateneo Ferrolán&lt;/em&gt;, tense convertido nun punto de referencia e consulta imprescindible dentro do mundo cultural de Ferrol e en xeral de Galicia, non so polos centos de actividades culturais (debates, cine, conferencias, mesas redondas, exposicións, concertos, etc&amp;hellip;) que organiza senón pola súa capacidade crecente de convocatoria na realización das distintas e plurais actividades programadas, e tamén porque é unha entidade que ofrece o seu espazo a entidades e asociacións que queran dispoñer das súas instalacións.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Ateneo Libertario Xosé Tarrío</title>
+      <title>Ateneo Xosé Tarrío</title>
       <link>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</guid>
@@ -849,6 +877,13 @@
       <description>&lt;p&gt;&lt;em&gt;Buril A.C.D.E.&lt;/em&gt; é unha asociación cultural, deportiva e ecolóxica situada en Sarria, Lugo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Capitalismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/capitalismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/capitalismo/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Casa Obreira</title>
       <link>http://localhost:1313/ilg/espazos/centros/casa_obreira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -860,7 +895,21 @@
       <link>http://localhost:1313/ilg/espazos/centros/casino_1889/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/casino_1889/</guid>
-      <description>&lt;p&gt;O casino é un espazo do pobo e para o pobo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;O casino é un espazo do pobo e para o pobo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horario&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Horario: 10.00 - 20.00 horas&lt;/p&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Categorías</title>
+      <link>http://localhost:1313/categorias.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categorias.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Colectivas</title>
+      <link>http://localhost:1313/colectivas.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/colectivas.json</guid>
+      <description></description>
     </item>
     <item>
       <title>Colectivo Terra</title>
@@ -870,11 +919,39 @@
       <description>&lt;p&gt;O Colectivo &lt;em&gt;Terra&lt;/em&gt; de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Colonialismo e imperialismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/colonialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/colonialismo/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Compostela</title>
       <link>http://localhost:1313/ilg/espazos/localidades/compostela/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/localidades/compostela/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Comunismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/comunismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crise climática</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/crise_climatica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Entropía</title>
+      <link>http://localhost:1313/ilg/espazos/centros/entropia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/espazos/centros/entropia/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Entropía é un espazo autoxestionado no rural aberto a todas aquelas persoas que queiran participar.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Escárnio e Maldizer</title>
@@ -884,11 +961,53 @@
       <description>&lt;p&gt;O &lt;em&gt;CSOA Escárnio e Maldizer&lt;/em&gt; é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Espazos</title>
+      <link>http://localhost:1313/espazos.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/espazos.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estratexia</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/estratexia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/estratexia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Estudantís</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/estudantis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/estudantis/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Ética Animal</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/etica_animal/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Faísca</title>
       <link>http://localhost:1313/ilg/espazos/centros/faisca.rag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/faisca.rag/</guid>
       <description>&lt;p&gt;O ánimo do &lt;em&gt;LS Faísca&lt;/em&gt; non se cingue exclusivamente ao ámbito cultural, se non que partindo dun proxecto cultural e socio-político queremos contribuír á creación dun Movemento Popular camiño da emancipación do noso pobo e da nosa clase.&lt;/p&gt;&#xA;&lt;p&gt;O asemblearismo, a pluralidade, a autoxestión e a independencia a respecto de calquera estrutura ou organización, son os principios organizativos polos que nos xerimos.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fascismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/fascismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/fascismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feminismo</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/feminismo/</guid>
+      <description></description>
     </item>
     <item>
       <title>Ferrol</title>
@@ -916,13 +1035,34 @@
       <link>http://localhost:1313/ilg/espazos/centros/gomes_gaioso/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/gomes_gaioso/</guid>
-      <description>&lt;p&gt;Somos un proxecto encadrado en parámetros revolucionarios da esquerda soberanista.&lt;/p&gt;&#xA;&lt;p&gt;O Gomes Gaioso é un espazo plural e de confluencia para @s que loitamos pola Independencia da Galiza; polo Socialismo como única alternativa posíbel ás condicións materiais e valores que o capitalismo xera; pola abolición do patriarcado e a clara igualdade entre mulleres e homes; por unha democracia real, popular e participativa; polo monolingüismo social e reintegracionismo lingüístico para atinxir a plena normalizaxión lingüística e galeguizaxión do País; polo compromiso co medio ambiente; por unha cultura democrática e popular de e para nós propi@s á marxe dos medios de comunicación e das institucións; pola abolición dos exércitos ao servizo do Capital; por unha sexualidade libre; pola solidariedade internacionalista con aqueles pobos que como o noso loitan pola súa liberdade e emancipación.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;O Gomes Gaioso é un espazo plural e de confluencia para @s que loitamos pola Independencia da Galiza; polo Socialismo como única alternativa posíbel ás condicións materiais e valores que o capitalismo xera; pola abolición do patriarcado; por unha democracia real, popular e participativa; polo monolingüismo social e reintegracionismo lingüístico para a normalizaxión lingüística e galeguización do País; polo compromiso co medio ambiente; pola abolición dos exércitos ao servizo do Capital; por unha sexualidade libre; pola solidariedade internacionalista con aqueles pobos que como o noso loitan pola súa liberdade e emancipación.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Historia</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/historia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/historia/</guid>
+      <description></description>
     </item>
     <item>
       <title>Independentismo</title>
       <link>http://localhost:1313/ilg/espazos/etiquetas/independentismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/etiquetas/independentismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internacional</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/internacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/internacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LGBT&#43;</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/lgbt/</guid>
       <description></description>
     </item>
     <item>
@@ -937,7 +1077,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/madia_leva/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/madia_leva/</guid>
-      <description>&lt;p&gt;Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural &lt;em&gt;Mádia leva!&lt;/em&gt; é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural &lt;em&gt;Mádia leva!&lt;/em&gt; é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mocidade</title>
@@ -945,6 +1085,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/tipos/mocidade/</guid>
       <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Nación</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/opresion_nacional/</guid>
+      <description></description>
     </item>
     <item>
       <title>O Fervedoiro</title>
@@ -975,6 +1122,13 @@
       <description></description>
     </item>
     <item>
+      <title>Políticas</title>
+      <link>http://localhost:1313/ilg/organizacion/tipos/politicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/tipos/politicas/</guid>
+      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
+    </item>
+    <item>
       <title>Pontevedra</title>
       <link>http://localhost:1313/ilg/espazos/localidades/pontevedra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -982,7 +1136,14 @@
       <description></description>
     </item>
     <item>
-      <title>Sindicatos</title>
+      <title>Practica militante</title>
+      <link>http://localhost:1313/ilg/biblioteca/categorias/practica_militante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/categorias/practica_militante/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sindicais</title>
       <link>http://localhost:1313/ilg/organizacion/tipos/sindicato/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/tipos/sindicato/</guid>
@@ -1000,7 +1161,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/vagalume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/vagalume/</guid>
-      <description>&lt;p&gt;O CSA &lt;em&gt;Vagalume^&lt;/em&gt; é un espazo social aberto e autoxestionado no corazón de Lugo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
+      <description>&lt;p&gt;O CSA &lt;em&gt;Vagalume&lt;/em&gt; é un espazo social aberto e autoxestionado no corazón de Lugo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vigo</title>
@@ -1014,7 +1175,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/xebra.rag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/xebra.rag/</guid>
-      <description>&lt;p&gt;O &lt;em&gt;CS Xebra&lt;/em&gt; é un centro social fundado en Burela por un colectivo da Mariña para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecoloxismo, socialismo) que leva máis de dez anos consolidándose como un lugar de encontro e defensa activa da cultura local.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;O &lt;em&gt;CS Xebra&lt;/em&gt; é un centro social fundado en Burela por un colectivo da Mariña para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecoloxismo, socialismo) que leva máis de dez anos consolidándose como un lugar de encontro e defensa activa da cultura local.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

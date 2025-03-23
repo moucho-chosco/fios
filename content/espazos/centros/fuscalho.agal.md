@@ -1,6 +1,6 @@
 ---
 title: "Fuscalho"
-description: "Espaço Autogerido na Guarda"
+description: "Espaço Autogerido"
 dirixido_por: ""
 centro: true
 logo:  "/espazos/centros/fuscalho/logo.jpg"  # Ruta á imaxe do logo
@@ -15,6 +15,10 @@ gotoCoords:
   lat: 41.9
   lon: -8.8775
 gotoZoom: 16
+instagram: https://www.instagram.com/csfuscalho/?hl=es
+twitter:
+facebook: https://www.facebook.com/CsFuscalho
+web:
 ---
 O Fuscalho é um Centro Social autogerido independentista. Mantemos obradoiros, palestras, concertos e atividades de forma voluntária. Um dos principais ingressos é o serviço de balcom para asociad@s, por isso vos convidamos a fazer-vos soci@s e vir tomar algo.
 

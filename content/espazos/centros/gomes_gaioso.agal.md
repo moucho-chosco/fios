@@ -16,6 +16,10 @@ gotoCoords:
   lat: 43.368
   lon: -8.408
 gotoZoom: 14
+instagram: https://www.instagram.com/csgomesgaioso
+twitter:   https://x.com/CSGomesGaioso
+facebook:  https://www.facebook.com/Gaioso
+web:
 ---
 Somos um projecto enquadrado em parámetros revolucionários da esquerda soberanista.
 

@@ -1,6 +1,7 @@
 ---
 title: "Casino 1889"
 description: "Centro Social Autoxestionado"
+info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
 participan:
 centro: true
 logo:  "/espazos/centros/casino_1889/logo_3.png"  # Ruta á imaxe do logo
@@ -15,16 +16,16 @@ gotoCoords:
   lat: 43.214
   lon: -8.693
 gotoZoom: 15
+instagram: https://www.instagram.com/casino1889/?hl=es
+twitter:
+facebook: https://www.facebook.com/casino1889/
+web:
 ---
 O casino é un espazo do pobo e para o pobo. 
 
 <details>
-  <summary>Obxectivos</summary>
-  <ul>
-    <li>Obxectivo 1</li>
-    <li>Obxectivo 2</li>
-    <li>Obxectivo 3</li>
-  </ul>
+  <summary>Horario</summary>
+  <p>Horario: 10.00 - 20.00 horas</p>
 </details>
 
 <details>

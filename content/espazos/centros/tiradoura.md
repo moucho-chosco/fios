@@ -16,6 +16,10 @@ gotoCoords:
   lat: 42.261
   lon: -8.78
 gotoZoom: 15
+instagram:
+twitter:
+facebook:
+web:
 ---
 A Asociación Cultural A Tiradoura traballa nun centro social en Cangas do Morrazo e céntrase na organización de eventos culturais.
 

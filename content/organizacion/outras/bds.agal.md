@@ -6,7 +6,7 @@ color: '#FFEDD9'
 nome_extendido: "Boicote, Desinvestimentos e Sançons a Israel"
 logo:  "/organizacions/bds/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bds/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
-clase: colectivo
+clase: outra
 instagram: https://www.instagram.com/bdsgaliza
 facebook: https://www.facebook.com/BDSGaliza/
 ---
