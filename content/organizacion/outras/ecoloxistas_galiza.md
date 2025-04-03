@@ -1,7 +1,7 @@
 ---
 nome: "Ecoloxistas Galiza"
-x: 0.25
-y: 0.25
+x: 0.27
+y: 0.91
 color: '#EAFFDD'
 nome_extendido: Ecoloxistas Galiza, Atlántica e Verde
 logo:  "/organizacions/ecoloxistas_galiza/logo.jpg"  # Ruta á imaxe do logo

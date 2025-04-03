@@ -1,9 +1,10 @@
 ---
 nome: Corrente Vermella
-x: 0.85
-y: 0.52
+x: 0.54
+y: 0.22
 color: '#FC9494'
 nome_extendido: Organización marxista
+info: Corrente Vermella é unha organización marxista que fai parte da sección do Estado Español da Liga Internacional dos Traballadores - Cuarta Internacional.
 logo:  "/organizacions/corrente_vermella/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/corrente_vermella/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

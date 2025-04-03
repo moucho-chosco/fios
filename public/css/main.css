@@ -469,6 +469,7 @@ nav a:hover {
 ------------------------- */
 
 #principal-container {
+
   scrollbar-width: none; /* Para Firefox */
   -ms-overflow-style: none; /* Para Internet Explorer e Edge */
 }
@@ -498,6 +499,7 @@ nav a:hover {
 .caixa {
   height: 38vh !important;
   padding: 20px;
+  overflow:hidden;
 }
 
 .banner-principal {
@@ -533,9 +535,10 @@ nav a:hover {
 }
 
 .texto-principal {
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 25px;
+  margin-top: -20px;
   font-size: 18px;
+  text-align: left;
 }
 
 /* Contedor principal */
@@ -551,6 +554,7 @@ nav a:hover {
 /* Botón "Ver todo" */
 #ver-mais-principal {
   position: relative;
+  margin-top: 10px !important;
   bottom: 0px;
   left: 0px;
   z-index: 1000;
@@ -700,7 +704,14 @@ nav a:hover {
 }
 
 
-
+.no-books-message {
+  text-align: center;
+  padding: 40px;
+  margin-top: 10vh;
+  color: #666;
+  font-size: 1.2em;
+  grid-column: 1 / -1; /* Ocupa todo o ancho da grella */
+}
 
 
 .fondo-banner {
@@ -1190,8 +1201,35 @@ nav a:hover {
 }
 
 
+.categoria-item.seleccionado {
+  background-color: #1b1b1b !important;
+  color: white !important;
+  font-weight: bold !important;
+}
 
+/* Estilo para subcategorías seleccionadas */
+.subcategoria-item.seleccionado {
+  background-color: #1b1b1b !important;
+  color: white !important;
+  font-weight: bold !important;
+}
 
+/* Transición suave para cambios de vista */
+#grid-container, #carruseis-container {
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para carruseis dinámicos */
+.categoria-carrusel {
+  margin-bottom: 5px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  transition: transform 0.5s ease;
+}
 
 /* Grid container styles */
 .grid-books-container {

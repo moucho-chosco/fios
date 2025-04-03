@@ -1,9 +1,10 @@
 ---
-nome: Esquerda Revolucionaria
-x: 0.83
-y: 0.65
+nome: "Esquerda \nRevolucionaria"
+x: 0.54
+y: 0.35
 color: '#FC9494'
 nome_extendido: Organización marxista
+info: "Esquerda Revolucionaria é a sección galega de Izquierda Revolucionaria, unha organización política marxista de orientación leninista española. A organización declárase marxista revolucionaria, definíndose además como socialista, antifascista, internacionalista e feminista de clase."
 logo:  "/organizacions/esquerda_revolucionaria/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/esquerda_revolucionaria/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo

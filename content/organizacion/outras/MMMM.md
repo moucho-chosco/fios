@@ -1,9 +1,10 @@
 ---
 nome: "Marcha\nMundial\ndas Mulleres"
-x: 0.40
-y: 0.20
+x: 0.70
+y: 0.72
 color: '#D3A8D9'
 nome_extendido: "Colectivo feminista"
+info: "A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Ten grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo."
 logo:  "/organizacions/mmmm/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mmmm/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -14,7 +15,7 @@ web: https://feminismo.info/feminismo/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Temos grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo.
+A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Ten grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo.
 
 <details>
   <summary>Que é Mar de Lumes?</summary>

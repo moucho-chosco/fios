@@ -1,10 +1,12 @@
 ---
 nome: UPG
-x: 0.27
-y: 0.45
+x: 0.60
+y: 0.75
 children:
  - UMG
 nome_extendido: Unión do Povo Galego
+color: '#98D0EC'
+info: "A UPG é un partido comunista e patriótico, fundado en 1964, que defende os intereses da clase traballadora e das clases populares galegas. A UPG asume a loita de liberación nacional como paso indispensábel para a construción do socialismo na Galiza."
 logo:  "/organizacions/upg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/upg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

@@ -7,6 +7,8 @@ ano: 1971
 categorias:
     - Feminismo
     - Capitalismo
+subcategorias:
+    - Historia do capitalismo
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" # Opcional, imaxe da portada
 link_externo: "a"

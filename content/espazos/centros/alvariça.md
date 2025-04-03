@@ -1,7 +1,7 @@
 ---
 title: "A Alvariça"
 description: "Centro Social"
-info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
+info: "O CS A Alvariça é un centro social galeguista en Allariz."
 centro: true
 logo:  "/espazos/centros/a_alvariça/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_alvariça/foto_cabeceira.png"  # Ruta á imaxe de fondo

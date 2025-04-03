@@ -2,7 +2,9 @@
 nome: Galiza Nova
 x: 0.29
 y: 0.57
+color: "#98D0EC"
 nome_extendido: Organizaçom Juvenil do BNG
+info: "Galiza Nova tem como funçom básica a organizaçom e a mobilizaçom da mocidade de cara a acadar a liberaçom nacional de Galiza e a transformaçom da sociedade actual. Trata-se duma organizaçom ampla, plural e democrática que adota as suas decisons tras um amplo processo de debate aberto a toda a militáncia."
 logo:  "/organizacions/galiza_nova/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/galiza_nova/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -11,9 +13,9 @@ twitter: https://x.com/galizanova
 facebook: https://www.facebook.com/galizanova
 web: https://galizanova.gal/
 ---
-<div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
+---
 
-Galiza Nova é unha organización asemblearista estruturada en agrupacións locais e comarcais. O órgano máximo é a Asemblea Nacional, da que forman parte todas e todos os militantes e que escolle a metade da Dirección Nacional, de dirección entre Asembleas. A outra metade está formada por un representante de cada comarca. A máxima representación da organización osténtaa a Secretaria ou Secretario Xeral.
+Galiza Nova é a organizaçom juvenil do BNG e tem como funçom básica a organizaçom e a mobilizaçom da mocidade de cara a acadar a liberaçom nacional de Galiza e a transformaçom da sociedade actual. Trata-se duma organizaçom ampla, plural e democrática que adota as suas decisons tras um amplo processo de debate aberto a toda a militáncia.
 
 <details>
   <summary>Que é a Galiza Nova?</summary>

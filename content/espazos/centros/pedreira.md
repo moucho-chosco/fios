@@ -1,8 +1,9 @@
 ---
 title: "A Pedreira"
-description: "Espazo Autoxestionado en Pontevedra"
+description: "Espazo Autoxestionado"
 dirixido_por: ""
 centro: true
+info: "A Pedreira é un Espazo Autoxestionado de encontro e loita para todas as persoas que cren noutra comarca posíbel: \"Somos un grupo de veciñas da comarca de Pontevedra dispostas a transformar a vida social e cultural\""
 logo:  "/espazos/centros/a_pedreira/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_pedreira/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#E64C3B"

@@ -1,8 +1,8 @@
 ---
 title: Entropía
 description: Asociación Sociocultural ecoloxista, transfeminista e antirracista
-info: O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.
-centro: true
+info: Entropía é un espazo autoxestionado no rural aberto a todas aquelas persoas que queiran participar.
+centro: false
 logo:  "/espazos/centros/entropia/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/entropia/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#8bbe58"

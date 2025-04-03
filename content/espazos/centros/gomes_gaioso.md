@@ -4,6 +4,7 @@ description: "Centro social independentista, socialista e antipatriarcal"
 dirixido_por:
 participan:
 centro: true
+info: "O Gomes Gaioso é un espazo plural e de confluencia para @s que loitamos pola Independencia da Galiza; polo Socialismo como única alternativa posíbel ás condicións materiais e valores que o capitalismo xera; pola abolición do patriarcado; por unha democracia real e popular; polo monolingüismo social e reintegracionismo lingüístico; polo compromiso co medio ambiente; pola abolición dos exércitos ao servizo do Capital; por unha sexualidade libre; pola solidariedade internacionalista."
 logo:  "/espazos/centros/gomes_gaioso/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/gomes_gaioso/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#FF5858"

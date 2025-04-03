@@ -4,6 +4,7 @@ description: "Asociación Cultural"
 dirixido_por: 
 participan:
 centro: true
+info: "A Asociación Cultural A Tiradoura traballa nun centro social en Cangas do Morrazo e céntrase na organización de eventos culturais."
 logo:  "/espazos/centros/a_tiradoura/logo.jpg"
 imaxe: "/espazos/centros/a_tiradoura/foto_cabeceira.jpg"
 cor: "#BC0707"

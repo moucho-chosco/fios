@@ -1,11 +1,12 @@
 ---
-nome: Refuxios da Memoria
-x: 0.82
-y: 0.35
+nome: "Refuxios\nda Memoria"
+x: 0.14
+y: 0.21
 color: '#A0A0A0'
 children:
     - SELG
 nome_extendido: "Memorial Libertario"
+info: Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas–Monte Alto.
 logo:  "/organizacions/refuxios_da_memoria/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/refuxios_da_memoria/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -17,7 +18,7 @@ web: https://www.refuxiosdamemoria.org/
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas – Monte Alto.
+Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas–Monte Alto.
 
 <details>
   <summary>Que é Refuxios da Memoria?</summary>

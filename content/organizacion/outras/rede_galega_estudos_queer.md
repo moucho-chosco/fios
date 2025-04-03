@@ -1,7 +1,7 @@
 ---
 nome: "Rede Galega\n de Estudos Queer"
-x: 0.52
-y: 0.27
+x: 0.82
+y: 0.87
 color: '#FFF4CF'
 nome_extendido: "Espazo de pesquisa sobre xénero e sexualidade na Galiza"
 logo:  "/organizacions/estudos_queer/logo.png"  # Ruta á imaxe do logo

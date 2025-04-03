@@ -1,8 +1,10 @@
 ---
 nome: Galiza Nova
-x: 0.29
-y: 0.57
+x: 0.52
+y: 0.62
+color: "#98D0EC"
 nome_extendido: Organización Xuvenil do BNG
+info: "Galiza Nova ten como función básica a organización e a mobilización da mocidade de cara a acadar a liberación nacional de Galiza e a transformación da sociedade actual. Dentro dela organízanse Isca! e a UMG."
 logo:  "/organizacions/galiza_nova/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/galiza_nova/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -13,7 +15,7 @@ web: https://galizanova.gal/
 ---
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-Galiza Nova é unha organización asemblearista estruturada en agrupacións locais e comarcais. O órgano máximo é a Asemblea Nacional, da que forman parte todas e todos os militantes e que escolle a metade da Dirección Nacional, de dirección entre Asembleas. A outra metade está formada por un representante de cada comarca. A máxima representación da organización osténtaa a Secretaria ou Secretario Xeral.
+Galiza Nova é a organización xuvenil do BNG e ten como función básica a organización e a mobilización da mocidade de cara a acadar a liberación nacional de Galiza e a transformación da sociedade actual. Trátase dunha organización ampla, plural e democrática que adopta as súas decisións tras un amplo proceso de debate aberto a toda a militancia.
 
 <details>
   <summary>Que é a Galiza Nova?</summary>

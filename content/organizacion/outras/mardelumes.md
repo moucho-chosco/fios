@@ -1,9 +1,10 @@
 ---
 nome: "Mar de Lumes"
-x: 0.43
-y: 0.62
+x: 0.41
+y: 0.59
 color: '#FFD1A0'
 nome_extendido: Comité Galego de Solidariedade Internacionalista
+info: "Mar de lumes é unha organización de solidariedade internacionalista, contra o imperialismo, pola soberanía dos pobos e pola internacionalización da causa emancipadora da Galiza."
 logo:  "/organizacions/mardelumes/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mardelumes/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

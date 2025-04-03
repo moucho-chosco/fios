@@ -1,9 +1,10 @@
 ---
 nome: "Xuventude\nComunista"
-x: 0.60
-y: 0.74
+x: 0.75
+y: 0.18
 color: '#FC9494'
 nome_extendido: Xuventude do PCG
+info: A Xuventude Comunista é a organización da UJCE ("Unión de Juventudes Comunistas" en España) en Galiza. Está organizada xunto ao Partido Comunista de Galicia (PCG), sección galega do PCE que forma parte de Esquerda Unida.
 logo:  "/organizacions/xc/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/xc/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo

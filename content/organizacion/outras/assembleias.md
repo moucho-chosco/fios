@@ -1,11 +1,10 @@
 ---
 nome: "Assembleias\nAbertas\nIndependentistas"
-x: 0.16
-y: 0.73
+x: 0.20
+y: 0.57
 color: '#80A1E7'
-children:
-    - Ceivar
 nome_extendido: Estruturas abertas de carácter comarcal
+info: As Assembleias Abertas Independentistas son estruturas abertas de carácter comarcal e asembleario que procuran xuntar forzas independentistas a nivel individual e colectivo.
 logo:  "/organizacions/assembleias/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/assembleias/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

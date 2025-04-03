@@ -11,21 +11,14 @@
             "logo": "/espazos/centros/casa_branca/logo.png",
             "localidade": "Compostela",
             "description": "Asociación Cultural Autoxestionada",
-            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "info": "Cultura dum jeito eclético e responsável onde TODES temos cabida. Polígono do Tambre.",
             "url": "/agal/espazos/centros/casa_branca/"
-          },{
-            "title": "A Casa Colorida",
-            "logo": "/espazos/centros/a_casa_colorida/logo.jpg",
-            "localidade": "Nigrám",
-            "description": "Laboratório do Comúm na Galiza",
-            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
-            "url": "/agal/espazos/centros/casa_colorida/"
           },{
             "title": "A Chave das Noces",
             "logo": "/espazos/centros/a_chave_das_noces/logo.jpg",
             "localidade": "Castroverde",
             "description": "Centro Social em Castroverde",
-            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "info": "O CS A Chave das Noces é um centro social galeguista em Sam Cibrao de Montecubeiro, Castroverde.",
             "url": "/agal/espazos/centros/chave_das_noces/"
           },{
             "title": "A Fenda",
@@ -53,13 +46,13 @@
             "logo": "/espazos/centros/nubeira/logo.png",
             "localidade": "Vigo",
             "description": "Centro Social Autogerido",
-            "info": null,
+            "info": "Disque A Nubeira tem o poder de invocar treboadas. Nós queremos traer um raio de luz que alumee a cidade que imaginamos 🌩⚡",
             "url": "/agal/espazos/centros/nubeira/"
           },{
             "title": "A Pedreira",
             "logo": "/espazos/centros/a_pedreira/logo.jpg",
             "localidade": "Ponte Vedra",
-            "description": "Espaço Autogerido em Pontevedra",
+            "description": "Espaço Autogerido",
             "info": null,
             "url": "/agal/espazos/centros/pedreira/"
           },{
@@ -67,7 +60,7 @@
             "logo": "/espazos/centros/a_revolta_de_trasancos/logo.jpg",
             "localidade": "Ferrol",
             "description": "Coletivo Sociocultural",
-            "info": null,
+            "info": "A Revolta nasceu em 1997 como comparsa de Entruido e aginha ampliou a sua atividade para defender a cultura, a língua e o meio ambiente. Emprega o galego como língua vehicular, aposta pola festa ativa com valores de solidariedade e igualdade, e colabora com outras entidades na defensa das tradiçons, a cultura, a justiça social e os dereitos das mulheres, das diversidades afetivo-sexuais e da Terra.",
             "url": "/agal/espazos/centros/revolta_de_trasancos/"
           },{
             "title": "A Revolta do Berbês",
@@ -130,7 +123,7 @@
             "logo": "/espazos/centros/buril/logo.jpg",
             "localidade": "Sarria",
             "description": "Associaçom Cultural, Deportiva e Ecológica",
-            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "info": "Buril A.C.D.E. é uma asociaçom cultural, deportiva e ecológica situada em Sarria, Lugo.",
             "url": "/agal/espazos/centros/buril/"
           },{
             "title": "Casa Obreira",
@@ -144,7 +137,7 @@
             "logo": "/espazos/centros/casino_1889/logo_3.png",
             "localidade": "Carballo",
             "description": "Centro Social Autogerido",
-            "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
+            "info": "O casino é um espaço do povo e para o povo.",
             "url": "/agal/espazos/centros/casino_1889/"
           },{
             "title": "Coletivo Terra",
@@ -153,13 +146,6 @@
             "description": "Centro Social de Pontedeume",
             "info": "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha).",
             "url": "/agal/espazos/centros/colectivo_terra/"
-          },{
-            "title": "Entropía",
-            "logo": "/espazos/centros/entropia/logo.jpg",
-            "localidade": "Oca",
-            "description": "Asociaçom Sociocultural ecologista, transfeminista e antirracista",
-            "info": "O Colectivo Terra de Pontedeume nace co obxectivo de plantar a nosa pequena semente na defensa e difusión dos dereitos do noso pobo, da nosa cultura, da nosa lingua e da nosa historia, desexando que esta semente xermole e floreza, xunto con outras moitas sementes, nun futuro mellor para o noso país.",
-            "url": "/agal/espazos/centros/entropia/"
           },{
             "title": "Escárnio e Maldizer",
             "logo": "/espazos/centros/escarnio/logo.png",
@@ -179,7 +165,7 @@
             "logo": "/espazos/centros/artabria/logo.jpg",
             "localidade": "Ferrol",
             "description": "Associaçom Cultural",
-            "info": null,
+            "info": "A Associaçom Reintegracionista Artábria, nascida em 1992 en Narom, transformou-se em abril de 1998 en Fundaçom, inaugurando em setembro desse mesmo ano o seu Centro Social.",
             "url": "/agal/espazos/centros/funda%C3%A7om_artabria/"
           },{
             "title": "Fuscalho",
@@ -193,21 +179,21 @@
             "logo": "/espazos/centros/gomes_gaioso/logo.png",
             "localidade": "A Corunha",
             "description": "Centro social independentista, socialista e antipatriarcal",
-            "info": null,
+            "info": "O Gomes Gaioso é um espaço plural e de confluência para @s que luitamos pola Independência da Galiza; polo Socialismo como única alternativa possível às condiçons materiais e valores que o capitalismo gera; pola aboliçom do patriarcado e a clara igualdade entre mulheres e homens; por umha democracia real, popular e participativa; polo monolingüísmo social e reintegracionismo lingüístico para atingir a plena normalizaçom lingüística e galeguizaçom do País; polo compromisso com o meio ambiente; por umha cultura democrática e popular de e para nós própri@s à margem dos meios de comunicaçom e das instituiçons; pola aboliçom dos exércitos ao serviço do Capital; por umha sexualidade livre; pola solidariedade internacionalista com aqueles povos que como o nosso luitam pola sua liberdade e emancipaçom.",
             "url": "/agal/espazos/centros/gomes_gaioso/"
           },{
             "title": "Mádia Leva",
             "logo": "/espazos/centros/madia_leva/logo.png",
             "localidade": "Lugo",
             "description": "Centro Social e Cultural",
-            "info": null,
+            "info": "Construíndo contrapoder no coraçom de Lugo. A Sociedade Cultural *Mádia leva!* é um projecto comprometido com a lingua e a cultura galega que trabalha por impulsionar a organizaçom do povo, a democracia participativa, a defesa da Terra e a luita pela autodeterminaçom da Galiza.",
             "url": "/agal/espazos/centros/madia_leva/"
           },{
             "title": "O Fervedoiro",
             "logo": "/espazos/centros/o_fervedoiro/logo.jpeg",
             "localidade": "Ribeira",
             "description": "Espaço Social",
-            "info": null,
+            "info": "O Centro Social Autogerido O Fervedoiro é um punto de encontro alternativo, independente e livre em Ribeira.",
             "url": "/agal/espazos/centros/fervedoiro/"
           },{
             "title": "O Pichel",
@@ -228,7 +214,7 @@
             "logo": "/espazos/centros/xebra/logo.png",
             "localidade": "Burela",
             "description": "Associaçom cultural",
-            "info": null,
+            "info": "O CS Xebra é um centro social fundado em Burela por un coletivo da Marinha para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecologismo, socialismo) que leva mais de dez anos consolidando-se como um lugar de encontro e defensa ativa da cultura local.",
             "url": "/agal/espazos/centros/xebra/"
           }]
     }

@@ -3,6 +3,7 @@ title: "Fundaçom Artábria"
 description: "Associaçom Cultural"
 dirixido_por: ""
 centro: true
+info: "A Associaçom Reintegracionista Artábria, nascida em 1992 en Narom, transformou-se em abril de 1998 en Fundaçom, inaugurando em setembro desse mesmo ano o seu Centro Social."
 logo:  "/espazos/centros/artabria/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/artabria/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#d4112c"

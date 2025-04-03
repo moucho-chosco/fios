@@ -1,8 +1,9 @@
 ---
 nome: Avante LGBT+
-x: 0.42
-y: 0.34
+x: 0.70
+y: 0.83
 color: '#FFE17D'
+info: "Somos persoas LGBT+ que nos organizamos para loitar contra o patriarcado, o capital, o imperialismo e a cisheteronorma, creando unha Galiza feminista a prol da liberdade sexual e de xénero. "
 nome_extendido: "En loita contra o patriarcado e a cisheteronorma"
 logo:  "/organizacions/avante_lgbt/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/avante_lgbt/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

@@ -2,7 +2,7 @@
 nome: Erguer
 x: 0.21
 y: 0.36
-color: '#E8F4FF'
+color: '#E9F5FC'
 nome_extendido: Estudantes da Galiza
 logo:  "/organizacions/erguer/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/erguer/foto_cabeceira.png"  # Ruta á imaxe de fondo

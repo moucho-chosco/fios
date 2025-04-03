@@ -5,6 +5,7 @@ descricion: "Espazo Autoxestionado na Coruña"
 lang: "rag"
 dirixido_por: ""
 centro: true
+info: "A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta."
 logo:  "/espazos/centros/a_revolteira/logo.png"
 imaxe: "/espazos/centros/a_revolteira/foto_cabeceira.jpg"
 cor: "#55B47B"
@@ -23,7 +24,7 @@ facebook:
 web:       https://revolteira.gal/
 ---
 ---
-*A Revolteira* é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.
+*A Revolteira* é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices. A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.
 
 <details>
   <summary>Somos</summary>

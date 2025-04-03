@@ -1,7 +1,7 @@
 ---
 nome: Estreleira
-x: 0.16
-y: 0.83
+x: 0.22
+y: 0.70
 color: '#E9F0FF'
 nome_extendido: Iniciativa para a difusión dos símbolos da nación galega.
 logo:  "/organizacions/estreleira/logo.jpg"  # Ruta á imaxe do logo

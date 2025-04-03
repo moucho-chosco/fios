@@ -3,6 +3,7 @@ title: "A Hedreira"
 description: "Centro Social Autoxestionado"
 dirixido_por:
 centro: true
+info: "A Hedreira é un centro social autoxestionado na cidade de Lugo. Nace do desexo de construírmos un espazo de confluencia social e da necesidade de ter un lugar de encontro, xa que consideramos que é mais doado materializar as ideas cando compartimos o espazo."
 logo:  "/espazos/centros/a_hedreira/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_hedreira/foto_cabeceira.png"  # Ruta á imaxe de fondo
 cor: "#179429"

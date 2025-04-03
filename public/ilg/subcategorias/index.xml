@@ -6,7 +6,15 @@
     <description>Recent content in Subcategorias on fios</description>
     <generator>Hugo</generator>
     <language>ilg</language>
+    <lastBuildDate>Fri, 15 Nov 2024 10:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/ilg/subcategorias/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Achegamento Ao Comunismo</title>
+      <link>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</link>
+      <pubDate>Fri, 15 Nov 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</guid>
+      <description></description>
+    </item>
     <item>
       <title>A Revolución Rusa</title>
       <link>http://localhost:1313/ilg/subcategorias/a-revoluci%C3%B3n-rusa/</link>
@@ -19,13 +27,6 @@
       <link>http://localhost:1313/ilg/subcategorias/achegamento-ao-anarquismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/achegamento-ao-anarquismo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Achegamento Ao Comunismo</title>
-      <link>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/subcategorias/achegamento-ao-comunismo/</guid>
       <description></description>
     </item>
     <item>
@@ -47,6 +48,13 @@
       <link>http://localhost:1313/ilg/subcategorias/anarquismo-especifista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/anarquismo-especifista/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anticapacitismo E Anarquismo</title>
+      <link>http://localhost:1313/ilg/subcategorias/anticapacitismo-e-anarquismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/anticapacitismo-e-anarquismo/</guid>
       <description></description>
     </item>
     <item>
@@ -82,6 +90,13 @@
       <link>http://localhost:1313/ilg/subcategorias/cadernos-de-educa%C3%A7om-popular/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/cadernos-de-educa%C3%A7om-popular/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Capitalismo E Clima</title>
+      <link>http://localhost:1313/ilg/subcategorias/capitalismo-e-clima/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/capitalismo-e-clima/</guid>
       <description></description>
     </item>
     <item>
@@ -162,6 +177,13 @@
       <description></description>
     </item>
     <item>
+      <title>Historia Do Capitalismo</title>
+      <link>http://localhost:1313/ilg/subcategorias/historia-do-capitalismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/historia-do-capitalismo/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>História Do Fascismo</title>
       <link>http://localhost:1313/ilg/subcategorias/hist%C3%B3ria-do-fascismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -197,6 +219,13 @@
       <description></description>
     </item>
     <item>
+      <title>Marxismo E Xénero</title>
+      <link>http://localhost:1313/ilg/subcategorias/marxismo-e-x%C3%A9nero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/marxismo-e-x%C3%A9nero/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Materialismo Dialéctico</title>
       <link>http://localhost:1313/ilg/subcategorias/materialismo-dial%C3%A9ctico/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -204,10 +233,24 @@
       <description></description>
     </item>
     <item>
+      <title>Militancia</title>
+      <link>http://localhost:1313/ilg/subcategorias/militancia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/militancia/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Neoliberalismo</title>
       <link>http://localhost:1313/ilg/subcategorias/neoliberalismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/neoliberalismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ocupación</title>
+      <link>http://localhost:1313/ilg/subcategorias/ocupaci%C3%B3n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/ocupaci%C3%B3n/</guid>
       <description></description>
     </item>
     <item>
@@ -229,6 +272,13 @@
       <link>http://localhost:1313/ilg/subcategorias/poder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/poder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poder E Teoría Crítica</title>
+      <link>http://localhost:1313/ilg/subcategorias/poder-e-teor%C3%ADa-cr%C3%ADtica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/poder-e-teor%C3%ADa-cr%C3%ADtica/</guid>
       <description></description>
     </item>
     <item>
@@ -285,6 +335,13 @@
       <link>http://localhost:1313/ilg/subcategorias/vietnam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/subcategorias/vietnam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vivenda</title>
+      <link>http://localhost:1313/ilg/subcategorias/vivenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/subcategorias/vivenda/</guid>
       <description></description>
     </item>
     <item>

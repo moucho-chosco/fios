@@ -3,8 +3,7 @@ nome: PCTG
 x: 0.82
 y: 0.83
 color: '#FC9494'
-children:
-  - CMC
+info: "O PCTG (Partido Comunista dos Traballadores de Galicia) é secçom galega do PCTE (*Partido Comunista de los Trabajadores de España*), um partido marxista-leninista organizado do Estado espanhol. As suas mocidades eram os CMC."
 nome_extendido: Partido Comunista dos Traballadores da Galiza
 logo:  "/organizacions/pctg/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pctg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -15,7 +14,7 @@ facebook: https://www.facebook.com/PCTGpartidocomunista
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-O PCTG (Partido Comunista dos Traballadores de Galicia) é sección galega do PCTE (*Partido Comunista de los Trabajadores de España*), un partido marxista-leninista organizado do Estado español. As súas mocidades son os CMC.
+O PCTG (Partido Comunista dos Traballadores de Galicia) é secçom galega do PCTE (*Partido Comunista de los Trabajadores de España*), um partido marxista-leninista organizado do Estado espanhol. As suas mocidades eram os CMC.
 
 <details>
   <summary>Que é o PCTG?</summary>

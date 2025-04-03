@@ -1,4 +1,3 @@
-
 {{- if eq .Type "json" -}}
   {{- if eq .Title "Categorías" -}}
     {{- $categorias := slice -}}
@@ -7,6 +6,7 @@
       {{- $categorias = $categorias | append $categoria -}}
     {{- end -}}
     {{- $categorias | jsonify -}}
+
   {{- else if eq .Title "Espazos" -}}
     {{- $espazos := where .Site.RegularPages ".Params.centro" true -}}
     {
@@ -24,6 +24,7 @@
         {{- end -}}
       ]
     }
+
   {{- else if eq .Title "Colectivas" -}}
     {{- $colectivas := where .Site.RegularPages ".Params.clase" "colectivo" -}}
     {
@@ -36,6 +37,27 @@
             "description": {{ $colectiva.Params.nome_extendido | jsonify }},
             "info": {{ $colectiva.Params.info | jsonify }},
             "url": {{ $colectiva.RelPermalink | jsonify }}
+          }
+        {{- end -}}
+      ]
+    }
+
+  {{- else if eq .Title "Obras" -}}
+    {{- $libros := where .Site.RegularPages "Params.tipo" "obra" -}}
+    {
+      "libros": [
+        {{- range $index, $libro := $libros -}}
+          {{- if $index -}},{{- end -}}
+          {
+            "titulo": {{ $libro.Params.titulo | jsonify }},
+            "autore": {{ $libro.Params.autore | jsonify }},
+            "ano": {{ $libro.Params.ano | jsonify }},
+            "dificultade": {{ $libro.Params.dificultade | jsonify }},
+            "categorias": {{ $libro.Params.categorias | jsonify }},
+            "subcategorias": {{ $libro.Params.subcategorias | jsonify }},
+            "portada": {{ $libro.Params.portada | jsonify }},
+            "link_externo": {{ $libro.Params.link_externo | jsonify }},
+            "url": {{ $libro.RelPermalink | jsonify }}
           }
         {{- end -}}
       ]

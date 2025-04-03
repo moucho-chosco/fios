@@ -4,6 +4,7 @@ x: 0.75
 y: 0.58
 color: '#FC9494'
 nome_extendido: Construindo um movimento anticapitalista
+info: "Anticapitalistas é uma organizaçom política estatal que aspira a construír um movimento revolucionário internacionalista que transforme profundamente a sociedade atual."
 logo:  "/organizacions/anticapitalistas/logo.jpeg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/anticapitalistas/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: colectivo

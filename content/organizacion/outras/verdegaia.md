@@ -1,7 +1,7 @@
 ---
 nome: "Verdegaia"
-x: 0.18
-y: 0.18
+x: 0.17
+y: 0.87
 color: '#EAFFDD'
 nome_extendido: Asociación ecoloxista galega
 logo:  "/organizacions/verdegaia/logo.png"  # Ruta á imaxe do logo

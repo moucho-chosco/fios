@@ -6,6 +6,7 @@ color: '#FC9494'
 children:
   - "Xuventude\nComunista"
 nome_extendido: Partido Comunista de Galicia
+info: "O Partido Comunista de Galicia (PCG) é a organizaçom galega do Partido Comunista de España. Uma organizaçom nacional e de classe constituída para o desenvolvimento da política e estrategia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia."
 logo:  "/organizacions/pcg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pcg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -16,7 +17,7 @@ web: https://pcgalicia.org/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-O Partido Comunista de Galicia (PCG) é a organización galega do *Partido Comunista de España*. Unha organización nacional e de clase constituída para o desenvolvemento da política e estratexia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia.
+O Partido Comunista de Galicia (PCG) é a organizaçom galega do Partido Comunista de España. Uma organizaçom nacional e de classe constituída para o desenvolvimento da política e estrategia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia.
 
 <details>
   <summary>Que é o PCG?</summary>

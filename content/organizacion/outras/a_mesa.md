@@ -1,8 +1,8 @@
 ---
 nome: A MESA
-x: 0.30
-y: 0.36
-color: '#E8F4FF'
+x: 0.58
+y: 0.83
+color: '#D8EDF8'
 children:
     - Queremos Galego
 nome_extendido: A asociación do galego

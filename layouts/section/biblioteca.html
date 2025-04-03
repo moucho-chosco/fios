@@ -10,25 +10,19 @@
                         <!-- Columna de categorías -->
                         <div class="columna-categorias">
                             <div class="categoria-item" 
-                                 onclick="seleccionar('Todo', 'categoria')">
-                                Todo
+                                 onclick="seleccionar('Todo')">
+                                Todas as categorías
                             </div>
                             {{ $biblioteca := .Site.GetPage "/biblioteca" }} <!-- Obtén a páxina biblioteca.md -->
                             {{ $categorias := slice }}
                             {{ range $biblioteca.Params.categorias }}
-                                <div class="categoria-item" 
-                                     onmouseover="mostrarSubcategorias('{{ .nome }}')" 
-                                     onclick="seleccionar('{{ .nome }}', 'categoria')"
-                                     data-subcategorias='{{ .subcategorias | jsonify }}'>
-                                    {{ .nome }}
-                                </div>
-                            {{ end }}
-                            
                             <div class="categoria-item" 
-                                 onmouseover="mostrarSubcategorias('Máis categorías')" 
-                                 onclick="seleccionar('Máis categorías', 'categoria')">
-                                Máis categorías
+                                    onmouseover="mostrarSubcategorias('{{ .nome }}')" 
+                                    onclick="seleccionar('{{ .nome }}')"
+                                    data-subcategorias='{{ .subcategorias | jsonify }}'>
+                                {{ .nome }}
                             </div>
+                            {{ end }}
                         </div>
                         
                         <!-- Columna de subcategorías -->
@@ -123,22 +117,31 @@
                         {{/* Renderiza os items do carrusel en orde aleatoria */}}
                         {{ range $paginasAleatorias }}
                         <div class="libro"
-                        data-fondo-banner="{{ .Params.fondo_banner | relURL }}"
-                        data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
-                        data-texto-banner="{{ .Params.texto_banner }}"
-                        data-cor-banner="{{ .Params.cor_banner }}"
-                        data-cor-texto="{{ .Params.cor_texto }}"
-                        data-marxe-texto="{{ .Params.marxe_texto }}"
-                        data-tipo="{{ .Params.tipo }}"
+                        data-fondo-banner=   "{{ .Params.fondo_banner | relURL }}"
+                        data-titulo-banner=  "{{ .Params.titulo_banner | relURL }}"
+                        data-texto-banner=   "{{ .Params.texto_banner }}"
+                        data-cor-banner=     "{{ .Params.cor_banner }}"
+                        data-cor-texto=      "{{ .Params.cor_texto }}"
+                        data-marxe-texto=    "{{ .Params.marxe_texto }}"
+                        data-tipo=           "{{ .Params.tipo }}"
                         data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
                         data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
                         onclick="seleccionarLibro(this)">
                             <div class="libro-portada">
                                 <picture>
-                                    <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                                    <img src="{{ .Params.portada | relURL }}" 
-                                        alt="Portada {{ .Params.titulo }}" 
-                                        loading="lazy">
+                                    {{ $webpPath := replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada }}
+                                    {{ if (fileExists (printf "static%s" $webpPath)) }}
+                                    <source 
+                                        srcset="{{ $webpPath | relURL }}" 
+                                        type="image/webp"
+                                    >
+                                    {{ end }}
+                                    <img 
+                                        src="{{ .Params.portada | relURL }}" 
+                                        alt="Portada de {{ .Params.titulo }}" 
+                                        loading="lazy"
+                                        style="max-width: 100%; height: auto;" 
+                                    >
                                 </picture>
                             </div>
                         </div>

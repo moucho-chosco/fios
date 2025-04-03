@@ -59,6 +59,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/bergman_militancia_alegre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/bergman_militancia_alegre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</guid>
@@ -69,6 +76,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/bomb_obituario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/bomb_obituario/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/bookchin_ecoloxia_da_liberdade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/bookchin_ecoloxia_da_liberdade/</guid>
       <description></description>
     </item>
     <item>
@@ -87,6 +101,27 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/castelao_sempre_en_galiza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/castelao_sempre_en_galiza/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/cgt_guia_antirrepresiva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/cgt_guia_antirrepresiva/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/climaximo_plano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/climaximo_plano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</guid>
@@ -97,6 +132,20 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/correa_pobo_forte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/correa_pobo_forte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/corriente_calida_fascismo_en_un_solo_planeta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/corriente_calida_fascismo_en_un_solo_planeta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/defensa_komunitatea_okupacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/defensa_komunitatea_okupacion/</guid>
       <description></description>
     </item>
     <item>
@@ -129,9 +178,23 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/fisher_realismo-capitalista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/fisher_realismo-capitalista/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</guid>
       <description></description>
     </item>
     <item>
@@ -153,6 +216,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/graeber_o_amencer_do_todo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/graeber_o_amencer_do_todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/guerra_loita_contra_o_capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/guerra_loita_contra_o_capacitismo/</guid>
       <description></description>
     </item>
     <item>
@@ -199,6 +269,34 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/iniciativa_comunista_un_fio_vermello_atravesa_as_mulleres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/iniciativa_comunista_un_fio_vermello_atravesa_as_mulleres/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/klein_o_mundo_en_chamas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/klein_o_mundo_en_chamas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/klein_todo_pode_mudar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/klein_todo_pode_mudar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</guid>
@@ -216,6 +314,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/kropotkin_pan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/kropotkin_pan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/lenin_imperialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/lenin_imperialismo/</guid>
       <description></description>
     </item>
     <item>
@@ -255,6 +360,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/marx_capital/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/marx_capital/</guid>
@@ -279,6 +391,20 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</guid>
       <description></description>
     </item>
     <item>
@@ -388,17 +514,31 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/</link>
+      <link>http://localhost:1313/ilg/organizacion/outras/ceivar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/outras/clara_corbelhe/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O Espazo Clara Corbelhe procura ser un verdadeiro espazo de subxectivización política capaz de proxectar un pensamento emancipador ao redor de novas formas de xeración de coñecemento; configurando un caseto aberto á construción de sentido compartillado, en permanente discusión e tensión, na firme vontade de se converter nunha referencia para a produción de discurso e investigación sobre o presente.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ilg/organizacion/outras/ceivar/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Ceivar é unha organización anti-represiva independentista.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é Ceivar?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/organizacion/outras/cmc/</link>
+      <link>http://localhost:1313/ilg/organizacion/outras/cgt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/outras/cmc/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Os CMC (Colectivos da Mocidade Comunista) son o sector galego dos CJC (&lt;em&gt;Colectivos de Jóvenes Comunistas&lt;/em&gt;) de España. Os CMC agrupan a mocidade do PCTG (Partido Comunista dos Traballadores da Galiza), sección galega do PCTE (&lt;em&gt;Partido Comunista de los Trabajadores de España&lt;/em&gt;).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ilg/organizacion/outras/cgt/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;Solidariedade Obreira&lt;/em&gt; é unha organización sindical inspirada no antiautoritarismo, é dicir, somos un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.&lt;/p&gt;&#xA;&lt;p&gt;O noso principio é a autonomía. Somos as propias persoas afiliadas quen soporta, coas cotas, o financiamento do Sindicato, pois por decisión propia, non recibimos subvencións. Non consentimos calquera tipo de dependencia política, económica ou institucional. Naturalmente, o noso funcionamento é a democracia directa sen intermediarios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/cig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/cig/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;Agrupaçom de Montanha Águas Limpas&lt;/em&gt; (A.M.A.L.) é unha organización arredista de defensa da terra. Toma o seu nome do último acampamento guerrilleiro que houbo na Galiza, nos Montes do Invernadoiro, no Macizo de Maceda.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é A.M.A.L.?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/cnt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/cnt/</guid>
+      <description>&lt;p&gt;A CNT é unha organización sindical independente (non vinculada a partidos políticos) e autoxestionaria (non recibimos subvencións de ningún tipo) á que pode pertencer calquera persoa traballadora, sen importar as súas ideas políticas ou crenzas relixiosas.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Como se organiza a CNT?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;A CNT é un sindicato diferente: a democracia directa é o noso sinal de identidade. Todas as decisións tómanse en asemblea. Non hai dirixentes e existe plena liberdade e igualdade no intercambio de ideas, opinións e iniciativas. A nosa táctica principal é a acción directa, é dicir, a solución dos conflitos polas persoas afectadas, sen intermediarios. Loitamos polo reparto do traballo e a riqueza, contra a desigualdade económica e social.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -413,6 +553,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/creba/</guid>
       <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Espazo de encontro, debate e formación de militantes con vontade socialista na Galiza 🚩.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é a Creba Socialista?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/crg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/crg/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;⚠️ Comunismo Revolucionário Galego, até xaneiro do 2025 coñecida como Agora Galiza-UP é unha organización que se declara socialista, feminista e independentista. No seu discurso a minimización e ridiculización das opresións e loitas emancipadoras de varios colectivos é explicita e reiterada. Habitualmente se mesturan críticas lexítimas da mercantilización capitalista de certos movementos con vocabulario e discursos reaccionarios cara distintas reivindicacións, especialmente LGBT+.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/cut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/cut/</guid>
+      <description>&lt;p&gt;A CUT é unha central sindical fundada en Galiza no 1999 que promove un sindicalismo en defensa da clase traballadora, asemblear e sen subvencións.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é A.M.A.L.?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -444,10 +598,10 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/organizacion/outras/fios/</link>
+      <link>http://localhost:1313/ilg/organizacion/outras/fervenza/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/outras/fios/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O proxecto fios quere ser unha ferramenta política que contribúa a camiñar cara a superación do capitalismo e o fin de toda opresión através da divulgación e o debate, facilitando e promovendo o acceso á militáncia e a súa formación e coordinación con este obxectivo.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/ilg/organizacion/outras/fervenza/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Fervenza é un sindicato estudantil que se constituiu en Compostela o 9 de marzo de 2025.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Manifesto&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -461,7 +615,7 @@
       <link>http://localhost:1313/ilg/organizacion/outras/galiza_nova/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/galiza_nova/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Galiza Nova é unha organización asemblearista estruturada en agrupacións locais e comarcais. O órgano máximo é a Asemblea Nacional, da que forman parte todas e todos os militantes e que escolle a metade da Dirección Nacional, de dirección entre Asembleas. A outra metade está formada por un representante de cada comarca. A máxima representación da organización osténtaa a Secretaria ou Secretario Xeral.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Galiza Nova é a organización xuvenil do BNG e ten como función básica a organización e a mobilización da mocidade de cara a acadar a liberación nacional de Galiza e a transformación da sociedade actual. Trátase dunha organización ampla, plural e democrática que adopta as súas decisións tras un amplo proceso de debate aberto a toda a militancia.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -489,7 +643,7 @@
       <link>http://localhost:1313/ilg/organizacion/outras/mmmm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/mmmm/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Temos grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Ten grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -507,17 +661,31 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/pcrg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/pcrg/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O PCRG é un partido declaradamente marxista-leninista e de liberación nacional que naceu en decembro do 2021 integrando á maior parte da base de Xeira, organización xuvenil da FPG que se disolveu pouco antes, ese mesmo 2021. A continuación, argumentamos que:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/outras/pctg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/pctg/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O PCTG (Partido Comunista dos Traballadores de Galicia) é sección galega do PCTE (&lt;em&gt;Partido Comunista de los Trabajadores de España&lt;/em&gt;), un partido marxista-leninista organizado do Estado español. As súas mocidades son os CMC.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O PCTG (Partido Comunista dos Traballadores de Galicia) é sección galega do PCTE (&lt;em&gt;Partido Comunista de los Trabajadores de España&lt;/em&gt;), un partido marxista-leninista organizado do Estado español. As súas mocidades eran os CMC.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/ilg/organizacion/outras/pfg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/pfg/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A Plataforma Feminista Galega é unha organización feminista independente que reúne a mulleres de diversas procedencias políticas que asumen o compromiso social de loitar contras as violencias machistas e que tanto de forma individual como integradas en coletivos levamos tempo traballando xuntas e por iso decidimos construír un espazo de traballo común no que podamos sentarnos a debater, a loitar xuntas.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A Plataforma Feminista Galega é unha organización feminista independente que reúne a mulleres de diversas procedencias políticas que asumen o compromiso social de loitar contra as violencias machistas,tanto de forma individual como integradas en coletivos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/pfrg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/pfrg/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;⚠️ A PFRG-AMAG, é unha organización autodenominada “feminista” cunha posición política que se encadra no coñecido como TERF ou “feminismo transexcluínte”.&lt;/p&gt;&#xA;&lt;p&gt;Como tal, é abundantemente explícita a negación directa das identidades e realidades trans, tanto nos seus principios ideolóxicos oficiais como nas súas comunicacións públicas e actividade. Esta negación vai acompañada dun constante ataque e demonización das disidencias de xénero, até facéndoa o centro da súa actividade. Anexamos varios exemplos ilustrativos, que poden ser atopados na súa web e redes sociais.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -545,7 +713,7 @@
       <link>http://localhost:1313/ilg/organizacion/outras/refuxios_da_memoria/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/refuxios_da_memoria/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas – Monte Alto.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas–Monte Alto.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é Refuxios da Memoria?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -556,10 +724,31 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/sindicato_de_estudantes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/sindicato_de_estudantes/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Organización de esquerdas e revolucionaria que loita por un ensino público de calidade e un futuro digno ó rematar os noso estudos!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é Erguer?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla lectus eget nibh imperdiet, quis consectetur nisl placerat. Ut lobortis nulla ut magna facilisis mattis. Nullam leo ante, finibus vel sapien in, accumsan pharetra ipsum. In molestie augue quam, tristique mattis dui scelerisque eu. Phasellus ultricies, turpis ut pretium volutpat, augue tellus accumsan velit, vel pulvinar diam est vel ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis ut est sed dictum. Ut dictum turpis enim, ac viverra velit semper vitae. Quisque nisl neque, gravida ut dui ac, pulvinar pharetra nulla. Maecenas sollicitudin maximus sagittis. Nulla augue diam, lacinia id mauris ac, lobortis mattis purus. Sed tempus, massa nec tempus rhoncus, tellus justo venenatis mauris, non gravida augue nulla eu leo. Maecenas in interdum elit, viverra finibus libero. Donec fringilla vulputate nisl a egestas. Maecenas eget tincidunt urna. Nulla facilisi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/slg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/slg/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A &lt;em&gt;Asociación para a Defensa Ecolóxica de Galiza&lt;/em&gt; (ADEGA) é unha asociación ecoloxista democrática, independente e sen ánimo de lucro que traballa en defensa do medio ambiente galego e global do que depende a nosa calidade de vida. ADEGA avoga por un modelo de desenvolvemento ecoloxicamente sustentábel e socialmente xusto, por un modelo de desenvolvemento sen destrución ambiental que reduza as desigualdades dentro de cada país e entre países.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/outras/solidariedade_obreira/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/outras/solidariedade_obreira/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;Solidariedade Obreira&lt;/em&gt; é unha organización sindical inspirada no antiautoritarismo, é dicir, somos un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Que é a Solidariedade Obreira?&lt;/summary&gt;&#xD;&#xA;&lt;p&gt;O noso principio é a autonomía. Somos as propias persoas afiliadas quen soporta, coas cotas, o financiamento do Sindicato, pois por decisión propia, non recibimos subvencións. Non consentimos calquera tipo de dependencia política, económica ou institucional. Naturalmente, o noso funcionamento é a democracia directa sen intermediarios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/outras/umg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/outras/umg/</guid>
-      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A UMG (Unión da Mocidade Galega) é a organización comunista e patriótica da mocedade galega, a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;A UMG é a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -598,6 +787,27 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/clara_corbelhe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/clara_corbelhe/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O Espazo Clara Corbelhe procura ser un verdadeiro espazo de subxectivización política capaz de proxectar un pensamento emancipador ao redor de novas formas de xeración de coñecemento; configurando un caseto aberto á construción de sentido compartillado, en permanente discusión e tensión, na firme vontade de se converter nunha referencia para a produción de discurso e investigación sobre o presente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/cmc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/cmc/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Os CMC (Colectivos da Mocidade Comunista) son o sector galego dos CJC (&lt;em&gt;Colectivos de Jóvenes Comunistas&lt;/em&gt;) de España. Os CMC agrupan a mocidade do PCTG (Partido Comunista dos Traballadores da Galiza), sección galega do PCTE (&lt;em&gt;Partido Comunista de los Trabajadores de España&lt;/em&gt;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/fios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/fios/</guid>
+      <description>&lt;div class=&#34;warning&#34;&gt;⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.&lt;/div&gt;&#xD;&#xA;&lt;p&gt;O proxecto fios quere ser unha ferramenta política que contribúa a camiñar cara a superación do capitalismo e o fin de toda opresión através da divulgación e o debate, facilitando e promovendo o acceso á militáncia e a súa formación e coordinación con este obxectivo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/proxectos/futuro_vexetal/</guid>
@@ -619,45 +829,17 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/organizacion/proxectos/xesta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/organizacion/proxectos/xesta/</guid>
+      <description>&lt;p&gt;A &lt;em&gt;Solidariedade Obreira&lt;/em&gt; é unha organización sindical inspirada no antiautoritarismo, é dicir, somos un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.&lt;/p&gt;&#xA;&lt;p&gt;O noso principio é a autonomía. Somos as propias persoas afiliadas quen soporta, coas cotas, o financiamento do Sindicato, pois por decisión propia, non recibimos subvencións. Non consentimos calquera tipo de dependencia política, económica ou institucional. Naturalmente, o noso funcionamento é a democracia directa sen intermediarios.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/organizacion/raiz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/organizacion/raiz/</guid>
       <description>&lt;h1 id=&#34;organizacións&#34;&gt;Organizacións&lt;/h1&gt;&#xA;&lt;p&gt;Nesta sección poderase ver un mapa de organizacións militantes que operan a nivel galego, ter acceso ás súas redes e aprender sobre elas.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/organizacion/sindicatos/cgt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/sindicatos/cgt/</guid>
-      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/organizacion/sindicatos/cig/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/sindicatos/cig/</guid>
-      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/organizacion/sindicatos/cnt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/sindicatos/cnt/</guid>
-      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/organizacion/sindicatos/cut/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/sindicatos/cut/</guid>
-      <description>&lt;h1 id=&#34;contido-de-exemplo&#34;&gt;contido de exemplo&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/organizacion/sindicatos/solidariedade_obreira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/organizacion/sindicatos/solidariedade_obreira/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Solidariedade Obreira&lt;/em&gt; é unha organización sindical inspirada no antiautoritarismo, é dicir, un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Para que un Seminario?&lt;/summary&gt;&#xD;&#xA;  As ideas socialistas libertarias tiveron na Galiza un fértil campo de expansión dende que no último terzo do século XIX chegaran ao país algúns delegados da vertente bakuninista da I Internacional. A corrente antiautoritaria do socialismo internacionalista prendeu ben nun pobo que á altura atopábase nun proceso de proletarización, e nun país onde os principios da autoxestión, o apoio mutuo e o colectivismo tiñan unha fonda raizame.&#xD;&#xA;&lt;p&gt;Dende entón, e por sete décadas, o anarquismo organizado disputouse co marxismo a hexemonía dun movemento obreiro galego en continua expansión. Un tirapuxa que só se decantou do lado do socialismo autoritario a partir dos anos 50 do século XX. A puxanza das anarquistas galegas tivo causa e efecto no desenvolvemento dunha vizosa rede de organizacións e institucións autónomas nos eidos sindical e social, económico e cultural, que xerou unha verdadeira esfera pública libertaria, e socializou a enormes capas da poboación nos principios e nas prácticas anarquistas. Un proceso de acumulación de poder popular que tan só puido ser revertido por medio do xenocidio emprendido polo exército español en xuño de 1936.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1_Decrecimento</title>
@@ -790,7 +972,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/revolteira/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/revolteira/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;A Revolteira&lt;/em&gt; é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Somos&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&#xD;&#xA;&lt;p&gt;O seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;A Revolteira&lt;/em&gt; é unha alternativa comunitaria fronte o sistema que nos exclúe. Un lugar onde sentirnos acompañadas e felices. A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Somos&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&#xD;&#xA;  A Revolteira nace como alternativa colectiva e comunitaria a un sistema capitalista, colonial e heteropatriarcal que exclúe as maiorías e avanza cara ao colapso social e ambiental dos nosos barrios, da nosa cidade, do noso país e do noso planeta.&#xD;&#xA;&lt;p&gt;O seu xerme remóntase a finais de 2021 e parte da necesidade compartida de atopar novos lugares que sirvan para encontrármonos e reactivar loitas e iniciativas comunitarias na Coruña e a súa contorna. Xa desde a súa concepción, o proxecto buscou ensanchar o  ámbito cultural e comunitario explorando tamén a vía económica, a través do cooperativismo, como un eixo máis de transformación social. Quixemos facelo, ademais, desde o cercano, desde o barrio, o punto de partida onde xerar espazos abertos de encontro entre veciñas, compañeiras e activistas, baixo a lóxica da cooperación, o apoio mutuo e a plena autonomía.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Tiradoura</title>
@@ -864,9 +1046,9 @@
     </item>
     <item>
       <title>Ateneo Xosé Tarrío</title>
-      <link>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/xose_tarrio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/xose_tarrio.rag/</guid>
+      <guid>http://localhost:1313/ilg/espazos/centros/xose_tarrio/</guid>
       <description>&lt;p&gt;O &lt;em&gt;Ateneo Libertario Xosé Tarrío&lt;/em&gt; xorde o 9 de maio de 2015 co fin de espallar a autoxestión.&#xA;Abaixo os muros das prisions, contra todo tipo de poder.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;</description>
     </item>
     <item>
@@ -895,7 +1077,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/casino_1889/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/casino_1889/</guid>
-      <description>&lt;p&gt;O casino é un espazo do pobo e para o pobo.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horario&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Horario: 10.00 - 20.00 horas&lt;/p&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Luns a venres:&lt;/strong&gt; 16:00 - 21:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Sábados:&lt;/strong&gt; 10:00 - 14:00 e 16:00 - 20:00.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Domingos:&lt;/strong&gt; Pechado, excepto para eventos programados.&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Redes&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Coñécenos a través de:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Instragram&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Twiter/X&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Facebook&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Bluesky&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Historia do centro&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;O casino é un espazo do pobo e para o pobo. O casino leva un século sendo parte da identidade cultural da vila, sendo actualmente un espazo autoxestionado. Pero ese patrimonio está en perigo por mor da especulación. Infórmate e salva o Casino!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Salva o Casino!&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Horario: 10.00 - 20.00 horas&lt;/p&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Categorías</title>
@@ -955,9 +1137,9 @@
     </item>
     <item>
       <title>Escárnio e Maldizer</title>
-      <link>http://localhost:1313/ilg/espazos/centros/escarnio.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/escarnio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/escarnio.rag/</guid>
+      <guid>http://localhost:1313/ilg/espazos/centros/escarnio/</guid>
       <description>&lt;p&gt;O &lt;em&gt;CSOA Escárnio e Maldizer&lt;/em&gt; é a nosa casa, a casa das loitas, da liberdade, da felicidade, da resistencia cultural e social, da okupación e de todo o mundo con vontade de organizarse e de cambiar as cousas. Por todo isto, se queres participar no centro, contacta connosco!!&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
@@ -990,9 +1172,9 @@
     </item>
     <item>
       <title>Faísca</title>
-      <link>http://localhost:1313/ilg/espazos/centros/faisca.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/faisca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/faisca.rag/</guid>
+      <guid>http://localhost:1313/ilg/espazos/centros/faisca/</guid>
       <description>&lt;p&gt;O ánimo do &lt;em&gt;LS Faísca&lt;/em&gt; non se cingue exclusivamente ao ámbito cultural, se non que partindo dun proxecto cultural e socio-político queremos contribuír á creación dun Movemento Popular camiño da emancipación do noso pobo e da nosa clase.&lt;/p&gt;&#xA;&lt;p&gt;O asemblearismo, a pluralidade, a autoxestión e a independencia a respecto de calquera estrutura ou organización, son os principios organizativos polos que nos xerimos.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;</description>
     </item>
     <item>
@@ -1077,7 +1259,7 @@
       <link>http://localhost:1313/ilg/espazos/centros/madia_leva/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/espazos/centros/madia_leva/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;p&gt;Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural &lt;em&gt;Mádia leva!&lt;/em&gt; é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural &lt;em&gt;Mádia leva!&lt;/em&gt; é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da Galiza.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mocidade</title>
@@ -1109,10 +1291,17 @@
     </item>
     <item>
       <title>O Pichel</title>
-      <link>http://localhost:1313/ilg/espazos/centros/pichel.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/pichel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/pichel.rag/</guid>
+      <guid>http://localhost:1313/ilg/espazos/centros/pichel/</guid>
       <description>&lt;p&gt;O Pichel é o centro social xestionado pola asociación cultural A &lt;em&gt;Gentalha do Pichel&lt;/em&gt;. Sitúase na rúa Santa Clara, número 21, en Compostela.&lt;/p&gt;&#xA;&lt;p&gt;A Gentalha partilla o centro social con outros colectivos, MPI, Ceivar, o Cineclube Compostela, a Federación ecoloxista Galega e o Novas da Galiza. Mais o centro social tamén está aberto a iniciativas doutros coletivos que poidan precisar un espazo para desenvolver as súas actividades, só cómpre que sexa en galego. O noso centro social é un espazo libre de contidos machistas, homófobos, racistas ou xenófobos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Obras</title>
+      <link>http://localhost:1313/obras.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/obras.json</guid>
+      <description></description>
     </item>
     <item>
       <title>Ourense</title>
@@ -1172,9 +1361,9 @@
     </item>
     <item>
       <title>Xebra!</title>
-      <link>http://localhost:1313/ilg/espazos/centros/xebra.rag/</link>
+      <link>http://localhost:1313/ilg/espazos/centros/xebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/espazos/centros/xebra.rag/</guid>
+      <guid>http://localhost:1313/ilg/espazos/centros/xebra/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;O &lt;em&gt;CS Xebra&lt;/em&gt; é un centro social fundado en Burela por un colectivo da Mariña para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecoloxismo, socialismo) que leva máis de dez anos consolidándose como un lugar de encontro e defensa activa da cultura local.&lt;/p&gt;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Obxectivos&lt;/summary&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 1&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 2&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Obxectivo 3&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Actividades habituais&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;No Centro Social organizamos unha ampla variedade de actividades:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;Talleres&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Charlas&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Proxeccións&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Xuntanzas&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&lt;/details&gt;&#xD;&#xA;&lt;details&gt;&#xD;&#xA;  &lt;summary&gt;Horarios&lt;/summary&gt;&#xD;&#xA;  &lt;p&gt;Os horarios habituais do centro son os seguintes:&lt;/p&gt;</description>
     </item>
   </channel>

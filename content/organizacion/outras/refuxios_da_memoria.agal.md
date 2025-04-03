@@ -1,5 +1,5 @@
 ---
-nome: Refuxios da Memoria
+nome: "Refuxios\nda Memoria"
 x: 0.82
 y: 0.35
 color: '#A0A0A0'

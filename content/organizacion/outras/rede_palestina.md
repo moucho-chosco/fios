@@ -1,7 +1,7 @@
 ---
-nome: Rede Galega pola Palestina
-x: 0.60
-y: 0.39
+nome: "Rede Galega\npola Palestina"
+x: 0.32
+y: 0.41
 color: '#FFEDD9'
 children:
     - "BDS Galiza"

@@ -4,6 +4,7 @@ description: "Colectivo Sociocultural"
 dirixido_por: 
 participan:
 centro: true
+info: "A Revolta naceu como comparsa de Entroido e axiña ampliou a súa actividade para defender a cultura, a lingua e o medio ambiente. Emprega o galego como lingua vehicular, aposta pola festa activa con valores de solidariedade e igualdade, e colabora con outras entidades na defensa das tradicións, a cultura, a xustiza social e os dereitos das mulleres, das diversidades afectivo-sexuais e da Terra."
 logo:  "/espazos/centros/a_revolta_de_trasancos/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_revolta_de_trasancos/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#f2d054"

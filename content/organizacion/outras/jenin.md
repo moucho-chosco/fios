@@ -1,7 +1,7 @@
 ---
-nome: "Asociación Galaico-Árabe Jenin"
-x: 0.56
-y: 0.46
+nome: "Jenin"
+x: 0.33
+y: 0.54
 color: '#FFEDD9'
 nome_extendido: Comunidade Palestina en Galicia
 logo:  "/organizacions/jenin/logo.jpg"  # Ruta á imaxe do logo

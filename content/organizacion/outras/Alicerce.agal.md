@@ -2,7 +2,7 @@
 nome: Alicerce
 x: 0.10
 y: 0.50
-color: '#E8F4FF'
+color: '#E7F5FC'
 nome_extendido: Corrente política dentro do BNG
 logo:  "/organizacions/alicerce/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/alicerce/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

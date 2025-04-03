@@ -1,9 +1,10 @@
 ---
 nome: "SELG"
-x: 0.82
-y: 0.25
+x: 0.14
+y: 0.29
 color: '#A0A0A0'
 nome_extendido: "Seminario de Estudos Libertarios Galegos"
+info: "O Seminario de Estudos Libertarios Galegos (SELG) nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario."
 logo:  "/organizacions/selg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/selg/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: colectivo

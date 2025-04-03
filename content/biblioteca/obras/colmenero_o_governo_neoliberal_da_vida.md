@@ -9,6 +9,7 @@ categorias:
     - Neoliberalismo
 subcategorias:
     - Neoliberalismo
+    - Poder e teoría crítica
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida.png" 
 link_externo: "a"

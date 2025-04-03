@@ -3,6 +3,7 @@ title: "A Nubeira"
 description: "Centro Social Autogerido"
 direcion: "Sem direçom conhecida"
 dirixido_por: ""
+info: "Disque A Nubeira tem o poder de invocar treboadas. Nós queremos traer um raio de luz que alumee a cidade que imaginamos 🌩⚡"
 logo:  "/espazos/centros/nubeira/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/nubeira/foto_cabeceira.png"  # Ruta á imaxe de fondo
 cor: "#b6c8e8"

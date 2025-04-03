@@ -4,6 +4,7 @@ description: "Coletivo Sociocultural"
 dirixido_por: 
 participan:
 centro: true
+info: "A Revolta nasceu em 1997 como comparsa de Entruido e aginha ampliou a sua atividade para defender a cultura, a língua e o meio ambiente. Emprega o galego como língua vehicular, aposta pola festa ativa com valores de solidariedade e igualdade, e colabora com outras entidades na defensa das tradiçons, a cultura, a justiça social e os dereitos das mulheres, das diversidades afetivo-sexuais e da Terra."
 logo:  "/espazos/centros/a_revolta_de_trasancos/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_revolta_de_trasancos/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#f2d054"

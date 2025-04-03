@@ -4,6 +4,7 @@ x: 0.43
 y: 0.62
 color: '#FFD1A0'
 nome_extendido: Comité Galego de Solidariedade Internacionalista
+info: "Mar de lumes é uma organizaçom de solidariedade internacionalista, contra o imperialismo, pola soberania dos povos e pola internacionalizaçom da causa emancipadora da Galiza."
 logo:  "/organizacions/mardelumes/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mardelumes/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -15,7 +16,7 @@ web: https://mardelumes.org/nos/
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-Mar de lumes é unha organización de solidariedade internacionalista, contra o imperialismo, pola soberanía dos pobos e pola internacionalización da causa emancipadora da Galiza.
+Mar de lumes é uma organizaçom de solidariedade internacionalista, contra o imperialismo, pola soberania dos povos e pola internacionalizaçom da causa emancipadora da Galiza.
 
 <details>
   <summary>Que é Mar de Lumes?</summary>

@@ -1,7 +1,7 @@
 ---
 title: "Ateneo Ferrolán"
 description: "Un lugar de encontro para a cultura"
-info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
+info: "O Ateneo Ferrolán converteuse nun punto de referencia e consulta imprescindible dentro do mundo cultural de Ferrol e de Galicia,  polos centos de actividades culturais que organiza e porque é unha entidade que ofrece o seu espazo a entidades e asociacións que queiran dispoñer das súas instalacións."
 centro: true
 logo:  "/espazos/centros/ateneo_ferrolan/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/ateneo_ferrolan/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

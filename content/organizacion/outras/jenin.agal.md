@@ -1,5 +1,5 @@
 ---
-nome: "Asociaçom Galaico-Árabe Jenin"
+nome: "Jenin"
 x: 0.56
 y: 0.46
 color: '#FFEDD9'

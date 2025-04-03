@@ -4,6 +4,7 @@ description: "Centro Social Independentista"
 dirixido_por: 
 participan:
 centro: true
+info: A Revolta é un centro social independentista que leva 22 anos mantendo Vigo en pé desde o traballo asociativo e cultural.
 logo:  "/espazos/centros/a_revolta_do_berbes/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_revolta_do_berbes/foto_cabeceira.png"  # Ruta á imaxe de fondo
 cor: "#1F7DBD"

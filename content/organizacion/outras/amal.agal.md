@@ -4,6 +4,7 @@ x: 0.27
 y: 0.82
 color: '#80A1E7'
 nome_extendido: Agrupaçom de Montanha Águas Limpas
+info: A Agrupaçom de Montanha Águas Limpas (A.M.A.L.) é umha organizaçom arredista de defesa da terra. Toma o seu nome do último acampamento guerrilheiro que houvo na Galiza, nos Montes do Invernadoiro, no Maciço de Maceda.
 logo:  "/organizacions/amal/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/amal/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 instagram: https://www.instagram.com/amalaguas/

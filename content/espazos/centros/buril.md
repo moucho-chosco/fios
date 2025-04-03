@@ -1,7 +1,7 @@
 ---
 title: "Buril"
 description: "Asociación Cultural, Deportiva e Ecolóxica"
-info: "Acéfala é um coletivo cultural cum espaço autónomo em Monte Alto (A Corunha)."
+info: "Buril A.C.D.E. é unha asociación cultural, deportiva e ecolóxica situada en Sarria, Lugo."
 dirixido_por: ""
 centro: true
 logo:  "/espazos/centros/buril/logo.jpg"  # Ruta á imaxe do logo

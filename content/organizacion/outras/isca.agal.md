@@ -2,7 +2,9 @@
 nome: "Isca!"
 x: 0.24
 y: 0.62
+color: "#98D0EC"
 nome_extendido: Independência, socialismo e destruiçom do patriarcado
+info: "Isca! nasce em 2006 a partir dum grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necessidade de organizar a mocidade em chave revolucionária para defender um projeto de cambio social real. Desde 2021 forma parte de Galiza Nova."
 logo:  "/organizacions/isca/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/isca/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 children:

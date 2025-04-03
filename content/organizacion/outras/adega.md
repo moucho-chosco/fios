@@ -1,7 +1,7 @@
 ---
 nome: ADEGA
-x: 0.14
-y: 0.32
+x: 0.36
+y: 0.81
 color: '#EAFFDD'
 nome_extendido: Asociación para a Defensa Ecolóxica de Galiza
 logo:  "/organizacions/adega/logo.jpg"  # Ruta á imaxe do logo

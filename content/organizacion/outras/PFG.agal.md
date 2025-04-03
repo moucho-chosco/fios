@@ -4,6 +4,7 @@ x: 0.49
 y: 0.16
 color: '#D3A8D9'
 nome_extendido: Plataforma Feminista Galega
+info: "A Plataforma Feminista Galega é uma organizaçom feminista independente que reune a mulheres de diversas procedências políticas que asumem o compromisso social de luitar contra as violências machistas, tanto de forma individual como integradas em coletivos."
 logo:  "/organizacions/pfg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pfg/foto_cabeceira.png"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -14,7 +15,7 @@ web: https://plataformafeministagalega.org/
 ---
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-A Plataforma Feminista Galega é unha organización feminista independente que reúne a mulleres de diversas procedencias políticas que asumen o compromiso social de loitar contras as violencias machistas e que tanto de forma individual como integradas en coletivos levamos tempo traballando xuntas e por iso decidimos construír un espazo de traballo común no que podamos sentarnos a debater, a loitar xuntas.
+A Plataforma Feminista Galega é uma organizaçom feminista independente que reune a mulheres de diversas procedências políticas que asumem o compromisso social de luitar contra as violências machistas, tanto de forma individual como integradas em coletivos.
 
 <details>
   <summary>Que é a PFG?</summary>

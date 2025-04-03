@@ -1,5 +1,5 @@
 ---
-nome: Rede Galega pola Palestina
+nome: "Rede Galega\npola Palestina"
 x: 0.60
 y: 0.39
 color: '#FFEDD9'

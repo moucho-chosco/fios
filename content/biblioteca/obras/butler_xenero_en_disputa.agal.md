@@ -1,5 +1,5 @@
 ---
-titulo: O xénero en disputa"
+titulo: O xénero en disputa
 autore: "Judit Butler"
 serie:
 Numero:

@@ -24,6 +24,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/bergman_militancia_alegre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/bergman_militancia_alegre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/agal/biblioteca/obras/bevins_metodo_yakarta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/bevins_metodo_yakarta/</guid>
@@ -48,6 +55,13 @@
       <link>http://localhost:1313/agal/biblioteca/obras/cancela_utopias_dixitais/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/cancela_utopias_dixitais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/cgt_guia_antirrepresiva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/cgt_guia_antirrepresiva/</guid>
       <description></description>
     </item>
     <item>
@@ -94,9 +108,23 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/fernandez_cara_mundos_mais_animais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/fernandez_cara_mundos_mais_animais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/agal/biblioteca/obras/fisher_realismo-capitalista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/fisher_realismo-capitalista/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</guid>
       <description></description>
     </item>
     <item>
@@ -118,6 +146,13 @@
       <link>http://localhost:1313/agal/biblioteca/obras/graeber_o_amencer_do_todo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/graeber_o_amencer_do_todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/guerra_loita_contra_o_capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/guerra_loita_contra_o_capacitismo/</guid>
       <description></description>
     </item>
     <item>
@@ -160,6 +195,13 @@
       <link>http://localhost:1313/agal/biblioteca/obras/harnecker_c7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/harnecker_c7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/klein_todo_pode_mudar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/klein_todo_pode_mudar/</guid>
       <description></description>
     </item>
     <item>
@@ -220,6 +262,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/agal/biblioteca/obras/marx_capital/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/marx_capital/</guid>
@@ -244,6 +293,20 @@
       <link>http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</guid>
       <description></description>
     </item>
     <item>

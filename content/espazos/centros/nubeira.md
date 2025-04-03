@@ -2,6 +2,7 @@
 title: "A Nubeira"
 description: "Centro Social Autoxestionado"
 direcion: "Sen direción coñecida"
+info: "Logo de máis dun ano no que celebramos arredor 30 asembleas nas que, en total, deberon achegarse polo menos 200 persoas, percibimos e contastamos a necesidade de crear, dende a colectividade, un espazo propio, de todas, no que poder desenvolver as nosas inquedanzas artísticas, culturais, políticas e sociais sen ningún tipo de xerarquía. Un espazo autónomo e asembleario. "
 dirixido_por: ""
 logo:  "/espazos/centros/nubeira/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/nubeira/foto_cabeceira.png"  # Ruta á imaxe de fondo

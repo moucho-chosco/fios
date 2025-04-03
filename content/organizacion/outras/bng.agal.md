@@ -2,7 +2,7 @@
 nome: BNG
 x: 0.16
 y: 0.44
-color: '#E8F4FF'
+color: '#E7F5FC'
 nome_extendido: "Bloque Nacionalista Galego"
 logo:  "/organizacions/bng/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/bng/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

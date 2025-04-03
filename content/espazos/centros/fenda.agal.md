@@ -2,7 +2,7 @@
 title: "A Fenda"
 subtitle: 'Centro Socialista'
 description: "Espaço baixo a estratégia socialista "
-info: A Fenda é um novo espaço desde onde responder às necessidades do proletariado da cidade. Um espaço para organizar-nos sobre a independência política de classe 🚩
+info: "A Fenda é um novo espaço desde onde responder às necessidades do proletariado da cidade. Um espaço para organizar-nos sobre a independência política de classe 🚩"
 centro: true
 logo:  "/espazos/centros/a_fenda/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/a_fenda/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -23,7 +23,7 @@ web:
 ---
 ---
 *A Fenda* é um novo espaço desde onde responder às necessidades do proletariado da cidade.
-Um espaço para organizar-nos sobre a independência política de classe 🚩.
+Um espaço para organizar-nos sobre a independência política de classe 🚩
 
 <details>
   <summary>Objetivos</summary>

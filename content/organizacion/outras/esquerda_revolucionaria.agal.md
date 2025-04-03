@@ -1,9 +1,10 @@
 ---
-nome: Esquerda Revolucionaria
+nome: "Esquerda \nRevolucionaria"
 x: 0.83
 y: 0.65
 color: '#FC9494'
 nome_extendido: Organizaçom marxista
+info: "Esquerda Revolucionaria é a secçom galega de Izquierda Revolucionaria, uma organizaçom política marxista de orientaçom leninista espanhola. A organizaçom declara-se marxista revolucionária, definindo-se ademais como socialista, antifascista, internacionalista e feminista de classe."
 logo:  "/organizacions/esquerda_revolucionaria/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/esquerda_revolucionaria/foto_cabeceira.jpeg"  # Ruta á imaxe de fondo
 clase: colectivo
@@ -14,7 +15,7 @@ facebook:
 
 <div class="warning">⚠️ O contido desta secçom mostra-se a modo de exemplo. A introduçom e fotografias forom escolhidas a partir da informaçom disponhivel, coa intençom de que na versom definitiva sejam os próprios coletivos os que decidam o contido de cada página.</div>
 
-Esquerda Revolucionaria é a sección galega de Izquierda Revolucionaria, unha organización política marxista de orientación leninista española. A organización declárase marxista revolucionaria, definíndose además como socialista, antifascista, internacionalista e feminista de clase.
+Esquerda Revolucionaria é a secçom galega de Izquierda Revolucionaria, uma organizaçom política marxista de orientaçom leninista espanhola. A organizaçom declara-se marxista revolucionária, definindo-se ademais como socialista, antifascista, internacionalista e feminista de classe.
 
 <details>
   <summary>Que é Esquerda Revolucionaria?</summary>

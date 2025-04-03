@@ -3,139 +3,163 @@
             "title": "A.M.A.L.",
             "logo": "/organizacions/amal/logo.png",
             "description": "Agrupaçom de Montanha Águas Limpas",
-            "info": null,
+            "info": "A Agrupaçom de Montanha Águas Limpas (A.M.A.L.) é unha organización arredista de defensa da terra. Toma o seu nome do último acampamento guerrilleiro que houbo na Galiza, nos Montes do Invernadoiro, no Macizo de Maceda.",
             "url": "/ilg/organizacion/outras/amal/"
           },{
             "title": "Anticapitalistas",
             "logo": "/organizacions/anticapitalistas/logo.jpeg",
             "description": "Construíndo un movemento anticapitalista",
-            "info": null,
+            "info": "Anticapitalistas é unha organización política estatal que aspira a construír un movemento revolucionario internacionalista que transforme profundamente a sociedade actual.",
             "url": "/ilg/organizacion/outras/anticapitalistas/"
           },{
             "title": "UPG",
             "logo": "/organizacions/upg/logo.png",
             "description": "Unión do Povo Galego",
-            "info": null,
+            "info": "A UPG é un partido comunista e patriótico, fundado en 1964, que defende os intereses da clase traballadora e das clases populares galegas. A UPG asume a loita de liberación nacional como paso indispensábel para a construción do socialismo na Galiza.",
             "url": "/ilg/organizacion/outras/arredista-copy/"
           },{
             "title": "Movemento\nArredista",
             "logo": "/organizacions/arredista/logo.jpg",
             "description": "Organización revolucionaria",
-            "info": null,
+            "info": "Somos unha organización con vocación revolucionaria, centrada na construción de poder popular, a mobilización e a confrontación co sistema. Elaboramos propostas e accións políticas que enmarquen nunha perspectiva estratéxica ás loitas que día a día constrúen unha realidade diferente.",
             "url": "/ilg/organizacion/outras/arredista/"
           },{
             "title": "Assembleias\nAbertas\nIndependentistas",
             "logo": "/organizacions/assembleias/logo.png",
             "description": "Estruturas abertas de carácter comarcal",
-            "info": null,
+            "info": "As Assembleias Abertas Independentistas son estruturas abertas de carácter comarcal e asembleario que procuran xuntar forzas independentistas a nivel individual e colectivo.",
             "url": "/ilg/organizacion/outras/assembleias/"
           },{
             "title": "Avante LGBT+",
             "logo": "/organizacions/avante_lgbt/logo.png",
             "description": "En loita contra o patriarcado e a cisheteronorma",
-            "info": null,
+            "info": "Somos persoas LGBT+ que nos organizamos para loitar contra o patriarcado, o capital, o imperialismo e a cisheteronorma, creando unha Galiza feminista a prol da liberdade sexual e de xénero. ",
             "url": "/ilg/organizacion/outras/avante_lgbt/"
           },{
-            "title": "Clara Corbelhe",
-            "logo": "/organizacions/clara_corbelhe/logo.png",
-            "description": "Espazo de produción crítica galega",
-            "info": null,
-            "url": "/ilg/organizacion/outras/clara_corbelhe/"
+            "title": "Ceivar",
+            "logo": "/organizacions/ceivar/logo.jpg",
+            "description": "Organismo Popular Anti-Represivo",
+            "info": "Ceivar é unha organización anti-represiva independentista.",
+            "url": "/ilg/organizacion/outras/ceivar/"
           },{
-            "title": "CMC",
-            "logo": "/organizacions/cmc/logo.png",
-            "description": "Colectivos da Mocidade Comunista",
-            "info": null,
-            "url": "/ilg/organizacion/outras/cmc/"
+            "title": "CGT",
+            "logo": "/organizacions/cgt/logo.jpg",
+            "description": "Confederación Xeral do Traballo",
+            "info": "CGT é unha confederación anarcosindicalista, e como tal posiciónase contra o capitalismo, o monopolio da violencia por parte dos estados e a xerarquización social.",
+            "url": "/ilg/organizacion/outras/cgt/"
+          },{
+            "title": "CIG",
+            "logo": "/organizacions/cig/logo.jpg",
+            "description": "Confederación Intersindical Galega",
+            "info": "A Agrupaçom de Montanha Águas Limpas (A.M.A.L.) é unha organización arredista de defensa da terra. Toma o seu nome do último acampamento guerrilleiro que houbo na Galiza, nos Montes do Invernadoiro, no Macizo de Maceda.",
+            "url": "/ilg/organizacion/outras/cig/"
+          },{
+            "title": "CNT",
+            "logo": "/organizacions/cnt/logo.png",
+            "description": "Confederación Nacional do Traballo",
+            "info": "A CNT é unha organización sindical independente (non vinculada a partidos políticos) e autoxestionaria (non recibimos subvencións de ningún tipo) á que pode pertencer calquera persoa traballadora, sen importar as súas ideas políticas ou crenzas relixiosas.",
+            "url": "/ilg/organizacion/outras/cnt/"
           },{
             "title": "Corrente Vermella",
             "logo": "/organizacions/corrente_vermella/logo.jpg",
             "description": "Organización marxista",
-            "info": null,
+            "info": "Corrente Vermella é unha organización marxista que fai parte da sección do Estado Español da Liga Internacional dos Traballadores - Cuarta Internacional.",
             "url": "/ilg/organizacion/outras/corrente_vermella/"
           },{
             "title": "Creba Socialista",
             "logo": "/organizacions/creba/logo.jpg",
             "description": "Espazo de encontro e debate",
-            "info": null,
+            "info": "Creba Socialista é un espazo de encontro, debate e formación de militantes con vontade socialista na Galiza. Encádrase dentro da estratexia do Movemento Socialista.",
             "url": "/ilg/organizacion/outras/creba/"
           },{
-            "title": "Esquerda Revolucionaria",
+            "title": "CUT",
+            "logo": "/organizacions/cut/logo.jpg",
+            "description": "Central Unitaria de Traballadoras",
+            "info": "A CUT é unha central sindical fundada en Galiza no 1999 que promove un sindicalismo en defensa da clase traballadora, asemblear e sen subvencións.",
+            "url": "/ilg/organizacion/outras/cut/"
+          },{
+            "title": "Esquerda \nRevolucionaria",
             "logo": "/organizacions/esquerda_revolucionaria/logo.jpg",
             "description": "Organización marxista",
-            "info": null,
+            "info": "Esquerda Revolucionaria é a sección galega de Izquierda Revolucionaria, unha organización política marxista de orientación leninista española. A organización declárase marxista revolucionaria, definíndose además como socialista, antifascista, internacionalista e feminista de clase.",
             "url": "/ilg/organizacion/outras/esquerda_revolucionaria/"
           },{
             "title": "Galiza Nova",
             "logo": "/organizacions/galiza_nova/logo.jpg",
             "description": "Organización Xuvenil do BNG",
-            "info": null,
+            "info": "Galiza Nova ten como función básica a organización e a mobilización da mocidade de cara a acadar a liberación nacional de Galiza e a transformación da sociedade actual. Dentro dela organízanse Isca! e a UMG.",
             "url": "/ilg/organizacion/outras/galiza_nova/"
           },{
             "title": "Isca!",
             "logo": "/organizacions/isca/logo.jpg",
             "description": "Independencia, socialismo e destrución do patriarcado",
-            "info": null,
+            "info": "Isca! nace en 2006 a partir dun grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necesidade de organizar a mocidade en chave revolucionaria para defender un proxecto de cambio social real. Desde 2021 forma parte de Galiza Nova.",
             "url": "/ilg/organizacion/outras/isca/"
           },{
             "title": "Mar de Lumes",
             "logo": "/organizacions/mardelumes/logo.png",
             "description": "Comité Galego de Solidariedade Internacionalista",
-            "info": null,
+            "info": "Mar de lumes é unha organización de solidariedade internacionalista, contra o imperialismo, pola soberanía dos pobos e pola internacionalización da causa emancipadora da Galiza.",
             "url": "/ilg/organizacion/outras/mardelumes/"
           },{
             "title": "Marcha\nMundial\ndas Mulleres",
             "logo": "/organizacions/mmmm/logo.png",
             "description": "Colectivo feminista",
-            "info": null,
+            "info": "A Marcha Mundial das Mulleres é un colectivo feminista que fai parte dunha rede internacional feminista antiracista, anticolonial e anticapitalista. Ten grupos en: A Coruña, A Estrada, Compostela. Ferrol, Ourense, Verín e Vigo.",
             "url": "/ilg/organizacion/outras/mmmm/"
           },{
             "title": "MPI",
             "logo": "/organizacions/mpi/logo.jpg",
             "description": "Mocidade pola Independencia",
-            "info": null,
+            "info": "A MPI  é unha rede de asembleas de adscrición individual que traballa, desde posicións anticapitalistas e feministas, pola libertación nacional e social da Galiza.",
             "url": "/ilg/organizacion/outras/mpi/"
           },{
             "title": "PCG",
             "logo": "/organizacions/pcg/logo.png",
             "description": "Partido Comunista de Galicia",
-            "info": null,
+            "info": "O Partido Comunista de Galicia (PCG) é a organización galega do PCE. Unha organización nacional e de clase constituída para o desenvolvemento da política e estratexia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia.",
             "url": "/ilg/organizacion/outras/pcg/"
           },{
             "title": "PCTG",
             "logo": "/organizacions/pctg/logo.jpg",
             "description": "Partido Comunista dos Traballadores da Galiza",
-            "info": null,
+            "info": "O PCTG  é sección galega do PCTE (Partido Comunista de los Trabajadores de España), un partido marxista-leninista organizado do Estado español. As súas mocidades eran os CMC.",
             "url": "/ilg/organizacion/outras/pctg/"
           },{
             "title": "PFG",
             "logo": "/organizacions/pfg/logo.png",
             "description": "Plataforma Feminista Galega",
-            "info": null,
+            "info": "A Plataforma Feminista Galega é unha organización feminista independente que reúne a mulleres de diversas procedencias políticas que asumen o compromiso social de loitar contras as violencias machistas,tanto de forma individual como integradas en coletivos.",
             "url": "/ilg/organizacion/outras/pfg/"
           },{
-            "title": "Refuxios da Memoria",
+            "title": "Refuxios\nda Memoria",
             "logo": "/organizacions/refuxios_da_memoria/logo.jpg",
             "description": "Memorial Libertario",
-            "info": null,
+            "info": "Refuxios da Memoria é un proxecto de investigación sobre as memorias colectivas acerca do movemento libertario coruñés e a forma en que estas se espacializan no barrio das Atochas–Monte Alto.",
             "url": "/ilg/organizacion/outras/refuxios_da_memoria/"
           },{
             "title": "SELG",
             "logo": "/organizacions/selg/logo.png",
             "description": "Seminario de Estudos Libertarios Galegos",
-            "info": null,
+            "info": "O Seminario de Estudos Libertarios Galegos (SELG) nace coa intención de xerar na Galiza un espazo de reflexión, debate e aprendizaxe colectiva arredor das ideas, historia e estratexias do Socialismo Libertario.",
             "url": "/ilg/organizacion/outras/selg/"
+          },{
+            "title": "Solidariedade\nObreira",
+            "logo": "/organizacions/solidariedade_obreira/logo.png",
+            "description": "Sindicato Galego de Traballadoras",
+            "info": "Solidariedade Obreira é unha organización sindical inspirada no antiautoritarismo, é dicir, somos un ente anarcosindicalista que asegura a participación real das persoas nos seus propios asuntos laborais e sociais.",
+            "url": "/ilg/organizacion/outras/solidariedade_obreira/"
           },{
             "title": "UMG",
             "logo": "/organizacions/umg/logo.png",
             "description": "Unión da Mocidade Galega",
-            "info": null,
+            "info": "A UMG é a organización comunista e patriótica da mocedade galega, a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.",
             "url": "/ilg/organizacion/outras/umg/"
           },{
             "title": "Xuventude\nComunista",
             "logo": "/organizacions/xc/logo.jpg",
             "description": "Xuventude do PCG",
-            "info": null,
+            "info": "A Xuventude Comunista é a organización da UJCE (\"Unión de Juventudes Comunistas\" en España) en Galiza. Está organizada xunto ao Partido Comunista de Galicia (PCG), sección galega do PCE que forma parte de Esquerda Unida.",
             "url": "/ilg/organizacion/outras/xc/"
           }]
     }

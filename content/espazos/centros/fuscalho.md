@@ -3,6 +3,7 @@ title: "Fuscalho"
 description: "Espazo Autoxestionado"
 dirixido_por: ""
 centro: true
+info: "O Fuscalho é un Centro Social autoxestonado independentista. Mantemos obradoiros, palestras, concertos e actividades de forma voluntaria. Un dos principais ingresos é o servizo de balcón para asociad@s, por iso vos convidamos a facervos soci@s e vir tomar algo."
 logo:  "/espazos/centros/fuscalho/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/fuscalho/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#0c6ec6"

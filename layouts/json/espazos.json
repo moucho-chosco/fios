@@ -1,0 +1,14 @@
+{{- $espazos := where .Site.RegularPages ".Params.centro" true -}}
+{
+  "espazos": [
+    {{- range $index, $espazo := $espazos -}}
+      {{- if $index -}},{{- end -}}
+      {
+        "title": "{{ $espazo.Title }}",
+        "logo": "{{ $espazo.Params.logo }}",
+        "content": "{{ $espazo.Plain | jsonify }}",
+        "url": "{{ $espazo.RelPermalink }}"
+      }
+    {{- end -}}
+  ]
+}

@@ -7,14 +7,15 @@ categorias:
     - nome: Anarquismo
       subcategorias:
         - Achegamento ao anarquismo
+        - Historia do anarquismo
+        - Anticapacitismo e anarquismo
         - Insurreccionalismo
         - Anarquismo autonomista
-        - Anarquismo plataformista
+        - Anarquismo especifista
         - Anarcosindicalismo
-        - Historia do anarquismo
     - nome: Anticapacitismo
       subcategorias:
-        - Accesibilidade
+        - Anticapacitismo e anarquismo
         - Inclusión
     - nome: Antirracismo
       subcategorias:
@@ -23,9 +24,11 @@ categorias:
     - nome: Capitalismo
       subcategorias:
         - Achegamento ao funcionamento do capital
+        - Historia do capitalismo
         - Poder e teoría crítica
         - Análise marxista
         - Neoliberalismo
+        - "Serie: Cadernos de Educación Popular"
     - nome: Colonialismo e imperialismo
       subcategorias:
         - Achegamento ao decolonialismo e antiimperialismo
@@ -38,17 +41,45 @@ categorias:
         - Revolución
         - O Estado
         - Marxismo e cuestión nacional
+        - Marxismo e xénero
     - nome: Crise climática
-    - nome: Estratexia
+      subcategorias:
+        - Capitalismo e clima
     - nome: Ética animal
     - nome: Fascismo e reacción
     - nome: Feminismo
+      subcategorias:
+        - Marxismo e xénero
     - nome: Historia
     - nome: Independentismo e cuestión nacional
+      subcategorias:
+        - Dereito e autodeterminación
+        - Nación e cultura
+        - Historia do independentismo galego
     - nome: Internacional
-    - nome: LGBT+
+      subcategorias:
+       - Chiapas
+       - Rojava e Kurdistán
+       - Vietnam
+       - Filipinas
+       - Congo
+       - Palestina
+    - nome: "LGBT+"
+      subcategorias:
+        - Historia do movemento LGBT+
+        - Loita trans
+        - Transfeminismo
+        - Marxismo e xénero
     - nome: Práctica militante
       subcategorias:
         - Antirrepresión
         - Centros sociais
+        - Coidados na militancia
+        - Protocolos
+        - Ocupación
+    - nome: Outras categorías
+      subcategorias:
+        - Arte
+        - Dereito
+        - Vivenda
 ---

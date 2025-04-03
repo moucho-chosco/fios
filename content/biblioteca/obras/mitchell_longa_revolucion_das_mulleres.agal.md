@@ -4,7 +4,7 @@ autore: "Juliet Mitchell"
 serie:
 Numero:
 ano: 1971
-tematicas:
+categorias:
     - Feminismo
     - Estratexia
 descricion: "Esta é unha breve descrición da obra 1."

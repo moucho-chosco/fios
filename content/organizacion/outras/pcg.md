@@ -1,11 +1,12 @@
 ---
 nome: PCG
-x: 0.60
-y: 0.84
+x: 0.85
+y: 0.18
 color: '#FC9494'
 children:
   - "Xuventude\nComunista"
 nome_extendido: Partido Comunista de Galicia
+info: "O Partido Comunista de Galicia (PCG) é a organización galega do PCE. Unha organización nacional e de clase constituída para o desenvolvemento da política e estratexia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia."
 logo:  "/organizacions/pcg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/pcg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

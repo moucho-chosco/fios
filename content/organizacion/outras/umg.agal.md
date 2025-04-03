@@ -4,6 +4,7 @@ x: 0.34
 y: 0.52
 children:
     - Galiza Nova
+color: "#98D0EC"
 nome_extendido: "Unión da Mocidade Galega"
 logo:  "/organizacions/umg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/umg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

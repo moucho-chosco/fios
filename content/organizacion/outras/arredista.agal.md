@@ -1,11 +1,13 @@
 ---
 label: Movemento Arredista
 nome: "Movemento\nArredista"
+color: '#98D0EC'
 x: 0.17
 y: 0.55
 children:
   - Isca!
 nome_extendido: Organizaçom revolucionária
+info: "Somos uma organizaçom com vocaçom revolucionária, centrada na construiçom de poder popular, a mobilizaçom e a confrontaçom co sistema. Elaboramos e desenvolvemos propostas e açons políticas que enmarquem numa perspetiva estratégica às loitas que dia a dia constrúem uma realidade diferente."
 logo:  "/organizacions/arredista/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/arredista/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 clase: colectivo

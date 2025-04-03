@@ -38,6 +38,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/bergman_militancia_alegre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/bergman_militancia_alegre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</guid>
@@ -48,6 +55,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/bomb_obituario/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/bomb_obituario/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/bookchin_ecoloxia_da_liberdade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/bookchin_ecoloxia_da_liberdade/</guid>
       <description></description>
     </item>
     <item>
@@ -66,6 +80,27 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/castelao_sempre_en_galiza/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/castelao_sempre_en_galiza/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/cgt_guia_antirrepresiva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/cgt_guia_antirrepresiva/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/climaximo_plano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/climaximo_plano/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/colmenero_o_governo_neoliberal_da_vida/</guid>
@@ -76,6 +111,20 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/correa_pobo_forte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/correa_pobo_forte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/corriente_calida_fascismo_en_un_solo_planeta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/corriente_calida_fascismo_en_un_solo_planeta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/defensa_komunitatea_okupacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/defensa_komunitatea_okupacion/</guid>
       <description></description>
     </item>
     <item>
@@ -108,9 +157,23 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/fisher_realismo-capitalista/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/fisher_realismo-capitalista/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/galeano_as_veas_abertas_de_america_latina/</guid>
       <description></description>
     </item>
     <item>
@@ -132,6 +195,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/graeber_o_amencer_do_todo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/graeber_o_amencer_do_todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/guerra_loita_contra_o_capacitismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/guerra_loita_contra_o_capacitismo/</guid>
       <description></description>
     </item>
     <item>
@@ -178,6 +248,34 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/iniciativa_comunista_un_fio_vermello_atravesa_as_mulleres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/iniciativa_comunista_un_fio_vermello_atravesa_as_mulleres/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/klein_o_mundo_en_chamas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/klein_o_mundo_en_chamas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/klein_todo_pode_mudar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/klein_todo_pode_mudar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</guid>
@@ -195,6 +293,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/kropotkin_pan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/kropotkin_pan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/lenin_imperialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/lenin_imperialismo/</guid>
       <description></description>
     </item>
     <item>
@@ -234,6 +339,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/manual_para_destapar_a_un_policia_infiltrado/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/marx_capital/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/marx_capital/</guid>
@@ -258,6 +370,20 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/segato_a_nacion_e_os_seus_outros/</guid>
       <description></description>
     </item>
     <item>

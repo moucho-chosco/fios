@@ -1,7 +1,7 @@
 ---
 nome: "Galiza por Palestina"
-x: 0.46
-y: 0.52
+x: 0.50
+y: 0.54
 color: '#FFEDD9'
 nome_extendido: Associaçom em apoio à causa árabe
 logo:  "/organizacions/galiza_con_palestina/logo.jpg"  # Ruta á imaxe do logo

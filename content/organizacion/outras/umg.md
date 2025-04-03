@@ -1,9 +1,11 @@
 ---
 nome: UMG
-x: 0.34
-y: 0.52
+x: 0.60
+y: 0.67
 children:
     - Galiza Nova
+color: "#98D0EC"
+info: A UMG é a organización comunista e patriótica da mocedade galega, a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.
 nome_extendido: "Unión da Mocidade Galega"
 logo:  "/organizacions/umg/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/umg/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
@@ -15,7 +17,7 @@ facebook: https://www.facebook.com/GalizaUMG
 
 <div class="warning">⚠️ O contido desta sección móstrase a modo de exemplo. A introdución e fotografías foron escollidas a partir da información dispoñible, coa intención de que na versión definitiva sexan os propios colectivos os que decidan o contido de cada páxina.</div>
 
-A UMG (Unión da Mocidade Galega) é a organización comunista e patriótica da mocedade galega, a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.
+A UMG é a organización xuvenil da UPG. A UMG declarase ao mesmo termpo comunista e nacionalista, xa que entende que a instauración do socialismo na Galiza pasa necesariamente pola prévia liberación nacional do país. Forma parte de Galiza Nova.
 
 <details>
   <summary>Que é a UMG?</summary>

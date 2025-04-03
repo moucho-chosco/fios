@@ -3,8 +3,6 @@ nome: "Assembleias\nAbertas\nIndependentistas"
 x: 0.16
 y: 0.73
 color: '#80A1E7'
-children:
-    - Ceivar
 nome_extendido: Estruturas abertas de carácter comarcal
 logo:  "/organizacions/assembleias/logo.png"  # Ruta á imaxe do logo
 imaxe: "/organizacions/assembleias/foto_cabeceira.jpg"  # Ruta á imaxe de fondo

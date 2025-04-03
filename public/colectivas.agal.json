@@ -1,0 +1,129 @@
+{
+      "colectivas": [{
+            "title": "A.M.A.L.",
+            "logo": "/organizacions/amal/logo.png",
+            "description": "Agrupaçom de Montanha Águas Limpas",
+            "info": "A Agrupaçom de Montanha Águas Limpas (A.M.A.L.) é umha organizaçom arredista de defesa da terra. Toma o seu nome do último acampamento guerrilheiro que houvo na Galiza, nos Montes do Invernadoiro, no Maciço de Maceda.",
+            "url": "/agal/organizacion/outras/amal/"
+          },{
+            "title": "Anticapitalistas",
+            "logo": "/organizacions/anticapitalistas/logo.jpeg",
+            "description": "Construindo um movimento anticapitalista",
+            "info": "Anticapitalistas é uma organizaçom política estatal que aspira a construír um movimento revolucionário internacionalista que transforme profundamente a sociedade atual.",
+            "url": "/agal/organizacion/outras/anticapitalistas/"
+          },{
+            "title": "UPG",
+            "logo": "/organizacions/upg/logo.png",
+            "description": "Unión do Povo Galego",
+            "info": "A UPG é um partido comunista e patriótico, fundado em 1964, que defende os interesses da classe trabalhadora e das classes populares galegas. A UPG asume a loita de liberaçom nacional como paso indispensável para a construiçom do socialismo na Galiza. É o partido maioritário no BNG.",
+            "url": "/agal/organizacion/outras/arredista-copy/"
+          },{
+            "title": "Movemento\nArredista",
+            "logo": "/organizacions/arredista/logo.jpg",
+            "description": "Organizaçom revolucionária",
+            "info": "Somos uma organizaçom com vocaçom revolucionária, centrada na construiçom de poder popular, a mobilizaçom e a confrontaçom co sistema. Elaboramos e desenvolvemos propostas e açons políticas que enmarquem numa perspetiva estratégica às loitas que dia a dia constrúem uma realidade diferente.",
+            "url": "/agal/organizacion/outras/arredista/"
+          },{
+            "title": "Assembleias\nAbertas\nIndependentistas",
+            "logo": "/organizacions/assembleias/logo.png",
+            "description": "Estruturas abertas de carácter comarcal",
+            "info": null,
+            "url": "/agal/organizacion/outras/assembleias/"
+          },{
+            "title": "Avante LGBT+",
+            "logo": "/organizacions/avante_lgbt/logo.png",
+            "description": "Em loita contra o patriarcado e a cisheteronorma",
+            "info": "Somos persoas LGBT+ que nos organizamos para loitar contra o patriarcado, o capital, o imperialismo e a cisheteronorma, criando uma Galiza feminista a prol da liberdade sexual e de género. ",
+            "url": "/agal/organizacion/outras/avante_lgbt/"
+          },{
+            "title": "Corrente Vermella",
+            "logo": "/organizacions/corrente_vermella/logo.jpg",
+            "description": "Organizaçom marxista",
+            "info": null,
+            "url": "/agal/organizacion/outras/corrente_vermella/"
+          },{
+            "title": "Creba Socialista",
+            "logo": "/organizacions/creba/logo.jpg",
+            "description": "Espaço de encontro e debate",
+            "info": "Espaço de encontro, debate e formaçom de militantes com vontade socialista na Galiza 🚩",
+            "url": "/agal/organizacion/outras/creba/"
+          },{
+            "title": "Esquerda \nRevolucionaria",
+            "logo": "/organizacions/esquerda_revolucionaria/logo.jpg",
+            "description": "Organizaçom marxista",
+            "info": "Esquerda Revolucionaria é a secçom galega de Izquierda Revolucionaria, uma organizaçom política marxista de orientaçom leninista espanhola. A organizaçom declara-se marxista revolucionária, definindo-se ademais como socialista, antifascista, internacionalista e feminista de classe.",
+            "url": "/agal/organizacion/outras/esquerda_revolucionaria/"
+          },{
+            "title": "Galiza Nova",
+            "logo": "/organizacions/galiza_nova/logo.jpg",
+            "description": "Organizaçom Juvenil do BNG",
+            "info": "Galiza Nova tem como funçom básica a organizaçom e a mobilizaçom da mocidade de cara a acadar a liberaçom nacional de Galiza e a transformaçom da sociedade actual. Trata-se duma organizaçom ampla, plural e democrática que adota as suas decisons tras um amplo processo de debate aberto a toda a militáncia.",
+            "url": "/agal/organizacion/outras/galiza_nova/"
+          },{
+            "title": "Isca!",
+            "logo": "/organizacions/isca/logo.jpg",
+            "description": "Independência, socialismo e destruiçom do patriarcado",
+            "info": "Isca! nasce em 2006 a partir dum grupo de militantes nacionalistas críticos coa deriva do nacionalismo oficial, conscientes da necessidade de organizar a mocidade em chave revolucionária para defender um projeto de cambio social real. Desde 2021 forma parte de Galiza Nova.",
+            "url": "/agal/organizacion/outras/isca/"
+          },{
+            "title": "Mar de Lumes",
+            "logo": "/organizacions/mardelumes/logo.png",
+            "description": "Comité Galego de Solidariedade Internacionalista",
+            "info": "Mar de lumes é uma organizaçom de solidariedade internacionalista, contra o imperialismo, pola soberania dos povos e pola internacionalizaçom da causa emancipadora da Galiza.",
+            "url": "/agal/organizacion/outras/mardelumes/"
+          },{
+            "title": "Marcha\nMundial\ndas Mulleres",
+            "logo": "/organizacions/mmmm/logo.png",
+            "description": "Colectivo feminista",
+            "info": null,
+            "url": "/agal/organizacion/outras/mmmm/"
+          },{
+            "title": "MPI",
+            "logo": "/organizacions/mpi/logo.jpg",
+            "description": "Mocidade pola Independência",
+            "info": "A MPI  é umha rede de assembleias de adscriçom individual que trabalha, desde posiçons anti-capitalistas e feministas, pola libertaçom nacional e social da Galiza.",
+            "url": "/agal/organizacion/outras/mpi/"
+          },{
+            "title": "PCG",
+            "logo": "/organizacions/pcg/logo.png",
+            "description": "Partido Comunista de Galicia",
+            "info": "O Partido Comunista de Galicia (PCG) é a organizaçom galega do Partido Comunista de España. Uma organizaçom nacional e de classe constituída para o desenvolvimento da política e estrategia das comunistas sobre a base das características sociais, económicas, culturais e políticas de Galicia.",
+            "url": "/agal/organizacion/outras/pcg/"
+          },{
+            "title": "PCTG",
+            "logo": "/organizacions/pctg/logo.jpg",
+            "description": "Partido Comunista dos Traballadores da Galiza",
+            "info": "O PCTG (Partido Comunista dos Traballadores de Galicia) é secçom galega do PCTE (*Partido Comunista de los Trabajadores de España*), um partido marxista-leninista organizado do Estado espanhol. As suas mocidades eram os CMC.",
+            "url": "/agal/organizacion/outras/pctg/"
+          },{
+            "title": "PFG",
+            "logo": "/organizacions/pfg/logo.png",
+            "description": "Plataforma Feminista Galega",
+            "info": "A Plataforma Feminista Galega é uma organizaçom feminista independente que reune a mulheres de diversas procedências políticas que asumem o compromisso social de luitar contra as violências machistas, tanto de forma individual como integradas em coletivos.",
+            "url": "/agal/organizacion/outras/pfg/"
+          },{
+            "title": "Refuxios\nda Memoria",
+            "logo": "/organizacions/refuxios_da_memoria/logo.jpg",
+            "description": "Memorial Libertário",
+            "info": null,
+            "url": "/agal/organizacion/outras/refuxios_da_memoria/"
+          },{
+            "title": "SELG",
+            "logo": "/organizacions/selg/logo.png",
+            "description": "Seminario de Estudos Libertarios Galegos",
+            "info": "O Seminario de Estudos Libertarios Galegos (SELG) é uma iniciativa do colectivo Refuxios da Memoria, que nasce coa intençom de gerar na Galiza um espaço de reflexom, debate e aprendizagem colectiva arredor das ideias, história e estrategias do Socialismo Libertário.",
+            "url": "/agal/organizacion/outras/selg/"
+          },{
+            "title": "UMG",
+            "logo": "/organizacions/umg/logo.png",
+            "description": "Unión da Mocidade Galega",
+            "info": null,
+            "url": "/agal/organizacion/outras/umg/"
+          },{
+            "title": "Xuventude\nComunista",
+            "logo": "/organizacions/xc/logo.jpg",
+            "description": "Juventude do PCG",
+            "info": null,
+            "url": "/agal/organizacion/outras/xc/"
+          }]
+    }

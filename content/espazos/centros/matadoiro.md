@@ -4,6 +4,7 @@ description: "Asociación Cultural Treze-Catorze"
 dirixido_por: "ACDE Treze Catorze"
 participan:
 centro: true
+info: "O Centro Social O Matadoiro é a casa da Asociación Cultural, Deportiva e Ecolóxica Treze-Catorze, un colectivo galeguista, feminista e ecoloxista que se centra arredor da cultura común e o coidado do medio ambiente."
 logo:  "/espazos/centros/o_matadoiro/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/o_matadoiro/foto_cabeceira.png"  # Ruta á imaxe de fondo
 cor: "#eb008b"

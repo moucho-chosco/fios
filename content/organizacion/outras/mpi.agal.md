@@ -4,6 +4,7 @@ x: 0.27
 y: 0.72
 color: '#80A1E7'
 nome_extendido: Mocidade pola Independência
+info: "A MPI  é umha rede de assembleias de adscriçom individual que trabalha, desde posiçons anti-capitalistas e feministas, pola libertaçom nacional e social da Galiza."
 logo:  "/organizacions/mpi/logo.jpg"  # Ruta á imaxe do logo
 imaxe: "/organizacions/mpi/foto_cabeceira.jpg_large"  # Ruta á imaxe de fondo
 children:

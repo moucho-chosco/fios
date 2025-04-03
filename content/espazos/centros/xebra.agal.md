@@ -5,6 +5,7 @@ direcion: "Rúa Leandro Cucurny 19, Burela"
 dirixido_por:
 participan: 
 centro: true
+info: "O CS Xebra é um centro social fundado em Burela por un coletivo da Marinha para promover ideais galeguistas e de esquerdas (independentismo, feminismo, ecologismo, socialismo) que leva mais de dez anos consolidando-se como um lugar de encontro e defensa ativa da cultura local."
 logo:  "/espazos/centros/xebra/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/xebra/foto_cabeceira.png"  # Ruta á imaxe de fondo
 cor: "#89C4FF"

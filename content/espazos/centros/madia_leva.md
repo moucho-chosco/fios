@@ -4,6 +4,7 @@ description: "Centro Social e Cultural"
 dirixido_por: "Asociaçom Cultural Mádia Leva"
 participan:
 centro: true
+info: "A Sociedade Cultural Mádia leva! é un proxecto comprometido coa lingua e a cultura galegaque traballa por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da Galiza."
 logo:  "/espazos/centros/madia_leva/logo.png"  # Ruta á imaxe do logo
 imaxe: "/espazos/centros/madia_leva/foto_cabeceira.jpg"  # Ruta á imaxe de fondo
 cor: "#FF5A30"
@@ -22,7 +23,7 @@ facebook:  https://www.facebook.com/GzMadia
 web:
 ---
 ---
-Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural *Mádia leva!* é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da GALIZA.
+Construíndo contrapoder no corazón de Lugo. A Sociedade Cultural *Mádia leva!* é um proxecto comprometido coa lingua e a cultura galega, así mesmo tamén traballamos por impulsar a organización do povo, a democracia participativa, a defensa da Terra e a loita pola autodeterminación da Galiza.
 
 <details>
   <summary>Obxectivos</summary>

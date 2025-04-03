@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ética Animal on fios</title>
+    <link>http://localhost:1313/ilg/categorias/%C3%A9tica-animal/</link>
+    <description>Recent content in Ética Animal on fios</description>
+    <generator>Hugo</generator>
+    <language>ilg</language>
+    <atom:link href="http://localhost:1313/ilg/categorias/%C3%A9tica-animal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/fernandez_cara_mundos_mais_animais/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

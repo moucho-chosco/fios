@@ -1,5 +1,5 @@
 ---
-titulo: O xénero en disputa"
+titulo: O xénero en disputa
 autore: "Judit Butler"
 serie:
 Numero:
@@ -9,7 +9,6 @@ categorias:
     - LGBT+
 lugar:
     - USA
-descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/butler_o_xenero_en_disputa.jpg" # Opcional, imaxe da portada
 etiquetas: ["feminismo", "marxismo", "USA"]
 link_externo: "a"
