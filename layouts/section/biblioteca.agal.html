@@ -7,39 +7,39 @@
                     <button id="boton-categorias">Todas as categorias</button>
                     
                     <div class="panel-categorias" id="panel-categorias">
-                      <!-- Columna de categorías -->
-                      <div class="columna-categorias">
-                        {{ range where .Site.Pages "Params.categoria" true }}
-                          <div class="categoria-item" 
-                               onmouseover="mostrarSubcategorias('{{ .Title }}')" 
-                               onclick="seleccionar('{{ .Title }}', 'categoria')"> <!-- Engadido -->
-                            {{ .Title }}
-                          </div>
-                        {{ end }}
-                      </div>
-                      
-                      <!-- Columna de subcategorías -->
-                      <div class="columna-subcategorias" id="subcategorias-container">
-                        <!-- Subcategorías cargaranse dinámicamente -->
-                      </div>
+                        <!-- Columna de categorías -->
+                        <div class="columna-categorias">
+                            <div class="categoria-item" 
+                                 onclick="seleccionar('Todo')">
+                                Todas as categorias
+                            </div>
+                            {{ $biblioteca := .Site.GetPage "/biblioteca" }} <!-- Obtén a páxina biblioteca.md -->
+                            {{ $categorias := slice }}
+                            {{ range $biblioteca.Params.categorias }}
+                            <div class="categoria-item" 
+                                    onmouseover="mostrarSubcategorias('{{ .nome }}')" 
+                                    onclick="seleccionar('{{ .nome }}')"
+                                    data-subcategorias='{{ .subcategorias | jsonify }}'>
+                                {{ .nome }}
+                            </div>
+                            {{ end }}
+                        </div>
+                        
+                        <!-- Columna de subcategorías -->
+                        <div class="columna-subcategorias" id="subcategorias-container">
+                            <!-- Subcategorías cargaranse dinámicamente -->
+                        </div>
                     </div>
-                  </div>
-                  <script>
-                    console.log("Páxinas cargadas:", [
-                      {{ range where .Site.Pages "Params.categoria" true }}
-                        "{{ .Title }}",
-                      {{ end }}
-                    ]);
-                  </script>
-                <select id="categoria-filter" class="filter">
-                    <option value="todas">Qualquer lugar</option>
-                    {{ range $name, $taxonomy := site.Taxonomies.lugares }}
+                </div>
+                <select id="categoria-filter" class="filter" style="display: none;">
+                    <option value="todas">Formato</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.formato }}
                         <option value="{{ $name }}">{{ $name }}</option>
                     {{ end }}
                 </select>
                 <select id="categoria-filter" class="filter">
-                    <option value="todas">Qualquer formato</option>
-                    {{ range $name, $taxonomy := site.Taxonomies.formato }}
+                    <option value="todas">Dificuldade</option>
+                    {{ range $name, $taxonomy := site.Taxonomies.difucultade }}
                         <option value="{{ $name }}">{{ $name }}</option>
                     {{ end }}
                 </select>
@@ -52,7 +52,6 @@
                 <input type="text" id="search-input" placeholder="Buscar...">
             </div>
         </div>
-        
     
         <div class="banner-biblioteca">
             <picture>
@@ -66,145 +65,121 @@
             
             <p class="descricion-banner" style="z-index:'99999';">
                 Alguma vez sentiches que queres aprender pero nom sabes nem por onde começar?
-                Pois bem-vide à biblioteca de fios! Aqui atoparás livros e artigos (no futuro tamém outros recursos) de grande valor
-                formativo organizados por temáticas, formatos, autoras, séries... Ademais, os itinerários som rotas de leitura elaboradas para
-                dar um contexto mais intuitivo e coerente a cuestons específicas de interesse.
+                Pois bem-vide à biblioteca de fios! Aqui atoparás livros e outros recursos organizados por temáticas.
             </p>
             <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
             <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
         </div>
-    
-        
-        <h2 class="titulo-carousel resaltado" >Temática: capitalismo</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "capitalismo")) ".Params.autore" }}
-                <div class="libro"
-                data-fondo-banner= "{{ .Params.fondo_banner | relURL }}"
-                data-titulo-banner="{{ .Params.titulo_banner | relURL }}"
-                data-texto-banner= "{{ .Params.texto_banner }}"
-                data-cor-banner="{{ .Params.cor_banner }}"
-                data-cor-texto="{{ .Params.cor_texto }}"
-                data-marxe-texto="{{ .Params.marxe_texto }}"
-                data-tipo="{{ .Params.tipo }}"
-                data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
-                data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
-                onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                {{ end }}
+
+        <div id="grid-container" class="grid-books-container" style="display: none;">
+            <div id="books-grid" class="books-grid">
+              <!-- Books will be loaded here dynamically -->
             </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
-    
-        <h2 class="titulo-carousel">Temática: género</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "xénero")) ".Params.autore" }}
-                <div class="libro" onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                {{ end }}
+            <div id="loading-indicator" class="loading-indicator">
+              <div class="loader"></div>
             </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
+          </div>
     
-        <h2 class="titulo-carousel">Temática: anarquismo</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "anarquismo")) ".Params.autore" }}
-                <div class="libro" onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
+        <!-- Creamos unha div contedor para os carruseis -->
+        <div id="carruseis-container">
+            <!-- Lista manual de categorías -->
+            {{ $biblioteca := .Site.GetPage "/biblioteca" }} <!-- Obtén a páxina biblioteca.md -->
+            {{ $categorias := slice }} <!-- Inicializa un slice baleiro -->
+
+            {{ range $biblioteca.Params.categorias }} <!-- Itera sobre as categorías -->
+                {{ $categorias = $categorias | append .nome }} <!-- Engade o nome da categoría ao slice -->
+            {{ end }}
+            
+            <!-- Renderizamos os carruseis na orde orixinal -->
+            {{ range $categorias }}
+            <div class="categoria-carrusel" data-categoria="{{ . }}">
+                <div class="cabeceira-carrusel">
+                    <h2 class="titulo-carousel">{{ . }}</h2>
+                    <button class="ver-mais">Ver todo</button>
                 </div>
-                {{ end }}
-            </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
-    
-        <h2 class="titulo-carousel">Série: Cadernos de Educaçom Popular</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.serie" "intersect" (slice "Cadernos de Educación Popular")) ".Params.autore" }}
-                <div class="libro" onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        {{ $categoria := . }}
+                        {{/* Obtén todas as páxinas da categoría actual */}}
+                        {{ $paginasCategoria := where (where $.Site.RegularPages ".Params.tipo" "obra") ".Params.categorias" "intersect" (slice $categoria) }}
+                        
+                        {{/* Embaralla as páxinas para orde aleatoria */}}
+                        {{ $paginasAleatorias := shuffle $paginasCategoria }}
+                        
+                        {{/* Renderiza os items do carrusel en orde aleatoria */}}
+                        {{ range $paginasAleatorias }}
+                        <div class="libro"
+                        data-fondo-banner=   "{{ .Params.fondo_banner | relURL }}"
+                        data-titulo-banner=  "{{ .Params.titulo_banner | relURL }}"
+                        data-texto-banner=   "{{ .Params.texto_banner }}"
+                        data-cor-banner=     "{{ .Params.cor_banner }}"
+                        data-cor-texto=      "{{ .Params.cor_texto }}"
+                        data-marxe-texto=    "{{ .Params.marxe_texto }}"
+                        data-tipo=           "{{ .Params.tipo }}"
+                        data-cor-fondo-boton="{{ .Params.cor_fondo_boton }}"
+                        data-cor-texto-boton="{{ .Params.cor_texto_boton }}"
+                        onclick="seleccionarLibro(this)">
+                            <div class="libro-portada">
+                                <picture>
+                                    {{ $webpPath := replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada }}
+                                    {{ if (fileExists (printf "static%s" $webpPath)) }}
+                                    <source 
+                                        srcset="{{ $webpPath | relURL }}" 
+                                        type="image/webp"
+                                    >
+                                    {{ end }}
+                                    <img 
+                                        src="{{ .Params.portada | relURL }}" 
+                                        alt="Portada de {{ .Params.titulo }}" 
+                                        loading="lazy"
+                                        style="max-width: 100%; height: auto;" 
+                                    >
+                                </picture>
+                            </div>
+                        </div>
+                        {{ end }}
                     </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
                 </div>
-                {{ end }}
             </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
+            {{ end }}
         </div>
-    
-        <h2 class="titulo-carousel">Temática: revoluçom</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.tematicas" "intersect" (slice "revolución")) ".Params.autore" }}
-                <div class="libro" onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                {{ end }}
-            </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
-    
-        <h2 class="titulo-carousel resaltado" >Formato: artigos</h2>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                {{ range sort (where (where .Site.RegularPages ".Params.tipo" "obra") ".Params.formato" "intersect" (slice "artigo")) ".Params.autore" }}
-                <div class="libro" onclick="seleccionarLibro(this)">
-                    <div class="libro-portada">
-                        <picture>
-                            <source srcset="{{ replaceRE "(?i)\\.(jpg|jpeg|png|gif)$" ".webp" .Params.portada | relURL }}" type="image/webp">
-                            <img src="{{ .Params.portada | relURL }}" 
-                                alt="Portada {{ $.Params.titulo }}" 
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </div>
-                {{ end }}
-            </div>
-            <button class="carousel-prev">&#10094;</button>
-            <button class="carousel-next">&#10095;</button>
-        </div>
-        
+                
+    </div>
+    <div id="custom-scrollbar">
+        <div id="scrollbar-thumb"></div>
     </div>
     <script src="/scripts/biblioteca.js"></script>
-    {{ end }}
+    
+    <!-- Script para embarallar as categorías na carga da páxina -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para embarallar un array (algoritmo Fisher-Yates)
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+            
+            // Obtén o contedor de carruseis
+            const carruseisContainer = document.getElementById('carruseis-container');
+            
+            // Obtén todos os carruseis de categoría
+            const carruseis = Array.from(document.querySelectorAll('.categoria-carrusel'));
+            
+            // Embaralla os carruseis
+            const carruseisEmbarallados = shuffleArray(carruseis);
+            
+            // Elimina os carruseis do contedor
+            carruseisContainer.innerHTML = '';
+            
+            // Engade os carruseis en orde aleatoria
+            carruseisEmbarallados.forEach(function(carrusel) {
+                carruseisContainer.appendChild(carrusel);
+            });
+        });
+    </script>
+{{ end }}

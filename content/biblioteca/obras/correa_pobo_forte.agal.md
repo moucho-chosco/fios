@@ -8,8 +8,8 @@ categorias:
     - Anarquismo
 formato:
     - libros
-descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/correa_pobo_forte.gif" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"
+cor_banner: "#df152e"
 ---

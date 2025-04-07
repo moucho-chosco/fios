@@ -9,51 +9,9 @@
     <atom:link href="http://localhost:1313/agal/categorias/feminismo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/ackelsberg_mulleres_libres/</link>
+      <link>http://localhost:1313/agal/biblioteca/obras/isca_feminismo_e_luita_lgbt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/ackelsberg_mulleres_libres/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/butler_xenero_en_disputa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/butler_xenero_en_disputa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/delphy_feminismo_materialista/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/delphy_feminismo_materialista/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/federici_caliban-e-a-bruxa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/goldman_muller_estado_e_revolucion/</guid>
-      <description>&lt;p&gt;lewis_a_politica_de_todes&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/kollontai_amor_vermello/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/kollontai_amor_vermello/</guid>
-      <description>&lt;p&gt;lewis_a_politica_de_todes&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/agal/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</guid>
+      <guid>http://localhost:1313/agal/biblioteca/obras/isca_feminismo_e_luita_lgbt/</guid>
       <description></description>
     </item>
   </channel>

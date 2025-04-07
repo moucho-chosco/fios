@@ -5,10 +5,11 @@ serie:
 Numero:
 ano: 1971
 categorias:
-    - Feminismo
-    - Comunismo
-descricion: "Esta é unha breve descrición da obra 1."
+    - Xénero
+subcategorias:
+    - Feminismo materialista
 portada: "/biblioteca/obras/delphy_feminismo_materialista.png" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"
+cor_banner: "#e7e7cf"
 ---

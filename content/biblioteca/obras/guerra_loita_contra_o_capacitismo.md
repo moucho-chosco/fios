@@ -12,4 +12,5 @@ subcategorias:
 portada: "/biblioteca/obras/guerra_loita_contra_o_capacitismo.jpg" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"
+cor_banner: "#c8c59d"
 ---

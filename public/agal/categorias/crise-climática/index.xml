@@ -9,6 +9,13 @@
     <atom:link href="http://localhost:1313/agal/categorias/crise-clim%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/klein_o_mundo_en_chamas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/klein_o_mundo_en_chamas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/agal/biblioteca/obras/klein_todo_pode_mudar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/klein_todo_pode_mudar/</guid>

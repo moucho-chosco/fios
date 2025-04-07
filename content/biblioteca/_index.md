@@ -1,6 +1,5 @@
 ---
 title: 'fios | Biblioteca'
-reducido: '📚'
 lang: "rag"
 date: 2024-11-18T18:16:40+01:00
 categorias:
@@ -10,76 +9,71 @@ categorias:
         - Historia do anarquismo
         - Anticapacitismo e anarquismo
         - Insurreccionalismo
-        - Anarquismo autonomista
-        - Anarquismo especifista
         - Anarcosindicalismo
     - nome: Anticapacitismo
       subcategorias:
-        - Anticapacitismo e anarquismo
-        - Inclusión
-    - nome: Antirracismo
+        - Anarquismo e anticapacitismo
+        - Discapacidade e disidencia
+    - nome: Análise do capitalismo?
       subcategorias:
-        - Racismo estrutural
-        - Movementos antirracistas
-    - nome: Capitalismo
-      subcategorias:
-        - Achegamento ao funcionamento do capital
-        - Historia do capitalismo
-        - Poder e teoría crítica
-        - Análise marxista
-        - Neoliberalismo
-        - "Serie: Cadernos de Educación Popular"
+        - 
     - nome: Colonialismo e imperialismo
       subcategorias:
         - Achegamento ao decolonialismo e antiimperialismo
         - Desenvolvemento desigual
-        - Movementos de liberación nacional
+        - Panafricanismo
+        - Palestina
+        - América Latina
     - nome: Comunismo
       subcategorias:
-        - Achegamento ao comunismo marxista
-        - "Filosofía marxista: materialismo dialéctico"
-        - Revolución
-        - O Estado
+        - Achegamento ao marxismo
+        - "Filosofía marxista: Materialismo dialéctico"
+        - Crítica da economía política
+        - Historia do Movemento Obreiro/Proletario
+        - Teoria crítica / Comunismo actual a debate
+        - Marxismo e género
         - Marxismo e cuestión nacional
-        - Marxismo e xénero
+        - Ecosocialismo
+        - Imperialismo
+        - Marxismo e vaga reaccionaria
     - nome: Crise climática
       subcategorias:
+        - Xustiza climática
         - Capitalismo e clima
+        - Ciencia e clima
+        - Decrecemento
+        - Defensa da terra
+        - Ecosocialismo
+        - Ecofeminismo
     - nome: Ética animal
-    - nome: Fascismo e reacción
-    - nome: Feminismo
       subcategorias:
-        - Marxismo e xénero
-    - nome: Historia
+        - Liberación animal
+        - Veganismo negro
+        - Ética animal e feminismo
+        - Ética animal e comunismo
     - nome: Independentismo e cuestión nacional
       subcategorias:
         - Dereito e autodeterminación
-        - Nación e cultura
         - Historia do independentismo galego
-    - nome: Internacional
+    - nome: Xénero
       subcategorias:
-       - Chiapas
-       - Rojava e Kurdistán
-       - Vietnam
-       - Filipinas
-       - Congo
-       - Palestina
-    - nome: "LGBT+"
-      subcategorias:
-        - Historia do movemento LGBT+
-        - Loita trans
-        - Transfeminismo
+        - Achegamento a cuestión do xenero
+        - Historia da loita feminista e LGBT+
+        - Gordofobia e xénero
+        - Anarquismo e xénero
         - Marxismo e xénero
+        - Feminismo materialista
+        - Feminismo postestructuralista
+        - Primeira onda do feminismo
+        - Segunda onda do feminismo
+        - Terceira onda do feminismo
+        - Ecofeminismo
+        - Teoría LGBTIQ+
+        - Xénero e antirracismo
     - nome: Práctica militante
       subcategorias:
         - Antirrepresión
-        - Centros sociais
+        - Ciberseguridade
         - Coidados na militancia
         - Protocolos
-        - Ocupación
-    - nome: Outras categorías
-      subcategorias:
-        - Arte
-        - Dereito
-        - Vivenda
 ---

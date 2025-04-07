@@ -119,10 +119,17 @@ function createSubcategoryCarousel(subcategoryName, books) {
               <div class="carousel-track">
                   ${books.slice(0, 12).map(book => `
                       <div class="libro"
-                          data-fondo-banner="${book.portada || ''}"
-                          data-titulo-banner="${book.portada || ''}"
-                          data-texto-banner="${book.descricion || ''}"
-                          data-tipo="${book.tipo || 'obra'}"
+                          data-titulo=          "${book.titulo          || ''}"
+                          data-portada=         "${book.portada         || ''}"
+                          data-fondo-banner=    "${book.fondo_banner    || ''}"
+                          data-titulo-banner=   "${book.titulo_banner   || ''}"
+                          data-texto-banner=    "${book.texto_banner    || ''}"
+                          data-cor-banner=      "${book.cor_banner      || ''}"
+                          data-cor-texto=       "${book.cor_texto       || ''}"
+                          data-marxe-texto=     "${book.marxe_texto     || ''}"
+                          data-cor-fondo-boton= "${book.cor_fondo_boton || ''}"
+                          data-cor-texto-boton= "${book.cor_texto_boton || ''}"
+                          data-tipo=            "${book.tipo            || 'obra'}"
                           onclick="seleccionarLibro(this)">
                           <div class="libro-portada">
                               <img src="${book.portada || 'default.jpg'}" alt="${book.titulo}" loading="lazy">
@@ -239,25 +246,31 @@ window.seleccionarLibro = function(elemento) {
   elemento.classList.add('seleccionado');
 
   // Obter os elementos do banner
-  const fondoBannerEl = document.querySelector('.banner-biblioteca .fondo-banner');
-  const tituloBannerEl = document.querySelector('.banner-biblioteca .titulo-banner');
-  const fondoBannerElWebp = document.querySelector('.banner-biblioteca .fondo-banner-webp');
+  const tituloTextEl =       document.querySelector('.banner-biblioteca .titulo-text');
+  const fondoBannerEl =      document.querySelector('.banner-biblioteca .fondo-banner');
+  const tituloBannerEl =     document.querySelector('.banner-biblioteca .titulo-banner');
+  const fondoBannerElWebp =  document.querySelector('.banner-biblioteca .fondo-banner-webp');
   const tituloBannerElWebp = document.querySelector('.banner-biblioteca .titulo-banner-webp');
-  const textoBannerEl  = document.querySelector('.banner-biblioteca .descricion-banner');
+  const textoBannerEl  =     document.querySelector('.banner-biblioteca .descricion-banner');
   const bannerBibliotecaEl = document.querySelector('.banner-biblioteca');
-  const botonObraEl = document.querySelector('#boton-obra');
-  const botonItinerarioEl = document.querySelector('#boton-itinerario');
+  const botonObraEl =        document.querySelector('#boton-obra');
+  const botonItinerarioEl =  document.querySelector('#boton-itinerario');
 
   // Recoller os valores dos atributos data- do elemento
-  const fondoUrl   = elemento.dataset.fondoBanner;   // corresponde a data-fondo-banner
-  const tituloUrl  = elemento.dataset.tituloBanner;  // corresponde a data-titulo-banner
-  const texto      = elemento.dataset.textoBanner;   // corresponde a data-texto-banner
-  const corBanner  = elemento.dataset.corBanner;      // data-cor-banner
-  const corTexto   = elemento.dataset.corTexto;      // data-cor-texto
-  const marxeTexto = elemento.dataset.marxeTexto;    
-  const tipo       = elemento.dataset.tipo;    
+  const titulo =        elemento.dataset.titulo;
+  const portadaUrl =    elemento.dataset.portada;
+  const fondoUrl =      elemento.dataset.fondoBanner;   // corresponde a data-fondo-banner
+  const tituloUrl =     elemento.dataset.tituloBanner;  // corresponde a data-titulo-banner
+  const texto =         elemento.dataset.textoBanner;   // corresponde a data-texto-banner
+  const corBanner =     elemento.dataset.corBanner;     // data-cor-banner
+  const corTexto =      elemento.dataset.corTexto;      // data-cor-texto
+  const marxeTexto =    elemento.dataset.marxeTexto;    
+  const tipo =          elemento.dataset.tipo;    
   const corFondoBoton = elemento.dataset.corFondoBoton;
   const corTextoBoton = elemento.dataset.corTextoBoton;
+
+  console.log(tituloTextEl);
+  tituloTextEl.textContent = "";
 
   // Actualizar o banner se os datos existen
   if (fondoUrl && tituloUrl) {
@@ -271,6 +284,12 @@ window.seleccionarLibro = function(elemento) {
 
     function verificarCambio() {
       if (fondoCargado && tituloCargado) {
+        fondoBannerElWebp.style.display  =   "block";
+        fondoBannerEl.style.display  =       "block";
+        tituloBannerElWebp.style.display =   "block";
+        tituloBannerEl.style.display =       "block";
+        fondoBannerElWebp.style.height  =    "270px";
+        fondoBannerEl.style.height  =        "270px";
         fondoBannerElWebp.srcset  =  fondoUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
         tituloBannerElWebp.srcset =  tituloUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
         fondoBannerEl.src  = fondoUrl;
@@ -313,6 +332,7 @@ window.seleccionarLibro = function(elemento) {
     }
 
     imgFondoWebp.onload = () => {
+      console.log('Fondo cargado');
         fondoCargado = true;
         verificarCambio();
     };
@@ -321,7 +341,56 @@ window.seleccionarLibro = function(elemento) {
         tituloCargado = true;
         verificarCambio();
     };
-  } 
+  }else if(titulo && portadaUrl){
+    tituloTextEl.textContent = titulo;
+    tituloTextEl.style.fontWeight = '1000';          // Fai o texto negrito
+    tituloTextEl.style.fontStretch = 'condensed';    // Fai a fonte máis compacta
+    tituloTextEl.style.letterSpacing = '-0.5px';     // Reduce o espazo entre letras
+    tituloTextEl.style.setProperty('color', 'black', 'important');
+    tituloTextEl.style.fontFamily = 
+  '"Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif';
+    if(portadaUrl){
+      fondoBannerElWebp.style.display  = "block";
+      fondoBannerEl.style.display  =     "block";
+      fondoBannerElWebp.style.height  =  "450px";
+      fondoBannerEl.style.height  =      "450px";
+      fondoBannerElWebp.srcset  =  portadaUrl.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
+      fondoBannerEl.src =          portadaUrl;
+    }else {
+      fondoBannerElWebp.style.display  =   "none";
+      fondoBannerEl.style.display  =       "none";
+    }
+    tituloBannerElWebp.style.display =   "none";
+    tituloBannerEl.style.display =       "none";
+    if (texto) {
+      textoBannerEl.textContent = texto;
+    }
+    if (corBanner) {
+        bannerBibliotecaEl.style.backgroundColor = corBanner;
+    }else {
+        bannerBibliotecaEl.style.backgroundColor = "white";
+    }
+    if (corTexto) {
+        tituloTextEl.style.setProperty('color', corTexto, 'important');
+        textoBannerEl.style.color = corTexto;
+    }
+    if (marxeTexto) {
+        textoBannerEl.style.marginTop = marxeTexto;
+    }
+    if(tipo=="obra"){
+      botonObraEl.style.display = "inline-block";
+      botonItinerarioEl.style.display = "none";
+      botonObraEl.style.backgroundColor = "black";
+      botonObraEl.style.color = "white";
+      if(corFondoBoton)
+        botonObraEl.style.backgroundColor = corFondoBoton;
+      if(corTextoBoton)
+        botonObraEl.style.color = corTextoBoton;
+    }else{
+      botonObraEl.style.display = "none";
+      botonItinerarioEl.style.display = "none";
+    }
+  }
 }
 
 async function fetchData() {
@@ -613,10 +682,17 @@ function createMainCategoryCarousel(categoryName, books) {
               <div class="carousel-track">
                   ${books.slice(0, 12).map(book => `
                       <div class="libro"
-                          data-fondo-banner="${book.portada || ''}"
-                          data-titulo-banner="${book.portada || ''}"
-                          data-texto-banner="${book.descricion || ''}"
-                          data-tipo="${book.tipo || 'obra'}"
+                          data-titulo=          "${book.titulo          || ''}"
+                          data-portada=         "${book.portada         || ''}"
+                          data-fondo-banner=    "${book.fondo_banner    || ''}"
+                          data-titulo-banner=   "${book.titulo_banner   || ''}"
+                          data-texto-banner=    "${book.texto_banner    || ''}"
+                          data-cor-banner=      "${book.cor_banner      || ''}"
+                          data-cor-texto=       "${book.cor_texto       || ''}"
+                          data-marxe-texto=     "${book.marxe_texto     || ''}"
+                          data-cor-fondo-boton= "${book.cor_fondo_boton || ''}"
+                          data-cor-texto-boton= "${book.cor_texto_boton || ''}"
+                          data-tipo=            "${book.tipo            || 'obra'}"
                           onclick="seleccionarLibro(this)">
                           <div class="libro-portada">
                               <img src="${book.portada || 'default.jpg'}" alt="${book.titulo}" loading="lazy">
@@ -645,10 +721,17 @@ function createCarousel(title, books) {
               <div class="carousel-track">
                   ${books.map(book => `
                       <div class="libro"
-                          data-fondo-banner="${book.portada || ''}"
-                          data-titulo-banner="${book.portada || ''}"
-                          data-texto-banner="${book.descricion || ''}"
-                          data-tipo="${book.tipo || 'obra'}"
+                          data-titulo=          "${book.titulo          || ''}"
+                          data-portada=         "${book.portada         || ''}"
+                          data-fondo-banner=    "${book.fondo_banner    || ''}"
+                          data-titulo-banner=   "${book.titulo_banner   || ''}"
+                          data-texto-banner=    "${book.texto_banner    || ''}"
+                          data-cor-banner=      "${book.cor_banner      || ''}"
+                          data-cor-texto=       "${book.cor_texto       || ''}"
+                          data-marxe-texto=     "${book.marxe_texto     || ''}"
+                          data-cor-fondo-boton= "${book.cor_fondo_boton || ''}"
+                          data-cor-texto-boton= "${book.cor_texto_boton || ''}"
+                          data-tipo=            "${book.tipo            || 'obra'}"
                           onclick="seleccionarLibro(this)">
                           <div class="libro-portada">
                               <img src="${book.portada || 'default.jpg'}" alt="${book.titulo}" loading="lazy">

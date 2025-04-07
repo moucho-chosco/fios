@@ -7,9 +7,9 @@ ano: 2000
 categorias:
     - Colonialismo e imperialismo
     - Capitalismo
-descricion: "Esta é unha breve descrición da obra 1."
+subcategorias:
+    - Desenvolvemento desigual
 portada: "/biblioteca/obras/smith_desenvolvemento_desigual.jpg" # Opcional, imaxe da portada
-etiquetas: ["socialismo", "Chile"]
 link_externo: "a"
 tipo: "obra"
 fondo_banner:  "/biblioteca/banners/fondos/desenvolvemento_desigual.png"

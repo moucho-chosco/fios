@@ -9,4 +9,5 @@ categorias:
 portada: "/biblioteca/obras/castelao_sempre_en_galiza.jpg" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"
+cor_texto: "#0191de"
 ---

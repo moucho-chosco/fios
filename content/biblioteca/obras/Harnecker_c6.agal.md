@@ -1,5 +1,5 @@
 ---
-titulo: "Loita de clases"
+titulo: "Capitalismo e Socialismo"
 autore: 
     - Marta Harnecker
     - Gabriela Uribe

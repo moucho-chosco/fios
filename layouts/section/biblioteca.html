@@ -31,13 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <select id="categoria-filter" class="filter">
-                    <option value="todas">Lugar</option>
-                    {{ range $name, $taxonomy := site.Taxonomies.lugares }}
-                        <option value="{{ $name }}">{{ $name }}</option>
-                    {{ end }}
-                </select>
-                <select id="categoria-filter" class="filter">
+                <select id="categoria-filter" class="filter" style="display: none;">
                     <option value="todas">Formato</option>
                     {{ range $name, $taxonomy := site.Taxonomies.formato }}
                         <option value="{{ $name }}">{{ $name }}</option>
@@ -60,8 +54,9 @@
         </div>
     
         <div class="banner-biblioteca">
+            <h3 class="titulo-text"></h3>
             <picture>
-                <source class="fondo-banner-webp" srcset="{{ "/biblioteca/banners/fondos/inicial.webp" | relURL }}" type="image/webp">
+                <source class="fondo-banner-webp"  srcset="{{ "/biblioteca/banners/fondos/inicial.webp" | relURL }}" type="image/webp">
                 <img    class="fondo-banner"          src="{{ "/biblioteca/banners/fondos/inicial.png"  | relURL }}" alt="Fondo do banner">
             </picture>
             <picture>
@@ -71,9 +66,7 @@
             
             <p class="descricion-banner" style="z-index:'99999';">
                 Algunha vez sentiches que queres aprender pero non sabes nin por onde comezar?
-                Pois benvide á biblioteca de fios! Aqui atoparás libros e outros recursos de grande valor
-                formativo organizados por temáticas, formatos... Ademais, os itinerarios son rutas de lectura elaboradas para
-                dar un contexto máis intuitivo e coerente a cuestións específicas de interese.
+                Pois benvide á biblioteca de fios! Aquí atoparás libros e outros recursos organizados por temáticas.
             </p>
             <a  id="boton-itinerario" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver itinerario</a>
             <a  id="boton-obra" class="boton-itinerario" style="display:'none';cursor: pointer;">Ver ligazóns</a>
@@ -117,6 +110,8 @@
                         {{/* Renderiza os items do carrusel en orde aleatoria */}}
                         {{ range $paginasAleatorias }}
                         <div class="libro"
+                        data-titulo=         "{{ .Title }}"
+                        data-portada=        "{{ .Params.portada | relURL }}"
                         data-fondo-banner=   "{{ .Params.fondo_banner | relURL }}"
                         data-titulo-banner=  "{{ .Params.titulo_banner | relURL }}"
                         data-texto-banner=   "{{ .Params.texto_banner }}"

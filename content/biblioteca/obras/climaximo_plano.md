@@ -8,7 +8,7 @@ ano: 2020
 categorias:
     - "Crise climática"
 subcategorias:
-    - Capitalismo e clima
+    - Loita climática
 portada: "/biblioteca/obras/climaximo_plano.png" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"

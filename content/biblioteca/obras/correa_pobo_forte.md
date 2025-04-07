@@ -1,5 +1,5 @@
 ---
-titulo: "Crear un pobo forte"
+titulo: "Cara un pobo forte"
 autore: "Felipe Correa"
 serie:
 Numero:
@@ -8,8 +8,8 @@ categorias:
     - Anarquismo
 formato:
     - libro
-descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/correa_pobo_forte.gif" # Opcional, imaxe da portada
 link_externo: "a"
 tipo: "obra"
+cor_banner: "#df152e"
 ---

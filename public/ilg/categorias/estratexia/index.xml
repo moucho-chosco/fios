@@ -9,20 +9,6 @@
     <atom:link href="http://localhost:1313/ilg/categorias/estratexia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/goldman_muller_estado_e_revolucion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/goldman_muller_estado_e_revolucion/</guid>
-      <description>&lt;p&gt;lewis_a_politica_de_todes&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/kollontai_amor_vermello/</guid>
-      <description>&lt;p&gt;lewis_a_politica_de_todes&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/lenin_marxismo_e_reformismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/lenin_marxismo_e_reformismo/</guid>
@@ -30,23 +16,9 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/lenin_o_estado_e_a_revolucion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/lenin_o_estado_e_a_revolucion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/luxemburgo_reforma_ou_revolucion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/luxemburgo_reforma_ou_revolucion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/mitchell_longa_revolucion_das_mulleres/</guid>
       <description></description>
     </item>
   </channel>

@@ -103,7 +103,162 @@
         </div>
       </div>
       <div class="fila terceira-fila">
-        <div class="caixa grande window">Biblioteca</div>
+        <div class="caixa grande window">
+          <div class="biblioteca-aleatoria">
+            <div id="biblioteca-content">
+              <!-- Aquí cargarase o carrusel aleatorio -->
+              <div class="loading-indicator">
+                <div class="loader"></div>
+              </div>
+            </div>
+            <button class="ver-mais" id="ver-biblioteca-completa">Ver biblioteca completa</button>
+          </div>
+        
+          <script>
+            // Función para cargar un carrusel aleatorio
+            function loadRandomLibraryCarousel() {
+              // Obter os datos directamente do front matter
+              const bibliotecaPage = {{ (site.GetPage "/biblioteca").Params | jsonify | safeJS }};
+              console.log("Datos da biblioteca:", bibliotecaPage); // ← Verifica no navegador
+              
+              console.log("Categorias:", bibliotecaPage.categorias);
+              console.log("Cantidade:", bibliotecaPage.categorias.length);
+              // Verificar que existen categorías
+              if (!bibliotecaPage.categorias || bibliotecaPage.categorias.length === 0) {
+                
+                showNoCategoriesMessage();
+                return;
+              }
+              
+              // Seleccionar unha categoría aleatoria
+              const categoriaAleatoria = bibliotecaPage.categorias[
+                Math.floor(Math.random() * bibliotecaPage.categorias.length)
+              ];
+              
+              // Seleccionar unha subcategoría aleatoria
+              if (!categoriaAleatoria.subcategorias || categoriaAleatoria.subcategorias.length === 0) {
+                showNoSubcategoriesMessage(categoriaAleatoria.nome);
+                return;
+              }
+              
+              const subcategoriaAleatoria = categoriaAleatoria.subcategorias[
+                Math.floor(Math.random() * categoriaAleatoria.subcategorias.length)
+              ];
+              
+              // Agora cargamos os libros para esta subcategoría
+              fetch('/obras.json')
+                .then(response => response.json())
+                .then(obrasData => {
+                  const librosSubcategoria = obrasData.libros.filter(libro => 
+                    libro.subcategorias && libro.subcategorias.includes(subcategoriaAleatoria)
+                  );
+                  
+                  if (librosSubcategoria.length > 0) {
+                    // Embarallar os libros
+                    shuffleArray(librosSubcategoria);
+                    
+                    // Mostrar o carrusel
+                    renderRandomCarousel(subcategoriaAleatoria, librosSubcategoria.slice(0, 6));
+                  } else {
+                    showNoBooksMessage(subcategoriaAleatoria);
+                  }
+                })
+                .catch(error => {
+                  console.error('Error:', error);
+                  showLibraryError();
+                });
+            }
+        
+            // Función para mostrar un carrusel aleatorio
+            function renderRandomCarousel(subcategoria, libros) {
+              const container = document.getElementById('biblioteca-content');
+              container.innerHTML = `
+                <div class="random-carousel">
+                  <h3>${subcategoria}</h3>
+                  <div class="carousel-container">
+                    <div class="carousel-track">
+                      ${libros.map(libro => `
+                        <div class="libro-pequeno">
+                          <img src="${libro.portada || '/images/default-book-cover.jpg'}" alt="${libro.titulo}" loading="lazy">
+                          <h4>${libro.titulo}</h4>
+                          <p class="autor">${libro.autores ? libro.autores.join(', ') : 'Autor descoñecido'}</p>
+                        </div>
+                      `).join('')}
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                  </div>
+                </div>
+              `;
+              
+              // Configurar navegación do carrusel
+              setupMiniCarousel();
+            }
+        
+            // Funcións auxiliares
+            function shuffleArray(array) {
+              for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+              }
+              return array;
+            }
+        
+            function setupMiniCarousel() {
+              const carousel = document.querySelector('.random-carousel .carousel-container');
+              if (!carousel) return;
+              
+              const track = carousel.querySelector('.carousel-track');
+              const prev = carousel.querySelector('.carousel-prev');
+              const next = carousel.querySelector('.carousel-next');
+              
+              let position = 0;
+              const itemWidth = 150;
+              
+              next.addEventListener('click', () => {
+                position = Math.min(position + itemWidth * 2, track.scrollWidth - carousel.clientWidth);
+                track.style.transform = `translateX(-${position}px)`;
+              });
+              
+              prev.addEventListener('click', () => {
+                position = Math.max(position - itemWidth * 2, 0);
+                track.style.transform = `translateX(-${position}px)`;
+              });
+            }
+        
+            function showNoCategoriesMessage() {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">Non se atoparon categorías na biblioteca.</p>
+              `;
+            }
+        
+            function showNoSubcategoriesMessage(categoria) {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">A categoría "${categoria}" non ten subcategorías.</p>
+              `;
+            }
+        
+            function showNoBooksMessage(subcategoria) {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">Non se atoparon libros para "${subcategoria}".</p>
+              `;
+            }
+        
+            function showLibraryError() {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="error-message">Erro ao cargar a biblioteca. <a href="javascript:loadRandomLibraryCarousel()">Tentar de novo</a></p>
+              `;
+            }
+        
+            // Cargar o carrusel aleatorio ao iniciar
+            loadRandomLibraryCarousel();
+        
+            // Configurar o botón para ver a biblioteca completa
+            document.getElementById('ver-biblioteca-completa').addEventListener('click', () => {
+              window.location.href = '/biblioteca';
+            });
+          </script>
+        </div>
         <div class="caixa pequena window">Podcast</div>
       </div>
     </div>

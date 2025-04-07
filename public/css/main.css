@@ -534,9 +534,11 @@ nav a:hover {
   font-size: 45px;
 }
 
+
+
 .texto-principal {
   margin-left: 25px;
-  margin-top: -20px;
+  margin-top: 0px;
   font-size: 18px;
   text-align: left;
 }
@@ -701,6 +703,15 @@ nav a:hover {
 .banner-biblioteca.reduced-mode {
     left: 65px;
     width: 86.2%;
+}
+
+.titulo-text {
+  font-size: 35px !important;
+  font-weight: 700;
+  color: #f8f8f8 !important;
+  text-align: left;
+  z-index: 99000 !important;
+  margin-left: 3%;
 }
 
 

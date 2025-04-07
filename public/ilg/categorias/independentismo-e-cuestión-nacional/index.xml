@@ -14,5 +14,26 @@
       <guid>http://localhost:1313/ilg/biblioteca/obras/castelao_sempre_en_galiza/</guid>
       <description></description>
     </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/clara_corbelhe_o_campo_intelectual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/clara_corbelhe_o_campo_intelectual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/clara_corbelhe_poder_e_colonialidades/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/clara_corbelhe_poder_e_colonialidades/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/isca_marxismo_e_cuestion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/isca_marxismo_e_cuestion_nacional/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

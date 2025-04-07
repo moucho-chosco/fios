@@ -14,5 +14,12 @@
       <guid>http://localhost:1313/agal/biblioteca/obras/rivera_violencias_reencubertas_en_bolivia/</guid>
       <description></description>
     </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/vvaa_fillas_da_nakba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/vvaa_fillas_da_nakba/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

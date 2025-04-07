@@ -5,8 +5,12 @@ serie:
 Numero:
 ano: 1971
 categorias:
-    - Feminismo
+    - Xénero
     - Capitalismo
+subcategorias:
+    - Historia do capitalismo
+    - Historia da loita feminista e LGBT+
+    - Feminismo materialista
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/federici_caliban_e_a_bruxa.jpg" # Opcional, imaxe da portada
 link_externo: "a"

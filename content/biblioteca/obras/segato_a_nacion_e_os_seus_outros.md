@@ -6,7 +6,7 @@ Numero:
 ano: 1971
 categorias:
     - Colonialismo e imperialismo
-    - Antirracismo
+    - AIndependentismo e cuestión nacional
 lugar:
 portada: "/biblioteca/obras/segato_a_nacion_e_os_seus_outros.jpg" # Opcional, imaxe da portada
 link_externo: "a"

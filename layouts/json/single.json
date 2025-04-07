@@ -49,15 +49,22 @@
         {{- range $index, $libro := $libros -}}
           {{- if $index -}},{{- end -}}
           {
-            "titulo": {{ $libro.Params.titulo | jsonify }},
-            "autore": {{ $libro.Params.autore | jsonify }},
-            "ano": {{ $libro.Params.ano | jsonify }},
-            "dificultade": {{ $libro.Params.dificultade | jsonify }},
-            "categorias": {{ $libro.Params.categorias | jsonify }},
-            "subcategorias": {{ $libro.Params.subcategorias | jsonify }},
-            "portada": {{ $libro.Params.portada | jsonify }},
-            "link_externo": {{ $libro.Params.link_externo | jsonify }},
-            "url": {{ $libro.RelPermalink | jsonify }}
+            "titulo":          {{ $libro.Params.titulo          | jsonify }},
+            "autore":          {{ $libro.Params.autore          | jsonify }},
+            "ano":             {{ $libro.Params.ano             | jsonify }},
+            "dificultade":     {{ $libro.Params.dificultade     | jsonify }},
+            "categorias":      {{ $libro.Params.categorias      | jsonify }},
+            "subcategorias":   {{ $libro.Params.subcategorias   | jsonify }},
+            "portada":         {{ $libro.Params.portada         | jsonify }},
+            "fondo_banner":    {{ $libro.Params.fondo_banner    | jsonify }},
+            "titulo_banner":   {{ $libro.Params.titulo_banner   | jsonify }},
+            "texto_banner":    {{ $libro.Params.texto_banner    | jsonify }},
+            "cor_banner":      {{ $libro.Params.cor_banner      | jsonify }},
+            "cor_texto":       {{ $libro.Params.cor_texto       | jsonify }},
+            "marxe_texto":     {{ $libro.Params.marxe_texto     | jsonify }},
+            "cor_fondo_boton": {{ $libro.Params.cor_fondo_boton | jsonify }},
+            "link_externo":    {{ $libro.Params.link_externo    | jsonify }},
+            "url":             {{ $libro.RelPermalink           | jsonify }}
           }
         {{- end -}}
       ]

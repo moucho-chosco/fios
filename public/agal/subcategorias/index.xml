@@ -29,6 +29,13 @@
       <description></description>
     </item>
     <item>
+      <title>América Latina</title>
+      <link>http://localhost:1313/agal/subcategorias/am%C3%A9rica-latina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/am%C3%A9rica-latina/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Anarcofeminismo</title>
       <link>http://localhost:1313/agal/subcategorias/anarcofeminismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -78,6 +85,13 @@
       <description></description>
     </item>
     <item>
+      <title>Capitalismo E Clima</title>
+      <link>http://localhost:1313/agal/subcategorias/capitalismo-e-clima/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/capitalismo-e-clima/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>China</title>
       <link>http://localhost:1313/agal/subcategorias/china/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -96,6 +110,13 @@
       <link>http://localhost:1313/agal/subcategorias/decolonialismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/subcategorias/decolonialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Desenvolvemento Desigual</title>
+      <link>http://localhost:1313/agal/subcategorias/desenvolvemento-desigual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/desenvolvemento-desigual/</guid>
       <description></description>
     </item>
     <item>
@@ -120,6 +141,13 @@
       <description></description>
     </item>
     <item>
+      <title>Feminismo Materialista</title>
+      <link>http://localhost:1313/agal/subcategorias/feminismo-materialista/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/feminismo-materialista/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Feminismo Radical</title>
       <link>http://localhost:1313/agal/subcategorias/feminismo-radical/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -141,10 +169,31 @@
       <description></description>
     </item>
     <item>
+      <title>Gordofobia E Xénero</title>
+      <link>http://localhost:1313/agal/subcategorias/gordofobia-e-x%C3%A9nero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/gordofobia-e-x%C3%A9nero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia Da Loita Feminista E LGBT&#43;</title>
+      <link>http://localhost:1313/agal/subcategorias/historia-da-loita-feminista-e-lgbt&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/historia-da-loita-feminista-e-lgbt&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Historia Do Anarquismo</title>
       <link>http://localhost:1313/agal/subcategorias/historia-do-anarquismo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/subcategorias/historia-do-anarquismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Historia Do Capitalismo</title>
+      <link>http://localhost:1313/agal/subcategorias/historia-do-capitalismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/historia-do-capitalismo/</guid>
       <description></description>
     </item>
     <item>
@@ -176,6 +225,20 @@
       <description></description>
     </item>
     <item>
+      <title>Marxismo E Cuestión Nacional</title>
+      <link>http://localhost:1313/agal/subcategorias/marxismo-e-cuesti%C3%B3n-nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/marxismo-e-cuesti%C3%B3n-nacional/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marxismo E Xénero</title>
+      <link>http://localhost:1313/agal/subcategorias/marxismo-e-x%C3%A9nero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/marxismo-e-x%C3%A9nero/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Materialismo Dialéctico</title>
       <link>http://localhost:1313/agal/subcategorias/materialismo-dial%C3%A9ctico/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -194,6 +257,13 @@
       <link>http://localhost:1313/agal/subcategorias/pa%C3%AFsos-catalans/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/subcategorias/pa%C3%AFsos-catalans/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Palestina</title>
+      <link>http://localhost:1313/agal/subcategorias/palestina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/palestina/</guid>
       <description></description>
     </item>
     <item>
@@ -250,6 +320,13 @@
       <link>http://localhost:1313/agal/subcategorias/vietnam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/subcategorias/vietnam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Xénero E Colonialidade</title>
+      <link>http://localhost:1313/agal/subcategorias/x%C3%A9nero-e-colonialidade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/subcategorias/x%C3%A9nero-e-colonialidade/</guid>
       <description></description>
     </item>
   </channel>

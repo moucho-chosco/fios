@@ -6,9 +6,7 @@ Numero:
 ano: 2000
 categorias:
     - Capitalismo
-descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/soren_mau_compulsion_muda.gif" # Opcional, imaxe da portada
-etiquetas: ["socialismo", "Chile"]
 link_externo: "a"
 tipo: "obra"
 fondo_banner:  "/biblioteca/banners/fondos/compulsion_muda.png"

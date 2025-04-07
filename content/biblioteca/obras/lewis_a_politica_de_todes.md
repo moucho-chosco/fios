@@ -5,9 +5,11 @@ serie:
 Numero:
 ano: 1971
 tematicas:
-    - Feminismo
+    - Xénero
     - Comunismo
-    - LGBT+
+subcategorias:
+    - Marxismo e xénero
+    - Feminismo materialista
 descricion: "Esta é unha breve descrición da obra 1."
 portada: "/biblioteca/obras/lewis_a_politica_de_todes.jpg" # Opcional, imaxe da portada
 link_externo: "a"

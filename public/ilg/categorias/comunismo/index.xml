@@ -17,13 +17,6 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/ilg/biblioteca/obras/delphy_feminismo_materialista/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ilg/biblioteca/obras/delphy_feminismo_materialista/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/gil-pensar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/gil-pensar/</guid>
@@ -90,6 +83,13 @@
       <link>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/isca_feminismo_e_luita_lgbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/isca_marxismo_e_cuestion_nacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/isca_marxismo_e_cuestion_nacional/</guid>
       <description></description>
     </item>
     <item>

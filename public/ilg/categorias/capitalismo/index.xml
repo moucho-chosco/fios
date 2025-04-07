@@ -9,6 +9,13 @@
     <atom:link href="http://localhost:1313/ilg/categorias/capitalismo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>http://localhost:1313/ilg/biblioteca/obras/amin_desenvolvemento_desigual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ilg/biblioteca/obras/amin_desenvolvemento_desigual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ilg/biblioteca/obras/bevins_metodo_yakarta/</guid>

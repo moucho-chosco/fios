@@ -16,6 +16,13 @@
     </item>
     <item>
       <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/lenin_imperialismo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/lenin_imperialismo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
       <link>http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/ramnath_decolonizing_anarchism/</guid>
@@ -40,6 +47,20 @@
       <link>http://localhost:1313/agal/biblioteca/obras/smith_desenvolvemento_desigual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/agal/biblioteca/obras/smith_desenvolvemento_desigual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/verges_un_feminismo_decolonial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/verges_un_feminismo_decolonial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/agal/biblioteca/obras/vvaa_fillas_da_nakba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/agal/biblioteca/obras/vvaa_fillas_da_nakba/</guid>
       <description></description>
     </item>
   </channel>

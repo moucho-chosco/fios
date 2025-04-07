@@ -1,5 +1,5 @@
 ---
-titulo: "Loita de clases"
+titulo: "Imperialismo e dependencia"
 autore: 
     - Marta Harnecker
     - Gabriela Uribe

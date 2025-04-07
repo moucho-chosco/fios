@@ -249,7 +249,162 @@
         </div>
       </div>
       <div class="fila terceira-fila">
-        <div class="caixa grande window">Biblioteca</div>
+        <div class="caixa grande window">
+          <div class="biblioteca-aleatoria">
+            <div id="biblioteca-content">
+              
+              <div class="loading-indicator">
+                <div class="loader"></div>
+              </div>
+            </div>
+            <button class="ver-mais" id="ver-biblioteca-completa">Ver biblioteca completa</button>
+          </div>
+        
+          <script>
+            
+            function loadRandomLibraryCarousel() {
+              
+              const bibliotecaPage = {"categorias":[{"nome":"Anarquismo","subcategorias":["Achegamento ao anarquismo","Historia do anarquismo","Anticapacitismo e anarquismo","Insurreccionalismo","Anarcosindicalismo"]},{"nome":"Anticapacitismo","subcategorias":["Anarquismo e anticapacitismo","Discapacidade e disidencia"]},{"nome":"Análise do capitalismo?","subcategorias":[null]},{"nome":"Colonialismo e imperialismo","subcategorias":["Achegamento ao decolonialismo e antiimperialismo","Desenvolvemento desigual","Panafricanismo","Palestina","América Latina"]},{"nome":"Comunismo","subcategorias":["Achegamento ao marxismo","Filosofía marxista: Materialismo dialéctico","Crítica da economía política","Historia do Movemento Obreiro/Proletario","Teoria crítica / Comunismo actual a debate","Marxismo e género","Marxismo e cuestión nacional","Ecosocialismo","Imperialismo","Marxismo e vaga reaccionaria"]},{"nome":"Crise climática","subcategorias":["Xustiza climática","Capitalismo e clima","Ciencia e clima","Decrecemento","Defensa da terra","Ecosocialismo","Ecofeminismo"]},{"nome":"Ética animal","subcategorias":["Liberación animal","Veganismo negro","Ética animal e feminismo","Ética animal e comunismo"]},{"nome":"Independentismo e cuestión nacional","subcategorias":["Dereito e autodeterminación","Historia do independentismo galego"]},{"nome":"Xénero","subcategorias":["Achegamento a cuestión do xenero","Historia da loita feminista e LGBT+","Gordofobia e xénero","Anarquismo e xénero","Marxismo e xénero","Feminismo materialista","Feminismo postestructuralista","Primeira onda do feminismo","Segunda onda do feminismo","Terceira onda do feminismo","Ecofeminismo","Teoría LGBTIQ+","Xénero e antirracismo"]},{"nome":"Práctica militante","subcategorias":["Antirrepresión","Ciberseguridade","Coidados na militancia","Protocolos"]}],"date":"2024-11-18T18:16:40+01:00","draft":false,"iscjklanguage":false,"lang":"rag","lastmod":"2024-11-18T18:16:40+01:00","publishdate":"2024-11-18T18:16:40+01:00","title":"fios | Biblioteca"};
+              console.log("Datos da biblioteca:", bibliotecaPage); 
+              
+              console.log("Categorias:", bibliotecaPage.categorias);
+              console.log("Cantidade:", bibliotecaPage.categorias.length);
+              
+              if (!bibliotecaPage.categorias || bibliotecaPage.categorias.length === 0) {
+                
+                showNoCategoriesMessage();
+                return;
+              }
+              
+              
+              const categoriaAleatoria = bibliotecaPage.categorias[
+                Math.floor(Math.random() * bibliotecaPage.categorias.length)
+              ];
+              
+              
+              if (!categoriaAleatoria.subcategorias || categoriaAleatoria.subcategorias.length === 0) {
+                showNoSubcategoriesMessage(categoriaAleatoria.nome);
+                return;
+              }
+              
+              const subcategoriaAleatoria = categoriaAleatoria.subcategorias[
+                Math.floor(Math.random() * categoriaAleatoria.subcategorias.length)
+              ];
+              
+              
+              fetch('/obras.json')
+                .then(response => response.json())
+                .then(obrasData => {
+                  const librosSubcategoria = obrasData.libros.filter(libro => 
+                    libro.subcategorias && libro.subcategorias.includes(subcategoriaAleatoria)
+                  );
+                  
+                  if (librosSubcategoria.length > 0) {
+                    
+                    shuffleArray(librosSubcategoria);
+                    
+                    
+                    renderRandomCarousel(subcategoriaAleatoria, librosSubcategoria.slice(0, 6));
+                  } else {
+                    showNoBooksMessage(subcategoriaAleatoria);
+                  }
+                })
+                .catch(error => {
+                  console.error('Error:', error);
+                  showLibraryError();
+                });
+            }
+        
+            
+            function renderRandomCarousel(subcategoria, libros) {
+              const container = document.getElementById('biblioteca-content');
+              container.innerHTML = `
+                <div class="random-carousel">
+                  <h3>${subcategoria}</h3>
+                  <div class="carousel-container">
+                    <div class="carousel-track">
+                      ${libros.map(libro => `
+                        <div class="libro-pequeno">
+                          <img src="${libro.portada || '/images/default-book-cover.jpg'}" alt="${libro.titulo}" loading="lazy">
+                          <h4>${libro.titulo}</h4>
+                          <p class="autor">${libro.autores ? libro.autores.join(', ') : 'Autor descoñecido'}</p>
+                        </div>
+                      `).join('')}
+                    </div>
+                    <button class="carousel-prev">&#10094;</button>
+                    <button class="carousel-next">&#10095;</button>
+                  </div>
+                </div>
+              `;
+              
+              
+              setupMiniCarousel();
+            }
+        
+            
+            function shuffleArray(array) {
+              for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+              }
+              return array;
+            }
+        
+            function setupMiniCarousel() {
+              const carousel = document.querySelector('.random-carousel .carousel-container');
+              if (!carousel) return;
+              
+              const track = carousel.querySelector('.carousel-track');
+              const prev = carousel.querySelector('.carousel-prev');
+              const next = carousel.querySelector('.carousel-next');
+              
+              let position = 0;
+              const itemWidth = 150;
+              
+              next.addEventListener('click', () => {
+                position = Math.min(position + itemWidth * 2, track.scrollWidth - carousel.clientWidth);
+                track.style.transform = `translateX(-${position}px)`;
+              });
+              
+              prev.addEventListener('click', () => {
+                position = Math.max(position - itemWidth * 2, 0);
+                track.style.transform = `translateX(-${position}px)`;
+              });
+            }
+        
+            function showNoCategoriesMessage() {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">Non se atoparon categorías na biblioteca.</p>
+              `;
+            }
+        
+            function showNoSubcategoriesMessage(categoria) {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">A categoría "${categoria}" non ten subcategorías.</p>
+              `;
+            }
+        
+            function showNoBooksMessage(subcategoria) {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="info-message">Non se atoparon libros para "${subcategoria}".</p>
+              `;
+            }
+        
+            function showLibraryError() {
+              document.getElementById('biblioteca-content').innerHTML = `
+                <p class="error-message">Erro ao cargar a biblioteca. <a href="javascript:loadRandomLibraryCarousel()">Tentar de novo</a></p>
+              `;
+            }
+        
+            
+            loadRandomLibraryCarousel();
+        
+            
+            document.getElementById('ver-biblioteca-completa').addEventListener('click', () => {
+              window.location.href = '/biblioteca';
+            });
+          </script>
+        </div>
         <div class="caixa pequena window">Podcast</div>
       </div>
     </div>
